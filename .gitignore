@@ -4,18 +4,20 @@
 .venv-bard/
 
 # ---------------- データ ------------------
-data/
-data_ChatRec/
-data/
+data/Tabidachi/*
+!data/Tabidachi/.gitkeep
+data/ChatRec/*
+!data/ChatRec/.gitkeep
 
-# ── src 配下をまるごと無視 ─────────────────────
-/src/**           # ファイルもディレクトリも全部
-!/src/**/*.py    # ← 必要な拡張子だけ ! で“再 include”
-!/src/**/*.ipynb
+# ── src/Tabidachi 配下の設定 ─────────────────────
+/src/Tabidachi/**
+!/src/Tabidachi/**/*.py
+!/src/Tabidachi/**/*.ipynb
 
-/src-chatrec/**           # ファイルもディレクトリも全部
-!/src-chatrec/**/*.py    # ← 必要な拡張子だけ ! で“再 include”
-!/src-chatrec/**/*.ipynb
+# ── src/ChatRec 配下の設定 ─────────────────────
+/src/ChatRec/**
+!/src/ChatRec/**/*.py
+!/src/ChatRec/**/*.ipynb
 
 # ---------------- 環境変数など ------------
 .env
@@ -35,5 +37,13 @@ __pycache__/
 # ---------------- 追跡したい場合は否定 ----
 #!LICENSE           # ← LICENSE を **追跡したい** 場合はこの行を使い、
 #LICENSE            #    こちらを削除またはコメントアウト
+.claude
 
-README_memo.md
+# ---------------- ユーティリティファイル（再現実験に不要） ----
+# カウント・統計用ユーティリティ
+src/ChatRec/count_*.py
+src/Tabidachi/count_*.py
+src/Tabidachi/print_hyper-parameter.py
+
+# CSV作成スクリプト（評価用データ準備のため残す可能性を考慮してコメントアウト）
+# src/Tabidachi/create_csv*.py
