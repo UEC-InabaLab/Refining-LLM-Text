@@ -44,18 +44,18 @@ def tokenize(text: str):
 
 
 # ---------------- 2. Excel 読み込み ----------------
-XLSX  = "クラウドワーカーデータセット (1).xlsx"
-SHEET = "提案手法"       # ← 変える場合はここ
+XLSX  = "cloud_worker_tabidachi_datasets.xlsx"
+SHEET = "data"       # ← 変える場合はここ
 df = pd.read_excel(XLSX, sheet_name=SHEET)
 n_rows = len(df)
 print(f"Loaded {n_rows} rows from sheet '{SHEET}'\n")
 
 summary_cols = {
-    "baseline": "dialogue_summary(ChatRec)",
+    "baseline": "dialogue_summary(SumRec)",
     "proposed": "dialogue_summary(提案手法)",
 }
 rec_cols = {
-    "baseline": "recommend_sentence(ChatRec)",
+    "baseline": "recommend_sentence(SumRec)",
     "proposed": "recommend_sentence(提案手法)",
 }
 explanation_col = "candidate_info"
