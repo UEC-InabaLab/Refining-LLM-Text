@@ -167,25 +167,25 @@ if __name__ == "__main__":
         "--method",
         type=str,
         required=True,
-        choices=["proposal", "baseline1", "baseline2"],
-        help="学習方法: proposal, baseline1, baseline2"
+        choices=["proposal&baseline1", "baseline2"],
+        help="学習方法: proposal&baseline1, baseline2"
     )
     
     args = parser.parse_args()
     TRAIN_MODEL = args.method
     
     # METHOD_FLAGの設定
-    # proposalとbaseline1の場合はTrue、baseline2の場合はFalse
-    METHOD_FLAG = TRAIN_MODEL in ["proposal", "baseline1"]
+    # proposal&baseline1の場合はTrue、baseline2の場合はFalse
+    METHOD_FLAG = TRAIN_MODEL == "proposal&baseline1"
     
     # 環境変数とディレクトリの設定
-    os.environ["WANDB_PROJECT"] = f"ChatRec_Deberta_{TRAIN_MODEL}"
+    os.environ["WANDB_PROJECT"] = f"ChatRec_Deberta_{TRAIN_MODEL.replace('&', '_')}"
     BEST_MODEL_DIR = f"./ChatRec_deberta_best_model_{TRAIN_MODEL}"
-    TEST_OUTPUT_DIR = f"./ChatRec_deberta_{TRAIN_MODEL}"
+    TEST_OUTPUT_DIR = f"./ChatRec_deberta_{TRAIN_MODEL.replace('&', '_')}"
     
     print(f"\n{'='*60}")
     print(f"ChatRec DeBERTaモデルの学習: {TRAIN_MODEL}")
-    print(f"METHOD_FLAG: {METHOD_FLAG}")
+    print(f"METHOD_FLAG: {METHOD_FLAG} (3入力)" if METHOD_FLAG else f"METHOD_FLAG: {METHOD_FLAG} (2入力)")
     print(f"BEST_MODEL_DIR: {BEST_MODEL_DIR}")
     print(f"TEST_OUTPUT_DIR: {TEST_OUTPUT_DIR}")
     print(f"{'='*60}\n")

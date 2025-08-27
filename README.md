@@ -159,9 +159,8 @@ python src/Tabidachi/create_dataset_4.py  # DPO data for item recommendation inf
 # Method options: proposal, baseline1, baseline2
 # - proposal/baseline1: Uses 3 inputs (dialogue summary, item recommendation information, candidate info)
 # - baseline2: Uses 2 inputs (dialogue summary, candidate info)
-python src/Tabidachi/train_deberta.py --method proposal
+python src/Tabidachi/train_deberta.py --method proposal&baseline1
 # Or:
-python src/Tabidachi/train_deberta.py --method baseline1
 python src/Tabidachi/train_deberta.py --method baseline2
 
 # Output: Model saved to src/Tabidachi/deberta_best_model_[method]/
@@ -238,9 +237,8 @@ python src/ChatRec/create_dataset_4.py  # DPO data for item recommendation infor
 # Method options: proposal, baseline1, baseline2
 # - proposal/baseline1: Uses 3 inputs (dialogue summary, item recommendation information, candidate info)
 # - baseline2: Uses 2 inputs (dialogue summary, candidate info)
-python src/ChatRec/train_deberta.py --method proposal
+python src/ChatRec/train_deberta.py --method proposal&baseline1
 # Or:
-python src/ChatRec/train_deberta.py --method baseline1
 python src/ChatRec/train_deberta.py --method baseline2
 
 # Output: Model saved to src/ChatRec/ChatRec_deberta_best_model_[method]/
@@ -445,8 +443,8 @@ python metrics_sentence.py
 
 ### Model Training Scripts
 - **`train_deberta.py`**: Trains DeBERTa-based score predictor for recommendation scoring
-  - Supports command-line argument `--method [proposal|baseline1|baseline2]`
-  - Automatically configures METHOD_FLAG: True for proposal/baseline1, False for baseline2
+  - Supports command-line argument `--method [proposal&baseline1|baseline2]`
+  - Automatically configures METHOD_FLAG: True for proposal&baseline1, False for baseline2
   - Creates method-specific output directories
 - **`dpo_summary_llm.py`**: DPO training for dialogue summary generation model with Optuna hyperparameter optimization (creates model 1)
 - **`dpo_summary_llm_more.py`**: Additional DPO training for dialogue summary generation models (creates models 2-5)
@@ -502,7 +500,7 @@ bash ../../scripts/run_tabidachi_experiments.sh  # If script exists
 python data_preprocessing.py
 python create_dataset_1.py && python create_dataset_2.py
 python create_dataset_3.py && python create_dataset_4.py
-python train_deberta.py --method proposal  # or baseline1/baseline2
+python train_deberta.py --method proposal&baseline1  # or baseline2
 python dpo_summary_llm.py          # Creates model 1
 python dpo_summary_llm_more.py     # Creates models 2-5
 python dpo_recommendation_llm.py       # Creates model 1
@@ -524,7 +522,7 @@ cd src/ChatRec
 python data_preprocessing.py
 python create_dataset_1.py && python create_dataset_2.py
 python create_dataset_3.py && python create_dataset_4.py
-python train_deberta.py --method proposal  # or baseline1/baseline2
+python train_deberta.py --method proposal&baseline1  # or baseline2
 python dpo_summary_llm.py          # Creates model 1
 python dpo_summary_llm_more.py     # Creates models 2-5
 python dpo_recommendation_llm.py       # Creates model 1
@@ -538,13 +536,13 @@ python evaluate_from_recommend_data.py --method proposal  # Evaluate proposed me
 ### Model Output Locations
 
 #### Tabidachi Models
-- DeBERTa: `src/Tabidachi/deberta_best_model_[method]/`
+- DeBERTa: `src/Tabidachi/deberta_best_model_proposal&baseline1/` or `deberta_best_model_baseline2/`
 - DPO Summary: `src/Tabidachi/dpo-summary-results_[1-5]/`
 - DPO Recommendation: `src/Tabidachi/dpo-recommendation-results_[1-5]/`
 - Cloudworker Model: `src/Tabidachi/dpo-summary-results_cloudworker/`
 
 #### ChatRec Models
-- DeBERTa: `src/ChatRec/ChatRec_deberta_best_model_[method]/`
+- DeBERTa: `src/ChatRec/ChatRec_deberta_best_model_proposal&baseline1/` or `ChatRec_deberta_best_model_baseline2/`
 - DPO Summary: `src/ChatRec/dpo-summary-results_[1-5]/`
 - DPO Recommendation: `src/ChatRec/dpo-recommendation-results_[1-5]/`
 

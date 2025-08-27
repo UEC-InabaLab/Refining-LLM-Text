@@ -156,12 +156,11 @@ python src/Tabidachi/create_dataset_4.py  # アイテム推薦情報用DPOデー
 #### ステップ3: スコア予測器の訓練
 ```bash
 # メソッド選択でDeBERTaを訓練
-# メソッドオプション: proposal, baseline1, baseline2
-# - proposal/baseline1: 3つの入力を使用（対話要約、アイテム推薦情報、候補情報）
+# メソッドオプション: proposal&baseline1, baseline2
+# - proposal&baseline1: 3つの入力を使用（対話要約、アイテム推薦情報、候補情報）
 # - baseline2: 2つの入力を使用（対話要約、候補情報）
-python src/Tabidachi/train_deberta.py --method proposal
+python src/Tabidachi/train_deberta.py --method proposal&baseline1
 # または:
-python src/Tabidachi/train_deberta.py --method baseline1
 python src/Tabidachi/train_deberta.py --method baseline2
 
 # 出力: モデルは src/Tabidachi/deberta_best_model_[method]/ に保存
@@ -235,12 +234,11 @@ python src/ChatRec/create_dataset_4.py  # アイテム推薦情報用DPOデー�
 #### ステップ3: スコア予測器の訓練
 ```bash
 # メソッド選択でDeBERTaを訓練
-# メソッドオプション: proposal, baseline1, baseline2
-# - proposal/baseline1: 3つの入力を使用（対話要約、アイテム推薦情報、候補情報）
+# メソッドオプション: proposal&baseline1, baseline2
+# - proposal&baseline1: 3つの入力を使用（対話要約、アイテム推薦情報、候補情報）
 # - baseline2: 2つの入力を使用（対話要約、候補情報）
-python src/ChatRec/train_deberta.py --method proposal
+python src/ChatRec/train_deberta.py --method proposal&baseline1
 # または:
-python src/ChatRec/train_deberta.py --method baseline1
 python src/ChatRec/train_deberta.py --method baseline2
 
 # 出力: モデルは src/ChatRec/ChatRec_deberta_best_model_[method]/ に保存
@@ -446,8 +444,8 @@ python metrics_sentence.py
 
 ### モデル訓練スクリプト
 - **`train_deberta.py`**: 推薦スコアリング用のDeBERTaベースのスコア予測器を訓練
-  - コマンドライン引数 `--method [proposal|baseline1|baseline2]` をサポート
-  - METHOD_FLAGを自動設定：proposal/baseline1の場合True、baseline2の場合False
+  - コマンドライン引数 `--method [proposal&baseline1|baseline2]` をサポート
+  - METHOD_FLAGを自動設定：proposal&baseline1の場合True、baseline2の場合False
   - メソッド固有の出力ディレクトリを作成
 - **`dpo_summary_llm.py`**: Optunaハイパーパラメータ最適化を使用した対話要約生成モデルのDPO訓練（モデル1を作成）
 - **`dpo_summary_llm_more.py`**: 対話要約生成モデルの追加DPO訓練（モデル2-5を作成）
@@ -503,7 +501,7 @@ bash ../../scripts/run_tabidachi_experiments.sh  # スクリプトが存在す�
 python data_preprocessing.py
 python create_dataset_1.py && python create_dataset_2.py
 python create_dataset_3.py && python create_dataset_4.py
-python train_deberta.py --method proposal  # またはbaseline1/baseline2
+python train_deberta.py --method proposal&baseline1  # またはbaseline2
 python dpo_summary_llm.py          # モデル1を作成
 python dpo_summary_llm_more.py     # モデル2-5を作成
 python dpo_recommendation_llm.py       # モデル1を作成
@@ -525,7 +523,7 @@ cd src/ChatRec
 python data_preprocessing.py
 python create_dataset_1.py && python create_dataset_2.py
 python create_dataset_3.py && python create_dataset_4.py
-python train_deberta.py --method proposal  # またはbaseline1/baseline2
+python train_deberta.py --method proposal&baseline1  # またはbaseline2
 python dpo_summary_llm.py          # モデル1を作成
 python dpo_summary_llm_more.py     # モデル2-5を作成
 python dpo_recommendation_llm.py       # モデル1を作成
@@ -539,13 +537,13 @@ python evaluate_from_recommend_data.py --method proposal  # 提案手法を評�
 ### モデル出力場所
 
 #### Tabidachiモデル
-- DeBERTa: `src/Tabidachi/deberta_best_model_[method]/`
+- DeBERTa: `src/Tabidachi/deberta_best_model_proposal&baseline1/` または `deberta_best_model_baseline2/`
 - DPO要約: `src/Tabidachi/dpo-summary-results_[1-5]/`
 - DPO推薦: `src/Tabidachi/dpo-recommendation-results_[1-5]/`
 - クラウドワーカーモデル: `src/Tabidachi/dpo-summary-results_cloudworker/`
 
 #### ChatRecモデル
-- DeBERTa: `src/ChatRec/ChatRec_deberta_best_model_[method]/`
+- DeBERTa: `src/ChatRec/ChatRec_deberta_best_model_proposal&baseline1/` または `ChatRec_deberta_best_model_baseline2/`
 - DPO要約: `src/ChatRec/dpo-summary-results_[1-5]/`
 - DPO推薦: `src/ChatRec/dpo-recommendation-results_[1-5]/`
 
