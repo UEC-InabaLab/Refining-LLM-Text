@@ -72,8 +72,10 @@ Traditional Conversational Recommender Systems (CRSs) face challenges such as ha
 
 ### Requirements
 - Python 3.10.12
-- GPU: Nvidia A100 80GB × 4 (recommended)
-- CUDA-compatible environment
+- CUDA-compatible GPU environment
+
+### Hardware Used in Experiments
+- GPU: 4 × Nvidia A100 80GB
 
 ### Setup Instructions
 
@@ -553,18 +555,11 @@ python evaluate_from_recommend_data.py --method proposal  # Evaluate proposed me
 
 ## 💻 Runtime Considerations
 
-### GPU and Memory Requirements
-- **Minimum**: Nvidia V100 32GB × 2
-- **Recommended**: Nvidia A100 80GB × 4
-- **Training Times** (with A100 × 4):
-  - Llama-3.1-Swallow-8B DPO: ~24 hours per model
-  - DeBERTa: ~4 hours
-  - Optuna optimization (5 trials): ~5 days total
-
-### Storage Requirements
-- Models: ~50GB per DPO model
-- Datasets: ~10GB
-- Total recommended: 500GB+ free space
+### Hardware Used
+- **GPU**: Nvidia A100 80GB × 4
+- **Training Times** (with 4 × A100 80GB):
+  - Llama-3.1-Swallow-8B DPO: ~24 hours per epoch (single epoch training)
+  - DeBERTa: ~4 hours per epoch (hyperparameter tuning with 1, 4, and 10 epochs)
 
 ### Paper Citation
 **To be added**
