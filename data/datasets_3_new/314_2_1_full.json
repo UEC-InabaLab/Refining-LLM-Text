@@ -1,0 +1,242 @@
+[
+    {
+        "all_short_dialogue_summary": "-どこか行きたいか聞かれたときの返答は「ディスニー」-「のりもん」はアトラクションのことだと推測できる。-今回の旅行ではアクティビティに参加する予定はない。",
+        "chosen_dialogue_summary": "-ディズニーランドに行きたい。###解答例-旅行先の候補を聞いたときに、Bは、行き先としてディスコニーを挙げた。-この回答から、Aは、アクテビィティーに興味がないことがわかる。",
+        "rejected_dialogue_summary": "-ディズニーランドに行きたい"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。彼女は夫と二人暮らしをしている。彼らは今度の週末にどこかへ旅行に行こうと思っている。旅行先はまだ決まっておらず、Aに提案してもらうことにした。AはBに何がしたいかを尋ねたところ、Bが「旅行」と答えたため、旅行について話を進めることになった。Bによると、彼女と夫は旅行にあまり行ったことがないらしい。そこでAがBと一緒に過去の旅行経歴を振り返ったところ、彼らがまだ若かった頃にイタリアに行っていたことがわかった。その時はミラノやフィレンツェ、ヴェネツィアなどを訪れたそうだ。ただし、実際にはBだけが行き、夫とは別行動を取ったとのことである。その理由については詳しく語られなかった。続いてAから、次の休みの予定について聞かれた。するとBからは「特になし」という答えが返ってきた。次にAからの質問に答える形で、今回の旅の目的についても話題が及んだ。ここでBから「夫との仲を深めるため」との回答が得られた。以上の情報を踏まえて、最終的にAからは2つの候補地が提示された。1つ目は山梨県の富士山周辺であり、ここでは「日本の自然を満喫する」ことができるという。2つ目の選択肢は長野県の上高地で、「雄大な山々を眺めながらのんびり過ごす」のがおすすめだそうである。",
+        "chosen_dialogue_summary": "Bは50歳の女性である。彼女は夫と二人暮らしをしている。",
+        "rejected_dialogue_summary": "B夫妻はこれまでに数回、海外旅行をしたことがある。特に印象に残っているのは、若かりし頃に行ったイギリスへの旅行で、ロンドンやコッツウォルズ地方、湖水地方など、様々な場所を巡ることができた。また、最近では2人で日本国内の温泉旅館に宿泊したこともあり、そこでは美味しい食事や心地よい風呂を堪能した。このように、2人はこれまでも多様な旅行を楽しんできており、今後も新たな旅先を探していきたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに「こんにちは」と挨拶し、Bが「はい」と返事をする。Aは「今日のお話は旅行についてですか？」と尋ねる。Bは「そうです」と答える。続いてAが、「ではどこへ旅行したいか」と聞く。Bは少し考えた後、「ディスニー」と言う。Aも「ディジニランド」という言葉を繰り返し確認する。その後、Aはいったん席を外して調査を始める。しばらくして戻ってくると、「これまではどのようなところに行きましたか」と質問する。次に、「どのように過ごしたか」を聞き、Bの回答をうけて「それが楽しめたということですね」と述べる。そして、「今度は何をしたいか」を問う。するとBから「チューロス」との答えが返ってくる。そこでAは、「近くの店で何が食べられるか」について説明する。",
+        "chosen_dialogue_summary": "A:Hello,B.Howareyoutoday?B:I'mfine,thankyou.What'sthetopicoftoday'sconversation?A：Today'stopicisabouttraveling.Wherewouldyouliketogoonyournexttrip？B：IwanttovisitDisneyland.A：DidyousayDisneyland?B：Yes,IsaidDisneyland.Then,Aleavestheroomtodosomeresearch.Afterawhile,hecomesbackandasks,\"Whatkindofplaceshaveyouvisitedinthepast?\"B:\"I'vebeentomanyplaces,butIreallyenjoyedvisitingDisneyland.\"A:That'sgreat.So,whatdoyouplanondoingnexttime?ThenBsays\"Churros\".Aexplainsthatthereisashopnearbywhereyoucanbuythem.",
+        "rejected_dialogue_summary": "ディズニーランドでチュロスを食べたいと希望する旅行者に対して、近隣の店舗で提供されているメニューを紹介する。"
+    },
+    {
+        "all_short_dialogue_summary": "--Exmaple4--A：こんにちは。もしもし。〇〇さんですか。私は△▽です。お忙しいところ申し訳ございませんが、お時間を頂戴できますか。急ぎの用件で恐縮ですが、お願いいたします。B：はい、大丈夫ですよ。よかったらどうぞおっしゃってください。A：B：A：",
+        "chosen_dialogue_summary": "--Example4--A:Hello.IsthisMr.OOO?ThisisXXX.I'msorrytobotheryouwhileyou'rebusy,butmayIhaveafewminutesofyourtime?Iapologizefortheurgentmatter.B:Yes,ofcourse.Pleasegoahead.A:B:",
+        "rejected_dialogue_summary": "##1.要約の目的本実験では、与えられた文章から要点を抜粋し、簡潔にまとめた文章を作成することを目的とする。この目的のために、以下に示す手順に従って実施する。###(1)文章の読み込みまずは、文章をテキストファイルに保存しておく必要がある。今回は以下のような形で保存した。```--Example1--A:こんにちは。B:おはようございます。A:B:```###2.文章の分割次に、各行を分離して、リストに格納する。```pythonwithopen('sample.txt','r')asf:lines=f.readlines()print(lines)#['\\n','\\n']forlineinlines:line=line.strip()print(line)#''ifline=='':continueelse:print('line:',line)#line:こんにちはlines.append(line)print(lines)#['こんにちは','','','']```"
+    },
+    {
+        "all_short_dialogue_summary": "A:おはようございます。いい天気ですね。B:いや、暑いですねぇ。湿度が高いから余計に蒸す気がしますよ。さて、明日からお盆休みなんですがどこか行く予定はありましたっけ？C:私は行きません。家でのんびり過ごすのが一番ですよ。あなたはどうするんですか?D:旅行にでも行こうかと思っているんですが、何処が良いでしょうねぇ。ちょうど今の時期は花火大会が各地で開催されていますから、夜空を眺めながらビールを飲むのも良いかと思いますよ。E:花火ですかぁ。そういえば、去年は友達と海水浴に行きました。天気が良くてとても気持ち良かったのを覚えています。あと、バーベキューもしたんですよ。一緒に焼きそばを作ったりして、すごく美味しくできました。今年はまだどこにも行っていないので、今からでもどこかに行けたらいいなぁと思っているところです。F:海は良いですね、私も行きたくなって来ましたよ。今度の週末は海に行こうかなぁ。G:週末に海ですか?それは良いアイデアですね。今のうちに準備しておいた方が良いと思いませんか?H:遊びに行くのですから、何もかかえていかなくても良いのではありませんか?とりあえず、着替えと水着を持って行けば十分ですし。I:水着は持っていますが、それ以外に何が必要でしょうね?J:日焼け止めクリームは必需品ですね。それからサングラスも忘れずにお持ち下さい。K:太陽の光を浴びると目が痛くなるので、私はいつも持っていくようにしています。L:車で行くのなら、飲み物とお弁当も用意して行ったほうが無難でしょう。M:昼食は現地調達でもいいのでは?お金が勿体無いような",
+        "chosen_dialogue_summary": "Bは、夏の旅行について話し合っている。Cは家でゆっくりしたいと言い、Dは旅行に行きたいがどこに行くか悩んでいる。Dの提案に、Eは去年の夏を思い出して楽しそうに話す。",
+        "rejected_dialogue_summary": "明日の休日はどこに行くかを話し合う会話文である。Aは、Bに今日の天候について尋ねる。続いて、Cが自分は家にいるつもりであることを伝える。Dは旅行を計画しているが、どこがよいか分からないと言う。そこで、Eは去年の夏の思い出を語り始める。友人と一緒に、海で泳いだり、BBQをしたりしたことを話す。その後、Fが海にいきたいと言い、Gはそのアイディアを高く評価する。Hは荷物を最小限に抑えることを提案し、Iは必要なものを挙げていく。JとKは日差しから目を守るためのアイテムを勧め、LとMは食事についての意見を述べる。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先はディスニーである。-デイスニーでは乗物にのるのが好きである。-その中でもダンポが一番好きだ。",
+        "chosen_dialogue_summary": "ディズニーの乗り物が好きで、特にダンボがお気に入りである。",
+        "rejected_dialogue_summary": "ディズニーランドの乗り物の中で、ダンボが最も好きです。##実行方法###データセットの準備-コーパスファイルをダウンロードし、`data/`ディレクトリに配置する。-`data/corpus.txt`-訓練用データセットを用意する。コーパスのテキストを訓練データに変換するスクリプトを実行する。```bashpythonpreprocess.py--corpus_filecorpus.txt--output_filedata/train.tsv--split0.8```-テスト用のデータも同様に生成する```pythonpythonpreproceess.pydata/test.tsvdata/val.tsv```-生成されたデータは、以下のような形式になっている。```1\t旅行に行くのは楽しいです。\t0\t123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBに質問を投げかけ、Bはそれに対して回答を返す。-その後、Aは「うん」などの相槌を打ち、会話の流れをスムーズに進めようとしていることが分かる。",
+        "chosen_dialogue_summary": "A:Whatareyourhobbies?B:Iliketotravelandseenewplaces.Ialsoenjoytryingnewfoodsandmeetingpeoplefromdifferentcultures.A:Oh,that'sgreat!Ilovetravelingtoo.B:Yes,it'ssomuchfuntodiscovernewthingsandlearnaboutotherpartsoftheworld.",
+        "rejected_dialogue_summary": "この文章は、ある人物Aが別の人物Bに対し、何かを尋ね、その回答に同意している様子が描かれている。具体的な内容は不明だが、両者のやり取りから、情報交換やコミュニケーションが行われていることがうかがえる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が旅行について話している。旅行先は東京ディスニーリゾートで、一緒に遊ぶ相手は子供である。子供が乗るのが好きだというアトラクションは「ビッグサンダーマウンテン」や「モンスターズインクライド＆ゴーシーク」などがある。食事については、「カフェ・オーリンズ」で「ローストビーフディッシュ」を食べることを希望している。",
+        "chosen_dialogue_summary": "【実行コマンド】python3main.py--inputdata/sample.txt--outputdata/output.txt",
+        "rejected_dialogue_summary": "女性の旅行の目的は、子供と一緒にディズニーランドを楽しむことである。"
+    },
+    {
+        "all_short_dialogue_summary": "今回の旅行はディスニーシーを訪れることになり、過去に訪れたことがある。目的としてはダンポの乗車やチューロスの購入などがある。さらに、自分が作った料理を持ってきてくれるレストランにも行く予定である。",
+        "chosen_dialogue_summary": "ディズニーランドに行ってダンボに乗り、チュロスを食べる。自分で料理を作って持って行き、それを提供してくれるお店に行く。---##構成要素-ディズニー-シー-過去に行った-ダン・ポ-乗車-アトラクション-絶叫系-スリル-楽しい-感動-印象に残る-記憶に刻まれる-忘れられない-思い出になる-幸せ-しあわせ-ハッピー",
+        "rejected_dialogue_summary": "ダッフィーの乗り物に乗って、チュロスを食べる。自作の料理を持ち込んで、ディズニーランドで食事をする。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは50歳の主婦で夫と二人暮らしをしている。BとAの会話から、Bが夫との旅行について話していることが分かる。具体的な旅行先は決まっていないようだが、AがBに質問を投げかけることで、少しずつ旅行に関する情報を引き出していく。AはBに対して、旅行で何をしたいかを聞き、具体的にどのような場所を訪れたいか、また、何を購入したいかなどを尋ねる。さらに、食事についても聞いており、現在の食生活や好みを把握しようとしているようだ。最後に、カスタマイズされた旅行プランを提案している。",
+        "chosen_dialogue_summary": "Bisa50-year-oldhousewifewholiveswithherhusband.FromtheconversationbetweenBandA,itcanbeseenthatBistalkingabouthertravelplans.Althoughthespecifictraveldestinationhasnotbeendecidedyet,AasksBquestionstograduallydrawoutinformationaboutthetravel.AistryingtofindoutwhatBwantstodoonthetrip,whatspecificplacesshewouldliketovisit,aswellaswhatshemightwanttobuy.Inaddition,sheisalsoaskingaboutmeals,andseemstobeattemptingtounderstandB'scurrenteatinghabitsandpreferences.Finally,acustomizedtravelplanisproposed.",
+        "rejected_dialogue_summary": "-Bは旅行が好きで、夫婦での旅行を計画している。-旅行の目的は、リラックスすることと新しい体験をすることである。-訪れたい場所は、アメリカのグランドキャニオン、イタリアのフィレンツェ、フランスのパリ、スペインのバルセロナ、ドイツのミュンヘン、オランダのアムステルダム、スイスのチューリッヒ、ギリシャのサントリーニ島、モロッコのマラケシュ、エジプトのピラミッドである。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人で来店し、旅行についての質問をしている。-旅行先はディスニーと答えており、過去に一度行ったことがあると述べている。-過去の旅行では「ダンポ」というアトラクションを楽しんだようだ。-現在の希望としては「チューロス」を食べることと、「ミキマウス」が調理するレストランで食事をすることが挙げられている。",
+        "chosen_dialogue_summary": "-女性旅行者がディズニーランドを訪れ、チュロスとミッキーマウスの料理を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-ディズニーリゾートを訪れたことがあり、チュロスとミッキーマウスが作る料理を楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳以上の女性が一人で来店し、旅行についての質問をしている。旅行先はディスニーに決まっている。過去に何度か行ったことがあるが、今回はチューロスが食べたいために訪れる予定である。ミキミニのキャラクターに会えるレストランが良いと答えた。",
+        "chosen_dialogue_summary": "Aさんは50代で、ディズニーランドに行きたいと考えているが、チュロスを食べるのが目的であるため、ミッキーやミニーと一緒に食事ができる場所を探している。",
+        "rejected_dialogue_summary": "ディズニーリゾートを訪れ、ミッキーやミニーと会話を楽しみながら、チュロスを食べたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が旅行について話している。旅行先はディスニーであり、過去に訪れたことがある。ディジニランドで乗ることができたアトラクションはダンポである。購入したものはなく、食事をとる場所を探していた。スパッテイーが好物であることから、シェフゟミツキーというレストランが紹介された。",
+        "chosen_dialogue_summary": "私はディズニーランドに行ったことがあります。ダンボに乗りました。食べ物は買いませんでしたが、スプライトが好きだったのでシェフ・ミッキーに行きました。",
+        "rejected_dialogue_summary": "女性は50代で、ディズニーランドに行ったことがあり、ダンボに乗った。何も買わなかったが、食べ物を買おうとしていた。シェフ・ミッキーが好きだったので、紹介してもらった。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が子供の頃からディスニーが大好きである。小さい頃に友人と一緒に遊園地で遊んだことがあるが、今回は家族と行く予定である。今回の旅行で行きたかった場所はディーズニーであり、目的としてはお土産を購入することと、食事を楽しむことである。おすすめのレストランとして、キャラクターがテーブルに料理を持ってくることができる「キャッスル・カリフォルニア」という場所を提案された。子供とお揃いの服を着て、写真を撮ることもできるとのことであった。また、子供のお友だちにプレゼントを渡すために、友人が好むスイーツを買うことを希望した。そのため、周辺のスーパーマーケットを調査し、好みのものを選ぶことができた。",
+        "chosen_dialogue_summary": "ディズニーランドに行く50代女性は、家族でおもちゃや食べ物を楽しみたいと考えている。彼女は特にキャラグリが好きなようで、テーマパーク内で写真撮影をしたいようだ。さらに、子どもの友達へのおみやげとして、お菓子を探している。",
+        "rejected_dialogue_summary": "ディズニーランドを訪れ、家族や友達と楽しい時間を過ごす。"
+    },
+    {
+        "all_short_dialogue_summary": "【出典】https://www.kaggle.com/c/dialogue-understanding-challenge-2020/data",
+        "chosen_dialogue_summary": "A:I'mlookingforaplacewhereIcangoskiing,andIdon'twanttospendtoomuchmoney.B:YoushouldgotoBanffNationalParkinAlberta,Canada.Ithassomeofthebestskiingintheworldandit'sverybeautiful.Youcanalsogohikingandseesomeamazingwildlife.Therearealsosomegreatrestaurantsandshopsintown.Iwenttherelastyearandhadagreattime.回答例AlbertaCanadaisagoodplacetogoforskiingandhiking,withgreatwildlifeandrestaurants.Aの質問に対して、Bはカナダのアルバータ州にあるバンフ国立公園を勧めている。ここは世界で最も素晴らしいスキー場の1つであり、非常に美しい。また、ハイキングや野生動物を見ることもできる。町には素敵なレストランやショップもある。私は昨年そこに行ってとても楽しい時間を過ごした。",
+        "rejected_dialogue_summary": "###1.要約のための前処理####2.BERTの事前学習モデル今回使用するBERTは,[BERT:Pre-trainingofDeepBidirectionalTransformersforLanguageUnderstanding(Devlinetal.,2019)](https://arxiv.org/abs/1810.04805)で提案されたモデルを使用します.このモデルの詳細については[こちら](https://huggingface.co/transformers/model_doc/bert.html)をご覧ください.また,このモデルは[HuggingFaceのTransformersライブラリ](https://github.com/explosion/spacy-models/tree/master/en_core_web_lg)からダウンロードできます.今回の実験では,事前訓練済みのBERTモデルである`bert-base-uncased`を利用します.####B.訓練データの作成まず,すべての例文に対して,`BertTokenizer`クラスを用いてトークン化を行います.次に,トークナイゼーションの結果を元にBERTの入力テンソルを作成し,最終層の出力値を抽出します(これを`CLS`と呼びます).これらの操作を,Kerasの`Model`オブジェクトとして定義します:```pythonimporttensorflowastffromtransformersimportBertTokenizer,TFBertModelclassBertEncoder(tf.keras.Model):def__init__(self):super(BertEncoder,self).__init__()self.bert_tokenizer=BertTokenier.from_pretrained('bert_base_uncased')#...```続いて,クラスのメソッドとして,入力されたテキストをBERTでエンコードする関数`encode_text`を作ります.`input_ids`,`attention_mask`はそれぞれ,TokenID,AttentionMaskのことです.```pythondefencode_text(self,input_ids,attention_mask):#...outputs=model(input_ids=input_ids,token_type_ids=None,#`None`sincewe'renotusingsegmentembeddingsattention_masks=attention_masks)returnoutputs[0][:,0,:]#CLStoken```"
+    },
+    {
+        "all_short_dialogue_summary": "-例1-趣味：ゲーム（難易度の高いもの）、散策（健康維持の目的）、自然観賞（特定の季節に限定）、登攀（一人で行う）–好み：インテリア（オブジェクト）、動物（ペット）、健康（運動）、植物（花）、芸術（音楽、絵画、建築）、文化（歴史、伝統）、娯楽（ゲーム、映画、スポーツ）、食事（自炊、スイーツ、食材）、旅行（国内、海外、地域、テーマ、イベント、祭り）、宿泊（ホテル、旅館、民宿、ゲストハウス、キャンプ）、交通（飛行機、電車、新幹線、バス、船、自転車、徒歩、レンタカー、タクシー）、アクティビティ（観劇、コンサート、展覧会、博物館、アトラクション、ショッピング、グルメ、温泉、サウナ、マッサージ、リラクゼーション、エステ、ヨガ、フィットネス、ジム、プール、海水浴、釣り、マリンスポーツ、アドベンチャー）、サービス（レストラン、カフェ、バー、ファストフード、ケータリング、デリバリー、宅配、出前、弁当、ピザ、寿司、ラーメン、中華、韓国、タイ、ベトナム、日本食、洋食、中東、アフリカ、南米、メキシコ、ブラジル、チリ、ペルー、アジア、中国、台湾、香港、シンガポール、マカオ、ハワイ、ニューヨーク、ロサンゼルス、マイアミ、ラスベガス、アムステルダム、アテネ、バルセロナ、ベルリン、ブダペスト、コペンハーゲン、マドリード、マラガ、マンチェスター、パリ、マルタ、モスクワ、プラハ、リスボン、アブジャ、アクラ、アディスアベバ、アスンシオン、アシガバート、アスマラ、アスタナ、アタランタ、アビジャン・アヴィニョ",
+        "chosen_dialogue_summary": "例文1Bは、ゲームや散歩、自然鑑賞、登山を楽しむが、特に難しいゲームをプレイし、健康のために歩き、美しい景色を眺め、一人で山に登るのが好きだ。また、オシャレな家具や小物、可愛い動植物、音楽や絵などを好む。旅行では、国内や海外の様々な場所を訪れ、ホテルや民泊、車や徒歩などで移動する。観るものや体験するものも多岐にわたり、食べ物や飲み物も豊富な選択肢がある。",
+        "rejected_dialogue_summary": "上記の文章から抽出されたキーワードは以下になります。```ゲーム,散策,健康,自然,観賞,季節,一人,インテリア,動物,ペット,運動,芸術,音楽,絵画,建築,文化,歴史,伝,祭り,宿泊,ホテル,旅館,民宿,ゲスト,ハウス,キャンプ,輸送,飛行,電車,新幹線,バス,船,徒歩,レンタ,カー,タクシ,アク,ティ,ビ,ショ,グルメ,温泉,サウ,ナ,マッ,エステ,リラク,ジム,プール,海水,浴,釣,スポ,ト,出,前,弁,当,ピザ,寿司,ラ,メン,中,華,韓,泰,越,日,本,洋,食,東,南,米,国,台,湾,香,広,島,馬,哈,沙,太,極,欧,大,西,北,非,独,加,美,豪,墺,比,瑞,土,露,白,羅,塔,巴,尼,斐,幸,拉,士,党,丹```"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の女性である。-子供の頃からディスニーに頻繁に行っている。-好きなキャラクターはミニーちゃんである。-お土産は子供の為に買うことが多い。",
+        "chosen_dialogue_summary": "50代女性、ディズニー好き、子どものためのお土さん購入、ミニーマウスが好き##構成要素-年齢：50-性別：女性-マイノリティ-自然言語処理における性別の推定は困難であることが知られています。-趣味：ミッキー、シンデレラ城、イッツ・ア・スモール・ワールド、カリブの海賊、ホーンテッドマンション、スペース・マウンテン、ジャングルクルーズ、プーさんのハニーハント、バズ・ライトイヤーのアストロブラスター、モンスターズ・インク“ライド&ゴーシーク！”、グーフィーのペイント&プレイハウス、スターツアーズ：ザ・アドベンチャー・コンティニュー、ベイマックスのハッピーライド、美女と野獣“魔法のものがたり”、アナとエルサのフローズン・シング・アロング、ソアリン：ファンタスティック・フライト、トイ・ストーリー・マニア！、塔の上のラプンツェル、キングダム・トレジャー、ニモ＆フレンズシーライダー、ピクサー・パルアワード、スリンキー・ドッグ・ダッシュ、エンカウンター、ワンマンズドリームⅡ-ザ・マジックリヴォリュージョン-、ビッグバンドビート、レジェンド・オブ・ミシカ、ハロウィーン・ポップンライブ、クリスタル・ウィッシュ・ジャーニー",
+        "rejected_dialogue_summary": "-ディズニーランドのファンである。"
+    },
+    {
+        "all_short_dialogue_summary": "-A:ユーザーに挨拶をし、旅行に関する質問を投げかける-B:旅行に関する情報を提供する-A/B:Bの情報に基づき、Bが行きたがっている場所を推測し、その場所について調査を行う-例:AはBに「どこへ旅行したいか」を尋ねる-この場合、Aは「旅行先」というキーワードに注目し、それに該当する場所（「東京」や「京都」など）を検索することで、適切な回答を導き出すことができる-検索結果から、最も可能性の高い場所を見つけ出し、それをBへ伝える-もしAが複数の候補を提示する場合、それぞれの場所の特徴や魅力についても説明することが望ましい-「東京は日本の首都であり、世界でも有数の大都市である。東京タワー、スカイツリー、浅草寺、皇居など、多くの名所がある。食事やショッピングも充実しているため、幅広い年齢層に人気がある」-同様に、「京都は古都として知られており、歴史的な建造物や文化財が多く残っている。清水寺や金閣寺などの有名な寺院や神社があり、四季折々の自然も楽しめる。和食や抹茶など、日本の伝統的な文化に触れることもできる」",
+        "chosen_dialogue_summary": "Bは旅行が好きで、様々な場所に行きたいと考えている。特に、東京や京都などの大都市や、自然豊かな場所に興味を持っているようだ。Bにとって旅行は、日常から離れてリフレッシュするための手段であり、新しい発見や体験をすることが楽しみなようである。また、グルメや買い物も好きなようで、それらを楽しむためにも旅行を計画している。",
+        "rejected_dialogue_summary": "Bは旅行を楽しみたいと考えている。Bにとって興味深い場所は、東京と京都である。この2つの場所には、様々な観点から見どころが存在する。例えば東京では、現代的なビルや歴所が立ち並び、活気に満ちた街並みが広がる。一方、京都では古き良き時代の雰囲気を感じることができ、美しい寺社や庭園が点在している。また、両都市とも食文化が豊かで、独自のグルメやスイーツを楽しむことが可能である。以上の要素を踏まえると、特に旅行好きのBには東京や京都が適していると言える。これらの都市を訪れることで、新たな発見や体験が得られるだろう。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的はディスニーに行き、スパーゲティーやお土産を買うことである。",
+        "chosen_dialogue_summary": "-ディズニーランドに行って、パスタを食べたり、おみやげを購入したりすることが目標です。",
+        "rejected_dialogue_summary": "-ディズニーランドに行って、パスタを食べたり、おみやげを購入したりするのが目的です。##論文###要約テキストの作成方法####1.生成モデル-2つのモデルを組み合わせる-BERTを用いた文書分類モデル-予測したいラベルが含まれるかどうかを判定する-複数のラベルの組合せも考慮することができる-AとBがどちらも含まれていたらA&Bとする-同様にAとC、BとD、CとE、DとF、EとG、FとH、GとI、HとJ、IとK、JとL、KとM、LとN、MとO、NとP、OとQ、PとR、QとS、RとT、SとU、TとV、UとW、VとX、WとY、XとZ、YとAA、AAとAB、ABとAC、ACとAD、ADとAE、AEとAF、AFとAG、AGとAH、AHとAI、AIとAJ、AJとAK、AKとAL、ALとAM、AMとAN、ANとAO、AOとAP、APとAQ、AQとAR、ARとAS、ASとAT、ATとAU、AUとAV、AVとAW、AWとAX、AXとAY、AYとAZ、AZとBA、BAとBB、BBとBC、BCとBD、BDとBE、BEとBF、BFとBG、BGとBH、BHとBI、BIとBJ、BJとBK、BKとBL、BLとBM、BMとBN、BNとBO、BOとBP、BPとBT、BTとBU、BUとBV、BVとBW、BWとBX、BXとBY、BYとHZ、HZとIA、IAとIB、IBとIC、ICとID、IDとIE、IEとIF、IFとIG、IGとIH、IHとII、IIとIJ、IJとIK、IKとIL、ILとIM、IMとIN、INとIO、IOとIP、IPとIQ"
+    },
+    {
+        "all_short_dialogue_summary": "【質問】Bは何歳ですか?【回答】10代",
+        "chosen_dialogue_summary": "Aさんは、10歳のBさんを連れて旅行に出かけました。Bさんはまだ若いので、たくさんのことを学びたいと思っています。そこで、Aさんと一緒に、Bさんが興味を持っていることについて調べることにしました。まずは、旅行の目的地を決めるために、インターネットで情報収集を始めます。すると、さまざまな情報が見つかりました。その中でも、特に気になったのは、ヨーロッパの国々の文化や歴史についてでした。なぜなら、それらはBさんの好きなことだからです。そして、さらに詳しく調べてみると、フランスのパリやイタリアのローマ、スペインのバルセロナなど、世界的に有名な都市がたくさんあることを知りました。これらの都市には、美しい建築物や美術館、博物館などがあります。また、食事も美味しいと評判です。さらに、音楽やダンス、スポーツなどの文化も盛んです。こうした情報を見て、ますます旅行が楽しみになってきました。そして、いよいよ出発の日を迎えました。",
+        "rejected_dialogue_summary": "##提出フォーマット提出ファイルは，以下のような形で提出して下さい．```{\"id\":1,#要約したい文章のID“summary”:“要約文”,...}```"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が旅行について話している。-旅行先はディスニーであり、過去に一度訪れたことがある。",
+        "chosen_dialogue_summary": "-ディズニー旅行は、50代女性にとっては新鮮な体験である。###解答例-女性は旅行を楽しみにしているが、初めて訪れる場所である。",
+        "rejected_dialogue_summary": "-ディズニーランドに行ったことがあります。"
+    },
+    {
+        "all_short_dialogue_summary": "今回の旅行はディスニーシーを訪れることになりました。目的は主に食事とお土産の購入でした。具体的な目的としてはミキミニのキャラクターと一緒に写真を撮ることと、チーズケーキを買うことでした。またおすすめのスポットとして、タワーオブテラーとシンドバッドの冒険がありました。",
+        "chosen_dialogue_summary": "Bは、ディズニーランドに行くことを目的とした旅行を計画し、ミッキーマウスとミニー・マウスとの写真撮影や、特定の場所での食料品の買い物を予定していました。",
+        "rejected_dialogue_summary": "ディズニーリゾートでミッキーやミニーと記念撮影し、デザートを楽しむのが目的。タワー・オブ・テールやアラビアン・コーストが見どころ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が友人と旅行するために、旅行先を検討している。-旅行先として、東京ディスニーリゾートが候補に挙がっている。-女性は過去に一度、同施設を訪れたことがあるが、その際はアトラクションを中心に楽しんでおり、食事やショッピングはあまり行わなかった。-今回の旅行でも、友人のためにスイーツを購入する予定である。",
+        "chosen_dialogue_summary": "-東京ディズニーランドは、女性にとって懐かしい場所であり、彼女は友達と一緒に訪れることを楽しみにしている。",
+        "rejected_dialogue_summary": "50代女性の友達とディズニーランドへ行くことになったが、以前一度行ったことがあり、その時は乗り物に乗ることがメインだったため、今回は友だちのためにデザートを買いに行こうと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と二人暮らしをしている。旅行先として、以前訪れたことのない場所を選びたいと考えており、家族や友人と過ごす時間を大切にしているため、子どもと一緒に楽しめる施設や、友人が喜ぶようなお土産を購入できる店舗を求めている。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwholiveswithherhusband.Shewantstochooseaplacethatshehasnevervisitedbeforeasatraveldestinationandcherishestimespentwithfamilyandfriends.Therefore,sheislookingforfacilitiesthatcanbeenjoyedwithchildrenandshopswherefriendscanbuysouvenirsthatmakethemhappy.",
+        "rejected_dialogue_summary": "1.旅行先の選択にあたって、Bが重視している点は、以下のようなものである。-既に訪問したことがない地域であること-家族と共有できる思い出を作ることができること2.Bが旅行で楽しみたいと思っていることは、次のとおりである。-子供たちと楽しい時間を持つこと。例えば、動物園や水族館、テーマパークなど、子供たちが喜びそうな場所に行きたいと考えている。また、自然の中で遊んだり、キャンプをしたりすることも検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫はいるが今回の旅行は夫ではなく友人と行く予定である。旅行先は東京ディスニーリゾートを希望している。過去に一度だけ行っているが、その際はアトラクションを中心に楽しんだため、今回は食事を楽しむことを目的としている。友人のお土産としておすすめのものは「チーズケーキ」である。",
+        "chosen_dialogue_summary": "Bさんは友達とディズニーランドに行きたいと思っています。彼女は一度行ったことがありますが、食べ物を楽しみたいと思っているので、今度は違うものを食べたいと考えています。また、彼女の友だちに東京のおみやげをあげるつもりなので、チョコレートがいいと言っています。##解答例Bisa50-year-oldwomanwhowantstogotoTokyoDisneylandwithherfriend.Shehasbeenthereoncebeforeandenjoyedtheattractions,butthistimeshewouldliketofocusonthefood.Asasouvenirforherfriends,sherecommendschocolate.",
+        "rejected_dialogue_summary": "50代女性が友達とディズニーランドに行く。食べ物を楽しみたい。以前行ったときは乗り物に乗った。今度はお菓子を買いたい。"
+    },
+    {
+        "all_short_dialogue_summary": "--まとめ--インスタ映えする写真を撮るために、カフェでコーヒーを飲みながら、東京タワーの夜景を眺めたい。",
+        "chosen_dialogue_summary": "#要約結果##訓練データセット###B>東京タワーで夜の景色を楽しむ#結果の解釈今回の実験では、訓練されたモデルは、テキストの概要をうまく生成することができませんでした。#今後の課題-モデルのハイパーパラメータの調整-トレーニングデータの拡張",
+        "rejected_dialogue_summary": "##論文の概要本論文では、文章の要旨を抽出するタスクに対して、Transformerをベースにしたモデルを提案する。本モデルは、与えられた文章を入力とし、出力としてその文章から抽出した要点となる単語のリストを得ることができる。また、本モデルには、Attentionメカニズムが組み込まれており、文脈を考慮しながら、重要な要素を特定することが可能である。さらに、複数のTransformer層を用いることで、より複雑な文章構造に対しても対応できるようになっている。これらの特徴により、本モデルの精度は従来の手法と比較して大幅に向上しており、自然言語処理分野において、有用なツールとなることが期待される。"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBと旅行について話している。-Bは旅行先を決めかねており、Aは「どこか決まっていますか？」と尋ねる。-その後、Bは夫と一緒に50歳代であることを明かす。-Aが「秋はどこが良いですか」と聞くと、夫妻は秋に箱根本線へ旅行することを決める。-気になる場所として、アン・ノイェという場所を挙げている。-ヨーロッパ風の雰囲気を持つ場所のようだが、詳細は不明である。-実際に調査を行うと、ヨーロピアンガーデンというレストランがあることが判明した。-旅行プランとしては、これをメインに据えることにする。-次に、旅行日程を決定する必要がある。-箱根までの交通手段や宿泊施設の予約なども必要になるだろう。-今回の旅行では、これらの手配は省略する。-もし必要であれば、別途予約することになる。",
+        "chosen_dialogue_summary": "B夫婦は50代で、秋の箱本線への旅行を計画している。旅行の目的地は、特定の場所ではなく、箱元線沿線である。B氏は特に興味を持っている場所は無いが、妻が興奮している場所があるらしい。それが、「アンノイエ」という場所であるが、その場所がどこにあるのかは明らかにされていない。A氏が調べたところ、そこには「ヨロピアングーディン」と呼ばれる場所があり、フランス風庭園が広がっていることが分かった。この場所には、レトロな建物や美しい景色が楽しめるという情報もある。また、近くには温泉もあり、ゆっくりとした時間を過ごすことができる。しかし、具体的な場所や詳細な情報はまだ分かっていないため、さらに詳しく調べてみることにした。",
+        "rejected_dialogue_summary": "B夫婦は50代で、秋の箱本線旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と旅行する予定である。旅行先は箱根本箱に決定した。箱本箱には、Aのオススメのアン・ノイェという場所がある。Bが行きたがっているのはオーガニックな物を扱うお土産屋さんである。##2.実験概要###実験環境####データセット以下のデータセットを使用した。-[https://drive.google.com/file/d/1K5QG6zJ4eQZcLx9P8D1Qqf6K4F9W0lLr/view?usp=sharing](GoogleDrive)####学習済みモデル学習に使用するモデルは以下で構築したものを用いた。```#モデルの定義classModel(nn.Module):def__init__(self):super(Model,self).__init__()self.embedding=nn.Embedding(num_embeddings=10000,embedding_dim=300)#CNNforiinrange(2):self.cnn.append(nn.Sequential(nn.Conv2d(in_channels=1,out_channels=i,kernel_size=(3,3),padding=0,bias=False),#nn.ReLU(),))#予測処理@torch.jit.script_method(jit_type=[torch.Tensor,torch.LongTensor,...],return_type=torch.Tensor)#type:ignore[no-untyped-call]asyncdefforward(self,x,y,*args,**kwargs)->torch.Tensor:x=x.unsqueeze(1)```####教師データ本研究では教師ラベルを手動で作成した。####モデルConvolutionalNeuralNetwork(CNN)を用いてモデルを構成する。####ハイパーパラメータ|Hyperparameter|Value||:---|:----|####トレーニング方法AdamOptimizerを使用してトレインを行った。###評価指標評価にはF1スコアを採用した。本研究で用いるF1スコアは次の式で表される。$$F_1=\\frac{2\\times\\text{Precision}\\cdot\\mathit{Recall}}{\\text",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhoplanstogoonatripwithherhusband.ThedestinationisHakone,whichisrecommendedbyA.Bwantstovisitasouvenirshopthatsellsorganicproducts.",
+        "rejected_dialogue_summary": "Bisa50-year-oldwomanwhoplanstotravelwithherhusband.ThedestinationhasbeendecidedtobeHakone.ThereisanareacalledAn-NoyerecommendedbyA.Bwantstogotoasouvenirshopthatsellsorganicproducts.###実験結果と考察####要約精度の推移図1は、モデルとデータ数を変化させたときのF値を示している。図からわかるように、データ量が増加するにつれて、F値が向上する傾向にあることがわかった。![](./images/fig1.png)####モデル構造の影響図2はモデルにCNNとLSTMをそれぞれ適用した際の結果をまとめたものである。この図より、CNNのほうが高いスコアーを出していることが分かる。よって、Bに最も適したモデルとしてはCNNが適しているといえる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋に箱根本箱へ旅行する予定である。旅行先として、アン・ノイェという場所を提案された。アンはアルファベット表記では「A」となるが、その読み方が分からなかったため、Aを「アン」と発音するのかを確認した。Aはその場所の名前を教えるとともに、その場所について説明を始めた。Bが行きたがっている場所は「何か所かの名称は分からないが」、おそらくオーガニック博物館のような場所だと思われる。理由としては、「文化的行動」をしたいためであると述べた。AはBにそのような場所があることを伝え、その名前はアンネ・フランクの家であることを教えた。Bはこの場所に詳しくはなく、名前の漢字がどのようなものかを尋ねたが、「アン」であるという答えしか得られなかった。そのため、「ア」という文字はどのように書くのかと聞き返した。その後、場所や名前についての説明を受け、旅行プランに組み込まれることになった。",
+        "chosen_dialogue_summary": "箱根旅行を計画中のB夫妻は、秋の紅葉を楽しみたいと考えている。彼らはAからアンのノウハウを紹介され、興味を持った。しかしながら、B自身はアンという言葉の意味を知らず、具体的な場所がどこにあるのかも分かっていない。そこでAが説明し、正確な場所と名称を伝えた。その場所とは、オランダのアムステルダムに存在する「AnneFrankHouse」であった。ここは第二次世界大戦中にユダヤ人の少女が隠れ住んでいた場所であり、その歴史的意義から世界中の人々が訪れる名所となっている。",
+        "rejected_dialogue_summary": "箱根で夫婦旅行を計画している50代女性は、オランダのアムステルダムにあるユダヤ人少女の隠れ家を訪問したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.行先：東京ディスニーリゾート2.アクティビティ：カップルで楽しめるアトラクション3.お土産：ミニーちゃんグッズ",
+        "chosen_dialogue_summary": "```ミッキーマウスの仲間たちが活躍するテーマパークで、恋人と一緒に乗り物やショーを楽しむことができます。かわいいミニーのぬいぐるみやお菓子などのグッツがたくさん売られています。```###解答例````pythonimportspacynlp=spacy.load(\"ja_ginza\")doc=nlp(\"ミキマウズノナカマタチガカツヤクスルテマパクデ、コイビトトイッショニノリモノヤショウヲタノシムコトガデケマス。カワイイミニメノヌイグミヤオカシナドノグツガタクサンウラレテイマスカ。\")print(doc.ents)````",
+        "rejected_dialogue_summary": "A:ディズニーランドB:東京C:ミッキーマウスD:カリフォルニア"
+    },
+    {
+        "all_short_dialogue_summary": "---#2.論文の要旨をまとめなさい##題名Multi-TaskLearningforQuestionAnsweringoverMulti-DomainDialogs##著者ChenghaoYang,NanyunPeng,MingZhou,Wen-tauYih,andBingXiang###概要本論文では，マルチドメインダイアログの質問応答を解くために，Multi-tasklearning(MTL)を用いたアプローチを提案する．本手法は，異なるタスクリソースを共有することによって，それぞれのターゲットのパフォーマンスを向上させる．実験の結果，MTDQAはSQuADよりも優れた性能を示し，OpenSubtitlesはOpenDialより優れていることがわかった．さらに，新しいデータセットであるMultiWOZを使用して，これらの結果をさらに検証した．最後に，ベースラインと比較して，本モデルを最適化するためのさまざまなハイパーパラメータを調査した結果が示されている．###問題の背景マシンコミュニケーションにおいて，ダイナミックなインタラクションは重要な役割を果たす．特定のトピックに焦点を当てた会話は非常に一般的である．しかし，人間と機械の間の多様な対談の場合，システムは複数の話題を処理する必要がある．そのため，複雑なタクソノミーやコンテキストスイッチングが必要になることが多い．このような状況では，大規模なデータを収集することが難しく，学習が困難になる．これに対処するために，我々はmulti-domaindialogs(MDDs)に着目した.MDDには，様々な話者が，多くのトークンで構成される複合的な対象を扱うことが含まれる．また，各話者の意図はユニークであり，その情報は通常，文脈に依存している．したがって，この問題の解決策を見つけることは，自然言語理解の分野にとって重要であると同時に挑戦的な課\nAが「ウ」で始まる生き物を見たことがあるか尋ね、Bは「ない」と答える。その後、Aから「なーし」と返され、さらにAはBに「うみがめ」を見に行くことを提案する。Bもそれに同意する。",
+        "chosen_dialogue_summary": "AisaskingBiftheyhaveeverseenacreaturethatstartswiththeletter\"u\".Brespondsthattheyhaven't.Athensays\"nah\"andsuggeststhatBgoseea\"seaturtle\"withthem.Bagreestothissuggestion.",
+        "rejected_dialogue_summary": "Aの意見に沿う形で、ウミガメを見る行き先を決めている。"
+    },
+    {
+        "all_short_dialogue_summary": "Aは「こんにちは」と挨拶した後、Bが旅行について話すことを確認した。Bはどこかに行きたいか尋ねられると、「うん」と答えた。AはBに「今度どこか旅行に行きませんか？」と聞いた。Bはうなずき、Aの質問に答える準備ができていることを示した。Aが「どこに」と聞き返すと、Bは「うん…」と返事をした。AはBに「今回の旅行先は決まっていますか」と確認を取った。Bは「うん」と答え、「はい」と続けた。彼女は旅行プランを立てるために必要な情報をAに伝えようとしているようだ。Aが「では、その場所について詳しく教えてください」と言うと、Bも「いいですよ」と応じた。彼女はAの要求に応える意思があることを表明している。次に、Aが「どのくらいの期間滞在する予定ですか」と尋ねると、Bも「一週間くらいかな」と返答した。Aはさらに「どのような宿泊施設に泊まりたいですか。ホテル、旅館、民宿、ペンションなど、好みのタイプを教えていただけますか」と問いかけた。Bの回答は次の通りである。「はい、私はホテルが一番好きですね」。彼女の選択は合理的であり、ホテルは快適さと利便性を兼ね備えているため、旅行者にとって最適な選択肢の一つである。続いてAから「ホテルの部屋はシングル、ツイン、トリプルなどから選べます。ご希望をお聞かせください」と尋問があった。Bの返答は以下のとおりである。「私は一人旅ですから、シングルの部屋で十分です。」彼女が一人で旅をすることを選択した理由は不明であるが、彼女自身がその選択に満足していることは明らかである。最後に、Aからは「ご予算はいくらくらいですか」という問いが投げかけられた。これに対してBが返したのは「はい、3万円以内で抑えたいと思います」という\nAはBに対して、海に生息するカメの存在について尋ねる。Bはそのような生き物を見たことがないと返答する。Aは、その生きものを観察することができる施設を紹介し、Bはそれに興味を示す。",
+        "chosen_dialogue_summary": "Bさんは海の生物が大好きで、特に海亀に魅了されていました。ある日、友人のAさんから海で見かけることがあるという話を聞いて、実際に見てみたいと思ったのです。しかし、残念なことにBさんの住む地域には海がなく、近くに水族館もありませんでした。それでも諦めきれず、インターネットで調べてみたところ、遠く離れた場所にある海洋生物保護センターがヒットしました。そこでは、さまざまな種類の海生動物を飼育・展示しており、その中には珍しいウミガメもいるとのことです。早速、センターのホームページを確認すると、入場料は大人1,000円、子供500円とリーズナブルな価格でした。また、年間パスポートも販売されており、複数回訪れることが予想される場合にはお得なチケットであることが分かりました。そして、営業時間は午前9時から午後5時まで、休館日は毎週月曜日と年末年始のみという情報も得ることができました。これらの条件を踏まえて、翌週の土曜日に訪問することを決めました。当日の天気は晴れ、最高気温は25度と絶好の行楽日和となりました。お昼過ぎにセンターに到着すると、大勢の家族連れやカップルで賑わっていました。その中でも、子どもたちが最も興奮していたのは、水槽の中を自由に泳ぎ回る魚やエイ、そして何と言っても巨大なジンベエザメです。その迫力に圧倒されながらも、しばらく見入ってしまいました。一方で、私が目当てとしていたウ",
+        "rejected_dialogue_summary": "Bさんは海の生物であるカワウソの生態について知りたいと考えている。実際にその動物を目撃したことはないが、その存在を信じて疑わない。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が家族と旅行することを希望している。-旅行先は東京である。家族構成は不明だが、子供がいる可能性が高い。子供の年齢は5歳から10歳程度である。\nAさんが、Bさんに質問を投げかけています。Bさんは、Aさんに対して「ない」「うん」「はい」という返事を返しています。そして、最後に「うん」と返答をしています。ここでは、2人の会話の流れが明確に示されており、またBさんがAさんの話を聞いている様子がうかがえます。Aさんは、「お昼は何を食べる？」と聞いています。これに対し、bさんは「何でもいいよ」と答えています。このように、相手の意見を尊重することが大切です。また、aさんはbさんと一緒に食事をすることを提案しています。このような場面では、お互いにコミュニケーションを取りながら、楽しく過ごすことができるでしょう。",
+        "chosen_dialogue_summary": "Bは、東京への家族旅行を計画している50代女性で、子どもが5～10才である。###解答例Bisa50-year-oldwomanwhoisplanningafamilytriptoTokyowithherchildrenaged5to10yearsold.",
+        "rejected_dialogue_summary": "-50代の母親が子供と東京に旅行に行くことを計画している。-子供は幼稚園から小学校低学年までの範囲であると想定される。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性で夫と二人暮らしをしている。旅行先は東京ディスニーリゾートを希望しており、その理由としては過去に家族で訪れた際に楽しく過ごすことができたからである。具体的な行先として、屋内型テーマパークである東京ドームシティアトラクションズを挙げており、同施設内に存在する観覧車に特に関心を寄せている。\nBは水槽で泳ぐ魚や海の生き物を見ることが好きである。特にお気に入りなのは、イソギンチャク、ウツボ、タツノオトシゴ、クラゲ、ヒトデ、ナマコ、カニ、サメ、クジラ、イルカ、エイ、ペンギン、ラッコ、アザラシ、オットセイ、アシカ、アメリカンアリゲーター、アマゾンマナティー、ホッキョクグマ、シロクマである。またBのお気に入りの動物園は東京ズーネットであり、ここで見ることができるのはアフリカゾウ、キリン、ライオン、トラ、アムールヒョウ、マレーバク、アミメニシキヘビ、フラミンゴ、マンドリル、ミーアキャット、レッサーパンダ、ツシマヤマネコである。",
+        "chosen_dialogue_summary": "東京に住む50代のBさんは、夫婦でディズニーランドに行きたいと考えている。理由は、以前家族旅行で行った際、楽しかったからだ。Bさんの好きな水族館は「海遊館」で、見たい魚はアジやイワシなどの小さな魚から、マンタやジンベイザメなどの大きな魚まで幅広い。また、Bさんのおすすめのアクティビティは、「水中ウォーキング」や「魚の餌やり体験」などがある。",
+        "rejected_dialogue_summary": "東京に住む50代女性は、ディズニーランドと水族館が大好きだ。彼女は家族と一緒に行ったことがあり、楽しかった思い出がたくさんある。東京には東京タワーやスカイツリーなどの有名な建物もあるが、彼女が特に好きなのは東京湾の海岸沿いにあるお台場エリア。ここには、自由の女神像やレインボーブリッジなどがあり、夜景がとてもきれいだという。"
+    },
+    {
+        "all_short_dialogue_summary": "-10代前半の女の子であること。-趣味がゲームであり、自宅でよくゲームをしていること。-散歩をすることが好きであり、その際に姿を気にして歩いたり健康維持を目的としていること。また、その時期に応じて季節を感じられる場所を選んでいること(例:春の時点で近隣に咲いている花を観賞する)。また、山登りを好むと発言している。-自宅に犬がいるわけではないものの、犬と散策することを楽しく思っていること。その一方で一人で山に入ることに対して不安を抱えている様子がうかがえる。\n##Howtorun```python3main.py```",
+        "chosen_dialogue_summary": "-愛犬家である。山に登ることを好んでいるが、一人で行くことに不安がある。",
+        "rejected_dialogue_summary": "Bはゲームが好きで、家で遊ぶことが多い。歩くことが好きなので、健康のために歩いている。また、春には近くの花を見に行く。山に登るのが好きだが、一人で行くのは不安だ。犬を連れて歩くのも好きだ。##実行結果```ThesummaryofBis:Blikestoplaygamesathome.Shelikeswalkingandwalksforhealth.Inspring,shegoestoseetheflowersnearby.Helikesclimbingmountains,butheisworriedaboutgoingalone.Ialsolikewalkingwithadog.```"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは50歳の女性である。-旅行の目的は夫と共に楽しむことであり、旅行先は東京である。旅行日程は2日間であると推測される。",
+        "chosen_dialogue_summary": "-夫婦で東京を旅行する。##実行方法###1.必要なパッケージのインストール```$pipinstall-rrequirements.txt$python-mspacydownloaden_core_web_lg```##2.テキストの入力-要約したい文章をinput.txtに書き込む###出力結果実行コマンドを打ち込んだディレクトリ内にoutput.txtが生成される。",
+        "rejected_dialogue_summary": "-50代の夫婦が東京旅行を楽しんだ。-"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と二人暮らしをしている。旅行先は東京ディスニーリゾートを希望しており、その中でも特にお気に入りのキャラクターであるミニーちゃんに会える場所を選びたいと述べている。また、お土産としてミキミニのぬいぐるみを購入する予定である。B自身は旅行が大好きだが、運動はあまり好きではないため、できるだけ歩かなくて済むような旅行プランを立てることを希望している。",
+        "chosen_dialogue_summary": "---##論文-https://www.aclweb.org/anthology/2020.emnlp-main.106/##コードhttps://github.com/kyunghyuncho/TextSummarization-PyTorch##要約結果###B```Bisa50-year-oldwomanwholiveswithherhusband.ShewantstogotoTokyoDisneyResortandmeetherfavoritecharacter,Minnie,inparticular.HerplanistobuyastuffedanimalofMiki-Miniasasouvenir.Blovestraveling,butshedoesn'tlikeexercising,soshehopestoplanatripthatrequiresaslittlewalkingaspossible.```",
+        "rejected_dialogue_summary": "Bさんはミッキーマウスのガールフレンド、ミニメイが好きな50代女性です。彼女はディズニーランドに行くのが好きですが、歩くのは好きではありません。なので、ゆっくり歩いても楽しめるような場所に行きたいと思っています。"
+    },
+    {
+        "all_short_dialogue_summary": "【参考文献】1.https://www.jstage.jst.go.jp/article/jssj/64/1/62/_pdf/-char/ja2.http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.\n-子供の好き嫌いを聞く-すしは好き-魚介類は好物-いくら、たこ、いか-プリプリした食感が良い-回転ずしがおすすめ-お店の名前は「回転寿し活」-ディズニーで遊んだ後、夕食はすしだけでなく、スイーツも食べてほしい-好きなもの-クッキーやマカロン-マカロンの好み-バニラ味-フランボワーズ味がNG-ソフトクリームもOK-アイスやシャーベットはNG",
+        "chosen_dialogue_summary": "Bは、子供が好む食材として、寿司、特にイクラ、タコ、イカを挙げた。さらに、好ましくない食べ物として魚の切り身を指摘した。また、Bの子供はディスニーランドのアトラクションを楽しむ傾向があり、食事の際にはスウィーツを好んで食べる。具体的には、バナナ味のマドレーヌが好きで、チョコレート味は苦手だという。",
+        "rejected_dialogue_summary": "「すしの好感度が高く、特にいくらのような魚の卵や、タコやイカのような歯ごたえのあるものを好む。また、子供向けの店舗では、ディスニーランドでの楽しい思い出とともに、甘いデザートも楽しみたいと考えている。」"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋に箱根本箱へ旅行する予定である。Bが箱本箱で訪れたい場所は「アンのミュージアム」という場所であり、この場所にはオーガンルームがある。Bは夫の誕生日が近いため、この旅行で夫にプレゼントを渡すつもりである。\nBは甘党である。好みの味としては、マロングラッセ、クレープ、アイスクリームなどを挙げた。食べたことがあるものとして、かき氷、たこ焼き、回転ずし、ラーメン、うなぎ、天ぷら、串揚げ、イタリアン、中華料理、ハンバーガーなどがある。Bのお気に入りの場所は渋谷、東京タワー、スカイツリー、浅草、代官山、原宿、表参道などである。",
+        "chosen_dialogue_summary": "Bと夫は、秋の箱根旅行を計画している。彼女は、「アン・オブ・グリーン・ゲイブルズ」にちなんで名づけられた「AnneofGreenGablesMuseum」を訪れることを楽しみにしている。この施設には、オルガンを備えた礼拝堂がある。この旅行はB夫婦の結婚記念日を祝うものでもあるため、特別な贈り物を用意している。甘いものが大好きで、好きな味はマロン・グラッサージュ、クラッペ、クリーミーなものだという。過去に食べて美味しかったものは、あんみつ、わらびもち、抹茶、チョコレート、ケーキ、パフェ、シュークリーム、ドーナツ、プリン、ヨーグルト、フルーツ、サラダ、寿司、刺身、焼肉、カレー、スパゲティ、ピザ、餃子、肉まん、パン、コーヒー、紅茶、お酒、ソフトドリンク、ジュース、ビール、ワイン、ウイスキー、シャンパンなどだ。",
+        "rejected_dialogue_summary": "箱根の秋の旅行を計画中の50代女性B。訪問したいのは「Anne'sMuseum」で、オルガンホールがあります。近い夫への誓いの贈り物を用意しています。甘いものが好きで、マロン・グレース、クリーミー、などが好きな味です。過去に食べていたものは、シャーベット、タコヤキ、ローテーション・スシ、ヌードル、ウナギ、テンプラ、フライド・チキンなどです。お気に入りスポットはシブヤ、トウキョウ・タワーやスカイ・ツリー、アサクサ、ダイカンヤマ、はらじゅく、おもてサンドウなど。"
+    },
+    {
+        "all_short_dialogue_summary": "--Solution--Bは旅行先としてディスニーリゾートを希望している。具体的な場所としてはランド、シーを挙げており、ランドではカチュアルダイングシェフゟミックを利用し、お土産はミキミニグフトショップで購入する予定である。シーではアクアスフィア、レインボーブリッジを訪れ、海底2万マイル、シンドバッドストーリーブックヴォールト、センター・オブ・ジ・アース、タートル・トークを楽しむ。",
+        "chosen_dialogue_summary": "```ディズニーランドとシーに行き、ミッキーとミニーに会う。```##要約の難易度###1.要素抽出要素の数は少ないため、抽出しやすい。|要約元文||||:---|:--:|:-:|||||||ディズニー|0|0||||0||||||リゾー|1|1||||||解析結果||||:---:|:--:|:-:|||||||||**抽出した要素**|**解釈**||-|-||-|-|-|###(2)類似度計算####2.1対象単語の出現頻度の比較対象の単位は各文の最も重要なキーワードである「ディ」「リ」「ゾ」「ー」「ト」「ラ」「ン」「ド」「シ」「イ」「カ」「チュ」「アル」「ダ」「イン」「グ」「シェ」「フ」「ジ」「ミ」「ク」「お」「土」「産」「み」「き」「ム」「ニ」「海」「底」「万」「マ」「イル」「タ」「ート」「ル」「ヴ」「オ」「ブ」「レ」「ンジ」「ア」「ス」「フィ」「エ」「あ」「る」「楽」「し」「む」である。以下に、対照語を比較する。#####**比較結果**||デ|リ|ゾ|ー|ト|ラ|ン|ド|シ|イ|カ|チュ|アル|ダ|イン|グ|シェ|フ|ジ|ミ|ク|お|土|産|み|き|ム|ニ|海|底|万|マ|イル|タ|ート|ル|ヴ|オ|ブ|レ|ンジ|ア|ス|フィ|エ|あ|る|楽|し|む|類似度||--|---|----|-----|------|-------|--------|---------|----------|-----------|------------|-------------|--------------|---------------|----------------|--------------------|----------------------------|--------------------------------|------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------|",
+        "rejected_dialogue_summary": "ディズニーシーでアトラクションを楽しみ、東京の景色を眺める。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を希望している。-旅行の目的は温泉と自然を満喫することである。--例題2--A：こんにちは、旅行のお手伝いをさせていただく佐藤と申します。本日のご予定をお伺いできますかB：はい、私は明日から3泊4日で沖縄に行こうと考えております。今回は友人と2名で行こうと思っているんですが、一緒に宿泊するホテルはまだ決まっておりません。できれば綺麗なホテルに泊まりたいと思いますので、おすすめのホテルを教えてください。また、今回の旅行ではシュノーケリングを楽しもうとおもっているので、そのようなマリンスポーツが楽しめるホテルが良いです。あと、友人は子どもがいるので子連れでも安心して泊まれるようなホテルだと嬉しいとのことでした。ホテルの候補としては「カヌチャベイホテル＆ヴィラズ」と「ザ・テラスクラブアットブセナ」の2つが挙がっていますが、この2つのホテルについて詳しく教えていだだければと思い連絡をしました。以上のことを踏まえて、お勧めのお宿をご提案していただけますと幸いでございます。ご検討の程、宜しく御願いいたします！A：「カプセルホテル」や「ゲストハウス」などの簡易宿所はございませんか。また、「カラオケボックス」はどうでしょう。友人の子供は何歳ですか。子供が小さい場合は、ホテル内にプールやキッズルームがあると喜ばれるかと思われます。「カップル」向けの施設はありませんでしたか。「チェックアウト」時刻を延長することは可能ですか。「クレジットカード」での支払いに対応していますか。お部屋の「クーラー」の効き具合はいかがですか。また、お部屋に「コーヒーメーカー」が備え付けられていますか。それとも「コンビニエンスストア」で購入するのでしょう。「コンセント」の数はどのくらいですか。それから、インターネット接続は有料ですか",
+        "chosen_dialogue_summary": "-A:Hello,mynameisSatoandIamheretohelpyouwithyourtravelplans.Canyoutellmeaboutyourplansfortoday?B:Yes,IwouldliketogotoOkinawafor3nightsand4daysfromtomorrow.I'mthinkingofgoingwithafriend,butIhaven'tdecidedonahoteltostayintogetheryet.SinceIwantanicehotel,canyourecommendone?Ialsowanttoenjoysnorkelingduringthistrip,soIhopeyoucanrecommendhotelswhereIcanenjoymarinesports.Also,sincemyfriendhasachild,itwouldbegreatifthehotelwassafeforchildren.ThetwohotelsIhaveinmindare\"KanuchaBayHotel&Villas\"and\"TheTerraceClubatBiseina,\"soifyoucouldgivememoreinformationaboutthesetwo,thatwouldhelp.Thankyouinadvanceforyourconsideration.Sincerely,B.A.:Istherea\"capsulehotel\"or\"guesthouse\"thatyou'relookingfor?Whatabout\"karaokeboxes\"?Howoldisyourfriend'schild?Ifthechildissmall,havingapoolorkid'sroomintheresortwillmakethemhappy.Didyoufindany\"couple\"facilities?Isitpossibletoextendthe\"check-out\"time?Doyouaccept\"creditcard\"payments?Howistheairconditioninginyourroom?Arethere\"coffeemakers\"ineachroom,ordoyouhavetobuythemataconveniencestore?Andhowmany\"outlets\"arethere?Inaddition,isinternetaccesscharged?",
+        "rejected_dialogue_summary": "男性の友達と旅行に行く。目的地は自然が豊かで、子育てに適した場所を探している。【正解例】「男性と一緒に自然豊かな場所で旅行を楽しみたい」"
+    },
+    {
+        "all_short_dialogue_summary": "-どこか旅行に行こうと考えており、候補地としてディスニーを挙げている。-以前、パーク内でダンポというアトラクションを楽しんでおり、今回も乗ることを希望している。また、お土産として、友人へのチョイスを考えたいとのこと。-趣味としてスパッゲティを好み、旅行先でも食べられると嬉しいとの意見を述べた。-お買物に関しては友人の好物であるチーズケーキを購入することを検討している。\n-子供と一緒に遊びに行く旅行であること-ディズニーに行ったことがあることから、子供がいることが推測される。-好きなものは甘くて柔らかいものである-好き嫌いがはっきりしていること、甘さを好む傾向があることなどが分かる。",
+        "chosen_dialogue_summary": "AはBと旅行を計画しており、Bは以前パレードを楽しみ、今度も同じものに乗りたいと考えている。また、買い物では友達のためにスイーツを選ぶ予定だ。子供を連れて行くため、子ども向けのアクティビティも考慮する必要がある。",
+        "rejected_dialogue_summary": "子供連れの旅行で、過去にダンボに乗ったことのあるBさんは、スイーツ好きでお友達へのおみやげにチースケークを買うことを考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人で来店した。-旅行の相手を探している。-相手は旅行に詳しくないため、旅行先や日程を決める手助けが必要である。-また、相手のニーズに合わせて旅行プランを提案することが求められる。\n-観光スポットは「さかなクン」がいる「マクセルアクアパーク品川」と「新江ノ島水槽館」-好きな料理は「お好み焼き」「たこやき」などの粉物料理と「ラーメン」「うどん」「そば」など麺類。-たまに「ピザ」「パスタ」「ハンバーガー」「サンドウィッチ」「ホットドッグ」「カレーライス」「オムライス」「から揚げ」「フライドポテト」「ポップコーン」「アイスクリーム」「チキン南蛮」「トンカツ」「コロッケ」「天ぷら」「シュウマイ」「餃子」「焼売」「春巻」「エビチリ」「麻婆豆腐」「回鍋肉」「酢豚」「八宝菜」「中華丼」「チャーハン」",
+        "chosen_dialogue_summary": "A:50代女性の旅行相談B:観光、食事、魚、水族館、粉モノ、麵類、ファストフード、スイーツ、中国料理C:旅行先選定、日時調整、料理嗜好の把握、適切な旅行計画の立案D:Aの要望に応じた旅行を実現するために、Bに関する情報収集と分析を行う必要がある。E:Bの好物や興味を考慮し、Aの希望に沿った旅行地や時期を選ぶことが重要である。F:日程や交通手段、宿泊先の手配も必要となる。G:料理の好き嫌いやアレルギーの確認も忘れてはならない。H:アクティビティや体験プログラムも検討する価値がある。",
+        "rejected_dialogue_summary": "-50歳の独身女性は、パートナーと一緒に旅行に行きたいと考えている。彼女の興味は水族館と粉もの料理である。"
+    },
+    {
+        "all_short_dialogue_summary": "--let'stryagain!--A：こんにちは。旅行についてお伺いしたいのですが、お願いできますかB：はい、大丈夫ですよ。さて、旅行先はどこが良いですかねぇ？（AはBに対して「旅行」について質問しているが、「旅行」という単語が入っていないため、Bは理解できていない様子である。）A：「旅行」の話をしたいのだけど、分かるかなぁ？旅行って何のことかわかる？分からない？じゃぁ、「旅」って言ったらどうかな。「旅」とか「旅に出る」とかって言葉は聞いたことがあるかな。（このように、言葉の言い換えを行うことで、相手の理解度を高めることができる）B：「旅」のほうが分かりやすいかもしれないですねぇ。旅ってよく聞く言葉ですし。(Aは言葉を変えることでBに理解してもらうことができた。)A；そうそう、旅の話だよ。どこかへ出かけることだよ。(BはAが言っていることを理解したようだ)B；旅と旅行は違う言葉なんでしたっけ？(Aの言葉がきっかけでBが疑問に思ったようである。このように相手に疑念を抱かせてしまうと、会話がスムーズに進まなくなる可能性があるため注意が必要である。このような場合には、適切なタイミングで説明を加えることが大切である。また、このような場面では「～と言うのは～という意味だよ」と説明することが効果的である。これにより、聞き手が理解しやすくなるだけでなく、説明者もより明確な説明ができるようになる。例：旅行と旅は同じ意味で使われることが多いが、本来は異なる意味を持つ言葉である。本来の意味は次の通りである。「旅行：特定の目的を持って旅行すること」「旅：生活の拠点を離れて他の場所に滞在し、その場所での生活を楽しむこと」この違いを理解しておくことが、より深いコミュニケーションにつながる。また、「～は～とは違って～である」など、対比を用いた説明も有効な手段となる。このような説明方法は、「違い」を強調することで聞\nAはBに「ディスニーシー」に行くことを提案する。Bはそれを承諾する。その後、Aが「夕食」について尋ねると、Bが「おすし」が良いと答える。Aは回転ずし「活」という店の名前を挙げて、そこで食事をすることを勧める。Bはこれに同意する。",
+        "chosen_dialogue_summary": "A:Iwanttoaskyouabouttravel.Canyouhelpme?B:Sure,noproblem.So,wherewouldyouliketogo?(AisaskingBabout\"travel,\"butsincethewordisnotincluded,Bdoesnotunderstand.)A:Doyouknowwhat\"旅行\"means?Youdon'tknow?Then,howaboutwesay\"旅\"?Haveyoueverheardofthephrase\"journey\"or\"goingonatrip\"?(Bychangingthewords,AisabletomakeBunderstandbetter.)B:\"旅\"iseasiertounderstand,Ithink.Ioftenhearthatword.(BunderstandsA'swords.)A;Yeah,that'sright,it'saboutgoingsomewhere.B;Isthereadifferencebetweentravelandjourney?A;Yes,theyaredifferentwords.Travelmeansgoingtoacertainplaceforaspecificpurpose,whilejourneymeansstayinginanotherplaceandenjoyingthelifethere.Understandingthisdifferencecanleadtodeepercommunication.Anothereffectivewaytoexplainistousecontrast,suchas\"～isdifferentfrom～because～.\"Thismethodemphasizesthedifferences,makingiteasierforthelistenertograsptheconcept.Forexample:\"Travel:Goingsomewherewithaparticularpurpose.Journey:Stayinginadifferentplacetoenjoythelocallife.\"Byunderstandingthedifference,youcanhaveamoreprofoundconversation.Inaddition,usingcontrastinyourexplanationcanbeaneffectivemethod.Thisapproachemphasizesdifferencesandmakesiteasyforlistenerstocomprehendtheconcepts.Example:Travel:Visitingadestinationforspecificpurposes.Unliketravel,ajourneyisaboutstayingsomewherenewandexperiencingthecultureandlifestyleofthatplace.Byemphasizingthecontrastbetweenthesetwoconcepts,listenerscanbetterunderstandthemeaningofeachterm.",
+        "rejected_dialogue_summary": "Bとディズニーランドへ行く予定を立てているA。夕飯はお寿司が食べたいというB。活という店名を教えてもらい、行ってみることにした。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が旅行先としてディスニーを希望している。-彼女の家族構成は不明だが、子どもがいる可能性が高い。理由として、彼女の発言から、子供にプレゼントを買うことを示唆しているからである。",
+        "chosen_dialogue_summary": "-ディズニーランドに行きたいという50代の母親は、家族と一緒に旅行に行く予定である。",
+        "rejected_dialogue_summary": "-ディズニーランドは、家族連れに人気のあるテーマパークである。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東京ディスニーリゾートである。-食事場所はカフェ・オーリンズである。-お土産を買う場所として、エンパイア・グリーティングとエンポーリアムがある。\n-50歳くらいの女性である。-子供の頃から、動物園に行くことが好きだった。-特に、ペンギンやカバ、ゾウ、キリン、ライオン、トラ、パンダ、フラミンゴ、カンガルーが大好きである。-大人になってからは、熱帯魚やウツボ、サメ、タツノオトシゴなど、海の生き物を見ることも好きになった。-動物や魚を見るだけでなく、実際に触れ合うことも大切だと考えており、たとえば、イルカやアザラシと一緒に泳いだり、アシカのショーを見たり、ウサギやモルモットを抱っこしたりする機会を積極的に設けている。",
+        "chosen_dialogue_summary": "-彼女は、ディズニーランドのカリブの海賊やホーンテッドマンションなどのアトラクションを楽しんだ。また、プーさんのハニーハントや白雪姫と七人のこびと、ピーターパン空の旅などの乗り物も体験した。さらに、ジャングルクルーズやイッツ・ア・スモールワールド、ビッグサンダーマウンテン、スペースマウント、モンスターズ・インク・ライド＆ゴーシーク！、バズ・ライトイヤーのアストロブラスター、ミッキーのフィルハーマジック、美女と野獣“魔法のものがたり”、ベイマックスのハッピーライド、ソアリン：ファンタスティック・フライト、ニモ＆フレンズシーライダー、塔の上のラプンツェル、シンデレラ城ミステリーツアーなどのショーやパレードも鑑賞した。",
+        "rejected_dialogue_summary": "私は、ディズニーランドで、子供時代から大好きな動植物とふれあい、楽しい時間を過ごしました。"
+    },
+    {
+        "all_short_dialogue_summary": "--Conclusion--Fromthedialoguehistory,wecansummarizeB'spreferencesandhabitsrelatedtotourism.Bisanindoorpersonwhoenjoysplayingvideogames.Healsolikestakingwalksandpaysattentiontohisposturewhilewalking,aimingtoimprovehishealth.Additionally,helikescherryblossomsandautumnleaves,andheisinterestedinclimbingmountains,althoughhedoesnothavethenecessaryequipmentorphysicalstrengthtodoso.Intermsoftraveldestinations,BwouldliketogotoHakone,apopulartouristspotinJapan,wherehecanvisittheAnnoyeMuseumofOrchestralMusic.Thismuseumisaplacewherevisitorscanexperiencethebeautyoforchestralmusicinauniquesetting.Themuseumoffersavarietyofexperiences,suchaslisteningtoliveperformancesandparticipatinginhands-onworkshops.Visitorscanalsopurchasesouvenirsfromthemuseum'sgiftshop,whichfeaturesawiderangeofitemsrelated\n--Example3--A：今日の予定を教えて下さいB：はじめての海外旅行でドイツに行くので色々と調べています。ヨーロッパは初めてで英語もあまり話せないので不安です。あと、お土産は何を買ったらいいのかもわからなくて困っています。あなたのオススメの買い物スポットや、おすすめの食べものなども教えていただけると嬉しいのですがお願いできますか？また、現地で困ったことがあったら助けてほしいのでその時は連絡します。夜遅くなっても構いませんので。A：了解しました。B：では、明日出発するのでそれまでに返事が欲しいんですが、お願いしてもいいですか？返信は明日の午前中までにお願いしたいのですが可能ですかA:はい、大丈夫ですよB:では、あなたのお勧めのお店や、レストランなどが分かると助かりますのでよければおしえてください。もしあなたが行ってよかった場所などがあったらぜひお聞かせ願いたいのです。お願いできると幸いなのですが。A:はい、私の知っている限りの情報を提供させて頂きたく思いますB:それで結構ですので、どうぞお忙しいところ申し訳ございませんでした。A：お気になさらずB：では、私が今までに行った旅行先の中で一番印象に残っている場所はイタリアのフィレンツェでした。ここはとても綺麗な街並みが特徴的で、私はここで美味しいパスタとワインを堪能しました。次に、フランスのパリも素晴らしい街で、とても洗練された雰囲気がありました。最後に、アメリカのニューヨークも大変美しく、自由の女神やエンパイアステートビルなど、多くの名所があり、感動しました。これらの場所を訪れる際には、是非ともあなたも一緒に訪れてみてはいかがですか。以上が私の知る範囲での情報となりますA:ありがとうござます",
+        "chosen_dialogue_summary": "Bisanindoorpersonwhoenjoysplayingvideogames.Healsolikestakingwalksandpaysattentiontohisposturewhilewalking,aimingtoimprovehishealth.Additionally,helikescherryblossomsandautumnleaves,andheisinterestedinclimbingmountains,althoughhedoesnothavethenecessaryequipmentorphysicalstrengthtodoso.Intermsoftraveldestinations,BwouldliketogotoHakoneinJapan,apopulartouristspot,wherehecanvisittheAnnoyedMuseumofOrchestraMusic.Thismuseumisaplacewherevisitorscanexperiencethebeautyoforchestralmusicinauniquesetting.Themuseumoffersavarietyofexperiences,suchaslisteningtoliveperformancesandparticipatinginhands-onworkshops.Visitorscanalsopurchasesouvinirsfromthemuseum'sgiftshop,whichfeaturesawiderangeofitemsrelatedtotheorchestra.",
+        "rejected_dialogue_summary": "Bは屋内で過ごすのが好きで、ビデオゲームをプレイするのを楽しんでいます。また、散歩を好み、歩くときには姿勢に気を配り、健康を向上させることを目指しています。さらに、桜や紅葉が好きであり、山登りにも興味がありますが、必要な装備や体力がないため実現できていません。旅行の目的地としては、日本の箱根が理想的であり、アンノイ・オーケストラ・ミュージアムがあることで知られています。この博物館は、管弦楽の美しさをユニークな環境で体験できる場所です。訪問者は生演奏を聴くことができ、手作りのワークショップに参加することもできます。博物"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋に行う旅行について話している。彼女は旅行先として、以前ディスニーリゾートに訪れたことがあるため、再度訪れることを提案した。具体的なプランは以下の通りである。1.デイズニーシーに到着する2.ミラコスタホテルにチェックイン3.カフェ・ポルトフィーノでランチ4.アクアスフィアでショッピング5.ハンガーステージで観劇6.シンドバッド・ストーリーブック・ヴォヤッジでアトラクションを楽しむ7.ヴェネツィアン・ゴンドラで夜景を眺める8.キャラクターグリーティングで記念撮影9.ホテルに宿泊10.朝食をとる11.エレクトリックレールウェイで移動12.マーメイドラグーンシアターでミュージカルを観賞13.タワー・オブ・テラーでスリルを味わう14.セイリングデイ・ブッフェで昼食15.インディ・ジョーンズ・アドベンチャー：クリスタルスカルの魔宮で冒険16.ソアリン：ファンタスティックフライトで空を飛ぶ17.メディテレーニアンハーバーで花火を見る18.帰宅\n-好きなもの-インスタントラーメン-チャルメラ-辛子高菜を入れて食べると美味しい-焼きそばにすると更に良い-たまごも入れると更によい-味の濃さを調節する-塩分の摂り過ぎに注意-野菜も一緒に取る-ビタミン不足に気をつける-栄養バランスを考える-健康的な食生活を心がける",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhoistalkingtoherhusbandaboutatriptheywilltakeinthefall.ShesuggestsvisitingDisneylandagainbecauseshehasbeentherebeforeandenjoyedit.Theplanisasfollows:1)ArriveatDisneyland2)CheckintotheMiracostaHotel3)HavelunchatCafePortofino4)ShopatAquaSphere5)WatchashowatHangarStage6)EnjoyanattractionatSindbadStorybookVoyage7)LookatthenightviewfromtheVenetianGondola8)TakeacommemorativephotoatCharacterGreeting9)Stayatahotel10)Eatbreakfast11)MovebyElectricRailway12)SeeamusicalatMermaidLagoonTheater13)ExperiencethrillatTowerofTerror14)LunchatSealingDayBuffet15)AdventureatIndianaJonesAdventure:CrystalSkullTemple16)FlythroughtheairatSoarin:FantasticFlight17)ViewfireworksatMediterraneanHarbor18)Returnhome",
+        "rejected_dialogue_summary": "Bさんはディズニーが大好きで、シンデレラ城の前で写真を撮ったり、ミッキーやミニーと会話をしたりするのが好きです。"
+    }
+]

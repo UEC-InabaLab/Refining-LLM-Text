@@ -1,0 +1,6234 @@
+[
+    {
+        "annotation": [
+            {
+                "segment": "こんにちは、",
+                "query": null,
+                "tag": "InitGreeting",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "よろしくお願いします。",
+                "query": null,
+                "tag": "InitGreeting",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:03.91",
+        "speaker": "operator",
+        "starttime": "00:01.98",
+        "utterance": "こんにちは、よろしくお願いします。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "よろしくお願いします。",
+                "query": null,
+                "tag": "ReturnGreeting",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:05.85",
+        "speaker": "customer",
+        "starttime": "00:03.95",
+        "utterance": "よろしくお願いします。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ではすみません、早速なんですけど、",
+                "query": null,
+                "tag": "Apology",
+                "specific_tag": "DirectionQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "場所をお伺いしてもいいですか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "DirectionQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:15.99",
+        "speaker": "operator",
+        "starttime": "00:07.23",
+        "utterance": "ではすみません、早速なんですけど、えー、場所をお伺いしてもいいですか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "場所は、",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ぅ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "場所は東京？で？",
+                "query": {
+                    "方面": "関東",
+                    "県": "東京都"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:21.83",
+        "speaker": "customer",
+        "starttime": "00:17.12",
+        "utterance": "あ、場所は、ぅ、場所は東京？で？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "東京ですね。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:22.51",
+        "speaker": "operator",
+        "starttime": "00:20.81",
+        "utterance": "はい。東京ですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "東京で何をするとかお決まりでしょうか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:29.29",
+        "speaker": "operator",
+        "starttime": "00:24.55",
+        "utterance": "東京で何をするとかお決まりでしょうか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "んー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "買い物？",
+                "query": {
+                    "大ジャンル": "買う"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:32.23",
+        "speaker": "customer",
+        "starttime": "00:30.44",
+        "utterance": "んー、買い物？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お買い物、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えーっと。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:36.48",
+        "speaker": "operator",
+        "starttime": "00:33.49",
+        "utterance": "お買い物、えーっと。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "何か買うもの具体的にお決まりですか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:48.78",
+        "speaker": "operator",
+        "starttime": "00:45.38",
+        "utterance": "何か買うもの具体的にお決まりですか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "えーんの、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "バッグとか、",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "あとはたっ、お菓子とか。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "00:58.85",
+        "speaker": "customer",
+        "starttime": "00:50.02",
+        "utterance": "えーんの、バッグとか、あとはたっ、お菓子とか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お菓子、じゃあ特に<>とかですかね、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "んと、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "そしたら",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えーんと。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:08.23",
+        "speaker": "operator",
+        "starttime": "00:58.92",
+        "utterance": "お菓子、じゃあ特に<>とかですかね、んと、そしたらえーんと。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ではまず最初に出てきたのがKITTEという場所になります。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010513"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "01:19.00",
+        "speaker": "operator",
+        "starttime": "01:17.42",
+        "utterance": "ではまず最初に出てきたのがKITTEという場所になります。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:20.79",
+        "speaker": "customer",
+        "starttime": "01:19.59",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "内容としてはこんな形ですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:26.32",
+        "speaker": "operator",
+        "starttime": "01:24.11",
+        "utterance": "内容としてはこんな形ですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:30.03",
+        "speaker": "customer",
+        "starttime": "01:29.62",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ほ、古い東京中央用便局舎の一部を保存、再生して建築、建設された商業施設、となってます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010513"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "01:45.56",
+        "speaker": "operator",
+        "starttime": "01:30.13",
+        "utterance": "ほ、古い東京中央用便局舎の一部を保存、再生して建築、建設された商業施設、となってます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:43.66",
+        "speaker": "customer",
+        "starttime": "01:43.24",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "じゃあ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ちょっとまっ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "なっ、中身がわからないので、具体的に書いてないので、他も見ますか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:57.59",
+        "speaker": "operator",
+        "starttime": "01:47.73",
+        "utterance": "じゃあ、ちょっとまっ、なっ、中身がわからないので、具体的に書いてないので、他も見ますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "01:58.75",
+        "speaker": "customer",
+        "starttime": "01:58.12",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "次がこちらですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OnScreenSuggest",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:06.74",
+        "speaker": "operator",
+        "starttime": "02:05.49",
+        "utterance": "次がこちらですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いかがでしょう？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "OnScreenSuggest",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:14.24",
+        "speaker": "operator",
+        "starttime": "02:13.52",
+        "utterance": "いかがでしょう？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "見え、見えますか？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "OnScreenSuggest",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:16.31",
+        "speaker": "operator",
+        "starttime": "02:14.92",
+        "utterance": "見え、見えますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:17.18",
+        "speaker": "customer",
+        "starttime": "02:16.79",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "新丸、新、丸ビル？",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            },
+            {
+                "segment": "新丸ビル。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "02:22.61",
+        "speaker": "operator",
+        "starttime": "02:17.89",
+        "utterance": "新丸、新、丸ビル？新丸ビル。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらがいろんな店舗が150個ほどあるようですね、お菓子。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "02:37.03",
+        "speaker": "operator",
+        "starttime": "02:27.75",
+        "utterance": "こちらがいろんな店舗が150個ほどあるようですね、お菓子。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ここ、いってみたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "02:37.97",
+        "speaker": "customer",
+        "starttime": "02:36.95",
+        "utterance": "ここ、いってみたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お菓子、ちなみに行かれ、行ってみますか？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:41.25",
+        "speaker": "operator",
+        "starttime": "02:37.98",
+        "utterance": "お菓子、ちなみに行かれ、行ってみますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:42.41",
+        "speaker": "customer",
+        "starttime": "02:41.95",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらメモで残しておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "02:49.16",
+        "speaker": "operator",
+        "starttime": "02:42.71",
+        "utterance": "はい、こちらメモで残しておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "他も見てにますか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:53.12",
+        "speaker": "operator",
+        "starttime": "02:52.15",
+        "utterance": "他も見てにますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:55.22",
+        "speaker": "customer",
+        "starttime": "02:54.55",
+        "utterance": "あ、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "02:55.88",
+        "speaker": "operator",
+        "starttime": "02:55.55",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "えっとー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちら３つ目が大丸東京店ですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010372"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "03:11.57",
+        "speaker": "operator",
+        "starttime": "03:01.63",
+        "utterance": "えっとー、こちら３つ目が大丸東京店ですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちら１階と階には地下１階には食品フロアがありますね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010372"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "03:23.69",
+        "speaker": "operator",
+        "starttime": "03:17.11",
+        "utterance": "こちら１階と階には地下１階には食品フロアがありますね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "で、ファッションブランド、化粧品あとリビング雑貨、石井スポーツ、スポーツ用品店ですかね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010372"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            },
+            {
+                "segment": "そういった専門店があるみたいですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010372"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "03:41.47",
+        "speaker": "operator",
+        "starttime": "03:25.29",
+        "utterance": "で、ファッションブランド、化粧品あとリビング雑貨、石井スポーツ、スポーツ用品店ですかね。そういった専門店があるみたいですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行って、みます？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "03:46.21",
+        "speaker": "operator",
+        "starttime": "03:42.16",
+        "utterance": "行って、みます？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行かれますか？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "03:48.99",
+        "speaker": "operator",
+        "starttime": "03:47.59",
+        "utterance": "行かれますか？はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "03:49.75",
+        "speaker": "customer",
+        "starttime": "03:49.29",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "まあ",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ほかもちょっとみてみますか。",
+                "query": null,
+                "tag": "Offer",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "トミカとかは。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": [
+                        "80010459"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "03:58.81",
+        "speaker": "operator",
+        "starttime": "03:52.51",
+        "utterance": "まあほかもちょっとみてみますか。トミカとかは。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "う、うーんそんな。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:01.23",
+        "speaker": "customer",
+        "starttime": "04:00.35",
+        "utterance": "う、うーんそんな。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "そんなに、こちらは、",
+                "query": null,
+                "tag": "PropositionalQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": [
+                        "80010459"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            },
+            {
+                "segment": "こちらじゃあ特には興味ない。",
+                "query": null,
+                "tag": "PropositionalQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": [
+                        "80010459"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "04:07.59",
+        "speaker": "operator",
+        "starttime": "04:01.69",
+        "utterance": "そんなに、こちらは、こちらじゃあ特には興味ない。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん－",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "そんな、興味はない。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:03.34",
+        "speaker": "customer",
+        "starttime": "04:01.95",
+        "utterance": "ん－そんな、興味はない。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "てか。",
+                "query": null,
+                "tag": "AlloPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:09.01",
+        "speaker": "operator",
+        "starttime": "04:08.78",
+        "utterance": "てか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:09.35",
+        "speaker": "customer",
+        "starttime": "04:09.01",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:09.90",
+        "speaker": "operator",
+        "starttime": "04:09.61",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ゆっくりスクロールしていくのでもしに気になるのがあれば。",
+                "query": null,
+                "tag": "Instruct",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:24.88",
+        "speaker": "operator",
+        "starttime": "04:17.15",
+        "utterance": "ゆっくりスクロールしていくのでもしに気になるのがあれば。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:36.30",
+        "speaker": "customer",
+        "starttime": "04:36.18",
+        "utterance": "ん？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "04:36.50",
+        "speaker": "operator",
+        "starttime": "04:36.40",
+        "utterance": "あ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "８番？",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "04:37.85",
+        "speaker": "customer",
+        "starttime": "04:36.78",
+        "utterance": "８番？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "８番、こちらですかね？",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            },
+            {
+                "segment": "マメグイ？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            },
+            {
+                "segment": "マメグイ。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "04:41.93",
+        "speaker": "operator",
+        "starttime": "04:36.80",
+        "utterance": "８番、こちらですかね？マメグイ？マメグイ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "手拭いですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "04:49.93",
+        "speaker": "operator",
+        "starttime": "04:47.60",
+        "utterance": "あ、手拭いですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ハンカチサイズの小さな手拭い、ってのをこちらでマメグイって呼んでるのかな。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "05:00.29",
+        "speaker": "operator",
+        "starttime": "04:52.45",
+        "utterance": "ハンカチサイズの小さな手拭い、ってのをこちらでマメグイって呼んでるのかな。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "いって、みたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:06.03",
+        "speaker": "customer",
+        "starttime": "05:03.51",
+        "utterance": "あ、いって、みたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "興味ありま<>。",
+                "query": null,
+                "tag": "PropositionalQuestion",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:06.74",
+        "speaker": "operator",
+        "starttime": "05:04.89",
+        "utterance": "あ、興味ありま<>。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:07.37",
+        "speaker": "customer",
+        "starttime": "05:07.05",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃあこちらもリストに残しておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80010440"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010513",
+                        "80010391",
+                        "80010372",
+                        "80010459",
+                        "80010425",
+                        "80010424",
+                        "80010422",
+                        "80010440",
+                        "80010468",
+                        "80120743"
+                    ]
+                }
+            }
+        ],
+        "endtime": "05:14.98",
+        "speaker": "operator",
+        "starttime": "05:08.08",
+        "utterance": "はい、じゃあこちらもリストに残しておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "後もうちょっと見ますか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:19.35",
+        "speaker": "operator",
+        "starttime": "05:18.07",
+        "utterance": "後もうちょっと見ますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:21.73",
+        "speaker": "customer",
+        "starttime": "05:21.05",
+        "utterance": "あ、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "えと",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "次のページに行きます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:29.33",
+        "speaker": "operator",
+        "starttime": "05:28.00",
+        "utterance": "えと次のページに行きます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ま、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "例えばこういったお買い物以外で、何か調べておきたいことなど。",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:50.31",
+        "speaker": "operator",
+        "starttime": "05:40.38",
+        "utterance": "ま、例えばこういったお買い物以外で、何か調べておきたいことなど。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "17番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            }
+        ],
+        "endtime": "05:52.33",
+        "speaker": "customer",
+        "starttime": "05:51.19",
+        "utterance": "17番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "17番、",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            },
+            {
+                "segment": "こち、こちらですか、はちみつ専門店。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            }
+        ],
+        "endtime": "05:56.83",
+        "speaker": "operator",
+        "starttime": "05:53.37",
+        "utterance": "17番、こち、こちらですか、はちみつ専門店。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "05:58.22",
+        "speaker": "customer",
+        "starttime": "05:57.80",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ラベイユさん。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            }
+        ],
+        "endtime": "05:59.48",
+        "speaker": "operator",
+        "starttime": "05:58.88",
+        "utterance": "ラベイユさん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うーん、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "世界中からはちみつ集めてるんですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            }
+        ],
+        "endtime": "06:12.88",
+        "speaker": "operator",
+        "starttime": "06:05.95",
+        "utterance": "うーん、世界中からはちみつ集めてるんですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いって、みた、いです。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:18.08",
+        "speaker": "customer",
+        "starttime": "06:14.12",
+        "utterance": "いって、みた、いです。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "じゃあこちらもリストのほうに入れておきますので。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80010454"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010461",
+                        "80010362",
+                        "80010448",
+                        "80060912",
+                        "80125462",
+                        "80010345",
+                        "80010454",
+                        "80010474",
+                        "80120732",
+                        "80125804"
+                    ]
+                }
+            }
+        ],
+        "endtime": "06:24.90",
+        "speaker": "operator",
+        "starttime": "06:19.97",
+        "utterance": "じゃあこちらもリストのほうに入れておきますので。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "他どうでしょう？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:31.22",
+        "speaker": "operator",
+        "starttime": "06:30.45",
+        "utterance": "他どうでしょう？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "んー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "もう買い物はいい。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:36.13",
+        "speaker": "customer",
+        "starttime": "06:33.06",
+        "utterance": "んー、もう買い物はいい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "買い物は、他大丈夫？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:38.43",
+        "speaker": "operator",
+        "starttime": "06:35.27",
+        "utterance": "買い物は、他大丈夫？はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "買い物ぉ、",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:38.82",
+        "speaker": "customer",
+        "starttime": "06:37.39",
+        "utterance": "買い物ぉ、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "まあ",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "今",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えーと、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "候補が4つぐらいもう上がってるので、買い物はそうですね、お買い物はもう十分かと。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:47.24",
+        "speaker": "operator",
+        "starttime": "06:39.94",
+        "utterance": "まあ今えーと、候補が4つぐらいもう上がってるので、買い物はそうですね、お買い物はもう十分かと。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ほか何かありますか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:53.40",
+        "speaker": "operator",
+        "starttime": "06:51.29",
+        "utterance": "ほか何かありますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "遊ぶ。",
+                "query": {
+                    "大ジャンル": "遊ぶ"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "06:56.06",
+        "speaker": "customer",
+        "starttime": "06:55.10",
+        "utterance": "遊ぶ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "遊ぶ、、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "テーマパークとかアウトドア。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:03.88",
+        "speaker": "operator",
+        "starttime": "06:56.70",
+        "utterance": "遊ぶ、、テーマパークとかアウトドア。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "体験。",
+                "query": {
+                    "中ジャンル": "体験施設"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:05.26",
+        "speaker": "customer",
+        "starttime": "07:04.17",
+        "utterance": "体験。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "体験<>",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:06.65",
+        "speaker": "operator",
+        "starttime": "07:05.43",
+        "utterance": "体験<>"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "陶芸とか、料理とか、<>とか。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:17.53",
+        "speaker": "operator",
+        "starttime": "07:12.39",
+        "utterance": "陶芸とか、料理とか、<>とか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "料理、たい、",
+                "query": {
+                    "小ジャンル": "料理体験"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "うん。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:26.67",
+        "speaker": "customer",
+        "starttime": "07:18.66",
+        "utterance": "料理、たい、うん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "料理か、お料理ですね？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:23.25",
+        "speaker": "operator",
+        "starttime": "07:21.00",
+        "utterance": "料理か、お料理ですね？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "これ、なんか気になりますか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:29.19",
+        "speaker": "operator",
+        "starttime": "07:27.57",
+        "utterance": "これ、なんか気になりますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はぁい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:31.16",
+        "speaker": "customer",
+        "starttime": "07:30.58",
+        "utterance": "はぁい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "し。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:34.20",
+        "speaker": "customer",
+        "starttime": "07:33.95",
+        "utterance": "し。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お寿司ですね？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": [
+                        "80119398"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "07:37.45",
+        "speaker": "operator",
+        "starttime": "07:36.29",
+        "utterance": "お寿司ですね？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "結構観光の、海外の方が多いのかなと思うんですけど。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": [
+                        "80119398"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "07:53.24",
+        "speaker": "operator",
+        "starttime": "07:47.19",
+        "utterance": "結構観光の、海外の方が多いのかなと思うんですけど。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いってみたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "07:54.96",
+        "speaker": "customer",
+        "starttime": "07:54.35",
+        "utterance": "いってみたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行ってみたいですか、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃあ一応こちらもメモに残しておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80119398"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:01.62",
+        "speaker": "operator",
+        "starttime": "07:55.94",
+        "utterance": "行ってみたいですか、はい、じゃあ一応こちらもメモに残しておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "他どうでしょう？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "08:08.07",
+        "speaker": "operator",
+        "starttime": "08:07.00",
+        "utterance": "他どうでしょう？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "<>",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "08:14.61",
+        "speaker": "customer",
+        "starttime": "08:13.15",
+        "utterance": "<>"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "AutoNegative",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "08:16.13",
+        "speaker": "operator",
+        "starttime": "08:15.97",
+        "utterance": "ん？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "3番をみてみたい。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:19.42",
+        "speaker": "customer",
+        "starttime": "08:16.99",
+        "utterance": "3番をみてみたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "3番。",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:19.01",
+        "speaker": "operator",
+        "starttime": "08:18.45",
+        "utterance": "3番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらです。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:20.74",
+        "speaker": "operator",
+        "starttime": "08:20.39",
+        "utterance": "こちらです。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "これが、これは何だ、",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            },
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "蕎麦打ち、蕎麦打ち、こんにゃく、味噌、紅茶づくり、体験できるんです。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:45.28",
+        "speaker": "operator",
+        "starttime": "08:26.43",
+        "utterance": "これが、これは何だ、あ、蕎麦打ち、蕎麦打ち、こんにゃく、味噌、紅茶づくり、体験できるんです。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "やって、みたい、です。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "08:47.40",
+        "speaker": "customer",
+        "starttime": "08:44.46",
+        "utterance": "やって、みたい、です。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃあこちらの、ヒノハラ、ヒノハラ村地域交流センター森の学校ですね。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "08:59.11",
+        "speaker": "operator",
+        "starttime": "08:47.86",
+        "utterance": "はい、じゃあこちらの、ヒノハラ、ヒノハラ村地域交流センター森の学校ですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらもメモに残しておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80119398",
+                        "80119399",
+                        "80012681"
+                    ]
+                }
+            }
+        ],
+        "endtime": "09:05.55",
+        "speaker": "operator",
+        "starttime": "09:05.15",
+        "utterance": "こちらもメモに残しておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ほか何かどうでしょう？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:09.37",
+        "speaker": "operator",
+        "starttime": "09:05.62",
+        "utterance": "ほか何かどうでしょう？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うーん、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "特にない。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:14.73",
+        "speaker": "customer",
+        "starttime": "09:11.76",
+        "utterance": "うーん、特にない。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "特に、、",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "見たりとか。",
+                "query": {
+                    "大ジャンル": "見る"
+                },
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:19.58",
+        "speaker": "operator",
+        "starttime": "09:14.88",
+        "utterance": "特に、、見たりとか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "見て、見て、み、る。",
+                "query": {
+                    "大ジャンル": "見る"
+                },
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:23.37",
+        "speaker": "customer",
+        "starttime": "09:20.39",
+        "utterance": "見て、見て、み、る。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:23.75",
+        "speaker": "operator",
+        "starttime": "09:23.52",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "例えば自然とか。",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:30.33",
+        "speaker": "operator",
+        "starttime": "09:29.00",
+        "utterance": "例えば自然とか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "どうぶ、つ。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:32.61",
+        "speaker": "customer",
+        "starttime": "09:31.13",
+        "utterance": "どうぶ、つ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "例えばお寺とか、動物。",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:34.58",
+        "speaker": "operator",
+        "starttime": "09:32.29",
+        "utterance": "例えばお寺とか、動物。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うーん、自然。",
+                "query": {
+                    "中ジャンル": "自然"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:35.79",
+        "speaker": "customer",
+        "starttime": "09:34.58",
+        "utterance": "うーん、自然。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "自然。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:38.01",
+        "speaker": "operator",
+        "starttime": "09:37.80",
+        "utterance": "自然。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:39.05",
+        "speaker": "customer",
+        "starttime": "09:38.86",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "季節ってお伺いしてましたっけ？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SeasonQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "行く季節。",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SeasonQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:48.40",
+        "speaker": "operator",
+        "starttime": "09:44.80",
+        "utterance": "季節ってお伺いしてましたっけ？行く季節。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "季節、た、季節はー。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:54.28",
+        "speaker": "customer",
+        "starttime": "09:49.44",
+        "utterance": "季節、た、季節はー。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "大体何月ぐらいとか。",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SeasonQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:58.43",
+        "speaker": "operator",
+        "starttime": "09:56.52",
+        "utterance": "大体何月ぐらいとか。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "くぅぅぅ。",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "09:57.51",
+        "speaker": "operator",
+        "starttime": "09:57.11",
+        "utterance": "くぅぅぅ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "秋。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:00.02",
+        "speaker": "customer",
+        "starttime": "09:59.03",
+        "utterance": "秋。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "秋、秋だと、花見スポットとかだとちょっと違います？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:08.89",
+        "speaker": "operator",
+        "starttime": "10:00.45",
+        "utterance": "秋、秋だと、花見スポットとかだとちょっと違います？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "あ、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "3番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010336",
+                        "80010375",
+                        "80010339",
+                        "80010346",
+                        "80010830",
+                        "80010855",
+                        "80011134",
+                        "80011806",
+                        "80011792",
+                        "80011344"
+                    ]
+                }
+            }
+        ],
+        "endtime": "10:12.29",
+        "speaker": "customer",
+        "starttime": "10:11.06",
+        "utterance": "あ、3番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちら。",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010336",
+                        "80010375",
+                        "80010339",
+                        "80010346",
+                        "80010830",
+                        "80010855",
+                        "80011134",
+                        "80011806",
+                        "80011792",
+                        "80011344"
+                    ]
+                }
+            }
+        ],
+        "endtime": "10:13.56",
+        "speaker": "operator",
+        "starttime": "10:13.02",
+        "utterance": "こちら。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:14.52",
+        "speaker": "customer",
+        "starttime": "10:14.25",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "北の丸公園、、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010336",
+                        "80010375",
+                        "80010339",
+                        "80010346",
+                        "80010830",
+                        "80010855",
+                        "80011134",
+                        "80011806",
+                        "80011792",
+                        "80011344"
+                    ]
+                }
+            },
+            {
+                "segment": "こちら説明としてはこちらになってます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010336",
+                        "80010375",
+                        "80010339",
+                        "80010346",
+                        "80010830",
+                        "80010855",
+                        "80011134",
+                        "80011806",
+                        "80011792",
+                        "80011344"
+                    ]
+                }
+            }
+        ],
+        "endtime": "10:25.25",
+        "speaker": "operator",
+        "starttime": "10:15.64",
+        "utterance": "北の丸公園、、こちら説明としてはこちらになってます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行って、みたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:28.01",
+        "speaker": "customer",
+        "starttime": "10:26.42",
+        "utterance": "行って、みたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いってみたいですか、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらもメモに残しておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010336",
+                        "80010375",
+                        "80010339",
+                        "80010346",
+                        "80010830",
+                        "80010855",
+                        "80011134",
+                        "80011806",
+                        "80011792",
+                        "80011344"
+                    ]
+                }
+            }
+        ],
+        "endtime": "10:35.60",
+        "speaker": "operator",
+        "starttime": "10:28.35",
+        "utterance": "いってみたいですか、はい、こちらもメモに残しておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:36.67",
+        "speaker": "customer",
+        "starttime": "10:36.40",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "まあ",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "かなり写真だと、写真見る限りだと。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "PhotoInform",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "かなり変わりますね景色が。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "PhotoInform",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:46.60",
+        "speaker": "operator",
+        "starttime": "10:36.69",
+        "utterance": "まあかなり写真だと、写真見る限りだと。かなり変わりますね景色が。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お後、他にはどうですか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:54.73",
+        "speaker": "operator",
+        "starttime": "10:52.86",
+        "utterance": "お後、他にはどうですか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "とくには、ない。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "10:58.41",
+        "speaker": "customer",
+        "starttime": "10:56.02",
+        "utterance": "とくには、ない。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "そしたら。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:07.30",
+        "speaker": "operator",
+        "starttime": "11:06.59",
+        "utterance": "そしたら。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "食べる。",
+                "query": {
+                    "大ジャンル": "食べる"
+                },
+                "tag": "Request",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:14.11",
+        "speaker": "customer",
+        "starttime": "11:13.18",
+        "utterance": "食べる。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "食べる、、",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "何か食べ物お探ししましょうか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:22.00",
+        "speaker": "operator",
+        "starttime": "11:14.59",
+        "utterance": "食べる、、何か食べ物お探ししましょうか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "肉。",
+                "query": {
+                    "中ジャンル": "洋食",
+                    "小ジャンル": "洋食・レストラン"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:23.95",
+        "speaker": "customer",
+        "starttime": "11:23.29",
+        "utterance": "肉。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お肉ですね、和食、洋食。",
+                "query": null,
+                "tag": "ChoiceQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:28.42",
+        "speaker": "operator",
+        "starttime": "11:25.70",
+        "utterance": "お肉ですね、和食、洋食。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "洋食？",
+                "query": {
+                    "中ジャンル": "洋食",
+                    "小ジャンル": "洋食・レストラン"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:29.55",
+        "speaker": "customer",
+        "starttime": "11:28.45",
+        "utterance": "洋食？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "洋食、はい。",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:31.20",
+        "speaker": "operator",
+        "starttime": "11:30.08",
+        "utterance": "洋食、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:36.30",
+        "speaker": "customer",
+        "starttime": "11:36.02",
+        "utterance": "ん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "11:37.31",
+        "speaker": "operator",
+        "starttime": "11:37.01",
+        "utterance": "ん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "2番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80097983"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "11:38.21",
+        "speaker": "customer",
+        "starttime": "11:37.37",
+        "utterance": "2番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "2番、こちらですか？",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80097983"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            },
+            {
+                "segment": "ウルフギャングステーキハウス、、",
+                "query": null,
+                "tag": "PropositionalQuestion",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80097983"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            },
+            {
+                "segment": "こちら気になりますか？",
+                "query": null,
+                "tag": "PropositionalQuestion",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": [
+                        "80097983"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "11:59.20",
+        "speaker": "operator",
+        "starttime": "11:38.70",
+        "utterance": "2番、こちらですか？ウルフギャングステーキハウス、、こちら気になりますか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:00.58",
+        "speaker": "customer",
+        "starttime": "12:00.15",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うん。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:03.84",
+        "speaker": "operator",
+        "starttime": "12:03.53",
+        "utterance": "うん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "じゃあちおこちらもー、リストに入れておきましょうか？",
+                "query": null,
+                "tag": "Offer",
+                "specific_tag": "ChecklistConfirm",
+                "sight": {
+                    "mention": [
+                        "80097983"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            },
+            {
+                "segment": "一応。",
+                "query": null,
+                "tag": "Offer",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:19.51",
+        "speaker": "operator",
+        "starttime": "12:11.98",
+        "utterance": "じゃあちおこちらもー、リストに入れておきましょうか？一応。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お願いします。",
+                "query": null,
+                "tag": "AcceptOffer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:20.37",
+        "speaker": "customer",
+        "starttime": "12:19.52",
+        "utterance": "お願いします。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こ、候補の一つとして、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃあ他にも見ていきましょうか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:31.07",
+        "speaker": "operator",
+        "starttime": "12:20.37",
+        "utterance": "はい、こ、候補の一つとして、じゃあ他にも見ていきましょうか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:51.55",
+        "speaker": "customer",
+        "starttime": "12:51.35",
+        "utterance": "ん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん、なぁ。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "12:52.52",
+        "speaker": "operator",
+        "starttime": "12:52.10",
+        "utterance": "ん、なぁ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "9番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80099437"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "12:53.42",
+        "speaker": "customer",
+        "starttime": "12:52.67",
+        "utterance": "9番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "9番、こちら、シロッコさん。",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "NameInform",
+                "sight": {
+                    "mention": [
+                        "80099437"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "12:56.39",
+        "speaker": "operator",
+        "starttime": "12:52.88",
+        "utterance": "はい、9番、こちら、シロッコさん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらスパニッシュとイタリアンが融合したお店みたいですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80099437"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "13:11.28",
+        "speaker": "operator",
+        "starttime": "13:03.56",
+        "utterance": "こちらスパニッシュとイタリアンが融合したお店みたいですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行って、みたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:16.29",
+        "speaker": "customer",
+        "starttime": "13:14.62",
+        "utterance": "行って、みたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行ってみたい、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃあこちらのお店が中休みと言うか、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OfficeHoursInform",
+                "sight": {
+                    "mention": [
+                        "80099437"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            },
+            {
+                "segment": "あのー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "14時半から16時半、午後2半から午後4時半ですね、こちらちょっと空いてないようなのでそちらだけお気をつけ下さい",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OfficeHoursInform",
+                "sight": {
+                    "mention": [
+                        "80099437"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80100055",
+                        "80097983",
+                        "80010470",
+                        "80010558",
+                        "80010678",
+                        "80010507",
+                        "80115906",
+                        "80010380",
+                        "80099437",
+                        "80010720"
+                    ]
+                }
+            }
+        ],
+        "endtime": "13:35.70",
+        "speaker": "operator",
+        "starttime": "13:16.70",
+        "utterance": "行ってみたい、はい。じゃあこちらのお店が中休みと言うか、あのー、14時半から16時半、午後2半から午後4時半ですね、こちらちょっと空いてないようなのでそちらだけお気をつけ下さい"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:36.81",
+        "speaker": "customer",
+        "starttime": "13:36.55",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "他は、どうですか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:44.75",
+        "speaker": "operator",
+        "starttime": "13:40.38",
+        "utterance": "他は、どうですか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "他は、いい。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:47.24",
+        "speaker": "customer",
+        "starttime": "13:45.95",
+        "utterance": "他は、いい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "よろしいですか、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:49.18",
+        "speaker": "operator",
+        "starttime": "13:48.10",
+        "utterance": "よろしいですか、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:49.70",
+        "speaker": "customer",
+        "starttime": "13:49.31",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "何かほかにお調べしたりとか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "13:57.28",
+        "speaker": "operator",
+        "starttime": "13:55.40",
+        "utterance": "何かほかにお調べしたりとか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うーん、散歩、を。",
+                "query": {
+                    "大ジャンル": "遊ぶ",
+                    "中ジャンル": "自然",
+                    "キーワード": "散歩"
+                },
+                "tag": "Answer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "14:04.23",
+        "speaker": "customer",
+        "starttime": "13:59.18",
+        "utterance": "うーん、散歩、を。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "散歩、散歩だと何処だろうな、",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "さん、ぽだと、ちょっと散歩そのままで調べてみましょうか？",
+                "query": {
+                    "キーワード": "散歩"
+                },
+                "tag": "SetQuestion",
+                "specific_tag": "SearchAdvice",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "14:18.70",
+        "speaker": "operator",
+        "starttime": "14:05.30",
+        "utterance": "散歩、散歩だと何処だろうな、さん、ぽだと、ちょっと散歩そのままで調べてみましょうか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うん？",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "3番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            }
+        ],
+        "endtime": "14:29.66",
+        "speaker": "customer",
+        "starttime": "14:27.51",
+        "utterance": "うん？3番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "3番、お団子屋さんですかね。",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            },
+            {
+                "segment": "あぁ老舗みたいですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            }
+        ],
+        "endtime": "14:42.12",
+        "speaker": "operator",
+        "starttime": "14:30.49",
+        "utterance": "3番、お団子屋さんですかね。あぁ老舗みたいですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "行って、みたい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "14:49.09",
+        "speaker": "customer",
+        "starttime": "14:47.76",
+        "utterance": "行って、みたい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちら、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            },
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "じゃこちらもリストに入れてみます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            }
+        ],
+        "endtime": "14:54.91",
+        "speaker": "operator",
+        "starttime": "14:49.39",
+        "utterance": "こちら、はい、じゃこちらもリストに入れてみます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "一応、これが要問合せ、無休、お休みはないけど要問合せなので、おそらく臨時休業とか、そういったのもあるかも知れないので、行かれる際は予め、",
+                "query": null,
+                "tag": "Suggest",
+                "specific_tag": "OfficeHoursInform",
+                "sight": {
+                    "mention": [
+                        "80011141"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80085386",
+                        "80011534",
+                        "80011141",
+                        "80011162",
+                        "80109871",
+                        "80012016",
+                        "80081131",
+                        "80011365",
+                        "80011522",
+                        "80011554"
+                    ]
+                }
+            },
+            {
+                "segment": "あのー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "確認をしていただければと思います。",
+                "query": null,
+                "tag": "Suggest",
+                "specific_tag": "OfficeHoursInform",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:21.57",
+        "speaker": "operator",
+        "starttime": "14:59.81",
+        "utterance": "一応、これが要問合せ、無休、お休みはないけど要問合せなので、おそらく臨時休業とか、そういったのもあるかも知れないので、行かれる際は予め、あのー、確認をしていただければと思います。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AcceptSuggest",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:23.54",
+        "speaker": "customer",
+        "starttime": "15:23.22",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "お後どうでしょう？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "なんか気になる所など、、",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ちょっと",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "次のページに行きます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:42.05",
+        "speaker": "operator",
+        "starttime": "15:25.02",
+        "utterance": "お後どうでしょう？なんか気になる所など、、ちょっと次のページに行きます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "AutoNegative",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "何かありました？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "AutoNegative",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:45.65",
+        "speaker": "operator",
+        "starttime": "15:44.31",
+        "utterance": "ん？何かありました？ん？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いいえ。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:46.43",
+        "speaker": "customer",
+        "starttime": "15:45.85",
+        "utterance": "いいえ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ないですか、",
+                "query": null,
+                "tag": "AlloPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "15:47.19",
+        "speaker": "operator",
+        "starttime": "15:46.46",
+        "utterance": "ないですか、はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "何か気になる所があれば、ちょっと写真が少なかったりするんですが、、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "次のページ行きまーす。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "16:07.41",
+        "speaker": "operator",
+        "starttime": "15:57.27",
+        "utterance": "何か気になる所があれば、ちょっと写真が少なかったりするんですが、、次のページ行きまーす。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "AutoNegative",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "なんか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "16:10.30",
+        "speaker": "operator",
+        "starttime": "16:08.13",
+        "utterance": "ん？なんか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "ブルーベリー、の下の、下の、",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            },
+            {
+                "segment": "あ、え、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "それです。",
+                "query": null,
+                "tag": "Answer",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            }
+        ],
+        "endtime": "16:21.81",
+        "speaker": "customer",
+        "starttime": "16:13.02",
+        "utterance": "ブルーベリー、の下の、下の、あ、え、それです。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらー、",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            },
+            {
+                "segment": "ん？",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "これですか？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            }
+        ],
+        "endtime": "16:22.79",
+        "speaker": "operator",
+        "starttime": "16:15.28",
+        "utterance": "こちらー、ん？これですか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うん。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "16:27.32",
+        "speaker": "customer",
+        "starttime": "16:27.11",
+        "utterance": "うん。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "秋、秋っていってましたよね？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "16:31.62",
+        "speaker": "operator",
+        "starttime": "16:29.94",
+        "utterance": "秋、秋っていってましたよね？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "うん？",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "16:33.61",
+        "speaker": "customer",
+        "starttime": "16:32.46",
+        "utterance": "うん？はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "秋、秋っておっしゃてたんでー、これ6月初旬から8月下旬にブルーベリー狩りが楽しめるってなってるので、もしかすると行かれる時は、ブルーベリー狩りは出来ないかも知れないんですけど、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            },
+            {
+                "segment": "おそらく",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらに予約取り、予約制摘み取り園てなってるんで、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            },
+            {
+                "segment": "おそらく、あの、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "大丈夫とは言い切れないんですけど、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "おそらくあの、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "秋に、この日にいきまーすって言ってもらえれば、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "あのー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "摘んだりはできるんじゃないですかね、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "OperatorSpotImpression",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "おそらく。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:22.83",
+        "speaker": "operator",
+        "starttime": "16:34.73",
+        "utterance": "秋、秋っておっしゃてたんでー、これ6月初旬から8月下旬にブルーベリー狩りが楽しめるってなってるので、もしかすると行かれる時は、ブルーベリー狩りは出来ないかも知れないんですけど、おそらくこちらに予約取り、予約制摘み取り園てなってるんで、おそらく、あの、大丈夫とは言い切れないんですけど、おそらくあの、秋に、この日にいきまーすって言ってもらえれば、あのー、摘んだりはできるんじゃないですかね、おそらく。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "まあ",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "そこも含めて確認していただければと、思います。",
+                "query": null,
+                "tag": "Suggest",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:27.40",
+        "speaker": "operator",
+        "starttime": "17:24.25",
+        "utterance": "まあそこも含めて確認していただければと、思います。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちら、一応リストにいれて。",
+                "query": null,
+                "tag": "Offer",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80012511"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80012302",
+                        "80012157",
+                        "80012234",
+                        "80109801",
+                        "80109876",
+                        "80120841",
+                        "80109808",
+                        "80012383",
+                        "80012610",
+                        "80012511"
+                    ]
+                }
+            }
+        ],
+        "endtime": "17:36.12",
+        "speaker": "operator",
+        "starttime": "17:32.81",
+        "utterance": "こちら、一応リストにいれて。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AcceptOffer",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:36.20",
+        "speaker": "customer",
+        "starttime": "17:35.97",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:37.08",
+        "speaker": "operator",
+        "starttime": "17:36.70",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "では入れておきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:42.48",
+        "speaker": "operator",
+        "starttime": "17:40.76",
+        "utterance": "では入れておきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "んとー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "3ページ目いきます。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "17:48.61",
+        "speaker": "operator",
+        "starttime": "17:45.97",
+        "utterance": "んとー、3ページ目いきます。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "これで、一応散歩で調べた限りだとここまでですね、出てきたのは。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "SearchResultInform",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:00.98",
+        "speaker": "operator",
+        "starttime": "17:51.33",
+        "utterance": "これで、一応散歩で調べた限りだとここまでですね、出てきたのは。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:01.31",
+        "speaker": "customer",
+        "starttime": "18:01.00",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "何かほかにお調べしましょうか？",
+                "query": null,
+                "tag": "SetQuestion",
+                "specific_tag": "RequestQuestion",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:08.81",
+        "speaker": "operator",
+        "starttime": "18:06.95",
+        "utterance": "何かほかにお調べしましょうか？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "いえ。",
+                "query": null,
+                "tag": "Disconfirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:10.75",
+        "speaker": "customer",
+        "starttime": "18:10.43",
+        "utterance": "いえ。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "もう一回買う。",
+                "query": {
+                    "大ジャンル": "買う"
+                },
+                "tag": "Request",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:16.42",
+        "speaker": "customer",
+        "starttime": "18:14.72",
+        "utterance": "もう一回買う。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "買う？",
+                "query": null,
+                "tag": "CheckQuestion",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:17.61",
+        "speaker": "operator",
+        "starttime": "18:17.30",
+        "utterance": "買う？"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "で、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "と、民芸品。",
+                "query": {
+                    "中ジャンル": "民芸品ほか",
+                    "小ジャンル": "民芸品・工芸品・陶芸品"
+                },
+                "tag": "Request",
+                "specific_tag": "SpotRequirement",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:25.51",
+        "speaker": "customer",
+        "starttime": "18:19.24",
+        "utterance": "で、と、民芸品。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "民芸品ですね。",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "RequestConfirm",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:27.54",
+        "speaker": "operator",
+        "starttime": "18:26.31",
+        "utterance": "民芸品ですね。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "で。",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:29.18",
+        "speaker": "customer",
+        "starttime": "18:28.86",
+        "utterance": "で。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "こちらにしますか、民芸品、工芸品。",
+                "query": {
+                    "小ジャンル": "民芸品・工芸品・陶芸品"
+                },
+                "tag": "CheckQuestion",
+                "specific_tag": "OnScreenSuggest",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:35.59",
+        "speaker": "operator",
+        "starttime": "18:32.51",
+        "utterance": "こちらにしますか、民芸品、工芸品。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "はい。",
+                "query": null,
+                "tag": "Confirm",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "18:36.45",
+        "speaker": "customer",
+        "starttime": "18:36.16",
+        "utterance": "はい。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "写真があるのが、こちら、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "PhotoInform",
+                "sight": {
+                    "mention": [
+                        "80010740"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            },
+            {
+                "segment": "えーっと、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "爪切りとかですね、爪切り、毛抜き",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010740"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            }
+        ],
+        "endtime": "18:55.96",
+        "speaker": "operator",
+        "starttime": "18:42.42",
+        "utterance": "写真があるのが、こちら、えーっと、爪切りとかですね、爪切り、毛抜き"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "が。",
+                "query": null,
+                "tag": "Other",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "19:04.29",
+        "speaker": "customer",
+        "starttime": "19:04.03",
+        "utterance": "が。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "と、他。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "19:05.81",
+        "speaker": "operator",
+        "starttime": "19:04.58",
+        "utterance": "と、他。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "その4番。",
+                "query": null,
+                "tag": "Request",
+                "specific_tag": "OnScreenChoice",
+                "sight": {
+                    "mention": [
+                        "80010606"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            }
+        ],
+        "endtime": "19:17.19",
+        "speaker": "customer",
+        "starttime": "19:15.81",
+        "utterance": "その4番。"
+    },
+    {
+        "annotation": [
+            {
+                "segment": "4番、",
+                "query": null,
+                "tag": "AcceptRequest",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010606"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            },
+            {
+                "segment": "はい、",
+                "query": null,
+                "tag": "AutoPositive",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらですか、和紙ですね、、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "IntroductionInform",
+                "sight": {
+                    "mention": [
+                        "80010606"
+                    ],
+                    "level": [
+                        "2"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            },
+            {
+                "segment": "では一応そろそろお時間ですので、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "あのー",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらの和紙のお店も、リストに入れておいたうえで、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "AddChecklist",
+                "sight": {
+                    "mention": [
+                        "80010606"
+                    ],
+                    "level": [
+                        "1"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            },
+            {
+                "segment": "あのー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "こちらでご案内の方終了とさせていただきますんで、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "で、あのー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "確認の方しますけども、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "え、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "東京の方秋に行かれる、ていうことで今回、色々と、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "リストアップしましたけども、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "まず最初に新丸ビル、新丸、ん、新丸ビル、ちょっとイントネーション分かりづらいですけれど、新丸ビルと、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80010391"
+                    ],
+                    "level": [
+                        "0"
+                    ],
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "大丸東京店、それとマメグイ、はちみつ専門店ラベイユ、それとジャパン寿司カレッジ、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80010372",
+                        "80010440",
+                        "80010454",
+                        "80119398"
+                    ],
+                    "level": [
+                        "0"
+                    ],
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "それと地域交流センターですね。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80012681"
+                    ],
+                    "level": [
+                        "0"
+                    ],
+                    "display": null
+                }
+            },
+            {
+                "segment": "と、北の丸公園、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80010339"
+                    ],
+                    "level": [
+                        "0"
+                    ],
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ウルフギャングステーキハウス、それと、シロッコ、それと団子屋さん、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80097983",
+                        "80099437",
+                        "80011141"
+                    ],
+                    "level": [
+                        "0"
+                    ],
+                    "display": null
+                }
+            },
+            {
+                "segment": "えー、",
+                "query": null,
+                "tag": "Stalling",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ブルーベリー農園、と今の和紙のところ、1.2.3.4.5.6.7.8.9.10.11.12、",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": [
+                        "80012511",
+                        "80010606"
+                    ],
+                    "level": [
+                        "0",
+                        "1"
+                    ],
+                    "display": [
+                        "80010675",
+                        "80010740",
+                        "80010566",
+                        "80010606",
+                        "80010403",
+                        "80010631",
+                        "80010614",
+                        "80010832",
+                        "80011393",
+                        "80119387"
+                    ]
+                }
+            },
+            {
+                "segment": "一応12個こん、本日リストアップさせていただきました。",
+                "query": null,
+                "tag": "Inform",
+                "specific_tag": "TravelSummary",
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "ではご案内の方これで以上になりますので、",
+                "query": null,
+                "tag": "InitGoodbye",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            },
+            {
+                "segment": "では本日はありがとうございました。",
+                "query": null,
+                "tag": "Thanking",
+                "specific_tag": null,
+                "sight": {
+                    "mention": null,
+                    "level": null,
+                    "display": null
+                }
+            }
+        ],
+        "endtime": "21:23.16",
+        "speaker": "operator",
+        "starttime": "19:18.40",
+        "utterance": "4番、はい、こちらですか、和紙ですね、、では一応そろそろお時間ですので、あのーこちらの和紙のお店も、リストに入れておいたうえで、あのー、こちらでご案内の方終了とさせていただきますんで、で、あのー、確認の方しますけども、え、東京の方秋に行かれる、ていうことで今回、色々と、えー、リストアップしましたけども、えーまず最初に新丸ビル、新丸、ん、新丸ビル、ちょっとイントネーション分かりづらいですけれど、新丸ビルと、えー、大丸東京店、それとマメグイ、はちみつ専門店ラベイユ、それとジャパン寿司カレッジ、えー、それと地域交流センターですね。と、北の丸公園、えー、ウルフギャングステーキハウス、それと、シロッコ、それと団子屋さん、えー、ブルーベリー農園、と今の和紙のところ、1.2.3.4.5.6.7.8.9.10.11.12、一応12個こん、本日リストアップさせていただきました。ではご案内の方これで以上になりますので、では本日はありがとうございました。"
+    }
+]

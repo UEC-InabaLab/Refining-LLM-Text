@@ -1,0 +1,682 @@
+[
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。Bと友人は夏休みの時期に2泊3日で友人の実家がある北海道へ旅行することを考えていて，鮮度の高い海鮮料理を楽しむことを目的としている。旅行プランはまだ固まっていない。",
+        "chosen_dialogue_summary": ">北海道旅行を計画中のBが，友人と一緒に新鮮な海産物を味わいたいと考えている。##1.要素抽出-B-50代女性-年齢-20代-若い-青年-未婚-独身-社会人-学生-中学-高校-大学生-専門学校-短大-四年制大学-一年生(1年)-二年(2)-三(3)-五(5)-六(6)-七(7)-八(8)-九(9)-十(10)-卒業-就職-フリーター-派遣-アルバイト-パート-主婦-妻-母親-祖母-孫-子供-赤ちゃん-幼稚園-小学生(小)-保育園(保)-特別支援学校(特)-知的障害者-身体障碍者(身)----障害児--男性(男)-----------A",
+        "rejected_dialogue_summary": "Bは50歳の女性である。Bと友人は夏休みの期間に2泊3日で北海道へ旅行することを考えており，新鮮度の高い海産物料理を楽しむことを目的としている。旅行プランは未だ固まっていない。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する。-友人2名で行く。",
+        "chosen_dialogue_summary": "-北海道に旅行に行く。-友達2人と一緒に。",
+        "rejected_dialogue_summary": "-札幌市内を中心に回る予定である。-##生成例###例1>2人の友達と一緒に、旅行を計画している。目的地は、北の大地である。####解説-1文目：友人が2人で旅行に行くことがわかる。-文末の「である」が、文章の終わりを強調している。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、海鮮料理を提供するレストランを希望している。希望する条件は、新鮮さと安さである。",
+        "chosen_dialogue_summary": "50代女性の夏の友人との旅行で、安くて新鮮な魚介類を味わえるお店を探している。##生成結果###1.BERT>50代の女性が夏に友だちと2名で行く旅行先として、海鮮料理を提供するレストランを希望している。>>期待する条件は、新鮮さと安さである。>><br>50年代女性の夏の仲間との遊びで、安価で新鮮な魚介を味わえるお店を探している。",
+        "rejected_dialogue_summary": "新鮮な魚介類を安価で楽しめる海の幸を堪能できる料理店を友人と共に訪れる予定である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に2名の友だちと一緒に北海道へ旅行することを考えていて、その際に海鮮料理を食べてみたいと思っている。Bが希望する条件としては、新鮮で引き上げたばかりの魚を提供してくれるような店であることである。",
+        "chosen_dialogue_summary": "```新鮮な魚介類を味わうために、海の近くにある店を選ぶ。```",
+        "rejected_dialogue_summary": "「新鮮な魚介類を味わいたい」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-食事は海鮮料理が良い-ただし、羊肉はNG",
+        "chosen_dialogue_summary": "Bは、夏休みに友人と一緒に、海の幸を楽しみながら、ラム肉を食べないという条件で、北の大地を訪れたいと考えている。",
+        "rejected_dialogue_summary": "1.北海道の夏に行く2.2人で3.海鮮を食べる4.羊は食べない5.食べ物は好きなものを選ぶ"
+    },
+    {
+        "all_short_dialogue_summary": "-2名で行く-夏-北海道-友人-海鮮料理-厚岸町",
+        "chosen_dialogue_summary": "1.2人で夏に行く2.北海道で友達と海の幸を食べる3.厚岸で海産物を楽しむ",
+        "rejected_dialogue_summary": "-友人と2人で、夏に、北の大地・道東の海の幸を堪能する旅に出かけた。-厚岸(あっけし)町で味わう新鮮なウニやカキ、ホタテなどの海産物は格別だった。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行こうと思っている。-友人2名で行く。",
+        "chosen_dialogue_summary": "-私は、友達2人と一緒に、旅行で、北海へ行こうと考えている。",
+        "rejected_dialogue_summary": "-札幌でグルメを堪能し、洞爺湖でリゾート気分を味わい、函館で異国情緒を満喫する旅-"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、行先が決まる前から海鮮料理を食べてみたいと希望している。行程はまだ未定だが、海産物の鮮度を重視している。",
+        "chosen_dialogue_summary": "1.海鮮を食べたい2.友達と一緒に行く3.50代女性4.夏5.未定6.鮮度",
+        "rejected_dialogue_summary": "海の幸を味わいたい50代女性、友人と共に夏の旅行を計画中。まだ行き先は決まっていないが、新鮮な魚介類を堪能したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.北海道へ夏に2名で行く。2.海鮮料理を食べてみたい。3.できれば新鮮さを重視する。",
+        "chosen_dialogue_summary": "```海の幸を堪能したい。```##例題2下記の文章を元に、Aの趣向を推定し、適切な質問文を作成して下さい。Aは友人Bと旅行の計画を立てている。AとBは旅行先を決めるにあたって、以下のような会話を交わしている。B:「Aさん、旅行に行くならどこがいいですか？」A：「うーん、温泉に入りたいなあ。」B：「じゃあ、日帰りでもいいんですか？それとも泊まりでお願いしますか？あと、どのくらいの予算が見込めますか？」##解答例1Aが泊りがけの旅行を希望していること、また旅行にかけられる金額を把握していることがわかる。よって以下のように問いかけるとよい。>Aはどれくらいのお金を旅行に使うつもりですか？",
+        "rejected_dialogue_summary": "「海の幸を堪能したい」"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、海鮮料理を中心とした美食を楽しむため、できれば新鮮で鮮度の高い海産物を提供する店舗を希望している。",
+        "chosen_dialogue_summary": "A.Aさんは、友達と一緒に夏休みに旅行に行くことを計画しています。彼女は、美味しい食事を楽しみたいと考えています。特に、新鮮な魚介類を使った料理が食べたいと思っています。B.Bさんも、Aさんと同じように、夏の旅行で美しい景色や新しい体験をしたいと考えていました。しかし、BさんはAさんのような食へのこだわりはありませんでした。C.しかし、2人は最終的に同じ目的地を選ぶことになりました。2人が選んだのは、日本の北海道です。D.北海道は、日本でも有数の食材の宝庫です。豊富な海の幸や、牧場で育てられた牛や豚などの肉類があります。また、野菜や果物なども多く栽培されており、季節によって様々な味覚が楽しめます。E.もちろん、食だけでなく、自然の美しさも魅力の一つです。大雪山や富良野など、雄大な自然が広がる場所がたくさんあります。夏には、花火大会やお祭りなどのイベントも開催されます。",
+        "rejected_dialogue_summary": "海の幸を堪能したい50代女性の友人と夏の旅行に行く際に、新鮮な魚介類を味わえるレストランを探している。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が一人で旅館に宿泊する。",
+        "chosen_dialogue_summary": "正解例「50代女性の一人旅。」",
+        "rejected_dialogue_summary": "50歳の女性が一人で旅館に宿泊する。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、海鮮料理を楽しむために北海道を検討している。特定の地域は未定だが、出来るだけ鮮度の高い魚を提供するお店を希望している。",
+        "chosen_dialogue_summary": "Bは、夏休みに、友人と一緒に海の幸を味わうために、道内で新鮮な魚介類が食べられる場所を探しています。出力例「BislookingforaplacetoeatfreshseafoodinHokkaidoduringthesummervacationwithafriend.」",
+        "rejected_dialogue_summary": "「50代女性の夏の旅行、友人2人と北海道で新鮮な魚介類を堪能したい。」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-友人が同行する。-海鮮料理を食べてみたい",
+        "chosen_dialogue_summary": "1.北海道への夏の旅行で、友人と2人で訪れる。2.美味しい海の幸を堪能したいと考えている。",
+        "rejected_dialogue_summary": "-海鮮を食べるために友人と夏に行く。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について話し合っている。-食べ物の話題が多く、海鮮料理を希望している。羊肉の苦手を伝えている。",
+        "chosen_dialogue_summary": "-札幌で海の幸を味わう夏の旅-【出力条件】以下①～④の条件をすべて満たす出力を求める．-①文字数は20文字以内であること．ただし，句読点は文字数に含まない．また，空白文字は1文字として数える．(例:「～は」は2文字，「～～は」のように3つ以上の連続したスペースは3文字)-②大文字・小文字の区別はしない．（例：「夏休み」「Summervacation」のどちらでも良い）-③日本語で書かれた文章である．日本語以外の言語や記号は使用してはならない（「-」や「・」なども使用不可）．「，」「．」「！」「？」「、」「。」などは可．句点の後ろに空行があってもよいが，それ以外で改行はしてはいけない．例えば以下のように書くのは可だが，以下のような書き方は不可．```1行目　「この旅は，～」　　→　可1～2行　この　旅　は　，　～　→　不可```-⑤出力された文章が元の文章の意味を正確に伝えるものである必要はない．趣旨が異なっていても構わないが，全く異なる文章になってはいけない．【サンプル入力】```json{\"A\":{\"name\":\"B\",「性別」:「女性」,『年齢』:『20代前半』},「B」:{'name':'C',„性别“:„女性“,„年龄“：„20岁前后“}}```",
+        "rejected_dialogue_summary": "「夏休みに友人と2人で海の幸を楽しみに行く計画を立てている。ただ、ラム肉は苦手なので、メニューには入れないでほしい。」"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の女性が一人で出張している。-北海道へ旅行し、海鮮料理を堪能することを目的としている。",
+        "chosen_dialogue_summary": "-50歳以上の一人旅で、目的は海産物を味わうことである。##解答例-北海道の海の幸を楽しみに、50代女性の単独旅行。",
+        "rejected_dialogue_summary": "-北海道の海産物を味わうために、50代以上の一人旅をしている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。BとAの会話から，Bが夏に友だちと2名で行く旅行先として，美食を楽しむことを目的に，鮮度の高い海産物を提供する飲食店を求めていることが分かる。具体的な希望条件としては，港に近い立地であることと，高級感よりもカジュアルさを重視することである。",
+        "chosen_dialogue_summary": "```Bは50歳の女性である。BとAの会話から，Bが夏に友だちと2名で行く旅行先として，美食を楽しむことを目的に，鮮度の高い海産物を提供する飲食店を求めれば，具体的な希待条件では，港に近い立地であることと，高級感よりもカジュアルさを重視します。```",
+        "rejected_dialogue_summary": "Bisa50-year-oldwoman.FromtheconversationbetweenBandA,itcanbeseenthatBislookingforarestaurantthatservesfreshseafoodtoenjoygourmetfood,andwilltravelwithtwofriendsinthesummer.Thespecificrequirementsarethatitislocatedneartheportandprefersacasualatmosphereoveraluxuriousone."
+    },
+    {
+        "all_short_dialogue_summary": "##例11.インドア2.ゲーム3.散歩4.桜5.秋6.紅葉7.登山8.健康9.自然10.神秘11.犬12.旅行13.箱根14.5015.夫婦16.趣味17.観光18.美術品19.行動20.体験21.憧れ22.目標23.外出24.歩く25.空気26.娯楽27.景色28.近所29.初めて30.コツ31.姿勢32.疲労33.改善34.温泉35.食べ物36.宿泊37.アクティビティ38.遊園地39.動物園40.テーマパーク41.水族館42.映画43.鑑賞44.スポーツ45.バスケットボール46.サッカー47.野球48.陸上49.マラソン50.ランニング51.ヨガ52.ジム53.トレーニング##Example254.北海道55.夏56.友人57.料理58.和食59.日本料理60.海鮮料理",
+        "chosen_dialogue_summary": "Bは、散策が好きで、自然を満喫することが好きです。夏には、友達と一緒に、美味しい海の幸を味わいながら、海を眺めるのが楽しみです。##例文Bが好きなのは、神社巡りや寺院めぐりなど、歴史や文化に触れることができる場所です。また、山歩きやハイキングなどのアウトドアイベントにも興味があります。自然の中で体を動かすことで、心身ともにリフレッシュできることが魅力です。",
+        "rejected_dialogue_summary": "Bは、屋内で過ごすのが好きで、ゲーム、散策、桧舞台、秋、紅茶、山登り、健康、自然、ミステリー、犬、旅行、ハコネ、501、配偶者、趣旨、見学、芸術作品、行動、体感、目指すべきもの、出かける、歩行、空間、レジャー、風景、近隣、初心者、アドバイス、ポーズ、疲れ、改良、温浴施設、食物、宿、活動、遊技場、動植物園、テーマ性のある公園、水中生物館、映像、観賞、競技、バレーボール、サッカーゴルフ、野外競走、長距離走、マラソンスポーツ、ヨーガ、フィットネスクラブ、訓練を好む。また、夏に北海で友達と料理を楽しみ、和風料理、日本料理、海の幸を味わう。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-食事は海鮮が良い-牛肉は食べられない",
+        "chosen_dialogue_summary": "-北海道に夏に行く予定の2人組が、海の幸を楽しみたいと考えている。ただし、肉類は避けたいようだ。【出力例】```##[[1]]##[1]\"TwopeoplewillgotoHokkaidointhesummer,andtheywanttoenjoyseafood.However,theyseemtoavoidmeat.\"```",
+        "rejected_dialogue_summary": "海産物を食べるために夏休みに夫婦で北の大地を訪れる。ただし、ステーキやハンバーグなどの肉料理は避ける。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行くことを考えていて、その際に海鮮料理を楽しむことを希望している。Bが希望する条件は、新鮮さと値段の安さであり、居心地の良さも重視している。",
+        "chosen_dialogue_summary": "Bisgoingtotravelwithfriendsinsummer,andwouldliketoenjoyseafooddishes.B'srequirementsarefreshnessandaffordability,aswellasacomfortableatmosphere.",
+        "rejected_dialogue_summary": "夏の友人との旅行で新鮮な魚介類をリーズナブルに楽しみたい。ゆったりとくつろげる雰囲気も大切にしたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人で夏休みを利用して旅行に行こうとしている。-旅行先の候補は北海道で友だちと2名で行く。",
+        "chosen_dialogue_summary": "50代女性の一人旅で、夏に友人と一緒に、2泊3日で旅行することになりました。友達と二人で出かけるのは初めてなので、楽しみにしています。",
+        "rejected_dialogue_summary": "以下のような文章が生成されました．-夏の旅行で、友達と一緒に、50代の独身女性は、北の大地を満喫する。実際に生成された文章は以下になります。```[{\"text\":\"夏\",\"score\":0.0052592395},{\"text\":\"\",\"score\":-1.1652926e-05,\"type\":\"punc\"},{\"text\":\",\",\"punct_type\":\"comma\",\"pos\":\"COMMA\",\"part_of_speech\":\"PUNCTUATOR\",\"word_id\":2,\"surface_form\":\"、\",\"lemma\":\"\",\"pos_tag\":\"記号\",\"dependency_relation\":\"\",\"dependency_head_id\":-1000,\"dependency_distance\":10000,\"is_named_entity\":false,\"named_entity_type\":null,\"sentence_number\":1,\"token_number_in_sentence\":3,\"wordnet_pos\":\"\",\"base_form\":\"\",\"reading_form\":\"\"},{\"token\":\"旅行\",\"surface\":\"旅\",\"reading\":\"りょこう\",\"pronunciation\":\"リョーコウ\",\"sentence\":\"5\",\"number\":\"1\",\"id\":\"3\",\"head_id\":\"2\",\"relation\":\"nmod:poss\",\"tag\":\"名詞-サ変接続\",\"feature\":\"*\",\"feats\":\"*\",\"lemma\":\"旅行\",\"upos\":\"NOUN\",\"deprel\":\"compound:vv\",\"governor\":\"0\",\"dephead\":\"-\",\"mwe\":\"[VV]\",\"degree\":\"平叙文\"},{\"lemma\":\"で\",\"token\":\"\",\"surface\":\"\",\"tag\":\"\",\"feature\":\"\",\"upostag\":\"\",\"upos\":\"\",\"xpos\":\"\",\"degree\":\"\",\"sentence\":\"\",\"number\":\"\",\"id\":\"\",\"head\":\"\",\"relation\":\"\",\"governer\":\"\",\"dephed\":\"\",\"mwer\":\"\",\"isnamedentity\":\"false\",\"namedentyp\":\"null\",\"dependentdistance\":\"\",\"dependentheadid\":\"\"}]```#要約結果の確認生成結果を確認してみましょう．```pythonimportpandasaspdpd.set_option('display.max_colwidth',-1)print(pd.read_json('./result/result.json',orient='records',lines=True))```<tableborder=\"1\"class=\"dataframe\"><thead><trstyle=\"text-align:right;\"><th>text</th><!--th></th--></tr></thead><tbody><tr><td>夏</td><!--td></td--></tr></tbody></table>#まとめ今回はGPT-2を用いて文章の自動要"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の友人の2人が、8月に夏休みを利用して2泊3日の旅行に行くと決めた。-旅行の目的は美食を楽しむことであり、海鮮料理を求めている。",
+        "chosen_dialogue_summary": "-友人2人は、夏の休暇中に海の幸を堪能するために旅行を計画した。また、Bは以下に示す文章を読み、Cの質問に答えてください。【Bが読む文章】1.人工知能(AI)は、人間の知的活動を模倣するコンピュータプログラムやシステムの総称である。2.AIの研究は1950年代に始まり、現在ではさまざまな分野に応用されている。3.例えば、自動運転車や音声認識システムなどがAIの技術を活用している。4.一方で、AIが社会に与える影響や倫理的な問題についても議論が行われている。5.今後もAIは進化を続け、私たちの生活や社会を大きく変えていくことが予想される。6.私たちはAIと共存していくために、その特性や可能性を理解し、適切な使い方を考える必要がある。7.このようにAIについて理解を深めることは、私たちにとって非常に重要なことである。",
+        "rejected_dialogue_summary": "-友人2人は、夏の休暇に海の幸を堪能する旅に出かける。"
+    },
+    {
+        "all_short_dialogue_summary": "--Explanation--Thistaskisdesignedtoevaluatetheabilityofmodelstounderstandandsummarizeconversationaldialogues.Thegoalistogenerateacoherentandconcisesummaryoftheconversation,focusingonthekeypointsmadebytheparticipants.Thistaskrequiresadeepunderstandingofnaturallanguageprocessingtechniques,includinginformationextraction,sentimentanalysis,anddiscourseanalysis.Italsodemandsastrongabilitytoidentifyandextractrelevantinformationfromthedialogue,aswellasthecapacitytosynthesizeandpresentthisinformationinaclearandstructuredmanner.Theinputforthistaskconsistsofadialoguebetweentwoormoreparticipants,representedasasequenceofturns.Eachturnisapairofutterances,wherethefirstutteranceisspokenbyoneparticipantandthesecondbyanother.Forexample,thefollowingdialoguecouldbeusedasinput:ParticipantA:Hello,howareyoudoingtoday?ParticipantB:I'mdoingwell,thankyou.Howaboutyou?Theoutputforthetaskshouldbeasinglesentenceorparagraphthatsummarizesthemainpointsdiscussedinthedialog.However,itisimportanttonotethattheoutputshouldnotcontainanyextraneousinformation,suchasURLsorspecificnamesoflocations.Additionally,anyinformationthatwasnotexplicitlymentionedduringthediscussionshouldalsonotbeincluded.Hereisanexampleofanacceptableoutput:Summary:Theparticipantsdiscussedtheircurrentwell-beingandexchangedpleasantries.Itisworthnotingthatthereisnoneedtostructurethesummaryinanyparticularway.Whileitmaybehelpfultoorganizetheinformationintocategoriesortopics,thisisnotarequirement.Instead,focusongeneratingasummarythataccuratelyreflectsthecontentandintentofeachparticipant'sstatements.Toensureafairandconsistentevaluation,allsubmissionsshouldfollowtheseguidelines:1.Useonlytheinputdialogueprovidedanddonotincludeanyadditionalinformationorcontext.2.Donotuseanyexternalresourcesortoolstoassistwiththesummarizationprocess.3.Submityouroutputasplaintext,withoutanyformattingorspecialcharacters.4.Ensurethatyoursubmissionisgrammaticallycorrectandfreeofspellingerrors.5.Keepyoursummaryconciseandtothepoint,avoidingunnecessarydetailsortangents.6.Avoidmakinganyassumptionsorinferencesthatwerenotdirectlystatedin",
+        "chosen_dialogue_summary": "Thistaskisdesignedtoevaluatetheabilityofmodelstounderstandandsummarizeconversationaldialogues.Thegoalistogenerateacoherentandconcisesummaryoftheconversation,focusingonthekeypointsmadebytheparticipants.Thistaskrequiresadeepunderstandingofnaturallanguageprocessingtechniques,includinginformationextraction,sentimentanalysis,anddiscourseanalysis.Italsodemandsastrongabilitytoidentifyandextractrelevantinformationfromthedialogue,aswellasthecapacitytosynthesizeandpresentthisinformationinaclearandstructuredmanner.Theinputforthistaskconsistsofadialoguebetweentwoormoreparticipants,representedasasequenceofturns.Eachturnisapairofutteranceswherethefirstutteranceisspokenbyoneparticipantandthesecondbyanother.Forexample,thefollowingdialoguecouldbeusedasinput:ParticipantA:Hello,howareyoudoingtoday?ParticipantB:I'mdoingwell,thankyou.Howaboutyou?Theoutputforthetaskshouldbeasinglesentenceorparagraphthatsummarizesthemainpointsdiscussedinthedialog.However,itisimportanttonotethattheoutputshouldnotcontainanyextraneousinformation,suchasURLsorspecificnamesoflocations.Additionally,anyinformationthatwasnotexplicitlymentionedduringthediscussionsshouldalsonotbeincluded.Hereisanexampleofanacceptableoutput:Summary:Theparticipantsdiscussedtheircurrentwell-beingandexchangedpleasanries.Itisworthnotingthatthereisnoneedtostructurethesummaryinanyparticularway.Whileitmaybehelpfultoorganizetheinformationintocategoriesortopics,thisisnotarequirement.Instead,focusongeneratingasummarythataccuratelyreflectsthecontentandintentofeachparticipant'sstatements.Toensureafairandconsistentevaluation,allsubmissionsshouldfollowtheseguidelines:1.Useonlytheinputdialogueprovidedanddonotincludeanyadditionalinformationorcontext.2.Donotuseanyexternalresourcesortoolstoassistwiththesummarizationprocess.3.Submityouroutputasplaintext,withoutanyformattingorspecialcharacters.4.Ensurethatyoursubmissionisgrammaticallycorrectandfreeofspellingerrors.5.",
+        "rejected_dialogue_summary": "AとBは、お互いの現在の健康状態について話し合い、挨拶を交わした。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-北海道へ旅行する。-いつ行くか-夏に行こうと考える。-何名で行きたいか-友人2名と行こうとしている。-食べたいもの-海産物を食べてみたい。",
+        "chosen_dialogue_summary": "夏に友達2人と海の幸を食べに行く。#例題1の出力結果-1:夏に2人の友だちと一緒に海鮮料理を楽しみに行きます。-2:北海道に行って、夏の時期に、友人の二人と、海で獲れたものを味わいたいと思っています。-3:私は夏休みを利用して、二人で、美味しい魚介類を堪能するために、旅行に行きたいです。--4:今年の夏は、2、3人の仲間と共に、日本の北の地に赴き、新鮮な魚貝類の味を楽しもうと考えている。-5:友達と2〜3人で北の大地を訪れ、旬の魚や貝を満喫する予定です。",
+        "rejected_dialogue_summary": "-北海道の海鮮料理を食べるために夏に友達2人と旅行に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で夫と一緒に夏休みを利用して2泊3日で友人の2名と共に行動する。目的としては美食を堪能することであり、海鮮料理を希望している。Bが希望する条件は以下のとおりである。・鮮度の良い魚を提供している・港に近い店舗であること",
+        "chosen_dialogue_summary": "Bは50歳の女性で夫と一緒に夏休みを利用して2泊3日で友人と共に行動する。目的としては美食を堪能することであり、海鮮料理を希望している。Bが帰われる条件は下記のとおりである。・鮮度の良い魚を提供してる・港に近い店舗であること",
+        "rejected_dialogue_summary": "海産物が新鮮で、港の近くにあるレストランで食事を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。Bとその友人は夏に2日間の日程で友人の誕生日を祝うため、夫と離れて2泊3日の旅行をすることを検討している。具体的な旅行先や宿泊施設はまだ決定していない。旅行中に食べるものについては、新鮮で海産物を多く取り入れたものを希望している。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwoman.Sheandherfriendsareconsideringatwo-daytriptocelebrateafriend'sbirthday,awayfromherhusbandfortwonightsandthreedays.Theyhavenotyetdecidedonaspecificdestinationoraccommodation.Asforwhattoeatduringthetrip,theyhopetoincludealotoffreshseafood.",
+        "rejected_dialogue_summary": "友人と夫から離れ、海の幸を堪能する旅行を計画中。"
+    },
+    {
+        "all_short_dialogue_summary": "--Let'stryagain!--A:B:--Example3--A:おはようございます。今日はいかがお過ごしですかB:今日も暑いですね～。夏休みを満喫していますか？私は、先週の日曜日にプールに行きましたよ。泳ぐのは久しぶりだったので少し疲れましたが、とても楽しかったです！A：そうなんですか！いいなあ。私は最近、運動不足を感じているので、この夏は少し運動を増やそうと思っているところです！何か運動はされていますか?B：私は以前はバスケットボールをやっていたので、それをまた始めようかなと思っているんですよ！でも、バスケのチームに入るのは難しそうだなあと思い始めています。何か他にいい運動はないかなあと悩んでいます…A：B：A：--End--",
+        "chosen_dialogue_summary": "Bは泳ぎを楽しんだが、疲労感を覚えたため、他の運動方法を模索している。【出力例】Bislookingforotherwaystoexerciseafterenjoyingswimming,butfeelingtired.",
+        "rejected_dialogue_summary": "```Bは夏の間、泳いだり運動をしたりして楽しんでいた。```##解答例###1```python#coding:utf-8importMeCabfromgensimimportcorpora,models,similarities#文章を読み込むtext=open(\"text.txt\",\"r\").read()#形態素解析を行うtagger=MeChab.Tagger(\"-Owakati\")words=tagger.parse(text)#単語をトークン化するtokens=[wordforwordinwords.split(\"\")iflen(word)>0]#ストップワードを削除stop_words=set([\"A\",'B',\"A:\",\"B:\",\"--\",\"--End--\"])filtered_tokens=[]fortokenintokens:iftokennotinstop_words:filtered_tokens.append(token)#コーパスを作成corpus=[[tokenfortoken,_indocument]fordocumentin[corpora.Dictionary(filtered_tokens).doc2bow(doc)fordocin[filtered_token]forfiltered_tokenincorpus]]#TF-IDFモデルを学習tfidf=models.TfidfModel(corpus)#クエリを入力query=tfidf[document[0]]#検索結果を取得results=similarities.MatrixSimilarity(tfidf[corpus]).most_similar(query,topn=10)forresultinresults[:10]:print(result[1],result[2])```"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に2名の友だちと旅行に行き、新鮮なお魚や海産物を食べて楽しむことを希望している。具体的な場所はまだ検討中だが、少なくとも鮮度の高いお魚を提供する店を選びたいと思っている。",
+        "chosen_dialogue_summary": "50代女性、夏、2人、魚介類、旅行先未定、鮮魚店希望",
+        "rejected_dialogue_summary": "女性(50)夏2人旅新鮮な魚介類を味わう"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について問合せがある。-2人は鮮度の高い海産物を食べてみたいと希望している。-ただし、羊肉は食べられない。",
+        "chosen_dialogue_summary": "Bは、夏休みを利用して、2人で新鮮な魚介類を味わうために、札幌や函館を訪れたいと考えている。解答例：BisplanningtotraveltoSapporoandHakodateinHokkaidoduringsummervacationtoenjoyfreshseafood.",
+        "rejected_dialogue_summary": "-北海道の新鮮な魚介類を味わいたいが、ラム肉を食べることはできない。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に2名で友だちと旅行に行きたいと思っている。具体的な旅行先や日程は決定しておらず、行く場所はまだ未定である。旅行中に食べるものは海産物を食べてみたいと希望している。食物アレルギーはなく、羊肉は食べられない。食べ物の鮮度を重視している。",
+        "chosen_dialogue_summary": "Iama50-year-oldwomanwhowantstogoonatripwithmyfriendsinthesummer.Ihaven'tdecidedonthedestinationorthedateyet.However,Iwouldliketoeatseafoodduringthetrip.Therearenofoodallergies,butIcan'teatlambmeat.Freshnessoffoodisimportanttome.",
+        "rejected_dialogue_summary": "夏の友人との旅行を計画中の50代女性。行き先は決まっていないが、海鮮料理を楽しみたいと考えている。羊以外の食材は問題なく摂取可能で、食の新鮮さにこだわりを持つ。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する-夏に2名で行く-友人との旅行-50歳前後-女性-海産物を好む-牛肉は食べない-魚介は好き",
+        "chosen_dialogue_summary": "```「夏、50代前後の女性2人で、海の幸を楽しみ、牛を食べず、魚を愛する旅」```【解説】この文章は、夏の時期に、2人の女性（50～59歳）が、友達同士の旅行を計画していることを示唆しています。さらに、彼女たちは海鮮料理を楽しむことを好み、肉類（特に牛）を避け、代わりに魚類を選ぶ傾向があることが示されています。これらの情報から、旅行先は海辺のリゾート地や漁村などが考えられます。",
+        "rejected_dialogue_summary": "-北海道への旅行は夏に行われ、2人の友人が参加し、50代前半の女性が主催したもので、海の幸が好きな人たちが集まり、牛の肉を食べず、魚や貝類を楽しんだものである。"
+    },
+    {
+        "all_short_dialogue_summary": "--example3--A：こんにちは、旅行会社のAです。本日お時間を頂戴し、誠に有難うございます。どうぞお気軽にお話し下さい。さて、本日のご用件は旅行に関するご質問という事で宜しいですか？B：はい、その通りです。今回は夏休みを利用して沖縄に行こうと思っているんです。そこで色々とアドバイスをお願いしたくて。A：了解致しました。宜しければ、具体的な行程やご予算などを教えて頂けますと助かります。また、今回の旅行は誰とお出かけになるのでしょう？ご家族ですか、それともお一人で？B：はい、私と妻の二人です。お互い年齢も40代後半になり、子供達も独立したので、今までの分を取り戻すべく、二人きりでの旅行に挑戦しようと思った次第です（笑）A:おめでとうございます！それは素晴らしい事ですね。お二人の思い出に残る旅行になるよう、私も精一杯お手伝いさせて頂きたく思います。では早速ですが、お伺いしたいのですが…、お二人はどのような旅行をお望みでしょう？海水浴やマリンスポーツを楽しむ為のビーチリゾートを希望されるのでしたら、石垣島や宮古島などがオススメですよ。もしお子様がまだ小さいのなら、ファミリー向けのホテルや施設が充実している恩納村なども良いかと思いますが、いかがでしょう？B：そうですか、ビジネスホテルに宿泊するのと比べると、ホテルの料金はかなり高くなってしまいますか？また、飛行機のチケット代金もそれなりにかかってしまうのでは？と心配しています。A：大変申し訳ありませんが、そのような事は全くありません！実際に私自身も昨年の夏に家族で宮崎県の高千穂峡へ旅行に行った際には、往復の航空券とホテル代を合わせても10万円程度で済みましたよ！お値打ちにご予約頂けるプランも多",
+        "chosen_dialogue_summary": "AとBは、Bが夏季休暇を活用して家族旅行を計画していることを明らかにした。旅行の目的地として、Aは沖永良部島を提案し、その魅力について詳しく説明した。また、費用面についても、航空運賃やホテル費が比較的安価であることを伝えた。さらに、家族連れでも楽しめるアクティビティや、歴史的な名所を訪れることができることを強調した。",
+        "rejected_dialogue_summary": "--answer--Bは、家族と一緒に旅行を計画しているが、費用を抑えたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer1--Bは50歳以上の女性である。彼女は夫と一緒に箱根本箱を旅行することを考えていて，具体的な場所はまだ考えていないが，自然を感じることができるような場所を希望している。特定の場所やイベントは挙げられていないものの，彼女の趣向や好みを反映した旅行プランを提案することが望ましい。Bが旅行先として箱本を選んだ理由は，「自然が豊かで癒されるから」というものである。また，夫との旅行ということもあり，リラックスできる環境を求めていることが伺える。自然に囲まれた場所でのんびりと過ごすことを好む傾向があり，アクティビティよりもリラクゼーションに重きを置いていると言えるだろう。また，Bには子供がいないため，家族連れ向けの施設よりも大人のカップル向きのホテルや旅館が好まれる可能性が高い。さらに，年齢層が高いため，高級感や上質なサービスを提供するホテルが適していると考えられる。以上より，次のような旅行企画が考えられると思われる。まず，温泉付きのリゾートホテルに宿泊し，朝食や夕食はホテル内のレストランで楽しむ。昼間は自然散策やマッサージを受けるなどしてリフレッシュする。夜は星空を眺めながらのディナーを堪能するなど，ゆったりとした時間を楽しんでもらうことが重要である。なお，旅行期間や予算，移動手段などの詳細については別途検討する必要があるが，上記の内容に基づいて旅行パンフレットやウェブサイトを作成することで，ターゲットとなる顧客層にアピールできるのではないかと思う。",
+        "chosen_dialogue_summary": "50代女性。夫婦で箱根旅行を計画中。目的地は決まっていないが、自然豊かな場所が希望。リラックスタイムを重視し、高級ホテルでの滞在を考えている。",
+        "rejected_dialogue_summary": "Bisawomanover50yearsold.SheandherhusbandareplanningtotraveltoHakone,buttheyhaven'tdecidedonaspecificlocationyet.Theyarelookingforaplacewheretheycanfeelnature.Althoughtheydon'thaveanyspecificplacesoreventsinmind,itisdesirabletoproposeatravelplanthatreflectstheirtastesandpreferences.BchoseHakuneashertraveldestinationbecause\"it'sfullofnatureandmakesmefeelrelaxed.\"Also,sinceit'satripwithherspouse,shewantsarelaxingenvironment.Itseemsthatsheprefersplacessurroundedbynaturewhereshecanrelax,ratherthanactivities.Sinceshehasnochildren,family-orientedfacilitiesmaynotbesuitableforher.Instead,hotelsorryokansthatcatertoadultcoupleswouldbemoreappropriate.Inaddition,duetoherage,ahotelthatoffersluxuryandhigh-qualityserviceislikelytobepreferred.Basedontheabove,thefollowingtravelplanscanbeconsidered.First,stayataresorthotelwithahotspring,andenjoybreakfastanddinneratthehotel'srestaurant.Duringtheday,takeawalkinnatureorgetamassagetorefreshyourself.Atnight,enjoyadinnerwhilegazingatstarryskies.Thekeyistoenjoytheleisurelytime.Notethatthedetailssuchasthetravelperiod,budgetandmeansoftransportationshouldbediscussedseparately.However,bycreatingtravelbrochuresandwebsitesbasedonthesecontents,wecanappealtothetargetcustomersegment."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-友人が同行する。-美味しそうなものを食べてみたいと考える-海鮮料理を求めている-ただし、羊肉の苦手を持つ",
+        "chosen_dialogue_summary": "Bは、夏休みに友人と一緒に、海の幸を味わうために、札幌や小樽を訪れる予定です。ただ、友人はラム肉が苦手なので、その点には注意が必要です。",
+        "rejected_dialogue_summary": "友人と夏に行く。海産物を食べたい。羊は食べられない。【入力データ】```B:北海道,夏,2人,美味しい,海鮮,羊肉,苦手```【期待する出力結果】```textBは友達と一緒に夏休みに海の幸を楽しみに行きますが、ラム肉が苦手です。```##解答例```python#coding:utf-8importMeCabfromgensim.modelsimportWord2Vec#テキストファイルを読み込むwithopen(\"B.txt\",\"r\")asf:text=f.read()#形態素解析mecab=Mecab.Tagger(\"-Owakati\")words=mecab.parse(text).split(\"\")print(words)#ワード2ベクトル化model=word2vec.load(\"wiki-news-300d-1M.vec\")vectors=[model[word]forwordinwords]print(vectors)```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として、初めての訪問先である北海道を希望している。Bが希望する条件は以下のとおりである。1.鮮度の高い魚を提供する店であること2.港に近い場所に位置する3.手ごろな料金で提供される4.ホタルイカが提供されている",
+        "chosen_dialogue_summary": "BisplanningtovisitHokkaidointhesummerwithafriend,andislookingforarestaurantthatmeetsthefollowingconditions:1)freshfishisserved,2)therestaurantislocatedneartheport3)itisreasonablypriced4)hotaruikaisavailable",
+        "rejected_dialogue_summary": "【出力例】鮮魚料理が楽しめる港近くのリーズナブルな店で、北の味覚の代表格であるほたるいかが味わえる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道への旅行は夏に行うこと。-旅行の目的は友人の2名で行く。旅行先の候補はまだ決定していないが美食を楽しむことを目的としている。\n「活気ある市場で店員と会話を楽しむことができる。」「海産物を購入するだけでなく、鮮魚を使用した料理を提供する店舗も存在する。」という情報が含まれています。さらに、「３つの場所を紹介したが、そのうちのどれが気になるか」という質問に対して、「浜松漁港の市場」と答えていることから、Bは鮮度の高い新鮮な海の幸を求めていることが推測されます。",
+        "chosen_dialogue_summary": "BisinterestedintravelingtoHokkaidointhesummerwithtwofriendstoenjoylocalcuisine,particularlyfreshseafoodfromthemarket.",
+        "rejected_dialogue_summary": "「友人と一緒に美味しい食事を楽しみたいという目的で、夏に活気があふれる市場を訪れ、旬の魚介類を味わいたいと考えている。」"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行に行き、その際に美食を楽しむことを目的にしている。具体的な希望としては海に近い鮮度の高い魚を使用した料理を提供する店舗を希望している。\n活気ある市場では、対人販売が行われている。店員との会話を楽しむことができる。市場には、寿司屋などの飲食店が存在する。紹介した3つの場所のうち、どの場所に行くか迷っている。1日の旅行であるため、ランチはどこで食べるか悩んでいる。",
+        "chosen_dialogue_summary": "友人と一緒に海の近くで新鮮な魚を使った料理が食べられるお店を探しています。行きたい場所は3つありますが、1日しか時間がないので、昼食はどのお店にするか考え中です。",
+        "rejected_dialogue_summary": "海沿いの市場で新鮮な魚介類を味わうことが出来る。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が夏に友だちと2名で行く旅行先として、道内で鮮度の高い魚を提供する飲食店を希望している。具体的な店舗名は挙げられていないものの、「港に近い場所にある」「新しくて清潔感がある」などの条件が提示されている。訪問先の候補として挙がっているのは、釧路市にある「浜の母ちゃん食堂」である。\n市場内の活気や海産物の新鮮さが魅力的な場所と評価されている。特におすすめのスポットは「市場」と「浜小屋」である。旅行プランとしては1日かけて市場を散策し、ランチは市場の海の幸を堪能することが提案されている。",
+        "chosen_dialogue_summary": "50代男性は、夏の旅行で友人2人と道内の鮮魚料理店へ行きたいと考えている。店の名前は特定されていないが、港の近くにあり、新鮮な魚介類が楽しめることが条件だという。彼らが訪れる予定の場所は釡石市の「港」で、市場や浜屋などがオススメされている。一日を通して市場を見て回り、昼食には市場で獲れた海鮮料理を味わうことが計画されているという。元データ：https://www.kantei.go.jp/jp/singi/tiiki/kokusentoc/dai5/siryou3.pdf",
+        "rejected_dialogue_summary": "道内の港近くにあり、新鮮な魚介類が味わえる「港の市場」が、50代男性の夏の友人との旅行に最適な場所であると考えられている。市場内には活気があふれ、海鮮丼や寿司などのメニューが豊富に取り揃えられており、旅行者に人気がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-友人同士の旅行である。-何か目的があるわけではなく、食べることが目的である-海鮮料理を求めている-特にカキやホタテが好みである。ただし、羊肉は食べられない。-美味しそうなお店を教えてほしい\n活気に満ちた市場では、伝統的な店頭販売が行われ、人々は店員との交流を通じて買物を楽しむことができる。市場の中には、一般的な海産物の購入に加えて、新鮮な海の幸を使用した海苔丼合を提供する店舗も存在する。観客は3つの選択肢を提示され、どの場所に魅力を感じるか尋ねられる。彼らは2つの場所、すなわち「浜子」と「市場」に強い関心を示す。旅行者は1日かけてこの地域を訪れる予定であり、ランチとディナーの選択に悩む。提案として、午前中は市場での新鮮なお寿司を、夜は浜子のレストランでの食事を楽しまれることを推奨する。これは魚料理を堪能できる一日となりそうだ。",
+        "chosen_dialogue_summary": "友人は私と一緒に夏休みを利用して2人で旅行に行くことにした。目的は特になく、ただただ食べ歩きがしたいということだった。私たちが最も興味を持ったのは、市場で提供される海藻と魚介類の組み合わせで、特においしいと評判のカニやエビなどを味わうことができた。また、夕食は、地元の漁師が経営する小さな食堂で食べたが、そこで出てきた料理はとてもおいしかった。最後に、私たちは市場の近くにある温泉に立ち寄り、疲れた体を癒してから帰路についた。",
+        "rejected_dialogue_summary": "市場で昼食をとり、夕食は海沿いのレトロな店で食べよう。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Aは旅行会社の担当者であり、Bは顧客である。Bが旅行先を決める際の条件として、以下の項目が挙げられている。-時期：夏-Bは夏が好みであり、その時期に合わせて旅行を行うことを希望している。-人数：2名（Bとその友人のみ）Bと友人が旅行するため、少人数での旅行が望ましい。また、宿泊施設や交通手段の手配なども考慮すると、複数名で行く場合には事前の準備が必要となるため、その手間を省くことができる。-食事：鮮度の良い魚を求めている-北海道は海に囲まれた地域であるため、新しい魚が手に入りやすく、またその味も良いとされている。-料理の種類：和風の料理を好む-和食は日本の伝統的な料理であり、日本人にとっては馴染み深いものである。-環境：港に近い場所を望んでいる-港近くの場所であれば、獲れたての魚やその加工品を楽しむことができると考えられる。-予算：特になし-ただし、旅行代金や食費などを考えると、無制限に高い金額を支払うことはできない。\n--Answer--Bは市場を訪れることを希望しており、その中でも「魚市場」や「海産物」に関心を示している。具体的な場所としては「浜松中央卸売市場」と「西遠漁業協同組合」が挙げられており、それぞれの特徴や魅力について説明がなされている。",
+        "chosen_dialogue_summary": "Bisacustomerwhowantstogoonatripwithhisfriend.Hehasthefollowingconditionsforchoosingatraveldestination.-Time:Summer-Blikessummer,sohewouldliketotravelduringthattime.–Numberofpeople:2people(onlyBandhisfriends)-SinceBistravelingwithafriend,heprefersasmallgrouptrip.Also,whentravelinginagroup,itisnecessarytoprepareinadvance,suchasarrangingaccommodationsandtransportation,whichcanbeavoidedbytravelingasacouple.-Food:Freshfish-Hokkaidoissurroundedbythesea,makingiteasytogetfreshfish,andthetasteisalsogood.-Typeoffood:Japanese-stylefood-JapanesefoodistraditionalJapanesecuisineandisfamiliartoJapanesepeople.-Environment:Neartheport-Ifyouareneartheharbor,youcanenjoyfreshlycaughtfishanditsprocessedproducts.-Budget:None-However,consideringthecostoftravelandfoodexpenses,wecannotaffordtopayunlimitedamounts.",
+        "rejected_dialogue_summary": "Bisacustomerwhowantstogoonatrip.Hehassomeconditionsforchoosingatraveldestination.Thefirstconditionisthetimeofthetrip,whichshouldbeinthesummer.Blikessummer,sohewouldliketotravelduringthattime.Anotherconditionforthenumberofpeopleistwopeople(onlyBandhisfriend).Sincetheywilltraveltogether,itisdesirabletohaveasmallgroup.Inaddition,whentravelingwithmultiplepeople,therearepreparationssuchasarrangingaccommodationandtransportation,anditwouldbeconvenienttoavoidthehassleofsuchpreparations.Asforfood,Bislookingforfreshfish.Hokkaidoissurroundedbythesea,makingiteasytoobtainfreshseafoodandenjoyitstaste.Regardingthetypeofcuisine,heprefersJapanese-stylecuisine.JapanesefoodistraditionalJapanesecuisineandisfamiliartoJapanesepeople.Fortheenvironment,aplaceneartheportispreferred.Ataportnearplace,youcanenjoyfreshlycaughtfishanditsprocessedproducts.Thereisnospecificbudget.However,consideringthetravelexpensesandfoodexpenses,wecannotpayanunlimitedamountofmoney.Bhopestovisitthemarketandshowsinterestin\"fishmarket\"and\"seafood\".Specificplacesare\"HamamatsuCentralWholesaleMarket\",\"Nishi-EnFisheryCooperative\",andeachhasitsowncharacteristicsandattractions."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、希望を伺う。-目的は食を楽しむことであり、具体的な希望としては鮮度の高い魚を食べてみたいこと、羊肉を除く魚貝類を好むことが挙げられる。\n-浜っ子の店-鮮魚を扱う店であり、地元の漁港で水揚げされた新鮮な海産物を購入することができる。店員との会話を通じて、旬の食材や調理法についての情報を得ることも可能。-市場内での買物-旅行者は市場内の様々な店舗を訪れ、食料品や雑貨、伝統工芸品などを手に入れることが可能。市場の雰囲気や活気に触れることで、地域の文化や人々との交流を楽しむこともできる。",
+        "chosen_dialogue_summary": "-北海道への夏の旅行では、鮮やかな魚介類と羊以外の肉が好きな2人組が、浜の人の店と市場で買い物をする予定です。",
+        "rejected_dialogue_summary": "-魚介類と羊以外の肉が好きな2人組が、夏休みに北の大地を旅する。彼らの目当ては、新鮮でおいしい海の幸を堪能すること。浜辺で獲れたての魚や貝を味わい、店主と語り合いながら、その土地ならではの料理法を学ぶ。さらに、市場を散策し、珍しい品々を発見したり、買い物の醍醐味を満喫したりと、旅の楽しみは尽きない。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳前後の男性2名で夏休みを利用して旅行する。-旅行先の候補は北海道で美食を堪能すること。\n-2つの店舗を訪れること-浜っ子は夜ご飯を食べる場所として利用すること-海鮮料理を楽しむこと",
+        "chosen_dialogue_summary": "50代前半の男性が2人で、夏の休暇中に、美味しい海の幸を味わうために、2軒のレストランで食事を楽しみながら、海辺の町を散策する旅行を計画している。",
+        "rejected_dialogue_summary": "-「50代の男性二人が、夏の旅行で、美味しい海の幸を味わうため、海沿いの店で食事をする」という内容の文章である。"
+    },
+    {
+        "all_short_dialogue_summary": "1.北海道へ夏に2名で行く2.友人との旅行である3.美味しそうなものを食べてみたい4.海鮮料理を求めている5.鮮度が高く、安価であることが望ましい\n北海道旅行に行く予定のBは活気ある市場に行って海産物を食べたいと考えています。市場にはオススメの店が複数あり、夜は別の場所でも食事を楽しむことを提案されました。さらに、Bが自然や歴史的な建物を見たいという希望を伝えると、担当者はそれに応じた場所を探すことにしました。",
+        "chosen_dialogue_summary": "BisplanningatriptoHokkaidoandwantstovisitalivelymarkettoeatseafood.Thereareseveralrecommendedshopsinthemarket,anditissuggestedtohavedinnerinanotherplaceatnight.Furthermore,whenBexpresseshisdesiretoseenatureandhistoricalbuildings,thestaffwilllookforplacesthatmeetthoserequirements.",
+        "rejected_dialogue_summary": "夏休みに友達と一緒に海の幸を味わうために市場へ行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-美味しそうなものを食べてみたい-海鮮が良い-牛肉は食べたくない-鮮度の良い魚を求めている-なるべく安く済ませたい\n【モデル】![model](./model.png)",
+        "chosen_dialogue_summary": "```Bさんは、夏休みに友達と一緒に、海の幸を食べに行きたいと考えています。特に、新鮮な魚介類が食べたいようです。予算は、できるだけ抑えたいとのことです。```",
+        "rejected_dialogue_summary": "-新鮮な魚介類を味わいたい-"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友人の2名で夏に北海道へ旅行する。鮮度の高い魚を食べてみたいと希望している。特定の地域にこだわりはなく、予算は問わない。市場の直営店や居酒家が候補に挙がっている。\n--Analysis--1.Inthedialoguehistory,BmentionsthattheywanttogotoHakonewiththeir50-year-oldhusbandandwife.2.Bisinterestedinvisitinganold-fashionedmarketwheretheycancommunicatewiththestoreownerwhileshopping.3.Amongtherecommendedplaces,MinatoMarketandAnnoieareofparticularinteresttoB.4.Thecoupleplanstohaveseafooddishesforlunchanddinner.5.TheyarealsolookingforaplacewithagoodviewandhistoricalsignificanceinHokkaido.",
+        "chosen_dialogue_summary": "Bは、50代の夫婦と一緒に函館を訪れたいと述べた。彼らは古い市場で買い物をしながら店主とコミュニケーションを取りたいと考えている。推薦された場所の中で、港市場と安野井が特に興味深い。昼食と夕食には魚介類の料理を楽しむ予定だ。さらに、彼らが訪問する地域には良い景色と歴史的価値がある場所を探している。",
+        "rejected_dialogue_summary": "Thecoupleplanstohaveseafooddishesforlunchanddinner.TheyarealsolookingforaplacewithagoodviewandhistoricalsignificanceinHokkoido."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、具体的な行先や観たいものはまだない。-ただし、食べ物に関しては鮮度が高く、また、安価で味の良いものを求めている。\n活気ある市場の雰囲気や地元の人との交流を楽しむことができる。魚市場や海産物を扱う店が多くあり、地場の新鮮な食材を購入することが可能。市場内の飲食店では旬の魚を使用した料理を提供している。北の市場は様々な種類の食料品や雑貨を取り扱っているため、訪れる人々のニーズに応えることができると考えられる。ここでは豊富な品揃えを誇る店舗が立ち並び、旅行者にとっては魅力的なショッピングエリアとなっている。",
+        "chosen_dialogue_summary": "-北海道への夏の旅行で、2人で市場を訪れ、新鮮でおいしい魚介類を味わいたいと考えている。",
+        "rejected_dialogue_summary": "-北海道の夏の旅行では、新鮮でおいしい食事が楽しめる市場を訪れたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く。-友達がいる。\n【問い】どのような要素に着目して要点を抜き出したかを述べよ。",
+        "chosen_dialogue_summary": "-行き先は北海道で、夏の時期に行き、2人で旅行する。-旅行先には友人がいる。",
+        "rejected_dialogue_summary": "-夏休みに友人と2人で旅行に行く。-行き先は友人が住んでいる場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。Bと友人は夏に2日間の日程で友人の実家がある北海道を旅行する。目的は海で採れたばかりの鮮度の高い魚を堪能することである。また、出来るだけ安価で済ませたいという希望もある。\n--Answer--AはBに市場の魅力について説明している。Bは市場内の海産物の売り場や食事処について関心を示している。",
+        "chosen_dialogue_summary": "友人と一緒に海の幸を食べに行く予定のBに対して、Aが市場で新鮮な魚介類が手に入ることを伝えている。さらに、市場内には飲食店もあり、安くて美味しい料理を楽しむことができると話している。",
+        "rejected_dialogue_summary": "-Bは友人とともに夏休みを利用して2泊3日で海の幸を満喫する旅に出かける。-旅の目的地は、友人が生まれ育った故郷であり、市場で新鮮な魚介類を味わうことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として、既に北海道を選んでおり、具体的な場所や日程は未定である。Bは美食を求めているが特定の食べ物にこだわりはなく、また、羊肉を避けたいと述べている。\n-北海道旅行で市場を訪れる予定である。-旅行中は市場内の店舗で魚を購入し、その後、別の店で夕食をとることを希望している。",
+        "chosen_dialogue_summary": "Bが友達と一緒に夏の旅行を計画している。目的地はすでに決まっていて、美味しいものを食べたいと思っているが、特に好きなものはない。ただし、ラム肉は食べたくないそうだ。旅行中に市場に行き、魚介類を買い、夕飯は別のお店に行きたいと考えている。",
+        "rejected_dialogue_summary": "BisplanningatriptoHokkaidointhesummerwithtwofriends,andhasalreadydecidedonthedestination,butthespecificlocationanddatesarestillundecided.Bislookingforgoodfoodbutdoesnothaveaparticularpreferenceforanyspecificfood,exceptthathewouldliketoavoideatingsheepmeat.Duringthetrip,Bplanstovisitamarketandpurchasefishfromastoreinsidethemarket.Afterthat,hehopestoeatdinneratadifferentrestaurant."
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が旅行代理店に電話をかけてきた。-旅行の目的は夏に友だちと2名で行く旅行である。--以下省略--\n--Answer--今回の目的は1日で食事と自然を楽しむことである。具体的な要件は以下の通りである。-食事は海産物をメインに考える-北海道で有名な市場に行くことを検討している-2つの候補が挙がっている-浜っ子の市場-夕食に利用することを想定-鮮度の高い魚を食べられる-おすすめの料理は握り寿司-旬の食材を使用しているため、季節ごとに異なる味を堪能できる-料理の種類が豊富である-日本酒との相性が良い-地元の酒造メーカーから取り寄せている-店内は落ち着いた雰囲気であり、ゆったりと過ごせる-客層は幅広い-家族連れやカップルが多い-接客態度は丁寧であり、高い満足度を得ることができる",
+        "chosen_dialogue_summary": "夏休みの旅行で友達と一緒に海の幸を楽しみたいです。私たちは日本で最も人気のある市場の1つである「浜の市場」に行きたいと思っています。ここでは新鮮な魚介類を味わうことができ、特に握りと日本の地酒が楽しめます。また、家族や恋人同士でも楽しめる場所なので、ぜひ訪れてみてください。",
+        "rejected_dialogue_summary": "自然と食を満喫する一日。海の幸を味わい、市場で新鮮な魚介類を購入し、日本酒と共に楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として、知り合いから勧められた「アンネの家」を訪問することを希望している。具体的な旅行日程や宿泊場所、交通手段などについてはまだ検討中である。旅行中に食べるものについての希望を尋ねたところ、Bから「海が近いところで、新しくておいしい魚を食べてみたい」という希望が得られた。そこでAはBが希望する条件に合致するレストランを紹介することにした。紹介された店舗は3つあり、1つ目の店は「厚生年金会館前駅」から徒歩5分の場所にある「祇園」である。この店では生と焼の両方で食べられる大粒のカキが特徴的であり、またそのほかのメニューも数多く用意されているため、訪れるたびに異なる料理を楽しむことができるという。2つめは、「厚別」駅から車で10分ほどのところに位置する「新琴似」で、その名のとおり、ホタテやカニ、イクラなど北の海で獲れた魚が豊富にそろう店であると紹介されている。最後に紹介されるのは「さっぽろテレビ塔」近くの「すすきの」に店を構える「かっぱ寿司」だ。ここの特長は店内に水槽が設置されており、その中で泳いでいる魚から好みのものを選んで調理してもらえるという点にある。以上の3つの店について紹介が終わると、AがBに対して「他に希望の条件はありませんか？」と質問を投げかける。Bからは「とにかく新しい店を見つけたい」との返答が返ってくる。これを受けてAはいったん電話を切り、インターネット上の情報を収集し始める。数分後、再び電話がかかってくる。Aによれば、先ほどBに伝えた3店以外にも、以下のような店があることが分かったという。1.さくらの時期に開催されるイベントの会場となる「大通公園」のすぐ隣に建つ「ススキ",
+        "chosen_dialogue_summary": "Bさんは夏休みに、友達と一緒にオランダのアムステルダムに行きたいと考えているそうです。日付や泊まる場所など、まだ決まっていないことがたくさんあるようですが、食べ物に関しては、海の近くで新鮮な魚介類を食べたいという希望があるようです。そんなBさんに、私はおすすめのお店3軒をご紹介しました。まず1軸目は、大きな牡蠣を生でも焼いても楽しめるお店で、毎回違うメニューを味わうことができます。次に2軌目ですが、こちらは北海道産のホッケやタラバガニなど、新鮮で美味しい海鮮料理が楽しめます。そして最後は水族館の中で魚を見ながら注文できる回転ずし屋さんです。これらの情報を受け取ったBさんが、他にも何か希望はありますか？と聞いてきました。すると、彼女は新しくオープンしたばかりの店に行ってみたいと答えました。それを聞いた私は、さっそくネットで調べてみることにしました。その結果、見つけたのは、桜の季節に花見ができる公園のすぐそばにできた、美しい景色を眺めながら食事をできるカフェでした。このように、私たちはBさんの希望に合わせて、いろいろな場所を探すことができました。",
+        "rejected_dialogue_summary": "A:B,youwanttogotoAnne'shouseinsummerwithyourfriends.Youhaven'tdecidedonthetraveldates,accommodation,ortransportationyet.WhenIaskedyouaboutwhatyouwouldliketoeatduringthetrip,youranswerwas,\"Iwouldlovetotryfreshanddeliciousseafoodnearthesea.\"So,Iamgoingtointroducearestaurantthatmeetsyourrequirements.TherearethreerestaurantsIcanrecommend.Thefirstoneiscalled\"Gion\"andislocatedafive-minutewalkfromthe\"Kasaienkanmae\"station.Thisrestaurantisfamousforitslargeoystersthatcanbeenjoyedbothrawandgrilled.Theyalsoofferawidevarietyofotherdishes,soyoucanenjoydifferentmealseverytimeyouvisit.Second,thereis\"Shinkotoni,\"whichisaboutaten-minutedrivefrom\"Atsubetsu\"Station.Itiswell-knownfortheabundanceofseafoodcaughtinthenorthernseas,suchasscallops,crabs,andsalmonroe.Lastly,thethirdrestaurantIwouldrecommendisthesushirestaurant\"SapporoTVTower\"near\"Susukino.\"Theiruniquefeatureisthattheyhaveafishtankinsidetherestaurant,wherecustomerscanchoosetheirfavoritefishandhaveitpreparedforthem.Afterintroducingthesethreeplaces,AasksBifthereareanyotherpreferences.B'sresponseissimply\"Justfindmeanewplace.\"Athenhangsupthephoneandstartsgatheringinformationonline.Afewminuteslater,hecallsback.HesayshehasfoundsomeotherrestaurantsthatmightinterestB.Oneofthemisaseafoodrestaurantlocatedrightnextto\"OodoriPark,\"whereaseasonaleventisheldduringsakuraseason.Anotherisanizakaya(atypeofJapanesepub)in\"Fushimi\"thatisknownforservingfreshseafoodfromHokkaido.AndthelastoneIfoundwasabuffet-stylerestaurantinashoppingmallnearapopulartouristattraction.Ihopethishelps!Letmeknowifyouhaveanyquestionsorconcerns."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道で夏に友だちと旅行する-美味しそうなものを食べてみたい-海鮮料理-鮮魚-できれば港に近いところ-ホタテ-大きいもの-カニ-数量限定-地元の人に愛されている\n-北海道旅行について-市場内で魚を購入する-2つの市場を紹介-浜っ子の市場-海鮮料理を提供する店が多くある-夕食に利用することを提案-旅行の満足度が高くなる-一日を通じて魚にこだわった旅行ができる-食べ物に特化した旅行になる-観光よりも食事を重視している-歴史や自然よりも魚に関心がある-屋内での活動を好む-外で過ごす時間を減らす-天候に左右されない行動をとる-運動量が少ない-健康に悪影響を及ぼす可能性が高い-病気のリスクが増加-生活の質が低下-人生の充実感が減少-幸福度も低い-不幸せな人生を送ることになる-交通手段の選択-電車-時間がかかる-スケジュールに余裕が必要-忙しい人には不向き-リラックスできない-心身の健康が損なわれる-メンタルヘルスが悪化-精神疾患の発症率が上昇",
+        "chosen_dialogue_summary": "-北海道の夏の旅行では、市場で新鮮な魚介類を味わうことが魅力的な体験となる。特に、地産地消の食材を使った料理が楽しめる「はまっこ市場」はおすすめのスポットだ。ここでしか食べられない珍しい魚や、旬の味覚を堪能することができる。さらに、近隣のレストランや居酒屋で提供される魚料理もおいしいと評判だ。-一方で、屋外でのアクティビティを避ける傾向があるため、旅行中は屋内の施設を中心に回ることが多い。天気や気温に関係なく、安定した環境で楽しむことが可能だ。しかし、運動不足やストレスの蓄積により、健康への影響が懸念される。適度な運動やリラクゼーションを取り入れることが大切だ。また、鉄道での移動を選ぶ場合、長時間の乗車による疲労や不便さが生じる可能性がある。時刻表やルートの確認をしっかり行い、スムーズな旅を計画しよう。",
+        "rejected_dialogue_summary": "-北海道の夏の旅行では、市場で新鮮な魚介類を味わうことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBと旅行についての会話を行っている。Bは夏に2名の友人の旅行先として、具体的な場所は未定だが、道内を検討している。美食が目当てであり、例として海産品を挙げる。Aが提供した3つの選択肢のうち、居酒や的な店舗を選択した。",
+        "chosen_dialogue_summary": "```A:夏休みはどこかに行く予定はある？B:あるよ。2人の友達と一緒に北海道に行くつもりなんだ。A：美味しいものを食べるのが目的なんだね。B：そうだよ。海の幸が食べたいな。```",
+        "rejected_dialogue_summary": "A:IwouldliketogotoHokkaidowithmyfriendsinthesummer.B:Whatdoyouwanttodothere?A:Howabouteatingseafood?B:Thatsoundsgood.I'mlookingforaplacewhereIcaneatseafoodanddrinkalcohol.A:Ihavesomeoptionsforyou.Thereisarestaurantcalled\"Izakaya\"inSapporo.It'sfamousforitsseafooddishes.YoucanalsoenjoydrinkingJapanesesakethere.Ifyouareinterested,letmeknowandIwillgiveyoumoredetailsabouttherestaurant.B:Thankyouforthesuggestion.Iwillthinkaboutitandletyouknow."
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、北海道が候補に挙がっている。旅行に行った際には、海鮮料理を食べてみたいという希望がある。友人は羊肉を苦手にしているため、ジンキスカンの食べられない店を希望している。具体的な行先や日程は未定である。\n1.旅行先は函館である。2.海鮮料理が食べたい。3.歴史が感じられる場所を訪れたい。",
+        "chosen_dialogue_summary": "友人と一緒に夏休みに旅行を計画している50代女性は、食べ物にこだわりがあり、特に新鮮な海の幸を楽しみたいと考えている。彼女は羊の肉が苦手な友人のために、ラム肉を使った料理は避けたいと思っている。また、史跡や文化遺産に興味を持っており、歴代の大統領が宿泊したホテルや、古い町並みが残るエリアなどを散策したいと望んでいる。ただし、旅行の詳細なプランはまだ決まっていない。",
+        "rejected_dialogue_summary": "```「北海道の海の幸を楽しみたいと考えています。」```###要約結果の正解評価|実行日時|2019/03/2517:22:41||--------------|-------------------||処理時間[ms]|2|"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が夏に友だちと2名で行く旅行先として、北海道が候補に挙がっている。具体的な行先や時期はまだ決定していないが、何かしら食べ物にこだわりがあるようだ。好みの料理としては鮮度が高く、肉類は食べられない。港に近い店舗で魚を提供している店を希望している。紹介された店の中では「浜ッ子」が特にお気に入りのようである。\n-旅行の目的-旬の食材を味わう-海鮮料理を食べたい-北海道産の魚を使った料理が良い-美味しそうな魚を自分で選びたい(市場)<br>すでに調理済みのものを提供してほしい-自分で料理するのは面倒-料理の腕に自信がない-失敗したくない-レシピ通りに作っても失敗する可能性がある-調味料の分量を間違える-味が濃くなってしまう-食べるのが辛くなる-せっかくの美味しい魚が台無しになる-時間とお金を無駄にする-後悔する-もっと上手く作れれば良かった-次回はもっと上手に作れるように頑張る-今回の失態を繰り返さないように気をつける-間違えやすいポイントを覚えておく-分量の確認を怠らない-材料をきちんと計量してから使う",
+        "chosen_dialogue_summary": "行き先は北海道で、友達と行きたいと考えています。夏に行く予定です。魚介類が好きなので、港の近くにあるお店で新鮮な海の幸を楽しみたいと思っています。「浜っ子」という店がお気に入りです。",
+        "rejected_dialogue_summary": "Bは、市場で新鮮な海産物を購入し、それを自ら料理して楽しむことに興味を持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、道内で何度も行ったことがあるという理由で北海を選んだ。美食を求めており、食べ物の好き嫌いとしては羊肉を除く鮮度の良い魚が好物である。具体的な場所は未定であるため、場所と合わせて店を紹介してほしいという依頼があった。紹介された店は2店舗あり、1つ目の店では港でとれた新しいカキを安価で提供している。もう1つの店も港に近い場所にあり、日本酒と相性のよい刺し身を提供する。最後の紹介では市場があり、豊富な種類の魚を購入することができる。\nAさんがBさんに、旭川の市場を紹介している。Bさんは、Aさんの紹介を聞きながら、どの場所に行くか迷っている様子である。AさんはBさんの迷いを察して、「じゃどうしますか？」と聞いている。そこでBさんが「はい」と答えていることから、おそらくAさんに対して、自分が何を望んでいるかを伝えようとしていることが伺える。次にAはBに「じゃ、1日旅をするなら」という提案をしている。これはAがBがどのような旅を求めているのかを把握しようとしており、その結果Bは「はーい」と肯定的な反応を示している。このようにA、Bともに相手の意見を尊重し合いながら会話が進んでいることが分かる。",
+        "chosen_dialogue_summary": "B氏は、友人と共に北海道を訪れ、美味しい食事を楽しみたいと考えている。50代女性の彼女は、新鮮な魚介類を好むが、ラム肉は苦手だという。彼女の希望に応じて、札幌市中央卸売市場や函館朝市など、魚や海産物を扱う市場が紹介されている。",
+        "rejected_dialogue_summary": "夏の北海道旅行で新鮮な魚介類を堪能したい50代女性Bに対し、友人Aがおすすめの店や場所を案内する。A:旭山動物園の次はどこに行きますか？B:はい、じゃあ、海鮮丼が食べたいです。B1:えーと、どこがいいですかね？A2:北海道ならではの海の幸を味わうなら、函館の朝市はどうでしょうか？市場で自分で選んで調理してもらえますよ！B3:函館は遠いので、近場で美味しいお店があれば教えてください！A4:わかりました！札幌市中央卸売市場は、地元の人にも人気のある市場ですよ。豊洲や築地に比べると規模は小さいですが、新鮮でお手頃な値段で海産物が手に入ります！"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋に箱根本線を旅行することを検討している。彼女は文化的アクティビティを楽しむことを望んでおり、具体的な場所としてアン・ノイェという場所を提案した。Aはアンについて知っているかどうかを確認し、Bがアンの名前を正しく発音するのを手助けした。",
+        "chosen_dialogue_summary": "Bさんは、秋の箱根登山鉄道の旅を計画中で、文化的な活動を楽しみたいと考えている。具体的には、アンという名前の場所に行きたいと言っている。",
+        "rejected_dialogue_summary": "A:DoyouknowanythingaboutAnn?B:IwasthinkingofgoingtoAnn-no-yeinthefallwithmyhusband.Iwouldliketodosomeculturalactivitiesthere.HaveyouheardofAnn?Canyouhelpmepronouncehernamecorrectly?【解答例】Bisa50-year-oldwomanwhoisconsideringtravelingontheHakoneTozanlinewithherhusbandinautumn.SheislookingforwardtoenjoyingculturaleventsandhassuggestedaplacecalledAnn-No-Yeasaspecificlocation.AasksBifsheknowsaboutAnneandhelpshercorrectlypronounceAnne'sname."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道への旅行-2名で行く-夏-友人同士-海鮮料理-牛肉は食べられない-鮮魚-和食",
+        "chosen_dialogue_summary": "-夏に友達と2人で海の幸を食べに行く旅行##解答例-友人と夏に海産物を味わいに行きます。",
+        "rejected_dialogue_summary": "-北海道の夏に2人で、海の幸を楽しむ旅に出かけた。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋頃に2泊3日程度の旅行に出かけることを検討している。旅行先としては北陸地方が候補に挙がっている。Bが希望するのは、オーガニック食品を扱うスーパーマーケットや、カフェ、レストラン、パン屋、雑貨屋などで、そのような店舗が多く集まる場所を希望している。\n-3つの場所を紹介する-浜っ子の市場-海鮮料理が美味しい-夕飯に食べたい-一日を通して楽しめそう-旅行の満足度が上がる-ただし、一日中魚ばかりだと飽きてしまう-他の料理も食べてみたい-屋台のラーメンやスープカレーなどもおすすめ-北海道名物を堪能できる-美味しさに感動すること間違いなし-お腹いっぱいになるまで食べまくろう-食べ過ぎには注意-体調を崩さないように気をつけよう-健康的な食生活を心がけることが大切-バランスの良い食事を摂るようにしよう-野菜や果物もしっかり食べようね-栄養バランスを考えて食材を選ぼう-適度な運動も大事-歩くことが健康に良いと言われている-散歩やジョギングなどを楽しもう-自然の中でリフレッシュすることでストレス解消にもなる-心身ともに健康になれる-明るく元気に過ごせる-笑顔が増える-人間関係も良好になる-幸せな人生を送るために健康が重要-日頃から健康管理を怠らないように-病気やケガを予防するためにも-定期的に健康診断を受けることも必要-何か異常が見つかったら早めに治療を受けましょ-医師の指示に従って適切な処置を-治療が長引いても焦らずに-根気強く続けていこう-回復を信じて前向きに取り組むことが重要です-ポジティブな考え方を持つことで心も体も強くなれるよ-不安や心配事",
+        "chosen_dialogue_summary": "50代女性が夫婦で秋に行く2〜3日の旅行を考えている。希望の目的地は、有機食品のスーパーなどがある場所である。紹介したい場所は3つある。1つ目は「はまっこのいちば」で、新鮮な魚介類を食べることができる。夕食にぴったりで、1日楽しめる場所だ。2つ目の「北海市場」では、道内の名産品を味わうことができ、満腹になるほどのボリュームがある。食べすぎに注意しながら、バラエティに富んだ料理を楽しみたい。最後に、健康な体を維持するために、運動や食習慣の改善が必要であることを強調した。",
+        "rejected_dialogue_summary": "Bさんは、秋に夫婦で旅行を計画しています。希望は、有機食品の店が多い場所で、2日間楽しめることです。具体的には、海産物の市場で夕食を楽しみたいと考えているようです。ただ、魚だけだと物足りないので、屋外の食堂でスパイシーカレーを食べるのもお勧めです。また、北海の名産品を味わうのも良いでしょう。健康を保つためには運動が必要ですし、自然に触れることでリラックスできます。笑顔を増やして、人付き合いを良くしましょう。【出典】https://www.kantei.go.jp/jp/singi/it2/dai35/siryou1.pdf"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行先を検討している。-友人は美食を求めている。-海鮮料理を好み、羊肉を苦手にしている。",
+        "chosen_dialogue_summary": "友人と2人で夏の旅行を計画中です。美味しいものを食べたいと考えています。海の幸が好きで、ラム肉が苦手です。",
+        "rejected_dialogue_summary": "-札幌で海の幸を堪能する旅-"
+    },
+    {
+        "all_short_dialogue_summary": "--Task2--**Task2-1:**A:B:A:【質問】B:--Answer--",
+        "chosen_dialogue_summary": "#Task1##1.1A:B:C:D:E:F:G:H:I:J:K:L:M:N:O:P:Q:R:S:T:U:V:W:X:Y:Z:a:b:c:d:e:f:g:h:i:j:k:l:m:n:o:p:q:r:s:t:u:v:w:x:y:z:A':B':C':D':E':F':G':H':I':J':K':L':M':N':O':P':Q':R':S':T':U':V':W':X':Y':Z':a':b':c':d':e':f':g':h':i':j':k':l':m':n':o':p':q':r':s':t':u':v':w':x':y':z':0:1:2:3:4:5:6:7:8:9:10:11:12:13:14:15:16:17:18:19:20:21:22:23:24:25:26:27:28:29:30:31:32:33:34:35:36:37:38:39:40:41:42:43:44:45:46:47:48:49:50:51:52:53:54:55:56:57:58:59:60:61:62:63:64:65:66:67:68:69:70:71:72:73:74:75:76:77:78:79:80:81:82:83:84:85:86:87:88:89:90:91:92:93:94:95:96:97:98:99:100:101:102:103:104:105:106:107:108:109:110:111:112:113:114:115:116:117:118:119:120:121:122:123:124:125:126:127:128:129:130:131:132:133:134:135:136:137:138:139:140",
+        "rejected_dialogue_summary": "##構成要素###要約したい文章####Task2-A:B:A:-B:####Answer--Answer--###生成した文章##実行方法```bashpython3main.py```"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行すること-友人2名で行く-夏に行き-鮮魚を食べてみたい-なるべく港に近いところで-海鮮料理を提供する店-料亭のような高級感はなく-家庭的な店を希望-カキ、ホタテ、タコ、イカ、サーモン、カニなど-ホッキー貝が有名-地元の人が多く利用する-リピート率が高い\n--例題3--A:こんにちは。どこかお出かけの予定はお決まりですか?B:いえ、何も決まっていません。とりあえず、天気予報を見てから決めたいと思います。さっきまで雨が降っていましたが、今は止んでいますね?A：はい、そうですね。今は晴れていて、少し風が吹いていますよ。今日の最高気温は28度と予想されていますが、それほど暑くはならないようですねB：そうですか。それなら外出しても大丈夫ですね?どこに行こうか迷ってしまいます?海に行くのもいいですし、それとも山に行ってハイキングを楽しむのもいいでしょうね?あなたのオススメは何ですか?私はどっちも行ったことがないのですよ?A：海も山も素晴らしいところですが、私なら海をお勧めします。海は波の音や潮の香りがとても心地よく、リラックスできますよ?もちろん海水浴やサーフィンも楽しめますし、おいしいシーフードも堪能できます?それに比べて、山には山の魅力があり、緑豊かな自然の中を散策することで心身ともにリフレッシュできるでしょう?山頂から見下ろす景勝地もまた格別ですね?B：確かにおっしゃる通りですね。それぞれの良さがあるのですね。お互いに意見を出し合って決めるのも面白いかもしれないです?そういえば、あなたはどこの海や山がお好みですか？私は以前、伊豆半島の海岸沿いをドライブしたことがあって、とても気持ちが良かったのを覚えていますA:私は長野県の軽井沢にある白糸の滝がお気に入りです。あまり知られていませんが、その美しさは言葉では表現しきれないほどのものですB:わかりました。次回の休日には、ぜひとも行ってみることにします?今度は山の方にチャレンジして、心も体もリセットしてこようかな?その際はまたご一緒しませんか?私と一緒に山登",
+        "chosen_dialogue_summary": "-北海道に旅行に行くこと-友達と2人で夏にいく--新鮮な魚介類を食べたいので、港の近くで海産物を扱うお店で、家庭的でリーズナブルなところがいい",
+        "rejected_dialogue_summary": "【学習データ】テキストファイルのフォーマットは以下を参照https://github.com/megagonlabs/japanese-abstract-qa/blob/master/data/README.md"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友だちと2名で行く旅行先を検討している。Bが希望する条件は以下のとおりである。1.北海道2.夏3.友人との旅行4.海鮮物5.できれば港に近い場所6.料理は鮮度が良いもの7.値段は手ごろであること8.個人経営で家庭的な店",
+        "chosen_dialogue_summary": "「夏に友達と行き、海の幸を手頃な価格で堪能できる、港の近くにある、個人営業の家庭的で新鮮な食材を使った料理を提供するお店を探している」【解説】この問題は、Bという人物の旅行に関する要望をまとめることが求められています。以下に、解答のポイントを説明します。まず、問題文の冒頭に「B」という人物が登場します。彼/彼女は旅行を計画しており、その際にいくつかの条件を満たす場所を求めています。条件1:北海道条件2:夏に旅行したい。条件3:友人と一緒に行く予定である。これらの条件から、旅行の目的地が夏の時期に訪れるのに適した場所であることがわかります。また、友人が同行するため、複数人で楽しめるアクティビティや施設があることが望ましいと考えられます。続いて、食事に関する条件が提示されます。条件4から条件8までがそれに該当します。これらを総合すると、以下のような特徴を持つ場所が理想的であると言えるでしょう。-海鮮料理が提供される。-値段が手軽で、予算内に収まる範囲で満足感を得ることができる。--港の周辺に位置し、新鮮で質の高い海産物を入手できる可能性が高い。また、条件7では「個人運営の店舗」が好まれることが示唆されています。これは、お店の雰囲気やサービスに個性や温かみがあることを期待しているのかもしれません。以上を踏まえると、次のような解釈が可能です。「B」は夏休み中に友人のグループと共に海辺の町を訪れ、地元の漁港で水揚げされたばかりの魚介類を味わいたいと考えています。その際には、リーズナブルな料金で美味しい料理に出会えることを重視しており、さらに、自分たちだけの特別な時間を過ごせるような、個性的で親しみやすい店を見つけたいと思っています",
+        "rejected_dialogue_summary": "夏に友達と行きたい港の近くにある手頃な価格で新鮮な魚介類を食べられるお店を探している。【正解例】海の幸を味わえる港近くの安くて美味しい店を見つけたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として、道北を希望している。美食を求めているが具体的な希望はない。鮮度の高い魚を食べてみたいという希望がある。海から引き上げたばかりの魚や貝を提供する店を好む。\n--Answer--AはBに、旭川市にある市場について説明している。BはAの説明を聞きながら、どの場所に行くか迷っている様子が伺える。最終的には、Aが提案した、朝は市場の海産物を購入し、その日の夜は浜子という店で夕食をとることを決めた。さらに、Bが自然や歴史を好むことを知ったAは、次にBと一緒に札幌市内の観光スポットを見て回るプランを提案した。Aは、JRタワー展望室の特徴を紹介し、Bが興味を持つかなと思った。",
+        "chosen_dialogue_summary": "A:Bが夏休みに北海道を旅行したいと言っているのですが、どこがいいと思いますか？B:道北に行きたいと思っています。新鮮な魚介類を食べたいです。市場で買ったものをその日のうちに食べられるようなお店があればいいですね。A：それならば、市場に行ってみてはいかがでしょうか？美味しいものがたくさんありますよ。B：そうですね、いいかもしれませんね。でも、海の近くに住んでいないので、どうやって行けばいいのかわかりません。",
+        "rejected_dialogue_summary": "BisinterestedintravelingtoHokkaidointhesummerwithtwofriends.Theyarelookingforgoodfoodbuthavenospecificpreferences.Bwouldliketoeatfreshfish.Heprefersrestaurantsthatservefishandshellfishthathavejustbeenpulledfromthesea.AisexplainingtoBthatthereisamarketinAsahikawaCity.WhilelisteningtoA'sexplanation,Bseemstobeundecidedaboutwheretogo.Intheend,AproposedthattheybuyseafoodatthemarketforbreakfastandhavedinneratarestaurantcalledHamakothatnight.AalsolearnedthatBlikesnatureandhistory,soheproposedaplantovisitsightseeingspotsinSapporoCitywithBnexttime.IintroducedthefeaturesoftheJRTowerobservatory,andIthoughtBmightbeinterested."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行先を検討している。-食事は鮮度が高くて新しくておいしそうなものを選びたい。\n北海道旅行をする予定である。旅行は1日で行う。市場に行き、食事を楽しむことを希望している。また夜は別のレストランに行くことを検討している。自然が好みであるため、景勝地を訪れることを望んでいる。特定の場所にこだわりはなく、様々な場所を見て回ることを楽しく感じる。",
+        "chosen_dialogue_summary": "-市場で新鮮な食材を味わい、自然豊かな景色を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-北海道の市場で新鮮な食材を味わい、自然の景色を楽しみたい。-"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと思っている。行先についてはまだ具体的な候補を絞り切れておらず、道内全域を検討している。Bが希望する旅行プランとしては、「北国の味覚を堪能する」ことが挙げられており、その中でも「鮮度が高くておいしい魚をたくさん食べてみたい」という点が強調されていた。また、「港に近いところ」で食べられるような料理店を希望していることが明らかとなった。さらに、B自身は羊肉に対してアレルギーを持っているため、羊料理は避けたいという意向も示された。以上の要素を踏まえて、AはBに3つの店舗を提案した。最初に紹介されたのは「厚\n-旅行先：北の大地・旬のグルメを楽しむ旅in北海道・小樽市-行先候補-海鮮市場-北の漁場-旬な魚を新鮮なまま味わうことができ、寿司や刺身など様々な調理法で提供される。+鮮度が高いため、素材そのものの味を堪能することが出来る。+ここでは、新鮮で美味しい海産物を購入できるだけでなく、その場で食事をすることも可能だ。+海の家ぽーたる-漁港のすぐそばにあり、獲れたての魚を使った料理を提供している。+店内からは海が一望できて、開放的な雰囲気が魅力。+地元の名産品を扱う店舗が多数あり、お土産探しにも最適。-観光名所-JRタワースカイガーデン-地上160mの展覧台から360°のパースペクティブな景望を楽しませてくれる。+夕暮れ時や夜間のライトアップは特に見応えがあり、ロマンチックなムードが漂う。+展望レストランやショッピングモールも併設されていて、一日中過ごせる場所。",
+        "chosen_dialogue_summary": "Bさんは、夏の休暇中に夫婦で北大地の旨いものを満喫する旅に出たいと考えている。具体的には、鮮やかな魚介類を存分に楽しみたいとのこと。特に、港近くの場所で味",
+        "rejected_dialogue_summary": "Bさんは、夏の休暇を夫婦で楽しめる旅行を計画しており、行き先は北海道全体を対象としている。彼女の希望は、北国ならではの食材を満喫することで、特に魚介類を多く食べたいと考えている。また、港町の近くにある料理店が望ましいとし、さらに彼女自身が羊に対するアレルギーを持っているため、羊肉は避けたいとの意向も示されています。Aが提案した3つの店舗の中で、最初に紹介されたのは「海"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-2人は友だちである。-食事を楽しむことを目的としている。+鮮度の高い魚を食べてみたい。-牛肉は食べられない。*魚介を生で食べるのが好き。\n-旅行の目的は活気に満ちた市場を訪れることであり、そこでは地元の人々との交流を楽しむことができると述べている。-おすすめの場所としては「北の漁場」が挙げられ、ここでは新鮮な海産物を購入できるだけでなく、レストランも併設されており美味しい食事も楽しめると説明している。\n-夜行くか日中に行くかに関わらず、気軽に訪れることができそうな場所を探している。-旅行先として、北海道の札幌市を検討している。",
+        "chosen_dialogue_summary": "2人の友達が夏休みを利用して、食を楽しみたいという目的で、鮮やかな海の幸を味わいたいと考えています。生魚が好きなので、できれば生ものを食べたいと思っていますが、肉類は避けたいようです。彼らは北の大地を旅する予定で、その目的地として活気があふれる市場が候補に挙がっているとのことです。その市場では、現地の人たちと交流しながら、新鮮でおいしい海鮮料理を堪能することができるそうです。具体的な場所はまだ決まっていないようですが、彼らが興味を持っているのは、豊富な種類の魚や貝類が揃っていることで有名な「魚の市場」です。この市場は、夜でも営業しているため、時間を気にすることなく利用できる点も魅力の一つです。また、市場内には飲食店も多数あり、好みの食材を選んで調理してもらうことも可能なようです。",
+        "rejected_dialogue_summary": "友人2人で夏休みを利用し、食を楽しみつつ、市場での交流も体験したいと考えています。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友だちと2名で夏に北海へ旅行することを検討している。美食を楽しむことが目的であり、希望としては港に近い鮮度の高い魚を提供する飲食店を求めている。\n-旅行の目的は市場での買物や海産物の食事を楽しむことである。-市場内で食べられるものとして、オススメの場所を教えてもらった。-夕食は地元の居酒屋に行く予定である。-北海道旅行中に訪れたい場所として「JRタワー」、「北の映像ミュージアム」が挙げられた。",
+        "chosen_dialogue_summary": "友人と一緒に市場で買い物をしたり、新鮮な魚介類を味わったりするのが目的の旅行。市場内のレストランを紹介してもらい、夕飯には地酒を楽しみながら夕日を眺められるお店に行きたいと思っている。",
+        "rejected_dialogue_summary": "Bと友人は、夏の旅行で美味しい海の幸を味わいたいと考えている。彼らは、港の近くで新鮮な魚介類が楽しめるレストランを探している。また、市場でのお買い物も楽しみの一つだ。夕飯には、地産地消の料理が堪能できるところを選びたい。さらに、旅行中には「JRTower」や「北映」の訪問も計画している。解答例Bと友人は、夏の旅行で美味しい海の幸を味わいたいと考えている。彼らは、港の近くで新鮮な魚介類が楽しめるレストランを探している。また、市場でのお買い物も楽しみの一つだ。夕食には、地産地消の料理が堪能できるところを選びたい。さらに、旅行中には「JRタワー」や「北映」の訪問も計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人旅を検討している。-旅行の目的は自然を満喫することであり、山登りやハイキングなどを楽しむことを希望している。自然の中で過ごす時間を大切にし、静かな環境を求めている。\n1.旅行の目的は市場を訪れることである。2.2つの市場のうち、1つ目は「海産物を購入すること」が目的である。もう1つの「浜ッ子」は夕食をとる場所として検討している。3.市場以外の場所では、「自然」を感じられる場所を探している。具体的な例としては、「北の国からのロケ地」や「自然公園」などが挙げられる。4.「北の大地の水族館」も候補に挙がったが、「水中トンネル」などのアトラクションがあるため、子供連れの家族向けであると判断した。5.自然公園では「動物園」よりも「昆虫館」の方が子供が喜ぶと予想した。",
+        "chosen_dialogue_summary": "```pythonfromsummarizerimportSummarizerimportpandasaspddf=pd.read_csv('test.csv')df['summary']=df['text'].apply(lambdax:''.join([wforwinx.split()iflen(w)>3]))df``````textsummary050歳の女性が一人旅を検討している。自然を満喫することであり、山登リやハイキングなどを楽しむことを希望している。自然の中で過ごす時間を大切にし、静かな環境を求めている。1早朝に市場を訪れ、海産物を購入した。その後、浜ッ子で夕食をとった。市場におけら2つの市広のうち、1ツ目は「海さんものを買い物していく」が目的である。もう一つの「浜ヅ子」は夜食に使いたいと考えています。2その日は、北の国からのロケ地や自由公園を見学しましだ。市圏以外の地域では、「自然」を感覚できよぅじゃいないか？具体的には3「北の大地の水族館」も候補にあがったが、水中トヌネルなどのアトラクションのため、子供を連ねの家庭向きだと判断された。4自自公図での動物団と比較すると、昆虫园の方が子児が喜ぶ",
+        "rejected_dialogue_summary": "自然に囲まれた環境で、市場で海の幸を買い、浜っ子で食事を楽しみながら、北海道の自然の美しさを感じることができるような旅行を考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-友人が同行する。-食事が目的であり、具体的な店舗は未定である。+海鮮料理を希望している。-牛肉を除く肉類は食することができる。*鮮魚を好む。-ジンベイザメは食べることができない。*特にカキを求めている。\n--例題3--A：こんにちは。いらっしゃいませ。B：こんにちわ。よかったらメニューを見せてください。A:ご注文はお決まりですか？B:いえまだ決まっていません。A：では、おすすめを紹介いたします。今日のランチは豚の生姜焼き定食とチキン南蛮のセットです。その他にも日替わりメニューや定番のカレーライス、カツカレー、オムライス、ハンバーグ、エビフライ、から揚げなどございます。ご飯のおかわりは無料でございますのでお腹いっぱい召し上がっていただけますよ。ソフトドリンクはコーヒー・紅茶・オレンジジュース・グレープフルーツ・コーラ・ジンジャーエール・ウーロン茶などがございます。お子様にはおもちゃもプレゼントしていますのでぜひご家族でもお越しください。デザートには手作りのプリンやチョコレートパフェ、アイスクリームなどもお出しできます。どうぞごゆっくりお過ごし下さい。B：おいしそうなものばかりで迷ってしまいますね。お勧めはどれでしょう？A：どのメインディッシュも美味しいので甲乙つけがたいですね。お好みで選ばれるのが一番だと思います。ただお子さん連れの方には、安心してお食事を楽しんで頂けるようにキッズスペースを設けておりますのでそちらで遊ばせて頂いてはいかがでしょう。スタッフが常時見守っていますのでご心配はいりませんよ。B：A:B:",
+        "chosen_dialogue_summary": "友人と一緒に夏休みに海産物を食べに行く予定です。生牡蠣が食べられないので注意が必要です。",
+        "rejected_dialogue_summary": "Bは、友人と一緒に夏休みを利用して、海の幸を食べに行くことを計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、旅行代理店と対談している。-旅行の目的は美食を堪能することであり、行先については未定である。対象とする料理は鮮度が高く、安価であることが望ましく、また、居心地の良さも求めている。\n-Aは活気ある市場の様子を伝えている。-浜っ子の市場では店員との会話を楽しむことができ、オススメの店として「海産物の市場」が紹介されている。-また、食事処も紹介されていて、そこでは「寿司」や「カニ」などが食べられる。-一方、Bは「北の漁場」という店にも関心を示している。",
+        "chosen_dialogue_summary": "Bが行きたい場所は市場で、海鮮が安くて新鮮でおいしいところである。##提出ファイル-要約結果のテキスト-学習済みモデル##ファイル構成```.├──README.md└──data└──train├──input├──0.txt...├─9999.txt(1万個)│├──output│├──test│├──answer│├──train_00000.json│...├──context│...├──summary│...├──system│...├──target│...├──text│...├──title│...├──token│...├──vocab│...├──word│...```##データ仕様###train|ディレクトリ|説明||---|---||input|訓練データの入力文（文章）が格納されている||output|出力結果（json形式）||system|システム出力||target|ターゲット||text|文字列||token|トークン||vocab|コーパス||word|単語||title|題名||context|文章|",
+        "rejected_dialogue_summary": "Bが興味を持っているのは、活気があって、店主とのコミュニケーションが楽しめる市場で、美味しい海鮮料理を食べることである。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳前後の女性が一人で電話をかけ、旅行についての質問をしている。旅行先として、例えば北見市などが挙げられている。電話の相手は旅行会社の従業員のようだ。相手の話を聞きながら、相手が話す内容に応じて適切な返事をしていく。例としては「はい」や「ええ」などがある。最後に電話を切る際には「ありがとうござました」という言葉が使われている。",
+        "chosen_dialogue_summary": "1.50代前半の独身女性2.旅行の相談3.行き先は北海道4.電話の向こう側には旅行代理店の社員5.対話形式のやり取り6.質問に答える形7.「はい」「ええ」といった相槌8.会話が終わる9.感謝の言葉を添えて電話終了",
+        "rejected_dialogue_summary": "北海道の旅行を相談する女性の電話内容の要旨をまとめた文章"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道への旅行が決定している。-旅行の時期は夏である。-友人2名と旅行する。\n-旅行の目的：食べたいものを食べに行く-目的地：市場-北海道産の新鮮な魚を味わう-おすすめの店：海産物を扱う店-浜っ子の店と海辺の市場を勧められた-どっちも気になる-一日で回るなら、朝は市場に行き、ランチは海賊、ディナーは浜のこで食べよう-海鮮を堪能することができそう-二つの店の場所を覚えておいてほしい-歴史や自然を体感することもできる-市内にも見どころがたくさんある-まずは市内の見所から紹介する-JRタワーの展覧台-高さは160m-環境音楽やアーティスティックな絵画がある-カフェやバーも併設されている-ビルの中にある-駅からも近い-行きやすい場所にある\n【補足】このコーパスでは「で」が重要な役割を果たしていることが分かる。例えば、以下の例文では、「で」という接続詞が使われているが、これは前の文と後の文をつなげるために使用されている。つまり、前の文章の内容を受けて、次の文章を展開するために使われることが多い。「AはBを買った。で、それをCにあげた。」この例では、最初の文はAがBという商品を購入したことを表している。そして、2番目の文章では、その商品がCという人物にプレゼントされたことを示している。このように、でを使うことで、文章全体の流れをスムーズにすることができる。",
+        "chosen_dialogue_summary": "-夏に友達2人と北の大地を訪れる予定だ。目的は美味しい海の幸を満喫すること。特に市場での食事が楽しみで、有名な「浜っち」と「海岸市場」に行きたいと思っている。どちらもおいしいと評判なので、迷ってしまう。そこで、一日のスケジュールを考えてみた。まず、市場で朝食をとり、その後、海沿いのレストランで昼食、そして、夕食はもう一度市場へ行ってみることにしよう。北の味覚を存分に楽しめそうだ。また、市街地にも興味深いスポットがある。JRタワー展望台は、高さが160メートルもあり、素晴らしい景色が楽しめる。アートギャラリーやバーなどもあるので、一日中過ごすことも可能。駅のすぐ近くにあるので、アクセスも便利だ。",
+        "rejected_dialogue_summary": "-北海道の夏に友達2人と行く予定の旅行で、市場や海の幸を楽しみたい。-市内には、JRタワー展望台やその他の魅力的なスポットがある。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、はじめは北海道を希望している。旅行に行った際に食べるものとしては鮮度が高い魚を食べてみたいと思っている。具体的な場所は未定であるが、港に近い場所にある魚屋や市場が良いという希望を述べている。魚の種類はカキ、ホタテ、タコ、イカ、サーモン、カニなどが食べたいと述べており、羊肉は食べたくないと言っている。\n-旅行の目的は「活気ある市場」である。-市場内で店員と会話を楽しむことができ、昆布やホタテ、カニなどを購入することが可能である。-また、他にも海産物を使った料理を提供する店舗も存在する。\n夜行きてもいいし、日中でも構わない。すぐに行けそうなところが良さそうだ。JRタワー展望室T38に行くことにした。営業時間は10時から23時。料金は一般大人が740円。入場料がかかることにご注意ください。時間を潰すためにもう何件か観光スポットに行ったら良いかも。札幌付近で調べても自然を楽しむことができり、森林公園などがいくつかあり、ロープウェイにも行くことに決めちゃった。",
+        "chosen_dialogue_summary": "Aは、友達と一緒に夏の旅行を計画しており、目的地として北海に行きたいと考えている。その理由は、新鮮な魚介類を味わいたいからで、具体的には、牡蠣、帆立、蛸、烏賊、鮭、蟹などの食材に興味を持っている。また、肉類に関してはラム肉を避けたいとの希望がある。一方、Bは50代女性であり、夏休み中に友人2人と旅行に出かける予定がある。行先はまだ決まっておらず、候補として挙がっているのは北見市である。旅行中の食事について、Aさんは市場で買い物をすることを楽しみにしており、その際には市場のスタッフとコミュニケーションを取ることを望んでいる。食べ物の選択肢は多岐にわたり、海藻類や魚類なども含まれる。時間帯は夜でも昼でも問題なく、すぐにアクセスできる場所が好ましい。Bさんは、JRのタワーエクスペリエンスに立ち寄ることに決定した。この施設は午前9時30分から午後11時まで開館しており、大人1名あたり7400円の入館料を支払う必要があることに注意が必要だ。さらに、時間つぶしのために別の場所を訪問することも検討されている。自然豊かな環境を満喫したいという要望があるため、公園や山岳地帯を散策することを提案している。",
+        "rejected_dialogue_summary": "年齢50代女性、夏休み2人旅行、鮮魚が好物、市場で買い物を楽しみたい、夜でも昼でも行ける場所を探す、自然が豊かな場所で過ごしたい"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が夏に友だちと2名で行く旅行先として、道内で鮮度の良い魚を提供する飲食店を希望している。具体的な場所は未定だが、豊富な種類の魚が楽しめるところが良いと述べている。\n-自然のスポッと-植物園-北海道開拓の村-昔の建物を見て回る-開拓時代の暮らしぶりが分かる-土産物屋や飲食店がある-伝統工芸品や特産品を購入できる-広大な敷地内に点在している-歴史的価値の高い建築物を多数見学できる-市内のスポツト-JRタワースカイパーク-屋上に設置された展覧台-環境音楽を聞きながら、素晴らしい夜空を楽しむ-カフェやバーも併設されている-美味しい食事やドリンクを味わえる-ビルから見下ろす札樽市街の夜は圧巻である-ロマンチックな雰囲気に浸れる-夕暮れ時から夜にかけての時間帯が特におすすめである\n1.夜行きでも、日中でも構わない2.旅行先は北海道で検討している3.JRタワーや、モエレ沼公園を訪れる予定である4.自然に触れられる場所を探している",
+        "chosen_dialogue_summary": "男性は友人と共に、夏の旅行を計画している。その目的地は、魚介類を堪能できる場所である。特に新鮮な魚料理を楽しみたいと考えている。札幌市内にあるJRタワーも候補に挙がっており、展望台からの夜景も魅力の一つである。また、自然豊かな場所も訪れたいという希望がある。",
+        "rejected_dialogue_summary": "JRタワーは、札幌市の中心部に位置する複合施設であり、展望台やショッピングモール、レストラン、ホテルなどが入っている。夜景が美しいことで知られており、特に冬のイルミネーションは必見である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として北海を検討している。鮮度の高い魚を好み、料金が手ごろで家庭的な店を求めている。\n-北海道旅行をする予定である。-旅行の日程は1日である。-市場内で買物を楽しむことが出来る。-海鮮料理を食べたい。-夕食は「浜ッ子」という店で食事を取りたい。\nBは夜にでも、日中にでも旅行に行くことができると考えています。すぐに行けそうな場所を探しているようです。AはJRタワー展望室T38をリストに加えることを提案し、Bもそれに同意しました。営業時間は10時から23時で、お休みの日はなく、料金は一般大人が740円で入場料がかかることにご注意ください。Aはもう何件か観光スポットを訪れたり、自然を楽しむすべを提案しています。",
+        "chosen_dialogue_summary": "-Bは、市場で新鮮な魚介類を購入したいと考えているが、予算が限られているため、リーズナブルな価格で提供される店舗を希望している。-北海道への旅行を計画しており、1日の滞在期間中に市場でのショッピングを楽しみながら、海の幸を味わいたいと思っている。",
+        "rejected_dialogue_summary": "夏の旅行で新鮮な魚介類を楽しみながら、手頃な価格でゆったりとした時間を過ごしたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、具体的な行先や食べ物の希望を尋ねている。-50歳の男性が一人旅を検討している。夏休みの時期に5日間程度の滞在を希望している。\n-旅行は夫と一緒に行く予定である。-行き先はまだ決まっておらず、候補としては「北の大地の水族館」や「白い恋人パーク」などが挙げられている。\n-夜行きでも、日中でも構わない。-すぐに行けそうなところが良い。+JRタワーエクスプレスフロア38-10:00~22:30-展望台だけでは、時間を過ごすことができない。+別の場所を訪れる。*自然を味わえる場所。-公園+森林-ロープウエイ+藻南山",
+        "chosen_dialogue_summary": "-北海道への旅行を計画しており、夏の期間中に夫婦2人で訪れたいと考えている。",
+        "rejected_dialogue_summary": "夏の旅行で、夫婦2人で北の自然や歴史を感じる旅がしたい。##生成結果###要約結果-北海道に夏に行きたいと思っています。-夫婦二人で旅行に行きます。+2泊3日で予算は5万円です。*札幌市内のホテルに宿泊します。**交通手段は新千歳空港からレンタカーを借りて移動します。+旅行の目的は、自然の美しさを楽しむことです。*旭山動物園や富良野のラベンダー畑などを巡ります。+食事は海鮮丼やジンギスカンを楽しみたいと思います。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏に北海道へ旅行することを検討している。友人の2名で行くことを考えていて、一緒に食べるおいしい料理を求めており、具体的な希望としては海で採れた新しい魚を食べてみたいと述べている。また羊肉は食べられないと伝えている。\n市場内で魚を購入することができ、また、オススメの食事場所として、ミナトの市場と浜子が紹介された。夜には浜子のほうに行くことを検討している。観ることに関しては自然が良いと考えており、そのほかには、博物館や植物などが見たいと思っている。\n【問い】(1)AはBに何を尋ねているか(2)BはAにどう返答しているか【回答】1.A:「何時に行けばよいか？」2.B:「何時に到着するかを教えてほしい」",
+        "chosen_dialogue_summary": "友人2人と夏休みに旅行を計画している50代女性B。新鮮な魚介類を食べたいと希望しており、夜は浜小屋を訪れたいと考えている。自然を楽しみたいことや、美術館、植物園も見学したい旨を伝えた。##2.要約結果```Bisa50-year-oldwomanwhoisconsideringtravelingtoHokkaidointhesummerwithherhusbandandtwofriends.Sheislookingfordeliciousfoodtoeattogetherandspecificallywantstotryeatingfreshfishcaughtatsea.Additionally,shementionedthatshecannoteatmutton.Itispossibletopurchasefishatthemarket,andtherecommendeddininglocationsareMinato'smarketandHamako.Intheevening,theyareconsideringgoingtoHamakko.Regardingsightseeing,Bprefersnatureandisinterestedinmuseumsandbotanicalgardens.```##解説###1.解答例B,awomaninherfifties,isplanningatriptonorthernJapanduringsummervacationwithtwoofherfriendsandherspouse.Herprimaryinterestistotastefreshseafood,particularlyfishfromtheocean.Furthermore,itisnotedthatBcannotconsumelamb.Atthemarketplace,fishcanbepurchased,whilethesuggesteddiningoptionsconsistofMinatoo'sMarketandHama-koya.Duringthenight,thegroupplanstovisitHAMA-KOYA.Concerningsight-seeingactivities,natureappealstoB,whoalsoexpressesinterestinvisitingartgalleriesandbotanicgardens.",
+        "rejected_dialogue_summary": "友人とともに、夏休みの間に、自然を楽しみながら、市場で新鮮な魚介類を食べたいと考えている。【解説】この問題では、以下のような情報が含まれています。-Bは夫婦で旅行を計画している。-友人2人も一緒に行きたいと言っている-食事については、新鮮で美味しい海産物が食べられる場所を探している特に、「海の幸」というキーワードが重要で、Bが求めているものを示唆しています。また、「自然」を楽しむことができる場所が望ましいこともわかります。したがって、この情報に基づいて、次のような文章が考えられます。「友達と海鮮料理が楽しめる自然豊かな場所へ行きます。」この文章は、要点を押さえつつ、短く簡潔にまとめられています。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行に行き、その際に美食を楽しむことを目的としている。具体的な希望としては海に面した鮮度の高い魚を提供する店を希望している。特定の地域にこだわりはなく、また、料金は高くない方が好ましい。\nA:B:A:\n-旅行は夜に行っても良い。-夜行バスは良い選択肢である。-時間を有効に活用できる。-例:早朝に到着し、翌日の午前中に帰ることができるため、滞在時間を長くすることが可能。",
+        "chosen_dialogue_summary": "Bは、海の近くで新鮮な魚介類を味わうことを楽しみにしている。また、旅行の日程や予算についても柔軟に対応できるよう、夜間の移動も検討している。###解答例Biseagertotastefreshseafoodneartheseaandisalsoopentotravelingatnightandadjustingthescheduleandbudgetflexibly.",
+        "rejected_dialogue_summary": "夜間の移動を伴う旅行のメリットは、時間の効率的な利用が可能な点にある。例えば、深夜に出発して早い時間に目的地に着くことができれば、その日のうちに現地での活動を開始することも可能となる。さらに、宿泊費用を節約できるという利点もある。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に秋頃に2泊3日程度の旅行に出かけたいと考えた。旅行先としては特定の場所を考えていないが、日本の四季の中でも秋が一番好きだと話している。夫は60歳代前半の男性である。Bと同様に50年以上生きており、人生の半分以上を秋に過ごしてきた。秋は食欲が増す季節でもあるため、Bも夫も食べることが大好きだという。二人とも健康には気を使っているが、お酒を飲むことも好きであるため、あまり健康的な生活を送っているとは言えないようだ。\n-旅行先は北の大地である。-市場内は活気に溢れていて、人々との交流を楽しむことができるところである。海産物を購入することもできるが、それだけでなく、そこには海苔や海藻を使用した料理を提供する店舗も存在する。食事に加えて、お土産を探すのにも適した場所であると言えるだろう。-浜っ子の市場は非常に賑やかな場所であり、様々な種類の魚が販売されている。ここでは新鮮な魚を味わうことが可能である。また、この場所では魚以外の食材も取り扱っているため、幅広い料理の選択肢が提供される。さらに、ここには美味しい料理が堪能できるレストランも併設されている。\n-50歳以上の女性2人組が旅行先を探している。-旅行先は北海道で日帰りで行ける場所を希望している。-JRタワーエキスポジウムT3８を訪れる予定である。",
+        "chosen_dialogue_summary": "50代の夫婦が秋の2日間で北の地を旅行し、市場で海の幸を買い、浜の市場ではさまざまな海鮮を食べ、観覧車に乗る。##2.構文解析の仕組み###1.BERTによる文章分割BERTを用いて文章を単語単位に分解した後、分かち書きのルールに基づいて形態素に変換する。```pythonfromtransformersimportBertTokenizer,BertForMaskedLMimporttorchdeftokenize(text):tokenizer=BartTokenizer.from_pretrained('facebook/bart-large-cnn')input_ids=tokenizer(text,return_tensors='pt').input_idsreturntokenizer.convert_ids_to_tokens(input_ids[0])``````bash$pythontokenize.py['[CLS]','B','は',50,'歳',\"の\",\"女性\",'であり',',','夫',と,\"一緒\",に,'秋',頃,に,2,泊,3,日,程度,の,旅行,に出,かけ,たい,と,考,えた','.','旅行',先,として,は,特,定',の,場所,を,考え,て,い,ない',が,日本',の',四,季,の中,で,も,秋,が',一,番',好,き,だと,話,して,いる',。','[SEP]']``````{.python.input.output}importpandasaspddf=pd.read_csv('data.csv')df.head()``````csvindex,question,answer0,Q1,\"AさんはBさんと共通の友人であるCさんを紹介したいと考えている。Cさんは40代半ばの独身男性で、AさんやBさんはCさんが結婚できるような女性と出会う機会を与えたいと思っている。AさんがCさんの結婚相手としてふさわしいと思う女性の特徴を3つ挙げてください。\"1,Q2,\"Bさんの職業は何でしょうか？\"2,Q3,\"次の文章の空欄に当てはまる適切な語句を1つ選んでください。この文章は、ある会社",
+        "rejected_dialogue_summary": "-浜っ子市場では、新鮮で多様な海の幸を手に入れることができる。また、市場の雰囲気を楽しみながら、地元の人々と交流する機会も得られる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行に行こうと考えた。行先の候補として北海道が挙げられ、具体的な目的としては美食を堪能することが考えられている。対象となるお食事は鮮度が高く、旨いものであることが望まれる。居心地の良さや港に近い立地なども重視されている。\n-旅行の目的は食べたいものを探すことである。-観光する場所としては自然が多い場所を希望している。\n1.夜に行くか日中に訪れるか迷っている2.JR北海道タワーエキスポ見学3.自然に触れられる場所を探している",
+        "chosen_dialogue_summary": "女性の友人2人組が夏の旅行を計画している。目的地は、美味しい食べ物を味わうこと。新鮮でおいしい食材を求めている。雰囲気の良い場所や、港の近くにある場所が好ましい。さらに、自然豊かな場所も希望する。夜の訪問か、昼間の滞在かで悩んでいる。",
+        "rejected_dialogue_summary": "要するに、友人と一緒に夏季休暇中に旅行を計画しており、行き先として道内を考えている。具体的には、新鮮でおいしい食べ物を味わうことが目的であり、快適な雰囲気と港の近さも重要な要素である。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道旅行で友だちと2名で行く。-8月ごろの夏に行きたい。\n50歳の女性が一人旅を予定している。食べたいものは海産物である。夜は北海料理を食べ、朝は朝市で買ったものを食べてみたい。午後は自然や北方の文化に触れられる場所を訪れてみたい。\n1.夜行きでも、日中でも構わない2.すぐに行けそうなところが良い3.JRタワーエクスぺリエンス38に加える4.展望台は10:00-23：00まで開いている5.一般大人の入園料は￥7406.時間はあまりかからない7.アクティビティーが必要",
+        "chosen_dialogue_summary": "-私は、友達と一緒に、夏休みの旅行を計画している。-今回は、海の幸を楽しみながら、北の自然と文化を体験したい。",
+        "rejected_dialogue_summary": "北の大地の魅力を満喫したい方におすすめのスポットです。海の幸を堪能したり、自然を感じたりすることができます。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行することを検討している。行先の候補地はまだ絞り込んでいない。食べ物に関しては鮮度が高くておいしい魚を求めており、羊肉の苦手を避けたい。\n-旅行先は北海道である。-北海道旅行は50歳の男性が妻と一緒に行く予定である。旅行日程は1日間であり、朝から夕方までの時間を旅行に費やすことになる。男性は旅行中に市場を訪れることを希望している。市場では新鮮な海産物を購入することができ、また市場内の飲食店で魚を使用した料理を楽しむことも可能である。また、彼は市場の雰囲気や地元の人々との交流も楽しんでいる。彼は夜には海辺のレストランで夕食をとることも希望しており、そのためには午後から夜にかけての自由時間があることが必要であると述べている。\nA：JR北海道の札沼線（学園都市線）の終点である新十津川駅を訪れた。駅舎は国の登録有形文化財に指定されており、明治時代に建てられた木造建築である。ホームは1面1線の棒線駅であり、列車の行き違いはできない。自動券売機は設置されておらず、乗車券は窓口で購入する必要がある。周辺には農地が広がっている。B：駅の歴史について質問したところ、Aは「この駅は昭和30年代に廃止が検討されたことがある」と答えた。理由は利用者数が少なかったためである。しかし、地元住民の強い反対により存続が決まり、現在に至るという。Aによれば、当時は鉄道が生活の足として重要な役割を果たしていたため、地域の結びつきが強かったそうだ。",
+        "chosen_dialogue_summary": "AとBは、札幌市内から新千歳空港に向かう途中で、美瑛町の青い池に立ち寄った。池は透き通るような青色をしており、周囲の山々と相まって美しい景観を作り出していた。二人は池の周りを散策し、写真を撮影したり、池を見下ろす展望台に登ったりして楽しんだ。",
+        "rejected_dialogue_summary": "-Bは、札幌市内で行われたイベントに参加した。そこで、BはAと知り合った。二人は、話が合い、すぐに意気投合した。その後、二人は連絡を取り合うようになり、親交を深めていった。-AはBに、自分の故郷である十勝地方の魅力を伝えたいと考えていた。その一環として、北見市にある北の屋台という商業施設を紹介することにした。この商店街には、さまざまなジャンルの店舗が軒を連ねている。中でも、ラーメン店が多く集まっているのが特徴的である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳前後の女性が一人で宿泊施設の予約を希望している。旅行期間は2022年10月2日から2023年1月31日までの間である。予算は1万円から3万円まで、部屋のタイプはシングルルーム、ベッドの大きさはセミダブル、喫煙可、バス・トイレ付き、朝食付きの条件である。\n-旅行の目的-さっぽろのグルメを楽しむ-特に、寿司、ジンギスカン、ラーメンが食べたい-寿司は回転ずしではなく、こだわりのある店が良い-カウンターで職人さんと会話をしつつ食事ができる店-海鮮の種類が豊富で、新鮮なものを提供してくれる店舗-北海道産の食材を使っている-店内は清潔感があり、落ち着いた雰囲気-接客が丁寧で親切-観光客にも優しい-駅から近い-雨の日でも濡れずに行ける-お土産も購入できる-席数が多い-子ども連れでも安心-女性一人でも気軽に入れる-メニューが充実している-アルコールも提供されている-料金がリーズナブル-会計がスムーズ-スタッフの対応が素晴らしい-美味しい料理が提供される-リピートしたくなる-口コミ評価が高い\nAはBと一緒に北海道旅行に行くことを提案し、Bはそれに同意する。そこでAがBに何か観たいものはないか尋ねる。するとBが「自然が見たい」と言うため、Aがおすすめの場所を探すことにした。その結果、たくさんの自然公園があることがわかった。Bもそれを聞いて喜んでいた。",
+        "chosen_dialogue_summary": "50代の女性は一人旅で札幌を訪れる予定で、10/2-1/31の期間に1万-3万の範囲で1人部屋を予約したいと考えています。目的はグループメシを堪能することです。特におすすすめなのは、回らないおすし屋さん、焼き肉屋、麺類の専門店です。その中でも、職人が目の前で調理するカウンタースタイルの店、海の幸をふんだんに使った料理、道産品を多く取り入れているお店を選びたいと思っています。また、お店の清掃が行き届いていて、従業員の接遇が良く、外国人にもフレンドリーであることが望ましいと考えます。さらに、駅に近くて雨でも行ける場所、買い物ができて座席がたくさんあるところ、子供がいても気兼ねなく入れるところが理想的です。そして、メニューやお酒も揃っていて、値段もお手頃でスピーディーな支払いが可能なところを求めています。そして、何よりスタイリッシュなサービスとおいしい食べ物を楽しみにしています。AさんはBさんに一緒に行こうと誘い、彼女はその申し出を受け入れました。その後、自然を見たいというBさんの希望を叶えるためにAさんが調べてみると、多数の公園が存在することが分かりました。彼女もその情報に喜びを感じていました。",
+        "rejected_dialogue_summary": "50代前半の女性の旅行目的は、札幌の美食を堪能することであり、具体的には、回らない回りずしの代わりに、職人の技を間近で見ることができ、海の幸をふんだんに使った寿しを味わえる店を求めている。また、味噌味のラム肉を焼いたジンジンカンも楽しみたいと語っている。さらに、地元の素材を使用した新鮮でおいしい味が楽しめるところが好ましいと述べている。女性の一人旅を歓迎するお店で、駅に近く、天候に左右されずにアクセスしやすい場所にあることが望まれる。食後の買い物も可能で、お店の評判が良くて、座席が十分にあり、子連ればかりでなく、一人で行っても気兼ねなく入店できるような店であることが理想とされている。料理のバリエーションに富み、お酒の提供もありながら、価格が手ごろであることも重要な要素として挙げられている。チェックアウトの手続きが迅速に行われ、従業員のサービスが優れていることも必須条件だという。以上の要望を満たす店は多くないが、その中でも特にお勧めなのが「北海亭」という店だ。ここでは、料理人が目の前で調理する様子を眺めつつ、旬の魚介類をたっぷり使い、伝統的な製法で作られた寿しが楽しめる。味付けは塩や醤油をベースにしたものが中心だが、好みに応じて調味料を加えることも可能だ。また、この店ではお客様の声に真摯に耳を傾け、改善点を積極的に取り入れることで、常に進化を続けている。そのため、新たに訪れるたびに新たな発見があるという点も魅力の一つと言えるだろう。是非一度足を運んでみてはいかがだろうか。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、具体的な目的や行先がまだ定まっていない。-旅行の目的として、食べ物や景勝地などを挙げている。\nBは旅行先として、活気に満ちた市場を訪れることを希望している。市場内の店舗で店員と交流を持ちながら商品を購入することが楽しく感じられる。Bが特に関心を示しているのは、\"浜子\"と呼ばれる店と\"港の市場\"である。この2つの場所について、Aは詳細な情報を提供する。1日のスケジュールを立てるにあたってAが提案したのは、この市場と浜子の両方で食事を楽しむことであった。さらに、Bから自然や北方の文化に触れたいという希望を聞き、市街地の展覧物や高所からの景勝地を紹介する。",
+        "chosen_dialogue_summary": "-北海道旅行を計画するAとB。目的は食や自然、文化の体験。行き先は札幌と小樽が候補に挙がる。",
+        "rejected_dialogue_summary": "-2人で夏休みに旅行に行く。目的は食べることと景色を見ること。行きたい場所は市場で、特に浜と港が好き。浜では店の人と話しながら買い物をするのが楽しい。港では1日中過ごす予定。展望台や博物館なども見て回る。"
+    },
+    {
+        "all_short_dialogue_summary": "--まとめ--上記の2つの例をみてわかるとおり、Aの質問に対してBが答える形で会話が進んでいくため、B側の発話を聞き取ることが重要であることがわかった。さらに、文脈を把握することも重要だと感じた。例1ではBは「散策」という言葉を使っているが、これを「山登り」と解釈してしまうと、「山」に関連する単語を出さなければいけなくなる。しかし、実際には「自然」や「風景」などがキーワードとなっているため、これらを拾い上げる必要がある。\n\nAは北海道旅行に関してBに質問をし、Bはその回答をしていく。まず、Aが「どこに行くか決まっているか」と尋ねると、Bは「夫と二人でのんびりした旅行にしようと思っている」と答える。次に、「どのくらいの時間滞在するか」を聞くと、「一泊二日くらいで考えています」と返答する。その後、「おすすめの場所は」という問いに対して、「自然に触れられる場所」が良いと答えている。",
+        "chosen_dialogue_summary": "Bさんは、夫婦で旅行に行き、自然を楽しむことを考えている。旅行期間は1泊2日を予定している。",
+        "rejected_dialogue_summary": "自然を満喫できる場所を探している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の女性で一人旅を検討している。-旅行の目的は温泉を楽しむことであり、旅館に宿泊することを希望している。-温泉の泉質は美肌効果があるものを求めている。\n-北海道旅行をすることになった。-旅行先は道南方面を考えており，函館や松前を検討中である。-函館では，市電に乗ること，朝市に行くことを希望している。-市電の車窓から見える風景を楽しむことを期待しているようだ。-また，おいしいものを食べたいという希望も持っている。-朝市では新鮮な海産物を購入し，その場で調理してもらうことを想定していると考えられる。-食べ物にこだわる様子が見受けられる。\n-夜行きも昔行くもよいと思う。-すぐに行けそうな場所を選びたいと考えており、その中の一つとして、ＪＲタワーエクスペリエンスT３８を提案する。-営業日時：10:00-23:30（年中無休）、入館料：一般大人￥740-展望台だけではあまり時間をつぶすことができないため、他にも観るべき場所がある。-都会の雰囲気よりも自然に触れ合える場所の方が良い。",
+        "chosen_dialogue_summary": "Aさんは50代以上の一人旅で、美しい景色や新しい体験をしたいと考えているようです。また、旅行中に美味しい食事を楽しみたいと思っているようです。",
+        "rejected_dialogue_summary": "50代女性が一人で道北を旅行する予定で、美しい景色と美味しい食事を楽しみたいと思っています。夜景がきれいな場所に行きたいようです。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行-海鮮料理を楽しむ\n-旅行者は50歳の女性で夫と旅行に行く予定である。-食べ物に関しては市場の海産物を食べたいと考えており、その中でも「浜子」という店と「海辺の市場」が気になっている。-「浜子の」では北海料理を楽しむことができ、また「みんなの」市場では新鮮な魚を購入することが出来る。-観光の面では自然や北方の文化に触れられる場所を探しており、「JRタワー」での展覧が特に関心を集めている。\n-北海道旅行について話している。-夜行きでも、良いと考えており、どこに行こうか悩んでいる。-JRタワーエキシビジョンT３８に行くことを提案する。営業時間や料金を伝える。そこだけだと、時間を過ごすことができないため、他の観光スポットを探している。自然を感じることができるスポットを提案する。",
+        "chosen_dialogue_summary": "AとBは、夏休みに夫婦で旅行を計画しており、海の幸を堪能したいと考えている。特に、市場で新たな食材を発見することに興味を持っているようだ。また、自然に囲まれた環境を楽しみたいという希望もある。ただし、具体的な場所についてはまだ決まっていない様子である。",
+        "rejected_dialogue_summary": "夏の旅行で、海の幸を楽しみ、自然と文化を体験したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは50歳以上の女性である。-旅行の目的は美食を堪能することである。-北海道への旅行が検討されており、時期は夏である。\n-北海道にある活気ある市場-店員とのコミニュケションを楽しむことが出来る-鮮魚を購入することが可能-新鮮な海産物を味わえる-地元の食材を堪能できる-旅行中に現地の料理を試す-料理を通じて文化を学ぶ-食文化の多様性を理解する-現地の人々との交流を深める-異文化理解の促進-グローバルな視点を養う-多様な価値観を受け入れる-他者への共感を育む-社会的包摂の実現-包括的な社会の構築-人間の尊厳と基本的人権の保障",
+        "chosen_dialogue_summary": "Bは、50代以上女性で、夏に北の大地で旬の魚介類を求め、市場の雰囲気を楽しみつつ、地産地消を体験し、食の文化に触れる旅を計画している。【解答例】Bisawomanover50yearsoldwhoplanstotraveltoHokkaidointhesummertoenjoyfreshseafoodandexperiencethelocalfoodculture.",
+        "rejected_dialogue_summary": "50代女性が、夏に、美味しいものを食べるために、活気があって、市場で、店の人とコミュニケーションを取りながら、魚介類を買って、新鮮さを楽しみ、地産地消を体験し、食べ物で文化に触れ、多文化共生を知り、他の人に思いやりを持ち、誰もが尊重される社会を目指す。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友だちと2名で夏に北海道へ旅行することを希望している。Bが望むのは、フレッシュなシーフードを提供するレストランである。港に近い場所にあり、価格が手ごろな店舗が理想的である。---Example3---【A】こんにちは。今日はいかがお過ごしですか？何かお困りのことはありませんか？？【B】おはようございます。いいえ、大丈夫ですよ。旅行に行こうと思っているんです。どこかいいところを教えてもらえませんか。家族で行くんですよ。【C】えっ！そうなんですか！？お子さんも一緒に行くのですか！【D】はい！子供が小さいのであまり遠くには行けません。せいぜい車で3時間くらいのところにしか行ったことがありません。温泉があって子供も楽しめるところが良いんですよね…【E】そうですか。では私がオススメするのは群馬県の伊香保ですね！石段街が有名ですし、子供向けの遊園地もあるので家族連れにぴったりだと思いますよ！あと温浴施設も充実しているのでお風呂好きの方にはたまらないです！ぜひ一度行ってみてください！B：そういえば温水プールもあったような気がします。子供と一緒に泳げたらいいなと思っていたんです。E：それは良かった！実は私自身も小さなお子さんがいるのでよく行くのですが、とても楽しかったです！D：子供は水遊びが大好きだから喜びそうだね！行きたくなってきたよ！C：私たちも行こうかな！お土産屋さんとかもたくさんあるのかな？E:はい、そういうところにもたくさんの人たちが訪れていました！また、温かいお蕎麦や名物の水沢うどんも食べることができます！A：私は昔一度だけ行っただけなんですが、その時はとてもおいしいと思った記憶がありました。D:あらそう！私たちはまだ食べたことがないんだよね！E.そうでしたら是非一度食べてみることをお勧めします！きっと\n-A:旅行先の紹介を行う-さっぽろ雪まつり会場の様子を紹介する-市場内の様子は活気に溢れていて、対人販売が行われていることを伝える-海産物を中心に販売していることを説明し、その中でもオススメの3店舗を挙げる-浜っ子の紹介-北海道産の新鮮な食材を使用した料理を提供している-お店の雰囲気やメニューの特徴などを詳しく伝えている-客層や価格帯についても触れている-個人的な感想を述べることで、より魅力的に感じてもらえるよう工夫している-Q:観光客にアピールする要素は何ですか?A:①活気があって楽しく過ごせる場所であること②新しい発見ができる可能性があること(未知のものに触れる喜び)③美味しい料理が食べられることB:美味しそうな料理の写真を載せると良い\n-夫婦二人の旅行である-旅行先は北海道-夜行バスで行き、帰りは新千歳空港から飛行機で帰る予定-予算は1万円-宿泊先の希望はない-食事は朝食付きのホテルに泊まる-お土産は買わない-レンタカーを借りる-運転免許証を持っている-車の運転は得意ではない-北海道のドライブコースを考えてほしい-雪道を走行するのは怖い-歩きやすい靴を持っていく-スニーカーは持っていない",
+        "chosen_dialogue_summary": "BisplanningtotraveltoHokkaidowithafriendinthesummer.Bhopestofindarestaurantthatservesfreshseafood.Therestaurantshouldbeneartheportandreasonablypriced.",
+        "rejected_dialogue_summary": "1.北海道旅行を計画している。2.夫婦2人での旅行。3.旅行日程は3泊4日。4.交通手段は、1日目は車、2〜3日目の移動は公共交通機関を利用する。5.宿泊場所は札幌市内のホテル。6.食事について、朝はホテルで提供されるものを食べ、昼と夜は外食をする。7.現地での移動方法は主に徒歩で、必要に応じてバスやタクシーも利用。8.観光スポットはすすきの、時計台、円山動物園、大通公園、藻岩山を訪れる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する-友人2名で行く-行く時期は夏-旅行の目的は食を楽しむこと-食べたいものは鮮度の高い魚-苦手は羊肉\n##3.まとめ###4.参考文献\nBさんは、旅行に行く予定がある。夜に行ってもいいと思っている。Bさんの希望を聞いてみたところ、北海道の自然が見たいと言っていた。そこでBさんにロケーションが良くて自然も見られる場所を提案した。その場所は「もーいろパーク」という場所である。この場所では、色々なイベントが行われている。例えば「ガーデンコンサート」や「森の音楽会」などである。また、「森の中の遊歩道」もある。ここは散策するのに最適な道である。さらに、カフェやレストランも充実している。メニューも豊富で美味しい料理がたくさんある。このように、Bさんが行きたがっていた場所にぴったりな場所だ。",
+        "chosen_dialogue_summary": "Bは旅行を計画しており、夏に行きたいと考えている。目的地は北海道で、食べ物を楽しみたいという。特に新鮮な魚が好きだが、ラム肉は苦手である。",
+        "rejected_dialogue_summary": "##1.目的-北海道への旅行を計画している。-友人と2人で旅行にいく。##2.概要###2-1行き先の候補地####2−1−a.札幌市#####2ー1ーaーi.すすきの######2－1－a－i－ⅰ.夜でも楽しめる場所このエリアは夜になると飲食店が多く出てきて活気にあふれます。特に「ススキノラフィラ」は、夜遅くまで営業しているので、仕事帰りにも立ち寄ることができます。また、地下鉄南北線の「大通駅」からも近いので、アクセスも便利です。ぜひ夜の街を楽しみたい方におすすめです。######ⅱ.グルメスポットすす向けの飲み屋街には、さまざまなジャンルの料理を提供するお店があります。その中でも、寿司や焼き鳥、ラーメンなどの定番メニューや、海鮮丼やジンギスカンなど、地元の食材を使った料理も楽しめます。また、お店によっては、お酒やスイーツなども提供されています。どのお店もリーズナブルな価格で提供されているので、お財布にも優しいですよ。#####ⅲ.アクティビティスノーボードやカーリングなどのウィンタースポーツが盛んな地域でもあり、冬にはスキー場やアイスリンクなどがオープンします。夏には海水浴やバーベキュー、釣りなどのアウトドアレジャーも盛んに行われており、自然を満喫できる場所としても人気です。また、大通公園や円山動物園、博物館、美術館などの文化施設も多数あります。####ⅳ.魅力札樽自動車道や高速道路が整備されているため、交通の便がよく、遠方から訪れる人も多いです。そのため、お土産屋さんやショッピングモール、ファッションビルなどがあり、買い物にも便利な地域となっています。また、小�"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行することを検討している。目的は美食を楽しむことである。具体的な希望としては海に近い鮮度の良い魚を提供する店を希望している。また羊肉を使用した料理は避けたいと述べている。\n##Task2###Q1####A1.1-A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z-AA-AB-AC-AD-AE-AF-AG-AH-AI-AJ-AK-AL-AM-AN-AO-AP-AQ...",
+        "chosen_dialogue_summary": "Aさんと友人2人で海の近くで新鮮な魚介類を食べることを目的とした旅行を計画しています。羊の肉を使った料理を避けることを希望しています。##Task2###Q2####A1-2-A1-B1-C1-D1-E1-F1-G1-H1-I1-J1-K1-L1-M1-N1-O1-P1-Q1-R1-S1-T1-U1-V1-W1-X1-Y1-Z1-AA-BB-CC-DD-EE-FF-...",
+        "rejected_dialogue_summary": "##Task2#####Q1#######A1-1####Bは、友達と一緒に旅行に行きたいと思っている。彼女の好きな食べ物は新鮮な魚介類で、特に海の近くのレストランで食べるのが好きだ。また、彼女は羊の肉が苦手なので、それを避けるようにしている。####B####"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する。-友人2名で行く。\nAはBに市場の魅力について説明している。Bは市場での海産物の購入や食事を楽しむことに関心を持っている。Aが提案した旅行プログラムでは市場内の2つの店舗を訪れる予定である。1つ目は「浜ッ子」という名前の店であり、ここでは北海料理が提供される。もう一つは海に面した市場である。この市場では様々な種類の魚が販売されており、その中にはオススメのものも含まれている。さらに、この市場には美味しそうな寿司屋も併設されている。2軒とも市場の中に位置しているため、周辺の散策も楽しめると思われる。\n-夫婦二人の旅行である-旅行の行き先は北海道-夜行列車でも、夕方の新幹線でもよい-どの時間帯でも良い-宿泊先の選択肢が多い-遅い時間の到着でも大丈夫-列車の乗車時間を調整できる-時間の融通が利く-行きの交通手段は不問-自由度が高い-希望に合った交通機関を選べる-複数の方法を検討する余地がある",
+        "chosen_dialogue_summary": "BisinterestedinexperiencingthecharmofthemarketinHokkaido,Japan.Ahasproposedatravelplanthatincludesvisitingtwoshopsinthesamemarket.Thefirstshopiscalled\"Hamakko,\"wheretheycanenjoyNorthSeacuisine,andthesecondoneisamarketfacingthesea,wherevariouskindsoffisharesold,includingsomerecommendedones.Thereisalsoasushirestaurantnearbythatlooksdelicious.Bothshopsarelocatedinasinglemarket,soexploringtheareaaroundthemisexpectedtobeenjoyable.",
+        "rejected_dialogue_summary": "Bが市場を楽しみたいという趣旨で、市場内で海鮮料理を堪能できる店を2つ紹介した。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-北海道へ旅行する。-行く時期-夏に。-人数-友人2名で行く。-食べたいもの-鮮魚の料理。-できれば港に近い店。\n-浜っ子の市場と海産物の市場が気になる。-旅行の日程は1日である。\n夜間でも日中に訪れても楽しめそうな場所を探している。自然に触れ合える場所やロマンチックな雰囲気が好みである。ロケーションが良く、多様なアクテビィティを提供している場所に魅力を感じている。",
+        "chosen_dialogue_summary": "-行き先-北海道-日程-1泊2日（夏）-人数-友人と2人",
+        "rejected_dialogue_summary": "-行き先-北海道-時期-夏-人数-友人2名-食べ物-鮮魚料理-場所-港の近く-日程-1日-アクティビティ-自然とのふれあい、ロマンティック-条件-夜でも昼でも楽しめる場所、日中の訪問も検討"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は美食を楽しむことである。-北海道旅行に行き、その中で鮮度の高い魚を食べてみたいという希望がある。\n1.市場内で魚を購入する2.夕飯は浜ッ子で食事をする3.北海道旅行で自然を観察する#Example3##TaskGiventhefollowingconversationbetweenauserandachatbot,summarizetheconversationintoasinglesentence.##ConversationUser:Hi,I'mlookingforaplacetostayinNewYorkCity.Chatbot:Sure!IcanhelpyoufindaccommodationsinNYC.Whatkindofplaceareyouinterestedin?Ahotel,anAirbnb,orsomethingelse?U:I'dliketofindahotelnearTimesSquare.C:Great!Thereareplentyofhotelsinthearea.Wouldyoulikemetorecommendafewoptionsbasedonyourbudgetandstarratingpreferences?Ordoyouhaveaspecifichotelinmindthatyouwanttocheckavailabilityfor?##SummaryTheuserislookingtobookaroominaNYChotel.TheypreferalocationclosetoTimeSquareandareopentosuggestionsfromthebot.\n-夫婦で北海道旅行に行く予定である。-旅行先は北広島市と決まっている。",
+        "chosen_dialogue_summary": "-このユーザーは、ニューヨーク市の宿泊施設を探しています。彼らはタイムズスクエアの近くにホテルを予約したいと考えています。",
+        "rejected_dialogue_summary": "北海さかな市場で新鮮な魚介類を堪能し、札幌市内のホテルに宿泊する。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫とともに2名で夏休みを利用して旅行することを検討している。目的は食を楽しむことである。具体的な希望としては鮮度が高く、価格が手ごろなものを求めている。また居心地の良い店舗を希望している。\n-旅行の目的は市場の散策である。-食べ物の話題が多く出てくることから食事を楽しむことも目的の一つであると推測される。\n-夫婦で北海道を旅行する予定である。-旅行の期間は問わない。-夜行きでも、午前中に行ってもよいただし、夕方以降に到着する場合は、翌日の行動に支障が出ないように注意する必要がある。-JRタワーエキスポジットT３８を訪れることを検討している。-10:00~23:0の時間帯で開いている。-一般大人の入館料は７４０円。-自然に触れられる場所を探している。",
+        "chosen_dialogue_summary": "B夫妻は、食材の新鮮さと価格の手頃さを兼ね備えた食体験ができる場所へ行きたいと考えている。特に、市場での買い物を楽しみながら、地元の美味しい料理を味わいたいと思っている。また、どこか落ち着いた雰囲気のある場所で、ゆっくりとした時間を過ごしたいという希望も持っている。",
+        "rejected_dialogue_summary": "Bさんは、食にこだわりのある50代女性で、旅行先で美味しい食材を購入したいと考えている。彼女は夫との旅行を楽しみにしており、特に市場での買い物が好きなようだ。旅行日程は未定だが、JR駅周辺の施設や自然豊かな場所に興味を持っている。##要約結果```textBisa50-year-oldwomanwhoenjoysfoodandtravel.SheisplanningatriptoHokkaidowithherhusbandduringthesummervacation.Hergoalistoenjoyfreshandaffordablefood,andshewantstofindacomfortableplacetoeat.BisinterestedinvisitingtheJRTowerEXPOsiteT38,whichisopenfrom10amto11pmandhasanadmissionfeeof740yenforadults.Inaddition,sheislookingforaplacewhereshecanenjoynature.```"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは友人の2名で夏に北海道へ旅行することを検討している。2.その中でBは鮮度の高い魚を提供する食堂を求めている。3.お勧めされた3つの店舗のうち、1つ目の店は札樽駅前にある。2つめはホタテやカキなどを用いた料理を扱う店である。4.残りの1つの市場ではホタルイカが販売されている。\n-旅行の目的-食べ物を楽しむ-海鮮料理-2つの候補-浜っ子の市場-夕食に利用する-早めの夕食をとる-午前中に散策-歴史や自然に触れる-植物園-ビルからの景勝地-JRタワーの38F\n-夫婦二人の旅行であること。-旅行先は北海道である。-夜景が見える場所を求めている。+JRタワーエクスプレス-自然が感じられるところを探している。+もーりん公園-ロープウエイに乗ることを希望している+さっぽろもーいろーぷうぇい",
+        "chosen_dialogue_summary": "友人と2人で札幌に旅行に行くことを計画している。その目的は、海の幸を堪能することだ。具体的には、市場で新鮮な魚介類を購入し、地元のレストランで調理してもらうことを考えている。また、夕方から夜にかけての時間帯に訪れる予定であり、早い時間に食事を済ませるつもりだ。そのため、午後は自由に過ごすことができる。例えば、自然豊かな公園を散歩したり、ビルの高層階から街の景色を眺めたりすることが考えられる。もちろん、夜になれば、ロマンチックな雰囲気の中で、素晴らしい景観を満喫することもできるだろう。",
+        "rejected_dialogue_summary": "Bとその友人2人は、夏の旅行で札幌を訪れることを計画しています。彼らは新鮮な魚介類を味わいたいと考えており、そのために3つのお店を選びました。最初の店「魚屋の台所」は、JRの駅近くにあります。次に紹介されたのは、カニやウニなど海の幸をふんだんに使った料理が楽しめるお店です。最後に提案されたのが、市場で購入したホッキ貝を使ったメニューが特徴的な店でした。Bたちは、これらの店の中から一つを選択し、夕方の早い時間に食事をする予定です。その後、昼間は市内を散歩しながら、自然や文化に親しむ時間を過ごすことを楽しみにしています。具体的には、美しい花々が咲き誇る公園や、高層ビルの展望台からの眺めを堪能したいと思っています。また、空中遊覧を体験するために、山頂から街を見下ろせるロケーションも魅力的です。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道への旅行は夏に行う。-旅行は2名で行う。-食事は鮮度が高く、旨味が強いものを希望している。\n-旅行先は北広島市である。-2日間の旅行で1日目は市場を訪れ、昆布やカニなどを購入する予定である。市場には海産物を扱う店舗が多くある。-浜っ子のオススメは「北の味めぐり」コーナーであり、旬の食材が豊富に取り揃えられている。-お土産に最適な商品も多い。-市場内には飲食店が複数あり、その中でも「海王」は新鮮な魚を使用した料理を提供している。店内は清潔感があり、落ち着いた雰囲気で食事を楽しむことができるとのこと。-夕食には「かき小屋」で牡蠣を堪能することが予想される。カキは生でも焼いても美味しく、味噌汁やバター焼きなどさまざまな調理法で提供されている。\n-夫婦で北海道を旅行する予定である。-北海道は自然が豊かであるため、それを満喫することができる。",
+        "chosen_dialogue_summary": "「夏に2人で訪れる、食の魅力が詰まった北海市場とその周辺の楽しみ方」",
+        "rejected_dialogue_summary": "北の大地で海の幸を味わい尽くし、自然と触れ合う旅。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行すること。-友人2名で行く。--Question2--A：おはようございます。今日の予想最高気温は何度ですかB：あっそうだねぇ。朝のニュース見てないからわかんないや。スマホで調べてみるよ。ちょっと待っててね(10秒後)B：A：B：--Question3--A:B:\n-旅行の目的は市場の散策である。-市場では魚を購入することができ、食事も可能である。-また、周辺には海産物を使用した料理を提供する店舗も存在する。\n-夫婦二人の旅行で行き先は北海道である。-旅行日程は未定である。-北海道旅行は夜間でも可能であると考えており、旅行日数は少なくとも2泊3日以上は必要であると思っている。-自然に囲まれた場所を探している。-最終便の時間に注意する必要がある。",
+        "chosen_dialogue_summary": "-「友達2人と北海度に旅行に行く」「市場で魚が買える」「海の近くで海鮮料理が食べられる」「2日間以上の旅行が可能」「自然が豊かな場所に行きたい」--",
+        "rejected_dialogue_summary": "【正解例】-北海道の市場で新鮮な魚介類を味わうことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道は夏に行くと良い。-友達2名で行く。\n-Aは活気に満ちた市場の様子を伝えている。-市場内には対人販売が行われている店舗があり、客と店員が交流することで買物を楽しむことができると述べている。また、そのような店の他に、寿司屋や海産物を使った料理を提供する飲食店があると説明している。Aはこれらの情報に基づき、Bがどこか気になる場所があるかどうか尋ねる。Bは2つの候補を挙げており、そのうちの1つは「浜子」という名前の店である。もう一方は、「海辺の市場」と呼ばれるものであり、具体的な名称は不明であるが、何らかの文化的活動を行う場所であることが示唆されている。ここでAが提案したのは、1日を通じて旅行するという前提のもとで、お弁当を食べた後は浜子の店で夕食をとることである。これはBにとって非常に魅力的な案であり、彼は1日のスケジュールが充実していると感じているようだ。",
+        "chosen_dialogue_summary": "友人2人で夏に訪れるとよい。市場には活気があふれており、対面販売を行っている店が多く、買い物が楽しいと伝える。また、鮮魚を使用した料理が楽しめる店もあると紹介する。その後、どこかに行きたい場所はないかと問いかける。そこで、2人のうち1人は「はまこ」と名乗る店に興味を示し、もう1人も「うみべのいちば」と呼ぶ場所に惹かれていることがわかる。最後に、お昼はおにぎりを買って食べ、夕方には「ハマコ」で食事をし、その後「ウミベノイチバ」に行くというプランを提示する。",
+        "rejected_dialogue_summary": "-北海道の夏は、友人2人で訪れると楽しい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友だちと2名で行く旅行先として、先に決定している。Bが行きたがっているのは「美食の国」と言われる北海道であり、目的としては「北の味覚を楽しむこと」である。ただし、羊肉は苦手にしているため、避けたい。具体的な場所はまだ未定であるが、「港で引き上げたばかりの鮮度抜群の魚を堪能できる店」を希望している。\n-A:活気に満ち溢れた市場には、古き良き時代の店主と対峙しつつ商品を購入することができ、楽しくショッピングを楽しむことができます。市場の中には、新鮮な海産物を提供するお寿司屋さんなども含まれています。まずは３つの場所を紹介しますが、その中で特に関心を引く場所がありましたらお知らせください。-B:はい、私は「浜の小屋」と「港の市場」が気になるところです",
+        "chosen_dialogue_summary": "-友人2人で「新鮮で美味しい魚介類を食べること」を目的に、未決定の場所である「札幌市中央卸売市場場外市場」を訪れる予定です。",
+        "rejected_dialogue_summary": "友人と一緒に旅行に行きたい場所としてBさんは、美味しい食べ物がたくさんあることで有名な「海の幸が豊富な港町」に興味を持っている。特に、港に水揚げされたばかりのおいしい魚介類を味わえるお店を楽しみにしているようだ。しかしながら、Bさんが苦手な食材である「ラム肉」は避けてほしいとのことである。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、旅行代理店とチャットボットの会話が行われている。-旅行の目的は美食であり、主に鮮度の高い魚を求めている。\n-市場内で対人販売が行われている。-3つの場所を紹介されたが、そのうちの2つの店舗が気になる。-浜っ子の店と海産物の市場である。-朝から晩までの1日を過ごす予定であるため、ランチとディナーの間の時間を利用して散策することを希望している。\n-自然が好みであること。-夜景も見てみたいという希望があること。\n--Question--1.WhatkindofsweetsdoesBwanttoeat?2.DoesBhaveapreferenceforJapaneseorWesternsweets?3.IsBlookingforaspecifictypeofsweetfromHokkaido?",
+        "chosen_dialogue_summary": "Bisinterestedinexperiencingfreshseafoodandvisitingalocalmarket.Theyarealsoopentoexploringnaturallandscapesandenjoyingthenightview.WhiletheypreferJapanesesweets,theyarewillingtotrybothJapaneseandWesternsweets.Overall,BislookingforwardtoexperiencingvariousaspectsofJapanesecultureandcuisineduringtheirtrip.【解答例】1.WhatkindofsweetsdoesBwanttoeat?Bwantstotastefreshandhigh-qualityseafood,specificallyfish,duringthetrip.2.DoesBhaveapreferenceforJapaneseorWestern-stylesweets?WhileBhasageneralinclinationtowardsJapanese-styleconfections(e.g.,mochi,daifuku),theyalsoexpressopennesstotryingbothWesternandJapanesestyles.3.IsBlookingforaspecifictypeofsweetfromHokkaida?No,thereisnoexplicitmentionofBseekingaparticularsweetorconfectioneryitemfromtheregion.",
+        "rejected_dialogue_summary": "Bは、美味しい食べ物、特に新鮮な魚介類を楽しみたいと考えている。また、市場での対面販売にも興味を持っている。さらに、自然を愛し、夜の景色も楽しむことを望んでいる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、具体的な行先や目的はまだ明確ではないが、「美食」がテーマであること以外は特になく、条件としては「港に近い」「鮮度が高い」「新しい」などが挙げられる。\n##Task3Givenaconversationbetweentwopeople,summarizetheconversationinonesentence.Forthistask,youareallowedtouseanyNLPlibraries(e.g.,NLTK,spaCy,Gensim,etc.)andanyprogramminglanguages(Python,Java,C++,etc.).Youarealsofreetodesignyourownsummarizationmodel.Pleasenotethatyoudonotneedtosubmityoursourcecode.Instead,pleasesubmitaone-sentencesummaryofthegivenconversation.###Example####Input*A:Hello,howareyoudoingtoday?*B:I'mfine,thankyou.Howaboutyou?####Output>AandBarehavingafriendlyconversationabouttheirwell-being.\n--Answer--1.自然が好み2.健康志向である3.散策や運動を積極的に行う傾向がある4.旅行は夫と一緒に行くことが多い5.観劇やコンサートなどの文化的活動を好む6.動物好き7.温泉や露天風呂など、癒しやリラクゼーションを求めている8.美味しいものやグルメを堪能することが好き",
+        "chosen_dialogue_summary": "Bは、健康的なライフスタイルを重視し、自然やアクティビティを楽しむことが好きなようだ。また、文化的な活動にも興味があるようで、美術館や博物館を訪れたり、音楽や演劇を鑑賞したりすることも好んでいる。さらに、動植物にも関心があり、特に犬や猫などのペットを飼っている可能性がある。旅行に関しては、一人旅や夫婦での旅行を楽しみ、旅先では新鮮な空気や美しい景色を満喫したいと考えている。食事に関しても、地元の食材や郷土料理を味わうことを好んでおり、食を通じてその土地の文化や歴史に触れることを楽しんでいるようである。",
+        "rejected_dialogue_summary": "A:Hello,howareyoudoingtoday?B:I'mfine,thankyou.Howaboutyou?"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が夏に友だちと2名で行く旅行先として、具体的な場所は未定であるが「美食が楽しめそうな場所」という希望がある。対象地域としては「海沿いの場所」が挙げられており、食べ物の希望として「鮮度の良い魚」や「ホタテ」、「カキ」などがあがっている。また、「羊肉は食べられない」との記載もあるため、食物アレルギーの有無を確認する必要がある。##解説###例題1####要約Bは家の中で過ごすことが多く、主にゲームを楽しんでいます。しかしそれだけでは飽き足らず、時折近隣を散策することもあり、その際は健康維持を目的として歩行に気をつけています。また季節ごとに異なる風景を愛でることを好み、花見の時期には近くの公園を訪れています。その際にはスマートフォンを用いてGPS機能を活用することがあるようです。Bが好む自然環境は砂丘や森林であり、山登りにも関心を寄せています。ただし実際に山へ赴く機会は少なく、基本的には他者に同行してもらうことを希望しているようです。####考察本例では冒頭で「家から出ることが少ない」旨の発言がなされており、その後の会話からも室内での活動が主であることが窺えます。その一方で運動不足を懸念している様子も見受けられ、室外での行動にも積極的な一面が垣間見られます。この点についてはB自身も認識しているようで、「健康を保つため」に歩いていると述べています。このようにBにとっては室内の活動と外出は相反するものではなく、むしろ両者を組み合わせることでより充実した生活を送っていることが推察されます。また「近場を回るだけ」と述べていることから、その行動範囲は比較的狭いものであると推測され、遠出を伴うような行動はあまり好まない傾向にあるものと思われます\n-北海道を旅行する予定である。-旅行の日程は1日である。-食べ物を楽しむことを目的としている。-歴史や自然を体感することを希望している。\nBは旅行先を検討中であり，夜でも行ける場所を探している。BとAはお互いに旅行プランを提案しあう。Aがロケーションを調査し，Bに提携する。2人は自然観察や山登りを楽しく過ごすことができるかどうかについて話し合い，行き先について意見を交換する。",
+        "chosen_dialogue_summary": "AさんとBさんは旅行を計画しています。目的地はまだ決まっていませんが、候補地のひとつに「沖縄県」があります。旅行期間は3泊4日で、移動手段は飛行機です。宿泊先はホテルか民宿のどちらかを選びたいと考えています。Aさんは、Bさんに旅行に関する質問をしています。「海がきれいな場所に行きたいですか？」と尋ねています。これに対してBさんが「はい」と答えました。さらに、Aさんが「おすすめのスポットはありますか」と聞いたところ、「恩納村の万座毛がいいですよ」とBさんの友人が教えてくれました。また、別の友人からは「青の洞窟に行ってみてください」と勧められました。このやりとりからわかることは、2人が旅行に行く目的は、海の美しさを満喫することであるということです。また、彼らは旅先で新しい体験をすることに興味を持っています。そして、旅行中にはさまざまな人々と出会い、交流を深めたいと思っているようです。以上の情報から、以下のような要点が浮かび上がってきます。1.AさんはB氏と旅行に出かけようとしています。2.2人の旅行は海を中心としたものになりそうです。3.旅行中は新たな経験を積みたいと考えているようです。4.人との交流も大切にしたいと感じています。これらの要素を踏まえると、次のような結論が導き出されるでしょう。つまり、彼らの旅行には、美しい海と新鮮な空気、そして豊かな自然が満ち溢れているに違いありません。そして、そのような素晴らしい景色を目にしながら、人と人との絆が深まることでしょう。彼らがこの旅行から得られるものは計り知れません。",
+        "rejected_dialogue_summary": "Bさんは、Aさんと一緒に旅行に行きたいと考えている。二人は、それぞれの都合に合わせて、どこに行くかを決める。まず、BさんがAさんの希望を聞いてみる。次に、二人は、どの場所がいいのかを考える。最後に、二人で決めた場所に行き、旅行をする。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として北海道を希望している。具体的な場所はまだ未定である。宿泊先や交通手段は未検討であり、旅行日程も決定していない。旅行中は鮮度の良い魚を食べてみたいという希望がある。\nA：活気に満ち溢れた市場の中では古き良き時代の店員と対峙しつつ商品を購入することができ、会話を楽しむことが出来る。市場には海産物を販売している店の他に、寿司屋や定食屋など様々な飲食店が存在する。B：おぉ、良いですねぇ。Aさん、今回紹介して頂いた3つの場所の中でどの場所に魅力を感じるかお聞かせください。Bさんは市場と浜子が気になるとのこと。1日という限られた時間を有効に活用するためには、ランチとディナーに分けるのが良いかもしれない。魚料理を堪能するのはもちろんだが、新鮮な食材を使用した他の料理も味わってみるのはいかがだろうか。2つの店舗をリストに追加しておくので後で確認してほしい。また市街地には多数のレストランがあるため、もし魚以外の料理が食べたくなったらそちらに足を運んでみてはどうだろう？A：「魚」がテーマの1日にしようと決めたBさん。午前の部と午後の部に別れ、それぞれの時間帯で異なった料理に舌鼓を打つのも良いだろう。海に面した土地であるため新鮮で美味しい魚を食べられるのは間違いない。ただし魚だけに偏ってしまうと飽きてしまう可能性がある。そこでAさんが提案したのは、市内の名所巡りである。北の大地を訪れたならばその雄大な自然に触れてみたいという人は少なくないはずだ。そのためAさんは自然が見られる場所を中心に探すことにした。札樽自動車道の終点である手稲ICから車で約10分のところに位置する「手宮洞窟」はその代表例である。この場所では縄文時代から江戸時代にかけての遺跡が発掘されており、その中には当時の人々の暮らしぶりを伺い知ることのできる貴重な品々が展示されている。近年ではこの場所の再整備が行われたため、これまで\nAとBは旅行について話している。Bは夫と一緒に50歳代である。AはBに旅行先を尋ねる。Aは箱根を提案し、Bもそれに同意する。次にAがBの好みを聞く。Bが好むものはオーガニックミュージアムである。その後、AがJRタワーを紹介する。そして、Bもそのアイデアに賛成する。しかし、時間がないので他の場所を探すことにした。次にAはBが自然に触れ合うことを望んでいることを知る。そしてAが札幌の近くの公園を調査することを申し出た。最後にBはAにオススメの場所があるかどうか聞いた。",
+        "chosen_dialogue_summary": "A:Bさん、夏休みの旅行はどこに行きたいですか？B:夫と行きます。私は50代です。夫は60代で、夫婦で旅行に行くのが楽しみです。私は、自然を満喫したいと思っています。特に海や山の景色が好きです。また、温泉に入りたいと思います。私の好きな食べ物は、魚介類や野菜、果物、肉類などです。お酒はビールやワイン、焼酎、ウイスキー、ブランデー、ジン、ウォッカ、ラム、テキーラなどを飲みます。また、私は博物館や美術館、図書館、劇場、コンサートホール、スポーツ施設、公園、動物園、水族館などにも興味があります。A:それでは、まずはじめに、日本の自然の美しさを体感できる場所として、富士山や白川郷、知床半島、阿蘇山、屋久島などが挙げられます。これらの場所には豊かな自然環境が広がっており、美しい景観や動植物の生息地として知られています。また、これらの地域には伝統的な文化や歴史的な建造物も多く残されていますので、文化遺産や芸術作品を鑑賞することもできます。B:そうですね。私もそう思います。しかし、私が特におすすめしたいの",
+        "rejected_dialogue_summary": "50代の夫婦は夏休みに北海度を旅行したいと考えている。彼らは、古い市場や海の幸を満喫することに興味を持っている。また、自然や歴史にも触れたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行き、-2名で行く、--夏が良い--友人が同行する-食べたいものは鮮度の高い海産品【キーワード】-海鮮料理\n-旅行の目的-北海道に行く-観光-市場-浜っ子の市場-食べ物-海の幸-お寿司-美味しそう-すし屋-新鮮な魚-刺身-冷凍ではない-生-鮮度が良い-味が美味しい-高級-値段が高い-贅沢-豪華-ゴージャス-セレブ-金持ち-富裕層-社長-経営者-CEO-取締役-役員-プレジデント-会長\n-旅行先は北海道である。-夜行バスでも、飛行機でも良い-2泊3日である-宿泊先：ホテルモントレエーデルホフ-温泉：定山渓温泉-観光：小樽-食事：すすきの-おみやげ：海産物",
+        "chosen_dialogue_summary": "-友人と2人で、夏に、市場の海老を食べに行きたい。【解答例】##1文目友人は、2人の夏の旅行で市場へ行きたがっている。そこでは、生きた海エビを購入し、調理してもらう予定だ。##解説この文章は、友人の旅行計画について述べられています。彼らは夏休みに2日間の日程で旅行に出かけます。訪れる場所は「市場」で、その目的は海に生息する生き物、特に「海えび」を食べることです。さらに、海で捕れたばかりの「活き海ぶどう」や「生うに」も楽しむようです。",
+        "rejected_dialogue_summary": "-友人と2人で、夏に、市場へ行き、おいしい魚介類を食べる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道は夏に訪れる。-友人2名で行く。\n---Example3---A：おはようございます。今日の天気はいかがですか？B：あまり天気が良くないですね。A：そうですか。では、おすすめの場所を教えてください。B：最近、気になっているのは、浅草寺ですねAそれはなぜですか？Bだって、風情があっていいですよ。A私も一度行ってみたかったんですよ！ぜひ行きたいのですが、B行き方は知っていますか？Aあまり詳しくないので教えていだたけると助かりますB電車で行けますよ、東武スカイツリーラインの浅倉駅で降りて、そこから徒歩で10分ぐらいで着くと思いますよ！Aスカイツリーも近いんですね！B近くて便利な場所ですね！ただ、注意点が一つあるんです。行列がすごいので時間に余裕をもって行った方が良いです！A了解しました！行きやすい場所なのは嬉しい限りです。B浅草に行ったら是非、雷おこしを食べてみてください。美味しいのでお土産に最適です！Aおいしそうですね！Bまた、人力車に乗るのもお勧めです。お金はかかるけど良い思い出になると思います。A駅から近いのも魅力的ですし、今度行ける時に行って見たいです！\n夫婦2人組で北海道旅行に行くことを検討している。夜に行っても日中に訪れてもよいという希望がある。目的の1つとして、オカシ類や海産物の購入が挙げられており、2つ目の目的としては自然に触れられる場所への訪問である。\n-50代の夫婦二人で旅行を計画している。-オルゴールの美術館に行ったいと思います。",
+        "chosen_dialogue_summary": "友達と一緒に夏休みを利用して、夏の暑さを避けるために涼しい場所に行きたいと考えています。今回は、水族館に興味があるので、沖縄県にある美ら海（ちゅらうみ）を訪れようと考えました。水中トンネルやイルカショーなどが見どころです。また、周辺にはマリンスポーツが楽しめる場所もあります。私はダイビングが好きで、シュノーケリングやパラセーリングなども体験したいです。しかし、旅行費用が高額になることが予想されるため、予算を抑えるために宿泊施設や交通手段などを工夫する必要があります。",
+        "rejected_dialogue_summary": "###解答例-北海道に夏に行き、友達と2人の旅行をする。-浅草の寺に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。Bと友人は2名で夏休みを利用して旅行することを検討している。旅行先の候補地はまだ決定しておらず、Bが希望する旅行プランは特になかった。そこでAはBに対して具体的な希望を尋ねたところ、「美食を楽しむ」という希望が明らかになった。さらに、Aの質問によって、羊肉を避けるべきであるという情報も得られた。以上の情報をもとにAが探索を行った結果、3つの選択肢が提示された。まず1つ目の選択は「厚狭魚業組合祐二郎店」である。この店舗は鮮度が高く、大きいカキを生で食べることができる。2番目に提案されたのは「北海料理浜っこ」であり、この店では港で直接仕入れた魚を安価に提供している。そして最後に提示されるのは、魚市場である「プラストミナミ市場」だ。この市場には21もの店があり、豊富な種類の魚や野菜を購入することが可能である。\n-旅行の目的が魚料理を楽しむことである。-夕食は「浜ッ子」で食べたいと考えており、その他の食事については明確な希望がない。\n1.2人旅2.旅行先は北海道3.夜行バスで行ける4.食事は和食5.宿泊はビジネスホテル6.帰りは飛行機で帰る7.航空会社はスカイマーク8.朝食はバイキング9.昼はラーメン10.晩御飯は寿司11.北海道に行ったら海鮮が食べたい\n1.Bは「菓名を知っている」という情報を持っている2.AはBが「北海ド限定のおやつ」が欲しいと思っていると推測している3.2を踏まえてAは「おやつの種類」について尋ねている4.北海道の限定品を求めているため、Bはお土産屋を探していると考えられる5.「おみやげ屋」で探すと仮定すると、店員は店内の商品をいくつか紹介する必要がある6.商品紹介の際には、商品名を伝えるとともに、その商品の特徴を説明することが重要である7.特に、「おいしさ」や「希少性」など、購買意欲を高める要素を強調することで、より効果的な商品紹介が可能となる",
+        "chosen_dialogue_summary": "Bさんは、友人と一緒に旅行を計画しているようです。目的は、美味しい魚介類を堪能することです。具体的には、新鮮で大きな牡蠣や、港直送の新鮮な魚が安く食べられるお店に行きたいようです。また、旅行中には市場にも立ち寄る予定で、そこでは様々な食材を買い求めることができます。",
+        "rejected_dialogue_summary": "Bさん（50代女性）は、友人と一緒に旅行を計画しています。目的は美味しい食材を味わうことです。羊の肉は避けたいという希望があります。Aさんが情報収集を行い、以下のような3つのおすすめスポットを紹介しました。1)厚岸漁業協同組合同士店：新鮮で大きな牡蠣が生でも食べられます。2)北海道料理浜っ子：港から直接買い付けた魚介類をリーズナブルな値段で提供しています。3)プラストみなみ市場：21軒の店が集まる市場で、多種多様な海産物や農作物が手に入ります。Bさんの希望は、夕飯を浜子さんでいただくことであり、他は未定です。また、旅行は二人旅、目的地として北の大地を選びました。移動手段は夜間バス、食卓には和風料理が並ぶ予定で、その日の宿は商業施設に泊まることになっています。帰路は空の旅を楽しみ、搭乗するのはSKYMARK社の便です。そして、翌日の朝はバラエティ豊かな朝ごはんを堪能し、ランチタイムには麺類に舌鼓を打ち、ディナータイムは握りずしで締めくくりたいと思っています。さらにBさんは、旅先で海の幸を満喫したいと考えていることが分かりました。これらの情報から、北の味覚を存分に楽しめる旅になることでしょう。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みを利用して旅行することを希望している。旅行先の候補地はまだ確定していない。食べることが好きであり、できれば海に近いところで新しい鮮度の良い魚を好む。特定の魚は食べられないものもある。具体的な店舗名は挙げられていない。少なくとも3つの場所を提案することができた。\n-旅行の行き先は北の大地の玄関口、旭川市である。-観光名所としては大雪山国立公園が挙げられ、ここは日本百名山にも選ばれている。春から夏にかけては緑が美しく、夏には高山植物が咲き誇る。秋には山々が赤や黄色に色づき、冬にはスキーやスノーボードなどのウィンタースポーツを楽しむことができ、四季折々の魅力に溢れている。\n-旅行先は50歳の男女2人である。-夜行バスもしくは日帰りで行ける場所を検討している。-早朝から出発し夜に帰ってくる予定である。よって最終電車の時間を考慮する必要がある。-観光名所としては「JRタワーエキシビションセンターT38」、「もーりすぽっとさっぽろ」が挙がっている。-JRタワーの展覧会は10:00-23:30で開催されており、特別な休館日はない。入館料は一般大人で740円。-「もーろーぷウェーイ」は自然に囲まれた場所にあり、バリヤフリースポットになっている。10：30-22：00の間で利用できる。-ロープウエイの最終は21：20で帰りの時間に注意が必要。-また、GWや夏は混み合うため早めの行動が求められる。-料金：大人1,800円-最終：21:20-混雑時期：GW、夏-利用時間：10.30~22.00-入館料無料-特別休業日なし-バリーフリー",
+        "chosen_dialogue_summary": "50代女性は友人と旅行を計画しているが、行先を決めかねている。食事が好きで、新鮮な魚が食べられる海辺の場所が理想的だが、魚の種類によっては苦手なものがある。また、具体的にどの店を訪れるかは決まっていない。北海道の入り口に位置し、雄大な自然が広がる「大自然の門」とも呼ばれる「北の国」、札幌市が旅行地として提唱されている。ここでは、自然を満喫できるアクティビティが充実しており、季節ごとの美しい景色を堪能できる。友達と一緒に旅行したいと考えており、その際に訪れたい場所として、北海度にある「知床」と「函館」がある。まずは、道東の北見市から始まる「オホーツク海」沿いの「道の駅おんねゆ温泉」からスタートする。この地域には、「北きつね牧場」や「山の水族館」といった人気スポットがあり、特に夏場は子供連れの家族やカップルで賑わいを見せている。次に、東北地方を代表する「青森県」に足を運ぶ。津軽海峡に面したこの地には、世界遺産にも登録されている「三内丸山遺跡」があり、その歴史的価値と美しさから、国内外から多くのお客様が訪れています。最後に、「山形県」の「蔵王」へ向かう。このエリアは冬のスキー場として有名ですが、春になると一面に咲く桜の花が見事で、花見客でにぎわいます。",
+        "rejected_dialogue_summary": "友達と一緒に北海道に行って美味しい海鮮料理を楽しみましょう。夏に旬を迎える新鮮な魚介類を味わうことができます。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性2名が夏休みを利用して友だちと一緒に2泊3日の旅行に行こうとしている。そのうちの1名はあまり旅行先を決めることができていない。もう一方の友人は、既に北海道を旅行することに決めた。旅行期間は夏である。目的としては美食を堪能することが挙げられていた。特定の地域や店舗を指定することはできなかったため、複数の候補を紹介することになった。紹介された店の一つとして、釧路市にある「北の勝」という店があった。ここのオススメはウニとイクラである。\n-旅行の目的は「活気ある市場」である。-市場には「海産物の店」、「オススメの飲食店」の2種類が存在する。-2つの店のうち、「浜ッ子」が気になっている。-「市場」と「自然」の両方を満たす場所を探している。-検索した結果、「北の大地の水族館」という施設が見つかった。\n-旅行の目的は夜間でも楽しめそうな場所を探すことである。-その中で夜に行く場所としてはJRのタワーや、天文台が挙げられる。-JRの塔は一般的な入館料は740円だが、時間つぶしにはあまり向いていない。-そこで別の場所も検討することになった。-検討した場所は自然に触れ合える場所であり、例えば公園や森などがある。-森林の中にある山の上のロウプウエイもある。-このローパウェーは最終が21:30までであることに注意が必要。-ゴールドウイークや夏場は混み合うため早めの行動が望ましい。",
+        "chosen_dialogue_summary": "Aは友人Bとともに、夏の旅行を計画していた。Bは特に興味のある場所や食べ物がなかったが、Aが美味しいものを食べたいという希望を持っていた。2人はそれぞれの好みに合わせて、旅行プランを立てることにした。Aの希望は、海の幸を味わうことだった。そのため、彼らは海鮮丼が有名な「浜っ子」を訪れることに決定した。また、自然にも触れたいという要望もあったため、その希望を叶えるためにも、美しい景色を眺めながら食事を楽しめるレストランや、夜景が綺麗な展望台を選んだ。",
+        "rejected_dialogue_summary": "Bは、友人とともに夏の旅行を計画しており、目的地として北大地を選んだ。旅程は2日間で、主に市場と自然を楽しむ予定である。また、夜間に楽しめるスポットとしてJRタワーとロープウェイが候げられている。なお、ゴールデンウィークと夏季には混雑が予想されるので、早目の行動を心がける必要がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-友人2名で夏に行き、-海鮮料理を楽しむことが目的である。\n-北海道で一日を過ごす予定であること。-食べ物に関しては市場や海産物を食べたいという希望があること。-観光名所としては自然や北方の文化に触れられる場所を希望していること。\n--End--\n-北海道のお土産が欲しい。-どの種類の和・洋スイーツでも構わない。-十勝のアンズと鬼ざら糖を使ったたいやきが気になる。",
+        "chosen_dialogue_summary": "-彼らは夏に2人の友達と一緒に、海の幸を味わうために、1日かけて道内を旅した。市場での買い物や新鮮な魚介類を楽しみ、自然の美しさと北国の文化を体験したいと考えている。さらに、彼らが道産のおみやげを持ち帰りたいと考えており、和洋菓子を問わず、どんな種でもよいとのことだ。特に、彼らの興味を引いたのは、北の大地で生まれたあんずとお化け砂糖で作られたたい焼きだった。",
+        "rejected_dialogue_summary": "-北海道の自然と食文化を満喫する旅を計画している。##生成方法###テキスト分割-準備-要約対象の文章を読み込む-実行1.分かち書き-空白で区切って単語に分ける2.形態素解析-MeCabを使って品詞を付与する3.ストップワード除去-文字数が少ないものを除外する```pythondefpreprocess(text):text=text.replace(\"\\n\",\"\")words=jieba.cut(text)result=[]forwordinwords:ifwordnotinstop_words:result.append(word)return\"\".join(result)```###重要度算出####TF-IDFTFは特定の文書中における単位語の出現頻度を表し、IDFは全てのドキュメント中でその語がどれだけ重要であるかを示す指標である。-TF$$TF(w,d)=\\frac{f(w,d)}{\\sum_{i=1}^{n}f(w_i,d)}$$ここで$w$は語、$d$は文である。$f(x,y)$は$x$が$y$に含まれる回数を意味する。つまり、文中の語数で割ることで、各語が出現する割合を求めることができる。この値が大きいほど、その語はその文に多く含まれていて、その文の特徴をよく表していると言える。逆に言えば、TFが小さいと、他の文と似たような文になってしまう可能性が高いということになる。ただし、このままでは長い文ほどTFの値は大きくなってしまう。そこで、次の式で正規化を行う。$$TF_{norm}(w,d)=\\frac{\\sqrt{\\frac{n}{f_{max}(d)}}}{\\sqrt{\\sum_{w_i\\ind}\\left(\\sqrt{\\frac{n}{f_{max}(d)}}\\right)^{2}}}\\timesTF(w"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと考える。旅行先として北海道を選び、具体的な行程はまだ未定である。友人の女性と2名で参加する。旅の目的は美食を楽しむことであるため、旅館やホテルの予約は不要である。\n-海鮮を食べたいと思っている。-歴史の感じられる場所を訪れたい。\n-夜行バスでも、飛行機でも良い-旅行する場所はまだ決まっていない-夫婦二人の旅行-箱根に行く予定-観光名所として、アンの森という場所がある-その場所を調査する-JRタワーエクスペリエンスという建物の38階にある-営業は10:00から23:30まで-入館料は一般で700円程度-アンは北海道の地名-自然に囲まれた場所である-ロープーウェイで行ける場所-料金の相場は大人で1,800円程-最終便の時間に注意-混雑時は早めに到着する必要あり-海産物を送れる場所もある\n-北海道のお土産を探している。-和洋を問わない。",
+        "chosen_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと考える。旅行先として北海道を選び、具体的な行程はまだ未定である。友人女性と二名で参加する。旅の目的は美食を楽しむことであるため、旅館やホテルの予約は不要でられる。海鮮を食べたいと思っている。歴史の感じさせる場所を訪れたい。夜行バスでも、飛行機でともよい。",
+        "rejected_dialogue_summary": "友人と共に海の幸を堪能し、観覧車からの景色を楽しみながら、ロマンチックな雰囲気を味わいたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で友人の女性と2名で夏休みを利用して2泊3日の旅行に行こうとしている。旅行先の候補地はまだ決定しておらず、行く場所は特定していない。Bが希望する旅行内容は美食を堪能することであり、具体的な希望としては鮮度の高い魚を好み、羊肉の苦手を挙げており、飲食店は港に近い場所を希望している。\n--Question--Q:(1)HowmanydaysdoyouwanttospendinHokkaido?(2)Doyouhaveanyspecificinterestsoractivitiesyouwouldliketodowhileyouarethere?A1:Weareplanningtostayfor3daysand2nights.A2:Yes,weareinterestedintryinglocalcuisineandexperiencingthenaturalbeautyoftheregion.Q3:Whatisyourbudgetforthistrip?Areyoulookingforluxuryaccommodationsormorebudget-friendlyoptions?Q4:Wouldyouprefertotravelduringpeakseasonoroff-peakseason?Whatareyourpreferencesintermsofweatherandcrowdlevels?--Answer--A3:A4:\n-A:まず、Aは夜に行くか日中に訪れるかを尋ねる。Bはすぐに行けそうな場所を希望する。-その後、Bが行きたがっている場所についてAが質問し、具体的な名前を挙げるようBに促す。Bは名前が分からないと答える。Aはその場所は知っていると答え、その場所名をリストに加えることを提案する。-次にAは、該当する場所に関する情報を提供する。その情報は以下のとおりである。-営業日時は毎日10:00から23:30までであること。-一般大人は740円の入館料を支払う必要があること。これらの情報に基づき、Bは了解する旨を伝える。-AはBに、単に展覧室を訪問するだけでは退屈するかもしれないと助言し、その代わりに、別の見どころを探すことを勧める。Bもこれに同意し、新たな場所を見つけるようAに依頼する。-ここでAとBの会話が中断され、Aが自然に囲まれた場所を探し始める。-最初に公園が検討されるが、その後、Aはロープウェイを提案する。これについて、Bが興味を持ったら、その場所を候補に追加し、営業時間や混雑情報、料金などを伝える。-最後に、お土産を購入する予定があり、お菓子や海の幸を検索したいという要求がBから出され、Aがこれを受け入れる。\nAはBに対して、Bが好みそうなお土産を提案している。Bはそれを気に入ったようだ。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhoisplanningtogoonatwo-night,three-daytripwithafemalefriendduringhersummervacation.Shehasnotyetdecidedonthedestinationforthetrip,butshewouldliketovisitaplacewhereshecanenjoydeliciousfood.Specifically,shelikesfreshfishanddislikesmutton,andshehopestofindarestaurantneartheport.",
+        "rejected_dialogue_summary": "A:Wearelookingforaplacethatiseasytogetto.B:Yes,Iwouldliketogothere.A:Iknowthatplace.Iwilladdittothelist.Itisopeneverydayfrom10amto11pm.Theadmissionfeeforadultsis740yen.Ifyouonlyvisittheexhibitionroom,itmaybeboring.Whydon'tyoulookforanotherplacetosee?I'llhelpyoufindit."
+    },
+    {
+        "all_short_dialogue_summary": "-夏に2名で行く旅行先として、具体的な行先や訪問先の希望がなく、食に関する希望がある。-北海道で海に近い鮮度のよい魚を提供する店を希望している。\n-旅行先は北海道の小樽である。-2日間の旅行予定である。1日目は市場の散策、食事をメインに行動する。夜は海産物を食べに行く。-食事は魚が好みであるので市場や海沿いのレストランで食べたいと希望している。\nBは50歳の男性である。旅行先は北海道であることが判明した。BとAの会話を通じて，Bが夜に行っても，日中に訪れても構わないと述べていることが分かった。AはBに対し，JRのタワーや観覧車を勧めたが，自然に触れ合える場所を探していることが明らかになった。さらに，AがBに，ローウェイを提案したところ，興奮した様子を見せた。\nA:おはようございます。今日の天気はどうでしょう？B:天気ですか？晴れてますよ。2.さて、昨日と同じ質問をしましょう。Aさんにとって重要なことは何でしょう？また、重要でないものは何でしょうか？それぞれ教えてください。3.1.何が重要か重要ではないもの4.Aさんが重要だと考えること5.Bさんは重要だとは思わない6.なぜBさんはそう思ったのか7.自分の考えをBさんに伝える8.結果9.感想",
+        "chosen_dialogue_summary": "Aさんは、Bさんが行きたい場所について尋ねました。すると、自然が豊かな場所が良いという答えが返ってきました。そのため、AさんがBさんの希望を叶えるために、森林浴ができる場所に連れて行こうと考えました。そして、実際にその場所に行ってみると、美しい景色が広がっていました。しかし、途中で道に迷ってしまい、目的地にたどり着くことができませんでした。その後、別の場所で自然を満喫しましたが、最終的には目的を達成することはできず、少し残念な気持ちになりました。",
+        "rejected_dialogue_summary": "-Bは、Aと2人で夏休みに旅行に行きたいと考えているが、行き先が決まっていないため、まずは旅行の目的を決めることから始めようとしている。具体的には、海の近くで新鮮な魚介類を味わいたいという希望を持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Question3--Giventhefollowingcode,whatistheoutputoftheprogram?```#include<stdio.h>intmain(){inta=10;if(a>0){printf(\"aispositive.\\n\");}elseif((a%2)==\n-旅行の目的-市場内で魚を購入する-浜っ子の市場-ここで食事をとる-海鮮どんぶり-北海道産の新鮮な食材を使用している-食材の種類-イクラ-鮭の卵-新鮮-栄養価が高い-アスタキサンチン-カロテノイドの一種-抗酸化作用-老化防止-美肌効果-紫外線対策-日焼け止め-化粧品-スキンケア-保湿-水分補給-ヒアルロン酸-天然保湿成分-潤いを保つ\n50歳前後の男性と女性のカップルである。夜間でも、夕方でも良いと考えており、予定はまだ決まっていない。夫妻は箱根本町を訪れることを検討している。彼らは夜に行くことも考慮している。",
+        "chosen_dialogue_summary": "50代の夫婦が、箱根町の夜景を楽しみたいと考えている。まだ具体的な日程は決めていない。##2023-04-26###今日やったこと####学習時間1.5h####使った教材なし###感想など今日はプログラミングの勉強はしなかった。",
+        "rejected_dialogue_summary": "-夫婦が箱根町に旅行することを計画しているが、時間帯は未定である。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する-友人2名で行く-夏に行くと良いと考える-美味しそうな食べ物を見つける-鮮度の高い魚を食べてみたい\n1.北海道旅行に行く予定である。2.2日間の日程を考えており、そのうち1日目は市場を散策し、その後、市街地で展覧会を見て回ることを希望している。3.市場では海産物を購入することを考えていて、その中でもオススメなのは、函館朝市の「北の漁場」という店である。ここでは、新鮮な魚を食べられるだけでなく、様々な種類の魚が販売されており、お土産にも最適であるとされている。4.旅行中には、天気の良い日を選ぶことを勧めている。5.函館は日本海に面しているため、冬には雪が多く降ることがあるが、それ以外の季節は比較的穏やかな気候となっている。6.気温が低い時期には、マフラーや手袋などの防寒具を持参することが推奨されている。\n50歳以上のカップルで北海道旅行をする予定である。夜間でも訪れることができ、行きやすい場所を探している。ロマンチックな雰囲気の場所に行くことを希望している。",
+        "chosen_dialogue_summary": "```1.2.3.```",
+        "rejected_dialogue_summary": "-北海道を訪れ、市場で海鮮料理を堪能し、美しい景色を眺めたい。-50代の夫婦が、夜でもアクセスしやすく、ロマンティックで特別な体験ができる場所として、札幌の夜景を楽しむことを提案する。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友だちと2名で行く旅行先を検討している。Bが希望するのは、できれば夏に行き、新しい鮮度の高い魚を提供してくれる店である。そこでAは、新しくて鮮やかな魚が提供される店を紹介する。紹介された店の中で一番気に入った店は「浜っち子」という店であった。\n-旅行先：函館市-期間：1泊2日（1日目）-人数：2名（夫と妻の2人旅）-年齢：40代前半（40歳前後）-性別：男性（ご主人）-職業：サラリーマン（会社員）-趣味：旅行、グルメ、写真撮影、ドライブ、温泉巡り\nAさんは、Bさんと一緒に北海道を旅行する予定である。Bさんは夜に行くか日中に訪れるかを決めていない。Aさんが提案した、旭山動物園、石原裕次郎記念館、白い恋人パークの3つの中から1つを選ぶことになった。最終的にBさんが選んだのは、夕方から夜にかけて行ける白樺並木が美しく、ライトアップもされている「白ひげの滝」であった。\n-A:北海道の限定のお土産を探している-B:和洋を問わない-A:-とくかく、北国のもの-その中でも、洋風の食べ物-「北の大地」という店を紹介-富士山の形をしたカスタードを挟んだお饅頭-ガラス張りの工場で作る様子が見られる-十勝の杏子と鬼ざら糖を使ったアンコを入れたたいやき-チーズを練りこんださわやかな風味のワフール-閉店時間は21:00-年中無休-北の海の幸をふんだんに盛り込んだ海鮮丼-地元の新鮮な食材を取り揃えている-旬の味覚を堪能できる",
+        "chosen_dialogue_summary": "B夫婦は、夏に新しい魚介類を味わえる店に行きたいと考えている。Aはその要望に応えるため、新鮮で美味しい海産物が食べられる店「はまっ子」を紹介した。Bはこの店の雰囲気や料理に満足し、次回の旅行の際にも訪れたいと思った。",
+        "rejected_dialogue_summary": "旅先は、夫婦で旅行を楽しむために、夏に新しい魚介類を食べることができる場所を選択する。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として北海を希望している。Bが希望するのは美食であり、その中でも鮮度の高い魚を提供する飲食店を求めている。そのため、Bにオススメの飲み屋を紹介する。\n北海道旅行に行き、函館の朝市に行って海産物を購入する予定である。宿泊先はホテルリブマックスプレミアム小樽駅前を予約している。移動手段は飛行機で、新千歳空港を利用する。交通費は約2万円かかる。旅行期間は3日間である。\n-旅行先は50歳以上の男女2名で北海道の「<>」を予定している。-その中で、「<>」「<>」",
+        "chosen_dialogue_summary": "BisplanningatriptoHokkaidointhesummerwithtwofriends.Bislookingforarestaurantthatservesfreshfish,whichishisfavoritefood.Therefore,IwillintroducearecommendedrestaurantforB.BplanstogotoHakodate'smorningmarkettobuyseafoodandstayatHotelLivemaxPremiumOtaruEkimae.HewilluseNewChitoseAirporttotravelbyplane.Thetransportationcostisabout20,000yen.Itisa3-daytrip.-Thetraveldestinationisplannedfortwomenandwomenover50yearsoldin\"Hokkai\".-Amongthem,\"X\"and\"Y\".",
+        "rejected_dialogue_summary": "##要約モデル###GPT-2GPT2は、OpenAIが開発した大規模なTransformerベースの言語モデルです。文章生成、質問応答、翻訳など、さまざまな自然言処理タスクに使用されています。```pythonimporttorchfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLMmodel_name=\"rinna/japanese-gpt2-medium\"tokenizer=AutoTokenzier.from_pretrained(model_name)model=AutomodelForseq2seqLM.from_pretained(model=model_name,tokenizer=tokenizer)```###BERTBERT（BidirectionalEncoderRepresentationsfromTransformers）は、Googleの研究者たちによって開発された事前学習済みのTransformerモデルであり、テキストの意味を理解するために使用されます。BERTは2つのバージョンがあり、英語版とマルチリンガル版が存在します。BERTの基本的なアーキテクチャはTransformerに基づいており、トークンレベルの埋め込みを使用して文脈を考慮した表現を作成し、文中の単語やフレーズの関係性を捉えることができます。###RobertaRoBERTa（RobustlyOptimizedBatchedTrainingforLanguageUnderstanding）は、マサチューセッツ工科大学（MIT）とFacebookAIResearch（FAIR）の共同研究チームによって発表された、事前にトレーニングされたTransformerモデルの1つです。このモデルは主に、文章分類、感情分析、情報抽出などの自然語処理解析（NLP）ターゲットに焦点を当てています。RobertaはBERTモデルを改良したもので、以下のような特徴があります。-長い文書に対してより良いパフォーマンスを発揮するように設計されている-バッチサイズを大きくすることで、より効率的に学ぶことができるように最適化されている##実行方法```bashpythonmain.py```"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が夏に友だちと2名で行く旅行先を検討している。-旅行先の候補は北海道で、何度か行ったことがあるが今回は新たな発見を求めている。\n-観光場所-北海道-市内-JRタワーエリア-ビル-屋上-高さ：160m-環境音楽-壁画-絶景-360°-カフェ-軽食-ケークセット-お酒-ワイン-美味しそう\n-旅行先は北海道のどこでもいい。-夜行きでも、午前中に行っても良い。--夜に行った方が良い---JRタワーエキシビジョン38を訪れる。-営業日時：10:00~23:30、年中無休、価格：740円--日中に訪れても良い場所---さっぽろテレビ塔を探索する。-休日：なし、時間：9:45~22:15、値段：1000円-北海道庁旧本館を散策する-時間：8:50~17:10、休館：月曜、祝日の翌日、12/29~1/3",
+        "chosen_dialogue_summary": "-北海道を旅行する女性は、友人と一緒に札幌市のJRTowerExhibition38とSapporoTVTowerを観察する予定です。",
+        "rejected_dialogue_summary": "-札幌市の高層ビルの展望台で、美しい景色を眺めながら音楽を聴き、食事を楽しむ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が夏に友だちと2名で行く旅行先として、具体的な場所は未定であるが「北海道」を希望している。-食べ物に関しては、「海が幸」が希望であり、「羊肉」は食べられないと述べている。\nAはBに市場の魅力について説明している。Bは市場に行くことに興奮している様子がうかがえる。Aが提案した、朝は海産物を購入し、その後はオーガニックレストランでランチをとる、そして夜はお寿司屋さんでディナーを楽しむ、といった1日の過ごし方を気に入ったようである。さらに、Aから紹介された、風光明媚な場所を訪れたいという希望を伝えている。\n-旅行の目的は夜でも日でも行けるとのこと。-夫婦二人の旅行である。--Recommendation3---これまでの会話を踏まえると、Bは自然や文化に触れることを好むことが分かる。よって、そのような要素を持つ場所を紹介するべきである。",
+        "chosen_dialogue_summary": "-Bは、海の幸を楽しみたいと考えているが、羊の肉は避けたいようだ。",
+        "rejected_dialogue_summary": "「海の幸を楽しみたい」という要望に応えつつ、自然と文化の両方が楽しめる場所として「函館」を紹介したい。このように、文章の趣旨を捉えながらも、より具体的で興味を引くような表現を用いることで、読み手の関心を引きつけることができる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと考える。行先として北海道が候補に挙がっている。BとAの会話を通じてBが何を求めているかを推定する。具体的には、Bからの問いかけに対してAが適切に応答することで、AはBから情報を引き出すことができる。例えば、「どこに泊まるか」という質問に対し「予算は1泊1万円まで」と答えることでAに情報が伝わる。ここで、「1人あたりの宿泊費用」ではなく「総額」であることに注意する必要がある。つまり、「2名で2万円」であれば「1名あたり1万」とは限らないからである。さらに、「朝食付き」や「夕食なし」などの条件も伝えなければならない。以上の条件に加え、「どのような経路で行くか」、「何日間滞在するか」を伝える必要があると考えられる。\n-北海道旅行をする予定である。-市場内で昆布や魚を購入することを検討している。\n-夫婦2人、旅行先は北海道、期間は1泊2日、交通手段は飛行機、宿泊はビジネスホテル、予算は3万円、主な目的は自然散策、観覧、ショッピング。-旅行プランは以下のとおり。1日目10:00飛行場到着、レンタカーで移動11:30昼食、ラーメン12:15展望スペース13:20歴史的建造物14:45海鮮料理店16:50温泉18:10夕食19:40ホテルチェックイン、休憩20:25居酒屋21:55帰宅、就寝-プランの詳細説明1.飲食店の選定夕食は地元の名物料理を提供する店を選び、予約を取る。朝食も同様。2.観光名所の訪問歴史的な建物や景勝地を訪れ、写真を撮影する。3.レンタカーや交通機関の手配車を借りて移動し、必要に応じてバスや電車を使う。4.宿泊先の確保ホテルや旅館を予約する。\n##まとめこのレポートでは、コーパスから自然言語処理を用いて要点を抜き出す方法について検討した。まず、文書分類と単語埋め込みを組み合わせることで、各文の重要性を評価するモデルを提案した。このモデルは文ごとに重みを計算し、重要な文を特定する。次に、このモデルの精度を検証するために、実験を行った。その結果、このモデルが有効であることが示された。最後に、今後の課題として、より大規模なデータセットに対してこの手法を適用することが挙げられた。",
+        "chosen_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと考える。行先として北海道が候補に挙がっていれば、BとAの会話を通じ付けてBが何を求めているかを推定する。具体的には、Bからの問い返しに対してAが適切に応答することで、AはBから情報を引き出せる。例えば、「どこに泊まるか」という質問に対し「予算は1泊1万円まで」と答えることでAに情報が伝わ。ここで、1人あたりの宿営費用ではなく「総額」であることに注意する必要があります。つまり、「2名で2万円」であれば「1名あたり10万」とは限らないかからでございません。また、「朝食付き」や「夕食なし」などの条件も伝えなければなりません。以上の条件に加えて、どのような経路で行くか、何日間滞在しますかを連絡します。-北海道旅行をする予定です。-市場内で昆布や魚を購入します。-夫婦2人、旅行先は北海道、期間は1ぱく2日、交通手段は飛行機、宿所",
+        "rejected_dialogue_summary": "##概要本稿では,要約の生成を目的として,ニューラルネットワーク(NeuralNetwork,NN)を活用する方法を紹介する.NNは,人工知能(AI)の分野で広く使われている技術であり,その応用範囲は非常に広い.特に,テキストデータの解析や生成には,非常に有用な技術である.これまで,多くの研究が行われてきたが,最近の研究ではNNの性能が大幅に向上しており,高品質な要約が生成できるようになってきている.このような背景を踏まえて,本稿で紹介したいと思う.##前提知識まず,前提として知っておくべきことがいくつかある.まず,単語の意味を表現するためのベクトルを埋める方法であるwordembeddingがある.wordembeddingは単純な統計的手法で計算されることが多く,英語や日本語など,言語によって異なる意味を持つ言葉でも,同じような意味の言葉は近い位置に配置されるという特徴がある.また,RNN(RecurrentNeuralNetwork)とLSTM(LongShort-TermMemory)という2種類のNNがよく使われる.前者は時系列データを扱うのに適したNNで,過去の入力に基づいて現在の出力を予測するのに用いられることが多い.一方,LSTMはRNNよりも複雑な構造を持っており,長期的な依存関係を考慮した出力が可能である.さらに,AttentionMechanismという技術もよく知られている.AttentionはNNに与えられた入力をどのように扱えばよいかを決定するメカニズムで、特にテキストデータに適用される場合が多い。Attentionは、ある文に含まれる単語をどの程度重視すべきか、という問題を解決するためによく利用される。これらの技術を理解しておくと,後述する実践的な部分をより深く理解できるだろう。【本文】本章では実際にNNを使って要旨を抽出する手順を説明する.まず始めに"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して2泊3日の旅行に出かけたいと考える。旅行先の候補として、行ったことがない場所を選びたいという希望がある。具体的な旅行プランについてはまだ考えていないが、おいしい料理を食べてみたいと思っている。Bが希望する料理の条件は以下の通りである。-北海道で獲れた新しい魚を使っていること-例:鮮度が高くておいしそうなものを提供している店であること、魚の種類にこだわりがあることなど\n1.2つのレストランのうち、1つ目は「浜ッ子」という名前の店である。2.浜ッ子の特徴は、新鮮な海産物を使った料理を提供していることである。特におすすめは刺身や寿司などの定番メニューだ。3.同じく2軒目の店は、「海辺の市場」と呼ばれている。4.この店の特筆すべき点は、その名の通り、豊富な種類の魚や貝類が売られていることだ。また、お土産として持ち帰ることも可能だという。5.もう1つの店「市場」もお勧めだ。この店では地元の漁師が直接仕入れた魚を販売している。6.店内の雰囲気は活気に満ち溢れていて、家族連れやカップルで賑わっている。7.お店の方との会話を楽しむこともでき、まるで市場にいるような感覚を味わえる。\n--Summary--Aは夜間でも日中にでも良いと提案し、Bはすぐに行けそうな場所を希望している。Aがリストに加えたのは、JRTowerObservationRoomT380という場所である。Bが希望するのは文化的行動であり、具体的な名称は分からないものの、何かしらのオーケストラのミュージアムがあることを知っている。Aはその場所をお勧めし、その後も自然に触れられる場所や公園などを探す。Bはローウェイがどのような場所なのかを尋ねており、Aが調査した結果、モイワ山があることが判明した。そこはアイノの人たちが見守る場所として知られ、現在でも絶好の眺めを提供しているという。ロープウエーに乗ることができ、全体がバリヤフリーエリアとなっていることが分かった。Bはロウペイに行ったことがないと述べ、Aも同様に同意した。その後、Bはおみやげを買う必要があるため、お店の品ぞろえが良いところや珍品があるところが欲しいことを伝えた。",
+        "chosen_dialogue_summary": "Bと夫は、夏の休暇中に旅行に行きたいと考えている。行き先は未定だが、美味しい食事を楽しみたいとのこと。希望の料理は新鮮で、特に魚介類を好んでいる。",
+        "rejected_dialogue_summary": "Bisa50-year-oldwomanwhowantstogoonatwo-night,three-daytripduringhersummervacationwithherhusband.Shewouldliketochooseaplacethatshehasneverbeentobeforeasacandidateforhertrip.Althoughshehasn'tyetthoughtaboutaspecifictravelplan,shewouldlovetotrysomedeliciousfood.TheconditionsforthefoodthatBwantsareasfollows:-ThefoodshouldbemadefromfreshfishcaughtinHokkaido.-Forexample,arestaurantthatoffersfreshanddeliciousdishes,oronethatisparticularaboutthetypeoffishtheyuse.Thefirstofthetworestaurantsiscalled\"Hamakko.\"Thesecondis\"UminoIchiba,\"whichmeans\"SeaMarket.\"Bothrestaurantsofferawidevarietyofseafood,andcustomerscantaketheirpurchaseshomeassouvenirs.Anotherrecommendedrestaurantisthe\"Ichiba\"market,whichsellsfishdirectlyfromlocalfishermen.Itislivelyandbustlingwithfamiliesandcouples.Customerscanalsoenjoychattingwiththestaff,makingitfeelliketheyareinamarket."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-美味しそうなものを食べてみたい-鮮度の高い魚を提供してくれる店を希望-予算はあまり気にしていない\n1.旅行の目的は市場の散策や海産物の購入である。2.食べ物以外に観るものを求めている。3.歴史や自然に関連する場所を探している。4.JRタワーエリアが気になっている。5.アクセスの良さを重視している。\n-夫婦二人の旅行で夜に行ってもいい。-JRタワーエキスポジション38を訪れることを提案-10:00~23:30まで開いており、年中無休である。-一般大人の入館料は740円である-展望のみでは時間つぶしにはならない。-都会の雰囲気が味わえる。-自然をより感じることができるところを勧める。-森林や公園などがある。-ロープウエイもある。-もいわれ山の山麓駅から頂上駅まで行ける。-アイヌの方々の見守る場所として知られている。-日中でも夜間でも楽しめ、バリヤフリースペースも用意されている。-最終便は21時30分であるため注意が必要。-混雑時は早めに来る必要がある-大人2,000円で乗車できる。-ゴールディンウイークや夏季は混み合う。-JRタワーエキスボジッション38について伝えた。-食事場所やロウプウェーに乗ることを決めた。-おみやげを買う場所を調査する。-人数が多いので配りやすいものや海産物などが良い。-二つとも食べものであることがわかった。-一つ目はお茶うけにできるもの、2つめは冷蔵便で送れるもの。",
+        "chosen_dialogue_summary": "-北海道への夏の旅行を計画し、市場での食材探しを楽しみにしている-美味しいものが食べたいが、特に魚介類にこだわりはない",
+        "rejected_dialogue_summary": "-目的地は、札幌市中央区北5条西2丁目1番地にある「サッポロファクトリーレンガ館」である。この施設は、大正時代に建てられたレンガ造りの建物で、現在はショッピングモールや飲食店、映画館、美術館が入居している。また、敷地内には芝生広場や噴水があり、散歩や休憩に最適な場所となっている。-旅行日程は1泊2日である。おすすめの時間帯は午前中から夕方まで。理由として、早朝から営業している店舗が多く、朝食や昼食を楽しむことができる。また、お土産やお菓子なども充実しているため、買い物にも適している。-SapporoFactoryisapopularshoppingandentertainmentcomplexlocatedintheheartofSappoloCity,Hokkaido.Itwasbuiltin1911asabeerfactoryandhassincebeenconvertedintoamodernshoppingcenter.Thecomplexfeaturesavarietyofshops,restaurants,andattractions,includingamovietheater,artgallery,livemusicvenue,icerink,bowlingalley,minigolfcourse,amusementpark,aquarium,zoo,botanicalgarden,museum,planetarium,observatory,sciencecenter,sportscomplex,spa,healthclub,gym,yogastudio,massageparlor,beautysalon,hairdresser,barbershop,nailsalonandmore.Therearealsomanyoutdooractivitiesavailable,suchashiking,biking,skiing,snowboarding,fishing,boating,kayaking,rafting,canoeingandotherwatersports.Visitorscanenjoythebeautifulsceneryofthesurroundingmountains,forests,rivers,lakes,ponds,wetlands,marshes,meadows,fields,farms,vineyards,orchards,gardens,parks,playgrounds,picnicareas,campgrounds,cabins,cottages,lodges,resorts,hotels,motels,bed&breakfastinns,vacationrentals,apartments,condos,houses,villas,mansions,castles,palaces,fortresses,towers,churches,cathedrals,mosques,synagogues,temples,shrines,monasteriesandconvents."
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として、旅行会社の担当者と対面で会話をしている。行先については既に決定済みであり、希望としては「北海道」であると伝えている。担当者の質問に答えていくと、時期は夏であること、人数は友人の女性と二人であることが分かる。具体的な希望について尋ねられると、食べ物に関しては鮮度の高いものを求めていることがわかった。ある程度の希望を伝えた後、担当は実際に店を紹介し始める。紹介された店は以下の3つである。1.厚岸(あっけし)漁協直営店祐次郎(ゆうじろう)札駅(さくえき)前通(まえどお)り店2.北海道(ほっかいどう)料理(りょうり)浜っ(はまっ)子(こ)3.海(うみ)の(の)駅(きょく)プラットミナミ市場(いちば)\n\n--Answer--##例題1###要約インスタグラムを通じて友人と会話をしている。友人が自宅で過ごすことが多く、運動不足を気にしていることを知った。そこで友人の健康を考慮し、ランニングやウォーキングなどの運動を提案した。具体的な運動方法として、天気の良い日に外に出て運動をすることを勧めた。さらに運動の効果を高めるために、筋トレやストレッチを取り入れることをアドバイスした。###結論友人は運動することの重要性を認識し、今後も継続して運動を行うことを約束した。###構造####問題の概要・友達が運動していないことを発見する。####解決策の検討1.友だちに運動してほしい。2.運動は健康に良い。3.天気が良い日には外で運動しよう。4.筋肉を鍛えるためには、スクワットや腕立て伏せをしよう5.ストレスを解消するためにも運動が必要である。6.毎日少しずつでも運動すれば、体調が良くなる。7.自分自身も運動に取り組んでいる。8.健康的なライフスタイルを送ることが大切である。####結果の提示9.これからも一緒に頑張ろう。10.良い結果が出ることを期待している。11.応援しているよ。12.いつでも連絡してね。##実際の回答例```pythonimportspacyfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLM,pipelinenlp=spacy.load('ja_ginza_electra_small')tokenizer=AutoTokenizer.from_pretrained(\"rinna/japanese-gpt2-small\")model=AutoConfig.from_json_file(\"./models/finetuned_config.json\")tokenizer.model_max_length=1024model.resize_token_embeddings(tokenizer.vocab_size)model.load_state_dict(torch.load('./models/fine_tuned_model.bin',map_location=torch.device('cpu')))model.eval()defsummarizer(text):inputs=tokenizer(text,return_tensors=\"pt\")outputs=model.generate(**inputs,max_length=512,",
+        "chosen_dialogue_summary": "##回答の解説##まとめ",
+        "rejected_dialogue_summary": "1．夏休みの旅行計画について、女性（Aさん）と旅行代理店のスタッフ（Bさん）の間で話し合いが行われている。2．Aさんは、夏の間に北方領土を訪れたいと考えている。3．BさんはAさんの要望を聞き、具体的にどの島に行きたいのかを確認する。4．その結果、Aさんが希望する島は根室半島の先端にある歯舞群島（はぼまいぐんとう）だと判明した。5．しかし、Bさんが調べてみたところ、現在は日本政府が実効支配しているが、ロシア連邦が領有権を主張しているため、訪問は困難である。6．代わりに、国後島や択捉島などの他の島々への旅行プランを提示する。##なぜこのような回答になったのか###背景この問題は、自然言語処理の分野において、テキストの要旨を抽出するタスクを扱っています。与えられた文章から、重要な情報やキーワードを抜き出し、それらを組み合わせて短い文章を作成することで、元の文章の意味を簡潔に表現することが目的です。###手法本問題では、以下のような手順で回答が生成されました。1)文字列をトークンに分割:入力された文章を単語や句読点などの小さな単位に切り分けます。これにより、文章全体をより細かく解析しやすくなります。SpaCyというライブラリを使用して、この作業を行いました2)トークンの重要度を計算:各トーカンが文章の中でどれだけ重要であるかを評価します。例えば、頻度が高い、文脈上の役割が大きい、などです。BERTやGPT-2などのモデルを用いて、この計算を実行しました3)要約の生成:上記のステップで得られた情報に基づいて、短くて要点を押さえた文章が作成されます。この生成過程にはTransformerベースのモデルが使用されています4)"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が夏に友だちと2名で行く旅行先として北海を希望している。鮮度の良い魚を食べてみたいという希望があり、カキやホタテ、ホンビノスガイなどが好みである。ジンベイザメは食べられないと言っているが、その理由は不明である。\n【まとめ】今回の旅行は北の大地で活気に満ち溢れた市場を訪れることが一番の目的である。市場での食事の他に、観賞用としても楽しむことができ、様々な種類の海産物を購入することも可能である。また、一日を通して散策することが出来るため、時間に余裕がある場合にはぜひ訪れたい場所である。\n-旅行先は北海道である。-夜行きでも、明るい時間に行っても良い。",
+        "chosen_dialogue_summary": "北の市場で魚介類を堪能する旅友人と共に北へ向かう旅行を計画中。新鮮な海の幸を味わうのが目的で、特に牡蠣や帆立貝、蛤などを楽しみたいとのこと。ただし、鮫の肉は苦手なようだ。その理由については明らかにされていないが、興味深い点ではある。旅のメインイベントは、北に位置する市場への訪問。ここでは、美味しい料理を提供するだけでなく、鑑賞も可能であり、多種多様なシーフードを買い求めることもできる。さらに、市場は一日中開いており、ゆとりのあるスケジュールを組めば、十分に楽しめる場所だ。",
+        "rejected_dialogue_summary": "北の市場で新鮮な魚介類を味わうことができる。海鮮丼や寿司、焼き魚などさまざまな料理が楽しめる。また、市場内にはお土産屋や飲食店も多数あり、ショッピングやグルメを満喫できる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と一緒に夏休みを利用して旅行に出かけたいと思っている。旅行先として、はじめは箱庭方面を考えていたが、その後、具体的な旅行プランを立てるために、旅行会社の担当者とメッセージを交わしている。担当者の提案により、Bが希望する旅行内容は以下のとおりである。-2名で行く旅行である。-旅行期間は8月である（夏）。-北海道で美食を楽しむことができる。\n-50代の夫婦二人で旅行を計画している。-北海道料理浜っ子と海の駅プラットみなと市場に興味があり、それらを行くことを決定する。\n-自然が好みでロマンチックな雰囲気が好きである。-夜景が見れる場所を探している。\n-気になるもの：北海土限定のお菩薩（洋和問わない）-行き先候補：二条魚市場",
+        "chosen_dialogue_summary": "Bさんとご主人は、夏に北の大地を訪れ、美味しい料理を楽しみたいと考えています。特に、北の海で獲れた新鮮な魚介類を堪能したいとのことです。また、自然の美しさに触れながら、夜には美しい景色を眺めたいとの希望もあります。",
+        "rejected_dialogue_summary": "夫との夏の休暇を楽しみにしているB。彼女は、箱根への旅を予定していたが、担当の旅行代理店と話し合った結果、別の場所に行くことに決めた。Bと夫は2人で、夏に北の大地を訪れ、美味しい料理を堪能したいと考えている。自然を愛し、ロマンティックに過ごすのが好きなB夫妻。夜の景色を眺めながら、特別な体験をしたいという希望もある。北の地でしか味わえない絶品グルメに心を躍らせながら、二条市場で新鮮な魚介類に舌鼓を打ちたいと願っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-どこか特定の場所へは行きたくないが，鮮度の良い魚を味合うことを希望している-実際に行ったところ-厚岸町-【店名】厳選北釧水産魚屋の台所すすきの市場店-URL:<https://tabelog.com/hokkaido/A0101/A011002/1040076/>【住所】〒060-0063北区南3条西3丁目2番地1ススキノラフィラ地下1階【営業時間】11:00～22:30【定休日】無休\n\n-夜行バスでも、午前中でも構わない。-すぐに行けそうな場所を探している。",
+        "chosen_dialogue_summary": "-北海道に夏に行きたい。鮮魚が食べたいが、特に目的地は決まっていない。",
+        "rejected_dialogue_summary": "要素1:厚岸(あっけし)町(ちょう)の魚(さかな)屋(や)で新鮮(しんせん)な魚介類(ぎょかいるい)を食べ(たべ)ること要旨(ようし):去年(きょねん)、夏(なつ)に、2人(ふたり)組(ぐみ)が、北(きた)海道(かいどう)へ行(ゆ)き、どこ(どこ)か、特(とく)定(てい)した場所(ばしょ)は決(けっ)めず、鮮烈(はなやか)度(ど)抜群(ぬっこん)の大(おお)漁港(りょうこう)・厚(こうのとり)岸内(がんかい)湾(わん)(あつかし)から直送(ちょくそう)された魚貝(うおかひ)料理(れいりよう)店(みせ)「魚家(すしやの)台(だいしよ)所(ところ)」を選(えら)び、夕食(せきしよく)と翌朝(よくあさ)ごはんを満喫(まんきゆう)する。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く-美味しそうなものを食べてみたい-鮮度の高い魚が良い-海鮮料理屋を紹介してもらう-その中でも、店員の対応が良さそうな店を選ぶ\nAはBに市場の特徴を説明している。Bはその中でも「浜ッ子」と「海ノ駅プラットミナト市場」が気になると話す。Aは1日のスケジュールを提案する。夜は「北海料理ハマッコ」で食事をし、その後「美味しい夕日が見える場所」に行くことを勧める。Bは夜の予定は決まっていないと言い、Aが代わりに探してくれることにした。Aは北の国からのロケ地巡りツアーを紹介するがBはあまり乗り気ではない様子。そこでAはBに質問を投げかけ、Bが興奮して話し始めたのでそれに乗っかり、ツアーの話を続ける。最後にBの希望を聞き、Aがその希望に沿った場所を探すことになった。\n--let'sgotothenexttask--**Task2**-あなたの作成したモデルを用いて，以下の質問に答えてください。Q1:Bはどこに住んでいるかQ2:散歩の頻度はどのくらいかA1:A2:\n-50歳の女性が旅行先を探している。-旅行先の候補として、札幌が挙がっている。",
+        "chosen_dialogue_summary": "1.Bは東京都在住2.散歩は週に1回程度3.旅行先は秋田県4.秋田では温泉を楽しみたい5.食事は和食を希望6.自然を満喫したい",
+        "rejected_dialogue_summary": "AさんはBさんに、2人で夏休みを利用して旅行に行かないかと誘っている。目的地は、海の幸が豊富で、美しい景色が楽しめる場所がいいというBさんの要望に合わせて、函館が提唱されている。日程は5泊6日を想定しており、1日目は飛行機で移動し、宿泊先は市内のホテルを考えている。2日目の午前中は津軽海峡フェリーで青森に向かい、午後は十和田湖や奥入瀬渓流の散策を楽しみたいという。3、4、5、6泊目については未定だが、最終日は函太郎で海産物を購入し、新千歳空港から帰路に就くという計画が立てられている。なお、移動手段はレンタカーの利用を検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する-友人2名で行く-行きは夏-2人は食べるのが好き-鮮度の高い魚を食べてみたい-牛肉は嫌い-海鮮料理を提供する店を紹介してほしい\n-3つの候補を提示している-浜っ子の市場-ここで夕食を取ることを提案-夫婦2人であることからもこれが適切であると言える-なぜなら、食事の量が多くなることも予想されるから-実際に、どれだけの食料を購入するのかは不明であるため-もし少量であれば、他の場所での食材を調達することも可能である-この場合、1日目の朝食や2日目以降の朝夕の時間を有効に活用することが出来る-一方で、大量に食べてしまうとその後の行動が制限されてしまう可能性がある-食べ過ぎてしまうことで、体調を崩してしまうことも考えられる-体調が悪くなると、旅行が台無しになってしまう-旅行の最大の目的はリフレッシュすることであり-リラックスして楽しむことができなくなってしまうのは望ましくない-結論として、適度な量を摂取する必要があることが分かる-適量は個人によって異なるため、事前に調査しておくことが重要となる-調査する際には、過去の旅行や普段の生活を振り返ってみると良い-自分の消費量や食欲の傾向を把握することで-必要な食糧を正確に予測し-無駄なく効率的に行動できるようになる-効率的であることは、時間の節約にも繋がり-時間に余裕ができれば-他の場所を訪れることが可能となり-新たな発見や感動を味わう機会が増えることにもなる-全体的に見ると-人生を豊かにするための大切な要素であることが-理解できるのではないだろうか-今回の議論を通じて-私たちは-何気なく過ごしている日々の中にも-多\n--Question2--Q:旅行先を探す際に重視する点を教えて下さい。--Answer--A:\n-50歳の男性が妻と二人旅をしている。-北海道の限定のお土産を買いたがっている。具体的な種類は決まっていない。限定品を求めている。-限定商品の例として、ふじやの「とぅーま」が挙げられる。カスタードクリームのような中身が詰まっている。-十勝のアンズと鬼ざら糖で作られたアンコを使ったたいやきもおすすめ。-ワッフレルも美味しそう。-チーズを入れた、サッパリとした味がする「ふろまーず」も良い。-閉店時間は21:00まで。休業日はない。-海鮮物を探している。",
+        "chosen_dialogue_summary": "-北海道に旅行に行く-2人の友人がいる-行くのは夏-食べることが好き-新鮮な魚介類を食べたい-牛肉が苦手-魚介料理のあるレストランを勧めたい",
+        "rejected_dialogue_summary": "-北海道旅行を計画している2人の友人がいる。彼らは、夏に旅行に行く予定で、魚介類を食べたいと考えているが、肉料理は避けたいようだ。そこで、彼らに新鮮な海の幸を堪能してもらうため、お勧めのレストランを3つ紹介することにした。1つ目は「はまっこの市場」で、その名の通り、市場内で海産物が販売されている。ここでのディナーを提唱する理由は、彼らのグループ構成に起因する。つまり、男女のカップルであるということだ。そのため、大人数向けのメニューが提供される可能性が高く、量の調整がしやすい。2つ目の選択肢として、「函館朝市」がある。こちらは朝早くから営業しており、朝ごはんに最適な場所だ。また、夜遅くまで開いているので、昼夜を問わず利用できる。3番目に紹介したいのは、「五稜郭タワー」の展望台である。高所からの景色を楽しみたい人にはぴったりのスポットだ。このように、それぞれの特徴を踏まえたうえで、お客様のニーズに合ったレコメンデーションを行うことができる。-旅行先の選定にあたって、重要なポイントをいくつか考えてみた。まず、目的地の天候や気温、季節を考慮すべきだろう。例えば、冬にスキー場を目指すのであれば、その地域の雪の状況や積雪量などが気になる。次に、アクティビティの充実度も見逃せない要因となる。アウトドアスポーツや文化体験、グルメツアーなど、自分が興味を持つ分野のプログラムが豊富に用意されているかどうかを確認するべきだ。そして、予算や日程の都合も大事なファクターとなる。これらを総合的に判断して、ベストな選択を下すことが大変重要である。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が夏に友だちと2名で行く旅行先として、具体的な場所は未定であるが「鮮度の高い魚を食べてみたい」という希望がある。-食べたいものは「海幸」であり、食べたくないものとして「羊肉」が挙げられている。--Summary--ThewomanwantstogotoHokkaidointhesummerwithherfriendandeatfreshseafood.Shedoesn'twanttoeatlambmeat.\n-北海道旅行をする予定である。-旅行の目的は自然を楽しむことであり、できれば自然に囲まれた場所に泊まりたいと思っている。\n-夫婦2人（50歳代）で北海道旅行をする。-旅行プランは以下のとおりである。-JRタワーアトリウム（10:00-23:30）-観光名所ではないが、おすすめの場所例）おしゃれな雰囲気2.さっぽろテレビ塔（9:20-22:40）3.北海道庁旧本館（8:45-17:15）4.赤れんがテラス5.大通公園6.サッポロビール博物館7.旭山記念公園（7:10-20:50）8.円山動物園9.二条市場10.小樽運河11.おたる屋台村12.手宮線跡地13.銭函海岸14.積丹半島15.ニッカウヰスキー余市蒸溜所16.神威岬17.羊蹄山18.倶知安温泉19.豊平峡ダム20.定山渓21.支笏湖22.千歳サケのふるさと千歳水族館\nBはお土産を買いに行くつもりでいる。Bが求めているものは「北海限定」のものである。Aが提案したおすすめのお店は、「富山屋」という店である。この店では「とうまと呼ばれるお饅頭」が売られている。また、この店の特徴として、店内で作っている様子が見られるということが挙げられる。もう一つ、AはBに「二條市場」を勧める。ここは市場であり、新鮮で安価な海産物を購入することが出来る。店員の話によると、ここの市場では味を確かめてから商品を選ぶことが推奨されている。",
+        "chosen_dialogue_summary": "-Bisinterestedinfreshseafoodandwantstoeatitinsummer.Shedoesn'tlikelambmeat.-BplanstotraveltoHokkai-dowithherfriend.Theywanttostayinaplacesurroundedbynatureandenjoythenaturalscenery.",
+        "rejected_dialogue_summary": "50代女性は友人と一緒に夏休みを利用して、海の幸を食べるために、札幌市を訪れる。彼女の好みに合う食べ物は海鮮料理で、嫌いなものにはラム肉が含まれる。彼女は、自然の中で過ごすことを目的としており、できるだけ自然豊かな場所で宿泊したいと考えている。また、夫と共に、夏の旅行を計画している。彼らはJRTowerAtriumを午前10時から午後11時30分まで見学し、サツエキビルを9時20分から22時40分の間に見て回る。その後、赤レンガ館を8時45分～17時15分に訪問し、大通り公園を散策する。さらに、彼らが行きたい場所には、さつえきビルのほかにも、北の丸公園や円形公園などがある。彼らの目的地には、二条市も含まれていて、そこでは、市場で新鮮な魚介類を味わうことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳前後の女性2名で夏休みを利用して旅行に行き、その目的は美食を楽しむことである。具体的な行先や日程は未定だが、行く先としては北海道が候補に挙がっている。友人の好みやアレルギーについては把握しておく必要がある。旅行先の食料品店や鮮度の高い魚を提供する飲食店を紹介する。\n-旅行の目的-北海道旅行-食べ物-海鮮-丼もの-2箇所-浜っ子の市場-おすすめ-夕食-鮮魚-観光-歴史-自然\nAはBに休暇の過ごし方を尋ねる。Bは特に行く場所は決まっていないと答える。そこでAがBと夫の年齢を確認し、Bが夫と一緒にどこかに行きたがっていることを確認する。その後、Aから旅行プランの提案を求められ、北海道に行ってみてはどうかという案が提示される。具体的な場所についてはまだ決めていないと返答するBに対してAからは、すすきのの夜遊びや、ニセコでのスキーやスノーボードなどを勧められる。最終的にはB自身で検討することになった。\nBはお土産を買いに行くつもりでいる。Bが買おうとしているのは、洋風のスイーツではなく和風スウィーツである。そこでAはBに2つの場所を提案する。1つ目は「富嶽堂」という店である。この店はカスタードクリームのような甘いものを入れたお饅頭を売っている。2つ目の場所は二條市場という市場である。これは海産物を多く取り扱っている市場であり、様々な種類の魚が売られている。Aの説明によると、この市場は安い値段で購入することができ、また、魚の味を確かめてから購買することも可能である。",
+        "chosen_dialogue_summary": "A:Bさん、休日は何をされていますか？B:特に予定はないのですが、何か良い案はありますか？私は50代前半の女性です。夫も同年代です。A：Bさんとご主人のお好きな場所や興味のあることを教えていただけますでしょうか。例えば、食べることがお好きでしたら、美味しいものがたくさん食べられる場所をお探しいたします。また、ご夫婦でお酒を嗜まれるのでしたら、お酒に合う料理やおつまみが充実している場所もご紹介できます。もちろん、見どころの多い場所でも構いません。ぜひ、お聞かせください。",
+        "rejected_dialogue_summary": "50代前半の女性二人が夏の旅行を計画している。美味しい食事を楽しみたいと考えているが、具体的にどこに行きたいのか、どのくらいの期間滞在するのかなどは、まだ決定していない。彼女たちは、友人や家族の嗜好や禁忌についても考慮しなければならない。そのため、彼女たちが旅行する際には、地元の市場や新鮮な魚介類を扱うレストランを訪れることをお薦めしたい。#要約の作成##準備```pythonfromgensim.summarizationimportsummarizeimportre```##処理###トークナイズ-正規表現で改行を削除-文字列をトークンに分割-`gensim`の`summarize`関数に渡すため-https://radimrehurek.com/gensim/models/sum.html実行結果```'50さいまえのじょせいにんふたりでなつやすみをつかうりょこうにいきそのもくてきはびしょくをたのしむことでであるかくていてきなゆきさきやにちていはみていだがゆくさきなとにはほっかいどうがこうひにあげられているゆうじんのこうみまたはあれるぎーについはかんがえおかねばなりませんたびじゅくのしょっりょうやあれんじーついてははあくしつしおくひつようがあありますたぴじゆくのきっさてんやせんどのたかいぎょをていきょうする',['50','さい','ま','え','の','じ','ょ','せ','い','に','ん','ふ','た','り','で','な','つ','や','す','み','をつ','か','う','りよ','こ','お','と','そ','も','く','て','き','は','び','し','を','だ','け','ど','である','、','。','「','」「','」','、「','。」','』','『','（','）','[',']','{"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に友だちと2名で行く旅行先として、具体的な場所はまだ未定だが、目的としては美食を堪能することを挙げており、主に鮮度の高い魚を求めている。\nAはBに北見市の市場について説明している。Aが紹介する市場は活気に満ちていて店員との会話を楽しむことができると話す。Bは興奮した様子で聞いている。次にAから紹介されたのは海産物を扱う店である。ここではBが特に関心を示しているようだ。その後、Aの提案により、朝食は市場内の店でとることになり、その後は夕食までの時間を散策に充てることになった。\nBは旅行に行く予定であり、具体的な場所は決まっていない。Bが夜でも行ける場所を希望している。AはBと一緒に夜に行けそうな場所として、北海道にあるJRのタワーエキシビジョンを提案した。次にBから自然に触れられる場所への変更を求められた。そこでAがローウェイを紹介し、実際に乗ったことがないというBを喜ばせた。最後にAからおみやげを買う場所について質問され、海産物を送ることができるお店を探すことになった。\nBはお土産を探している。Bが希望しているのは北海土限定のお菩薩である。AはBにおすすめの店を紹介する。紹介された店は「富山」という店である。この店の特徴は、「とうマン」と呼ばれるお饅頭が有名である。「とうマん」はふわっとしたカスケラのようで、中には手作りのあずきが詰まっている。また、この店には「鶏焼」も販売されている。鷹焼は十得産アズキと鬼ざら糖を使ったあんと、ふっくらとした鴨焼の皮が合わさったものである。他にも、さわやかな風味の「フラマーシュ」や「ワフール」などが売られている。Bはこれらの商品を購入することに決めた。",
+        "chosen_dialogue_summary": "Bislookingforaplacetogoonatrip.Bwantstoeatfreshfish.AsuggestsamarketinKitamiCity.Themarketislivelyandfuntotalktothestaff.Next,Aintroducesastorethatsellsseafood.Here,Bseemstobeparticularlyinterested.Then,atthesuggestionofA,breakfastwillbetakenatashopinthemarket,andtherestofthetimeuntildinnerisspentonsightseeing.",
+        "rejected_dialogue_summary": "Bは、友人と2人で夏の旅行を計画しており、美味しい食事を楽しみたいと考えている。特に、新鮮な魚介類に興味を持っている。AはBに北見市の魚市場について説明する。活気に満ちた環境で、店員との会話を楽しめそうだ。Bは興奮した様子で聞いている。次に、Aが紹介するのは海産物を取り扱われている店である。ここでは、Bが特に関心を示していそうである。その後、夕食までの時間を散歩に充てることになった。"
+    },
+    {
+        "all_short_dialogue_summary": "1.-2名で行く旅行である。-北海道で夏に行う。2.-友人がいる。3.-海鮮料理を楽しむ。4.-魚介の鮮度が良い。5.-牛肉を避けたい。6.-お酒に合う料理がある。\nBは50歳の男性である。BとAの会話を通じて、Bが旅行に行くことを知ることができた。AはBに対して、旅行先の候補を提案し、その中でBに気に入った場所を尋ねた。その後、AがBにおすすめの場所について説明した。\n50歳の男性が一人旅で北海道を訪れている。Aはおすすめの場所を尋ねられ、すすきのを提案する。Bはすすきのがどのような場所なのか聞いており、Aがすすすきのは飲食店が多い場所であると説明している。そしてBが夜に飲みに行くかどうかを聞いているため、お酒を飲むことが好みである可能性が高い。またAがおすすめする場所に「夜」というキーワードが入っていることからも夜に行動することが多いと推測できる。\nBは「北海のお土産を探している」と話している。AはBに「とらや」や「ふじや」という店を勧めている。また、「二條市場」も紹介している。この場所は鮮度の高い魚や加工食品を安い値段で購入することができ、送付することも可能である。",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoistravelingaloneinHokkaidoduringthesummer.AsuggeststoBthatheshouldvisitSapporo,whichisfamousforitsnightlifeandseafood.Bisinterestedinfindingsouvenirsfromthenorth,andArecommendstwoshops,\"Toraya\"and\"Fujiya,\"aswellasamarketcalled\"NijoIchiba,\"wherehecanbuyfreshseafoodandotherproductsatreasonableprices.",
+        "rejected_dialogue_summary": "Bisa50-year-oldmanwhoistravelingaloneinHokkaidointhesummer.AasksBifhehasanyrecommendationsforaplacetovisit,andAsuggestsSusukino.BasksAwhatkindofplaceitis,towhichAexplainsthatithasmanyrestaurants.HealsoasksifBwantstogooutfordrinksatnight.ThissuggeststhatBenjoysdrinkingalcohol.Furthermore,sinceA'srecommendedplaceincludestheword\"night,\"itcanbeinferredthathetendstobeactiveduringtheeveninghours.Finally,BsaysheislookingforsouvenirsfromtheNorthSea.Inresponse,ArecommendsTorayaandFujiya,aswellasNijoMarket,wherehecanbuyfreshfishandprocessedfoodsataffordablepricesandevenhavethemshippedtohim."
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に友だちと2名で行く。-海鮮料理を希望している。-牛肉は食べられない。\nAの提案で北の市場に行くことに決まった。Bは昆布やウニ、カニなどを食べたいと言った。AはBが自然を好むことを知っていたため、Bにぴったりの場所を探してあげることにした。まずAがBにおすすめしたのは、オタモイ海岸と小樽市総合博物館だった。2つの場所の特徴を説明したあとに、次の質問を投げかけた。「ではこれらの場所の中で行ってみたくなったところはありましたら教えてください。」Bから返ってきた答えは「どっちも気になる。」だった。その後、Aから「では次はどのようなことをしたいかお聞かせください。」と聞いたところ、「自然が多いところが良い。」という返事が返ってきて、さらに「自然と言ってもなにがあるか分からないので、お勧めの場所があったら紹介してほしい。」とも言われた。そこでAからは「そのような場合には、例えば洞爺湖や阿寒湖などが良いかと思いますがいかがですか？」と返答した。これに対してBからは、「湖も良いですね！」という反応があった。\n-夜行きでも、午前中に行っても良いと思う。-すぐに行けそうなところが良い。-JRタワーエクスペリエンス・スタジオ-10:00~23:30例：一般大人740円、高校生500円、小・中学生300円、未就学児無料、65歳以上620円(障がい者手帳ご持参で本人と同伴者1名無料)-遊べる場所を探している。-森林や自然が多い場所-ロープウエイ-山頂まで登ることができるアクテビィティ-料金：大人1,800円-最終便は21時30分-混雑時は早めの行動が必要-ゴールウェンウイークや夏は混む-見晴らしが良い\n-旅行の目的-お土産を買いに行く-北海道の限定品を探している-和洋問わない-おすすめのお店-富士家-とまんと呼ばれるお饅頭が売っている-自家栽培の素材が使われている-製造工程を見学することが出来る-鯵焼やチョコレートを使ったおやつも販売されている-チーズを入れたさわやかな味が特徴-営業は朝9:00から夜21：00まで-定休日はない-立ち寄りやすい-札幌市中央区北5条西2丁目1-1-地下鉄さっぽろ駅から徒歩5分-パルコ横",
+        "chosen_dialogue_summary": "Aと一緒に夏休みを利用して友達2人組で旅行に行きたいと思っている。海産物が好きで、特に昔ながらの味を楽しみたい。肉類は苦手で食べない。旅行先は、海の幸を堪能でき、自然も豊かな場所にしたいと考えている。オススメのスポットを聞いてみると、まずは北の大地の恵みが詰まった「北海市場」が挙げられた。ここでは新鮮な魚介類や野菜が手に入り、食事も楽しめるという。次に紹介されたのが、歴史的な価値のある建造物や美しい景色が魅力的な「オタル市」だ。この場所は自然豊かであり、見どころがたくさんあるとのこと。どちらも興味深い場所だが、最終的には自分で決めたいので、もう少し詳しい情報が欲しいと伝えた。すると、より詳細な情報とアドバイスを提供してくれた。最終的に選んだのは「洞川湖」と「アカン湖」だった。この2か所は雄大な自然に囲まれており、心身ともにリフレッシュできる場所だと感じた。また、湖畔には温泉もあり、ゆったりとした時間を過ごすことができるとのことだ。",
+        "rejected_dialogue_summary": "-友人2人で夏休みに海の幸を求めて北の大地を訪れる。肉アレルギーを抱えている。Aはこの要望に応え、市場での買い物を推奨。Bの好みを考慮し、海産物の豊富さと自然の美しさを兼ね備えたスポットを厳選する。オススメの2か所を提示し、その魅力を伝える。「どちらも興味深い」との返信を受け、さらなる情報提供を試みる。自然を満喫したいというBからのリクエストに沿い、湖畔の風景を堪能できる場所として洞窟湖とアカン湖を紹介。これに対し「湖の景色も素敵だね！」と前向きな回答が得られる。夜でも早朝でもアクセス可能な場所が望ましい。JRタワー内にあるエンターテイメント施設が候補に挙がるが、詳細な情報は不明。遊び心をくすぐるアトラクションや体験型イベントが充実している模様。料金体系や開館時間、混み具合などは未確認。旅行の目的に関する情報が不足しているため追加情報の提供が求められる。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-北海道へ旅行する-2名で行く-友人同士-夏の時期-食べることが好き-海鮮物-苦手：羊肉-好み：鮮度の高いもの\n-旅行の目的-食べ物を楽しむ-市場内で店員と会話をしつつ買物をする-浜っ子の市場-海の幸を堪能できる-例：海産物、カニ、イカ、ホタテ、サーモン、エビ、うに、牡蠣、タラバガニ、アワビなど-鮮度が高くて美味しい-新鮮な食材が手に入る-おすすめのシーズンは夏-気温が高い時期に旬を迎える-美味しさが増す-旬の魚が食べられる-季節感を味わう-四季折々の味覚を体感する-地産地消にこだわったメニューが豊富-北海道産の素材をふんだんに使用-ローカルフードの魅力を再発見-郷土料理や伝統的な食文化に触れる-歴史や風土に根ざした食の世界を探求-生産者との交流を深める-農業や漁業の現場を訪ねて学ぶ-フードツーリズムを通じて地域活性化に貢献-観光客を呼び込むことで地元経済を活気づける-ホスピタリティーを向上させる-顧客満足度を高めることでリピーターを増やす-口コミやSNSで評判を広げることで集客力を強化-マーケティング戦略を立案して効果を測定-データ分析に基づいた施策を実施-競合他社との差別化を図って独自のポジションを確立-ブランドイメージを構築してファン層を拡大-商品開発やサービス提供に工夫を凝ら\n--Question--1.AandBaretalkingaboutgoingonatriptoSapporo.Whatisthemainpurposeofthetrip?2.BwantstogototheobservatoryinJRTower.Isitopen24hoursaday?3.Basedontheconversation,whatkindofsouvenirdoesBwanttobuy?\n-AはBに北海度限定のお土産を探していることを確認する。-その後、Aは「富嶽堂」という店を紹介する。この店では「とうふ饅頭」と呼ばれるお土産が売られている。Aの説明によると、「とうほう」とは豆腐を丸く固めたもので、中には豆乳を固めて作ったあずきあんと鬼ざら糖が使われている。店内ではこの製品が作られている様子を見ることもできるとのことである。また、この店には「ふろまーじゅ」と名付けられた商品も販売されており、これはナチュナルチーズが使用されている。Bはこれらの商品を購入することを希望している。なお、Bがこの店に訪れる際には、開店時間である9:00〜21:30に注意する必要がある。",
+        "chosen_dialogue_summary": "BwantstogototheobservatoryinJRTower.ThemainpurposeofthetripistobuysouvenirsfromHokkaido.Basedontheconversation,Bisinterestedinbuyingthe\"TofuManju\"from\"Fugakudo\"store.Thisproductismadeoftofu,azukibeanpaste,andkizarasugar.Inaddition,thereisalsoaproductcalled\"Fromage\"whichusesnaturalcheese.WhenBvisitsthisstore,itisimportanttonotethatthestoreisopenfrom9amto10pm.",
+        "rejected_dialogue_summary": "Bさんは、友達と一緒に札幌に旅行に行きたいと考えている。目的は、食べ歩きや市場での買い物などを楽しみたいということだ。特に、新鮮でおいしいものが好きなようで、魚介類や肉類、野菜など、さまざまなものを食べたいと言っている。また、道産子市場という場所に興味を持っており、そこで地場産品を買いたいという希望もある。ただし、夏場は暑いので、涼しい場所で過ごしたいとも言っていた。以上のことを踏まえると、食欲旺盛でアクティブな性格であることがうかがえる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ夏に2名で行く旅行について、具体的な場所はまだ未定である。-友人との旅行であるため、グルメを楽しむことを目的としている。\nAの説明によると、活気に満ち溢れた市場があり、そこでは店員と会話をしつつ商品を購入することができるとのことである。市場の中には、鮮魚を提供する店だけでなく、イートインコーナーも存在する。Aはこれらの情報をもとに、Bにオススメの場所を尋ねる。Bは2つの候補を挙げるが、そのうちの1つは「浜子」という名前の店であると明かす。もう一方の「みなおと」については名前しか分からないと述べる。その後、AがBに対して、1日のスケジュールを提案する。その中で、お弁当は市場内の海産物を使用したものを食べ、ディナーは浜子の料理を楽しむという内容が盛り込まれた。さらに、観覧する場所についても話し合いが行われた。まずは観察する対象を「自然」に設定し、その中でも北方文化に焦点を当てることに決めた。最後にAから食べもののリストと見どころの情報が提供された。\nBは50歳の女性であり、夫と旅行に行く予定である。旅行先は北海道の函館を検討している。目的は食材を買うことである。\n-AがBに質問し、Bが答えるという流れで会話が進んでいる。-会話の内容としては、お土産についての話題が中心となっている。Bはおすすめの北海限定のお土産を探しているようだ。Aはその希望に沿うように、具体的な商品や場所を提案している。",
+        "chosen_dialogue_summary": "A:北海道に夏の2人旅行を計画していますが、まだ行き先が決まっていません。B:友人と一緒に旅行するので、食事を楽しみたいと思っています。A:活気あふれる市場があると聞きました。魚屋さんでお話しながら買い物ができて、市場内には食べるスペースもあるそうです。そこでBさんにおすす",
+        "rejected_dialogue_summary": "Bと夫の旅行の計画を話すA。2人で北の大地を満喫する旅の目的地は、豊かな自然と美味しい食が魅力の道南エリアだ。市場で新鮮な海の幸を味わい、歴史ある街並みを散策。旅先で出会う人々との交流も楽しみのひとつ。そんな旅をより充実させるために、地元の人々に愛されるお店や、ここでしか手に入らない限定品を紹介しよう。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友だちと2名で夏休みの旅行に行き、北海道で美食を楽しむことを目的としている。\n-Aは活気に満ちた市場の様子を伝えている。-市場内には魚を扱う店舗が多く存在し、それぞれの店主と会話を交えながら購入することができると述べている。また、お店の種類としては海産物を使用した料理を提供する飲食店が存在することも示唆している。-これらの情報を踏まえて、Aは3つの場所を提案し、そのうちのどれかを選択するようBに尋ねる。Bはその中でも「浜ッ子」と「海遊館」の2箇所に強い関心を示す。-次に、1日のスケジュールを立てるにあたって、おすすめのランチとディナーの選択肢を提示する。Aが市場内の海食堂を推奨すると、Bもそれに賛同する。\nBは旅行に夫と行き、オススメの場所を探している。Aはおすすめを提案し、Bがそれを受け入れる。続いてAが夜に行くか日中に訪れるかを尋ねる。Bはいずれでも構わないと答える。次にAがお店を紹介するが、その際にBからお店の名前を聞く。名前が分からないと伝えるBに対してAから名前の読み方を教える。その後、Aの紹介した店舗の情報をBに伝達する。最後に日程と時間を決める。\nBはお土産を買いに行く予定である。Bが買おうとしているのは、洋風のお菓名産品である。その中でも、Bのおすすめは「北海とうきびもなか」という商品である。この商品は、「とうふ工房いしかわ」で購入することができ、値段は1個130円、賞味期限は2週間である。また、「北の森ガーデン」や「マルヤマクラス」でも販売されている。さらに、商品の詳細を知りたければ、公式ホームページを参照することを勧める。なお、2020年10月時点では、新型コロナウイルス感染拡大防止のために、一部の商品が販売中止となっている。",
+        "chosen_dialogue_summary": "A：友達と一緒に夏の休暇を過ごしたい。目的は美味しいものを食べることだ。興味のある場所は、市場や海鮮料理店、地元の食材を使ったレストランなどだ。また、海水浴場や温泉も行きたいと思っている。予算は一人当たり5万円で、宿泊先は札幌市内のホテルを希望している。B：私は夫婦で旅行を計画しています。食事は新鮮な魚介類を楽しみたいと思っています。特に海の幸が好きなので、それを堪能できる場所があれば嬉しいです。",
+        "rejected_dialogue_summary": "50代女性の友人と夏の北の大地を訪れ、美味しいものを堪能する旅に出かける。市場はにぎやかで、魚介類が豊富に揃い、店員さんと話しながら買い物ができる。料理店では海の幸を使ったメニューが提供される。旅程を組む際には、昼食と夕食のオプションを選ぶことができる。「浜っ子」か「うみゆうかん」のどちらかに行きたいと考えている。「海洋水族館」では、イルカショーやペンギンショーが楽しめる。また、海鮮丼やラーメンなど、さまざまなグルメを味わうこともできる。"
+    }
+]

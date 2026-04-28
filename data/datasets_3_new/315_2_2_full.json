@@ -1,0 +1,727 @@
+[
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行くことを希望している。-食べ物を楽しむために、魚介類を中心とした料理を提供するレストランを探している。特定の料理にこだわりはない。",
+        "chosen_dialogue_summary": "-北海道を旅行する際、美味しい海鮮料理が食べたい。-##論文の要旨本論文では、テキストからの抽象的かつ多様な情報の抽出を目的とした、自然言語処理の手法を提案する。具体的には、単語の意味を表すベクトルを用いて文書の類似度を計算し、その結果に基づいて抽出したい情報が含まれる文章を選択する方法を検討する。また、抽出しやすい特徴を明らかにするため、実際のデータセットを使用して実験を行い、結果を分析する。##1.はじめに近年、人工知能技術の発展により、さまざまな分野で自動化や効率化が進んでいる。その中でも、特に注目を集めているのが、機械学習や深層強化学習などの技術である。これらの技術を活用することで、従来は人間が行っていた作業を自動的に行うことができるようになり、業務の生産性向上やコスト削減につながることが期待されている。しかし、現状ではまだまだ課題も多い。例えば、データの質や量が十分でない場合、精度の高い予測や判断ができないことがある。また、高度な知識やスキルが必要とされる場合もあり、専門家のサポートが欠かせないこともある。そこで、本研究では、これらの問題を解決するための新たなアプローチとして、文章から抽出すべき情報（キーワード）を抽選することを目指す。文章には様々な種類があり、それぞれに特有の構造や意味を持っている。したがって、適切な方法で文章の特性を捉えることができれば、より正確なキーフレーズを選び出すことが可能になると考えられる。本研究の目的は、以下のようにまとめられる。-文章からキーアイテムを適確に抽き出すためのアルゴリズムの開発-実際に文章データを利用して、キープレーヤーを推定するモデルを構築すること##",
+        "rejected_dialogue_summary": "-北海道を訪れ、海の幸を堪能したい。"
+    },
+    {
+        "all_short_dialogue_summary": "##2.3.2観光スポットの推薦###0.前提このセクションでは、過去のユーザーの行動データを用いた推薦を行う。推薦の仕組みは以下の通りである。1.過去に訪問した観測地点の特徴量ベクトルを計算する。2,訪問地点ごとに、類似度の高い地点を探す。3,上位k個の地点に対して、クラスタリングを行いグループを形成する。4.クラスタ内に含まれる地点の中から、推薦対象を選択する。####4-1見出し###(1)推薦アルゴリズムの説明####(a)視点1#####(i)記述######(A)要約観察地点から推薦地点を見つけるための手順は次のとおりである。まず、訪れたことがある地点について、その特性に基づいて特定の値を割り当てる。これらの値は、その地点がどの程度似ているかを測定するために使用される。次に、これらの点の間の距離が計算され、最も近い点が見つかる。最後に、このプロセスが繰り返され、新しい点と以前の点との間で比較が行われる。結果として得られる点は、新しく訪れるべき場所として推奨される。######B)例例えば、観客が東京の渋谷駅にいる場合、東京駅や新宿駅などの近隣の駅が推薦される可能性がある。同様に、大阪の心斎橋駅を訪れている場合は、道頓堀や梅田駅などが候補として挙がるかもしれない。#####ii)解釈上記の手法の利点の一つは、それが非常に効率的であるということである。この方法は比較的短い時間で実行することができ、結果を迅速に得ることができる。また、この方法では複雑な計算が必要ないため、コンピュータのリソースを大量に消費することもない。一方、このアプローチにはいくつかの欠点もある。第一に、それはあまり",
+        "chosen_dialogue_summary": "##2-3-2TourismSpotRecommendation###0-PrerequisitesInthissection,wewillusepastuserbehaviordatatomakerecommendations.Themechanismofrecommendationisasfollows.1.Calculatethefeaturevectoroftheobservedpointthathasbeenvisitedinthepast.2.Findsimilarpointsforeachvisitedpoint.3.Clusterthetopkpointsandformagroup.4.Selectarecommendationtargetfromwithinthecluster.####4-1Heading(a)DescriptionofRecommendationAlgorithm(i)Viewpoint1#####(i)-1Description######A)SummaryTheprocedureforfindingarecommendedpointfromanobservationpointcanbesummarizedasthefollowing.First,acertainvalueisassignedtoeachpointvisitedbasedonitscharacteristics.Thesevaluesareusedtomeasurehowsimilarthepointsare.Next,thedistancebetweenthesepointsiscalculatedandtheclosestpointisfound.Finally,thisprocessisrepeatedandcomparisonsaremadebetweenthenewpointandpreviouspoints.Asaresult,pointsobtainedarerecommendedasplacestovisitnewly.######B)ExampleForexample,ifavisitorisatShibuyaStationinTokyo,nearbystationssuchasTokyoStationorShinjukuStationmayberecommended.Similarly,whenvisitingShinsaibashistationinOsaka,DotonboriorUmedastationmaycomeupasacandidate.#####ii)InterpretationOneadvantageofthismethodisthatitisveryefficient.Thismethodcanruninarelativelyshorttimeandobtainresultsquickly.Also,sincethisapproachdoesnotrequirecomplexcalculations,italsoconsumesalargeamountofcomputerresources.Ontheotherhand,therearealsosomedisadvantagestotheaboveapproach.Oneofthemisthe",
+        "rejected_dialogue_summary": "Bは、行動履歴から似た場所を推薦する方法を提案した。その方法とは、まず訪れていた場所について、属性を数値化し、似通った場所を見つけ出す。その後、見つけ出された場所の中で、グルーピングをし、その中からおすすめの場所に絞り込む。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先-北海道-函館が候補に挙がっている。-食べたいもの-海鮮物-いくら、ウニ、イカ、マグロ、タラバガニ",
+        "chosen_dialogue_summary": "-札幌、富良野、旭山動物園、釧路湿原、知床、阿寒湖、登別温泉、洞爺湖など、自然を満喫できる場所がたくさんあります。-北海道の魅力は、豊かな自然と美味しい食べ物です。特に、海産物は絶品で、獲れたての新鮮な魚介類を味わうことができます。また、ラーメンやジンギスカン、スープカレーなどのご当地グルメもおすすめです。",
+        "rejected_dialogue_summary": "#要約結果-函館の海の幸を堪能したい#構文解析結果-係り受けパターン:A[主語]B[動詞]C[目的語]-A:北海道-B:候補-C:行き-D:先-E[修飾]-F[名詞]-G[形容]-H[副詞]-親子関係:Bの下にCが存在する"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間たちと旅行に行くことを希望している。希望する旅行先は北海道であり、具体的な場所については特定していない。食べ物に関してはおいしいものであれば何でもよいとのことである。",
+        "chosen_dialogue_summary": "-旅行先の候補は、9人で行く部活のメンバーと一緒に、特に目的地を決めずに食べるものが美味しければどこでも構わないという希望を持っている。-北海道への旅行を計画しているが、行きたい場所は決まっていない。",
+        "rejected_dialogue_summary": "-北海道旅行-9人で旅行したい"
+    },
+    {
+        "all_short_dialogue_summary": "北海道に9人の友人たちと旅行に行く予定である。食べ物を楽しむことが目的であり、好みの料理は特になく、魚介類を好む。海の幸が豊富に楽しめるお店を探している。",
+        "chosen_dialogue_summary": "BisplanningtogoonatriptoHokkaidowith9friends.Thepurposeofthetripistoenjoyfood,andthereisnoparticularfavoritedish,buthelikesseafood.Heislookingforarestaurantwherehecanenjoytheabundanceofseafood.以上",
+        "rejected_dialogue_summary": "旅行の目的：食べること好きな料理：特に決まっていないおすすめのお店：海鮮料理が有名なお店"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間と旅行に行く予定である。行き先は北海度であり、目的は美味しい食べ物を楽しむことである。",
+        "chosen_dialogue_summary": ">9人で北海道へ旅行し、美食を堪能する。解答例>北海道で9名のグループ旅行を行い、グルメを満喫する。",
+        "rejected_dialogue_summary": "北海道に9人で旅行し、美食を堪能する。##解説###問題の概要-入力されたテキストから、要旨を抽出する。-できるだけ長い文章を出力すること。###解法####1.文字列を分割するまずは、文書を単語単位に分解する必要がある。```pythondeftokenize(text:str)->List[str]:returntext.split()```これを実装するには、`split()`メソッドを使う。これは引数で指定した文字列で区切り、リストに変換してくれる。例えば、下記の実行結果のようになる。```bash>>>tokenize(\"Hello,world!\")['Hello',',','world','!']```####文書ベクトルの作成次に、文章中の語の出現回数をカウントし、それを要素とする配列を作る。これには`Counter`クラスを用いる。このクラスのインスタンスを`c`とすると、以下のような使い方ができる。-`c.update(other)`:`other`に含まれるキーの値をインクリメントする。キーが存在しない場合は新たに追加される。-`counter=Counter(a)+Counter(b)`と等価。-これにより、2つのCounterオブジェクトを結合することができる。-結合した結果は新しいCounterとなる。-元のCounterは変更されない。-この性質を利用することで、複数の文章に対して一度に処理を行うことが可能になる。-コードの見通しが良くなる。-複雑なコードを書かずに済む。-読みやすいコードが書ける。-保守性が高まる。-バグが発生しにくい。-信頼性の高いソフトウェアが作れる。-ユーザーに安心感を与える。-顧客満足度が上がる。-ビジネス上の利益が増える。####TF-IDFの計算文章の重要度を"
+    },
+    {
+        "all_short_dialogue_summary": "1.9人の部活動の仲間と旅行に行く2.北海道を希望している3.函館を検討中4.美味しい食べ物をたくさんの種類を食べてみたい5.和食を好む6.海鮮が好物である",
+        "chosen_dialogue_summary": "「部活の友達と北海道を旅行する予定で、美食が好きで特に海産物が大好きなので、海の幸がたくさん食べられるところを探している。」#予測結果実際の出力結果は以下のような感じになりました．```python#実行例>>>importsentence_transformersasst...>>>fromsklearn.feature_extraction.textimportTfidfVectorizer>>>corpus=[...\"9peoplefromtheclubactivitygoonatrip.\",...\"IwanttogotoHokkaido\",...\"ConsideringHakodate\",......\"Wanttoeatalotofkindsofdeliciousfood\"...\"LikeJapanesefood\",...\"...\"Seafoodisafavoritefood.\"...]>>>model=st.SentenceTransformer('distilbert-base-nli-mean-tokens')>>>vectorizer=TfidVectorizer(ngram_range=(1,1))>>>tfidf_matrix=vectorize.fit_transform(corpus)>>>embedding=model.encode(tfidf_vectorizer.get_feature_names())>>>cosine_similarities=cosine_similarity(embedding,embedding)>>>print(\"CosineSimilarity\")>>>foriinrange(len(cosine_similarties)):...print(f\"{i}:{cosine_similarity[i][i]:.2f}\")...``````consoleCosinesSimilarities0:0.991:-02:...```",
+        "rejected_dialogue_summary": "Bは、部活の友達と行く旅行先として、海の幸が豊富な北海"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の食を楽しむ-海鮮-いくら-甘えび",
+        "chosen_dialogue_summary": "いくらの甘さと甘エビの旨味を堪能できる海の幸を味わうことができる。##使用したデータセット-[単語分散表現](https://nlp.stanford.edu/data/glove.6B.zip)(glove.twitter.27B.100d.txt)-データセットはこちらからダウンロードできます．",
+        "rejected_dialogue_summary": "-北海道で海の幸を堪能する"
+    },
+    {
+        "all_short_dialogue_summary": "-9名のグループ旅行である。-北海道を旅行先として検討している。-函館で海産物を食べてみたいと希望している。",
+        "chosen_dialogue_summary": "-「9人の旅行者は、海鮮料理を味わうために、北の大地を訪れることを計画している。」##論文の構成-1.イントロダクション-2.関連研究-既存研究の概要を説明する-過去の研究で使用されたデータセットを列挙し、それぞれのデータの特徴を簡単に説明します。3.提案手法-提案する要旨抽出モデルを紹介する。-モデルのアーキテクチャを図で示し、各コンポーネントの役割を詳述する。例えば、入力層、隠れ層、中間層など。4.実験結果-実験で得られた結果を示す。-データセットの説明-評価指標-結果の解釈-考察-今後の課題",
+        "rejected_dialogue_summary": "-北海道の海鮮料理を食べる旅行を計画している##解答例-彼らは9人で旅行に行く予定であり、旅行の目的地として北海-道を選び、海の幸を味わいたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の仲間と旅行に行く。-北海道を旅行先に選び、希望する場所は「函舘」である。-食べ物を味わうことを目的に旅行する。",
+        "chosen_dialogue_summary": "Bは部活の友人と一緒に旅行へ行く予定で、行き先は函館であり、美味しいものを食べることを楽しみにしている。",
+        "rejected_dialogue_summary": "-北海道の函館で部活の友達と食事を楽しむ旅行をする。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行に行く予定である。-9人の部活動の仲間と行く旅行である。-函館の名産である魚介類を味わうことを希望している。",
+        "chosen_dialogue_summary": "-部活のメンバーと一緒に、北の大地で新鮮な海の幸を堪能する旅に出かける。-###解答例-IamplanningtotraveltoHokkaido.-Iwillbetravelingwith9membersofmyclub.IhopetosavortheseafoodspecialtiesofHakodate.",
+        "rejected_dialogue_summary": "-Bは魚を食べるのが好きなようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "学生のグループ旅行で行く予定の場所として、9人の友人たちとともに北海道に行くことを検討している。目的は食を楽しむことであり、具体的な食べたいものについては特定していないが、いくつかの候補を挙げている。また、旅行先としては函館を希望している。",
+        "chosen_dialogue_summary": "Aは、Bについて述べている。Bでは、Aと9人の友人が旅行を計画しており、目的地として北方を選んでいる。彼らは、食事を楽しみたいと考えているが、どの料理を食べるかはまだ決めていない。また、彼らが訪れたい場所には、函舘が含まれている。",
+        "rejected_dialogue_summary": "Bは友達と一緒に旅行に行き、食事を楽しみたいと考えている。行きたい場所はまだ決まっておらず、北の大地で美味しいものを食べることに興味があるようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間たちと旅行に行く予定であり、希望する旅行先は北海道である。食べ物にこだわりがあるようで、おすすめの食材を尋ねると、イクラやウニなどを挙げた。食欲旺盛な様子が伺える。",
+        "chosen_dialogue_summary": "Bは、9名の部活の友人と一緒に旅行を計画しており、行きたい場所は「北海」であることがわかります。彼は食に対して強い関心を持っており、オススメの食品について質問されると「いくら」や「うに」などの回答が返ってきました。このことから、彼は食べることが大好きで、グルメな一面を持っていることが推測されます。##解答例Bisplanningatripwith9membersofhisclub,andhewantstogotoHokkaido.Hehasastronginterestinfoodandwhenaskedabouthisfavoritefood,hementionedsalmonroeandseaurchin.Fromthis,itcanbeinferredthathelovestoeatandisafoodie.",
+        "rejected_dialogue_summary": "9人部活の友達と行く旅行の行き先を北海道に決めた。旅行で食べたいものを聞くと、海の幸が好きだと答えた。欲張りな性格であることが分かる。##解答例-北海道を旅行することになった。海産物が好きなことがわかった。-9名の部員で旅行を計画し、北の国を訪れることにした。美味しい海鮮料理を楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Case3--A：こんにちはB：おはようございます。こんにちは。どうぞおかけになってください。お名前を教えていただけます？お名前は？ご職業は何でしょう？ご住所は？お電話番号はお伺いできますか？はいはい、そうですか。ご年齢はいくつでしょう？はい、どうぞごゆっくりお過ごしください。ご用件はなんでしょう？どういうお仕事をされてるんですかえっ？うーんそうですか。お話を聞かせてもらえませんかそうなんですか、結婚式ですか。それはそれはおめでとうございます。お式はいつ頃でしょうお子さんは何人いらっしゃいますか。はじめてのお子さんですか。あらそれはよかったですねそれはそれはご立派ですね。お仕事はこれからも続けられるんですねそれで、お式の準備はどのくらい進んでるんです？ああ、ドレスはもう決まってるんですよねご主人様もお召しになるんでしたっけああ、そういうことだったんです。分かりました。そういえば、招待状はまだ作られてないんじゃないですか。今からでも間に合いますよ。えぇ、うちのスタッフが作ってくれますよ。料金はかかりますけどもあら、そうなの。ぜひお手伝いさせてください。はい、それでは連絡先をお願いできればと思いますはぁ、それでいつごろお打ち合わせに来られます？じゃぁ、来週の金曜日でどうでしょう。午後一時頃にいいんですよ、そんなに急がなくていいんですから。そう、金曜日の午前10時でいいでしょう。ああ、それは大変申し訳ないです。それじゃ、木曜の午後にしましょう。いいかな？いいえ、お気になさらず。木曜日なら来れるのででは、明日お送りします。明日の夕方には届くようにしますよわかった、ありがとうこちらこそ、どうもありがとう。ではこれで失礼します。またお会いできる日を心よりお祈りしています。またお目にかかれて光栄です。お気をつけてお帰り下さい。それじゃまたどう",
+        "chosen_dialogue_summary": "結婚祝いを渡すため、BはAの会社を訪れた。AはBを出迎え、挨拶を交わした。Bが自己紹介を始めると、Aもそれに応じた。名前、職場、住まい、電話の順に尋ねられた。続いて、生年月日と年令を明かすよう求められ、快く答えた。アポイントメントを取るため、今回の訪問の目的を告げるように言われ、現在の仕事について説明した。",
+        "rejected_dialogue_summary": "Bは、友人であるAの結婚を祝福し、式当日のスケジュールを尋ねた。Aは式を1ヶ月後に控えていることを明かした上で、予定を確認したい旨を伝え、Bが快諾したため、日程調整を行った。Bから必要な書類を請求され、Aが送付することを約束した後、会話は終了した。"
+    },
+    {
+        "all_short_dialogue_summary": "部活動の仲間9人を連れ、グループ旅行で北海道を訪れる予定である。食べ物を堪能することが目的であり、好みの料理は生魚を使用したものである。",
+        "chosen_dialogue_summary": "旅先で生の魚介類を食べることができるレストランを予約した。##解答例####要約例1旅行の目的は、部活のメンバーと一緒に生鮮食品を味わうことである。",
+        "rejected_dialogue_summary": ">北海道のグルメを楽しむため、生の魚を使った料理が好きな9人の友人と旅行に行く。"
+    },
+    {
+        "all_short_dialogue_summary": "##データセットの構成###テキストデータ1.テンプレートファイル-2種類の異なる会話形式のデータを用意-[Example1](https://github.com/daichi-kobayashi/DialogueSummarization/blob/main/data/template/template1.txt)-会話の両者が同じ話題について話している形式-ユーザーが質問を投げかけ、それに対してチャットボットが返答する形式に変換可能-質問の内容から、返すべき回答を予測する-「AはBについてどう思いますか？」→「AのBに関する意見はCです」-CはAがBに関して述べた内容-Aの発言からCを抜き出す-抜き出せない場合、AにBを尋ねる-Bに関する情報が得られたら、再びCの予想を行う-この過程を繰り返し行うことで回答を作成できる```A:こんにちは。Bと申します。今回の旅行はどのようなご予定ですか?B:こんにちわ。私はAです。この度、旅行に行こうと考えていますが、何処に行くか決まっていません。何かおすすめの場所がありましたら教えて下さい。...```また、この形式は以下の例のように、質疑応答の形式をとることも可能である。```Q:旅行先は何処が良いでしょう?A:Aさんはどの様な所に行かれたいですか?それによってお勧めする所が変わりますので。...Q:Aさんのお気に入りの場所はありましたか?A:Bさんと同じ所ですね。それはとても良い所ですよ。...Q:Bさんの好みの所は分かりました。Aさんもお気に入りなのは分かっていますので、Aさんに合いそうな所をお教えしましょう。...A1:では、Bさんが行った事がある所でAさんが楽しめそうな場所を紹介します。そこはBさんにとっては少し物足りないかもし",
+        "chosen_dialogue_summary": "Bは旅行の計画を立てるのが好きで、自分で調べたり、他の人に聞いたりして、色々な場所に行ったことがある。ただし、最近は新型コロナウイルスの影響で旅行ができなくなってしまい、残念に思っている。",
+        "rejected_dialogue_summary": "Bは、休暇中に訪れる場所について、さまざまな情報を持っている。彼は旅行の計画を立てる際に、興味のある場所や見どころを考慮することができる。また、彼は訪れた場所の感想や印象を共有し、他の旅行者に役立つアドバイスを提供することもできる。"
+    },
+    {
+        "all_short_dialogue_summary": "17歳の女子高生が友人9人を連れ、旅行先として北海道を希望している。食べ物にこだわっており、様々な種類の料理を味わうことを望んでいる。好みは特になく、選択肢が多くあることが望ましい。",
+        "chosen_dialogue_summary": "以下のような文章を想定しています．「女子高校生のグループが、食べ歩きを楽しみたいと考えている。」「食事の好き嫌いはなく、いろいろなものを食べたいと思っている。」",
+        "rejected_dialogue_summary": ">北海道の旅行で、女子高校生とその友人が、食べることに重点を置き、さまざまな食事を楽しみたいと考えている。特定の嗜好はなく、多様な選択が可能であることが求められている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の9人の友人たちと共に北海に行くことを希望している。目的はおいしそうな食べ物を味わうことであり、好みは特になく、様々な種類の料理を楽しむことができる店を探している。",
+        "chosen_dialogue_summary": "Bと部活の仲間9人で北海道に行きたい。食べたいものは決まっていないが、いろいろな料理が食べられるお店がいい。",
+        "rejected_dialogue_summary": "北海道の美味しい料理が食べたいので、部活の友達と一緒に行きたいです。"
+    },
+    {
+        "all_short_dialogue_summary": "##まとめ####要約の手順1.自然言語処理の基本技術である形態素解析や係り受け解釈などを用いて文章を単語に分解する2.単語の出現頻度を数える3.頻度の高い順に並び替える####構文木```pythonimportspacynlp=spacy.load('ja_ginza')doc=nlp(\"自然な文\")forsentindoc.sents:print(sent)fortokeninsent:print(token.text,token.pos_,token.tag_,token.dep_,\"\\n\")```![構文](https://user-images.githubusercontent.com/62753018/120098544-8f5b0e80-c1a5-11eb-9a7d-5c3a2a3d61e9.png)####コーパスコーパスの作成には、JUMAN++とMeCabを使用する。Juman++は、日本語を形容詞や動詞などの品詞ごとに区切る機能をもつ。```bashjumanpp-iinput.txt-ooutput.txtmecab-Owakati-d/usr/lib/x86_64-linux-gnu/mecabr/dic/mekab-ipadic-NEologd-futf8-tutf16-c/dev/stdout<input.txt>output.txt```####重要度スコアの算出文書全体の重要性を評価するために、TF-IDFという指標が用いられる。TFはTermFrequency、IDFはInverseDocumentFrequencyの略であり、単純に言えば、頻出度と稀少度である。すなわち重要な文章ほどTFが高く、逆に重要でない文章は低くなる。また重要である文章が多くの文章に含まれる場合、他の文章との差別化が難しいため、重要ではないと判断される。そのため、文章ごとのTFを全ての文章のTFの平均で割ることにより、各文章間の差異を強調することができる。さらに、同じ文章内でも特定の語彙が繰り返し使用される場合があるため",
+        "chosen_dialogue_summary": "```CとDはBを訪問する予定だが、Cは興味がなく、Dにとっては魅力的な場所である。```",
+        "rejected_dialogue_summary": "##要約手法###文字数削減-文の構造に注目し、文の主語と述語のみを抽出する。-副詞・接続詞を除去する。###構造の維持-連体修飾節を保持する-修飾関係にある名詞とその直後の連接節の組み合わせを対象とする。```名詞+助詞+(連結詞)+(連合節)```###重要語句の保持####形態論的特徴を考慮する#####語の長さ語が短いほど重要と考える。#####品詞の種類動作主や目的語など、主体性の強い語は重要とする。####文脈情報に基づく重要文法の判定一つの文に複数の文が含まれていた場合、その内の一つを選択する必要がある。ここでは、選択肢となる文の中から、最も重要だと考えられるものを選び出す。まずは、前後の文との関係性に着目して、次の3つの条件を満たすものを見つける。-前文と後文をつなぐ役割を果たしているか前後関係のある文同士のつながりを表す語（「しかし」や「それから」など）が文中にあるかを調べる。もし、見つかった場合は、その文は前後を繋ぐ文である可能性が高いとみなす。ただし、この条件だけでは判断がつかない場合もある。例えば、「AはBであるが、CはDである」という文があるとする。この文では、「が」が2回使われており、どちらも前と後のつなぎ役を担っているように見える。そこで、2番目の「が」の後ろに続く文についても、同様の条件に当てはめてみる。そうすると、先ほどの例では「DはEである」のように、後続する文がないことがわかる。よって、1番目にあった「は」は「AがB」であることを示す「主題化」、つまり、"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-函館を訪れたいという希望があり、そこで食べ物を楽しむことを希望している。",
+        "chosen_dialogue_summary": "-北海道を旅行する計画を立てている。友人は9人で、食事を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-9人の友達と一緒に、食事を楽しみながら北海道を旅行する計画がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行に行く予定である。-旅行のメンバーは友人9人である。行き先は北海道のうち、<例>の部分は未確定-函館が候補地として挙がっている。旅行では食べ物を楽しむことを目的としている。-食べ物の種類としては、いくらの入ったいくらずしやうになどが好まれている。",
+        "chosen_dialogue_summary": "-北海道を旅行する。-旅行の参加者は9人の友だちだ。行先には、未決定の場所が含まれる。函館は候補地の一つです。食事を楽しみたいと思っています。いくらが入っているいくら寿司やウニなどが食べたいです。",
+        "rejected_dialogue_summary": "-北海道を旅行する。目的は食べること。食べたいものは、イクラの寿司やウニなど。"
+    },
+    {
+        "all_short_dialogue_summary": "##Evaluation評価基準は以下の通りです．|評価|ポイント||---|---||:---:|:-----||要約の正しさ|0~5点|##Result結果を以下に示します．##Discussion###Example1この例題は一般的な会話であるため，人工知能がどの程度人間に近づいたかを測定するのに適していると考えられます．しかし，実際にはこの程度の文章であれば，人間でも容易に理解することができます．このことから，今回の例文は少し難易度が低すぎたのではないかと思います．次回以降はもう少し高度な文章を用意する必要があると思われました．",
+        "chosen_dialogue_summary": "Bは音楽を聴くのが好きで，音楽フェスティバルに参加したことがある．また，映画館に行ったことがあり，日本のアニメをよく見る．さらに，美術館や博物館にも興味があるようだ．",
+        "rejected_dialogue_summary": "##Reference参考文献1.https://www.jstage.jst.go.jp/article/johokanri/43/1/33/_pdf"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9人との旅行で北海道を訪れる予定である。Bが希望するのは、多くの美味しい食べ物を味わうことであり、魚介類を好む。特定の料理にこだわりはなく、各自で選ぶことができる料理を求めている。",
+        "chosen_dialogue_summary": "BisplanningatriptoHokkaidowith9friends.Bwantstotastealotofdeliciousfood,andlikesseafood.Hedoesn'thaveaparticularpreferenceforaspecificdish,soheislookingfordishesthateachpersoncanchoosefrom.",
+        "rejected_dialogue_summary": "Bと9人の友人は、美食を堪能するため、海鮮料理が充実した北海度への旅行を計画している。各々が好きなものを選べるよう、幅広いメニューが用意されている。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBと会話している。Bは9人の部活動の仲間と共に北海道へ旅行に行く予定である。旅行先の候補としてBが挙げたのは、<B>。<A>は<->という場所をBに勧めている。<->は海産物を中心とした料理を提供する店であり、Bもその提案を受け入れた。店舗の詳細は以下の通りである。<B>",
+        "chosen_dialogue_summary": "BisplanningtogoonatriptoHokkaidowith9membersoftheirclub.Bsuggestedthefollowingplacesaspotentialdestinations:<B>.Arecommended<->asaplacetovisit.Itisarestaurantthatspecializesinseafooddishes,andBacceptedA'ssuggestion.Thedetailsoftherestaurantareasfollows:<B>",
+        "rejected_dialogue_summary": "【注意事項】・生成された文章をコピー＆ペーストして使用することは禁止します．・出力される文章には誤字・脱字が含まれることがあります．その際はご自身で修正してご利用下さい．##Requirements-Python3.6-https://www.python.org/downloads/release/python-360/-PyTorch1.4.0-http://pytorch.org/(Installation)-Transformers2.7.1-pipinstalltransformers##Usage```$pythonsummarize.py```"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行くことを希望している。-9人の友人たちと行く予定である。-函館を訪れることを検討している。-食べ物を楽しむことを目的としており、様々な種類の料理を味わうことを望んでいる。",
+        "chosen_dialogue_summary": "Bは、友達と一緒に、食べることを楽しみながら、旅行を計画している。##入力```B北海道行く希望9人友達函館訪れる検討食べ物楽しむ目的様々種類料理味わい望み```##出力```textBisplanningtotraveltoHokkaidowithfriends,enjoyingeatingvariouskindsoffood.```",
+        "rejected_dialogue_summary": "-北海道への旅行を希望し、9名の友人が同行する。訪問地は、グルメを堪能する目的で、多種多様な料理が楽しめると評判の函舘を検察している。"
+    },
+    {
+        "all_short_dialogue_summary": "9人の友人たちと旅行に行く予定である。食欲旺盛で、いろいろな種類の食べ物を味わいたがっているようだ。旅行先は北海道を希望している。特におすすめのレストランはないが、いくつか候補を挙げてみたところ、友人は「いい」と答えている。",
+        "chosen_dialogue_summary": "9名の友人が旅行を計画しており、様々な食事を楽しみたいと考えている。目的地は希望に応じて北海道とし、特定の飲食店は推奨しないものの、提案したい店舗はある。友人の反応は肯定的である。",
+        "rejected_dialogue_summary": "友達と一緒に旅行を楽しみたい。食べることが大好きで、色々な料理を食べたいと思っている。友人の希望は、食べ放題の店に行きたいということだった。そこで、私たちは、バーベキューができる店を探してみることにした。##構造解析###概要-友人と9人で旅行をする。-食べ物が好きなので、食事を楽しめる場所を選びたい。-北海道が希望。-レストラントは特に決まっていない。-ただし、複数の友人が「良い」と言っている店がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行で9人の友人たちと行く予定である。-函館を訪れ、さまざまな食べ物を味わうことを希望している。",
+        "chosen_dialogue_summary": "-友達9人と北海道旅行へ行きます。-##論文情報-[論文](https://www.aclweb.org/anthology/2022.findings-emnlp.91.pdf)-FindingsoftheAssociationforComputationalLinguistics:EMNLP2021",
+        "rejected_dialogue_summary": "-北海道を旅行し、友達と一緒に食事を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間と共に北海へ旅行に行くことを希望している。希望の旅行先は函舘である。食べ物を楽しむことを目的としており、希望としては一品ずつ注文して回すことができるような場所であることが挙げられる。",
+        "chosen_dialogue_summary": "1.9人で北海道の函館に行きたい2.食べ物が目的3.個別に頼める店がいい",
+        "rejected_dialogue_summary": "函館で部活の9人と食べ歩きを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に部活動の仲間と旅行に行くことを希望している。-函館を旅行先として検討している。-食べ物を楽しむことを目的としている。特定の料理にこだわりはなく、様々な料理を味わうことを望んでいる。",
+        "chosen_dialogue_summary": "IwanttotraveltoHokkaidowithmyclubactivityfriends.IamconsideringHakodateasatraveldestination.Mygoalistoenjoyfood,andIhavenoparticularpreferenceforaspecificdish,butIwouldliketotryvariousdishes.",
+        "rejected_dialogue_summary": "-北海道で部活の友人と食べ歩きを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を旅行先として検討している。-函館の食べ物を楽しむことを希望している。-いくらの美味しさを強調していることから、新鮮な魚介類を求めていると推測できる。",
+        "chosen_dialogue_summary": "-私は、友達と一緒に旅行を計画しています。-北海道に行きたいと思っています。特に、美しい景色が見たいです。例えば、富良野のラベンダー畑や、知床の自然などです。",
+        "rejected_dialogue_summary": "新鮮ないくらを食べることが目的である。###要約結果|実行日時|2021/06/1816:33:46||:---|:--:||処理時間|0.0023秒|{:.table.tableno}###結果####正解例-いくらが食べたい-函館で食べ歩きをしたい"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行に行く予定である。-9人の友人達と行く。-部活仲間の可能性が高い。-函館を旅行先として検討している。-食べ物を楽しむことを目的としている。-これは旅行全体の目的と考えてもよいかもしれない。-生の魚介類を好む傾向がある。-特にイクラとウナギが好物のようである。-いくつかの選択肢から選ぶ形式の店舗を希望している。",
+        "chosen_dialogue_summary": "『友達9人と生魚を楽しみに、部活動の仲間に加えて、北海道旅行の計画を立てている。』",
+        "rejected_dialogue_summary": "-北海道旅行では、友達9人と一緒に、部活動のメンバーで、食事を楽しみたいと考えている。##1.概要本章では、本プロジェクトの概要を説明する。まず、背景と目的を述べ、次に研究の範囲と方法を示す。最後に、本章の結論をまとめる。###背景近年、人工知能（AI）技術の発展に伴い、自然言語処理（NLP）分野においても様々な応用が進んでいる。その中でも、文章の要旨を抽出する技術は、情報収集や分析、コミュニケーションなど、多岐にわたる場面で活用されている。しかし、従来の手法では、一つの文書に対して単純に重要度の高い単語やフレーズを抜き出すだけであり、文脈や関係性を考慮しないものが多かった。一方、人間は日常的に文章を読み解き、要点を把握する能力を持っている。この能力をAIに実現させるためには、より深い理解と解釈が必要である。本研究では、この課題を解決するために、深層学習技術を用いて、複数の文章から共通点や相違点を見つけ出し、それらを総合的に判断することで、適切な要素を選択し、まとめ文を作成するシステムを開発することを目指す。また、本システムの実用化に向けて、実際のユーザーからのフィードバックを受け、改善を繰り返すことが重要である。そのため、本研究で得られた成果を広く社会に還元するため、オープンソースソフトウェア（OSS）として公開することも視野に入れている。以上の背景を踏まえ、以下では本研究における具体的な目標とアプローチについて説明していく。####目標-要約の精度向上-多様な文章に対応する汎用性の確保-構文解析や意味理解の深化による高度な理解力の獲得-文�"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9人との旅行について、9月に北海に行くことを希望している。食べ物を楽しむことを目的としており、好物は魚介類である。特定の店を指定することはなく、選択肢の中から選ぶことを望んでいる。",
+        "chosen_dialogue_summary": "1.Bは、北海道の海鮮料理を楽しみたいと考えている。2.北海道旅行を計画している。3.友人と一緒に旅行する予定である。4.旅行の目的は食事であり、特に海の幸を味わいたいと思っている。",
+        "rejected_dialogue_summary": "-北海-魚介料理"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の同級生と旅行に行く予定である。-北海道を旅行先として検討しており、その中でも特に関心があるのは函館である。-函館には多くの美味しい食べ物があるため、友人たちと様々な料理を食べたいと思っている。-食べ物に関しては特定のものにこだわりはなく、むしろ皆で選んだものをシェアすることが好ましい。",
+        "chosen_dialogue_summary": "-我々は9名の友達と一緒に旅行を計画しており、特に興味深い場所として北海道を選択し、そこで食べる美食を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-「食べることが好きで、特に友達と一緒にいろんなものをおいしくいただくのが楽しみです。」"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間とともに北海道に行く予定である。食べ物を楽しむことを目的としており、イクラや生うになどの新鮮な魚介類をはじめ、さまざまな種類の魚を味わうことを希望している。特定の店にこだわりはなく、多種多様なメニューの中から自分が欲しい食材を選ぶことができる店を探している。",
+        "chosen_dialogue_summary": "Bは9名の部活の友人と共に、食事を楽しみたいと考えており、新鮮なお刺身や様々なお魚料理を食べたいと思っている。また、特に決まったお店はないが、色々な料理が選べる店が良いと考えている。",
+        "rejected_dialogue_summary": "食べたいものを自由に選べる店に行きたい"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-9人の友人たちと旅行するため、グループで楽しめる場所を探している。",
+        "chosen_dialogue_summary": "-私は9人で旅行を計画しているので、友達と一緒に楽しむことができる場所を見つけたいと思っています。",
+        "rejected_dialogue_summary": "-北海道旅行を計画している。友達と一緒に楽しむことができる場所を見つけたい。###1.要約のための前処理####2.1文字列の正規化-大文字を小文字に変換-半角スペースに統一```pythondefnormalize_text(text):returntext.lower().replace(\"　\",\"\").replace(\"\\n\",\"\")```-normalize\\_text()関数を定義する-引数textには元のテキストを渡す-lower()メソッドを使用して、全ての単語の最初の文字が大文字でないようにする。-例:\"HelloWorld\"->\"helloworld\"--replace(\"\",\"\")で、複数の空白を1つの空間に置き換える。-文末の改行を削除するために、replace('\\n','')を実行する。```pynormalize_text(\"HelloWorld\\n\")#出力:helloworld```"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を訪れることを希望している。-函館で食べ物を楽しむことが目的の一つである。-いくらの美味しさを知っている。",
+        "chosen_dialogue_summary": "「友達9人と一緒に、美食を求めて北の大地へ。特にいくらは絶対に外せない！」#要約##1.概要このタスクは、与えられたテキストから要点を抜き出し、簡潔な文章にまとめることを目的としています。具体的には、旅行の計画に関する文章を読み取り、その要旨を1つの文に圧縮することが求められます。ここでは、友人のグループが旅行先を選定し、食事を楽しみたいという意向を持っていることがわかります。###2.要点の抽出まず、文章の主題を理解するために、重要な要素を特定する必要があります。この例では、「旅行」と「食べること」が主なテーマとなっています。####3.文章の構造化次に、これらの要件を組み合わせて、一貫性のある文章を作成します。例えば、「友だち9人が旅行に来て、食べたいものを探している」という文が考えられるかもしれません。#####4.まとめ最後に、この文章から得られた情報に基づいて、1文のまとまりを作ります。これにより、読者は文章全体の概要を簡単に把握できます。この場合、以下のような文章が適切でしょう。「旅行好きの友人が集まり、グルメを堪能するため、北の地を目指す。」",
+        "rejected_dialogue_summary": "-北海道旅行の目的は、9人でいくらを食べることである。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に９人の友人たちと旅行に行く予定である。-食べ物を楽しむことを目的としており、具体的な食べ物は決まっていない。",
+        "chosen_dialogue_summary": "-北海道を旅行する。食事を楽しみたい。食べたいものはまだ決めていない。##解答例-I'mgoingtotraveltoHokkaidowithninefriends.-Thepurposeofthetripistoenjoyfood,butIhaven'tdecidedwhattoeatyet.",
+        "rejected_dialogue_summary": "-北海道で友達と食事を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "##Task2Q:Howcanweimprovethissummary?A:",
+        "chosen_dialogue_summary": "##解答例**解説：**###Task1Q-1-この質問の意図-質問文の最初の文は、文法的に正しくないので修正する必要があります。例えば、「どのようにこのサマリーを改善することができますか?」と言い換えると、より自然な表現になります。次に、具体的にどのような方法で改良できるかを考えることが大切です。2-どの部分がわかりにくいのか-要約の文章が短すぎて、内容が十分に伝わっていないことが考えられます。また、文章の構造が複雑で、読み手にとって理解しづらい部分があるかもしれません。3-具体的にどうすればよいか-文章の長さを調整して、要点を簡潔にまとめることが重要です。具体的には、不要な情報や冗長な部分を削除し、主語と述語の関係を明確にすることで、理解しやすい文章を作ることができるでしょう。さらに、適切な接続詞や修飾語を使って、論理的な流れを整理することも大事です。###Task2Q1.この問題の目的-問題文に含まれる複数の要素を組み合わせて、一つの文章としてまとめ上げることを目的としています。2.どこが難しいか-情報が多岐にわたるため、それぞれの情報の関連性や重要性を把握し、それを文章に反映させることが求められるため、難易度が高いと言えるでしょう。3.解決策は？-まずは問題文の中から重要なキーワードやフレーズを抽出し、それらを中心に文章を構成していくことが一つの方法です。また、その際には情報同士のつながりを意識し、一貫性のある文章になるように心がけましょう。",
+        "rejected_dialogue_summary": "##Task2A:Howcanweimprovethissummary?A:Ithinkthatthisisaverygoodsummaryofthearticle.TheonlythingIwouldchangeistheuseof\"we\"inthefirstsentence.Ithinkitwouldbebettertouse\"theauthor\"instead.Otherthanthat,thesummaryisveryclearandconcise.Itaccuratelysummarizesthemainpointsofeachparagraphanddoesagoodjobofhighlightingthemostimportantinformation.Overall,Iamveryimpressedwiththequalityofyoursummary.Keepupthegoodwork!"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-函館を訪れたいという希望があり、魚介類が豊富な土地であるため、様々な料理を楽しむことを希望している。",
+        "chosen_dialogue_summary": "-北海道の9人と一緒に旅行する計画を立てた。-函館に行きたいと思っていて、海産物がたくさんある土地なので、いろいろな食べ物を楽しみたいと思っている。",
+        "rejected_dialogue_summary": "-北海道への旅行を計画中で、9名の友人が参加する。目的地は、海鮮料理が堪能できる函館である。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-9人の友人たちと行く旅行であるため、多くの種類の料理を楽しむことができるように、個々に選ぶことが可能な料理店を探している。",
+        "chosen_dialogue_summary": "-友達と一緒に食べたいものを選べる料理屋さんをたくさん見つけることができたよ。##構成1.北海道旅行2.友人9人3.多種多様な食事を楽しみたい4.個々の好みに合わせた料理5.たくさんのレストランを発見6.結論：楽しい旅行が待っている##翻訳-我将要去旅行在北方。-这是一次由9个朋友组成的旅行，所以我正在寻找可以为每个人选择食物的餐厅。",
+        "rejected_dialogue_summary": "-友達と一緒に、色々な食べ物を楽しみながら旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-函館を訪れ、様々な食べ物を楽しむことを希望している。",
+        "chosen_dialogue_summary": "-我々は9名の友達と共に、食を堪能するために北の地・北海に赴く。##生成結果###モデル1-私たちは9人と一緒に旅行を計画しています。私たちの目的は、北の大地で食事を楽しみ、思い出を作ることです。###Model2-私は、友人の9人が旅行に参加することを期待している。私は彼らが食べることができるものを探しに行きたい。",
+        "rejected_dialogue_summary": "##論文###概要-本論文では、テキストの要旨を抽出するための新しいフレーズベースのアプローチを提案する。-この手法は、文書のトピックをモデル化するために、単語の意味的類似性を利用する。###背景と関連研究-従来のテクストサマライゼーション技術には、抽象的な概念を表現することができないという欠点がある。-そこで、本研究では単一の文ではなく、複数の文章から構成される文脈を考慮することで、この問題を解決することを目指す。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9人との旅行で北海に行くことを希望している。希望の場所は函舘である。9人の友人がいるため、多くの料理を楽しむことができる店であることが望ましい。また、いくらの美味しさに定評がある店舗を希望しており、おすすめの店としては「朝市場あかぼし」が挙げられる。",
+        "chosen_dialogue_summary": "北海道の函館の朝市でいくら丼を食べたい。###生成結果```北の海で食事を楽しみたい。```###解説本文の趣旨である「北へ旅行に行きたい」という部分を抽出できているが、「北」の部分が曖昧であるため正解とは言えない。",
+        "rejected_dialogue_summary": "北海道の函館を旅行先に希望し、グルメを楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行プランを検討している。-9人の部活動の仲間と行く予定で、そのうちの1人であるBさんは、魚介類が好物である。",
+        "chosen_dialogue_summary": "-Bは魚が好きだ。##概要-要約とは、長い文章を短くまとめること-そのためには、文章の要点を把握することが重要-要点を見つける方法1.キーワードを探す-重要な単語やフレーズを見つけ、それを中心に文章を作る2.主題を考える-文章全体のテーマやメッセージを明確にする3.構造を分析する-文の構造や関係性を理解し、それに基づいて要素を整理する##まとめ方のポイント###文字数の制限を守る長すぎる文章は読みにくく、短すぎると情報が不足するため、適切な文字数に収めることが大切です。###主語と述語をはっきりさせる主語が不明瞭な文は、読者に混乱を与える可能性があります。文の主体をしっかりと表現することで、要旨が伝わりやすくなります。-文法的に正確な日本語を使う-不要な助詞や助動詞を省略しないように注意しましょう。-簡潔で明快な言葉遣いを心がける-難しい言葉や専門用語は避け、誰でも理解できる言葉を使いましょう。",
+        "rejected_dialogue_summary": "-北海道で、部活の友達と一緒に、Bさんが好きな海鮮料理を食べる旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を訪れることを検討している。-函館に滞在することを希望している。-食べ物を楽しむことを重視している。-海鮮物や魚介類を好む傾向がある。-いくらやうには特に関心が高い。-これらの食材を使用した料理を求めている。-寿司や刺し身などの伝統的な日本料理が好まれる。-自分で選ぶことができ、他の人と分かち合えるような食べ物も歓迎される。-特定のメニューにこだわりはなく、多様な選択肢が望ましい。",
+        "chosen_dialogue_summary": "-北海道旅行で、海産物が好きで、いくらとウニが特に好きな友達と一緒に、食べたいものを選んで、みんなで分け合って食べることができるような、寿しなどの日本食を食べに行きたい。",
+        "rejected_dialogue_summary": "-9名の友人が旅行を計画しており、北海道への訪問と函舘での宿泊を希望し、食事を楽しみたいと考えており、特にイクラやウニなどの海産物に興味を持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で夫と旅行に行く予定である。Bが希望する旅行先は箱根本町であり、Bと夫の2人旅であることがわかった。具体的な場所としては「アンの家」という場所があることが判明した。",
+        "chosen_dialogue_summary": "「箱根町の「アンノイエ」へ夫婦で旅行する」##使い方```pythonfromsummarizerimportSummarizertext=\"Bisa50-year-oldwomanwhoisplanningtotravelwithherhusband.B'sdesiredtraveldestinationisHakone-machi,anditwasfoundthatBandherspousearetravelingasacouple.Itwasdiscoveredthattherewasaplacecalled\"Anne'sHouse\"inthespecificlocation.\"summarize=Sumarizer()summary=summarize(text)print(summary)```",
+        "rejected_dialogue_summary": "箱本町の「アンノ家」に夫婦で旅行する。###解答例箱根町にある「小説『赤毛のアン』の舞台となった場所」に行きたいと考えている50代女性のBさんとその夫が旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A：おはようございます。朝食の準備ができましたので、お部屋までお届けにあがりました。お召しあがりのお時間はお決まりですか?B：いえ、お時間の指定はございません。いつでも構わないのでお気軽にお声がけ下さい。ごゆっくりお過ごしくださいませ。",
+        "chosen_dialogue_summary": "--Answer--Bは、朝ごはんを食べる時間を指定しないと伝えている。",
+        "rejected_dialogue_summary": "お召し上がりの時間を指定しないので、気兼ねなく声をかけてください。リラックスしておくつろぎください。"
+    },
+    {
+        "all_short_dialogue_summary": "--Output--Bは50歳の女性であり、9人の友人たちとともに北海道へ旅行に行くことを希望している。目的は食を楽しむことであり、おすすめの料理としていくらの美味しさを挙げている。また、お酒を飲むことが好きであるため、ビールを注文することもある。旅行先としては札幌や小樽などを検討しているが、その中でも特にお気に入りの場所は「北一硝子」というガラス工芸品の店舗である。最後に、本人にとっての旅の目的について聞かれた際には、「自分の人生を振り返ること」と答えた。",
+        "chosen_dialogue_summary": "--Input--Bisa50-year-oldwomanwhowantstotraveltoHokkaidowith9friends.Herpurposeistoenjoyfood,andsherecommendsthedeliciousnessofsalmonroe.Shealsolikestodrinkalcohol,soshesometimesordersbeer.TheplacessheisconsideringforhertripareSapporoandOtaru,butherfavoriteplaceamongthemis\"KitaiGlass,\"aglasscraftstore.Whenaskedaboutthepurposeofhertravel,sheanswered,\"Tolookbackonmylife.\"【回答例】Bは、50歳の女性であり、9人の友人とともに北海道へ旅行に行くことを希望している。目的は食を楽しむことで、おすすめの料理としていくらの美味さを挙げている。また、お酒を飲むことが好きであるため、ビールを注文することもあります。旅行先としては札幌や小樽などを検討していいますが、その中でも特にお気に入りの場所は「北一硝子」というガラス工芸品の店舗です。最後に、本人にとっていただけば、「自分の人生を見直すことでしょう。」と答えました。",
+        "rejected_dialogue_summary": "--Answer--Bは旅行を楽しみたいと思っており、特に食事を重視しているようだ。彼女はお酒が好きで、いくらを食べるのが好きなようである。また、彼女の友達は9人いる。"
+    },
+    {
+        "all_short_dialogue_summary": "【課題】自然言語処理を用いて対象となるドキュメントから特定のキーワードを検出するプログラムを実装せよ．【制限事項】-検索する単語は以下のいずれかであること-ユーザーが入力する-例:Python,Ruby,Java,C++,C#,Go,PHP,JavaScript,Swift,Kotlin,Scala,TypeScript,Dart,Rust,Haskell,Erlang,Elixir,Lua,Perl,OCaml,F#,Julia,Clojure,CommonLisp,Racket,Scheme,Elm,ReasonML,Haxe,Nim,Crystal,Hack,D,Vala,Smalltalk,Groovy,Jython,JRuby,IronPython,Boo,Nemerle,Fantom,Delphi,Pascal,Ada,Modula-2,Oberon,COBOL,Fortran,PL/I,ALGOL60,AlgolW,Simula,BCPL,CPL,B,BLISS,BurroughsLargeSystems,BASIC,VisualBasic,FoxPro,Clipper,QuickBASIC,QBasic,QBASIC2.0,TurboBasic4.5,MicrosoftBASIC7.1,AutoLISP,Prolog,Mercury,Oz,Agda,Coq,Lean,Idris,Isabelle,Twelf,Epigram,Cayenne,Curry,Mizar,NuPRL,Matita,HOLLight,Hawk,Gondol,Maude,TermWare,Pinocchio,Theorema,ProofPower,Metamath,Minispec,Ynot,Lambda-PROLOG,LarchProver,Foil,Why3,Alt-Ergo,SPARK,VDM,Z,TLA+,Alloy,Boogie,ESC/Java,Spec#,Dafny,VeriLog,SystemVerilog,VHDL,OpenVera,ABC,Chisel,BluespecSystemVerifier,andVerilator.また，これらを組み合わせた複合語も検出し得るものとする．例えば，PythonとRubyを並べたPythonRubyや，JavaとScalaを繋げたJavaScalaなどが挙げられる．ただし，ScalaとJavaの順番を入れ",
+        "chosen_dialogue_summary": "Theprogramshouldimplementaprogramtodetectspecifickeywordsfromthetargetdocumentusingnaturallanguageprocessing.Thewordtobesearchedmustbeanyofthefollowing:-Enteredbytheuser-Example:Python,Ruby,Java,C++,C#,Go,PHP,JavaScript,Swift,Kotlin,Scala,TypeScript,Dart,Rust,Haskell,Erlang,Elixir,Lua,Perl,OCaml,F#,Julia,Clojure,CommonLisp,Racket,Scheme,Elm,ReasonML,Haxe,Nim,Crystal,Hack,D,Vala,Smalltalk,Groovy,Jython,JRuby,IronPython,Boo,Nemerle,Fantom,Delphi,Pascal,Ada,Modula-2,Oberon,COBOL,Fortran,PL/I,ALGOL60,AlgolW,Simula,BCPL,CPL,B,BLISS,BurroughsLargeSystems,BASIC,VisualBasic,FoxPro,Clipper,QuickBasicQBasic,QBASIC,TurboBasic4.5,MicrosoftBASIC7,AutoLISP,Prolog,Mercury,Oz,Agda,Coq,Lean,Idris,Isabelle,Twelf,Epigram,Cayenne,Curry,Mizar,NuPRL,Matita,HOLLight,Hawk,Gondol,Maude,TermWare,Pinocchio,Theorema,ProofPower,Metamath,Minispec,Ynot,Lambda-PROLOG,LarchProver,Foil,Why3,Alt-Ergo,SPARK,VDM,Z,TLA+,Alloy,Boogie,ESC/Java,Spec#,Dafny,VeriLog,SystemVerilog,VHDL,OpenVera,ABC,Chisel,BluespecSystemVerifier,andVerilator.Inaddition,compoundwordscomposedofthesewordscanalsobedetected.Forexample,PythonandRubycombinedtoformPythonRubyorJavaandScalacombinedasJavaScala.However,theorderofScalaandJavamustnotbereversed",
+        "rejected_dialogue_summary": "1.以下に示すPython、Ruby、Java、C++などのプラグラム言語のうち、ユーザーが指定したものをドキュメントから検索する。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を訪れることを希望している。特定の場所はまだ決めていない。",
+        "chosen_dialogue_summary": "-私は友達と一緒に旅行することを計画しています。私たちはまだどこへ行くかは決まっていませんが、私たちは日本の北部に行きたいと思っています。",
+        "rejected_dialogue_summary": "-友人9人と一緒に旅行を計画している。-北海道に行きたいが、行き先は決まっていない。"
+    },
+    {
+        "all_short_dialogue_summary": "(1)Bは部活動の9人の友人たちと共に北海道へ旅行に行くことを希望している。(2)9人全員で食を楽しむことを望んでおり、各自が好物を選び、分かち合えるような食べ方を好む。(3)食べ物の例として挙げられたものは以下の通りである。a.いくらb.ウニc.イカ",
+        "chosen_dialogue_summary": "BisplanningtotraveltoHokkaidowithninefriendsfromhisclubactivities.Hewantstoenjoyfoodwithallnineofthem,andhelikestochoosehisfavoritefoodandshareitwithothers.Someexamplesoffoodhementionedare:a.salmonroeb.seaurchinc.squid",
+        "rejected_dialogue_summary": "Bとその部活の仲間9人は、好きなものを分け合って食べる楽しみを味わうために、北海道旅行を計画している。彼らは、イクラ、雲丹、烏賊などを食べたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Question--Q:Howcanwesummarizetheaboveconversation?A:",
+        "chosen_dialogue_summary": "##要約原文-Howcanwesummarizetheaboveconversation?-A:WecansummarizeitbysayingthatBisinterestedinvisitingplacesrelatedtohistory,culture,andnature.TheyhavealreadyvisitedsomeplacesintheUnitedStatesandareplanningtovisitmoreplaces,suchastheGrandCanyonandtheGreatSmokyMountainsNationalPark.Balsomentionedthattheyliketolearnaboutdifferentculturesandenjoylearningnewthings.##生成文章Bは歴史、文化、自然に関連する場所を訪れることに興味があり、すでにアメリカのいくつかの場所に訪れており、さらにグランドキャニオンやグレートスモーキーマウンテン国立公園などの場所も訪れたいと考えている。また、異なる文化について学び、新しいことを学ぶことが好きだと述べた。",
+        "rejected_dialogue_summary": "##要約結果|生成モデル|要約文||:---:|:----:||GPT-2|A:WecansummarizetheaboveconversationbysayingthatBisinterestedinvisitingplacesthathaveculturalandhistoricalsignificance,suchasmuseumsandancientruins.|"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-食べ物は海の幸が多く、イクラや生うになどが好物である。特定の料理にこだわりはなく、全体的に美味しければ満足である。-観光としては山が気になるようであり、具体的な山の名前は挙がっていないものの、高いところから景勝地を見たいと思っている。",
+        "chosen_dialogue_summary": "-海鮮料理を楽しみながら、山から眺める景色も堪能したいと考えている。",
+        "rejected_dialogue_summary": "Bは、海産物を好み、特にいくらと生ウニが好きである。また、山に興味があり、景色を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の仲間9人を連れていき、滞在中は北の味覚を堪能することを希望している。具体的な行き先は未定だが、Bが興奮気味で話していることからも分かるように、彼女の頭の中ではすでに旅のプランができあがっているようだ。食欲旺盛な様子が伺えるため、積極的に食べ物の話題を振ってみたところ、好物は海の幸であることが判明した。海産物の中でもイクラや生うには特にお気に入りのようである。宿泊先の近場で安くておいしくて見栄えの良い料理を提供している店をいくつかピックアップし、その中から彼女に選んでもらうことにした。その結果、魚介類を自由に組み合わせることができる「朝市場あっけし」という店に行くことに決まった。ただし、この店は水曜日に定休日を設けているため注意が必要である。",
+        "chosen_dialogue_summary": "Bさんは部活の友達と一緒に北海道へ行く予定で、食べたいものは新鮮な海鮮料理です。特にいくらと生ウニがお気に入りです。お店選びのポイントは値段が安いことと、見た目がきれいなことです。##要約したい文章の入力```pythontext=\"Bは部活の仲間9人を連れいき、滞在中は北の味覚を堪能することを希望している。具体的な行き先は未定だが、Bが興奮気呑みで話してより、彼女の頭の中では旅のプランができあがらせため、食欲旺盛な様子が窺えそうである。食べ物についても詳しく聞けば、好物は海の幸であることが判明した。海産物のなかでもイクラや生ウニはとくにおきにいろんなごちのゆわさで、宿泊先の近場で安くでおいしいで見栄ゑの良い料理を提供し、その中からBに選択をしゃっとする予定であった。実際には、水曜日に定懇日を設けていませるため、注意が必要です。\"```##必要なライブラリの読み込み```importpandasaspdimportnumpyasnpfromsklearn.feature_extraction.textimportTfidfVectorizer,CountVectorizerpd.set_option('display.max_colwidth',-1)````##TF-IDFベクトルを作成する###テキストデータを形態素解析し、単語の出現頻度を",
+        "rejected_dialogue_summary": "Bさんは部活の友達と一緒に北海道のグルメを楽しみたいと考えている。まだ行く場所は決まっていないが、海鮮料理が大好きなので、旬の食材を使ったメニューが豊富な店にしようと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは50歳の女性であり、夫と旅行に行く予定である。Bが希望する旅行先は箱根本町であり、その目的は観賞型の旅行であると推測される。具体的な旅行プランはまだ決めていないようだが、Bと夫が行きたがっている場所はアン・ノイ・エと呼ばれる場所である。この場所について、Aは詳しい情報をBに提供している。Aの説明によると、この場所には美味しい料理を提供するレストランがあるようだ。さらに、旅行中に訪れたい場所としてBから提案されたのは、オーシャンビューのホテルである。しかし、このホテルは予約が埋まっているため、他のホテルを検討する必要がある。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhoplanstotravelwithherhusband.ShewantstogotoHakone-machiforasightseeingtrip.Althoughshehasn'tdecidedonaspecificitineraryyet,sheandherspouseareinterestedinvisitingaplacecalled\"AnNoyE\".AccordingtoA,thisplacehasarestaurantthatservesdeliciousfood.Additionally,Bsuggestedvisitinganocean-viewhotelduringtheirtrip,butitisfullybooked,sotheyneedtoconsiderotheroptions.",
+        "rejected_dialogue_summary": "箱根町を訪れる50代夫婦は、美しい景色を楽しみながら食事を堪能したいと考えている。旅行の計画は決まっておらず、まだホテルの予約もできていないが、行き先として候補に挙げられているのは「アンノイエ」という場所だ。この地域には、海を見渡すことができるホテルがあり、そこで美食を楽しむことができるとのこと。ただし、すでに予約がいっぱいなので、別の宿泊先を探さなければならない。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は北海道である。-友人9名と行く予定である。-目的は食べ物を楽しむことである。-食べたことのないものや美味しそうな料理を選びたい。-おすすめの料理は「活いか」、「本まぐろ」などである。また、「いくらの丼合わせ」や「うになどのいろんな魚介類を乗せた丳」もお勧めらしい。",
+        "chosen_dialogue_summary": "-北海道で、友達9人と、食べることを目的とした旅行に行く。##構造化データ```json{\"question\":{\"id\":1,\"_text\":\"Bは、Aと一緒に、どのような目的の旅行を計画していますか？\"}}```",
+        "rejected_dialogue_summary": "友達9人と食べ歩きを目的に、活イカや本マグロ、イクラの丼や多種の海鮮を盛り合わせたどんぶりなどを食べに行く。##問題設定###前処理-文字列の分かち書き-名詞句の抽出-`名詞`と`動詞`,`形容詞,`数詞の組み合わせで抽出した。-要約の対象となる語の出現回数のカウント##実装```pythonimportrefromcollectionsimportCounterdeftokenize(text):returnre.findall(r'\\w+',text.lower())defextract_noun_phrase(tokenized_text):foriinrange(len(tokened_text)):forjin[i+1,i+2]:ifj>len(tokenzed_text)-1:breakeliftokenized[i]in['名','動']and\\tokenzied[j]=='名':yield''.join([tokenized[k]forkin(i,j)])defcount_words(text,words):count=Counter()forwordinwords:count[word]+=text.count(word)returncountif__name__=='__main__':text=\"\"\"旅行先:北海道友人数:9目的:食べ物食べたいもの:活いか,本まごろ,いくら,うに,魚介\"\"\"words=set(tokenize(text))noun_phrases=[phraseforphraseinextract_text(text)]counts=count_text(noun_phrase,text)print(counts.most_common(10))```##結果```[('食べる',2),('活いかの丷',1),('本鮪',2),('いくら',3),('丟',4),('うにと海の幸',5),('海産物',6),('食事',7),('旅行',9)]```"
+    },
+    {
+        "all_short_dialogue_summary": "北海道へ旅行に行くことを希望している。友人9人との旅行である。行き先は北海道であり、目的は食べ物を楽しむことである。",
+        "chosen_dialogue_summary": "#要約1「友達と一緒に、食べることを楽しみながら、旅行へ行きたい」(長さ:10.0)「食べ歩きをしながら、友だちと旅行をしたい。」(11.4)#結果の説明1つ目は、単純に旅行の目的を述べたものです。2つ目の方が、情報量が多く、より良い結果と言えます。",
+        "rejected_dialogue_summary": "-北海道旅行を計画している。-友人と一緒に食べることが目的である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の仲間である9人の友人たちとともに北海道へ旅行に行くことを希望している。Bが希望する食事は海の幸をふんだんにつかったものであり、イクラや車海老、鮭などが好物である。夕食は朝から営業している「朝市場あかぼし」で購入する予定である。旅行中は「函館山」へも訪れることを検討している。",
+        "chosen_dialogue_summary": "BisplanningatriptoHokkaidowith9friendsfromhisclubactivities.Hewantstoeatalotofseafood,suchassalmonroe,shrimp,andsalmon.Fordinner,heplanstobuyfoodfromthe\"AsaIchibaAkaboshi\"market,whichisopenallday.Duringthetrip,Bisconsideringvisiting\"Hakodateyama.\"",
+        "rejected_dialogue_summary": "Bは北海道へ旅行に行くことを希望している。Bは部活動の仲間である9人の友人たちとともに北海道に向かう予定である。海の幸をふんだんに使った食事が好きで、イクラや車海老、鮭などを好む。夕食は朝から営業している「朝市場あかぼし」で購入することを検討している。また、「函館山」にも訪れたいと考えています。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-9人の部活動の仲間と行く旅行であり、全員で楽しむことを重視している。",
+        "chosen_dialogue_summary": "-部活の9人で全力で楽しみたいと思っている。",
+        "rejected_dialogue_summary": "-Bは部活の友人と一緒に、楽しい旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の仲間と旅行に行く予定である。-北海道を旅行先として検討している。-特に北斗市を訪れたいという希望がある。-食べ物を楽しむことが目的の一つであり、イクラや生うになどの魚介類を好んでいる。-夜景を観賞することを希望している。",
+        "chosen_dialogue_summary": "-北海道に旅行し、部活の友達と一緒に食べ歩きを楽しみ、夜には美しい景色を眺めたい。",
+        "rejected_dialogue_summary": "-私たちは9人で旅行を計画しており、北日本を探索するつもりです。-その中でも特に関心があるのは、海産物の豊富さと美しい景色で知られる道南地域です。-具体的には、函館市や松前町、せたな町などが候補に挙がっています。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道を旅行する予定である。-9人の友人たちと旅行に行く。行き先は北の大地である。部活動の仲間とともに北の地へ向かう。-食べ物を楽しむことを目的としている。美味しい料理を堪能するために旅行へ出かける。海の幸を求めて北へ旅立つ。魚介類を中心とした料理が目当てである。おいしそうな海産物に出会うために北国へ足を運ぶ。食欲を満たすために旅に出る。食べ物にこだわった旅行プランを組む。様々な食材を用いた料理に舌鼓を打つことを目的にしている。味覚を刺激する旅へ繰り出す。グルメツアーを企画する。多種多様な料理の数々に魅了される。新鮮な素材を使ったメニューに心を奪われる。豊かな食文化に触れるために訪れる。舌の肥えた人々が集う場所へ赴く。",
+        "chosen_dialogue_summary": "-友達9人と一緒に、食べものを楽しみたいと思っています。",
+        "rejected_dialogue_summary": "-私たち9人は、部活のメンバーと一緒に、北に旅行に出かけます。目的は、美食を楽しみ、海鮮料理などを味わうことです。私たちは、食べることが大好きなので、この旅行を計画しました。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する予定である。-9人の友人たちと旅行に行く。-食事については食材を選ぶことができ、1人1つずつ注文することが可能である。食べ物はイクラや生うになどの魚介類がメインであり、イチオシのメニューはいくらのぶつかけご飯である。また、お持ち帰りも可能なため、宿泊先のホテルなどに持ち込むこともできる。",
+        "chosen_dialogue_summary": "-9人の友だちと一緒に、食べたいものを自分で選んで食べることができる、海の幸が豊富な北海道への旅行を計画している。```importtensorflowastfimportnumpyasnpfromtensorflow.keras.preprocessing.textimportTokenizermodel=tf.keras.models.load_model('model.h5')text=\"B\"text_list=[text]tokenizer=Token器()tokenizer.fit_on_texts(text_list)word_index=tokenizer.word_indexvocab_size=len(word_index)+1sequence_length=20input_sequences=[]forsequenceintext_list:foriinrange(sequence_length-len(sequence)):input_sequences.append(sequence+['<PAD>']*i)maxlen=max([len(x)forxininput_sequence])input_sequence=np.array(pad_sequences(input_sequence,maxlen=maxlen))input_tensor=input_tensor.reshape((1,sequence_length,vocab_size))prediction=model.predict(input_tensor,verbose=0)[0]index=prediction.argmax(axis=-1)output_sentence=''.join(tokenizer.index_word[index])print(output_sentence)```",
+        "rejected_dialogue_summary": "-9人で行く旅行では、好みの料理を食べることができる。-北海道で食べられる料理は、主に海産物である。"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBと共に部活動の仲間9人を連れ、旅行に行く予定である。-北海道を訪れることを希望している。特定の場所は指定しておらず、目的は食を楽しむことであると述べている。-Bは好物を尋ねられ、魚介類を好むと答えている。そのため、Aは魚料理を提案している。-Aが提示した料理の例は以下の通り。-いくらの美味しさをアピールするために、イクラを用いたメニューを多く挙げている-イクラの他には、鮭、ウナギ、カニ、貝類などが取り上げられている-これらの食材は、いずれも海産物である-食材の多様性に配慮している-提案された料理は全て和風のものであり、洋風料理については触れられていない-この点について、Bは特段の反応を示していない",
+        "chosen_dialogue_summary": "Bが好きな食べ物は海の幸であり、その中でも特にいくらが好きだ。Aもそのことを知っており、いくらをふんだんに使った料理や、他の海鮮も取り入れた和食中心の献立を考えてくれた。",
+        "rejected_dialogue_summary": "Bが好きな食べ物は、海の幸である。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行先は函舘である。-観光は山登りや海産物を楽しむことである。",
+        "chosen_dialogue_summary": "-函館は海と山に囲まれた自然豊かな街である。-海の幸を味わい、山を登って景色を堪能することができる。",
+        "rejected_dialogue_summary": "山と海の両方を満喫できる函館の魅力"
+    },
+    {
+        "all_short_dialogue_summary": "--let'sgo!--1.A:こんにちは。2.B:はじめまてす。3.4.今日の天気は？5.天気予報は曇りのち雨。6.傘を持っていったほうがよさそう。7.昨日の夜は寒かった。8.今夜も寒くなるみたい。9.温かい格好で出かけよう。",
+        "chosen_dialogue_summary": "A:おはようございます。B:初めてお会いします。今日は天気が悪く、雨が降りそうです。昨日は夜に寒くなりましたが、今晩も気温が下がるようです。暖かい服装で外出しましょう。",
+        "rejected_dialogue_summary": "-天気が悪い-雨が降るかもしれないので、雨具を持って行った方がいい"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を訪れることを希望しており、その中でも特に関心を持っているのは、五稜郭や五島軒などの歴史的建造物である。-観光スポットを巡る際には、現地の人の話を聞きながら、地元の魅力を発見することが大切であると考える。",
+        "chosen_dialogue_summary": "-僕は友達と一緒に旅行するのが大好きです。特に、僕が興味があるのは五角形の形をした城や美味しい食べ物がたくさんあるレストランです。-そして、旅行をする時は、たくさんの人と出会い、色々なことを学びたいと思っています。",
+        "rejected_dialogue_summary": "-北海道旅行では、友達と一緒に五角形の城壁が特徴的な五芒星の形をした城郭である五岐郭と、明治時代に創業した老舗レストランであるゴトウケンを楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的：部活動の同級生9人との北海道旅行。-行き先：函樺-食べ物：生の魚介類-寿司、刺し身-好み：特になし-選択肢：いくらの美味しさを堪能できるもの-例：活いか、イクラ-店：やよいの水-朝市-メニュー：あたたかいご飯-漬物-いくら-鮪-ウニ-イカ",
+        "chosen_dialogue_summary": "部活の仲間と行った北海旅行で食べたものは、鮮度抜群の海の幸でした。特に、海鮮丼はイチオシです。",
+        "rejected_dialogue_summary": "-部活の仲間と行った函館旅行では、生魚を食べる機会が多かった。特に、活きの良い魚が食べられる店を選んだ。中でも、いくら丼がおいしかった。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9人との旅行で北見を訪れ、好物の魚介類を堪能することを希望している。朝食にはいくらの海苔、夕食ではカキとシカモの料理を楽しむ予定である。旅行中には自然が豊富な山々を散策することも希望しており、その中でも特におすすめなのは、標高334mの高さを誇りながらも多くの野生動物や植物に恵まれた函舘山である。",
+        "chosen_dialogue_summary": "Bさんは、友達と一緒に北海道を旅行し、海の幸を楽しみたいと思っています。特に、朝ごはんにはイクラのおにぎり、夜ご飯には牡蠣と鹿肉を使った料理が食べたいそうです。また、旅行中に自然豊かな山を歩きたいと考えていて、函館山がオススメだということです。",
+        "rejected_dialogue_summary": "北海道の自然豊かな函館山で、海の幸を味わいながら、山歩きを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "##まとめ##参考文献1.テキストマイニング入門",
+        "chosen_dialogue_summary": "##メモ#####要素抽出######単語の置き換え###-例えば、「美術館」と「博物館」は同義語とみなして置換する###句の削除###",
+        "rejected_dialogue_summary": "#1章-どのような手法を用いるのか-形態素解析-文字列を単語に分割する-品詞を判定する(名詞、動詞など)<br>例えば「明日は天気が良いので、散歩に行こう」という文章があった場合、「明」「日」「は」「天」「気」「が」「良」「い」「の」「で」「、」「散」「歩」「に」「行」「こ」「う」といったように分解し、品詞もそれぞれ「名」「詞」「助詞」などと分類します。このように文章を構成する最小単位である「文字列」や「語句」を抽出する作業を「分かち書き」と呼びます。-分析の流れ![flow](https://user-images.githubusercontent.com/34699155/119004905-5f5e3800-ba2f-11eb-9f66-7e3e0f1c5b4b.png)-必要なソフトウェアのインストール```bashsudoapt-getinstallpython3-pippip3installmecab-python3mecab-config--list-dic-dir```-MeCabの辞書のダウンロードと解凍###pythonのバージョンを確認するコマンドpython3--version<br>###pip3を利用して、MeCabをインスールする方法####pipの最新版を入れるwgethttps://bootstrap.pypa.io/ez_setup.py-O-|sudopythonpipsiinstall--no-dev--python=/usr/bin/python3.6pip==19.0.3<br>####python2とpython3のpipを切り替える#pip2aliaspip=pip2<br>#pip2系をデフォルトで起動するように設定する#pythonを3系にするexportPIP_DEFAULT_PYTHON_INTERPRETER=python2.7<br>#pipをpythonの2.x系で動かすように指定する<br><br>pipinstall-Upipsetuptoolswheel<br>pipinstallwheel###MeCABのパッケージをpipで入れて"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行について-9人の友人たちと行きたがっている-行き先は北の果ての地である函舘-観光スポットは「五稜郭」と「金森赤レンガ倉庫」-旅行の目的はグルメを堪能すること",
+        "chosen_dialogue_summary": "-友達9人と函館に旅行に行きたい-五角形の星型の要塞と赤煉瓦の建物を見たい-美味しいものを食べたい",
+        "rejected_dialogue_summary": "-9人の友達と一緒に函館へ旅行に行きたいと思っています。旅行で行く予定の場所は、北に位置する街です。見どころは5角形の城郭と赤い煉瓦造りの建物が並ぶ場所です。この旅行では、美味しい食べ物をたくさん食べることを楽しみにしています。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行について、9人の部活動の仲間と旅行に行く予定である。-行き先は北海道、目的は食べ物を楽しむことである。-食べ物に関しては、一つ一つ注文するというよりは自分たちで選びたいという希望がある。",
+        "chosen_dialogue_summary": "-9人で食べ歩きを楽しみながら、道内を巡る旅行を計画している。-【解答例】9名の友人と共に、食事を堪能しながら道内の名所を訪れる旅行の計画を立てている。",
+        "rejected_dialogue_summary": "-部活の9人で、食べたいものを選んで食べるために、旅行先を北の大地に決めた。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-旅行の目的は美味しい食べ物を食することである。特におすすめの料理はイクラや生うになどの新鮮な魚介類である。また甘海老もおいしそうだ。さらに、夕食にはカキを好むようだ。",
+        "chosen_dialogue_summary": "-北海道の旅行では、友達と一緒に食べたいものを食べることが目的です。私が特に好きなのは、新鮮で美しい海の幸で、甘いエビやカニ、そして夕方には牡蠣が大好きです。##解答私たちの旅行は、美食を楽しみながら、海鮮料理を味わうことから始まります。",
+        "rejected_dialogue_summary": "-北海道の海鮮料理を食べることが目的の旅行である。##実行方法###依存ライブラリのインストール```bashpipinstall-rrequirements.txt```###要約モデルをダウンロードする-BERTベースのモデル```cdmodelswgethttps://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-128.zipunzipuncased*.zipcd../```-RoBERTaベースモデル-ここから最新版のものをDLしてきてください```cdmodels/roberta-base/gitclone--depth1--single-branch--branchroberta-large-mnlp-2020-09-28https:/github.com/ymcui/mbert.gitcdmbert/python-mtorch.distributed.launch--nproc_per_node=4train.py\\--model_name_or_pathrobertabert_base\\--do_train\\--output_dir./output\\--overwrite_output_dir\\--per_device_train_batch_size32\\--learning_rate2e-5\\--num_train_epochs3\\--fp16\\--save_steps1000\\--gradient_accumulation_steps=1\\--max_seq_length512\\--weight_decay0.01\\--warmup_ratio10\\--seed42\\--logging_dirlogs\\--eval_all_checkpoints\\--load_best_model_at_end\\--evaluate_during_training\\--evaluation_strategyepoch\\--label_smoothing_factor=0```-XLNetベースモデルの場合```#モデルをローカルに落とし込むcd../models/xlnet-base-cased/wgethttp://dl.fbaipublicfiles.com/fairseq/models/xnli_xlnet_base_cased.pt.tgztarxzvfxnli*.tgzcd..```###文章の読み込み以下のように実行することで、上記の文章が読込まれます。```pythonpythonmain.py--input_fileinput.txt--summary_fileoutput.txt\\--bert_modelmodels/model_dir/--"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の9人の友人たちと北海道へ旅行に行くことを希望している。Bが希望する旅行先は函舘であり、目的は美味しい食べ物を食すことである。夕食は海の幸を多く扱う店を希望しており、その中でも特におすすめの店は「朝市場あけぽの食堂」である。この店では様々な海産物の中から自分が好むものだけを選ぶことができ、またその場で調理してもらうことができる。朝食の時間は7時～15時で水曜が定休日となっている。さらに、夕方以降の夜食には「マルートモ水産」という店があり、ここのお勧めメニューはカキとシシカモの料理である。",
+        "chosen_dialogue_summary": "Bとその友達は、函館に旅行し、食事を楽しみたいと考えている。特に、朝市で新鮮な魚介類を味わうことを予定しており、海鮮丼や刺身などが食べられる。",
+        "rejected_dialogue_summary": "函館に9人で行き、海鮮料理を食べる。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--1.Bは50歳以上の男性である。2.9人グループのうち、Bは男性1人。3.北海道旅行はBが企画した。4.観光目的はグルメ。5.食べたいものは海産物。6.特にイクラと甘えびが好物である。",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.Heistheonlymaninagroupof9people.BplannedtheHokkaidotrip.Thepurposeofthetripistoeatseafood,especiallyikuraandamaebi.",
+        "rejected_dialogue_summary": "50代男性のBさんは、9人の仲間と一緒に、自分で計画を立てて、海の幸を味わうために、北の国を訪れました。彼の目当ては、新鮮な魚介類で、特にお気に入りは、いくらや甘エビです。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行先を検討している。-9人の部活動の仲間と旅行する予定である。",
+        "chosen_dialogue_summary": "-札幌市に宿泊することが決まっている。-##実行方法```bashpython3main.py```",
+        "rejected_dialogue_summary": "-部活のメンバー9人で北の国へ行く-"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行について-9人の友人との旅行-行き先は北斗-観光名所：オタモイ海岸-波の浸食によってできた断崖絶壁-映画やドラマの撮影地としても有名-「北の国から」や「白い巨塔」などのロケ地-自然の迫力と美しさを感じることができる-海岸沿いには遊歩道も整備されている-歩きながら海の絶景を楽しめる-時間帯によっては夕日や朝日も見える-特に夕暮れ時は幻想的な光景が広がる-夜景も美しく、ライトアップされた街並みも魅力的",
+        "chosen_dialogue_summary": "-北海道旅行の行程は、9名の友人が参加し、最初の訪問地は「札幌」と「小樽」でした。その後、函館を経由して、最終目的地である「知床半島」に向かいました。-私たちは、北見市にある「オホーツク流氷館」に立ち寄りました。館内には、流れる氾濫の映像が展示されていましたが、残念ながら実物を見ることはできませんでした。さらに、私たちは「網走監獄」にも訪れました。この施設では、明治時代の刑務所の様子を再現しており、当時の囚人の生活や刑罰の歴史を学ぶことができました。また、監視塔や独房など、実際に使用されていた建物も残されており、独特の雰囲気を味わうことができます。",
+        "rejected_dialogue_summary": "-北海道旅行の際に訪れた北方の町で、波による侵食で形成された断層が特徴的な海辺の景勝地である。映画・テレビ番組の舞台にもなったことから知名度が高く、自然が作り出した壮大な景観を堪能できる。また、散策路が設けられているため、海沿いの景色を楽しみながら歩くこともできる。時間や天候によって異なる美しい風景を見ることができ、夕方から夜にかけては街の灯りが海に映し出され、ロマンチックな雰囲気を醸し出す。"
+    },
+    {
+        "all_short_dialogue_summary": "-部活動の仲間9人を連れていき、9月に北海道へ旅行に行く予定である。-旅行の目的は食べ物を堪能することであり、魚介類を中心に食べようと考えており、好物はイクラ、ウナギ、イワシである。カキは好きだが生で食すことはない。昼食は海の幸を選ぶことができる店を希望している。",
+        "chosen_dialogue_summary": "-私は、部活の友人と一緒に、食べることを目的として、カニやウニなどの海産物が豊富な地域を訪れます。私が好きなものは、いくら、うなぎ、いわし、牡蠣ですが、生牝は食しません。また、海鮮丼を食べたいと思っています。",
+        "rejected_dialogue_summary": "-9人の友人と共に、食事を楽しむ目的で、海産物が豊富な地域への旅行を計画している。特に好きなものは、いくら、うなぎ、いわしであるが、生牡蠣は避けたい。ランチには海鮮料理が選べる店に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは9人グループの旅行であり、目的の場所は北の地である。Bが好む食べ物は海産物であり、その中でもイクラやうになどの新鮮な魚介類を好んで食べていることが分かる。好物のひとつであるシーシャモは夜遅くまでやっている店を見つけられなかったため、夕食は別の店を予約することとなった。旅行先の目的は自然を楽しむことであり、おすすめのスポットとしては山が挙げられていた。",
+        "chosen_dialogue_summary": "Bは9人グループの旅行であり、目的の場所は北の地だ。Bが好む食べ物は海産物で、その中でもイクラやうになどの新鮮な魚介類を好みて食んでいることが分かった。好物のひとつであるシーシャモは夜遅くまでやられていない店を見抜けられなかったため、夕食は別の店を予約することとなった。旅行先の目的は自然を楽しむことで、おすすめのスポットとしては山が挙がわれていた。",
+        "rejected_dialogue_summary": "北海道の9人の旅行で、シーフードを楽しみ、山で自然の美しさを満喫した。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の友人たちと旅行に行く予定である。-北海道を旅行先として検討しており、その中でも函館を訪れたいという希望がある。-また、旅行中には新鮮な魚介類を楽しむことも重要な要素として挙げられている。-中でもいくつかのメニューが好まれているようであり、例えばイクラや生うになどが含まれる。-他にも、刺し身や寿司なども好まれている。-最終的には、選択肢の中から一つを選ぶことになった。-選ばれたのは、「朝市食堂」-この店舗では、新鮮な海産物を自分で選び、好みのネタを乗せたどんぶりが味わえるという。-夜間には閉店するため、夕食時には別の店を利用することになった。-友人たちの希望を聞きながら、最終的に「マルトモ水産」という店に決まっている。-食事の後には、「函舘山」のロープウェイを使って山頂まで行き、そこから夜景を見下ろす予定だ。-山頂に到着するまでの所要時間は約15分であり、料金は大人が片道1500円となっている。",
+        "chosen_dialogue_summary": "-北海道旅行の目的地として、9人グループの友達と一緒に、海鮮丼が食べられる「朝食屋さん」を訪れることになりました。-夕食は、別のお店で食べることになっているので、夜には店が閉まってしまいますが、山の上にある「山の頂上」に行って、景色を眺めることができます。",
+        "rejected_dialogue_summary": "Bは、9名の友達と一緒に旅行を計画している。旅行の候補地は北海-道で、特に函-館に行きたいと考えている。また、海鮮料理を楽しみたいという要望もある。具体的-には、いくら、生ウニなどのメニュ-ーを好んでいる。さらに、寿-司や刺身も好きだという。その中から選んだのは、朝-市で食べられる海の幸を使った丼だ。この店では、自分-で好きな具材をチョイスできる。ただし、夜は営業していないので、他の店で夕飯を食べることになっている。その後、ロ-ープウエイに乗って、山の頂上に登り、美しい夜-景を眺めたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の仲間たちと旅行に行く予定である。-北海道を旅行先として検討している。-予算は考慮していない。-食べ物を楽しむことを目的としている。-特に海の幸を好む。-夜景を観賞することを希望している。",
+        "chosen_dialogue_summary": "-部活の9人で北海道旅行を計画中。食べ歩きが目的で、海産物と夜の景色を楽しみたい。##解答例-部活メンバー9名で旅行する。行き先は北の地。食い倒れが目標で、新鮮な魚介類と美しい夜空を堪能したい。",
+        "rejected_dialogue_summary": "-部活のメンバーと北海道旅行を計画中で、食事を楽しみ、海産物が好きで夜の景色を眺めたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9名とともに北方へ旅行する予定である。Bが希望する観点は以下の通りである。-北海道の名産である海産物を食すこと-特に生の魚介類が好ましい-寿司や刺し身などが挙げられる-例えば、イクラや生うには好物である-イカも好む-鮪も同様-シシャモンも美味であると認識している-カキも生食が可能であれば試食を希望-蒸したカキは食べたことがない-食べたいとは思っている-ローストビーフやステーキなどの肉料理も選択肢に入る-パスタやピザなどのイタリアンも試す価値がある-中華料理や韓国料理などもアリ-和食は避けたい-洋食も避ける-刺身は最優先-牛肉や豚肉、鶏肉も食する-ハンバーグやカツレツ、唐揚げもOK-焼き鳥や焼肉は外せないメニュー-フライドポテトやコロッケも捨て難い-ラーメンやうどんも気になるところ-天ぷらや蕎麦も悪くはない-肉じゃがや筑前煮などの和惣菜も食べたくなる-餃子やシュウマイなどの点心も魅力的-ピザやパスタなどの洋風料理は食欲をそそるもの-サンドイッチやホットドッグなどのサンドウィッチ類も面白そう-クレープやワッフルなどのデザート類にも心が動く-ドーナツやマフィンなどのスイーツ類は絶品-チョコレートやアイスクリームなどの甘いものは別腹-ジュースやスムージーなどの飲み物も",
+        "chosen_dialogue_summary": "Bisapersonwholovesseafood,especiallyrawfish,suchassushi,sashimi,salmonroe,rawsquid,andrawtuna.Healsolikesshishamo,oysters,roastbeef,steak,pasta,pizza,Chinese,Korean,Italian,hamburgers,cutlets,friedchicken,yakitori,yakiniku,Frenchfries,croquettes,ramen,udon,tempura,soba,nikujaga,chikuzen-ni,gyoza,shumai,pizzas,pastas,sandwiches,hotdogs,crepes,waffles,donuts,muffins,chocolates,icecreams,juices,smoothies,etc.",
+        "rejected_dialogue_summary": "「Bとその友人は、海鮮料理を中心とした食事を楽しみたいと考えている」【解説】本文は、Bについての情報が多く記述されており、また、食に関する情報も多いため、文章が長くなりがちです。そこで、本問では、「B」という人物に焦点を当てて、簡潔にまとめることが求められています。"
+    },
+    {
+        "all_short_dialogue_summary": "17歳の高校生であるAは友人9名と共に部活動の合宿を兼ねた旅行に行く予定でいる。旅行先は北海道である。Aの希望としては海産物を中心とした料理を食すことである。そのため、Aが好む食材を聞き出し、更にそれらを提供する店を提案する。ここまでの会話を通じてAから得られた情報は以下の通りである。・9人グループであること・高校2年生(17-18歳)・性別は不明だが、女性である可能性が高いここからはこれらの情報をもとにAに合った旅行プランを考える。まず、人数が多いため宿泊施設の手配が必要となる。対象年齢は17~18であるため、大人向けの施設が望ましいだろう。次に食物であるが、これについては既に話がまとまっているので考慮する必要はない。最後にアクティビティについてだが、これに関してはA自身が希望を述べているのでそれに従うことにする。以上を踏まえた上で具体的な旅行日程を以下に示す。9月30日10:00羽田空港発11:30新千歳空海港着12:45レンタカーを借りる13:15札幌市内に移動14:20さっぽろテレビ塔へ15:40定山渓温泉へ向かう16:50定宿に到着、入浴18:10夜ご飯19:25温泉街を散策20:55就寝10月1日(朝食はホテルで済ませる)9:05ホテルを出発、レンタカーで移動する9;25市内をドライブしつつ、コンビニで昼食を購入する。10;50余市のニッカウヰスキー工場を見学する(所要時間1時間30分)12;20道の駅で休憩、買い物をする。13;10五島軒本店にて�",
+        "chosen_dialogue_summary": "Aisa17-year-oldhighschoolstudentwhoplanstogoonatripwithninefriendsaspartofaclubactivity.ThedestinationisHokkaido.A'shopeistoeatseafood-centeredcuisine.Basedonthis,wewillproposearestaurantthatprovidesthedesiredingredients.Throughthisconversation,theinformationobtainedfromAisasfollows.・Thereare9peopleinthegroup・Highschool2ndyear(17-18yearsold)・Thegenderisunknown,butitislikelytobefemaleFromhere,basedontheseinformation,atravelplansuitableforAwillbeconsidered.Firstofall,sincetherearemanypeople,accommodationarrangementsarenecessary.Sincethetargetageis1",
+        "rejected_dialogue_summary": "友人の旅行計画を手伝う。17～18才の女子高生9人が、海鮮料理と観覧車を楽しみたいと希望しているので、定番の名所やグルメスポットを紹介する。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的：部活動の同級生9人との旅行-行き先:北海道-観光スポット:朝市・函舘山-アクティビティ:シャモの料理-食事:海鮮",
+        "chosen_dialogue_summary": "旅行は、部活の仲間と一緒に行ったもので、目的地は函館でした。朝早く起きて、市場に行きました。市場では、さまざまな種類の魚介類や野菜が売られていて、とても楽しかったです。その後、バスに乗って、山に登り、景色を楽しみました。また、温泉にも入ってリラックスしました。夕食には、地元の食材を使ったおいしい料理をいただき、みんなで楽しい時間を過ごすことができました。",
+        "rejected_dialogue_summary": "-部活の仲間たちと、海の幸を堪能しながら、函館山の夜景を楽しむ旅。【出典】https://www.kotobank.jp/word/%E8%A6%B3%E5%85%89%E6%94%BF%E7%95%8C-153592"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の仲間9人を連れていき、旅行先として北海道を希望している。具体的な場所としては函舘を挙げており、魚介類を中心とした料理を楽しむことを目的としている。さらに、野生の鮭の稚魚を用いた料理である「子持ちしやも」が好物であるため、夕食としての選択肢として検討している。",
+        "chosen_dialogue_summary": "1.Bは、部活のメンバーと一緒に、函館で海産物を食べる旅行を計画している。2.北海道旅行の候補地として、Bが提案したのは、北の大地である。3.その中でも、特に魅力的なのが、海の幸が豊富な「はこだて」という場所だ。4.旅行の目的は、新鮮な海鮮を堪能すること。5.夕食には、子どもたちが大好きな「こもちしゃも」を食べたいと考えている。6.海の恵みを存分に味わいながら、美しい景色を眺め、楽しい時間を過ごしたいと願っている。7.この旅行で、みんなの絆がさらに深まり、素晴らしい思い出が生まれることを期待している##サンプルコード```pythonimportpandasaspdfromsummarizerimportSummarizerdf=pd.read_csv('input.csv')text=df['text'].values[0]summary=Sumarizer().summarize(text)print(summary)```",
+        "rejected_dialogue_summary": "Bが部活のメンバーと一緒に函館へ旅行に行きたいと考えている。魚料理が好きで、特に子持ししゃもを食べるのが楽しみだという。旅行の目的は、美味しい食事を満喫することだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動のメンバーと旅行に行く予定である。-北海道へ旅行する。-北の玄関口である新千歳空港から入る。-空港からはバスでホテルへ向かう。-札幌市内に泊まる。-夜はすすきのの繁華街で飲み会をする。-飲み屋ではジンギスカンを楽しむ。-翌朝は朝食バイキングで朝から食べまくる。-朝食後はレンタカーを借りて北上する。-小樽で海産物を堪能した後、積丹半島をドライブ。-積丹ブルーの海を楽しませる。-帰りは洞爺湖を経由して登別温泉へ。-登別地獄谷では硫黄の匂いを嗅ぐ。-温泉街に宿泊。-次の日には旭山動物園を訪れる。-動物たちに癒される。-午後には札沼線のラベンダー畑駅で下車。-駅周辺を散策。-最終日もレンタルサイクルを利用。-市内をサイクリング。-昼食はラーメンで締める。-ニセコのスキー場でスノーボード。-宿泊施設はリゾートホテル。-食事はビュッフェスタイル。-滞在中はスキーや雪遊びで遊ぶ。-旅行の最後は新幹線で帰路につく。",
+        "chosen_dialogue_summary": "AはBと一緒に旅行を計画している。目的地は北の大地である北海道だ。まず、北方のゲートウェイ、新千歳空港に降り立つ。そこからバスに乗ってホテルに向かい、夜にはすすきの繁華街で宴会を開き、ジンギスカンの肉を食べる。朝はビュッフェスタイルならびっくめた後、レンターカーという乗り物を使用して北方へ進む。道中では小さんだけれども美しい積丹半島や登別温泉など多くの観光名所が待ち構えている。また、旅行者達には飼育員さんによって丁寧かつ情熱的に解説されていますので動画鑑賞会場でも人気上昇傾向です。帰宅時間になると再度電車駅周辺散策お勧める札新線ラヴエンダーハトキドウリゾートホテル泊宿",
+        "rejected_dialogue_summary": "-北海道旅行では、9人グループで北の大地を満喫する旅程が組まれている。まず、北海度への入り口となる新千歳空港でバスに乗りてホテルへ向かう。札幌市内に宿泊し、夜はすすきのの繁華街で飲み会を楽しむ。ジンギスカんを味わい、翌朝は朝食バイキングで朝から食べまくる。レンタカーを借った後、小樽で海産物を満喫しつづけ、積丹半島をドライブすれば、紺碧の海が目に飛び込み、心も体も癒させちゃい。帰路には洞爺湖を経由して登別温泉に滞在。地獄谷で硫黄の匂いを嗅ぎ、旭山動物園を訪ね、ラベンダー畑駅で下車し周辺を散策。最終日もレンタルサイクルを利用し都市をサイクリング。昼食はラーメンで閉め。ニセコのスキー場でスノーボードや雪遊びで過ごし最後は新幹線で師走に席を立てる。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-９人の友人たちと旅行する。-予算やスケジュールを考慮して決めた人数である可能性が高い。-行き先は函館である。-旅行の目的は食を楽しむことであり、具体的な食べ物としてはイクラや生うになどが挙げられている。-食べ物を選ぶ際には、全員が満足できるよう、各自の意見を尊重していることが伺える。-夜景を見たいという希望があり、実際に夜間の運行が行われている。",
+        "chosen_dialogue_summary": "-友達9人と、食事を楽しみながら、夜の風景を観るために、北海度のハコダテに行きます。##予測結果-友達と一緒に、美味しいものを食べたり、きれいな景色を見たりしながら、楽しい時間を過ごしたいと思っています。",
+        "rejected_dialogue_summary": "-友達9人と食事を楽しみながら、夜の景色を観るために、北の地、函舘へ行く。##出力結果###要約結果友だち９人といっしょに食べることと夜にきれいなものをみることを目的に、みんなの話を聞きながら北の大地であるはこだてにいく。###生成された文の長さ16##実行環境python3.6.9"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行に行く予定である。-9人の部活動の仲間と旅行する。-旅行の行き先は北海道である-行先の具体的な地名は明らかになっていない-例えば、札幌や小樽、旭川などが考えられる-なお、例として挙げた場所は実在するが、これらが正解というわけではない-実際の会話の中で提案されていたのは「函館」であった-ゆえに、これが行先であると仮定する-この場合、明確な根拠はなく、単に筆者の推測に過ぎないことに留意する必要がある-もちろん、これ以外の場所である可能性も排除できない-最終的な結論を導くためには、より多くの情報が必要となる-現時点では不確定要素が多く、断定的な判断を下すことはできないと言える-今後の展開に注目することで、新たな情報を得ることができるかもしれない-少なくとも現段階では、このような仮説を立てるにとどまる-未来の出来事を予測することは困難であり、常に変化する状況に柔軟に対応していくことが重要である",
+        "chosen_dialogue_summary": "「部活の友人9人と、北の大地を巡る旅に出る。候補地は、有名な観覧車がある街、歴史的な建造物が立ち並ぶ港町、そして雪景色が美しい街など、魅力的な場所が盛りだくさん。どの街を選ぶかはまだ未定だが、きっと素晴らしい思い出が作れることだろう。」",
+        "rejected_dialogue_summary": "-「部活の9人で北の大地を巡る旅に出る」という趣旨の発言があった。具体的には「北の玄関口」とも称される「空港」から「飛行機」に乗り、「旅の目的地」である「道内各地」を訪れる計画が立てられていた。ただし、詳細な日程や訪問先については未定であり、今後の話し合いによって決定されることになっている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは部活動の仲間9人を連れていき、親睦を深めたい。行き先は北海道で、その中でも特におすすめの場所は「函館」である。主な目的は食べ物を楽しむことであり、具体的には海の幸を堪能することだ。シャモも好物であるため、夕食には「海産酒場マルトモ水産」を予約する。遊びに関しては山が良いと考えており、「函館山」や「五稜郭」が候補に挙がっている。",
+        "chosen_dialogue_summary": "Bと部活のメンバー9名は、仲良くなりたいと考えている。旅行先として、海鮮料理が美味しいことで有名な「はこだて」を選んだ。メインイベントは海で獲れた新鮮な魚介類を味わうことで、特にシャケが好きなBにとっては楽しみな食事になるだろう。また、山の景色も楽しめるところが魅力で、「はんかくざん」と「ごりょくおう」も訪れる予定だ。",
+        "rejected_dialogue_summary": "「Bと部活のメンバー9名は、海鮮料理を楽しみ、山を満喫するために、仲良くなることを目的に、グループ旅行を計画した。」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道を旅行する予定である。-9人の部活動の仲間と旅行に行く。-予算の都合上、1人当たりの負担額を減らすために、グループ単位での行動を好む。-行き先は「北の大地」をイメージさせる地域を希望している。-好きな食べ物は海産物であり、イクラや生うになどの高級な食材を求めている。-イクラは好物であるため、より多くの量を摂取することを望んでいる。-生うには生食に適しているため、そのままの状態で提供してほしい。-高級感を演出するため、あまり安価なメニューは避けたい。-食材の産地や調理方法にこだわりを持っている。-自分で選ぶことができるオーダーメイド型の料理が好まれる。-友人同士でシェアすることも考慮に入れている。-グループ全体の満足度を高めるためには、バラエティに富んだ料理を提供する必要がある。-個々人の好奇心や冒険心を満たすことが重要視されている。-多様性や個性を尊重する文化が根付いている。-新たな発見や感動を共有することで、一体感や絆が深まる。-旅行を通じて自己成長や人生観の変化を促進する。-未知の世界に挑戦する勇気やチャレンジ精神を養う。-他者とのコミュニケーションや協力関係を築くスキルを磨く。",
+        "chosen_dialogue_summary": "-北海道の海の幸を堪能したい旅行者が、友達と一緒にグルメツアーを計画している。-旅行の目的は、美味しい海鮮を食べることである。",
+        "rejected_dialogue_summary": "-9人で行く旅行で、北の食を楽しみたい。-北海道で海の幸を味わいたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは友人9名と北の大地を訪れる予定である。-北海道では美味しい食べ物を楽しむことを目的としている。-シャケが好物であるため、シャケ料理を堪能することを希望している。",
+        "chosen_dialogue_summary": "-9人の友達と一緒に北の国に旅行に行きます。-北海道でおいしいものを食べるのが目的です。",
+        "rejected_dialogue_summary": "-北海道の美食を満喫し、特にサーモン料理に興味を持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "BとAの会話の要旨は以下の通りである。Bは部活動の仲間9名と共に行動する予定であり、10月の連続休暇を利用して旅行に出かけることを考えていた。具体的な行き先についてはまだ決めていないものの、「北の国」というキーワードが頭に浮かんでいたため、Aに「北国」に関する情報を尋ねた。AはBに北国の代表的な都市である「札幌」や「小樽」、「旭川」などを提案したが、これらの都市はすでに訪れたことがあったため却下された。その後、Bが「新鮮な魚介類が豊富に揃っている」ことを理由として「釜石」への訪問を希望したため、その案を採用することとなった。次にAがBに対して「どのような目的で釡石を訪れるのか」を質問したところ、「美味しい料理を堪能するため」との回答を得たため、「釣り堀」に立ち寄ることを勧めた。しかしBには「魚を捕まえること」よりも「食材としての魚」を重視する傾向があったため、この案は採択されなかった。代わりに「海産物の直売所」を訪ねることになり、最終的に「三陸さんさん商店街」に行くことが決まった。最後にBから「夜間の娯楽施設」についての問い合わせがあったが、この時点で既に日没が近づいていたため「翌日以降に検討する」ことになった。",
+        "chosen_dialogue_summary": "BとAの会話の要旨は以下のとおりである。Bは部活動の仲間9名と共に行動しようと考えていた。具体的な行き先についてはまだ決めていないものの、「北の国」というキーワードが頭に浮かびていた。その後、Bが「新鮮な魚介料理が豊富に揃っている」ことを理由とし、釜石への訪問を希望した。次にAがBに対して「どんな目的で釡石を設定するのか」を質問すると「美味しい食べ物を堪能したい」の回答があった。最後にBから「夜の娯楽場所」に関すれる予約があったが、この時点で既に日没が近づいた。",
+        "rejected_dialogue_summary": "AとBとの間で、北海道の旅行計画について話し合いが行われた。最初に、釧路市を目的地とする案が提示されたが、実際に行ったことがあると判明した。続いて、函館市が候補に挙がったが、その際に美しい景色を楽しみたいという要望が示された。最終的には、三陸地域への旅行が決定し、美術館や海鮮料理店、温泉などが楽しめることが確認された。"
+    },
+    {
+        "all_short_dialogue_summary": "Bさんは、9人の部活動の仲間とともに北海道へ旅行に行く予定である。Bさんが行きたがっている場所は「函(はこ)館(だて)」であり、その中でも「五角形」の形をした「星(ほし)型(がた)の城(しろ)郭(ぐるわ)」「五(ご)稲(とう)山(ざん)公園(こうえん)(」が気になっていました。また、「海(うみ)鮮(ま)料理(りょうり)が好(す)き」であるため、夕(ゆう)食(しょく)には「シ(しゃ)シャ(モ)モ」や「カ(か)キ(き)ガ(ガ)イ(イ)を生(い)きたままで食べ(たべ)たい」と考えていました。",
+        "chosen_dialogue_summary": "Bは、部活のメンバー9人と一緒に、函館の五稜郭公園と海鮮料理を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "函館の五稜郭公園で海鮮料理を堪能したい。"
+    },
+    {
+        "all_short_dialogue_summary": "-子供のころから旅行が大好きである。-北海道には何度も旅行に行ったことがあって、その中でも特におすすめの場所は小樽と札幌である。小さな港町で可愛らしい街並みが魅力的である。また北一硝子というガラス工芸品を扱うお土産屋さんもお勧めである。一方で札駅周辺の繁華街はとても賑やかで活気に満ち溢れている。ラーメンやスープカレーなどのグルメも堪能できるため、是非とも訪れてみてほしい。",
+        "chosen_dialogue_summary": "-私の子供の頃からの旅行好きが高じて、数々の旅行先を訪れた中で、特に印象に残っているのが、北の大地・北海度の港湾都市・小倉と、道庁所在地で商業の中心地でもある札樟市だ。前者は、古き良き時代の面影を色濃く残す街の雰囲気や、美しい港の風景が特徴的であり、また、後者には、活発な経済活動が行われており、多種多様な食文化を楽しむことができる。また、両都市ともに、歴史的建造物や美術館、博物館など、見どころが多く、訪れる人々を飽きさせない。さらに、自然豊かな環境もあり、四季折々に変化する景色も楽しめる。私にとって、これらの都市は、大切な思い出が詰まった特別な場所であり、今後も訪れ続けたいと思う。",
+        "rejected_dialogue_summary": "-北海道の旅行先としてお薦めなのは、可憐な街の雰囲気を持ち、ガラスタウンで有名な「北1硫黄」がある「オタル」と、にぎやかな商店街やラメン・カレーグルメが楽しめる「サッポロ」である。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道旅行-9人の部活動の仲間と旅行に行く予定である-行き先は北海道-特に希望の場所はない-宿泊地が決まったら、旅行先を決めたい-歴史的な建造物を見学することに関心がある-お土産を購入することも旅行に含まれている-昼食は海産物を中心としたものであることが望ましい-夜は居酒屋で魚介類を楽しむ\n--AnotherExample--A:B:--LastExample--",
+        "chosen_dialogue_summary": "-旅行の目的は、部活のメンバーと一緒に楽しめることである。-北海道を旅行することを計画しているが、具体的な場所はまだ決まっていない。まずは宿を予約してから、行きたい場所を選びたい。",
+        "rejected_dialogue_summary": "##正解例-北海道を旅行したい-9人で旅行を計画している"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行先は函舘である。-9人の部活動の仲間と旅行に行く予定であり、旅行日程は10月中旬から11月初旎である。-旅行の目的は美味しい食べ物をたくさんの人数で楽しむことであり、おすすめの料理は海の幸をたっぷり乗せたご飯である。また、お気に入りの魚介類は甘えびとイクラと生うになどの海産物である。-夜景も見てみたいという希望がある。",
+        "chosen_dialogue_summary": "部活の9人で函館の美食を味わう旅行を計画し、甘エビ、イカ、ウニなど新鮮な海鮮料理を楽しみたい。",
+        "rejected_dialogue_summary": "-9人で函館を訪れ、美食を堪能する旅行を計画している。甘エビ、イカ、ウニなどの海鮮をごはんに乗せて食べるのがお気に入りで、夜の景色も楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "【補足説明】Bは友人9名と北へ旅行に行くことを希望している。旅行先は北の大地である。目的は食を楽しむことであり、魚介類を好んでいる。特においしそうな食べ物はイクラ、雲丹、鮭、鱈、蟹、ホタテ、イワシ、蛸、アンコウ、カニ、毛ガニ、アサリ、帆立、鰻、穴子、ほっき貝、つぶ貝、あわび、ハマチ、タイ、ヒラメ、ブリ、エイヒレ、ウナギ、あんこう鍋、ふかひれ、あなご天ぷら、かにみそ、ぼたんえび、あさりの酒むし、あじのなめろう、さんまの刺し身、さばの味噌煮、にしんそば、たらこ、塩辛、めんたいこ、いわしの丸干し、おこぜの唐揚げ、ニシン、スケソウダラのすり身で作る魚肉ソーセージ、じゃがいもと魚の練り物をパンに挟んだサンドイッチ、バターで炒めたホッキ貝の貝柱をのせたホットケーキなどである。\n【回答】-函館の歴史や人物に関心がある。-8時～19時（冬季は9時~18時）に開館している施設を見学する予定。",
+        "chosen_dialogue_summary": "北海道旅行を計画しているBが好きなものは、食事です。Bとその友人は、北の地で美味しいものを食べたいと思っています。具体的には、海産物が大好きで、特にいくら、うに、サケ、タラ、アワビなどが好きです。また、シーフード以外にも、アナゴやアンキョウなども好んで食べます。さらに、Bたちは、さまざまな料理を楽しみたいと考えており、例えば、秋刀魚や鯖などの刺身や、味付けの魚などを味わいたいと言っています。また、旅行の目的の一つとして、美しい景色を眺めることも挙げられています。その中でも、夜景はとてもきれいだと言われており、その美しさに魅了される人も多いようです。以上の情報から、以下のようにまとめることができます。-北海道の食文化に興味がある-美しい風景を鑑賞したいこれらの要素を踏まえると、次のような旅行プランが考えられます。まず、朝早くから活動を始めるため、早起きをして、まずは海鮮丼や寿司など、地元の新鮮な食材を使った朝ごはんを堪能しましょう。その後、昼間は美術館や博物館などを見て回り、夕方には夜の散策に出かけましょう。夜は夜市やレストランでおいしい料理やお酒を飲みながら、ゆったりとした時間を過ごすことができるでしょう。このように、旅先で食や自然を満喫することで、心身ともにリフレッシュすることができると思います。##2.解答例###1.問題文の読解####(1)要約対象の文章以下が問題文に記載された文章である。>Bはお友達9人と一緒に北に行きたいと思っている。北は大きな土地だ。食べることが目的で海の幸がすきである。おいしく見えるのはいくらのうにとさけとたらとかにとほたてといわしとたことあん",
+        "rejected_dialogue_summary": "【評価コメント】本文中の表現をうまく使いこなせているので、正解に一番近い回答です。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に部活動の仲間と旅行する予定である。-目的地は函舘であり、目的は美味しい食べ物を楽しむことである。生の魚介類が好物であると述べている。\n-函館の戦いについての知識がある。-ブロンズの像を見てみたい。",
+        "chosen_dialogue_summary": "-生魚を食べるために北の地へ旅立つ-戦いの記念碑を訪ねる-海の幸に舌鼓を打つ",
+        "rejected_dialogue_summary": "-北海道旅行を計画している。目的の場所は、美食の街として知られる函館だ。私が特に楽しみにしているのは、新鮮な海の幸を堪能することだ。-また、私は歴史に興味があるので、幕末に起きた「箱館戦争」についても学びたいと思っている。戦いの舞台となった五稜郭公園には、当時の様子を再現した銅像が設置されており、見応えがあると聞いている。旅行の際にはぜひ立ち寄りたい。"
+    },
+    {
+        "all_short_dialogue_summary": "--Part3--A：こんにちはB：こんにちわーA：本日もご来店頂き、誠に有難うございます。ご注文はお決まりですかB：はい。おすすめのメニューは何ですか?A:当店のオススメはビーフシチューです。一度ご賞味下さい。B:では、それをお願いしたいのですが、お値段を教えて頂けませんか?A:はい。当店ではランチタイム限定で通常価格1,500円のところ、特別価格で800円にてご提供させて頂いており、また、デザートとドリンクがついてきて大変お得ですよ。どうぞごゆっくりお召しあがりください.B:そうですか、じゃぁそれで。美味しそうですね.A:ご期待に添えるよう、スタッフ一同心を込めて調理させてもらいますね.B:それと。食後のコーヒーを付けてもらうことは可能ですか?A:もちろんです。ドリップ式で淹れたての珈琲をお出ししますよ.B：それじゃ、頼んじゃおうかな。A：では、お持ちします。何分後くらいに来るかお伝えしましょう.お時間はどのくらいお取りします?B：10分くらいでいいよ.A：承知いたしました.ご用意ができましたらお声がけします.何名様でいらっしゃいますか?お一人様ですね.では5分後にご準備が整いますのでお席までお越しくださいませ.失礼します.【要約】--Part4--A：おはようございます.本日のご予定は決められましたか.今日の天気は曇りで最高気温は25度の予想です.B：今日も暑そうだね.天気が悪くても外に出かけるつもりでいるから何処か良いところないかな?A：私のお勧めスポットは横浜の赤レンガ倉庫です.海に近いので潮風を感じながら散策できますし",
+        "chosen_dialogue_summary": "1.BはAのレストランで食事をすることに決めた。2.AはBに特別料金でビフシチューセットを提供した。3.食事の後、Bはコヒーも頼んだ。4.コヒーの提供までに10分かかることをAは伝えた。5.5分後にBを席に案内することをAは約束した。【解答例】BisgoingtohavelunchatA'srestaurant.AoffersBabeefstewsetataspecialprice.Afterthemeal,Balsoorderscoffee.Itwilltake10minutesforAtoprovidethecoffee,andAinformsBofthis.5minuteslater,ApromisestoguideBtohisseat.6.横浜は港町で歴史的建造物が多く残っている。7.レンガ造りの建物は赤く塗られている。8.倉庫の中にはショップやカフェがたくさんある。9.イベントも頻繁に開催されている。10.観光客に人気の場所である。11.最寄りの駅はみなとみらい線の馬車道駅だ。12.駅から歩いて15分ほどで到着する。13.車で行く場合、首都高速神奈川1号横羽線を利用すると便利だ。",
+        "rejected_dialogue_summary": "海辺の散歩に最適な赤煉瓦の建物が並ぶ港町"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友人9人を連れていき、しじみが有名で海産物を堪能できる北海道を旅行先として希望している。食べ物に関しては特定のものはなく、希望としては海の幸を美味しく食べたいため、魚介類が好物であることが分かる。朝食は朝市場で食材を購入し、その場で調理してもらうというスタイルを提案され、気に入っている様子である。昼食には、多種多様な魚を自分たちで選ぶことができ、分けることも可能な店舗を紹介されている。夕食に関しても魚料理を提供している店を勧められており、共通して魚好きであると言える。さらに、カキも好んでおり、これもまた魚の仲間であることから魚類を好む傾向にあると推測できる。遊ぶ場所については山が希望されており、それも自然に囲まれた場所であることを求めている。\nA:ThisareahasabronzestatueofHijikataToshizo,whowasinvolvedintheHakodateWar.Wouldyouliketoseeit?B:Yes,Iwould.(A)It'sopenfrom8amto7pm,andduringthewinteritclosesat6pm.Pleasebecarefulofthetimewhenyouvisit.ItisclosedonNewYear'sDay,sopleasebeawareofthataswell.Theentrancefeetothetower'sobservationdeckis900yenforadultsand680yenforjuniorhighandhighschoolstudents.Ihopeyouenjoyyourvisit!要約：函館の戦いで活躍した新撰組副長の土方歳三の銅像がこの辺りにある。見に行く予定ですか？新選組の副隊長、土佐歳次郎の像はこのあたりに建てられています。行ってみようと思いますか？--Example3--【対象】\"A：どこのお店にしようか迷っていますが、おすすめのお店を教えていただけませんか？」「B：はい、どうぞごゆっくりお選びください。」\"[B]：こちらのレストランはいかがでしょう？美味しい料理が食べられると評判ですよ。\"[A]：\"あっ、それはすごくおいしそうですね！でも、予算がちょっと厳しいんです。もっと安いところはありませんか？”[B]:“はい、それではこちらのお弁当屋さんはどうでしょう。リーズナブルな値段でボリュームもあると人気です。”[A]:“それもいいかもしれないけど、やっぱりご飯を食べたいなぁ。何か他にいいところはないですか？”[B]：“はい、私のお気に入りのカフェをご紹介します。コーヒーがとてもお勧めで、お店の雰囲気も落ち着いていてリラックスできますよ。”[A]:\"それならいいです！それにしても、あなたは本当にたくさん知っているんですね！\"[B]:\"いえ、私も色々なところを訪れた",
+        "chosen_dialogue_summary": "50代女性と9人の友人が、海鮮料理と自然を楽しむための旅行を計画していることがわかります。彼女たちは、朝市で新鮮な食料品を調達し、自分たちの好みに合わせて料理することを楽しみにしているようです。また、夕方には海辺の温泉でゆったりと過ごすことを希望しています。全体として、この旅行は彼女たちにとってリフレッシュとリラクゼーションの機会となるでしょう。【解説】この例文では、女性グループの旅行プランについての情報が含まれています。このような場合、旅行の目的や行き先、滞在期間などを明確にすることが重要です。例えば、\"Thisisagroupofwomenintheir50swhoareplanningatriptoenjoyseafoodandnature.\"というように、主語と述語をはっきりさせてから、具体的な内容に移ることができます。次に、目的地や日程について説明することで、読者に旅行がどのようなものかをイメージしてもらいやすくなります。また、この例のように、複数の要素が関連している場合、それぞれの関係性を示す言葉を入れることも大切です。この例では、「朝」と「夜」、「食事」と「お風呂」など、時間や場所、行為の違いを表現する言葉を使って、各項目を区別しています。これにより、情報の整理がしやすくなるでしょう。最後に、このような文章を書くときは、できるだけ簡潔にまとめることを心がけましょう。長すぎる文章は読みづらく、理解しにくいものになりがちです。そのため、必要な情報だけを取り出し、適切な単語やフレーズを選んで文章を作るようにしましょう。以上の点を踏まえて、以下のような文章ができあがりました。女性9名が、美しい景色と美食を満喫するために、3泊4日の旅行に出かけました。最初の日は早朝から市場を散策し、おいしい朝ごはんを味わいました。その後、自然豊かな場所でハイキングやサイクリングなど、アクティブな活動をしました。2日目",
+        "rejected_dialogue_summary": "このエリアには新政府軍と旧幕府軍が戦った箱館戦争に参加した、近藤勇の弟である永倉新八の生家があります。ぜひ訪れてみてください。\"B:\"はい、喜んでお手伝いします！どのようなご希望をお持ちでしょうか?\"A:\"ええと、まずは何から始めればいいのか分かりません。どこに行けばいいですか?\"B：\"では、最初にご自身の興味や関心をお聞かせください。それを元に、私が最適な場所を選んでご案内いたしますね。”“わかりました。私は歴史が好きで、特に戦国時代の武将について詳しく知りたいです。できれば、実際に訪れることができる場所があれば嬉しいのですが…”“それは素晴らしい！実は、ここからほど近い場所に、武田信玄や上杉謙信のゆかりの地があるんですよ。それぞれの城跡や資料館などがあり、戦国の時代にタイムスリップしたような感覚を味わえると思います。”\"それでしたら、是非ともその場所に行ってみたいです！”“では、お車でお迎えにあがりますので、ご都合の良い時間をお知らせください。また、当日の天候や交通状況によっては多少の変更があるかもしれませんが、その点もご了承ください。”"
+    },
+    {
+        "all_short_dialogue_summary": "Aの質問に答える形で会話が進んでいく。まず、Bは部活動の仲間9人を連れていき、旅行先は北海道を希望していることが分かる。その後、AはBに食べ物の希望を尋ねる。Bが答えを返すとAがそれに合わせた提案を行う。例えば、「生の魚が良いですか？」と聞かれたら「はい」と答えたら、次に「刺し身は好きか」と聞いてくるといった具合である。こうしてやがて「海の幸を堪能する」という目的が明らかになっていく。その後も同じ流れで進む。最初は「どのような料理が良いか」とい問いかけから始まり、最後には「どこに行くか」が決まる。ただし、「どこ」と言っても、具体的な場所ではなく、イベント名がほとんどである。「山を見たい」と言われれば「山」ではなく「ロケーションタワー」を紹介する。このように、対象を明確にしつつ、目的は曖昧にしていくことで、「目的を達成するための手段を提示する」ことができるようになる。\nBは土木工事の歴史に関心を持っており、北海道の五稜郭を訪れることを検討している。",
+        "chosen_dialogue_summary": "Bは、部活の友達9人と一緒に、生きた魚介類を食べたいと考えている。目的地は北海道で、特に海鮮料理を楽しみたいようだ。具体的には、山の景色を眺めながら、海鮮丼や刺身を味わいたいようである。",
+        "rejected_dialogue_summary": "「Bと部活のメンバー9名で旅行を計画している。旅行の目的地は生魚を味わうことであり、山の景色を楽しみたいと考えている。五角形の要塞である五陵郭を見学したい。」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-9人の部活動の仲間と旅行する。-旅行の行き先は函舘である-観光名所は五嶺郭である。タワーの上部から星型の形状を確認する\n##2.質疑応答###Q1質問1:>どのようにして文書の要旨を生成していますか？回答1:>弊社では、BERTやRoBERTaといった事前学習済みの言語モデルを用いて文の埋め込みベクトルを計算し、文同士の類似度を算出することで、対象の文が含まれる文脈を推定しています。その後、抽出した文を利用して要点をまとめ、回答文を作成しています。###Q2>資料のどの部分に基づいて回答したのか教えてください。>回答2:>>A:土方さんは五稜郭の戦いで命を落とされたと聞いています。どういう経緯で戦死されたのでしょう？>B:函館山の山頂に建てられている五角形の星型の城郭で有名な、北海道の函館市にありました。>>上記の情報を基に回答しました。",
+        "chosen_dialogue_summary": "-五岐郭は、1869年に新政府軍と旧幕府軍の間で行われた戦闘の舞台となった場所です。戦いの結果、土佐藩出身の板垣退助や谷干城らが中心となって結成された薩長土肥の連合軍が勝利し、新政府が誕生することになりました。",
+        "rejected_dialogue_summary": "AはBが五大郭に興味を持っていることを知っている。##3.回答文章の評価###3-1.正解度-0:まったく正しくない-+1:一部正しいが、不正確な部分もある-正解部分が一部でもあれば+1を付与する．-例えば、以下のような回答であれば、正答部分は「AがBを知っており、BはAのことを尊敬している」という部分である．したがって、部分的には一致しているため、+1を付ける．ただし、「A」や「B」は人物の名前であるため、一致させることはできない．そのため、この回答は不適切であると判断される可能性が高い．一方で、人物名を「太郎」と「花子」に置き換えると、太郎は花子のことを認識しており、花子は太郎に敬意を表しているという意味になる．このように、曖昧な表現を避け、具体的な内容で回答することが望ましいと考えられる．また、英語の場合、人名は大文字で表記されることが一般的であるが、日本語の場合は小文字でも問題ないことが多い．これは、外国人にとって日本語を読む際の負担を軽減するためでもある．以上のような点に注意して回答を書くことが、より良い回答につながると思われる．"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行-9人の部活動の仲間と旅行に行く-行き先は北海道-希望地は函舘-観光スポット-五角郭-タワー-高さ107m-展望デッキ-星型の形がよく見える-資料館-お土産屋さん-歴史の展示-絵葉書-駐車場-自動販売機-トイレ-公衆電話",
+        "chosen_dialogue_summary": "函館の五稜郭タワーの観覧車と資料展示施設とおみやげ屋とトレイと自販機のある場所です。",
+        "rejected_dialogue_summary": "五稜郭は、函館市にある日本初の西洋式城郭で、星形の縄張りが特徴的です。タワーや博物館、資料室、売店、お土"
+    },
+    {
+        "all_short_dialogue_summary": "Bは9人の部活動の仲間たちとともに北海道へ旅行に行く予定である。Bが好物である海産物を楽しむことを目的としており、具体的なメニューとしてはイクラや生うになどを希望している。夕食は海の幸を堪能できる店を選び、デザートとしてシカモロを注文することを決めている。また旅行中には、札幌の近郊に位置する山々を散策することにも関心を示している。\n函館の歴史に関心があり、ブロンス像を見に行くことを検討している。タワーに上る際には大人900円、中高校生680円が必要である。",
+        "chosen_dialogue_summary": "Bと部活のメンバーは、海鮮料理を楽しみ、山をハイキングし、函のブロンズ像を鑑賞するために、9人で旅行に出かける。",
+        "rejected_dialogue_summary": "Bと9名の部活のメンバーは、海鮮料理を楽しみに、北の大地へ向かう。食事は新鮮な魚介類を提供する店に決まり、シロクマのケーキも予約済みだ。山歩きにも興味津々で、近隣の丘陵地帯を探索する計画を立てている。さらに、B個人は、かつての開拓者たちの息吹を感じるため、銅像を訪ねるつもりだ。"
+    },
+    {
+        "all_short_dialogue_summary": "【結論】\n-函館にあるブロン像を見てみたい。-タワーには大人一人900円、高校生以下680円で入場できる。",
+        "chosen_dialogue_summary": "##質問1.要約する文章を入力して下さい．```Bは、ブロンズ像が好きで、函舘に旅行に行く予定だ。タワーの料金は、大人一人9百円、小学生以下6百八十円である。```2.生成したい文章の出力フォーマットを以下から選んでください-論文のアブストラクトの形式で記述する-文末にピリオドをつける-1文が長くなったら改行して2文目以降はインデントを1つ入れる-英単語は全て小文字にする-特殊な記号は使わない-句読点や括弧は適切に使う-主語と述語が一致している-同じ意味を繰り返して使っていないか-文章の構造がわかりやすいか-曖昧な表現を避けているか##出力結果BisinterestedinbronzestatuesandplanstotraveltoHakodate.Theadmissionfeeforthetoweris900yenforadultsand680yenorlessforelementaryschoolstudents.",
+        "rejected_dialogue_summary": "##提出フォーマット-1行目に「B-1」と記載すること。-要約結果を2行以内で記入する。-ただし、空白行はカウントしない。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは9人の仲間とともに北海度へ旅行に行くことを希望している。Bが行きたがっている場所は箱館である。目的は観ることと食を楽しむことである。\n-土方の像を見たい。-函館山のタワーに乗りたいため、料金を確認。",
+        "chosen_dialogue_summary": "-Bは、北海道旅行を計画し、9名の友人と共に、箱舘を訪問したいと考えている。彼の興味の対象は歴史とグルメであり、特に土佐藩出身の新選組副長・土田歳三の銅像を鑑賞することを望んでいる。さらに、函嶺山タワーの展望台から眺める景色を楽しみたいと考えており、その入場料を調べている。",
+        "rejected_dialogue_summary": "北海道旅行の計画を立てているB。行き先は、箱舘で、見学や食事を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは友人9名と北海に行くことを希望している。目的は食を楽しむことである。希望する食物はイクラや生うになどの海産物であり、また、好物である甘えびや鮭の刺し身なども食べたがっている。夕食は海の幸を中心とした料理を提供する店を希望しており、その中でもいくつかのメニューを選択できる店舗を選んだ。遊び場としては山登りや夜間の散策を望んでいる。\n1.函館についての知識を尋ねる2.8時～19時(冬期は9時~18時)に開館していることを伝える3.大人は900円、中高校生は680円の入場料がかかることを説明する",
+        "chosen_dialogue_summary": "北海道の有名な港町である函(はこ)館(だて)は、多様な食材が楽しめることで知られており、特に新鮮な海鮮料理が人気を集めています。また、美しい景色や歴史的な建造物も見どころの一つです。特におすすめなのは、冬の時期に訪れることで、雪化粧された街並みやイルミネーションなど、幻想的な雰囲気を味わうことができます。ぜひ一度訪れてみてください。",
+        "rejected_dialogue_summary": "北海道の山や海を楽しみ、美味しい食事を堪能したい。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の仲間と旅行に行く。-北海道を旅行する。行き先としては「函」が挙げられている。-「函」という地名は複数存在するが、本文中では「箱」に続いているため、「函」の部分が「館」ではないと推測できる。-したがって、「箱館」と推定できる。実際には、現代日本語においては、「館」の代わりに「舘」を用いることが多いため、正確に言うと「ハコダテ」と読むのが正しい。-なお、明治時代の初期までは、「はこだて」ではなく「はっこたん」と発音されていたと言われている。-現在の日本人は、古い時代に遡るほど、語尾の「ん」の音を「ン」でなく「ム」または「マ」にする傾向がある。-このことから、「ハッコタン」は本来の音に最も近い読み方であると言える。-実際に、「大日本帝国憲法」や「教育ニ関スル勅語」など、当時の公文書においても、「ッ」と表記されている。-一方、現在の地元の人々の間では、あえて「ッ」を省略して「コ」と書くことが多い。-もちろん、これは方言であり、標準語ではない。-標準語とは、全国的に通用する共通語のことを指す。-日本語には多くの地域差があるため、全ての地域で通じる言葉を話すためには、それなりの訓練が必要である。-地域差が大きい言語は、日本語だけでなく、世界中に多く存在している。",
+        "chosen_dialogue_summary": "-9人で旅行に出かけることになりました。目的地は函館です。-「函」「箱」と続くため、この部分は館ではなく、館ではないことがわかります。よって、箱の館、すなわち箱田館と考えられます。-現代では館の代わりとして館を使用することが一般的ですが、歴史的には館が使用されていました。また、過去の時代ほど語末のンがムまたはマに変化するため、本来は箱ダタンと読まれていた可能性があります。",
+        "rejected_dialogue_summary": "-北海道の函館を9人で旅行した。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する予定である。-9人の部活動の仲間と旅行に行き、9人全員で楽しむことを目的としている。-食べ物を楽しめる場所や美味しい食べ物についての情報を求めている。-特に海の幸が好まれる傾向にある。-いくらやうになどの魚介類を好んでいる。-うには特にお気に入りの食材のようだ。-他にも甘えびやさけなども好んで食べられている。-寿司や刺し身など生のままの状態で提供されるものも人気がある。-和食を希望している。-洋食も選択肢に入っている。-食事の内容についてはこだわりがない。-好きなものだけを選びたい。-一品ずつ選ぶことが可能な店舗が望まれている。-朝市やけんちくなどを取り扱っている店も検討されている。\n-旅行の目的は歴史的建造物の見学である。-函館山の山頂にある五稜郭タワーを訪れる予定である。時間は8時〜19時（冬季は9時～18時）で休館日はない。料金は大人900円、高校生680円である",
+        "chosen_dialogue_summary": "-北海道旅行で海鮮料理を楽しみ、五角形の城壁が特徴的な五代郭を観覧したい。##生成モデル###構成-GPT-2（transformers==3.5.0）-HuggingFaceのBertForMaskedLMをベースにした独自のモデルを使用-データセット：https://github.com/rougier/nlp-datasets/tree/master/data/summarization-訓練データ：news-commentary-v12-train.en.txt-1文の長さ：平均20.3、標準偏差：10.7、最小値：1、25パーセンタイル：9、50パー",
+        "rejected_dialogue_summary": "Bは海鮮料理を楽しみつつ、五角形の城郭である五輪郭を眺めに行きたいと考えている。##解答例-Bは、海産物が豊富な場所を探しており、いくら、うに、甘エビ、鮭などが好きである。また、和風の料理が食べたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の部活動の仲間と旅行に行く予定である。-9人全員で食を楽しむことを目的にしている。-例えば、各自が好物を選ぶことができたり、料理をシェアできる店を希望している。-旅行先は函舘を検討しており、その中でもオススメの料理店は「朝市場あけほの」である。理由は以下のとおり。-食材が新鮮であること。-自分で選んだ食材を好むように調理してもらえること。\n##Task2###Example1####Q1:Whatkindoffooddoyouwanttoeatattherestaurant?A1:IwouldliketohaveamealatarestaurantwhereIcanenjoytheviewofthesea.####QA2:Doyouhaveanypreferenceforthetypeofcuisine?B2:Yes,IpreferJapanesecuisine.Ilikesushi,tempura,andotherJapanesedishes.Q3:Areyoulookingforaplacethatiseasytoaccessbypublictransportationorbycar?A3:Itwouldbeniceifitiseasilyaccessiblebytrainorbus,butIdon'tminddrivingeither.QA4:Isthereaspecificpricerangethatyouareinterestedin?Ifso,pleaseletmeknow.B4:No,anypriceisfineaslongasthefoodisgoodandtheatmosphereisnice.A5:Thankyouforyourpreferences.Basedonyouranswers,herearesomerestaurantsthatIthinkyoumightlike:-RestaurantA:Thisrestaurantislocatednearthebeachandhasagreatview.Theyserveavarietyofseafooddishes,includingsashimiandgrilledfish.Thepricesaremoderate,rangingfrom2000to3000yenperperson.Itisalsoaccessibleviatrainandbus.-RestuarantB:Locatedinaquietresidentialarea,thisrestaurantspecializesinJapanesekaisekicuisine,whichisatraditionalmulti-coursemeal.Eachdishiscarefullypreparedandpresentedbeautifully.Pricesstartataround5000yenpercourse,makingitabitmoreexpensivethantheotheroptions.However,theexperienceisworthitforthosewhoappreciatefinedining.Accessiblebytaxiorprivatecar.Q6:Wouldyoulikemetomakeareservationforyouatoneoftheserestaurants?Pleasechoosetheoneyoupreferandgivemethedateandtimeofyourdesiredreservation.Ifthereareanyspecificrequestsorconcerns,feelfreetomentionthemaswell.B6:Let'sgowithRestaurantB!I'vealwayswantedtotryaproperkaiskeimeal,soI'mexcitedaboutit.CouldyoupleasereserveatablefortwopeopleonSaturdayat7pm?Ihopetheyhavevegetarianoptionsavailable,asIamavegetarian.A7:Ofcourse!Hereisthereservationconfirmation:-Date:Saturday,July10thTime:Dinneratseveno'clockNumberofguests:TwoSpecialrequests",
+        "chosen_dialogue_summary": "IwouldliketohaveamealatarestaurantwhereIcanenjoytheviewofthesea.Yes,IpreferJapanesecuisine.Ilikesushi,tempura,andotherJapanesedishes.Itwouldbeniceifitiseasilyaccessiblebytrainorbus,butIdon'tminddrivingeither.No.Anypriceisfineaslongasthefoodisgoodandtheatmosphereisnice.Thankyouforyourpreferences.Basedonyouranswers,herearesomerestaurantsthatIthinkyoumightlike:-RestaurantA:Thisrestaurantislocatednearthebeachandhasagreatview.Theyserveavarietyofseafooddishes,includingsushiandgrilledfish.Thepricesaremoderate,rangingfrom2,000to3,00yenperperson.Itisalsoaccessibleviatrainandbus.-RestuaratB:Locatedinaquietresidentialarea,thisrestaurantspecializesinJapanesekaisekicuisine,whichisatraditionalmulti-coursemeal.Eachdishiscarefullypreparedandpresentedbeautifully.Pricesstartataround5,000yenpercourse,makingitabitmoreexpensivethantheotheroptions.However,theexperienceisworthitforthosewhoappreciatefinedining.Accessiblebytaxiorprivatecar.Wouldyoulikemetomakeareservationforyouatoneoftheserestaurants?Pleasechoosetheoneyoupreferandgivemethedateandtimeofyourdesiredreservation.Ifthereareanyspecificrequestsorconcerns,feelfreetomentionthemaswell.",
+        "rejected_dialogue_summary": "A7:Iwillreservetablesfor2peopleatRestaurantBonSaturdaythe7thofJuly.Ihopeyoucanprovidevegetariandishesforthem."
+    },
+    {
+        "all_short_dialogue_summary": "1.北海道へ旅行に行く2.9人の友人たちと旅行する3.食べ物を楽しむ4.シャケが好物である5.夜景を観る6.五角の形をした城の全体像を見たい\n【参考文献】https://www.kaggle.com/c/taiwan-e-commerce-recommendation-challenge/data",
+        "chosen_dialogue_summary": "「友達9人と食べたいものはサーモンで、五稜郭の景色を楽しみたい」```##解答例###1```pythonimporttorchfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLM,pipelinetokenizer=AutoTokenizer.from_pretrained(\"mrm8488/t5-base-finetuned-taiwaneccom\")model=AutoTransformerForConditionalTextGeneration(\"bert-base-uncased\")generator=pipeline('text-generation',model=model,tokenizer=tokenizer,device=0,max_length=50,num_beams=5,early_stopping=True,top_k=100)summary=generator(\"1.[SEP]2.[MASK]3.[EOS]\")print(summary[0]['summary_text'])```",
+        "rejected_dialogue_summary": "「友達と食べ歩きを楽しみながら、五稜郭を眺めたい」"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2名で構成されるグループである。-北海道を旅行する予定であり、9名のメンバーで行動する。-食事に関しては海産物を好む傾向がある。-例えばイクラや生うになどの新鮮な魚介類を使用した料理が好まれる。-夜景を楽しむことを希望している。",
+        "chosen_dialogue_summary": "-50歳以上の男女2名で構成されるグループであり、北海道を旅行する予定で、9名のメンバーで行動する。食事に関しては海産物を好む傾向がある。例えばイクラや生うになどの新鮮な魚介類を使用した料理が好まれる。夜景を楽しむことを希望している。",
+        "rejected_dialogue_summary": "-海鮮料理を楽しみながら、夜の景色を眺めることができる旅行である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友人9名と旅行に行くことを希望している。旅行先は北海道である。目的は食を楽しむことであり、希望する食材はイクラ・生うに・真いか・甘海老である。また夕食は海の幸を堪能する予定である。旅行中は山登りを希望しており、その中でも特に見たい場所は函舘山である。\n-函館市内を散策することに関心がある。-8時～19時（冬季は9～18時）に開館している「五稜郭タワー」を訪れる予定である。",
+        "chosen_dialogue_summary": "50代女性と9人の友達が、食事を楽しみながら、山に登ることを目的として、海産物を満喫するために、冬の時期に、北の国から、美しい景色を眺めることができる場所を訪れます。彼女たちは、地元の美味しい料理を味わい、歴史を学び、自然を感じることができます。",
+        "rejected_dialogue_summary": "50代女性と9人の友人が、食事を楽しみながら、冬場は午前9時から午後6時まで営業している五角形の形をしたタワーの展望台を訪れ、山に登る旅を計画している。##実行方法```bash$pythonmain.py```"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の仲間たちと旅行に行く。目的の場所は北の果ての地である。食べ物に関してはとにかく食べまくることが目的であり、グルメを堪能するために、魚介類を中心としたメニューが豊富な店を希望している。具体的な料理としてはイクラや生うになどを挙げており、これらの食材をふんだんにつかった海の幸を味合える店に強い関心を示している。また、旅先でのアクティビティについては散策や山登りを楽しむことに関心を持っている。自然に囲まれた環境を好む傾向にあり、ゆったりとした時間を過ごすことを求めているようだ。\nこの辺りの歴史的な場所に関心がある。たとえば、北海道の戦いに関連する場所や、銅像などを見に行くことができる。",
+        "chosen_dialogue_summary": "Bは、海鮮料理を楽しみ、散歩や登山などのアウトドア活動を通じて自然を満喫したいと考えている。また、この地域の歴史に興味を持っており、特に戦争に関する遺跡や像を訪れることを望んでいる。",
+        "rejected_dialogue_summary": "自然を満喫しながら美味しい海鮮料理を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは9人の友人たちと共に北へ旅行に行くことを検討している。希望する旅行先は北の果てである北方領土である。彼らはこの旅行に何を求めているのだろうか。ここでは彼らの行動を推測することにする。まず、彼らが9人という大人数であることから、この旅行は大規模なイベントであることが予想される。さらに、彼らの年齢層が明らかになっていないため、老若男女が混在している可能性が高い。したがって、この旅は家族連れや若者グループなど、さまざまな人々が参加する可能性がある。次に、彼が北の方角を選んだ理由について考えてみよう。北は寒さが厳しく、冬には雪が降る地域である。しかし、逆に言えば、夏には涼しく過ごせる場所でもある。つまり、彼は暑さを避けるために北を選択した可能性も考えられる。また、彼の「北」へのこだわりが強いことも示唆されている。実際、多くの日本人にとって、「北」という言葉は特別な意味を持っている。例えば、日本の北端である宗谷岬は、日本で最も北にある場所として知られており、訪れる人も多い。もしかすると、彼もこのような場所に魅力を感じているのかもしれない。最後に、このような旅の目的は何であろうか。一言で言うと、「冒険」や「探検」であると言えるだろう。未知の土地を訪れ、新たな発見をすることは、誰にとっても刺激的で興奮するものである。また、このように大勢で行動することで、一体感や絆を深めることもできる。\n-旅行先は北海道である。-興味があるのは、史跡、博物館などである。-函館山ロープウェイ、五稜郭タワーなどに行く予定である。",
+        "chosen_dialogue_summary": "Bと彼の仲間たちは、北への旅行を計画している。その目的地は、歴史的建造物や美しい景色で知られる北の大地である。この旅行では、九州の自然や文化を体験することが期待されている。##解答例Bandhisfriendsareplanningatriptothenorth.TheirdestinationisHokkaido,knownforitshistoricalsitesandbeautifulscenery.ThistripisexpectedtoprovidethemwithanopportunitytoexperiencethenaturalbeautyandcultureofKyushu.",
+        "rejected_dialogue_summary": "Bと彼の友達は、歴史的建造物や美しい景色を楽しみたいと考えているようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "1.北海道へ旅行に行くことを希望している。2.9人の部活動の仲間と旅行する予定である。3.行き先は北の大地の道南地方である。4.観光名所は五角形に囲まれた星型の城塞である五5.稜堡（ごりょうほ）とその付近の公園を訪れたいという希望がある。6.夜景の見える高さ107mのタワーの存在を知っている。7.旅行の日程は10月下旬である。\nこの辺りには、幕末の戦いに関連する史跡が多く存在する。特におすすめなのは、明治維新で活躍した新選組の副長・土佐歳之が亡くなった場所である。新撰組は幕臣として戦ったため、戦場は江戸から北へと移っていき、最後は蝦夷地で戦うことになった。ここには土笹の銅像があり、周囲には彼の生涯を振り返ることができる資料館もある。観覧料は大人900円、高校生680円となっており、開館時間は8時～19時(冬季は9時~18時)。休館日はない。",
+        "chosen_dialogue_summary": "幕府軍の土方歳三が戦死した地に新政府軍に敗れた歴史を学べる博物館がある。",
+        "rejected_dialogue_summary": "Aさんは、9名の部活のメンバーと一緒に、北の地、道の南部を旅行したいと考えている。彼らは、5つの角を持つ星の形をした城壁と、その周りの公園に興味を持っている。また、夜に美しい景色が見られる107メートルのタワーについても知識がある。そして、旅行期間は秋の終わりごろである。##解答例AisplanningtotraveltoHokkaidowith9membersofhisclub.Theyareinterestedinvisitingastar-shapedfortresswithfivecornersanditssurroundingpark.Aalsoknowsabouta107-metertalltowerwithabeautifulnightview.ThetripisscheduledforlateOctober."
+    },
+    {
+        "all_short_dialogue_summary": "A:B:A:B:A:\n-8:00~19:30(冬期は9~18時)で開館している。-入場料は大人900円、高校生680円である。",
+        "chosen_dialogue_summary": "A:B:A:",
+        "rejected_dialogue_summary": "Bは、午前8時から午後7時30分まで（冬季は正午から6時まで）営業しています。入館料金は、大人9000円、中高生は68000円です。"
+    },
+    {
+        "all_short_dialogue_summary": "A:B:A:##参考文献[1]https://qiita.com/kosukeiwasaki/items/6b5a7d8c0d6c6d3f5f3d\n--例3--A：こんにちは。私はAです。あなたの名前は何ですかB：私はBと申します。どうぞお気軽にお呼びください。Aさんは、どこからいらっしゃったんですか？お住まいの都道府県を教えていただけませんか。住んでいる場所の特徴など教えてもらえると、より詳しい情報をお伝えすることができます。例えば、山が多い地域なのか、海が近い地域かなど、どのような環境で生活しているのかが分かると助かります。また、あなたはどのくらいの頻度で外出しますか。お出かけの際にどこに行くことが多いですか。季節や天候、気温などによって、行きたくなる場所は変わってくると思います。もしよければ、普段よく行く場所や好みの天気などもお聞かせください。あと、旅行に行ったことがあるかどうかや、いつもどのように過ごすのかも知りたくて。もちろん、お答えにならなくても大丈夫ですよ。では、改めてあなたのお名前をお伺いしてもいいですか。お名前を知ることで、お話がよりスムーズに進むと思いますので。ご協力お願いいします。また、お名前の由来や意味などを聞いても構わないですか。それとも、家族や友人など身近な人から呼ばれているニックネームやあだ名で呼んでもらう方が良かったりするのかな？あと、お誕生日や血液型、星座、身長や体重、年齢や性別、出身地や家族構成、学歴や職業など、あらゆる情報を集めたいと思っているんですが、大丈夫ですか。これらの情報は、私たちが提供するサービスをよりパーソナライズするために必要なものですので、どうかご了承ください。これからも、お互いに楽しくコミュニケーションを取りながら、良い関係を築いていけたら嬉しい限りです。A：B：",
+        "chosen_dialogue_summary": "A:B:",
+        "rejected_dialogue_summary": "以上の文章から、BはAに対して自分の名前や住んでいるところ、好きな場所などについて尋ねていることがわかる。また、Aがどんな人かも気になっているようだ。最後に、自分自身の情報も提供している。全体的に、フレンドリーで親しみやすい印象を受ける。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。彼女は9人の友人たちとともに北海へ旅行に行く予定であり、旅行先は函館であると述べた。Bが好む食べ物は海産物であり、その中でもイクラや生うになどを好んで食べる。友人が9人いるため、複数のメニューを選ぶことができる店を希望している。旅行中は食べたい物を自由に選びたいと思っている。夕食としてはしらすやカキなどを食することを希望していたが、その他にも様々な海の幸を楽しむことを望んでいる。遊ぶ場所については山や星などを見てみたいと希望していた。\n-A:函館周辺について何か質問はありませんか-B:戦争の史跡が気になる-A:-8-19時(冬期9-18時)で年中無休-タワー(大人900円/中高680円)は別料金-近藤や幕末の戦いについて知ることができる-最後の場所-自由に観覧可能-歴史が分かる-北海道特産のスイーツが食べられる-カフェ-しろいこいびと",
+        "chosen_dialogue_summary": "A:函館山ロープウェイと五稜郭タワーのどちらに行きたいですか？B:戦争について詳しく知りたいです。A：それならば、五重郭に行きましょう！B：よろしくお願いします。",
+        "rejected_dialogue_summary": "Bさんは、友達と一緒に旅行に来て、海鮮料理を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道旅行-9人の部活動のメンバーと-旅行先は函舘-オススメの場所-朝市-海鮮系-いくら-ウニ-イカ-鮭-シャケ-生-新鮮-歯ごたえ-味-美味しさ-風味-匂い-香り-食べ物の味覚-ヒトの五感-人間の感覚器官-感じること-五感で感じる世界-見る-聴く-触れる-口にする-嗅ぐ-意識-心-精神-思考-考える-想像する-希望-夢-目標-理想-計画-実現-現実-未来\n-函館方面の旅行について話し合っている。-Aは土佐藩の戦いについて尋ね、Bは関心があると答えた。Aはそれに関連する場所を紹介し、その場所の詳細を説明した。Bはその場所を見て回ることを提案し、それをAが受け入れた。",
+        "chosen_dialogue_summary": "-Bは旅行が好きで、特に自然や歴史に興味を持っていることがわかる。",
+        "rejected_dialogue_summary": "-部活の仲間9人で北海旅行に行った。旅行の目的地ははこだてで、朝の市場で海の幸を味わうことができた。イクラ、うに、いか、サーモンなど、生で食べると新しい食感が楽しめる。味、香りに加えて視覚、嗜好、触覚など五官で楽しむことができる。食事を終えると、みんなで戦国時代の歴史を学び、史跡を訪れることにした。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が友人9人を連れていってほしい場所は北海道である。目的は食べ物を堪能することである。\n--例3--A：どうもこんにちは。Bさんですね。今回はどのようなご用件でしたっけ？B：はい。今度、友人と旅行に行く予定なのですが、おすすめのスポットを教えていただけませんか。A:いいですよ。何を目的としていらっしゃるのでしょう？例えば、温泉ですか？B:温泉もいいですが、それ以外で何かありましたら教えてください。A：そうですか。では、景勝地でしたら、富士山の麓にある「河口湖」がとても綺麗でオススメです。他にも、山梨県の「昇仙峡」や、長野県「軽井沢」なども素晴らしい場所だと思います。B：なるべく、交通の便が良いところが良いのですが…。A：はい、そうですか。それならば、関東圏内でいうと、茨城県ひたちなか市の「あじさい祭り」はどうでしょう？あとは、千葉県南房総市「野島崎灯台」、栃木県足利市「あしかがフラワーパーク」あたりがよいのではないかと思われます。あ、他には、神奈川県横浜市中区「港の見える丘公園」の夜景もお勧めです。あと、新潟県佐渡市に「トキの森公園」という施設もあるようですがいかがでしょう。私はまだ行ったことがないので詳しいことは分かり兼ねますけども…。",
+        "chosen_dialogue_summary": "この文章は、Bさんが友達と行きたい旅行先を探しているという内容です。",
+        "rejected_dialogue_summary": "Bは、50代男性で、9人の友達と一緒に旅行することを計画している。彼らは美食を楽しむことを目的とし、旅行先としては札幌を選んだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先:北海道-観光スポット-北の大地の水族館-海の生き物を間近でみることができ、子どもから大人まで楽しめる。-交通手段:電車、飛行機、レンタカーなどを利用して移動する。\n--まとめ---Aは「この辺りで」何かを探している。Bはそれに応じて「はい」と答えている。-その後、AはBに「ブロンゾ像」を見に行くことを勧めている。その際、Bが「した」と言っているが、これは肯定的な表現であると解釈できる。",
+        "chosen_dialogue_summary": "-北海道の「北の森の動物園」は、さまざまな種類の海洋生物を見ることができる場所です。-ここでは、海に住む様々な生きものを観察することができます。大人から子供まで、幅広い年齢層の方々に楽しんでいただけます。",
+        "rejected_dialogue_summary": "-Aは、ある場所で何かを見つけようとしている。-Bは、それに答える形で、肯定的に返事をしている。以上の文章を参考に、以下のような文章を作成してみてください。Aさんは、旅行の計画を立てているようです。彼は、「このあたりで」という言葉を使って、どこか特定の場所を指しています。そこで、何かを見つけたり、体験したりすることを考えているのかもしれません。Bさんは、そのAさんの言葉に反応して、「はい、わかりました」と言っています。つまり、彼もAさんと同じように、その場所に興味を持っているということです。もしかしたら、2人は一緒にその場所へ行く予定なのかもしれないですね。また、文中の「すみません、ごめんなさい」は、おそらくBさんが何か失礼なことをしてしまったか、もしくはAさんがBさんに何かをお願いしたときに使われた言葉だと思われます。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-北海道旅行-9人の部活動の仲間と-行き先-箱根-観光スポット-桜並木-散歩-健康のために-景色-自然-山-登山-ハイキング-夜景\nAはBに対して、この地域の歴代武将について尋ねる。Bは土佐藩出身の坂本龍馬の名前を挙げる。その後、幕末の志士である武田耕雲斎や河井継之助、勝海舟、榎本武揚、西郷隆盛などの名前が挙がるが、いずれもBが詳しく知っているわけではないことが分かる。",
+        "chosen_dialogue_summary": "-幕府軍と新政府軍の戦い-戊辰戦争-新潟県-会津-天狗党-佐幕派の武士-討伐-江戸-上野-彰義隊-京都-鳥羽・伏見-戦闘-東北地方-奥羽越-反乱-仙台-秋田-米沢-庄内-薩摩-長州-倒幕-明治維新",
+        "rejected_dialogue_summary": "【出典】https://www.nhk.or.jp/radio/player/ondemand.html?p=1382_01_3311"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行に行くことを希望している。-旅行の目的は部活動の仲間と楽しむことである。-行き先は北の大地である。-目的は食べ物を楽しめること。-食べたいものは海産物。-例えば、イクラやうにと甘えびなどが挙げられる。-特にうには生で食すことができる。-その他にも、蟹や鮭なども食べたくなる。-イクラはおにぎりにしても良い。-蟹は鍋にしても美味しい。-鮭は焼いて食べても良い。\n-函館を訪れる予定である。-8時～19時（冬期は9～18時）に開館している「五稜郭タワー」に訪れたい（大人900円、高校生以下680円）。-五角形の星形要塞である「箱舘」を見学するつもりである（入場料は無料）。",
+        "chosen_dialogue_summary": "「北の味覚を堪能し、五つの角を持つ箱館の歴史に触れる旅」",
+        "rejected_dialogue_summary": "IwanttogoonatriptoHokkaidowithmyfriends.Thepurposeofthetripistoenjoythefoodthere.Iwouldliketoeatseafoodsuchassalmonroe,seaurchin,andsweetshrimp.Inparticular,Icaneatrawseacucumber.Otherthanthat,crabandsalmonarealsodelicious.Salmoncanbeeatengrilled.Crabcanalsobeenjoyedinahotpot."
+    },
+    {
+        "all_short_dialogue_summary": "1.9人の部活動の仲間と旅行に行く2.北海道を旅行する3.食べ物を楽しむ4.シャモを食す5.夜景を観る\nAはBに対して、この地域の歴史に関心があるかどうかを尋ねる。Bは関心を持っていると答える。Aはこの地域に関連する史跡をいくつか紹介する。Bはそのうちの1つを選ぶ。Aは選ばれた場所の詳細な情報を提供する。また、その場所を訪れる際に注意すべき点を説明する。",
+        "chosen_dialogue_summary": "友達と一緒に旅行を楽しみ、食事や景色を満喫し、北の大地を堪能する旅。仲良しグループで北の地に繰り出し、美味しいものを味わい、夜空に輝く星を眺めながら、思い出に残る時間を過ごす。",
+        "rejected_dialogue_summary": "Bと友人9人で北の大地へ旅立つ。グルメを堪能し、夜空に浮かぶ美しい景色に酔いしれる。旅の途中で、Bが選んだのは、シャモンを味わうことだ。夕食を終えると、Aがその場所について詳しく説明してくれる。さらに、訪問する際の注意点も教えてくれる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは9人の部活動の仲間たちと共に北海道へ旅行に行く予定である。旅行先としてBが希望しているのは函舘であり、旅行中にはおいしそうな食べ物をいくつか食べたがっている。中でもBのお気に入りは海産物であり、いくらの入ったおにぎりや甘海老の刺し身などが好まれている。夕食には海の幸が豊富な店を選びたいとのことである。また夜には、標高334mの高さを誇る山から夜になると見える美しさを堪能するために、頂上まで登ることができる山があると聞いており、是非とも登ってみようと思っているようだ。\n-50歳代以上の男性で土木工事に従事している。-函館を訪問する予定であり、史跡巡りを希望している。",
+        "chosen_dialogue_summary": "-50代男性、土建業、北海旅行、海鮮料理、夜景鑑賞、山登り",
+        "rejected_dialogue_summary": "Bさんは、部活の友達9人と一緒に、海鮮料理を楽しみながら、夜景がきれいな山に登りたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-9人全員で食を楽しむことを目的としており、好物のイクラや生うにと甘えびをはじめとする海産物を中心とした料理を検討している。具体的な店舗名としては、「あんのいえ」や「やよいの水」などが挙げられる。-観光名所については「函館山」と「五稜郭」を訪れることを希望している。\nBさんは、幕末に活躍した新撰組の副長である土佐方のファンである。土俵のブロンス像を見てみたいと考えており、また、青函戦役の舞台となった場所を訪れたいという希望を持っている。見どころのひとつである五稜郭タワーは大人が900円、中高校生が680円で入場することができる。時間は8:00から19:30までで冬季は9:10から18:20までとなっている。お土産としては白石の石炭が有名である。",
+        "chosen_dialogue_summary": "Bは新選組に興味があり、特に土方歳三に憧れている。彼は、北の大地で大きな役割を果たした人物として知られている。Bが訪れようとしている五角形の要塞は、彼の足跡をたどるのに最適な場所だ。ここでは、古代から現代に至るまでの様々な歴史を学ぶことができ、Bにとっては貴重な体験となるだろう。さらに、この場所は景色も素晴らしく、遠くに広がる海や山々を眺めながら、ゆったりとした時間を過ごすこともできる。また、この地域には美味しい食べ物もたくさんある。新鮮な魚介類や郷土料理など、ここでしか味わえないグルメを堪能するのもおすすめだ。",
+        "rejected_dialogue_summary": "-Bさんは土方歳三に興味を持っており、新撰隊の歴史を学びたいと思っている。-観光スポットとして、五角形の星形要塞である「箱館奉行所」がある。##解答例Bは、土木工事の専門家で、特に石垣の構築に長けている。また、旅先で見つけた石を持ち帰り、自宅の庭に敷き詰めることを楽しみとしている。そんなBが、次の旅行先に選んだのは、石川県の能登半島。ここには、国の特別史跡に指定されている「根上城跡」があり、Bにとってはまさに天国のような場所だ。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道旅行に友人9名と行きたがっている。-行き先は北の大地のグルメを楽しむことを目的にしている。具体的なメニューとしては、いくらの美味しさが有名な海の幸を堪能することである。-観光スポットは山登りを希望している。\n-北海道に住んでおり、道産子である。-札幌の街並みを散策し、お土産を購入する予定がある。",
+        "chosen_dialogue_summary": "-友達9人と一緒に、海鮮料理を楽しみながら、山に登ることを計画している。#提出ファイル-`train.txt`:訓練データ（上記の例文が含まれています）-フォーマット：1文ずつ改行で区切られたテキストデータ-要約モデル`model.py`-実行スクリプト`run.py`#計算環境以下のような計算環境を想定しています。-CPU:Intel(R)Core(TM)i7-9750HCPU@2.60GHz8Core16Thread(16vCPU)-GPU:NVIDIAGeForceRTX20606GB(6vGPU)#学習方法`train.py`を実行することで学習を行うことができます。```bashpythontrain.py```このコマンドは、`model`ディレクトリ内に`checkpoint`というフォルダを作成し、その中にモデルを保存します。`--epochs`オプションでエポック数を指定することができ、デフォルトでは`5`となっています。また、GPUを使用する場合は、以下のように`CUDA_VISIBLE_DEVICES`環境変数にGPUのインデックスを設定しておく必要があります。例えば、0番目のGPUを使いたい場合は次のようになります。```exportCUDA_VISIBLE_DEVICE=0```#評価方法`run.sh`に評価用の実験設定が記載されています。実際に試してみるには、次のように実装して下さい。```bashbashrun.sh",
+        "rejected_dialogue_summary": "Bは、友達9人と一緒に、海産物を食べたり、山に登ったりするために、北の国に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行について、友人9人との旅行であること、目的は北の味覚を堪能することであることが分かる。-旅行の目的については、「食べ物」が挙げられており、さらに「生の魚」や「魚介類」を好むと述べている。\n-函館を訪れる予定である。-戦争や土佐三に関する施設を見学することを希望している。",
+        "chosen_dialogue_summary": "-北海道旅行は、9人の友達と一緒に行き、美味しいものを食べることが目的です。特に、新鮮な魚や海の幸が好きなようです。訪れたい場所として、戦時中の歴史や高知の文化に触れることができる場所を希望しています。",
+        "rejected_dialogue_summary": "以下は、上記の文章から生成された要旨文です。-北海道旅行では、9人の友達と一緒に、食事を楽しむことを目的としています。特に、新鮮な魚や海産物を味わうことを楽しみにしています。また、戦時中の歴史や高知県の文化に触れる機会もあります。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の仲間と旅行に行く予定である。-北海道を旅行先として考えており、九人全員で食を楽しむことを重視している。\n1.函館市内を散策する予定である。2.その中でも、五稜郭タワーと北方民族資料館を訪問することを希望している。3.北方民俗博物館では、幕末に活躍した新選組の副長であった土佐藩出身の武士である、坂本龍馬や、池田屋事件を起こした佐々木只三郎などに関する展示が行われている。4.土佐の国に生まれた幕臣であり、江戸の三大道場のひとつである試衛館で剣術を学んだ後、京都の壬生浪士組に加わり、新選隊の結成に貢献した人物がいる。5.この人物は、新撰組の中でも屈指の剣の腕前を誇っていた。6.彼の名は「新見錦」であり、彼は新撰隊の中で最も優秀な剣士であった。7.新見は後に「副組長」に任命され、隊内でも重要な役割を果たすようになった。8.幕末の動乱の中、新見の存在は隊員たちに大きな影響を与えた。9.今回の旅行では、この人物の足跡をたどり、彼の生涯を振り返ることができる。10.多くの人々が彼の偉業に感銘を受け、彼を偲ぶために訪れる。11.歴史好きの人々にとっては、この場所は必見である。",
+        "chosen_dialogue_summary": "私たちは、9人で旅行を計画しています。私たちの旅行の目的は、食事を楽しみながら、北の自然を満喫することです。旅行中には、自然の美しさを堪能しながら、美味しい料理を味わいたいと思っています。ぜひ、皆さんも私たちと一緒に、素晴らしい旅の思い出を作りましょう。",
+        "rejected_dialogue_summary": "-部活の9人で、食事を楽しみながら、北の都を旅する計画を立てている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行で部活動の仲間9人を連れていき、旅行先は函舘を選んだ。-旅行中は海の幸を堪能する予定であり、イクラ、ホタテ、カニなどを好む。\n-函館を旅行する予定である。-北海道で何かお土産を探している。",
+        "chosen_dialogue_summary": "-海産物を楽しみに、部活のメンバーと函たんへ旅行に行く。##生成結果###要約精度####実験環境-Ubuntu18.04.4LTS-Python3.6.9-scikit-learn0.22.2.post1-gensim4.1.0-pyLDAvis5.3-numpy1,19.7-pandas2.25.5-nltk6,2,4-word2vec-stop_words-spacy",
+        "rejected_dialogue_summary": "-「海産物を楽しみに、部活の友達と北の大地へ行きます。」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行くことを希望している。-旅行のメンバーは部活動の仲間9人\nBは土曜日に家族と一緒に北斗市へ旅行に行く予定である。旅行先では、八幡坂、五稜郭タワー、江差追分会館を訪れることを希望している。土曜日は天気が良くないため、旅行日程は変更する必要がある。Bが訪れたい場所は、いくつか候補が挙げられており、その中には、龍宮閣、青函連絡船メモリアルシップ八甲田丸、市立函南郷土資料館などが含まれる。具体的な訪問先はまだ決まっていないが、これらの場所のいずれかを見学することを検討している。",
+        "chosen_dialogue_summary": "BisplanningatriptoHokkaidowiththeirfamilyonSaturday.TheyhopetovisitHachiman-zaka,GoryokakuTower,andEsashiOiwakeKaikanduringtheirtrip.However,duetothebadweatherforecastforSaturday,theymayneedtochangetheirtravelplans.Bhasalistofplacestheywouldliketosee,includingRyugu-ka,SeikanRenrakusenMemorialShipHakkodaMaru,ShiryokanMuseumofHakodate,etc.Whiletheyhaven'tdecidedonaspecificdestinationyet,Bisconsideringvisitingoneoftheseplaces.",
+        "rejected_dialogue_summary": "-Bは、家族との旅行を楽しみにしているが、天候が悪いために旅行スケジュールを変更しなければならない。-旅行の目的地として、函館市、北見市などを考慮している。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が友人9人を連れた旅行先を検討している。彼女は9月に行く予定である。条件としては1人1泊の予算が1万円以内であること、宿泊先は繁華街に近い場所であることが挙げられている。行き先については札幌、旭川、富良野、小樽、ニセコ、洞爺湖などが挙がっている。友人の中には子連れも含まれているため、子どもが遊ぶことができる施設があることが好ましいとのことである。以上の情報をもとに次の問いに答えなさい。1.これらの情報から推定される彼女の性格を3つの単語を用いて表現せよ。\n-函館旅行がしたいため、関連するスポットを探している。-特に、幕末に活躍した新選組の副長である土佐方齋藤のゆかりの土地を訪れたいという希望がある。-土佐齊藤についての知識は既に持っているため、詳細な説明は不要であると判断できる。-旅行のスケジュールはまだ決まっておらず、また、滞在時間も未定である。-北海道で有名なお土産を購入することを希望している。具体的な商品名は指定していないが、伝統的な民藝品を希望していると考えられる。",
+        "chosen_dialogue_summary": "女性は、友達と一緒に旅行に行きたいと考えている。女性の希望として、1日あたりの費用は10,000円以下で、街の中心部にあるホテルに泊まりたいというものがある。また、行く場所として北見、網走、知床、釧路、帯広、阿寒湖、十勝川温泉、登別、定山渓、支笏湖、大沼公園、五稜郭、北方領土、根室、稚内、礼文島、利尻島が候補に上がっている。これらの場所の中には、子供が楽しめる場所もある。例えば、動物園や水族館、博物館などがある。2.彼女が求めているものは何ですか？-彼女は旅行を楽しみたいと思っています。そのためには、おいしい食べ物や美しい景色を楽しむことが必要です。-さらに、旅行中はリラックスした時間を過ごしたいと思っているので、静かな場所や自然に囲まれた場所を好む傾向があります。",
+        "rejected_dialogue_summary": "彼女が求めているのは、歴史的な背景を持つ場所であり、特定の人物や出来事に焦点を当てた旅行を計画していることがわかる。また、地元の文化に触れることにも興味を持っているようだ。さらに、旅行に参加するメンバーの年齢や好みを考慮して、適切な場所を選ぼうとしている。###生成モデル####GPT-2GPT(GenerativePre-trainedTransformer)は、OpenAIが開発した自然言語処理モデルです。Transformerアーキテクチャに基づいており、文章生成タスクに特化しています。特徴的な点として、事前学習済みのモデルを利用することで、少量のデータで高品質な生成が可能になります。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ9人の友人たちと旅行に行く予定である。-食事に関しては海の幸を好んでおり、イクラや生うになどを希望している。特定の料理にこだわりはなく、好物を少量ずつ食べ比べたいと思っている。-夜景を観賞することを希望しており、そのためにはタワーの利用が必要であると述べている。\nBは土佐藩士坂本龍馬の墓参りを希望している。Aは墓の位置を伝えた。Bが墓に参拝するか尋ねると、Bはいくつか質問を投げかけた。AはBに墓がどこにあるかを説明した。BはAの説明に納得した様子を見せた。",
+        "chosen_dialogue_summary": "-Bは食にうるさく、特に海鮮が好みである。-夜景が好きであり、タワーを利用したいと考えている。-坂本竜馬に興味があり、墓を訪れたいようだ。",
+        "rejected_dialogue_summary": "Aと友人が旅行の計画を立てている。好きな食べ物は生ウニやいくらで、少しずつ色々な料理を楽しみたいと考えている。また、夜の景色を楽しむためにタワーを利用したいとも話している。一方でBとAが、土方歳三と一緒に戦った新選組の隊士である山南敬助のことを話題にしている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の部活動仲間と旅行に行く予定である。-食事は海の幸を堪能することを希望している。好物はイクラや生うになどである。食べ方の希望としては一品ずつ注文するのではなく、いくつかを組み合わせて食べたいため、複数のメニューを選ぶことができる店を希望する。\n函館で見るべき場所としては，土佐藩陣跡や五稜郭タワーが挙げられる．土岐土三は新選組の副長を務めていた人物であり，新撰組に詳しい人にはおすすめのスポットである．また，五輪郭は箱館政権の本拠地として知られており，幕末の戦いを感じることができる．さらに，白色人形の店を訪れるのもお勧めだ．この店では，おいしいスイーツを楽しむことができ，店内の雰囲気も素晴らしい．店内には，美味しそうなスィーツがたくさん並べられているので，ぜひ立ち寄ってみてほしい．",
+        "chosen_dialogue_summary": "-観光名所は、土方歳三のゆかりの地である「土塁」、幕府軍と新政府軍が戦った「五龍郭」がある。-食事では、海産物を中心に食べたい。特に好きなものは「いくら」や「生ウニ」などである。また、いろいろな種類の料理を少しずつ食べるのが好きである。",
+        "rejected_dialogue_summary": "-Bは、土方歳三の生誕地である北見市で、食の楽しみを満喫したいと考えている。特に、北海シマエビやホタテなどの新鮮な海産物を味わいたいという希望がある。また、グルメツアーを通じて、地元の食文化に触れることも期待している。-また、Bは歴史に興味があるため、江戸時代の史跡を巡りたいと願っている。具体的には、幕府が設置した箱舘奉行所や、蝦夷地を統治していた松前藪の陣屋跡などを見て回り、当時の人々の生活や文化について理解を深めたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行する予定である。-9人の部活動の仲間と旅行に行く。-2泊3日である。1日目は札幌に宿泊する。2日目の午前中は小樽を散策し、その後、ニセコへ向かう。夕食はニッカウヰスキーの工場見学と試飲を楽しむ。宿は洞爺湖の近くの温泉宿に泊まる。翌日の朝は早起きをし、一面に広がる雲海を見る。昼ご飯はスープカレーを堪能する。その後は富良野を経由して旭山動物園に向かい、夕方に函へ到着する。-旅行の目的は美味しい食べ物を満足いくまで食べ尽くすことである。-食べたいものは海の幸である。その中でもイクラが特にお気に入りである。他には鮭や蟹などが好物である。それらの食材を使用した料理が多く出店している函の市場を訪れる。\nBは土佐の戦いなどについて関心を持っていて、このエリアを訪れることを検討している。Bが土台の像を見たいと思っているため、Aはこの像が見られる場所を紹介する。Aが紹介した場所は8時～19時（冬季は9～18時）に営利しており、一日中見ることができる。タワーへの入場料は大人900円、高校生以下680円である。Bは他の場所も訪れてみたいと考えており、AはBに、ここから歩いていける範囲にある場所について説明する。そのうちの一つは北方時代の史跡であり、Bに訪問を勧める。Aの説明によると、この場所には北部時代に関する展示物があり、自由に閲覧できるようになっているという。さらに、Bには休息をとってほしいというAの提案にBも賛同する。",
+        "chosen_dialogue_summary": "AとB、2人で土産を買いに行くことになった。まずは、海産物の加工品を扱うお店を目指すことにした。店内に入ると、たくさんの種類の商品が並べられていた。どれもおいしそうで、目移りしてしまうほどだった。さっそく、試食をさせてもらった。イカの塩辛やタラコなど、様々なものを味わったが、特に印象に残ったのは、ホタテの貝柱の燻製だ。とても香ばしくて、噛むほどに旨味が口の中に溢れ出してきた。思わず、買い物かごに入れてしまった。続いて、スイーツコーナーへ移動した。お目当てのプリンを発見し、早速購入することに。甘さ控えめで、とろけるような食感がたまらなかった。最後に、お菓子の詰め合わせセットを選んだ。色とりどりのパッケージが可愛らしく、贈り物にもぴったりだと思ったからだ。これでお買物は終了。帰り道、美しい海岸線を眺めながら、楽しい時間を過ごすことができた。",
+        "rejected_dialogue_summary": "「Aと一緒に旅行を計画し、食事や宿を決めていく」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道に9人の友人たちと旅行に行く予定である。-食事は海産物を中心に考えており、好物はイクラや生うになどである。できれば自分たちで選ぶことができる店を希望している。\n-函館旅行についての話題-戦争の跡地を見て回ることを希望している-五稜郭タワーを勧める-展望料金は大人900円、学生680円であることを伝える-営業は年中無休であることも伝えている-最終入場は19時(冬季は18時)である-休館日はない-入場料を支払えば自由に観覧できる-見どころを説明する-歴史を学べる-北上の様子を知れる-参戦の経緯を理解できるようになっている-自由に訪れることが可能-閉館時間は8時～19時の間-寒い時期は9～18時に変更される-無休-タワー内は自由に出入りできるため、気軽に立ち寄ることができる-食事の希望について話す-カフェを希望-おすすめの店を紹介-石屋製パンが運営する「ISHIYACAFE」がある-場所と営時時間を教える(8～22時)-定休日なし-店内では白恋人が作ったスイーツを楽しむことができ、店内で購入した商品を持ち帰ることも可能であると教えてくれる",
+        "chosen_dialogue_summary": "-北海道の五岐郭塔は、戦闘の痕跡を残し、独特な五角形の形をしており、観察することができます。-見学は無料で、毎日開いています。",
+        "rejected_dialogue_summary": "「北九州の戦跡を巡りたい。五角形の城郭が特徴的な五陵郭は、幕末の戊辰戦役で旧幕府軍と新政府軍が戦った場所だ。タワーの入館料は、大人900、大学生680、高校生以下は無料。休業日はなく、最終受付は夜7時（冬は6時）までで、見学はいつでも可能。外観はもちろん、内部の展示も充実している。ぜひ訪れてみてほしい。また、北見市内には、白い恋人で有名な石井製菓が経営している「イシヤカフエ」があり、ここでは地元の素材を使ったケーキやパンを味わえる。店内の雰囲気も良く、ゆっくりとくつろげる空間となっている。」"
+    },
+    {
+        "all_short_dialogue_summary": "9人の部活動の同級生とともに北海道へ旅行に行く予定である。目的は美味しい食べ物を楽しむことであり、好物はイクラや生うになどの魚介類である。また、おすすめの料理店として朝市場食道を挙げている。\n-A:函館に観戦旅行に行くことを提案する。-B:戦争の史跡を見て回ることを希望する。具体的な場所としては五稜郭タワーを挙げる。-Aはその見どころを説明する。また時間や料金についても説明し、その後他の場所について尋ねる。Bは「他のところも一緒に見たい」という趣旨の返答をする。Aはそれに応じる形で説明を続ける。-Bは具体的に何を希望しているのか明確にしていないため、Aの説明は一貫性に欠けるものとなっている。例えば「土佐藩の戦跡」と言っているにもかかわらず、説明しているのは「新撰組」のことであったりする。これはおそらく、Bが「戦」についての知識が乏しいことによるものであると推測される。-またAがBに対して「何を見たいのか」を聞き出そうとしている点にも注目すべきであろう。一般的に「旅行」とは何らかの目的を持って行われるものであり、その目的が明らかでない場合、旅行としての価値は著しく低下する。この点についてはAも理解しているようである。-一方でBの方も「何か見るものはないか」と聞かれた際に、自分がどのようなものを求めているのかを明示することができていない。もちろんこれには様々な要因が考えられるが、その一つとして「自分自身が何がしたいか分かっていない」ことが考えられよう。-このように、双方の意思疎通が上手く行われていないことが、会話の流れを不明瞭にしている原因の一つと言える。-なお、ここで言う「意思の疏通」は単に言葉だけの問題に留まらない。むしろ「言葉以外の要素」が大きく関わっているように思われる。",
+        "chosen_dialogue_summary": "AとBとが旅行先について話し合っている。A:北海道に行きたい。B:1.戦争関係の場所を巡りたい。2.函館がいい。3.観光名所も見てみたい。4.どこかお勧めはあるか。5.時間とお金はどれくらいかかるのか。6.他のところはどうか。A:7.Bはどこを見たがっているのか分からない。8.土佐の歴史を語っているのに、新選組の話をしている。9.おそらくだが、戦について詳しくないからだろう。10.AはBに旅行の目的を聞いている。11.旅行は目的がないと意味がないからだ。12.一方Bも、見たいものがないかと言われても答えられない。13.自分の望みがわからないのだ。14.双方が意思を伝えきれていないのが問題である。",
+        "rejected_dialogue_summary": "旅行で見たいものは何かを確認する必要がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道を旅行する予定である。旅行は友人9人との旅行である。-食事は海産物を好む。特においしそうなのは、イクラや生うになどである。また、おすすめの料理としては「いくらの美味しい食べ方」や「うにと生しらすの相性」などが挙げられる。夕食はカキや甘えびなどを取り扱う店舗を選ぶ。\nこのエリアには、幕末の戦いに関連するスポットが多く存在するため、訪れる価値がある。特におすすめなのは、五稜郭タワーと箱館奉行所で、それぞれ異なる魅力を持っている。五岐岨塔からは、360度のパノラマビューを楽しむことができ、夜景も美しく、ロマンチックな雰囲気に浸ることができる。一方、博物館としての役割を果たす箱舘奉仕所では、江戸時代の幕藩体制下における行政機関の様子を垣間見ることができる。さらに、ここでは幕臣として活動した人物の足跡を辿ることも可能だ。土蹄歳治は、新撰組の副長として活躍し、その後、蝦夷共和国の軍事総裁に任命された人物である。彼が最後に過ごした場所である「旧幕軍墓地」も訪れてみるとよいだろう。時間に余裕があるならば、赤レンガ倉庫群も見逃せない。明治時代に建てられた建造物群であり、当時の歴史を物語る貴重な遺産となっている。",
+        "chosen_dialogue_summary": "-北海道の旅行を計画している。友達と一緒に旅行に行く。食べ物は魚介類が好きで、特にいくらやうにがおいしいと感じる。また、夕ご飯は牡蠣と甘エビを扱っているお店に行きたい。-この地域には幕府の時代に関係する場所がたくさんあるので、ぜひ行ってみてほしい。オススメは五角形のタワーや箱舟の奉職所である。それぞれどちらも異なった楽しみ方ができる。",
+        "rejected_dialogue_summary": "-北海道の旅行計画を立てている。9人の友達と一緒に旅行に行く。海の幸が好きで、特にいくらと生ウニがおいしいと感じる。また、夕ご飯は牡蠣と甘エビを扱っているお店に行きたい。この地域には幕府と戦った場所がたくさんあるので、見に行ってみるのも面白いかもしれない。"
+    },
+    {
+        "all_short_dialogue_summary": "-9人の部活動の同級生と旅行に行く予定である。-北海道を旅行先として考えており、9人全員で行ける日程を調整中である。-食べ物を楽しむことを目的としているため、魚介類をメインとした料理を提供する店を希望している。",
+        "chosen_dialogue_summary": "-北海道旅行を計画中の9人は、グルメを楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-部活の仲間と食べ歩きの旅を計画中。候補地は海の幸が豊富な北の大地。行き先は皆の都合を考慮しつつ決めたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-部活仲間9名で北海道へ旅行に行く予定である。-北海道では海産物を食することを目的としており、好物はイクラや海老、鮭などである。-旅行の日程は未定だが、旅行先は函舘を検討している。\nこの辺りには、1869年の箱館五稜郭の戦いに関連する場所がいくつかある。土佐藩士の板垣退助が率いる新政府軍と、榎本武揚を総裁とする旧幕軍との間で行われた戦いの舞台であり、当時この地で多くの血が流された。現在は史跡として整備されており、一般の人々も訪れることができる。この地域には多数の史蹟が存在し、それらを巡ることで当時の様子をより深く理解することが可能である。また、この地域は自然豊かな場所でもあり、四季折々の花々や風景を楽しむこともできる。",
+        "chosen_dialogue_summary": "AとBは、9人の部活動のメンバーと一緒に、海鮮料理を楽しみながら、函館の歴史や自然を満喫する旅行を計画している。",
+        "rejected_dialogue_summary": "-函館は1860年代に起きた歴史的戦争の舞台であり、今でもその痕跡が残る場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "##参考https://qiita.com/KeisukeNishida/items/3f2a9f3d2f6f68d4f7c9\n-函館で見るべき場所を教えてほしい-五稜郭タワーを勧める-入場料は大人900円、高校生680円-8時-19時(冬期は9-18時)で年中無休-展望室に上がる場合は別途料金が発生する-大人900、学生680-他の見どころ-坂本龍馬が暗殺された場所-喫茶店を探している-北海道らしいものを食べたい-土産を買う予定-民藝品が欲しい##Task2-Q:AはBに対して何を提案しているのか？-A:A:まずはですね、このあたりのお寺をご紹介させていただきたいのですが。B:いえいえ、とんでもないですよ。全然大丈夫ですから。では、ぜひおすすめのお寺をお聞かせください。ここではAがBに寺院を紹介している提案というよりは説明に近い###Q2.2-Q：Aはどのような情報を提供しているか-A：-お寺の名前-住所-電話番号-開館時間-駐車場の有無-最寄り駅-アクセス方法",
+        "chosen_dialogue_summary": "AistellingBaboutatempleinthisarea.ThenameofthetempleisX,theaddressisY,andthephonenumberisZ.ItisopenfromAtoB.Thereisaparkinglot.Youcangotothestationbycar,bus,ortrain.Fromtheneareststation,itisaboutCminutesonfoot.###Task3-Q3.1-Q:AとBはどういった話題で会話を始めているかA:えーと、ここはどこですか？B：あ、すいません、ちょっと道に迷ってしまって。A：そうですか、では私が道案内をさせて頂きますね。###Q3:2Q:BはAに何をお願いしたいと思っているのかB:Aに道を聞きたい",
+        "rejected_dialogue_summary": "Bは、Aに観覧したい場所について質問している。Aの回答によると、Bが見たい場所は「寺」であることがわかる。さらに、寺についての詳細な情報が記載されている。例えば、名前、場所、連絡先、営業時間などが挙げられる。また、交通手段についても言及されている。以上のことから、要点をまとめると「BはAに寺についての詳細な情報を質問した。Aの回答によると、Bが見たい場所は「寺」であることがわかる。さらに、寺についての詳細な情報が記載されている。例えば、名前、場所、連絡先、営業時間などが挙げられる。また、交通手段にも言及されている。以上のことから、要点をまとめると「Bは、Aに観覧したい場合におけりの情報を提供している。」といえる。"
+    },
+    {
+        "all_short_dialogue_summary": "-部活仲間9人との旅行-行き先：北海道-観光名所：函舘-食事：生魚-好きな食べ物：刺し身-和食が良い-イクラ、鮭、蟹-いくらどんぶりの美味しそうな店を紹介する-朝市の店舗を選ぶ-ここのお勧めの海産物を教えてもらう-シャコ-夜は海の幸の居酒屋を予約-カキ-北海道の自然を楽しむ-ハイキング-山-高さ：334m-五角形-景色-タワー\n-A:函館に戦国時代の史跡が多くあると紹介する-B:興味があると答える-A:-北海道新幹線が開通したことを伝え、新幹線を使って旅行することを勧める+B:-新幹線のチケットを取る*2人分の指定席特急券、グリーン車の自由席券を購入*指定席の場合-3日前までに予約が必要+空席があるかどうかを確認する必要がある*空きがなければ、別の日程を提案*旅行の予定日が変更になる可能性があるため、事前に確認をとっておく*電話やメールで連絡を取り合う*時間帯によっては電話が繋がりにくいため、繰り返し電話をかける*メールでの連携も有効*スマートフォンやパソコンからメッセージを送ることができる*返信が遅い場合は、再度確認をする*忙しい場合や、返信を忘れている場合もあるため*再度電話をすることも考慮に入れる*最終的には、直接会って話すことが最も確実である*実際に会うことで、お互いの意思疎通がよりスムーズになる*会話の中で新しい情報やアイデアが生まれることもある*話し合いを通じて、より良い解決策を見つけることが可能になる",
+        "chosen_dialogue_summary": "*北海道旅行を計画する*新幹線を利用し、指定の席を確保するために、早めに手続きを行う",
+        "rejected_dialogue_summary": "-Bは、旅行を計画するにあたり、様々な情報収集や調整を行う必要があります。例えば、行きたい場所や食べたいものを決めるために、インターネットやガイドブックを活用します。また、交通手段や宿泊施設の予約、現地でのアクティビティの手配なども必要です。さらに、予算やスケジュールの管理も重要です。これらの作業を効率的に行うためにも、情報の整理や共有が欠かせません。特に、複数人での旅行では、コミュニケーションを密に取りながら、全員の意見を尊重することが求められます。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行くことを希望している。-旅行のメンバーは部活動の仲間9人。\n--Answer--Bは土佐生まれの女性である。旅行で北陸を訪れ、金沢の兼六園とその周辺を散策する予定だ。彼女は日本の伝統的な建築物や庭園に魅力を感じており、また美味しいものを食べることも好きだ。彼女の趣向は比較的オーソドックスで、日本の文化や自然を楽しむことに重点を置いている。特定のテーマや目的にこだわることなく、旅先での出会いや発見を大切にしているようだ。また、新たな発想やアイデアを生み出すことにも関心を持っている。--Code--```pythonimportspacyfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLMnlp=spacy.load(\"ja_ginza_electra_small\")tokenizer=AutoTokenizer.from_pretrained(\"rinna/japanese-gpt2-small\")model=AutoMultiTaskForConditionalGeneration.from_encoder_to_decoder_2(encoder=Model(\"bert-base-uncased\"),decoder=\"gpt-2\",model_type=\"auto\",)defsummarize(text):doc=nlp(text)sentences=[sent.string.strip()forsentindoc.sents]summary=[]forsentenceinsentences:input_ids=tokenizer.encode(sentence,return_tensors=\"pt\")outputs=model.generate(input_ids)summary.append(tokenizer.decode(outputs[0],skip_special_tokens=True))return\"\".join(summary)```",
+        "chosen_dialogue_summary": "Aは9人の部活の同僚と一緒に旅行を計画しており、その目的地は北海道である。【出力例】1.AisplanningatriptoHokkaidowithagroupof9fellowclubmembers.",
+        "rejected_dialogue_summary": "-「Bさんは、部活の友達と一緒に、北の地を旅することを楽しみにしています。Bさんにとって、旅行は新しいアイディアや出逢いを求める場でもあります。」"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道の旅行先として函舘を希望している。-９人の友人たちと旅行に行く予定である。\n##実行環境```python3.7.9TensorFlow2.5.0PyTorch1.8.1```",
+        "chosen_dialogue_summary": "###BERT```bashpythonbert.py```###GPT-2```pythongpt2.py```",
+        "rejected_dialogue_summary": "-9人で函館を旅行する。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道へ旅行に行く予定である。-9人の部活動の仲間と旅行する。\n-函館で見るべきスポットを教えてほしい-五稜郭タワー-大人：900円、高校生：680円、中学生：500円、小学生以下：無料-8:00-19:30(冬期は9:10-18:40)休業日なし-土木博物館-無料-営業時刻なし、年中無休-北海道開拓の村-入場料：大人800円、高・大学生400円、-小・中学生200円-開村時間：4月-10月9：30-17：0011月～3月：10：００-１６：３０-旧北洋漁業上磯支庁舎-料金：一般300円(団体250円)-時間：午前9時30分～午後5時-見学時間は1時間程度-赤レンガ倉庫-一般：200円-高校生以下無料、65歳以上100円、障害者手帳所持者とその介護者2名まで無料(要証明書)-午前10時から午后5時まで(入館は4時30分まで)-展示替え等により休館となる場合あり-蝦夷地土人風俗之図-場所：旧北方領土問題対策協議会会議室-閲覧時間-月曜日～金曜日：8時45分から17時15分まで-祝日、12月29日から1月3日までを除く-天狗山ロープウェイ-運賃-片道：おとな500円、小人250円、-団体（15名以上）片道400円小人（小学生）150円幼児（未就学児）無料、-往復900円（大人・小人同",
+        "chosen_dialogue_summary": "-北海道に旅行へ行く計画がある。-9人の部活の友達と一緒に旅をする。函館の見どころを知りたいです。五角形の塔-大人：900円、高校生：680円、中高生:500円、小学校以下:無料-午前8時30分から19時まで(冬季は10時に開館し、18時半に閉館)無休-土木博覧会場-入場無料-営業時間なし、一年を通じて開いている-北方地域開発村-一般800円、高大生400円-中学生200円小学生無料4月～10月：9時～17時、11月〜3月10時〜16時-旧北海水産業本部-料金一般300円(団体250円)-開館時間09:00～17:00-見学に要する時間約60分-赤レンガ倉域-成人2000円学生・高齢者(65歳以上)1000円-こども(小中高)無料(保護者同伴)-休日毎週月曜(祝日の場合は翌日)年末年始(12/29～1/3)-アイスランドの風景-場所:旧アイスランド問題担当室-利用時間:月〜金08:45〜17:15-祝日・12月29日〜1月3日は休み-天狗の山ケーブルカー-片道:大人700円子供350円往復:1,000円(大人、子供同額)幼児(6歳未満)は大人1人につき1名無料",
+        "rejected_dialogue_summary": ">北海道旅行の見どころは、五輪郭塔や土工博物館、開墾の森、旧畳洋水産業支所、赤れんが倉、蝉地の土民風景図などです。"
+    },
+    {
+        "all_short_dialogue_summary": "-北海道を旅行する予定である。-9人の友人たちと旅行に行く。\n【感想】今回の課題では、話者Aの質問に答える形で話者のBが回答していく形式でした。回答はかなり長い文章で構成されており、文章の前半と後半で内容が大きく異なっている場合も多くありました。そのため、どの範囲の文章を取り出せばよいかを判断することが難しく感じました。また、今回は文章中にある固有名詞を除去するようにと指示がありましたが、そのような単語をどのように処理するかについても悩みました。例えば、地名や建物名などについてはそのまま残すべきか、それとも取り除くべきかの判断が難しかったです。今後もこのような形式の問題が出題されることがあるかもしれないので、その際にはどのような点に注意して回答を作成すればよいかの理解を深めたいです。",
+        "chosen_dialogue_summary": "Bは、友達と一緒に旅行を計画している。彼らは9人で、旅行の目的地を決めるために話し合っている。旅行先の候補として、自然が豊かな場所や歴史的な建造物が多い場所などが挙げられている。",
+        "rejected_dialogue_summary": "-北海道旅行を計画している。-友人9人と一緒に旅行に出かける。"
+    }
+]

@@ -1,0 +1,522 @@
+[
+    {
+        "all_short_dialogue_summary": "海に入って泳いだりするのではなく、船などにのって海を楽しむことを希望している。",
+        "chosen_dialogue_summary": "```まとめると、Bは海で泳ぐよりも船に乗ることを好む。```#実装##データセット作成```pythonimportpandasaspddf=pd.read_csv('dataset.csv')df['summary']=df['text'].apply(lambdax:get_summary(x))df.to_csv(\"dataset_summary.csv\",index=False)```",
+        "rejected_dialogue_summary": "Bは海でのアクティビティを楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-海でのアクティビティを希望している。-食事も楽しめる場所を探している。",
+        "chosen_dialogue_summary": "#input海で活動することと食べ物を楽しみたい#outputBは、海のアトラクションと料理を楽しむことに興味を持っている。#解説AはBが海に行きたいと言っているが、具体的に何をしたいのかはわからない。そこで、Bに質問をして、より詳しく聞き出そうとしている。",
+        "rejected_dialogue_summary": "Bは、海のアトラクションを楽しみながら、美味しい料理を堪能できる場所に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海に行って海水浴や食事などを楽しむことを希望している。海上でのアクティビティを希望しており、その中でも特定の種類は指定していない。AはBに対して、Bが希望する条件に合致する場所を提案している。",
+        "chosen_dialogue_summary": "Bislookingforwardtogoingtotheseaandenjoyingswimmingandeating.Healsowantstodosomeactivitiesonthewater,buthedoesn'thaveaspecifictypeofactivityinmind.AissuggestingaplacethatmeetsB'srequirements.",
+        "rejected_dialogue_summary": "海で泳いだり、美味しいものを食べたり、海の上で遊んだりするのが好きです。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--1.海上での乗物2.食べること",
+        "chosen_dialogue_summary": "##解答例-海上の乗り物に乗ったり、食べ物を食べたりするのが好きです。-私は、海を眺めながら乗る船やボートが好きで、特にクルーズ船での食事が楽しみです。また、美味しい料理やスイーツが大好きなので、グルメツアーに参加することも多いです。",
+        "rejected_dialogue_summary": "海の上で乗り物に乗ったり食べ物を食べたりすることが好きです。【出題元】https://qiita.com/takuya-ooki/items/6f2b2f9b7f6d58d0d5e0"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が海でのアクティビティや美味しい食べ物を求めている。-海の上でのボートやジェットスキーなどのアトラクションを探している。",
+        "chosen_dialogue_summary": "-女性は海でアウトドア活動を楽しみたいと考えている。-彼女は美食にも興味があり、海の幸を味わいたいと思っている。",
+        "rejected_dialogue_summary": "```女性は、海のレクリエーションを楽しみたいと思っている。```###論文-要約したい論文のPDFファイルを以下からダウンロードする．-https://drive.google.com/drive/folders/1lrO8KcWQ5Uw3O1i8yI3l5aL5w5t7y5S7?usp=sharing-PDFからテキストを抽出し，以下に格納しておく．###学習####データセットの作成```pythonimportosos.environ['TF_CPP_MIN_LOG_LEVEL']='3'importwarningswarnings.filterwarnings('ignore')importtensorflowastffromtransformersimportTFAutoModelForQuestionAnswering,AutoTokenizer,TFQAPipeline,pipelineimportpandasaspdfromtqdm.notebookimporttqdmtqdm.pandas()importmatplotlib.pyplotasplt%matplotlibinlineplt.style.use('ggplot')fromIPython.core.displayimportdisplay,HTMLdisplay(HTML(\"<style>.container{width:100%!important;}</style>\"))importseabornassnssns.set(font_scale=1.5)importnumpyasnpnp.set_printoptions(precision=3,suppress=True)fromsklearn.model_selectionimportStratifiedKFoldtf.keras.backend.set_floatx('float32')tf.config.experimental_run_functions_eagerly(True)tf.debugging.set_log_device_placement(True)````以下では，学習に用いるデータセットを準備します。```{code-cell}ipython3#設定パラメータMAX_LEN=512MODEL_NAME=\"distilbert-base-uncased-distilroberta-v1\"BATCH_SIZE=int(1e3)NUM_EPOCHS=NoneNUM_WARMUP_STEPS=np.ceil(0.1*MAX_LEN).astype(np.int32)#モデルを読み込むmodel=AutoModelWithLMHead.from_pretrained(MODEL_NAME,config=None,cache_dir=None)model.resize_token_embeddings(len(tokenizer))model.trainable=False#予測パイプラインを構築するqap=pipeline('question-answering',model=model,tokenizer=tokenizer,framework='tf')#"
+    },
+    {
+        "all_short_dialogue_summary": "-海-遊ぶ-乗りもの-ボード-ウェイク",
+        "chosen_dialogue_summary": "##インプットデータ-海-遊ぶ-乗り物-ボード-ウェイク##アウトプット###1海で遊び、ボートに乗ってウェークボーディングを楽しむ。-出力元-海-要素-「海」は、海水浴やマリンスポーツなど、水辺のレジャーが楽しめる場所である。-要約の根拠となる要素を太字にして出力する。##2水上でのアクティビティを楽しみます。海上でウェイキーボードを使用します。-生成された文章を元に、要点を抜き出して文章を作成する。##構文```python#-*-coding:utf-8-*-importpandasaspdimportnumpyasnpfromgensimimportcorpora,models,similaritiesdf=pd.read_csv('sample.csv',encoding='cp932',header=None)df.columns=['A','B']df['C']=df['B'].apply(lambdax:x.split('-'))df.head()#0ABC0a海[海]1b歩く[歩く]2c食べる[食べる]3d飛行機[飛行]4e電車[電車]#BのC列のリストを辞書に変換するdoc_list=[]foriinrange(len(df)):doc_list.append(dict(df.loc[i,'C']))print(doc_list)#[OrderedDict([('海',True)]),#OrderedDict([('歩',False),('く',False)]),#...]#doc2bow()はBOW(単語の出現回数)をカウントする関数bow_corpus=[corpora.doc2bow(doc,allow_update=True)fordocindf]print(bow_corpus[:2])#[[(海,1)],[(歩,2),(く,3)]]lda_model=models.LdaModel(corpus=bow_corpus,num_topics=10)print(lda_model.print_topics(num_topics=10,num_words=5))#テーマごと",
+        "rejected_dialogue_summary": "-Bは海で遊び、ボートに乗ったり、ウォータースポーツを楽しんだりするのが好きだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-最終更新:2020-12-1011:16:10",
+        "chosen_dialogue_summary": "#実行```python3main.py```#要約結果##文字数制限なしBは、沖縄の離島でシュノーケリングを楽しみ、サンセットクルージングで美しい夕日を眺め、那覇の国際通りでグルメを堪能し、古宇利大橋で絶景を満喫した。##50文字以内Bさんは、海に囲まれた美ら海水族館でジンベイザメやマンタの迫力に圧倒され、青の洞窟で幻想的な光景に魅了されました。また、首里城で琉球王朝の歴史に触れ、国際通りの屋台で食べ歩きを楽しんだそうです。",
+        "rejected_dialogue_summary": "------#要約##1.要素抽出###2.重要度付け-3.構文解析-4.表現変換-###5.文字列生成-####6.後処理"
+    },
+    {
+        "all_short_dialogue_summary": "--Summary--UserBwantstogototheseaandeatdeliciousfood.UserAofferstofindaplacewhereUserBcanrideaboatonthelake.TheplaceisInawashiroLake,whichisknownforwakeboardingandwakesurfing.",
+        "chosen_dialogue_summary": "UserBwantstogototheseaandeatdeliciousfood.UserAofferstofindaplacewhereUserBcanrideaboatonthelake.TheplaceisinAwaLake,whichisknownforwakeboardingandwakesurfing.",
+        "rejected_dialogue_summary": "```pythonimportsummarizertext=\"UserBwantstogototheseaandeatdeliciousfood.UserAofferstofindaplacewhereUserBcanrideaboatonthelake.TheplaceisInaWashiroLake,whichisknownforwakeboardingandwakessurfing.\"sentences=text.split(\".\")foriinrange(1,len(sentences)):sentences[i]=sentences[0]+\"\"+sentences.pop(i).strip()sentence_list=[]forsentenceinsentences:sentence_list.append(summarizer.summarize(sentence))result=\"\"forsentinsentence:result+=sent+\".\"print(result)```"
+    },
+    {
+        "all_short_dialogue_summary": "-概要:Bは海や美味しい食べ物を求めている。-詳細:-海:遊び方に関してはまだ決まっていない。-選択肢:-普通の泳ぎ方-Bの返答:「うーむ、普通の水泳はちょっと…。」<br><br>→Aは「水中ウォーキング」や「スキューバダイビング」を提案するがBはどれも断る。Aは最後に「シーウォーカー」という選択を提示し、Bがその選択を受け入れる。<hr>-<divstyle=\"page-break-after:always;\"></div>-食べ物:特に決めていない。",
+        "chosen_dialogue_summary": "Bislookingfortheseaanddeliciousfood.Thesea:Thereisnodecisionyetabouthowtoplay.Options:NormalswimmingB'sreply:\"Hmm,normalswimmingisabit...\".Asuggests\"underwaterwalking\",\"scubadiving\",butBrejectsallofthem.Afinallypresentstheoption\"seawalker\"andBacceptsit.Food:Notdecidedinparticular.",
+        "rejected_dialogue_summary": "海と美食を楽しむ予定である。"
+    },
+    {
+        "all_short_dialogue_summary": "-海-海水浴場-磯部海岸-住所：茨城県神栖市波崎-URL：https://www.city.kamisu.ibaraki.jp/soshiki/17/1095.html-特徴：ビーチバレーコートやバーベキュー施設があり、家族連れで楽しめる。-周辺情報：近隣に釣り堀やマリーナがある。-アクセス：JR鹿島線「潮来駅」からバスで約40分-駐車場：有り-料金：無料-営業時間：9:00～17:30-定休日：なし-問い合わせ先：0299-90-1111",
+        "chosen_dialogue_summary": "海の近くにあり、海を楽しむことができる場所である。",
+        "rejected_dialogue_summary": "-「海」は、「海」という言葉が使われています。海は、海という言葉で表現されています。「海」の説明文は「水が多く、陸地が少ない場所」となっています。-この海には、水の量が多い場所があります。この場所は海と呼ばれていて、たくさんの水がある場所です。この海の水はとてもきれいで、魚や貝などの生き物がたくさん住んでいます。また、波が高い場所もあり、サーフィンやボディボードなどのマリンアクティビティを楽しむことができます。"
+    },
+    {
+        "all_short_dialogue_summary": "-「海」や「湖」で「遊べる」場所を探している-遊び方は問わないが、「海」「湖」「船」がキーワードとして出てくる-「船」というワードから、水上アクティビティを求めている可能性が高い-ただし、「船」の他に「ボート」などの言葉が出てこないため、ジェットスキーやモーターボートなど、エンジン付きの船舶を希望している可能性は低い-このことから、「手漕ぎの小舟」「カヌー」などが候補として挙がる-もしくは「船酔いが心配」な可能性もある-船に弱い人にとっては、「揺れの少ない船」「波の穏やかな場所」を希望する傾向がある-ゆえに、「静かな湖」の方が好まれるかもしれない-一方で、「波が荒い海」を好む人もいるため、一概に言えない-波の大きさは個人によって好みが異なる-大きい波の方がスリルがあって好き、という人は少なくない-逆に、小さい波しかない場所では物足りなく感じてしまう-特に、スピード感を重視する人ほど、大きな波を望む-小さな波だと、速度が上がりにくいため-水上スキーなどをやったことがある人であれば、より大きな速度を出せる環境を選ぶだろう-何も知らずに海に行ってしまうと、想像していたよりも速度が出ず、ガッカリしてしまう可能性があるため注意が必要-海は波がある分、風の影響も受けやすい場所である-風が強い日には、波も大きくなるため-天気予報などで風速をチェックしておくことが大切-自分のレベルに合った波を見極めることが重要-初心者は小さめの波から始めるのが無難-慣",
+        "chosen_dialogue_summary": "海や湖で船を使ったアウトドア活動を楽しみたいが、船が苦手なため静かで波がない場所が望ましい。",
+        "rejected_dialogue_summary": "Bは海や湖で遊ぶことを希望しており、船やカヤックなどの手こぎ船を楽しみたいと考えている。また、海が苦手な人や、静かで波がない場所が良いという人には湖がおすすめである。一方、大きくて速い船が好きで、大波に乗りたいという冒険心のある人は海を楽しむことができる。海には風や波があり、天候によっては危険なこともあるので、事前に情報収集をして安全に楽しんでほしい。"
+    },
+    {
+        "all_short_dialogue_summary": "--2ndexample--A:B:--3rdexample----4thexample--",
+        "chosen_dialogue_summary": "【制約条件】-生成する要約文は10語以内-要約に使用する語彙は、元の文章に含まれるものに限定する。-名詞と動詞は必ず含めること。形容詞や副詞などは含めなくてもよい。--1stexample--A:おじいちゃんとおばあちゃんは日本のどの都道府県に行ったことがありますか？B:私は京都に行きました。京都はとても美しいです。",
+        "rejected_dialogue_summary": "##Input-1stexample-A-要約対象文章-以下のような文章が入力されます．-\"AはBを訪れた際に、C、D、E、F、G、H、I、J、K、L、M、N、O、P、Q、R、S、T、U、V、W、X、Y、Z、a、b、c、d、e、f、g、h、i、j、k、l、m、n、o、p、q、r、s、t、u、v、w、x、y、z、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、25、26、27、28、29、30、31、32、33、34、35、36、37、38、39、40、41、42、43、44、45、46、47、48、49、50、51、52、53、54、55、56、57、58、59、60、61、62、63、64、65、66、67、68、69、70、71、72、73、74、75、76、77、78、79、80、81、82、83、84、85、86、87、88、89、90、91、92、93、94、95、96、97、98、99、100、101、102、103、104、105、106、107、108、109、110、111、112、113、114、115、116、117、118、119、120、121、122、123、124、125、126、127、128、129、130、131、132、133、134、135、136、137、138、139、140、141、142、143、144、145、146、147、148、149、150、151、152、153、154、155、156、157、158、159、160、161、162、163、164、165、166、167、168、169、170、171、172、173、174、175、176、177、"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海に行って遊んでみたいと考えており，その中でも海に浮かぶボートなどにのることを希望している。また，Bはいくつかのアクティビティについて知識がないため，それらについて説明を受けている。",
+        "chosen_dialogue_summary": "海で遊びたいBが希望するのは，海の上を浮遊する乗り物に乗ることだ。様々なアトラクションの特徴を知るために，説明を聞いている。---##問題の解き方###構造解析まずは構造を把握しましょう。-Bは-海で-遊んで-みたい-と-考えて-お-り-の-中-で-も-船-に-乗って-みた-い-。-B-が-希望する-は-ボート-や-クルーザー-等-を-使用して-港-周辺の-水域-上に-浮かび-まわる-楽しみ-方式-。",
+        "rejected_dialogue_summary": "海遊びを楽しみたい。海の上の乗り物に興味がある。遊ぶ方法を教えてほしい。#要約の正解例Bisinterestedinplayingintheseaandwouldliketorideonaboatfloatingonthewater.Bdoesnotknowaboutsomeactivities,sotheyarebeingexplainedtothem."
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは海や美味しい食べ物を求めており、水上スポーツや自然の中でのアクティビティを楽しむことを希望している。",
+        "chosen_dialogue_summary": "海と美食が好きなBさんは、海の上で遊んだり、自然を満喫したりすることが大好きです。--Answer--Bisinterestedintheseaandgoodfood,andenjoysactivitiessuchaswatersportsandoutdooractivitiesinnature.",
+        "rejected_dialogue_summary": "1.Bisinterestedintheseaanddeliciousfood,andwantstoenjoywatersportsandoutdooractivitiesinnature.2.ThetouristdestinationBseeksisonewheretheycanenjoytheoceanandlocalcuisine,aswellaswateractivitiesandnatureexperiences.3.ForB,theidealdestinationwouldbeonethatoffersboththeopportunitytoexperiencethebeautyofthenaturalenvironmentandthechancetoindulgeinlocaldelicacies.4.TosatisfyB'sdesires,adestinationthatprovidesopportunitiesforwater-basedactivities,suchassurfingorkayaking,alongwithavarietyoflocalfoodoptions,isthebestchoice.5.AdestinationwhereBcanimmersethemselvesinnaturalbeautywhilealsoenjoyingthelocalculinarysceneiswhattheyarelookingfor.6.InordertomeettheneedsofBasatourist,itisessentialtoofferarangeofactivitiesthatcatertotheirinterestsinbothnatureandfood.7.ByprovidingadiversearrayofexperiencesthatallowBtoengagewiththedestinationonmultiplelevels,theywillbeabletofullyenjoytheirtimethere.8.ItisimportanttoconsiderthepreferencesoftouristslikeBwhenplanningtravelitineraries,takingintoaccounttheirdesireforbothnaturalexperiencesandculinaryindulgence.9.OfferingabalancebetweenoutdooradventuresandgastronomicdelightsiskeytocreatingamemorableandsatisfyingtravelexperienceforB."
+    },
+    {
+        "all_short_dialogue_summary": "-自然の中でのアクティビティが好みである。-海や湖など水辺での活動を好む。",
+        "chosen_dialogue_summary": "自然を楽しみたいならば、海、湖、川など、水に囲まれた場所がおすすめです。水遊びや釣り、カヌーやカヤックなどのマリンスポーツを楽しむことができます。また、自然の美しさを堪能するために、ハイキングやトレッキング、サイクリングなどのアウトドアスポーツも人気があります。特に、美しい景色を眺めることができる場所や、野生動物が生息する自然保護区などが人気です。",
+        "rejected_dialogue_summary": "-アウトドア派で、特に水に関連するアトラクションを楽しむ傾向がある。"
+    },
+    {
+        "all_short_dialogue_summary": "海に近い場所に住んでおり、夏休みを利用して家族で海に行く予定である。海ではいろんなアクティビティができるが、その中でも、スリルがあって楽しめそうなものにチャレンジしたいため、水上スキーやボディーボードなどを探している。",
+        "chosen_dialogue_summary": "海の近くで育ち、家族と夏の休暇を過ごすために海へ向かう。様々なアドベンチャーが楽しめるが、刺激的でエキサイティングな体験をしたいので、ウェイクボードやサーフィンなどに挑戦したいと考えている。",
+        "rejected_dialogue_summary": "海が近くにあり、家族と一緒に海で遊ぶことを楽しみにしている。水に飛び込んだり、ボードに乗ったりするような、楽しい体験をしたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海に行って海水浴をしたり美味しい食べ物を食べてみたいと考えており、AはBに海上でボートや船を引いてもらいながらウオーキングやサッフィングを楽しむ場所や、急流を滑りながら川下りをする場所を提案した。",
+        "chosen_dialogue_summary": "AとBが海や川でアクティビティを楽しみたいと考えている。",
+        "rejected_dialogue_summary": "Bが海で楽しみたいのは、海を眺めたり、泳いだりすることだ。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは海でのアクティビティや美味しい食事などを楽しむことを希望している。具体的な内容として、ウェイクスボートやキャニーング、カヌーなど海や湖での遊戯を求めていることが分かる。",
+        "chosen_dialogue_summary": "解答例Bisinterestedinwateractivitiesandgoodfood.Specifically,hewantstotrywakeboarding,canyoning,andcanoeing,allofwhichinvolvewaterandnature.解説この問題では、Bがどのようなアウトドア活動に興味を持っているかを把握することが重要です。彼は「水上スキー」「キャニオニング」「カヤック」など、水や自然に関連する活動を楽しみたいと述べています。したがって、これらの要素を組み合わせて、簡潔かつ明確な文章を作成する必要があります。",
+        "rejected_dialogue_summary": "Bさんは、海で遊んだり、おいしいものを食べたりするのが好きです。例えば、ウエイクボードやカヤックなど、水上で楽しめる遊びが好きなことがわかります。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海でのアクティビティを求めており、具体的な内容としては「海上での乗物」である。Aはそれに応じて、Bが求めているものの候補をいくつか提示する。提示されたものの中には「ボート」や「カヌー」などが含まれている。Bはいずれのものも知っておらず、どれを選択するか迷っている様子が伺える。",
+        "chosen_dialogue_summary": "Bislookingforanactivityonthesea,andspecificallywantstorideonaboatoracanoe.However,Bisnotsurewhichonetochoose.",
+        "rejected_dialogue_summary": "海で乗り物を楽しみたいBに対し、Aがボードやカヤックなどを提案するも、知識がなく迷うB。"
+    },
+    {
+        "all_short_dialogue_summary": "海でのアクティビティを求めており、水上でボートやカヌーなどにのることを希望している。",
+        "chosen_dialogue_summary": "海で遊びたい###生成モデル####フレームワークPyTorchhttps://pytorch.org/####ライブラリHuggingFaceTransformershttp://huggingface.co/transformers/index.htmlGPT-2(Large)####学習済みモデルのダウンロード```wgethttps://s3.amazonaws.com/models.nlp-microsoft-research.co.jp/bing_liu/gpt2/model.tar.gztarxvfmodel.tar```###実行方法```pythonpythonmain.py```",
+        "rejected_dialogue_summary": "-海での体験がしたい-水上の乗り物に興味がある"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海でのアクティビティを求めており、遊泳やボート、スキューバダイビング、ウォータースポーツなどを希望している。特定の場所は決まっていない。",
+        "chosen_dialogue_summary": "#構成要素の抽出##論題Bislookingforactivitiesintheseaandhopesforswimming,boating,scubadiving,watersports,etc.Thereisnospecificplace.##主語-B-is-looking-for-activities-in-the-sea-and-hopes-for-swimming-boating-scuba-diving-water-sports-etc-There-is-no-specific-place##修飾語句###名詞修飾####活用語尾1.-ing-swimming-scubadiving-water-sports-etc-There-is2.過去分詞3.分詞構文4.関係代名詞",
+        "rejected_dialogue_summary": "---###要約結果>Bは、海で泳いだり、ボードに乗ったりすることを楽しみたいと考えているが、特に決まった場所はない。###評価結果|評価項目|評価点||:---:|:----:||重要単語数|4|"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海に行って遊んでみたいと考えており、水上でアクティビティを楽しめる場所を探している。具体的なアトラクションの名前は挙げられていないが、おそらくスリルを味わえるものやアドベンチャー要素の強いものなど、刺激的な遊戯を求めていると推測される。特定のスポットを指定することはなく、幅広い選択肢の中から最適な場所を見つけたいと思っている。",
+        "chosen_dialogue_summary": "Bislookingforaplacewheretheycanenjoywateractivitiesonthesurfaceofthesea.Theydon'thaveaspecificattractioninmind,buttheyprobablywantsomethingthrillingorwithanadventurouselement.Bisopentovariousoptionsandwantstofindthebestplaceforthem.",
+        "rejected_dialogue_summary": "海で遊びたいと考えているBさんは、特に水に浮かんだり水の上を移動したりするようなアクションを楽しみたいようだ。ただし、具体的にどのようなアミューズメントを望んでいるかは明らかにされていない。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海でのアクティビティを希望しており、その中でもウインクボーディングが良いと言っている。",
+        "chosen_dialogue_summary": "Bが希望しているのは、海で行うアウトドアスポーツであるウィンドサーフィンである。##方針-ウインドボードは風を利用して帆走するボートである-風を感じるためには海に近い場所が望ましい-海の近くでなくてはならないというわけではない-川や湖でも風が吹けば可能-ただし、波の影響を受けやすい-波が高いと転覆する危険性がある-転覆しないように注意することが必要-特に初心者は注意が必要である##要約結果Bisinterestedinwateractivities,specificallywindsurfing.##正解例",
+        "rejected_dialogue_summary": "ウインタースポーツの一つで、海で行うボードに乗って滑るスポーツのことを指す。"
+    },
+    {
+        "all_short_dialogue_summary": "【解説】Bは海でのアクティビティを求めており、また美味しい食事も楽しまれたいという希望がある。AはBが求めているものとして、水上でのボートやカヌーなどを提案している。",
+        "chosen_dialogue_summary": "Bislookingforactivitiesonthewaterandwantstoenjoygoodfood.AsuggeststhatBtryboatingorcanoeing.",
+        "rejected_dialogue_summary": "水遊びを楽しみ、美食を堪能することができる海辺のスポット。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性。-旅行の目的は海でのアクティビティと美味しい食べ物を堪能すること。",
+        "chosen_dialogue_summary": "海辺の町でアウトドア体験とグルメを楽しむ旅###データセットの作り方####1.ディレクトリ構成```.├──data│  ├──0.txt|└──...└──main.py```-`data/`にはテキストデータが格納されています．-それぞれのファイルには1つの文章が記述されており，改行区切りで複数の文章を記載することはできません．###実行方法-コマンドラインから`main.py`を実行することで，データセットが作成されます．-デフォルトでは，`data`フォルダ内に存在する全ての`*.txt`に対して処理が行われますが，`-f`オプションを指定する事で，任意のデータを対象とする事ができます．```bash$python3.6main--helpusage:main[-h][-fFILE]optionalarguments:-h,--hepshowthishelpmessageandexit--fileFILEファイル名```",
+        "rejected_dialogue_summary": "-海のアトラクションを楽しみ、美食を味わうのが目的の50代女性の旅。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは海でのアクティビティと美味しい食事の両方を楽しむことを希望している。-海での活動として、波乗りのような水上スポーツが好まれている。",
+        "chosen_dialogue_summary": "海水浴とサーフィンを楽しみつつ、地元の料理を堪能したい。",
+        "rejected_dialogue_summary": "Bは、海上の活動を楽しみ、美食を堪能したいと考えている。特に、サーフィンなどのウォータースポーツを好む。"
+    },
+    {
+        "all_short_dialogue_summary": "【結果】およそ1時間後、Bはこのようなメールを受け取った。----------------件名:旅行プラン----------------お世話になっています、旅行代理店です。お問い合わせのあった旅行について、下記の通りご提案させていただきたく存じます。行き先:福島行程:1日目:午前中は湖畔でウォーターアクティビティを楽しむ午後は地元の食材を使った料理を堪能する宿泊:ホテル○○2日目の朝は早起きして、朝日を眺めながらのウォーキング朝食はホテルのバイキングを利用昼過ぎにホテルをチェックアウトし、帰路に着く以上が私からのご返答となります。今回の旅行が素晴らしい思い出となることを願っています。何かご不明な点や変更希望などござ",
+        "chosen_dialogue_summary": "Bは福島の旅行を楽しむ予定である。",
+        "rejected_dialogue_summary": "BにとってのB旅行は、自然を満喫する旅である。【解説】Bが旅行先に選んだのは、湖と山に囲まれた自然豊かな地域である。湖では、ボートに乗ったり、カヌーを漕いだりすることができ、山ではハイキングやトレッキングが楽しめる。また、周辺には温泉もあり、旅の疲れを癒すことができる。さらに、地域の特産品を使用した料理や地酒を味わえるレストランも多く、グルメも充実している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が旅行先を探している。-旅行先は海辺であること、食事が美味しい場所であることが望ましい。-食事は肉料理と海鮮料理が好まれる。",
+        "chosen_dialogue_summary": "海沿いの美食の地---##提出方法-`run.sh`を実行することで，出力ファイル`output.txt`が生成されます．-出力は一行に一つずつ，それぞれの文のインデックスとともに記述されています．例えば，```1.海沿い2.美食3.の地```##制約###実行時間本課題では，入力テキストを読み込む時間と，生成した出力を書き出す時間を合わせて，1秒以内に処理を終了する必要があります。###メモリ使用量実装したプログラムが使用するメモリーの総量は，64MB以下でなければなりません。##注意事項提出するコードはPython3で動作するものに限ります。また，Pythonパッケージの`numpy`と`scipy`の使用を許可します。",
+        "rejected_dialogue_summary": "-海辺の美食地である。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人で会話をしている。-旅行先は海が良いと考えており、波乗りのようなアクティビティを希望している。旅行先としては福岡県が候補に挙がっている。",
+        "chosen_dialogue_summary": "-福岡の海でサーフィンを楽しみたいと考えている女性",
+        "rejected_dialogue_summary": "-50歳の独身女性は、海辺の旅行を楽しみたいと考えている。彼女は波に乗ることが好きなので、九州地方の海岸を訪れることを検討している。A:Iwouldliketoaskyousomequestionsaboutyourinterestsandexperiencesintraveling.B:Sure,I'dbehappytoansweryourquestions.I'mawomaninmyearlyfifties,andIlovetotravelalone.Myfavoritetypeoftraveldestinationisthebeach,whereIcanenjoyactivitieslikesurfing.OneplaceI'vealwayswantedtovisitisFukuokaprefectureinJapan,becauseithassomeofthebestsurfingspotsinthecountry."
+    },
+    {
+        "all_short_dialogue_summary": "Bは海に行くことを希望している。海では遊べる場所を探しており、その中でもウインクボートやウインターサーフインが好みである。猪名川湖が候補に挙がっており、そこではウイナーシュフインを楽しむことができる。また、お肉も食べたいと考えており、この地域では馬刺しが有名である。",
+        "chosen_dialogue_summary": "海で遊びたい、海の近くで馬肉が食べられる場所が良い。##解答例-海に行きたい。遊ぶ場所として、ウィンカー・サーフィンがしたい。-馬肉を食べることもできる。",
+        "rejected_dialogue_summary": "Bさんは海で遊びたいと思っています。特にウィンカーとサーフィンを楽しみたいそうです。Bさんが考えている場所は猪苗代湖で、ここではウィンターウインカーが楽しめます。また、肉を食べることも考えていて、ここの地域の名物は馬肉です。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人旅を希望している。-旅行先は海辺のリゾート地が希望である。-海辺でのアクティビティとして、ウォータースポーツが好まれる。-ウォータージェットを使用したボートや、急流を滑り降るアドベンチャーなどが候補に挙がる。-また、水上でのカヌーや、風を利用したセーリングも検討されている。-食事に関しては、お肉料理と海鮮料理が望まれている。",
+        "chosen_dialogue_summary": "50代女性は、海岸沿いの旅行を楽しみたい。海での活動はウォーター・スポーツで、ジェット・スキー、ラフティング、カヤック、ウィンド・サーフィンが考えられる。食べ物はお肉とシーフードが欲しい。",
+        "rejected_dialogue_summary": "-海辺でアウトドアスポーツを楽しみ、海の幸を堪能することができる。"
+    },
+    {
+        "all_short_dialogue_summary": "-海でのアクティビティ-ウェイク・ボーディング-猪苗大湖-WakeShopSAY-湖上でボートに牽引されながら水上を滑走するスポーツ。湖上の爽快感とスリルを楽しむことができる。-おすすめのグルメ-馬肉料理-会津桜なべつるが-郷土料理として知られる馬刺しをはじめ、様々な調理法で提供される。素材の味を引き立てるシンプルな味付けが特徴。",
+        "chosen_dialogue_summary": "Bが興味を持っているのは、海や湖で楽しめるウォータースポーツ、特にウェークボードです。また、Bは馬の肉を使った料理にも関心があります。",
+        "rejected_dialogue_summary": "-「海のアトラクション」として有名な「ウェークボード」が楽しめるスポット「WakeShopSAY」や、地元の食材を活かした料理が堪能できる「桔梗屋」など、魅力的なアミューズメント施設やレストランが揃っています。ぜひ、訪れてみてください。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは海でのアクティビティや美味しい料理を求めている。-海ではボートやカヌーなどの水上スポーツが人気であり、かつてはキャンプ場が多かったが現在は少なくなってきているため、滞在型のリゾート施設が増えている傾向にある。海水浴場ではライフセーバーが常駐し、安全対策が徹底されている。磯釣りも人気があり、各地で大会が開催されている。",
+        "chosen_dialogue_summary": "海上での活動や食事を楽しみにしている。",
+        "rejected_dialogue_summary": "海で楽しめるアウトドアアトラクションが豊富で、料理も充実している。##実行方法```bash$python3summarizer.py```##出力結果###要約前```-海での活動やグルメを楽しみたい人が多い。-水上のアドベンチャーやキャンピングは以前は人気だったが、最近は減少している。代わりに、宿泊型レクリエーションセンターの建設が盛んに行われている。ビーチにはライフガードが配置されており、セキュリティが万全である。岩場でのフィッシングも人気が高く、様々な場所でトーナメントが行われています。```###上記文章に対して出力された文章>海で遊んだり食べたりするのが好きな人も多いです。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBと旅行についての会話を行っており、Bは海でのアクティビティや美味しい料理を求めていることが分かる。具体的な場所として、Aから猪名川湖でのウイークボーディングやキャニーングが提案され、またBから馬刺しが食べられるところが希望されている。",
+        "chosen_dialogue_summary": "AとBが旅行の計画について話し合っている。Aがウインドサーフィンやカヌーが楽しめる場所を探している一方で、Bは馬肉料理が食べられる場所に興味を持っている。",
+        "rejected_dialogue_summary": "馬肉が食べられる場所でウインドサーフィンやカヌーが楽しめる場所へ行きたい##構文解析結果```構文木┌────────────────────┐│┌───────┐│└─┤係り受け├─┘└──────────┬─────────┬─────││││├────┬──┐│┬──┼──┘│─┬─┴┬┴──|╱╲╭──╮├╭─╯║┃┃┃ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()-_=+[]{}|;:\"'<>,./?~`\\0123456789、。「」（）［］【】｛｝〈〉『』“”〔〕《》«»｀～ｰヶゝゞヽヾ・ー－―∥‖｜＼／＿￣№×÷π≠≤≧≥±°′″℃º¶※◎◇○●▲△□■◆☆★♀♂→←↑"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは海や美味しい料理を楽しむことを希望している。具体的な要件としては「海でのアクティビティ」や「おいしそうな食事」が挙げられる。特定の場所については指定していないため、Bに適した場所を提案することが求められる。",
+        "chosen_dialogue_summary": "1.海と料理の両方を楽しみたいという要望がある。2.具体的には、海でアウトドア活動をしたり、おいしいものを食べたりしたい。3.どこの場所に行くかは未定なので、適切な場所を見つけることが必要。4.提案された場所がBにとって魅力的なものであることが望ましい。5.Bの好みに合った場所や体験が提供されることが期待される。",
+        "rejected_dialogue_summary": "Bは、海と美食を楽しみたいと考えている。彼女は、具体的には「マリンスポーツ」と「絶品グルメ」を体験したいようだ。ただし、行き先は特に決まっていないので、彼女に合った場所を見つけてあげる必要がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人で海を訪れ、遊んで食事をすることを希望している。-遊び方としては船の引くボートや急流を滑り落ちるアクティビティを希望し、食べたいものとして馬刺しを挙げている。",
+        "chosen_dialogue_summary": "-「50代男性、海で遊ぶ、馬肉を食べる」【解説】この問題は、Bが希望する「海での活動」と「食べ物」に関する情報のみを抽出し、簡潔な文章にまとめることが求められています。具体的には、以下のような要素が含まれています。-Bの年齢と性別-遊びたい場所（海）-興味のある活動（船で引っ張る遊具、急斜面での滑降）",
+        "rejected_dialogue_summary": "-男性は、海で船に引かれて遊んだり、急斜面をすべり降りたりすることを楽しみ、馬の刺身を食べることを望んでいる。"
+    },
+    {
+        "all_short_dialogue_summary": "-海でのアクティビティ-ウェイク・ボーディング-猪苗で実施可能-実施場所：ウインズエンターテイメント-住所：〒969-3122福島市猪狩字下中川原１４４−１-電話番号：0242-62-1030-営業時間：9:00-17:30-定休日：不定休-ホームページ：https://www.winds-entertainment.com/-SNSアカウント：Facebook、Instagram、Twitter-口コミ評価：4.7/5-利用者の感想：-「初めてのウェイクでしたが、とても楽しかったです！」-20代女性-初心者でも楽しめる-スタッフの指導が丁寧-安全対策もしっかりしている-値段もリーズナブル-アクセスも良好-駐車場も完備-トイレも清潔-シャワールームも充実-ドライヤーやアメニティも用意されている-ライフジャケットやウェットスーツも無料でレンタルできる-写真撮影もサービスで行ってくれる-経験豊富なインストラクターが多数在籍-子供から大人まで幅広い年齢層に人気-リピーターも多い-オリジナルグッズの販売も行っている-イベントやキャンペーンも定期的に開催-新型コロナウイルス感染症の予防策を徹底-マスクの着用や消毒液の設置-ソーシャルディスタンスの確保-体調不良の場合は参加を控えるよう呼びかけ-感染者が出た場合は速やかに報告-保健所や関係機関との連携-",
+        "chosen_dialogue_summary": "Bは、ウェークボードを楽しむことができる場所です。場所は猪谷で、ウインターエンタテインメントという会社が運営しています。電話で予約することができ、料金は1時間3000円からです。【出力例】Bisaplacewhereyoucanenjoywakeboarding.ItislocatedinInayaandisoperatedbyWinterEntertainment.Youcanmakeareservationbyphone,andthepriceisfrom3,000yenperhour.",
+        "rejected_dialogue_summary": "ウェークボードは猪名川で楽しむことができ、ウインズエンターテインメントが運営している。電話で予約が可能で、営業時間は午前9時から午後5時30分まで、不定休である。住所は福島市猪狩字下中川原144-1で、電話番号は0242-62-1030である。ホームページはhttps://www.winds-entertainment.com/で、SNSアカウントはFacebook、Instagram、Twitterである。口コミ評価は4.7/5であり、利用者の感想は「初めてのウェイクでしたが、とても楽しかっだす！」、「スタッフの指導が丁寧で安全対策もシャワールーム除菌やドライヤー、アメニティも用意されています。」などがあった。ウェークボードは子供から大人まで幅広い年齢層に人気でリピーターも多い。オリジナルグヅズの販売も行っており、イベントやキャンベーンの開催も定期的に行われている。新型コロナウイルスの予防筋を徹底し、マスクの着用や消毒液の設置、ソーシャルディスタンスの確保、体調不良の場合は参加を控えるよう呼びかけ、感染者が出"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性で海でのアクティビティや美味しい食事が好みである。-ウェイクアップボートやウェイクアサフィン、カニオンリングなどの水上スポーツを楽しむことができる。猪名川湖が特におすすめである。-馬肉を好む。",
+        "chosen_dialogue_summary": "50代男性、海辺のアトラクションやおいしい料理が好きです。-ウェイクボードやカヤック、キャニオニングなどのウォータースポーツが楽しめます。特にイナガワコがオススメです-馬肉も好物です。",
+        "rejected_dialogue_summary": "-海のアトラクションと美食を愛する50代男性。特に猪苗代湖でのウォータースポーツと馬刺しがお気に入り。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は妻と旅行に行く予定であり、旅行先として海を希望している。海でのアクティビティとして、ウェイクスボートやキャ二オ二ングなどが候補として挙げられた。最終的には、妻の意見を尊重し、うえいくさーふぃんを選んだ。",
+        "chosen_dialogue_summary": "---#要約Bisa50-year-oldman.Heplanstotravelwithhiswifeandwantstogotothesea.Wakeboardingandcanoeingarecandidatesforseaactivities.Intheend,hechosewakesurfingatthewife'ssuggestion.---",
+        "rejected_dialogue_summary": "「Bと彼の妻は、50代のカップルで、海への旅行を計画していた。アウトドア派の彼らにとって、スキューバダイビングやサーフィンなど、さまざまな海の活動が魅力的だった。しかし、彼らは最終的に、ゆったりとした時間を過ごすことを選び、ウエイクボードやカヤックなどのマリンスポーツを楽しむことにした。」"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-海でのアクティビティ-ウェイクスボーディング-猪苗田湖-WakeShopSAY-キャニオン-福島-川-滑る-急流-水-流れる-落下-高低差-大自然-スリル-アドレナリン-心拍数-呼吸-息切れ-運動-体力-筋肉-脂肪-エネルギー-カロリー-食事-栄養-バランス-健康-長寿-幸福-人生-生活-価値観-個性-自己-他者-社会-文化-歴史-未来-想像-創造-イマジネーション",
+        "chosen_dialogue_summary": "Bは、海でウェークボードを楽しみながら、自然を満喫し、体を鍛え、健康的な生活を送りたいと考えています。",
+        "rejected_dialogue_summary": "Bは、海や川などの自然の中でアウトドアスポーツを楽しむことが好きで、特にウェークボードやラフティングなどのウォータースポーツが得意です。福井県にある猪名川湖では、WakeShopSAYという店でレンタルしたボートで湖面を滑走する体験をしたことがあります。そこには、急な斜面や大きな滝など、自然の美しさとダイナミックさを感じることができます。水の流れに身を任せながら、心地よいスピード感と爽快感を味わうことができました。また、周囲の景色を眺めながらのんびりとした時間を過ごすこともでき、リラックス効果もありました。このような自然との触れ合いを通じて、自分自身の可能性や新たな発見に気づくことができるのも魅力の一つです。"
+    },
+    {
+        "all_short_dialogue_summary": "--例題3--A：こんにちはB：はじめての旅行で何もわからなくて困っています、どこかいいところを教えてもらえませんか--解答例--福井県にある恐竜博物館は子供から大人まで楽しめるのでお勧めです",
+        "chosen_dialogue_summary": "【制約条件】・文章中の固有名詞は使用しないこと・使用可能な語彙数は10語以内とすること##実行方法```python3main.py```",
+        "rejected_dialogue_summary": "##概要###要約の概要この文章は、AがBに対して、Bが初めて旅行する際にどこに行くべきかを尋ねている。Bは、何も分からず困っているため、助けを求めている。###文章の構成要素文章には、以下のような構造が含まれている。-AとBとの会話-Bが旅行先を知りたいという要望を述べている"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海や美味しい料理を楽しむことを目的としている。海ではウインクボーディングやカヌーなどのアクティビティを希望し、食事では馬刺しやソーセージなどを好む。",
+        "chosen_dialogue_summary": "Bisinterestedinenjoyingtheseaanddeliciousfood.Hewantstodoactivitiessuchaswinchboardingandcanoeingatthebeach,andhelikeshorsesashimiandsausage.",
+        "rejected_dialogue_summary": "海でのアウトドア活動と地元の美食を楽しみたい##実行方法```$pythonmain.py```##使い方###要約したい文章をテキストファイルに記述する任意の場所に`input.txt`という名前でテンプレートをコピーして使用する。###`main.py`を実行する"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人で来店している。-海でのアクティビティを探している。具体的な希望はなく、一般的な海水浴やマリンスポーツを希望しているようだ。",
+        "chosen_dialogue_summary": "```女性客は50代で、海で何かしたいと思っているが、具体的に何をしたいかは決まっていない。```##構成要素-年齢-性別",
+        "rejected_dialogue_summary": "-50代女性は、海のアトラクションを求めている。詳細は不明だが、ビーチや海洋スポーツに興味を持っているようである。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳代、男性、単身旅行、1泊2日、目的は海でのアクティビティと美味しい食事、予算は5万円程度、行き先は東北地方。希望する海上での遊戯はウェイク・ボート、ウェーク・サフフィン、カヌーなど。好みの食材は肉、魚介類。宿泊施設はビジネスホテルを希望。",
+        "chosen_dialogue_summary": ">50代の男性が、海のアトラクションを楽しみつつ、美食を堪能するために、5万以内で1～2泊の東日本旅行を計画している。ウェイブボードやサーフィンなどのマリンスポーツを体験し、肉や海産物を味わいたいと考えている。ホテル滞在を予定している。##生成モデル-[GPT2](https://huggingface.co/transformers/model_doc/gpt2.html)-checkpoint:[gpt-2-medium](http://storage.googleapis.com/bert_models/2018_10_18/uncased_L-6_H-768_A-12.zip)##コード```pythonimporttorchfromtransformersimportAutoTokenizer,AutoModelForCausalLMdevice=torch.device(\"cuda\"iftorch.cuda.is_available()else\"cpu\")tokenizer,model=(torch.hub.load(\"microsoft/unilm\",\"unilm_model\",model_name_or_path=\"gtp2\").to(device)for_inrange(2))defsummarize(input):input=tokenizer.encode(input,return_tensors=\"pt\")withtorch.no_grad():output=model.generate(input.to(device),max_length=100,num_beams=5,)returntokenizer.decode(output[0],skip_special_tokens=True)if__name__==\"__main__\":print(summarize(input))```",
+        "rejected_dialogue_summary": "50代の男性が、海でアウトドアスポーツを楽しみながら、美食を堪能する旅を計画している。東日本の海岸沿いを訪れ、水上スキーやカヤックなどを体験したいと考えている。また、肉や海産物が好きなので、地元の新鮮な料理を味わいたいという希望も持っている。旅費は約50,000円を予定している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海でのアクティビティを希望している。Bが希望するのはウインカーボードである。Bは馬刺しが食べたい。夕食は魚料理が良い。",
+        "chosen_dialogue_summary": "馬肉の刺身と魚の料理を食べるために海のアトラクションを楽しみたい##実行方法```bashpythonmain.py```",
+        "rejected_dialogue_summary": "Bは海のアクティビティを希望している。Bが帰渡すのはウインカーボードであり、Bは馬刺しが食べたい。夕食は魚料理が良い。"
+    },
+    {
+        "all_short_dialogue_summary": "-「海」で「遊べる」場所を探す-ウェークボート、ウェークサーッフィン-猪苗田湖-ユーケーショップセイ-「おいしもの」を食べる-馬肉-会津さくらなべつるが-12:00-13:30-お魚-エビステイ(魚介類)-夜ごはん-ニシンヤシキオータ",
+        "chosen_dialogue_summary": "Bは、海で遊ぶ場所としてウェイクボードやサーフィンが楽しめる猪名川湖を訪れ、ユニークなショップを見学し、おいしいものを味わうために馬刺しを食べ、夕食には新鮮な海鮮料理を堪能した。```fromgensim.modelsimportKeyedVectorsimportnumpyasnpfromsklearn.feature_extraction.textimportTfidfVectorizermodel_path=\"GoogleNews-vectors-negative300.bin\"w2v=Keyedvectors.load_word2vec_format(model_path,binary=True)word2id={word:ifori,wordinenumerate(w2w.vocab.keys())}id2word={i:wordforword,iinword2d.items()}defget_vector(sentence):words=sentence.split()vec=np.zeros(300)forwinwords:try:vec+=w2i[w]exceptKeyError:passreturnvec/np.sqrt((vec**2).sum())defvectorize(sentences):vectors=[]forsinsentences:vectors.append(get_vector(s))returnnp.array(vectors)defcosine_similarity(v1,v2):return1-spatial.distance.cosine(v1,v2)sentences=[\"海遊びができる場所はどこですか？\",\"ウェーカーボートとウェイカーサーフができるところはありますか？\"]tfidf=TfidVectorizer(tokenizer=lambdas:s.split())X_tfidf=tfidf.fit_transform(sentances)print(X_tfif.transform([\"これはテスト文です\"]))X_vec=vectorizer(sentenses)cosine_similarity(X_vec[0],X_vec[1])```",
+        "rejected_dialogue_summary": "-福島県の「磐梯山」は、「山登り」や「スキー」が楽しめる場所です。近くには「温泉」もあります。"
+    },
+    {
+        "all_short_dialogue_summary": "-海でのアクティビティを探している-ウェイクスボーディング-猪苗大湖-WakeShopSAY-行き先リストに入れる-ここで海の食事は終わる-馬肉-会津さくらなべつるが-夕食-お魚-魚市場-エビステイ-旬の魚介類-地元の鳥-ニシンヤシキオータ",
+        "chosen_dialogue_summary": "海で遊びたいと思っています。ウェークボードをやってみたいです。福島県の磐梯山の近くに湖があるので、そこでやってみようと思いました。その湖は、WakeShopSAYというお店が運営していて、ツアーの予約もできます。ここに行くのは初めてなので、とても楽しみにしています。また、ここでは、美味しい海産物を食べることもできますよ。例えば、馬の肉を使った料理や、魚の刺身などがあります。特に、夕方に食べると、夜の景色がとても綺麗に見えると思います。そして、翌日には、朝市で新鮮な魚を買って、自分で調理してみるのもいいかもしれません。最後に、この地域にはニジマスという魚がいるので、それを釣って食べてもいいですね。",
+        "rejected_dialogue_summary": "「海でウェークボードを楽しみたいなら、福島県の磐梯（ばんだい）山麓（さんろく）に広がる湖沼群のひとつ、猪（いのしし）苗（なえ）代（しろ）湖がおすすめです。湖畔にある「WakeShopSAY」では、ボートのレンタルやレッスンなどが受けられます。また、湖の周辺には、温泉やキャンプ場もあるので、宿泊しながらゆっくりと楽しむことができます。さらに、ここでは海鮮料理も楽しめます。特に、馬（うま）肉を使った郷土（きょうど）料理の「馬刺し」や、地（じ）元（げん）の食材をふんだんに使った鍋料理「会（あ）津（づ）桜（ざくら）な（べ）つ（る）が」は、ぜひ味わっていただきたい一品です。そのほかにも、新鮮な魚（さかな）介（かい）の刺身や焼き魚、煮（に）物（もの）など、多彩なメニューが揃っています。なお、夕（ゆう）食（しょく）は、魚の市場で買った魚を自分で調理（ちょうり）して食べるのも楽しいかもしれません。最後に、お土産（みやげ）として、海産物の加工（かこう）品（ひん）や地酒、伝統（でんとう）工芸品などを買って帰りましょう。」"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が旅行先を探している。-旅行先は海が望める場所であること、また、食事にこだわりがあること（肉料理と魚料理）がわかった。",
+        "chosen_dialogue_summary": "-A50-year-oldmanislookingforatraveldestination.-Thedestinationisaplacewheretheseacanbeseen,anditisknownthatheisparticularaboutfood(meatdishesandfishdishes).",
+        "rejected_dialogue_summary": "-海の見える場所で魚と肉の両方が食べられる50代男性向けの旅先"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は「海」で「遊んで」、「美味しい物」を食べることである。-海では「ウオークボーディング」や「キャニーング」というアクティビティを楽しむことができ、食事では「お肉」と「お魚」が楽しめる場所を探している。",
+        "chosen_dialogue_summary": "-海で遊び、肉と魚の両方を味わえる旅行を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-海で遊び、おいしいものを食べたい。-海ではウォーキングや釣りを楽しみ、お肉やお魚が食べられる場所に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-海の上でのアクティビティを探している。-ウェイク・ボーディング、ウェーク・サーベイが良いと考えており、それが出来る場所を調べて欲しい。",
+        "chosen_dialogue_summary": "```海上のアトラクションを求めている。具体的には、波乗りやサーフィンができるところを知りたい。```##構文解析構文木は以下のようなものを想定しています．```python{\"sentence\":[{\"surface\":\"海\",...},...],...}```",
+        "rejected_dialogue_summary": "-沖縄本島北部の本部半島にある備瀬のフクギ並木を訪れ、その景観を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-海に近いところに行き、泳いだりすること。-行き先候補-ウェイクスボーディングが可能な場所：猪名川湖のウーケショッブセイ-馬肉料理が楽しめる店：アイトウサクラナベツルクガ-魚介類を中心とした料理を提供する店:エービス亭",
+        "chosen_dialogue_summary": "海が近くて、ウエイクボードができる場所と、馬刺しが食べられるお店、海鮮料理のお店を訪ねるのが目的です。",
+        "rejected_dialogue_summary": "海水浴やサーフィンなどのマリンスポーツを楽しみたいなら、兵庫県川西市にある「ウエイクボードショップSEI」がおすすめです。ここでは、初心者から上級者まで、さまざまなレベルの人たちがマリンアクティビティを楽しむことができます。また、地元の新鮮な食材を使った料理も楽しめます。特に、馬刺しや馬すじの煮込みは絶品です。【解説】この文章は、Bさんが海辺のレジャーを満喫したいと考えていることを伝えています。具体的には、ウェークボートやボディーボードなどの水上スポーツや、海の幸を味わうことができるレストランを探しているようです。"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A:こんばんはB:お疲れ様です。お世話になっています。あなたの名は何と申しますか？(お名前を教えて下さい。)A:B:A:B:--End--",
+        "chosen_dialogue_summary": "--Summary1--Bは、CとDの都市に旅行したことがあり、EとFの街にも行ったことがある。彼はまた、GとHの地域を訪れたこともあるが、IとJの場所に行ったことはない。KとLの歴史的な建造物も見たことがないし、MとNの自然の風景にも興味がないようだ。OとPの文化的なイベントにも参加したことはなく、QとRの芸術的な作品も鑑賞していない。しかし、SとTのアクティビティには参加しており、UとVのスポーツも楽しんでいる。WとXのレジャー施設も利用しているようで、YとZのショッピングモールでも買い物をしている様子がうかがえる。--Answer--BhasvisitedcitiesCandD,townsEandF,regionsGandH,buthasnotbeentoplacesIandJ.HehasalsonotseenhistoricalbuildingsKandL,norisheinterestedinnaturallandscapesMandN.Furthermore,hehasneverparticipatedinculturaleventsOandP,orviewedartisticworksQandR.However,BhastakenpartinactivitiesSandT,enjoyssportsUandV,andusesleisurefacilitiesWandX.ItseemsthathealsoshopsatshoppingmallsYandZ.",
+        "rejected_dialogue_summary": "##論文https://www.aclweb.org/anthology/2020.findings-emnlp.79.pdf##背景この論文の背景は，「多様な情報源から取得したテキストデータから重要な部分を抜き出し，要約する」ことである．その中で，特に「ユーザの質問に答える形で文章を作成する」というタスクに焦点を当てた研究となっている．##提案手法###前処理入力文に対して，下記の処置を施す1.文の分かち書き2.正規化3.品詞のタグ付け4.語幹の抽出5.ストップワードの削除###モデル構造![model](./model.png)##実験結果実験では，Rouge-1,2,3を用いて評価を行った．その結果，以下のような結果が得られた|Dataset|Method|Rouge1|Rogue2|Roug3||:--:|:---:|:---:|:----:|:----:||WikiQA|0.56|-||MSMARCO|||"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が一人旅を検討している。行き先は海辺のリゾート地を希望しており、おすすめの場所を尋ねられた。対象は女性一人であることから、安全性を重視して海水浴場を提案した。具体的な場所として、神奈川県鎌倉市の由比ヶ浜を挙げた。ここは砂浜が広く、波が穏やかで泳ぎやすいという特徴がある。ただし、夏場は非常に混雑するため、早めに到着することを勧めた。次に、宿泊施設について聞かれた。女性は1人旅が初めてであり、不安を感じている様子だった。そこで、私は安全面を考慮してビジネスホテルを推奨した。その中でも、JR横浜駅から徒歩圏内にある「ホテルリブマックス横浜関内駅前」は利便性が高く、お値打ち価格で利用できるためおすす",
+        "chosen_dialogue_summary": "Bは、女性の50代で、海の近くでリラックスしたいと考えている。彼女は一人で旅行することに不安があるが、ビーチでのんびりと過ごすことを楽しみにしている。また、ホテルでは快適な滞在を求めており、リーズナブルな料金で質の高いサービスを提供するホテルに興味を持っている。",
+        "rejected_dialogue_summary": "女性旅行者が安全な海岸を求めて相談。提唱されたのは、海の安全が確保され、泳ぐのに適した場所。特に由利浜は広大で波も静か。注意点は夏の混み具合で早期到達が必要。また、初心者向けの宿は、横須賀駅近くのホテルが便利でリーズナブル。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅をする。-旅行の目的は海でのアクティビティと美味しい食事である。",
+        "chosen_dialogue_summary": "-男性は一人で旅行に行き、海で遊んだり、食べ物を楽しみたいと思っている。",
+        "rejected_dialogue_summary": "-50代男性の旅行は、海のアトラクションとおいしい料理を楽しむことが目的である。"
+    },
+    {
+        "all_short_dialogue_summary": "A:B:A:B:A:B:",
+        "chosen_dialogue_summary": "正解例A:B:A:AはBを訪れた。Bは歴史的建造物が多く残っており、街並みが美しい。Aは、Bで有名な博物館や美術館を巡り、芸術に触れることができた。B:",
+        "rejected_dialogue_summary": "##解答例Bは、海に囲まれた島で、美しい海岸線が有名な場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳以上の男女2人組が旅行先を探している。海辺のレジャーや美味しい料理を楽しむことを目的としている。具体的な行先としては以下の3つが挙げられている。1.ウェイクスーファーが楽しめる場所(猪名川湖)2.馬肉料理が堪能できる店(会泰本郷)3.市場の新鮮な魚介類が味わえるレストラン(エピス店)4.魚料理や地元の食材を活用したメニューを提供する店(NishinYashikiOta)5.自然の中で虫を捕まえることができるスポット(詳細不明)",
+        "chosen_dialogue_summary": "50代のカップルが、海のアクティビティや美食を楽しみたいと考えている。候補地は、猪苗代湖、会津若松市の馬刺し専門店、漁港直送の鮮魚が自慢の「エビス亭」、地産地消にこだわる「西山荘太田屋」など。自然に触れながら昆虫採集ができる場所も検討中。",
+        "rejected_dialogue_summary": "50代のカップルは、海のアクティビティやグルメを楽しみたいと考えている。候補地は5つあり、1つ目はウェークサーフィンができる場所、2つめは馬刺しが食べられる店、3番目と4番目の店は市場で取れた魚を使った料理、最後は虫捕りが出来る場所である。##Model```importtensorflowastfimportnumpyasnpfromtensorflow.keras.layersimportDense,LSTM,Embedding,Bidirectional,TimeDistributed,Dropout,Conv1D,GlobalMaxPooling2DclassModel(tf.keras.Model):def__init__(self):super(Model,self).__init__()self.embedding=tf.keras.Sequential([Embedding(10000,100,input_length=100),Dropout(0.2),BidirectionaL(LSTM(128,return_sequences=True)),TimeDisrributed(Dense(256,activation='relu')),GlobalAveragePooling1d(),Dense(512,activatioin='tanh'),Dropout(.2)])@tf.function(input_signature=[tf.TensorSpec(shape=[None,None],dtype=tf.int32),tf.Tensorspec(shape=(),dtype=,tf.float32)])dfeforward(self,x,y):```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性であり、夫と旅行に行く予定である。行き先は秋であるため、のんびりと過ごせる場所を希望している。具体的な行先としては、「海」や「美味しい食事」が挙げられており、さらに「海での遊戯」として「ウインクボーディング」、「おいしそうなもの」については「馬刺し」などが好みであることが分かる。また、「虫取り」も行いたがっている。",
+        "chosen_dialogue_summary": "Bは50歳の女性であり、夫と旅行に行く予定である。行き先は秋であるため、のんびと過ごせる場所を希望している。",
+        "rejected_dialogue_summary": "海に面した地域で、海水浴や海釣りなどを楽しみながら、地元の食材を堪能できる場所がおすすめです。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が旅行に来る。目的は海での遊戯と美味しい物の食べることである。海上での活動としてはウェイク・ボーディングやキャニー・オンギングなどが候補に挙がった。食事に関しては馬刺しが食べたいと言った。夕食は魚料理を希望した。虫を捕まえたいとも言った。",
+        "chosen_dialogue_summary": "50代女性は、海のアクティビティとグルメを楽しみたいと思っている。彼女はウエイクボードやカヌーに興味を示し、馬肉を食べてみたいと述べた。また、虫捕りもしたいと話していた。",
+        "rejected_dialogue_summary": "海で遊び、美食を楽しみ、昆虫採集を楽しむ。"
+    },
+    {
+        "all_short_dialogue_summary": "【まとめ】-50歳以上のカップルである。-旅行の目的は自然を感じることである。具体的な行き先はまだ決まっていない。",
+        "chosen_dialogue_summary": "#要約##概要-50代の夫婦である。-旅行の目標は、自然の美しさを体験すること。##行先の特徴特定の場所は未定であるが、美しい自然が見られる場所を探している。#結論この旅行では、年齢を重ねた夫妻が自然の中でリラックスし、心地よい時間を過ごすことが期待される。",
+        "rejected_dialogue_summary": "```解答例```-旅行の目的に合致した旅行先を探している-50代の夫婦である"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を希望している。-旅行の目的は自然を楽しむことと美味しい料理を味わうことである。",
+        "chosen_dialogue_summary": "-50代男性は、自然の美しさを堪能し、美食を楽しみたいと考えている。##解答例-旅行を計画する際、目的地の選択は非常に重要な要素です。特に、旅の目的に合った場所を選ぶことで、より充実した旅行体験が得られます。今回のケースでは、旅行者の年齢や興味が明確に示されています。以下に、その詳細を解説します。-まず、男性の旅行者は「50歳」という情報が与えられています。これは、彼が中年期に差し掛かっていることを示しています。一般的に、中年世代は落ち着きや安定感を求める傾向がありますが、同時に新たな挑戦や冒険にも意欲的です。このバランスを考慮すると、彼はアクティブな旅行を好む一方で、安心感や快適さも求めていると推測されます。したがって、宿泊施設や交通手段の選定においては、このバランスの維持が重要となります。また、彼の経済状況や健康状態にも留意が必要です。これらは旅行プランの実現性や安全性に影響を与えるため、事前に確認しておくことが望ましいです。",
+        "rejected_dialogue_summary": "-自然と食事を楽しみたい50代男性の一人旅##データセット-[train.json](https://drive.google.com/file/d/1nLZk9V8r7gHt1bK0K4zB0WZUxWmY5h4k/view?usp=sharing)-test.json-[test.txt](test/test.txt)##構成```.├──test│├──test.txt└──train└──train.json```##実行方法###コマンドラインから実行する場合```bashpythonmain.py--input_path./train/train.json--output_pathresult.txt--model_name./model/bert-base-japanese-whole-word-masking-electra-uncased-finetuned-squad--max_seq_length512--num_train_epochs3--learning_rate2e-5--per_device_train_batch_size8--warmup_steps0--save_steps-1--seed42--overwrite_output_dir--fp16--do_train--eval_all_checkpoints--logging_dir./logs--load_best_model_at_end--evaluation_strategysteps--steps_per_eval100--metric_for_maximizeaccuracy--gradient_accumulation_steps--weight_decay--adam_epsilon1.0#例$python3./main.py\\--train_file./data/train/train.txt\\\t--output_dirresult/--tokenizer_namebert-base-cased--pretrained_model_name_or_pathroberta-base--batch_size_per_gpu32--epochs10--lr5e4--accumulation_step4--loss_scale1024```###Dockerコンテナを使用するDockerfileを用意しているため，dockerコマナンドを利用して簡単に環境を構築することができます．####Dockerfileのビルドdockerbuild-t<イメージ名>:<タグ名>.####イメージの起動dockerrun-it-v<ホストのディレクトリのパス>:/app-p8080:80--name<名前>-w/app--rm--user$(id-u${USER})-eDISPLAY=${DISPLAY}--device/dev/dri--gpusall--ipc=host--privileged--shm-size="
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上のカップルが旅行先を探している。-旅行先は福井県で、おすすめのスポットを聞かれたので、「芦原温泉」や「永平寺」、「東尋坊」などを紹介した。",
+        "chosen_dialogue_summary": "-Bは50代の夫婦で、旅行を計画している。-旅行の目的地は、Bが住んでいる地域の近くである。Bは夫と一緒に旅行に行きたいと思っている。Bと夫はどちらも旅行が好きなので、どこに行くかを決めるのに時間がかかった。結局、2人とも行ったことのない場所を選ぶことにした。旅行の日程はまだ決まっていないが、できれば1週間は滞在したいと考えている。",
+        "rejected_dialogue_summary": "50代以上夫婦が行くべき旅行地は、福島県である。特に、湯治場として有名な「あわら湯のまち」、曹洞宗の大本山である「禅の古刹永平」寺、断崖絶壁の奇勝地「天下の名勝東尋」坊がオススメである。###解答例-福島旅行の目的地として、50〜60代の旅行者に人気のある「湯めぐり」が楽しめる「福の湯」がある。-また、歴史や文化に興味がある人には、国宝や重要文化財が数多く残る「会津若松」もお勧めである。"
+    },
+    {
+        "all_short_dialogue_summary": "-年齢層-20代前半の若いカップルである。-趣味-海水浴や美味しい料理を楽しむことである。-行き先-福島の海が見える場所である。-宿泊地-猫魔高原にあるペンションに宿泊する予定である-食事-夕食は地元の新鮮な食材を使用した和食を堪能するつもりである",
+        "chosen_dialogue_summary": "「海を楽しみ、美食に舌鼓を打つ若き恋人たちが、海辺の絶景を望む宿に泊まり、地産地消の和風料理でお腹を満たす旅に出る。」",
+        "rejected_dialogue_summary": "-若者が海を楽しみ、地産地消の料理に舌鼓を打ち、ペットと一緒に過ごす旅-"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。旅行先は福井県であり、目的は海水浴と美味しい食事をすることである。旅行日程は1泊2日であり、おすすめのスポットを聞かれた際にBが挙げたのは「越前松島水族館」と「若狭三方縄文博物館」であった。Bに何か質問があるか尋ねたところ、Bからは「海が綺麗なところ」という回答があった。",
+        "chosen_dialogue_summary": "Bisa50-year-oldmale.ThedestinationofthetripisFukuiPrefecture,andthepurposeistogotothebeachandeatdeliciousfood.Travelscheduleis1night2days.Whenaskedaboutrecommendedspots,Bmentioned\"EchizenMatsushimaAquarium\"and\"WakasaMihamaJomonMuseum\".WhenIaskedBifhehadanyquestions,heanswered\"aplacewithabeautifulsea\".",
+        "rejected_dialogue_summary": "1.福井で海を楽しみたい50代男性2.1日目は水槽やイルカショーを満喫3.夜は新鮮な海の幸を堪能4.翌日は歴史を学びながらお土産探し"
+    },
+    {
+        "all_short_dialogue_summary": "(1)A:こんにちは。B:こんばんは。(2)A：本日はいかがお過ごしでしたかB：お疲れ様です(3)B：今度の日曜日に友達と遊園地に行く予定ですA：そうなんですか(4)今日の話の続きをしませんか(5)B：「明日休みだし、どこか行こうよ」って誘われたんですA：「どこ行くんだっけ？」(6)明日暇なら一緒に遊ぼうよ(7)行き先を決めよう(8)とりあえず、明日の話をしよう(9)遊びに行かない？(10)何するか決まってる？(11)どこに行こうか迷ってるんだよね(12)一緒にどこかに行かない(13)友達が遊べる人を探してるみたい(14)最近暑いから、涼しいところに逃げたいな(15)今週末は友人と旅行に行ってくる(16)「今週の土曜日はどこにいるの？」と聞かれたんだけど(17)あなたは今何をしているの？",
+        "chosen_dialogue_summary": "(18)A:Hello.B:Goodevening.(19)Howwasyourdaytoday?B:Thankyouforyourhardwork(20)IplantogotoanamusementparkwithmyfriendsonSunday.A:Isthatso?(21)Wouldyouliketocontinuetheconversationtoday?(22)\"Tomorrowisaholiday,solet'sgosomewhere.\"(23)Whatareyougoingtodotomorrow?\"Wherearewegoing?\"(24)Shallwegotogethertomorrow?(25)Haveyoudecidedwhatyouwilldo?I'mwonderingwhereIshouldgo(26)Don'tyouwanttoplaytogether?Doyouknowwhereyou'regoing?(27)Let'sdecideonadestination(28)Forthetimebeing,let'stalkabouttomorrow(29)Whydon'tweplay?Whatwillyoudo?I'mwonderingwhatI'lldo(30)Myfriendislookingforsomeonewhocanplaywithhim(31)It'shotthesedays,I'dlovetoescapetoacoolplace(32)ThisweekendIwillbetravelingwithafriend(33)ButIwasasked,\"WhatwillIbedoingonSaturdaythisweek?\"(34)Youaredoingwhatnow?【解答例】Bplanstovisitamusementparkswithfriendsthisweekend.",
+        "rejected_dialogue_summary": "Bは、日曜日、友だちとテーマパークに行きます。Aはそれを知っています。今日、AとBが話しているときに、話題が明日に移りました。"
+    },
+    {
+        "all_short_dialogue_summary": "関東在住の50歳の女性が旅行先を探している。旅行は夫と一緒に行く予定である。彼女は海辺のリゾート地を希望しており、その中でも海水浴やウオータースポーツが楽しめる場所を求めている。また、新鮮な魚介類や肉料理を提供する飲食店も併せて探してほしいとのこと。さらに、子供の頃に虫取りをした思い出があるため、再び昔のように虫を集めたいと希望している。",
+        "chosen_dialogue_summary": "50代の主婦が、夫との旅行を計画中。目的地は、海の近くで、泳いだり、釣りをしたりできる場所が希望。食事には、地元の魚やお肉を使ったものを楽しみたい。また、子どものころに昆虫採集をしていたので、またやってみたいと考えている。",
+        "rejected_dialogue_summary": "海の景色が美しい場所で、水泳や釣りを楽しみ、美味しい食事を堪能し、昆虫採集を体験したい。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は福井県-福井城址、東尋坊、永平寺、越前松島水族館、若狭フィッシャーマンズ・ワーフなどが候補に挙がる-これらの場所を調査した結果、最もおすすめの場所として「東洋のナイアガラ」とも呼ばれる「雄島」が挙げられる-雄島は日本海に浮かぶ小さな島であり、周囲を断崖絶壁に囲まれている-島内には自然が多く残されており、季節ごとに様々な花が咲く-特に秋には紅く染まった木々が美しく、訪れる人々を魅了する",
+        "chosen_dialogue_summary": "-東北地方の雄大な景色を楽しむことができる東日本の自然の美しさを堪能することができ、秋の紅葉も見逃せない-",
+        "rejected_dialogue_summary": "-福井旅行の見どころは、雄大な自然と歴史的建造物が融合した「西郷隆盛像」である。【解答例】「自然豊かな島で、秋は紅葉がきれいな場所」"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行に行く予定があり、夫と一緒に50歳代である。旅行先は福井県であり、目的は海水浴と美味しい物を食べて楽しむことである。",
+        "chosen_dialogue_summary": "「夫婦で50代のBが、海とグルメを楽しみに福島県へ旅行へ行く。」",
+        "rejected_dialogue_summary": "海と食事を楽しみに、50代の夫婦が旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2人組が海辺のレジャーと美味しい料理を求めて旅に出る。-レジャーの内容は海上でのボートスポーツや川下りを希望している。-ウェイク・ボーディング、ウェーク・サッフィングが希望-これらは湖上で行われる。-猪苗倉湖にて実施可能-実施施設は「ウイークショッブ・セイ」という店舗<br>-夕食は地元の食材を使用した料理が提供される店を探している-馬肉料理の提供が可能な店「会澤桶屋ツガ」が候補に挙がる-ソースかつどんを提供する店との選択肢が提示される-ツガが選ばれる-選ばれた理由は不明-夜は魚介類が良いと言う希望があるため-魚料理は夕食のみ提供-「エブシ亭」にて提供可能である-他の料理と共に提供されるとのこと-提供される料理についての詳細は明らかにされない-寿司や刺し身が含まれる可能性がある-会津産の魚が使われる可能性が高い-刺身はニジマスやイワナなど淡水魚も含む-カツオやマグロなどの回遊魚は含まれていない-サーモンやトラウトなどの養殖魚を除く-料理に使用される魚種は多岐にわたるが-特定の種類に絞り込むことは困難-単に「魚料理」と表現されることが多い-種類の特定は料理名やメニュー表記に依存する-店舗のホームページや口コミサイトでは-詳細な情報が得られることがある-食材の産地や調理法などが記載されている-複数の情報源",
+        "chosen_dialogue_summary": "-50代のカップルが、海のアクティビティや美食を楽しみながら旅をする。-ウェイクボードやカヤックなど、湖でのアウトドア体験に興味がある。",
+        "rejected_dialogue_summary": "日本の東北地方、福島県の会沢市は、海と山に囲まれた自然豊かな地域です。ここでは、豊富な海の幸と新鮮な野菜が楽しめます。旅行者にとって、このエリアは自然の美しさと食の豊かさを満喫できる場所となっています。"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A:こんばんはB:わたしは旅館の従業員です。本日もご宿泊頂き誠に有難う御座います。今回の旅の目的を教えて下さい。C:温泉と美味しい食事が目当てで来ました。D:お泊り頂くお部屋は和室ですか、それとも洋室をご希望ですか?E:洋室が良いですF:今回のお部屋の料金は4人1室で1泊2食付きで25000円です。お支払い方法は現金、クレジットカード、電子決済のいずれかをお選びください。G:現金で払いますH:本日の夕食の時間は18時から20時までとなっています。また朝食は7時30分から9時00分までとなりますI:夕食を18時に食べたいのでその時間に予約を入れておいてください。またチェックアウトは10時ですのでお間違えの無いようお気をつけください。J:分かりましたK:宿泊プランの詳細はメールにてお送りします。ご確認の上ご返信をお願い申しあげます。L:メールを確認しましたM:旅館からのメッセージは以上ですN:明日の天気は晴れで最高気温は25度、最低は15度と予想されています。O:天気予報の確認を終了しますP:最後に、旅先での事故やトラブルに備えて、海外旅行保険への加入をお勧めします。Q:保険の加入を検討していますR:観光スポットやレストランなどの情報はこちらのリンクから確認できます。S:リンクをクリックして情報を閲覧しましたT:他にご不明な点はありませんか?U:特にありませんV:この度は当館を選んで頂いて誠におめでとうございます。今後ともお役に立てるよう精進して参る所存です。W:チェックインの手続きを始めますX:カードキーをお渡し",
+        "chosen_dialogue_summary": "「Bは、宿に到着し、スタッフと会話しながら、滞在中のスケジュールや食堂のメニューなどを尋ねる。さらに、美しい景色を眺めながら、ゆったりとした時間を過ごす。」",
+        "rejected_dialogue_summary": "Bisanemployeeofaryokan.Iwouldliketothankyouforstayingwithustoday.Whatisthepurposeofyourtripthistime?C:Icametoenjoyhotspringsanddeliciousfood.D:IstheroomyouarestayinginaJapaneseroomoraWesternroom?E:AWestern-styleroomwouldbenice.F:Theroomrateforthisstayis25,000yenperpersonforonenightandtwomeals.Pleasechooseoneofthefollowingpaymentmethods:cash,creditcard,orelectronicpayment.G:Payincash.H:Dinnerwillbeservedfrom6:00p.m.to8:0"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--1.Bは海でのレジャーや美味しい物を求めている2.レジャーとしてはボートやカヌーなどの水上スポーツを希望している3.食事は肉料理や海鮮料理を好む4.自然の中で過ごすことが好き5.旅行先は自然が豊富な場所",
+        "chosen_dialogue_summary": "海水浴や釣りなどのマリンスポーツが好きで、肉や魚介類を食べるのが好きなBは、自然に囲まれた場所を訪れるのが好きです。",
+        "rejected_dialogue_summary": "自然豊かな場所で肉や魚介類を食べながら、海や川でのアクティビティを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が家族旅行で海や美味しい物を楽しむために旅行することを検討している。海でのアトラクションとしてはウィークボーディングやカニオンングが候補に挙がっている。食事では馬刺しやソーセージが好みであり、天然の魚や地元の鳥が提供されるレストランを探している。",
+        "chosen_dialogue_summary": "男性は家族と一緒に旅行を計画しており、海でアクティビティを楽しみたいと考えている。彼は、ウィンドサーフィン、カヤック、シュノーケリングなどのマリンスポーツに興味を持っている。また、彼は日本料理が大好きで、特に馬肉、地鶏、魚介類を好んで食べる。旅行先では、これらの食材を使った料理を堪能したいと思っている。",
+        "rejected_dialogue_summary": "Bは海のアクティビティを楽しみつつ、食にこだわった旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性である。-旅行の目的は海辺でのんびり過ごすことと美味しい食事をすることである。-食事に関しては肉料理と海鮮料理が好みである。また馬刺しも食べたい。",
+        "chosen_dialogue_summary": "-海の景色を楽しみながら、肉と魚介類を中心とした料理を堪能したいという女性の旅行プランである。##解答例-海辺でリラックスしながら、好物の肉や海産物を味わう旅を計画している女性。",
+        "rejected_dialogue_summary": "-Bは、50代女性で、海の景色を眺めながらゆったりとした時間を楽しみたいと考えており、肉や魚介類を中心とした料理を堪能したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-年齢：20代前半、性別：女性、職業：学生、住所：東京都、家族構成：一人暮らし、既婚：未婚、子供：なし、年収：100万円未満。-趣味：旅行、読書、音楽、映画、スポーツ観戦、ショッピング、カラオケ、ドライブ、温泉、グルメ、ファッション、インテリア、雑貨、DIY、パソコン、スマートフォン、タブレット、電子書籍、SNS、動画配信サービス、オンラインゲーム、アプリ開発、プログラミング言語、Webデザイン、イラスト、漫画、アニメ、声優、アイドル、K-POP、洋楽、邦楽、日本の伝統文化、歴史、地理、政治、経済、社会問題、国際情勢、宗教、哲学、科学、数学、物理、化学、生物、天文学、宇宙、地球、気象、災害、防災、環境、省エネ、リサイクル、SDGs、持続可能な社会、平和、人権、多様性、ジェンダー平等、LGBTQ、障害者、難民、貧困、格差、差別、偏見、ステレオタイプ、メンタルヘルス、ストレス、うつ病、自殺、依存症、薬物、アルコール、ギャンブル、暴力、DV、虐待、ネグレクト、ハラスメント、モラハラ、コミュニケーション能力、自己肯定感、承認欲求、人間関係、友達、恋愛、結婚、出産、育児、介護、老後、終活、葬儀、供養、墓、仏壇、神社、寺院、教会、信仰、スピリチュアル、瞑想、ヨガ、禅、武道、芸術、演劇、ミュージカル、ダンス、歌舞伎、能、狂言、日本舞踊、落語、三味線、尺八、箏、琵琶、琴、笛、太鼓、雅楽、大衆演芸、",
+        "chosen_dialogue_summary": "「Bは、旅行や音楽など幅広い分野に興味を持ち、特に旅行に関しては国内外問わず様々な場所を訪れ、写真やブログを通じてその魅力を発信している。また、自然やアウトドアにも関心が高く、キャンプや登山、釣りなどを楽しんでいる。さらに、健康や美容にも気を遣っており、食事や運動、サプリメントなどで体調管理に努めている。」",
+        "rejected_dialogue_summary": "Bは、様々な分野に興味を持ち、幅広い知識を持つ人物である。特に、旅行や音楽など、感性を刺激するものを好む傾向がある。また、自身の趣向に合ったものを見つけるために、常に新しい情報にアンテナを張っている。さらに、他者との交流を大切にしており、積極的に人と関わることを楽しんでいる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で、今回の旅行は夫と一緒に行く予定である。旅行先はまだ決まっていないため、Aが提案した猪狩湖を候補地として挙げる。AはBがウーケボートやキャニーングなど、水辺のスポーツを楽しむことを希望していることを把握する。そこでBにウケーボートが楽しめるところを尋ねると、Bからウークサーシンを希望する旨の返答を得る。その後、山登りや海水浴など他のアトラクションについて聞かれたBからは、カニオンングやサウフイングなどが挙がるが、いずれもB自身が経験したことがないと答える。最終的にAから提示されたウーックサーピンについては知っているとのことだったため、これを猪槍湖のウックショツプで実施することに決定する。食事に関しては肉料理が好物であることを明かすBに対し、Aは馬刺しが名産であると説明する。これに対してBも食べたことはないが大歓迎だと返す。Aから馬料理の店を紹介され、夕食はここで食べることに決まる。Bからの希望で夕飯には魚料理を出してもらうことにする。さらにAからは市場直送の新鮮な魚介類を提供する店も紹介される。Bはこれらの中からエービス亭を選ぶ。宿泊施設の予約はAに任せることにしたBだが、帰り際に虫取りをしようと考えており、宿から近い場所を探しておいてほしいという。いくつか紹介された中から、最も身近な場所であるデーコ平の自然探索コースを選択するBであった。",
+        "chosen_dialogue_summary": "AとB夫妻はウッケサーフィンに挑戦するため猪牟田湖へ旅行に行った。2人とも初めての体験であったが、楽しく過ごすことができた。また、2人は馬肉や魚など地元の食材を堪能した。",
+        "rejected_dialogue_summary": "Bさんは、夫婦で旅行を計画しており、まだ行き先を決めていません。猪捻湖が良いとAさんに言われたので、ウッケボードができるかどうかを聞いてみました。すると、彼女はそれをやったことがあると言いました。その他にも、キャニオニング、サーフィンなどのアクティビティをやってみたいと言っていましたが、どちらも彼女自身はやっていませんでした。最後にAさんがウゥッキサービンというものがあると教えてくれたので、それをやることにしました。食べ物はお肉が好きだということで、馬の刺身が有名だと説明しました。それを知ったBさんも大喜びでした。そしてAさんは馬肉の料理屋さんを案内してくれました。また、市場から直に魚を仕入れているお店があることも教えられ、そこから選んだのがエビス亭で、魚のメニューも豊富に揃っています。そして、虫を捕まえたいというBさんの希望に応えて、近くのデコ平という場所で自然観察をすることになりました。###解答```Bisa50-year-oldwomanwhoisplanningatripwithherhusband.Shehasn'tdecidedonadestinationyet,soAsuggestedthattheygotoInariLake.AknowsthatBenjoyswatersportssuchaswakeboardingandcanoeing,andasksherifshewouldliketotryitthere.Bsaysshehasdoneitbeforeandwantstodoitagain.Otheractivitiesshementionedwerecanyoningandsurfing,butshesaidshehadnevertriedthembefore.Finally,AmentionedthattherewasaplacecalledUkkisapinwheretheycoulddowaterskiing,whichBknewabout.Theydecidedtogothereanddothatactivity.Fordinner,BlikesmeatdishesandAtoldherthathorsesashimiisfamousinthearea.WhenBheardthat,shewasveryexcitedandaskedAtotakehertoarestaurantthatserveshorsemeat.ThenAintroducedamarketwherefreshseafoodisdelivereddirectlyfromthemarketandBchoseEbisu-teifromtherebecauseithasawidevarietyoffishdishes.Lastly,sinceBwantedtocatchbugs,theywenttoDekohira,anearbyplace,toobservenature.```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行に行くことを考えていました。目的は「海に遊んで、食事をすること」でした。海では「ウオークボート」や「キャンニオン」などが候補に挙がりましたが、「ウイークサーピン」が良いと決めました。また、「馬」肉を食べてみたかったので「会場桧木鴨」に行きました。そして、夕食には「魚」を食べたいと思い「エービス亭」にしました。また「虫」を捕まえたいと考えており、「もっこう自然じゅく」という場所を訪れました。",
+        "chosen_dialogue_summary": "Bが旅行を計画し、海でウォーターボードやキャニオニングなどのアクティビティを楽しみ、馬肉や魚を食べる予定で、虫捕りも行う予想です。",
+        "rejected_dialogue_summary": "海で遊び、馬肉や魚を食べ、虫捕りをして、キャニオニングを体験したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは50歳の男性である。-旅行の行き先として、妻とともに福井県に行くことを希望している。-福井での主な目的は以下の通り。-海水浴を楽しむこと。-その中でも、水上でボートやカヌーを漕いだりできるようなスポットを探している。-ウェイク・ボーディングやウェーク・サッフィングなどもやったことがないため、挑戦して見たいと言っている。-他には、スキューバ・ダイビングもやってみたいという。-なぜなら、以前、沖縄に行ったときに海に潜る機会があったが、その時はライセンスを持っていなかったため潜れなかったからだ。-このことから、潜水器具などをレンタルして潜って見ることも検討していることが分かる。-サーファーなどが集まるようなビーチを訪れたいとも言っていた。-波が穏やかな海岸を求めている。-バーベキューやキャンプができるところが良い。-キャンプ場が併設されていればなお良し。-遠浅の海が望ましい。-砂浜が広いところを好む。-水質が綺麗な海を望んでいる。-トイレやシャワー、更衣室が完備されているとありがたい。-駐車場の有無も重要な要素。-混雑していない場所を希望。-周辺にコンビニやスーパーマーケットがあると便利。-レンタカーを借りて移動する予定。-車中泊も可能な車を用意するつもり。-ゆっくりとした時間を過ごすことができれば満足。-食事に関しては、-地元の食材を使った郷土料理を味わうことができるレストランや飲食店を利用する。-特に、新鮮な魚介類や野菜を使用した料理が好み。-和食や中華、イタリア",
+        "chosen_dialogue_summary": "-50代の夫婦が、夏休みに水遊びを楽しみながら海の幸を堪能する旅を計画している。#解答例-夫と妻が夏の休暇に、海で遊んだり、美味しい海産物を食べたりする旅行を考えている。##解説本問では、与えられたテキストから要点を抽出し、簡潔にまとめる能力が問われています。以下に解答のポイントを挙げます。###要約の目的まず、本問の目的に注目しましょう。要旨をまとめ、できるだけ短い文章で表現することが目的です。したがって、情報の取捨選択が重要となります。必要な情報のみを残し、冗長な部分は削除する必要があります。",
+        "rejected_dialogue_summary": "海上アクティビティとダイニング体験ができる福島県のリゾート地探し"
+    },
+    {
+        "all_short_dialogue_summary": "Aの質問に対し、Bは「海」と答えた。AはBが海に行くことを前提に話を進める。Bもそれを受け入れる形で会話が進んでいく。具体的な行き先として、Aが「猪名川湖」を挙げたところでBに反応が見られたため、詳細な情報を提供することにした。詳細を伝え終わった後、再度確認をとることで、意思疎通の齟齬を防ぐことができた。次に「夕食」の話題に移った際、食事の種類を聞かれたため、「肉」と「魚」が好物であることを伝えた。これに対してAから「馬」という食材の提案があったが、「食べたことがない」とのことで却下された。その後、「牛」や「鴨」なども候補に挙がったが、いずれも好みではなかった。最終的に「肉」ではなく、「魚」を食べることに決めた。最後にBから、「虫取り」を希望する旨の発言があったため、それに対応する場所を探すことになった。最初に提示された「もこもくとこ」は、「自然を満喫する」場所であることがわかったため、その点を踏まえた上で、「山」に入ることを希望した。その結果、「探索路」に決定した。\n-2箇所の自然を楽しめる場所を提案されたが、それ以外に屋内の見どころはないか尋ねられた。-自然を見に行く時間があるかどうかを聞かれた。",
+        "chosen_dialogue_summary": "Bさんは海が好きで、具体的には猪苗代湖に行きたいと考えている。夕飯は肉と魚が食べたいが、馬肉は食べられない。虫捕りをしたいので、山に入りたい。",
+        "rejected_dialogue_summary": "海で魚を食べ、山で昆虫を捕まえる。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅で東北地方を訪れる。-行き先は東日本大震災の被災地である石巻市を希望している。-石巻の海産物が好物であることから、東松島市の牡蠣養殖場や女川町の漁港も候補に挙がっている。-旅行の日程は3泊4日である。-3日目は石ノ森萬画館の入館券を購入する予定である。",
+        "chosen_dialogue_summary": "-50代男性は、3〜4日の旅行期間で、被害の大きかった宮城県東部を中心に訪問することを望んでいる。-旅行者は漠然とした興味を持っており、地域の特産品である海の幸を味わいたいと考えている。",
+        "rejected_dialogue_summary": "-東北を旅行する50代男性は、被害の大きかった石川市に興味を持ち、海の幸を堪能するため、隣接する東マツシマ市とオンナガワ町も訪問する。4泊3日の旅程で、石森マンガ館への入場券も予約済み。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上のカップルで秋に箱根本線を旅行する予定である。-海辺の活動として、ウェイクスボーディングを希望し、具体的な場所としては猪名川湖を挙げている。-また、バンジージャンプやカヌーなど他の海辺での活動も検討している。-食事については馬刺しを好んでおり、地元の料理を提供する店舗を探している。-馬刺しが食べられない場合には、通常の牛肉を選択する。",
+        "chosen_dialogue_summary": "-秋の箱根旅行を計画中の50代の夫婦は、海のアクティビティとしてウェークボードを楽しみたいと考えています。具体的には猪苗代湖が候補に挙がっています。また、他にも海で楽しめるアトラクションや、美味しい馬肉料理が食べられるお店も探しています。",
+        "rejected_dialogue_summary": "秋の箱根で50代の夫婦が海のアクティビティを楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "旅行先として海を選び、遊べる場所を探している。遊具としては波のない湖でのウェイク・ボーディングや、急流の川で滑り落ちるアドベンチャー・スポーツのキャニー・オンギングが候補に挙がっている。食事は肉料理と魚料理が希望で、それぞれ馬刺しと地元の魚を提供する店を紹介された。さらに、夕食の後に自然の中で虫取りを楽しむことを希望している。\n自然を楽しめる場所を2箇所決めているが，屋内の見どころを探している。虫が好みであるため，虫にまつわる展示を見たいと述べている。",
+        "chosen_dialogue_summary": "海でのアクティビティを楽しみたいが、波が無い場所が良い。キャニオニングも検討している。また、魚と肉の両方を食べたい。夕方には虫を捕まえる予定である。屋内でも虫に関連する展示が見たい。",
+        "rejected_dialogue_summary": "「海で遊び，肉や魚の料理を楽しみ，夜は虫を捕まえる」"
+    },
+    {
+        "all_short_dialogue_summary": "--Question1----どのような条件で探したのか？-何故その条件になったのか？--Answer1-----Ques2---なぜその行き先が良いと考えたのか--Ans2----Questions3----Answers3--\n-A:おすすめの場所を2つ紹介しましたが、それ以外にも自然を楽しめる場所はないか聞いています-B:昆虫がたくさん見られる場所と言えば「虫」の「博」物「館」が思い浮かびます-ただし、具体的な名前は思い出せないようです-「ワ」カ「サ」ト「コ」公園-ダムに隣接する公園で動物や植物の展示を見ることができます-一方、「福」島「県」立博「物」館」-具体的な展示内容は不明ですが、「虫」に関する情報を得ることができるかもしれないと推測しています",
+        "chosen_dialogue_summary": "虫の博物館、ワカサトコ公園、福島県立博物館",
+        "rejected_dialogue_summary": "【解答例】Aは2つの場所をお勧めしたが、他に自然の魅力を味わえる場所はあるか尋ねた。Bは、虫の博物館が思いついたが具体名は覚えていない。ワカサトコ公園、福島県立博物館を提案した。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2人組である。-旅行の目的は「海での遊泳」、「美味しい物の食事」である。-遊泳の手段として「ウェイクスーファー」を希望している。-食事の内容としては、「肉料理」か「魚料理」のいずれかを選択する。-魚料理の場合、「ニジマス料理」を選択している。\n-Aは自然を楽しめる場所を2箇所提案し、Bは「虫」をテーマとした展示を見たいと答える。-その後、AはBが希望する展示内容に合致する場所として「ワサカト公園」と「福嶋県知事博物園」を紹介する。",
+        "chosen_dialogue_summary": "-海で遊びたい50代のカップルが、魚を食べたい。-自然が好きで、昆虫の展示も見たい。",
+        "rejected_dialogue_summary": "-年配の夫婦が海で泳ぎ、肉か魚の料理を食べたいと思っています。彼らは魚を選び、ニシマスの料理をしたいと考えています。また、自然の中で虫の展示を見ることを楽しみにしています。-2つの候補地があります。1つ目は、虫に関する展示が充実している「WasakatoPark」です。2つめは、日本の歴史や文化を学ぶことができる「FukushimaPrefecturalGovernor'sMuseum」で、こちらも虫に特化したコーナーが存在します。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男性であること。-旅行の目的は主に海でのレジャーと美味しい料理を楽しむことである。-海での活動としてはボートやカヌーなどの水上スポーツを希望している。-お気に入りの料理は肉料理と魚料理である。\n-2カ所の自然を楽しめる場所を提案している-そのうちの1つはワーカーソト公園であり、そこでは動物や植物の展示を見ることができる。-もう1つの候補として、フクシマケンリツハクブツカンが挙げられている。",
+        "chosen_dialogue_summary": "50代男性が、海のアクティビティを楽しみつつ、おいしい食事を堪能する旅を求めている。好みの料理には肉や魚が含まれる。2つの自然に触れられるスポットが紹介されており、そのうちの一つがワークショップ公園で、動植物が展示されている。もう一つの選択肢は福島県立博物館である。",
+        "rejected_dialogue_summary": "Bは50代以上で、海のアクティビティを楽しみ、美食を堪能するのが目的の旅行を計画中。好みの食事はお肉やお魚。2つの自然スポットを訪れる予定で、そのうちの一つがワークソトパークで動植物を鑑賞できる場所。もう一つ、福島県立博物館も検討している。---##解答例Bisa50+manwhoenjoysseaactivitiesandgourmetfood.Hisfavoritedishesaremeatandfish.Heplanstovisittwonaturespots,oneofwhichistheWorkerSotoParkwherehecanseeanimalsandplants,andtheother,theFukushimaPrefecturalMuseum."
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行の目的2.予算3.行き先4.滞在期間5.食事6.趣味7.健康8.運動9.家族構成10.年齢11.職業",
+        "chosen_dialogue_summary": "Thepurposeofthetripistotravelwiththefamily.Thebudgetis100,000yen.IwanttogotoHokkaido,Okinawa,andTokyo.Stayfor3daysand2nights.EatJapanesefood.Myhobbyissightseeing,skiing,fishing,hiking,camping,golf,tennis,swimming,surfing,diving,cycling,mountainbiking,horsebackriding,paragliding,skydiving,bungeejumping,rockclimbing,kayaking,rafting.Healthisgood,butIdon'texercisemuch.Familyconsistsofhusband,wife,son,daughter,mother,father,grandmother,grandfather,brother,sister,aunt,uncle,niece,nephew,cousin,friend,neighbor,classmate,teacher,boss,colleague,customer,client,supplier,partner,competitor,investor,shareholder,creditor,debtor,tenant,landlord,lawyer,accountant,doctor,nurse,pharmacist,dentist,optometrist,veterinarian,engineer,architect,designer,artist,musician,actor,actress,director,producer,writer,editor,journalist,photographer,videographer,animator,cartoonist,illustrator,sculptor,painter,potter,glassblower,jeweler,blacksmith,carpenter,mason,electrician,plumber,mechanic,autobodyrepairman,roofer,landscaper,gardener,farmer,fisherman,hunter,trapper,logger,miner,oildriller,gaswellworker,waterwelldigger,seismologist,geophysicist.Ageisinmy30s.Occupationisasalaryman.【解答例】私は家族と一緒に旅行に行くのが目的です。旅行費用は10万円で、北海道、沖縄、東京に行きたいと思っています。3日間2泊します。日本食を食べたいです。お気に入りのアクティビティは、旅行、スキー、釣り、ハイキング、キャンプ、ゴルフ、テニス、水泳、サーフィン、ダイビング、サイクリング、マウンテンバイク、乗馬、パラグライダー、スカイダイブ、バンジージャンプです。健康状態は良好ですが、運動はあまりしません。家族は夫、妻、息子、娘、母、父、祖母、おじいちゃん",
+        "rejected_dialogue_summary": "```大自然を満喫したいので、カナダのロッキー山脈を訪れたいと思っています。目的はハイキングやトレッキングで、2週間ほど滋賀県に行く予定です。食生活は健康的なものを好み、週に2回はジムで運動しています。家族は妻と子供2人で、私は30代前半の会社員です。```"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性一人旅。旅行先は海。海での遊戯として、水上スポーツを求めている。おすすめの場所としては、「ウオークボート」や「キャニーング」などが挙げられる。また、食事については「お肉」か「お魚」が良いとのこと。その中でも「馬」の肉を好んでおり、旅行中に食べたいと希望している。更に、「虫取り」も希望しており、「自然の中で虫を探す」場所を提案したところ、「山」を希望したため、「磯山」に変更した。\n50歳の男性が旅行先を探している。自然を楽しめる場所を2箇所提案したが、それ以外の屋内の見どころを聞かれた。虫が好みのようで虫をテーマにしている場所はないか尋ねられた。ワサカト公園、フクシマケンリツハクブツカンを紹介した。",
+        "chosen_dialogue_summary": "Bは、50代女性であり、海辺でのウォータースポーツやキャニオニングなどのアクティビティを楽しみたいと思っている。また、お肉やお魚を食べることが好きで、特に馬肉がお気に入りである。さらに、昆虫採集も好きなので、自然豊かな場所での虫探しができる場所が理想的である。",
+        "rejected_dialogue_summary": "Bは、海で「ウォータースポーツ」を楽しみ、「お肉」「お魚」を食べることを望んでいる。特に馬の肉が好きで、山での「昆虫採集」にも興味がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を検討している。-行き先は自然に囲まれた場所であり、宿泊施設は一泊二日を希望している。旅行期間は10月の平日である。\n-ユーザーは50歳以上の男女2人組である。-旅行先は自然を楽しめる場所を希望している。具体的な場所としては、「ワイカトカ公園」と「ふくしまけんりつはくぶつかん」が挙げられている。",
+        "chosen_dialogue_summary": "50代男性の1人旅。自然豊かな場所で、1泊2日。10/平日の予定。場所は「ワカイトカ国立公園」か「福島県立博物館」。##解答例```\"50'smalesolotravelerseeks1night2daytriptoanature-richdestinationinOctober,choosingbetweenWaikatoNationalParkorFukushimaPrefecturalMuseum.\"```",
+        "rejected_dialogue_summary": "Theuserisa50-year-oldmalewhoisconsideringasolotrip.Hewantstogotoaplacesurroundedbynatureandstayforonenightandtwodays.ThetripwilltakeplaceonaweekdayinOctober.Theusersareacoupleofmenandwomenovertheageoffifty.Theyhopetoenjoynatureintheirtraveldestination.Specifically,theyhavementioned\"WaikatoPark\"and\"FukushimaPrefecturalMuseum\"aspossibledestinations."
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性と会話している。旅行先は海辺のリゾート地を希望している。男性の趣向として、ビーチで楽しむことと美味しい食事が挙げられる。また、男性は魚介類と肉類が好物である。\n-Aは自然を楽しめる場所を2箇所提案し、Bはそれに満足している様子である。-その後、AはBに屋内の見どころを尋ねるが、それに対してBが挙げたのは「虫」に関する施設であった。",
+        "chosen_dialogue_summary": "A:海が見える場所でゆっくりしたいんだけど、どこかいいとこないかな？B:もちろん！この辺りにはたくさんの海岸がありますよ。A:Bさんはどんなところが好きですか？例えば、自然の中でリラックスしたり、美しい景色を眺めたりするのが好きな人もいますよね。それとも、体を動かしてアクティブに過ごすのがお好みでしょうか？私はどちらかというと、のんびりとした時間を楽しみたいタイプです。B:Aさん、もしよろしければ、私のオススメの場所をお教えしましょう。ここには素晴らしい海水浴場があり、透き通った海と白い砂浜が広がっています。また、周辺には新鮮な海の幸を味わえるレストランもたくさんあります。さらに、近くには美術館や博物館もあり、文化的な体験も楽しめます。ぜひ一度訪れてみてください！A:Aさんのご紹介、ありがとうございます！とても魅力的な場所ですね。私もBさんと一緒に、素敵な旅を満喫できたら嬉しいです！",
+        "rejected_dialogue_summary": "海の生き物とおいしい料理を楽しみたい50代男性に、自然豊かな海岸と屋内での昆虫観察を勧める。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは海や美味しい料理を求めて旅行することを希望している。具体的な行き先はまだ決まっていないようだが、行先としては「海」が候補に挙がっているようである。Bが希望する海でのアトラクションは、「ウインクボート」や「キャニーイング」などである。また、「海」というキーワードから連想されるものとして「魚介類」がある。よって、「魚」を食べることができるレストランが挙げられる。以上の要素を総合すると、Bにとっての理想の旅行は以下のようになるだろう。1.海に行く。2.魚を食する。\n-自然を楽しむ場所を2箇所決めている。-他に屋内の見どころが欲しいか聞かれたときに「虫」が良いと返答している。",
+        "chosen_dialogue_summary": "海と魚が好きで、海のアクティビティを楽しみ、魚料理が食べられる場所に行きたい。",
+        "rejected_dialogue_summary": "海を楽しみたいと考えており、具体的には魚料理が食べられる場所に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.海や湖などの水辺での活動を希望している。2.肉や魚を好む。3.山や自然の中を散策することを希望する。\n-Aは自然を楽しめる場所を2箇所提案している-2つのうちの1つは「動物や植物の展示を見ることができる」-他に屋内の場所はないか尋ねているが，Bは博物学を挙げている-Aが調査した結果，虫をテーマに扱う施設は見つかっていない-代替案として「ワサカト公園」や「福岡県歴史館」が挙がっている",
+        "chosen_dialogue_summary": "「博物館や美術館を巡ることが好きで、特に自然に関する展示が多い場所に行きたい」##実行方法```python3main.py```##ディレクトリ構成-data-test-input-ex_1.txt,ex2_2.txt...要約したいテキストファイルを格納するフォルダです。ファイル名は任意で問題ありませんが、複数のテストデータを用意する場合、整理しやすくするため、数字を付けることをお勧めします。outputex1_output.txtなど、出力結果を保存します。-src-生成モデル-model-trained_model-checkpoint-チェックポイントのパスを指定する-tokenizer-vocab.txt-BPEで分割した単語の辞書-bert-base-uncased-pytorch_model.bin-モデルのパラメータ-config.json-構成情報が記述されている-max_seq_length-入力の最大長-num_special_tokens-特殊トークン数-pad_token_id-パディング用のID-bos_token-スタートトーケンの文字列-eos_token-終端トーークンのID-decoder_start_token_index-デコーダのスタートインデックス-attention_probs_dropout_prob-アテンションのドロップアウト確率-hidden_act-隠れ層の活性化関数-initializer_range-重みの初期値の標準偏差-layer_norm_eps-レイヤー正規化のエプシロン値",
+        "rejected_dialogue_summary": "AはBが好きなことを考慮して、自然と触れ合える場所2カ所を紹介した。そのうち1か所は動植物を展示する博物館である。屋内で過ごせる場所がないかと聞かれたが、虫に焦点を当てた展示はないことが分かった。代わりに、ワーサカット公園や福島県の歴物館を提唱した。【出典】https://www.jstage.jst.go.jp/article/johokanri/55/1/56/_pdf"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBに「本日、旅行についての話し合いをしたいか」と尋ねる-Bは「はい」と返答する-Aが「どのようなことをしたいか」を聞く-その後、Bは海での活動や美味しい物を食べて過ごすことを提案する。-この時、AがBに対して「海の活動は何を希望するか」と聞き、-更にBから「ウインクボーディング」を希望すると返される-次にAはこの活動が出来る場所として「猪名川湖」を挙げる。-続けて、他の海辺の場所についても話す-「カニオンング」や「サフリング」、「カヨック」など-最終的にBがサフィングを選択し、次の行先を決める-一方、食事に関しては-馬肉を好むかどうかを聞かれた後、-牛肉や鴨肉など他の選択肢も提示されるが、-結局、最終的には「馬」に決まる-食事の時間については、-夕食は魚を選び、-午前中は肉料理を楽しむことにする-その他の予定として、-昆蟲の採取を望む-いくつかの候補地が提示され、-デコピン自然遊歩道を最終的に選ぶ\n-自然を楽しめる場所を2箇所見つけた。-さらに虫をテーマとした場所を見つけようとしている。",
+        "chosen_dialogue_summary": "AisplanningatripwithB.AasksBiftheywanttotalkaboutthetriptoday.Bsaysyes,Athenaskswhattheywouldliketodo.Afterthat,Bsuggestsspendingtimeatthebeachandeatinggoodfood.Atthistime,whenAaskedBwhatkindofactivitytheywantedatsea,andBrepliedthatshewantedto\"winkboarding\".ThenAmentions\"InagawaLake\"asaplacewherethisactivitycanbedone.Next,hetalksaboutotherbeachlocationsaswell.\"Canyoning\",\"Safing\",and\"Kayaking\"aresomeofthem.FinallyBchoosesSafinganddecidesonthenextdestination.Ontheotherhand,regardingmeals,afterbeingaskedifhelikeshorsemeat,otheroptionssuchasbeefandduckmeatarealsopresented,butintheend,theyfinallydecideon\"horse\".Asformealtimes,fordinnertheychoosefishandforthemorningtheywillenjoymeatdishes.Otherplansincludecollectinginsects.Severalcandidatesitesarepresentedandfinallythe\"DecopinNatureWalk\"ischosen.Theyhavefoundtwoplaceswheretheycanenjoynature.Andtheyaretryingtofindplaceswithathemeofinsects.",
+        "rejected_dialogue_summary": "自然の景色を楽しみながら、様々な体験ができる。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は海での遊戯と美味しい食事である。-海の遊具として、カヌーやカッターボートなどが挙げられる。\n--End---作者:森北出版編集部-出版社/メーカー:MORIKITAPUBLISHING(MORIKITASHUPPAN)発売日:-メディア:Kindle版",
+        "chosen_dialogue_summary": "海で遊ぶこととおいしい食べ物を食べることが目的の旅行で、海ではカヤックやカタマランボートなどのアクティビティが楽しめます。",
+        "rejected_dialogue_summary": "海で遊び美食を堪能することが目的である。##1.要約結果```\"海を満喫することとおいしいものを食べることが旅の目的なのです。\"```#2.生成モデルの概要生成モデルは、入力されたテキストから、与えられた文の趣旨に沿った文章を出力するように学習されたモデルです。今回のタスクでは、以下のようなモデルを使用しました。-入力:旅行先の特徴を記述した文章-出力:-海でのアクティビティを楽しむこと-カヤックやカタマランボートなどの水上スポーツが含まれる+美食の楽しみを提供する場所であることこのようなモデルによって、旅行先を選ぶ際に必要な情報が抽出され、効率的な旅行計画が立てられることが期待されます。"
+    },
+    {
+        "all_short_dialogue_summary": "旅行先は福岡県。目的は海水浴と美味しい食事である。海での遊具としてはウェイクスーファーを希望している。食べたいものとして、肉(馬)と魚を挙げており、前者については馬刺し、後者は市場に仕入れられた魚が良いと言っている。夕食は魚料理が良く、地元の魚を使った鰻の料理を好む。虫取りをすると言っていたが、その後、山登りも希望した。\n-AはBに自然を楽しめる場所を2箇所提案したが，Bはそれに満足していない様子である。-そこでAは，虫をテーマにしている施設を探し始めた。",
+        "chosen_dialogue_summary": "AがBに対して海と山の両方を体験できる場所として，北九州市立響灘緑地グリーンパークを紹介した．",
+        "rejected_dialogue_summary": "海と山の両方を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行に行く予定で、その旅行先は海が見える場所である。旅行中は「肉」や「魚」を食べたいと希望している。また、「虫」を捕まえるのが好きであり、山で虫を探すことができれば嬉しい。\n-Aは自然を楽しめる場所を2箇所提案し、Bに屋内の見どころの有無を尋ねる。-屋内では虫をテーマにしている場所として、東北サファリパーク、田沢湖クニマス未来館を挙げるが、いずれも距離が遠いため、代替案として近隣の「ワッサンコウエン」、「フクシマケンリツハクブツカン」を紹介する。",
+        "chosen_dialogue_summary": "海の見えるところに行きたい。肉や魚が食べられる場所がいい。虫が好きで、虫捕りがしたい。",
+        "rejected_dialogue_summary": "海を見ながら肉や魚を食べ、虫も探せる場所に興味がある。##実装###データ準備テキストデータは以下から取得した。https://www.kaggle.com/c/tweet-sentiment-extraction/overview-train.tsv-test.tsv```pythonimportpandasaspddf_train=pd.read_csv('train.tsv',sep='\\t',header=0,names=['id','text'])```###要約`summarize`関数を実装する。`summary`の引数には、文章を入力する。また、出力は`str`型で返す。####サンプル実行```>>>summarize(\"海の近くで肉と魚が食べられる場所に行きたい。山に行けば虫を見つけることができる。\")\"海と肉・魚と山と虫\">>>>>>s=\"海に近い場所で魚や肉を楽しみたい。虫が好きなので山に登って虫探しをしてみたい。\"...summarize(s)'海、魚、肉、登山、昆虫'>>>```####アルゴリズム1.文章を形態素解析する2.解析した単語から「名詞」を抽出する。3.抽出した単形を出現頻度の高い順に並び替える。4.頻度が高い上位N個の単称を結合して、まとめる。5.結合した文字列を返却する####使ったライブラリ`japanese-mecab``nltk`###評価評価には`rouge`を使用した。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女である。-海や自然を好み、魚介類や肉類を中心とした食事が好まれる。\n--例3--A：お疲れ様です。本日もご来店頂き誠に有難う御座います。本日のご予定は如何でございまかB：はい。今週末に結婚式の二次会の幹事を頼まれたんですよ。会場の下見に行ってきました。あと友人たちと飲みに行く約束もしてるんですが、それも会議室を借りて行うことになったのでそっちの打ち合わせにも行かなきゃいけなくて。とりあえず今週は忙しそうですね。A：そうでしたか。それはおめでたいことですな。ご結婚される方もいらっしゃるんですな。B：いえ、私は既婚者でして。友人の方が結婚するんです。式は来月末なんですが、今から準備が大変ですわ。皆さん忙しい方ばっかりなんで、皆の都合を合わせるだけでも一苦労ですし。まぁ、楽しくやれたらいいなぁとは思っていますが。せっかくの機会ですから皆で盛り上がって思い出に残るパーティーにできたらいいですもんねぇ。そうそう、会費のこととかもちゃんと決めとかないといけませんし、忘れないうちに早めにやっとかないといけないんですよねー。どうしようかなぁ。うーん。困りましたわー。Ａ：困っておられるようでしたら、私どもで何とかお手伝いさせて頂けますよ。Ｂ：え？ホントですか！？すごい！そんなことまでしてくれるんですか！！Ａ：「困ったときの神頼み」と申します。何かお困りのことがあられましたら、お気軽に仰って下さい。全力でサポートさせていただきたく存じますので。私どものサービスをご活用頂ければ、きっとお役に立てることと信じておりますし、それが私たちの喜びでもございますので。詳細については後ほど改めてご連絡を差し上げたいと存ずる次第ですが、それまでのお時間を頂戴できれば",
+        "chosen_dialogue_summary": "-今回の旅行では、海の景色を楽しみながら、美味しい海鮮料理を堪能したいと思います。",
+        "rejected_dialogue_summary": "-50歳以上の男女であり、海や自然を好み、魚介類や肉類を中心とした食事が好まれる。"
+    },
+    {
+        "all_short_dialogue_summary": "今回の旅行は海を楽しむことと美味しい食事をすることを目的としている。海ではウウェイク・ボーディングやカヌー等のマリンスポーツができるところを探している。また、おすすめの料理は馬刺しやソーセージである。夕食は魚介類を中心とした和食を希望している。さらに虫取りや自然散策も行う予定である。\n--Summary--Thecustomerisa50-year-oldcouplewhowantstotraveltotheHakonearea.Theywanttogotoaplacewheretheycanenjoynature,andtherearetwoplacesthathavebeendecidedon.Thecustomeralsomentionedthattheywouldliketovisitamuseumaboutinsects.Thereisnoinsect-onlymuseum,butthereistheWakasatokoPark,whichhasexhibitsabouttheplantsandanimalsaroundthedam.Inaddition,theFukushimaPrefecturalMuseummayalsohaveinsect-relatedexhibits,althoughitisnotcertain.Otherthanthesetwo,itseemsthatthecustomermaybeinterestedintheWakaSatokopark.",
+        "chosen_dialogue_summary": "この旅行の目的は、自然を楽しみ、昆虫に関する博物館を訪れることです。虫専門の美術館はありませんが、ダム周辺の植物や動物について展示している「若狭とこパーク」があります。また、福島県立博物館にも虫に関連する展示があるかもしれませんが、それは確かではありません。以上の2つ以外にも、顧客は「ワカサトコ公園」に興味を持っているようです。",
+        "rejected_dialogue_summary": "Thecustomerisa50yearoldcouplewhowantstotraveltotheHakonearea.Theywanttogotoaplacewheretheycanenjoynature,andtherearetwoplacesthathavebeendecidedon.Thecustomeralsomentionedthattheywouldliketovisitamuseumaboutinsects.Thereisnoinsectonlymuseum,butthereistheWakasatopark,whichhasexhibitsabouttheplantsandanimalsaroundthedam.Inaddition,theFukushimaprefecturalmuseummayalsohaveinsectrelatedexhibits,althoughitisnotcertain.Otherthanthesetwo,itseemsthatthecustomermaybeinterestedintheWakaSatokopark."
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-海-スポーツ-ウェークボート-福島-猪名川湖-https://www.wakeshop-say.com/+食事-馬肉-会津-http://aizusakuranabe-tsuruga.co.jp/+魚\n##まとめ1つ目の例題は自然が好みであることがわかった。自然の中でも特定の場所を好む傾向があり、砂丘や山などがあげられていた。特徴としては、アクションゲームやアドベンチャーゲームなど、難易度が高いゲームをプレイすることが好きであること、また、犬の散策を頻繁に行っていることから、愛犬家である可能性が考えられる。最後に対話は終了しているため、対象者の趣向はここで打ち切られていると考える。2例目は旅行先を決めるにあたっての要件が明らかになった。旅行は夫と行くものであり、年代は50歳代、季節は秋である。目的は文化的行動をすることであり、その一環としてオーケストラのミュージアムを訪れたいということである。",
+        "chosen_dialogue_summary": "-自然-砂-山-ゲーム-アクション-難しい-犬-散歩-夫-50代-秋-文化-音楽-博物館",
+        "rejected_dialogue_summary": "Aは、自然を楽しむことが好きなようだ。具体的には、海や砂漠、山が好きで、特に海に関してはウェイクボードやサーフィンなどのマリンスポーツを楽しみたいと考えている。また、旅行に関しても、夫婦で旅行をすることが多く、目的地は海沿いのホテルやリゾート地を選ぶことが多い。さらに、秋の紅葉や冬の雪景色も好んでおり、四季折々の自然の美しさを堪能したいと思っている。一方、文化的な行動にも興味を持っており、アートや音楽、文学などにも造詣が深い。例えば、オペラやクラシック音楽の鑑賞、美術館や博物館の訪問、読書や執筆活動なども行っている。ただし、これらの文化活動はあくまでも余暇の過ごし方の一つとして捉えており、本格的な芸術家や文化人を目指しているわけではない。むしろ、日常生活の中で自然と触れ合いながら、心身ともにリフレッシュすることを大切にしている。以上のように、Aさんは自然愛好家でありながら文化にも関心を持つ、バランスの取れたライフスタイルを送っていることが分かる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で妻と二人暮らしをしている。Bと妻は旅行に行く予定があり、旅行先を決めたいと考えており、AはBに対して旅行についての質問をし、Bから情報を得ることで旅行プランを提案する。AがBに聞いた情報は以下の通りである。-旅行の時期は秋である。旅行期間は1泊2日を予想している。-Bは仕事が忙しく、休みが取れるかどうか分からないため、日程は具体的に決まっていない。-Aは「秋」という情報から、10月から11月の間であると推測した。-行き先は北海道、東北、関東、甲信越、北陸のいずれかである。-交通手段は飛行機、電車、新幹線、バス、レンタカー、自家用車の中から選ぶことができる。-宿泊施設はホテル、旅館、民宿、ペンション、ゲストハウス、ビジネスホテルの6種類から選択できる。宿泊費は予算に応じて調整する。-食事は和食、中華、洋食、イタリアン、フレンチ、韓国料理、焼肉、居酒屋、カフェ、ファーストフードの10種から好みの料理を選べる。-観光スポットは自然、歴史、寺社仏閣、温泉、テーマパーク、遊園地、動物園、水族館、アミューズメント、ショッピング、グルメ、スキー場、ゴルフ場の12種がある。\n--End--",
+        "chosen_dialogue_summary": "AとBが行く旅行は、秋の旅行で、行きたい場所は日本の北のほうである。【注意事項】-実行環境：Python3.6.9-使用ライブラリ：numpy,pandas,gensim,spacy,torchtext",
+        "rejected_dialogue_summary": "Bisa50-year-oldmanwholiveswithhiswife.Theyareplanningtogoonatripandwanttodecideontheirdestination.AasksBquestionsaboutthetripinordertoproposeatravelplanbasedontheinformationhereceivesfromB.TheinformationthatAaskedBisasfollows.-Thetravelperiodisexpectedtobe1nightand2days.However,theexactdateisuncertainbecauseB'sworkisbusyandheisnotsureifhewillbeabletotakeadayoff.Basedonthisinformation,AguessedthatthetimeoftravelwouldbebetweenOctoberandNovember,since\"autumn\"istheseasonoftheyearinwhichtheleaveschangecolorandfalloffthetrees,andthisisoftenassociatedwiththemonthofOctoberinJapan.-ThedestinationisoneofHokkaido,Tohoku,Kanto,Shinetsu,orHokuriku.Transportationoptionsincludeairplanes,trains,shinkansen(bullettrains),buses,rentalcarsandprivatecars.Accommodationoptionsarehotels,ryokan(traditionalJapaneseinns),minshuku(smallfamily-runguesthouses),pensions,guesthousesandbusinesshotels.Mealscanbechosenfromavarietyofcuisines,includingJapanese,Chinese,Western,Italian,French,Korean,yakiniku(grilledmeat),izakaya(Japanese-stylepubs),cafesandfastfood.Touristattractionsincludenature,history,shrinesandtemples,hotsprings,amusementparks,zoos,aquariums,skiresortsandgolfcourses."
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性である。彼女は旅行にあたり、以下の要件を満たす行先を探している。1.海や湖などで泳いだり遊べる場所2.馬肉やカニ、肉、魚などが美味しいレストラン3.カヤックスやウオータースポーツ、カヌーなどを楽しむことができる施設4.夏に虫取りや自然散策、ハイキングが出来る自然公園",
+        "chosen_dialogue_summary": "Bさんは、海、湖、川で水遊びができ、馬刺しや蟹などの海産物や肉料理が楽しめ、水上アクティビティができる場所を求めています。また、夏には昆虫採集、自然観察、トレッキングなども楽しめる場所が理想的です。",
+        "rejected_dialogue_summary": "1．海・湖・川・池・沼などの水辺で遊び、泳ぐことができ、馬・牛・豚・鶏・羊などの畜産物や魚介類が豊富に獲れ、食べられる場所。2．カナディアン・キャンピング・ロッジ、キャビン、トレーラーハウス、テント、バンガローなどの宿泊設備があり、海水浴・プール・温泉・サウナ・スパ・フィットネスジム・エアロビクス・ヨガ・ストレッチ・ダンス・バレエ・ピラティスなどの健康増進プログラムやレッスンが受けられ、料理教室・ワインテイスティング・アロマテラピー・ハーブティー・アーユルヴェーダ・マッサージなどの癒し・リラクゼーション・美容・健康促進のサービスを受けられるホテルやリゾート。3．ボート、ヨット、クルーザー、セーリング、パドルボード、サーフィンなどのマリンアクティビティが楽しめ、釣り、フィッシングツアー、シュノーケリング、スキューバダイビングなどの海洋レジャーが体験できる海岸や島々。4．キャンプ場、野外ステージ、ピクニックエリア、BBQグリル、ファイヤーピットなどのアウトドア設備が充実し、森林浴、山歩き、渓流散歩、滝見物、洞窟探検、天体観測、星空鑑賞などの自然観察やアドベンチャー活動ができる国立公園、自然保護区、エコツーリズム地区。"
+    },
+    {
+        "all_short_dialogue_summary": "-【対象の特徴】-年齢層：20代後半～30代前半の男女。-職業：会社員、フリーランス、主婦など。共働きの家庭も多く、子どもがいる人もいる。-趣味：旅行、グルメ、写真撮影、読書、スポーツ観戦、映画、音楽、ショッピング、カフェ巡り、アート、ファッション、DIY、ヨガ、ピラティス、ダンスなど多岐にわたる。-旅行の目的：リフレッシュ、リラックス、癒し、ストレス解消、新しい発見、異文化交流、歴史や文化の学習、友人や家族との絆を深める、記念日やイベントの祝いなど。-好みの旅行スタイル：自由気ままに過ごす、現地の人々との交流を大切にする、環境に配慮した旅を選ぶ、地元の食材や特産品を楽しむ、地域の文化や伝統を尊重する、自分のペースで行動するなど。\n自然を楽しめる場所として、2箇所の候補が挙がっている。虫をテーマにしている場所を希望している。",
+        "chosen_dialogue_summary": "-20-30歳代の多様な興味を持つ人々が訪れる、自然と虫に触れ合える場所。-自由な旅や地産地消を重視する旅行者が集まり、親しみやすい雰囲気がある。",
+        "rejected_dialogue_summary": "【出題意図】この課題では、複数のテキストから共通のトピックを抽出し、それを簡潔にまとめる能力が求められます。具体的には、以下のようなスキルが必要となります。-情報の抽出:複雑な文章から重要な要素を抜き出し、整理する能力-構造化:抽出した情報から論理的な構造を構築し、それに基づいて文章を組み立てる能力。このような能力は、ビジネスや日常生活においても役立つものであり、特に情報過多の現代社会においては重要性が高まっています。また、自然環境や生物多様性に関する知識も必要です。例えば、虫の生態や分布、観察方法などについての理解があれば、より適切なアドバイスを提供することができます。さらに、コミュニケーション能力も重要です。お客様のニーズを正確に把握し、その要望に沿った提案を行うためには、高度な対話力が不可欠です。以上のような能力を総合的に活用することで、質の高いサービスや情報提供が可能になります。"
+    },
+    {
+        "all_short_dialogue_summary": "-宿泊先は郡山駅付近のビジネスホテルを予約した。-旅行の目的は海水浴と新鮮な魚介類を味わうことである。-行先候補はアドベンチャーワールド、白浜温泉、和歌山マリーナシティの3箇所である。\n50歳の女性が夫と一緒に虫を見たいと思っている。自然を楽しめる場所を2箇所見つけたが、それ以外の屋内の場所も見たいと考えており、その中で虫をテーマにしている場所を見つけることができた。",
+        "chosen_dialogue_summary": "-郡山市内に宿をとり、海を楽しみ、魚を食べに行く。-夫婦で自然の中で昆虫観察をし、屋内施設も楽しむ。",
+        "rejected_dialogue_summary": "-Bは、郡山市内に宿をとり、海で泳ぎ、地元の海産物を食べることを目的としている。行きたい場所として、動物園、アドヴェンチュアワールド、アクアマリンふくしまを考えている。-50代の夫婦が旅行を計画し、自然の中でアウトドアを楽しみたいという希望がある。屋内で過ごしたい日もあるため、屋外だけでなく、室内でも虫を見ることができる施設を探している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。旅行先は福岡県で行きたかった場所として、関門海峡を挙げた。宿泊は門司港レトロのホテルを希望している。食事は海鮮が好みである。Bには3歳の子供がいる。子供が喜びそうな場所を探している。\n自然を楽しめる場所として、2箇所が決まっている。虫に関連する展示を見たい。",
+        "chosen_dialogue_summary": "Bさんは、子供と一緒に旅行に行きたいと思っています。自然が好きで、虫の展示を楽しみたいと考えています。",
+        "rejected_dialogue_summary": "「B氏は、50代男性で、家族旅行の計画を立てている。行き先の候補は九州地方の海沿い。特に、海の幸を堪能したいという希望がある。子ども連れのため、子供向けのアトラクションや施設がある場所が望ましい。また、自然に触れ合えるスポットも検討中。具体的には、昆虫に関する展示が見たいとのこと。」"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が夫と旅行する予定である。-旅行の目的は海でのレジャーと美味しい物を食べて楽しむことである。-レジャーの候補として挙げられたのはウインクボーディング・ウイークサッフィン・キャニーイング・カヌー・ヨッティングの5種類のスポーツである。その中で本人が希望するのはウィークスッファーである。また海の代わりに湖でも構わないと答えている。-食事の希望としては肉料理と魚料理が挙がっている。中でも馬刺しが食べたいと言っている。\n--Reference--https://www.kaggle.com/competitions",
+        "chosen_dialogue_summary": "「50代の夫婦が海辺の旅行を計画している。海でウィーケンドサーフィンを楽しみ、肉や魚の料理を味わいたいと考えている。」",
+        "rejected_dialogue_summary": "Bは、夫婦で旅行を計画しており、海でレクリエーションを楽しみ、美食を堪能することを目的としている。彼女はウィーキングやサーフィン、キャニオニング、カヤッキング、ヨットなどのアクティビティに興味を持っているが、特にウエイクボードを希望している。また、代替案として、湖での活動も受け入れている。さらに、彼女の食の好みは多岐にわたり、肉や魚の料理を好んでおり、とりわけ馬肉の刺身を求めている。###解答例Bisplanningatripwithherhusband,aimingtoenjoyrecreationalactivitiesattheseaandsavordeliciousfood.Sheisinterestedinvariousactivitiessuchaswakeboarding,surfing,canyoning,kayaking,andyachting,butparticularlyhopestotrywakeboarding.Asanalternative,sheisopentoactivitiesonalake.Furthermore,herculinarypreferencesarediverse,favoringmeatandfishdishes,withaparticulardesireforhorsemeatsashimi."
+    },
+    {
+        "all_short_dialogue_summary": "50歳以上の男女2人組が旅行に来る予定である。旅行先は福岡県北九州市門司区である。旅行者は海水浴や美味しい物を食べて過ごすことを希望している。海での遊具としてはマリンスポーツを希望しており、その中でもジェットスキーやバナナボートなどを楽しむことができる。食事に関しては馬刺しが食べたいと考えており、夕食は地元の食材を使用した和食を提供する店を探している。\n##Requirement*Python3.8##Installation```bash$pipinstall-rrequirements.txt```##Usage###Training1.Downloadthedata2.Runthefollowingcommandtotrainthemodel.```pythonpythontrain.py--train_data_path<pathtothetrainingdata>--dev_data<devdatapath>```###InferenceTousethetrainedmodelforinference,runthecommandbelow.Thiswilloutputthesummaryoftheinputdatato`output.txt`.```shellshinference.sh<inputfile><outputfile>```##AcknowledgementThisprojectisbasedontheworkdoneby[AIST](https://www.aist.go.jp/aist_j/press_release/pr2020/pr201203.html).",
+        "chosen_dialogue_summary": "50代の夫婦2人が旅行で北部九州を訪れ、海で遊んだり、馬肉料理を食べたりしたいと考えている。",
+        "rejected_dialogue_summary": "50代の夫婦2人が旅行を計画している．旅行の目的地は九州北部にある門真市である．彼らは，海で遊んだり，おいしいものを食べたりすることを望んでいる．海の遊び道具にはマリンアクティビティが含まれており，その中には，水上スキー，バンジージャンプ，スキューバダイビングなどがある．また，彼らの食の嗜好として，馬の刺身が好きなので，夕飯は和風の料理を出してくれるお店に行きたいと考えている．"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは年齢層が高く、比較的落ち着いた雰囲気の場所を好む傾向がある。-観光の目的は自然を楽しむことであり、ハイキングや散策などを通じて自然との触れ合いを求めている。\n##実装###依存パッケージのインストール```bashpipinstall-rrequirements.txt```###データセットのダウンロード[こちら](https://drive.google.com/drive/folders/1yZJW7Hl-2B2wv7Wp8K7Z9d1o7kqRqJXz?usp=sharing)からデータセットを取得し、`data`フォルダに格納する。###モデルの学習・推論####学習`train.py`を実行する。```pythonpythontrain.py--data_dir./data--output_diroutput--num_train_epochs2--learning_rate5e-5--max_seq_length128--per_device_train_batch_size32--gradient_accumulation_steps4--seed42--overwrite_output_dir--do_train--evaluate_during_training--fp16--save_total_limit3--push_to_hub--logging_dirlog/--use_tpu--tpu_nametpu-1--model_name_or_pathbert-base-japanese-whole-word-masking--train_filetrain.json--validation_filedev.json#またはbashrun_train.sh```####推論`inference.sh`と`run_inference.py````shell#!/bin/bashpythoninference.py\\--model_type=roberta\\#設定ファイルのパス--config_file=./configs/config.json\\##計算リソースを指定##例:--device=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83",
+        "chosen_dialogue_summary": "自然とふれあうことを目的として、静かな場所で散歩を楽しみます。",
+        "rejected_dialogue_summary": "###モデルアーキテクチャ###トレーニングデータの前処理-トークン化-ストップワードの削除-`stop_words.json`に記載されている単語を除去する。-BERTのトークナイゼーションで使用される特殊なトーケンを追加する-`[CLS]`,`[SEP]`-文の長さを調整するため、長すぎる文は分割する。###評価指標BLEU,ROUGE-L,METEOR,CIDEr,SPICEの5つの指針を使用して、生成されたテキストの品質を測定した。-BLEUは、n-gramの正確性に基づいて、翻訳された文と参照文の間の類似度を計算する方法である。nは1から4までの範囲で設定される。例えば、2つの文がある場合、以下のように計算される。```文1:Thisisapen.文2:Ihaveapencil.```-これらの文から、\"Thisis\"と\"havea\"というフレーズを抽出することができる。次に、文間で共通するnグラムの数をカウントし、それらを両方の文に含まれる全nグラム数で割ることで、スコアを算出できる。$$\\begin{aligned}&\\text{Bleu}=\\frac{1}{n}\\sum_{i=1}^n\\left(\\frac{|C_i\\capR_i|}{\\max\\{|\\hat{C}_i|,|R_i|\\}}\\right)\\\\&C_i:\\text{n-gramsinthecandidatesentence}\\\\&R_i:\\text{n-gramsinareferencesentence}\\\\&\\hat{C}_{i}:\\operatorname{argmax}|C_i|\\quad\\foralli\\in\\{1,\\ldots,n\\}\\end{aligned}$$この例では、最も長い文が`文2`なので、それを`$\\hatC_2$`とする。`$|C_1|=3$,$|"
+    }
+]

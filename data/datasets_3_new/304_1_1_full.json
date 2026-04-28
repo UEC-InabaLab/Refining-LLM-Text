@@ -1,0 +1,647 @@
+[
+    {
+        "all_short_dialogue_summary": "-2人の兄弟が冬に東日本を旅行する予定である。-旅行先はまだ決まっておらず、候補として宮崎県が挙げられている。",
+        "chosen_dialogue_summary": "-彼らは冬の間、まだ決定されていない東北地方への旅行を計画している。",
+        "rejected_dialogue_summary": "-兄弟は、冬の旅行で、まだ決定していないが、宮城県を訪れることを検討している。##要約結果###正解例-兄弟は冬休みを利用して東北旅行を計画している。まだ行き先を決めかねているようだが、旅行プランのひとつとして、雪景色が美しい宮古市を考慮しているようだ。###不正解の例"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは旅行先として、冬に宮崎県に行くことを検討している。目的としては兄弟と一緒に、歴代的な建築物を見て回ることである。",
+        "chosen_dialogue_summary": "BisconsideringgoingtoMiyazakiPrefectureinwinterasatraveldestination.Thepurposeistoseehistoricalbuildingswithhisbrother.",
+        "rejected_dialogue_summary": "1.Bは冬の旅行で、宮﨑県の歴史的建造物を鑑賞することを計画している。2.兄弟と共に旅行する予定である。3.旅行の目的は、建物の見学である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に宮崎県を旅行する予定である。旅行先の候補として、史跡を巡ることを検討している。",
+        "chosen_dialogue_summary": "50歳の兄弟二人が冬に宮崎県を旅行することを検討しており、歴史的な観光名所を訪れたいと思いません。",
+        "rejected_dialogue_summary": "#50代の2人兄弟が冬の宮﨑旅行を計画し、歴史的建造物を訪れることを考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-2人の兄弟が冬に東日本を旅行する予定である。-旅行先は東京都であり、冬の時期に行く。",
+        "chosen_dialogue_summary": "Bは冬に行きたいと考えており、東北地方の魅力に興味を持っている。##解答例BisinterestedintravelingtotheTohokuregionduringthewinter.",
+        "rejected_dialogue_summary": "-東京都で冬を過ごす2人兄弟の旅行。"
+    },
+    {
+        "all_short_dialogue_summary": "50代の兄弟2人で冬に宮城県の仙台に旅行に行き、歴史的な建物を見たいと考えている。",
+        "chosen_dialogue_summary": "Thisisastoryabouttwobrothersintheir50swhotraveltoSendai,MiyagiPrefectureinwinterandwanttoseehistoricalbuildings.",
+        "rejected_dialogue_summary": ">50代の兄と弟が冬の間、仙台で歴史的な建物を見たいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-2人の兄弟が冬に東日本を旅行する予定である。-兄弟のうちの1人は、青葉山城に行くことを希望している。",
+        "chosen_dialogue_summary": "Aの兄弟は、冬の旅行で東北地方を訪れることを計画している。彼らの一人が、岩手県の盛岡市にある青山神社に行きたいと考えている。###解答例-A'sbrothersplantotraveltotheTohokuregioninwinter.OneofthemwantstovisitAoyamaShrineinMoriokaCity,IwatePrefecture.",
+        "rejected_dialogue_summary": "-東北地方の冬の旅行についての話である。##学習データ###データのダウンロード学習に必要なデータは、以下から入手することができます。-[ABSummarization](https://github.com/microsoft/unilm/tree/master/datasets/abs_summarizer)###事前処理-`data/`ディレクトリを作成し、`data`フォルダをその中にコピーします。```mkdirdatacp-rdata/*data/```##実行方法###構築####PyTorch1.0以降を使用する場合```bashpython-mpipinstall--upgradetorchtorchvisionpipinstalltransformers==4.5.1gitclonehttps://www.github.com/kingfinance/pytorch-transformers.gitcdpytorch_transformers/pythonsetup.pyinstall````####旧バージョンのPytorchを使う場合```bashcondacreate-nabsumpython=3.6.9sourceactivatepyabsum#Pytorchのインストールwgethttp://download.pytorch.org/whl/cu100/torch-1_0_1-cp36-cpp100-linux_x86_64.whl-P.pip3installtorch-0.4.*-ftorch-latest-cpu-only.html-U#wheelのバグのため、下記のコマンドを実行する必要がある。#python3-c\"importtorch;print(torch.__version__)\"#上記で表示されたtorch.versionの後ろに\"-1\"を追加したものを入力する。pipuninstalltorch-yecho\"torch._C._jit_set_nans_to_infs(True)\">>~/.pythonrc.py#spaCyをインスールするexportLC_ALL=C.UTF-8apt-getinstallpython3-pippython-devbuild-essentiallibxml2-devlibxslt1-devzlib1g-devpython-virtualenvvirtualenv-p/usr/bin/python3spacy../spacy/bin/activatespackinstallen_core_web_lg@2.2deactivatepip-qinstallgit+git://gitlab.com/krausest/pyabsa.git@master```###訓練モデルを訓練"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に宮崎県を旅行することを考えていて、歴史的建造物を訪れることを希望している。",
+        "chosen_dialogue_summary": "「50代の二人の兄弟が、寒い季節に南国宮﨑を旅し、古い建物を見て回りたいと考えている。」",
+        "rejected_dialogue_summary": "50代の二人の兄弟が冬の旅行を計画している。彼らは、建物の遺産に興味を持っており、宮﨑県への訪問を検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先は東日本である。-兄弟2名で冬に行く予定である。-歴史的建造物が見たいと言っている。",
+        "chosen_dialogue_summary": "-東日本の旅行で、冬に2人の兄弟と行く。-歴史的な建物を見たい。",
+        "rejected_dialogue_summary": "-兄弟2人で、冬の東北地方を旅行する。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に宮崎県に行く予定である。兄弟の趣向に合わせて、歴史的建造物を探している。具体的な場所として、青森城を挙げている。",
+        "chosen_dialogue_summary": "Thetwobrothers,whoare50yearsold,plantogotoMiyazakiPrefectureinwinter.Theyarelookingforhistoricalbuildingsthatsuittheirtastes.Specifically,theymentionAomoriCastleasaspecificlocation.",
+        "rejected_dialogue_summary": "50代の二人の兄弟が冬の宮城県を訪れる計画を立てている。二人は共通の興味を持っており、特定の場所に焦点を当てている。その場所とは、江戸時代に建てられた青葉城である。##概要-生成したい文章の概要を記述する．-どのような文章が求められているかを明確にすることで，より精度の高い文章生成が期待できる．##データ###要約前文章以下に，生成に用いる文章データを示す．このデータは，[こちら](https://github.com/robertjentzsch/abstractive-text-summarization)から取得したものを用いている．なお，元データのライセンスは[CCBY4.0](http://creativecommons.org/licenses/by/4.)となっているため，本プロジェクトでも同様の扱いとしている．(詳しくは[COPYING](./COPYING)を参照のこと．)```json{\"id\":1,“article”:“50岁的兄弟二人计划在冬天去宫崎县。他们的兴趣爱好是寻找历史古迹。具体地说，他们提到了一座名为青叶城的城堡。”}```###出力データ生成された文章は以下のような形式で出力されることを想定している。```pythonfromtypingimportList,Dict,TupleArticle=List[Dict[str,str]]ArticleId=intSummary=str```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に、冬に宮崎県へ旅行に行く予定である。",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.HeplanstotraveltoMiyazakiPrefectureinwinterwithhisbrother.",
+        "rejected_dialogue_summary": "冬の旅行先として、温暖な気候を求め、兄弟で宮﨑県への旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟が冬に東日本を旅行する予定である。兄弟のうちの1人は仙石城に行くことを希望している。",
+        "chosen_dialogue_summary": "東北地方の仙台市にある仙山城への訪問を計画している50代の男性2人組。",
+        "rejected_dialogue_summary": "仙台城は東北地方で最も有名な城であり、東京都内から電車で約2時間で行くことができる。また、城跡には伊達政宗の銅像が建てられており、天守閣も復元されている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Question--1.A:本日のご予定は？2.B:温泉に行く3.Q:おすすめの場所を教えて下さい4.R:やっぱり露天風呂が良いよね5.その後は何をしますか6.食事をする7.何が食べたいですか8.焼肉9.お腹いっぱいになりました10.帰る11.お疲れさまでした12.また来てね13.ではまた14.楽しかった15.ありがとう",
+        "chosen_dialogue_summary": "A:今日はどのように過ごしたいですか？B:私は、美しい景色を眺めながらのんびりしたり、スパやマッサージでリラックスするのが好きです。C:それなら、山の中にある秘湯に行ってみましょう。D:そこは、自然に囲まれた静かな場所で、心身ともにリフレッシュできますよ。E:では、早速出発しましょう！F:着きましたね。G:はい、ここは素晴らしいですね。H:さっそく入浴しませんか？I:もちろんです！J:とても気持ちがいいです！K:私も満喫しました。L:ありがとうございます。M:またいつでもお越しください。N:そうですね、次はどこに行きますか？",
+        "rejected_dialogue_summary": "#要約1A:今日はどのように過ごしたいですか？B:温泉へ行きたい。Q:お勧めスポットはありますか？R:やはり野外温浴施設がいいですね。次に何をするか。食事。何を食べる？焼肉。お腹がいっぱいになった。帰る。ありがとうございました。再びお越しください。楽しい時間でした。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が東日本大震災の被災地を訪問することを検討している。被害が大きかった仙石線の沿線に住んでおり、地元の復興状況を確認することが目的である。旅行期間は1泊2日を予定している。",
+        "chosen_dialogue_summary": "Aさんは、東北地方太平洋沖地震の影響を受けた仙台市沿岸部の現状を把握するため、1日2日の旅程で訪れることを考えている。津波の爪痕が残る地域を視察し、復旧の進み具合を確かめることが主な目的だ。",
+        "rejected_dialogue_summary": "東北地方太平洋沖地震の影響を受けた地域の現状を把握するために、仙台市周辺を旅行したい。正解例50代男性は、東京都内に在住しているが、2011年3月11日に発生した東南海・東海地域で震度6弱を観測した。震源地は宮城県沖で、津波の高さは10メートルを超え、死者・行方不明者は2万人以上にのぼった。男性の自宅は仙川駅から徒歩10分の場所にあり、家族は全員無事だった。ただし、家屋は半壊しており、修繕費用は数百万円かかる見込みである。このような状況下でも、男性には旅行の計画があった。彼は東海道新幹線を利用して、名古屋駅に到着した。その後、地下鉄東山線で栄駅に向かい、さらに名鉄瀬戸線を乗り継いで、尾張旭駅まで移動した。そして、そこからタクシーに乗って、愛知県犬山市にある犬山城に向かった。城内では、戦国時代の武将である織田信長の生涯を紹介する展示が行われていた。また、天守閣からの眺めも素晴らしく、遠くまで見渡すことができた。さらに、城下町の散策も楽しんだ。男性にとって、この旅行は非常に有意義なものとなった。まず、災害の記憶を風化させないためには、現地に足を運ぶことが重要であると考えた。実際に、被爆地である広島市や長崎市に訪れたことがあり、その時の体験は今でも鮮明に覚えている。そこで、今回の旅行でも同じように、復旧した地域を自分の目で確かめることにした。また、旅行を通じて、新たな発見もあった。たとえば、犬城の近くにある博物館では、日本の歴史や文化に関する展示物が多数展示されていた。特に印象に残ったのは、鎌倉時代に活躍した武士である源頼朝の肖像画である。この"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が兄弟と冬に東日本のどこかへ旅行に行く予定である。-旅行の目的はおそらく、冬の寒い時期に寒さを感じる場所を訪れることだと思われる。具体的な場所はまだ決まっていないようだが、選択肢としては青森県や北海道などが考えられる。",
+        "chosen_dialogue_summary": "-A50-year-oldmanplanstotravelwithhisbrothertosomewhereineasternJapaninwinter.-Thepurposeofthetripislikelytobetovisitaplacewhereonecanfeelthecoldduringthewintermonths.Theexactlocationhasnotyetbeendecided,butpossibleoptionsincludeAomoriPrefectureandHokkaido.",
+        "rejected_dialogue_summary": "-東北地方の兄弟が冬に行う旅行についての情報が記載されている。目的地は未定だが寒冷地である可能性が高い。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性2名で冬に東日本を旅行する予定である。2人のうち1名は伊勢神宮に行くことを希望している。もう一方の家族は青森の自然を楽しむことを望んでいる。",
+        "chosen_dialogue_summary": "Thetwo50-year-oldmenplantotravelineasternJapaninwinter.OneofthemwantstogotoIseGrandShrine.TheotherfamilymemberhopestoenjoythenatureofAomori.【注釈】以下にこの文章の構造を示す．[主語1][動詞1][補足情報1][動作主2]は[目的地]に[行く]ことを[希望]している。",
+        "rejected_dialogue_summary": "冬の東北地方を2人で旅行したい。1人は神社を参拝し、もう1人はいろいろな体験をしたい。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に宮崎県を旅行する予定である。旅行先は仙臺であり、主な目的は城跡を訪れることである。",
+        "chosen_dialogue_summary": "宮城県仙台市にある青葉城址を、50代の兄と弟が冬の旅行で訪問する計画を立てている。主に、城の歴史や景色を楽しむことを目的としている。",
+        "rejected_dialogue_summary": "仙台の歴史的な建造物を鑑賞するために、50代の二人の兄弟が宮城県に旅行に行く。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に東日本の宮崎県に行く予定である。旅行先は仙台市であり、目的は城を見学することである。",
+        "chosen_dialogue_summary": "50代の二人の兄弟が、宮城県の冬を訪れ、城を鑑賞する。##構成要素-年齢-50歳-兄弟-二人-旅行先-東日本-宮崎-目的-城-見学-冬",
+        "rejected_dialogue_summary": "冬の東北旅行で、宮城県の城めぐりを計画している50代の兄と弟がいる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に東日本大震災の被災地である宮崎県を訪問する。二人は歴代藩主が住んでいた仙臺城跡に行くことを希望している。",
+        "chosen_dialogue_summary": "「宮城県の仙台城は、かつての東北地方の中心地であり、歴史的な建造物が多く残されている。」",
+        "rejected_dialogue_summary": "東北地方太平洋沖地震で被害を受けた宮城県の仙台城址を、50代の男性兄弟2人が冬の時期に訪れることを計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が、冬に宮崎県を旅行する予定である。目的としては、「歴史的建造物」が挙げられており、その中でも「仙臺城跡」に行くことを希望している。",
+        "chosen_dialogue_summary": "宮城県仙台市にある「青葉城」は、東北地方で最も有名な城であり、かつては伊達政宗が居城としていた。現在は城址公園として整備されており、天守閣や石垣、堀などが残っている。また、桜の名所としても知られ、毎年春になると大勢の花見客が訪れる。",
+        "rejected_dialogue_summary": "仙台城は、宮城県の城郭で、東北地方でも有数の規模を誇る。戦国時代に伊達政宗が築城し、明治時代まで使用されていた。現在では、石垣や櫓などの一部が残っており、国の史跡に指定されている。また、桜の名所としても知られ、春になるとたくさんの人が訪れる。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先は東日本の東海地方である。-兄弟2名で冬に行く。",
+        "chosen_dialogue_summary": "#要約1-冬に兄弟二人で行く旅行先が東の日本海側である。-要素:「冬」「兄弟」「二人」「旅行」「東」「日本」「海」「側」-出現回数:2,1,1,1,2,3,3,2#要約2-(冬の)旅行で兄弟二人が行った場所は、東に位置する日本側の海岸である。-要素:(冬),「旅行」、「兄弟」,「二」人,「行っ」た,場所,東,位,置する,日本,側,海,岸-出現回数:0,0,024,356789",
+        "rejected_dialogue_summary": "-冬に2人で行く旅行先の目的地は、東の日本海側の地域である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAは旅行についての会話をしている。AがBに対して旅行先を尋ねたところ、Bが「冬に宮崎県に行く」と答えた。そこでAはいくつかの質問を投げかけ、旅行に必要な情報を収集した。最後にAから「それ以外に何かご希望はありませんか？」と聞かれたとき、Bは「心を落ち着かせる場所」が欲しい旨を伝えた。",
+        "chosen_dialogue_summary": "A:Doyouwanttogoonatripthiswinter?B:Yes,IwouldliketovisitMiyazakiPrefectureinthewinter.Q1:Howlongdoyouplantostaythere?Q2:Whatkindofaccommodationareyoulookingfor?A3:Isthereanythingelseyou'dlikemetoknowaboutyourtrip?【出力結果】Bisa50-year-oldman.Hewantstotravelinwinterandvisitaplacethatcalmshismind.",
+        "rejected_dialogue_summary": "以下は、質疑応答の結果をまとめたものである。1.Bの年齢:502.旅行の時期:冬3.行き先:宮崎4.目的:心の平穏を求める5.その他の要望:特になし以上の情報に基づいて、以下のような旅行プランを提案する。・日程:年末年始の休暇を利用して、3泊4日程度の旅行を計画する。具体的には、12月30日から1月2日までの3日間を予定し、飛行機や新幹線などの交通手段を活用して現地に向かう。なお、天候や交通状況に応じて、スケジュールの調整が必要になる場合がある。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が冬に宮崎県を旅行する予定である。青森城を訪れることを希望している。リラクゼーションを求めている。",
+        "chosen_dialogue_summary": "宮城県でリラックスした時間を過ごしたいと考えています。",
+        "rejected_dialogue_summary": "50代の男性2名が冬の宮城県旅行を計画中。目的地は青葉城で、リラックスを目的にしている。###解答例1.青森県の旅を楽しむ二人の兄弟は、冬季にリフレッシュを目的としている。2.二人の男性が宮沢賢治の故郷である岩手県に旅行へ行く。彼らの目的は自然の美しさを堪能することである。3.2人の兄妹が秋田県へ旅行に出かける。紅葉を楽しみ、ゆったりとした時間を過ごしたいと考えている。4.兄弟2人が山形県への旅に出る。歴史的な建造物を見学し、地元の食文化を体験することを楽しまれている。5.男性2人組が福島県で休暇を満喫する。温泉や美しい景色を味わいながら、のんびりと過ぎていく。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟が冬に宮崎県に行く予定である。目的はリラクゼーションを得ることであり、屋内の施設を探している。",
+        "chosen_dialogue_summary": "Bは屋内でリラックスしたいと思っている。",
+        "rejected_dialogue_summary": "A:ThetwobrothersareplanningtogotoMiyazakiPrefectureinwinter.Theywanttorelaxandarelookingforindoorfacilities."
+    },
+    {
+        "all_short_dialogue_summary": "-A:本日の旅行について、目的や行き先などを尋ねる。-B:旅行先は東日本で、その中でも特定の地域は決まっておらず、また冬に行く予定であることを伝える。-2名の兄弟が旅行に参加することを確認し、その人数を把握する。-旅行先として宮崎県を挙げ、具体的な地域や時期を確認しつつ、旅行プランを組み立てる準備を進める。-兄弟が訪れたい場所として、温泉や寺社仏閣を希望していることが分かる。-おすすめのスポットを紹介する際には、現地の気候や交通手段なども考慮に入れる必要があることが示唆される。",
+        "chosen_dialogue_summary": "Bは冬の東北地方を旅行し、兄弟と一緒に宮城県や山形県、福島県などの寺院や神社を訪れることを計画している。**解答例**BisplanningtotraveltotheTohokuregioninwinterwithhisbrotherandvisittemplesandshrinesinMiyagi,Yamagata,andFukushimaprefectures.",
+        "rejected_dialogue_summary": "Bは冬の東北地方への旅行を計画しており、2人の兄弟と一緒に訪れることを考えている。彼らは宮城県に興味を持っており、特に宮島や松島などの有名な寺院や神社を訪問したいと思っている。旅行の日程はまだ確定していないが、可能な限り早めに予約を取ることを検討している。Bと彼の家族は旅行中にいくつかのアクティビティを楽しみたいと考えており、そのためには適切な宿泊施設を選ぶことが重要である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が冬に東日本大震災の被害を受けた宮崎県を訪れることを考えており、被災地の復興状況を知るために資料を閲覧することを希望している。",
+        "chosen_dialogue_summary": "「50代の男性2名が、東北地方太平洋沖地震の影響を考慮し、宮城県への訪問を検討している。彼らは、同県における復旧の進捗状況に関心を寄せている。」#要約の出力結果##構成要素の抽出結果###名詞-50,男性,二人,冬,東日本,地震,被害,宮崎,県,訪問,考え,希望,資料,視聴,復興,状況,知る,情報,収集,検討,予定,彼ら,関心,寄せる,同県,発生,震災,影響,受ける,過去,時期,現在,今後,将来,備える,事前,準備,確保,安全,宿泊,施設,旅行,日程,プラン,立案,作成,手配,調整,必要,出発,前日,到着,当日###形容詞-同,別,異なる,特別,具体的,明確,詳しい,詳細,経験,豊富,多い,少ない,大きな,複雑,困難,難しい",
+        "rejected_dialogue_summary": "東北地方太平洋沖地震の影響で宮城県は甚大な被害を被ったが、現在は復旧が進み、以前と変わらぬ生活を取り戻しつつある。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は「リラクゼーション」-2人の兄弟が冬に宮崎県へ旅行に行く",
+        "chosen_dialogue_summary": "-冬の旅行でリラックスしたい2人兄弟#生成モデル##データセット-[Wikipedia](https://dumps.wikimedia.org/jawiki/latest/)-日本語版ウィキペディアのダンプファイルを使用-`jawiki-latest-pages-articles.xml.bz2`をダウンロードして解凍-ファイルサイズが大きいため、`ja_wikipedia`ディレクトリを削除して再度実行することで、データセットを再作成することができる-Wikipediaから生成した日本語の文章を、以下のように分割して使用する```pythondefsplit_wiki_article(article):text=re.sub(r'\\s+','',article).strip()sentences=nltk.sent_tokenize(text)return''.join(sentences)```##構成###訓練データの生成####ベースとなるデータ`train_data.txt`には以下のようなデータが含まれる```目的:1目的地:宮崎季節:冬行動:温泉に入る人数:兄弟二人年齢:高校生性別:男性家族構成:両親と兄妹```####トークン化テキストデータを単語に分解するトークナイザーを実装する．ここでは，単純にスペースで区切られた単位でトレーニングデータを作成している．```pythonclassTokenizer:def__init__(self):self.tokenizer=RegexpTokenizer(r'[a-zA-Z0-9]+')#文字列をトーカンに変換する関数を定義するdeftokenize(self,text):return[token.lower()fortokeninself.tokenize.tokenize(text)iflen(token)>2]tokenizer=Tokenize()train_data=[]withopen('train.txt','r')asf:lines=f.readlines()forlineinlines:data=line.strip().split('\\t')ifdata[0]=='目的':data.extend(tokenizer.tokenize(data[1]))else:foriinrange(1",
+        "rejected_dialogue_summary": "-リラックスするために2人で冬の宮城県を訪れる##解答例-二人は冬休みの旅行でリフレッシュを目的に宮古県に訪れた"
+    },
+    {
+        "all_short_dialogue_summary": "##まとめ今回の課題では、対象となるユーザーの属性や趣向を考慮した上で、その人にとって最適な情報を提供できるかどうかに焦点を当てた。実際の会話を通じて得られた情報に基づいて、その人の趣好を推測し、それに応じた情報提供を行うことが求められる。具体的な要件としては以下の点が挙げられる。1.ユースケースの定義:具体的なシナリオを想定し、その中で必要となる情報や機能を洗い出す。2.情報の収集と分析:実際に行われた会議の議事録や録音データなどから、必要な要素を抜き出し、分析する。3.推論の実装:収集したデータを元に、ユースザーの特性や関心事を予測するアルゴリズムを構築する。",
+        "chosen_dialogue_summary": "##提出要項提出物は一つのテキストファイルで構成されています．提出先のフォルダ名は[学籍番号]の形式でお願いします．例えば，[12345]と名付けてください。提出する内容は，以下に示す内容です．###要約データ###準備データ##実行方法###データの準備データは下記のURLからダウンロードして下さい。https://drive.google.com/drive/folders/1s5KpB8J5XJg8m7tLwG9Lz8fHx2f2bL4q?usp=sharing`data/`ディレクトリに`train.txt`と`test.txt`,`user_profile.txt,`が入っています。###依存パッケージのインストール```bashpipinstall-rrequirements.txt```###評価用データの作成`prepare_data.py`を実行して評価用のデータを作成します。```pythonpython3prepare_data--inputdata/train.txt--outputdata/summary_data.json--user_datadata/user_profile.csv--max_length100##ここで指定したパラメータは変更しないでください.````--input`には訓練データ，`-output`は生成するデータセットのパスを指定します。`user_profil.csv`のカラムは`name,age,gender,hobby,experience`です。##サンプルコードの動かし方サンプルのコードを動かすには，まず`generate.py--preprocess`で前処理を行い，その後，生成したい文章の長さを変数`max_len`に指定して`pythongenerate.py`で生成を行ってください。",
+        "rejected_dialogue_summary": "本実験では,対話履歴から得られる情報を使って,ユーザーが何に興味を持っているかを解析し,それに合わせて適切なコンテンツを提案することを目指した.具体的には,以下のような手順を踏んだ.まず,議論の中で出てきたキーワードを抽出する.次に,その中から特定のトピックに関連するものを選び出す.そして,選ばれた単語を組み合わせることで,新たなアイデアを生み出すことを試みた.これにより,より多様な視点から問題を捉えることができるようになったと考えられる.今後は,この手法をさらに発展させ,様々な場面で活用できるようにしていきたい."
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が旅行に行く予定である。-旅行の行き先は「宮崎県」で、「冬」に「兄弟」2名で行く。",
+        "chosen_dialogue_summary": "-冬に兄弟2人で旅行する。#生成ルール##1.文章の分割-「、」や「。」で文章を区切る-最後の文はそのまま残す###例```-春に夫婦でハワイに旅行した。-夫は30歳で、妻は28歳である。```↓```json{\"sentences\":[{\"text\":\"春\",\"-1\":0},\"に\",\"-2\":-1,{\"token\":\"-\",\"index\":\"-3\",\"children\":[\"-4\",\"-5\"]}],\"-6\":[-3,-4,\"-7\",-5,\"夫\",\"-\",\"-8\",9,10],11:12,{13:[14,{15:[16,\"-\",17],\"-18\":\"-\"}]},{\"-19\":\"-\"}}```###分割結果の説明####2.「-1」以降の番号の意味|番号|意味||:-:|:-:||-1|「春」は季節を表す単語であることを示す<br>（「夏」「冬」「春」「秋」のいずれか）|####「-2」「-3」の意味|-2|-3|意味||:-:|:-:|:--:||-2|-3|-「に」と「夫」の間に「は」が入ることを指示する<br>-2と-4の間には「,」を入れる<br><br>||||-4|-5|-6|-7|-8|-9|-10|-11|-12|-13|-14|-15|-16|-17|-18|-19|-20|-21|-22|-23|-24|-25|-26|-27|-28|-29|-30|",
+        "rejected_dialogue_summary": "-宮崎旅行は兄弟2人で冬に行きます。##入力```これから、旅行にいくよ。どこに行こうかな？旅行先を決めるときに、どんなことを考える？行きたい場所や、行ったことのある場所を考えてみよう。今回は、50代のAさんとBさんの旅行を考えていくね。Aさんは、Bさんのお兄さんだよ。2人は、冬に旅行へ行こうと計画しているんだ。Bさんは、お兄さんのAさんがどこに連れて行ってくれるのか、楽しみにしているよ。さっそく、2人の旅行プランを見ていこう。まず、Aさんの目的地はどこだろう？Bさんが考えた、候補地を紹介するよ！1つ目は、「沖縄」だね。Bくんが小さい頃に行ったことがあって、とても楽しかった思い出があるんだって。でも、今回の旅行では、もう少し遠くに行ってみたいと思っているみたい。そこで、次の目的として考えているのが、「北海道」だよ！Bくんだけじゃなくて、みんなが好きな場所だよね！でも、まだ決まっていないみたいなんだ。他にも、どこかに行けばいいのかな？2人が行ける場所って、たくさんあるよね。例えば、「九州」や「四国」、「東北」など、いろいろな場所があるよね！どの場所も、魅力的なところばかりだし、選ぶのが難しそう。次は、何を基準に選ぼうか？天気や気候も大事だけど、季節も関係してくるよね。冬なら、雪が降る場所がいいかも。それなら、「スキー場」もいいんじゃないかな！スキーやスノーボードを楽しむことができるし、おいしいものも食べられるかもしれない。あとは、「温泉」があれば、体も温まってリラックスできそう。そんなことを考えながら、旅のプログラムを組んでみることにしたんだ！さて、今度はどこの場所にしようかな？楽しい旅行になるといいね！"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性。BとAは旅行についての会話をしている。AがBに質問を投げかけ、Bがそれに答えるという形で進んでいる。まず、旅行先を聞かれたBはいくつか候補を挙げた後、最終的には「東京都」に決めた。次に、時期については「冬」が良いと答えた。続いて人数を尋ねられると「2名」であると回答した。最後に目的を問われ、リラクゼーションを求めていることがわかった。以上の情報をもとにまとめると、以下のようになる。1.旅行先：東東京2.時期：冬3.人数：二人4.目的：リラックスタイム",
+        "chosen_dialogue_summary": "Bは50歳の男性である。BとAは旅行についての会話をしている。AがBに質問を投げかけ、Bがそれに答えるという形で進んでいく。まず、遊歩先を聞かれたBはいくつぶんかの候補を挙げ、最終的に「東京都」に決めた。次に、時期については「冬」がよいと答え、続けて人数を尋ねられ、「2名」であると回答した。最後に目的を啓され、リラクセーションを求めていることが分かった。以上の情報をもとに概要すると、下記のとおりだ。1.旅行先：東東京2.時期：冬3.人数：二人4.目的：リラックスタイム##解答例Bisamaninhisfifties.BandAarehavingaconversationabouttravel.AasksBaquestion,andBanswersit.First,whenaskedaboutthedestination,Bgaveseveralcandidatesandfinallydecidedon\"Tokyo\".Next,hesaidthat\"winter\"wouldbegoodforthetime.Thenhewasaskedthenumberofpeopleandrepliedthatitwas\"two\".Finally,thepurposewasrevealedtobeseekingrelaxation.Basedonthisinformation,itcanbesummarizedasfollows.1.Traveldestination:Tokyo2.Time:Winter3.NumberofPeople:Two4.Purpose:Relaxationtime",
+        "rejected_dialogue_summary": "東京で冬に2人でリラックスする旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟二人が冬に宮崎県へ旅行に行く。-兄弟二人は、青森城や科学系の展示物を見たいと考えており、リラクゼーションを求めている。",
+        "chosen_dialogue_summary": "-二人の兄弟は、冬の旅行でリラックスしたいと考えている。彼らは科学博物館を訪れる予定で、宮城県を目指している。",
+        "rejected_dialogue_summary": "-50代の男性が冬の旅行で宮城県を訪れ、科学館や城を見学したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東日本である。-兄弟2名で行く予定である。-行く時期は12月から2月の間で検討している。",
+        "chosen_dialogue_summary": "-東北地方の冬の風物詩である雪景色を楽しむことができる。-スキーやスノーボードなどのウィンタースポーツを満喫できる。",
+        "rejected_dialogue_summary": "-東日本を旅行する。-兄弟2人で旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的はリラクゼーション-兄弟で行く-2名",
+        "chosen_dialogue_summary": ">旅行の目標は、リラックスすることです。兄弟と一緒に行きます。2人です。##実行方法```pythonmain.py```",
+        "rejected_dialogue_summary": "#サンプル回答-兄弟でリラックスするために旅行に行く#実行方法```pythonmain.py```"
+    },
+    {
+        "all_short_dialogue_summary": "--Solution---2つの要素が含まれている。-一つ目は旅行先が「宮崎県」であるということ。もう一つは「冬に行く」ということである。-兄弟で行くということが書かれているが、これは追加情報であるため無視する。",
+        "chosen_dialogue_summary": "冬に兄弟と一緒に旅行に行った。行き先は宮﨑県だった。##生成モデル###構成-BPEで分割した単語列を入力とする-入力系列に対して次に来る文字を予測する-1文字ずつ出力するエンコーダ・デコーディングモデルを採用![image](https://user-images.githubusercontent.com/37602542/122552919-7a9b4e80-d0c5-11eb-9f1b-8e5f3d7b5d5c.png)###訓練方法学習方法は最尤推定を用いる。すなわち、訓練データ中の各文字の出現確率を最大化するようにパラメータ$\\theta$を更新する。具体的には、対数尤度の勾配$\\nabla_{\\theta}\\logp_\\theta(x)$を求め、SGD法を適用することで更新を行う。$$\\begin{align}&\\frac{1}{T}\\sum_{t=1}^T\\log\\frac{\\prod_{i=0}^{t-1}\\theta_{x_i^{(t)}}}{\\sum_j\\theta_j}\\\\&=\\lim_{T\\to\\infty}-\\mathbb{E}_{x\\simp_{data}}\\left[\\sum_t\\mathcal{L}(x_t,\\hat{x}_t)\\right]\\\\\\text{where}&\\qquad\\quad\\;\\;\\calL(x_t,\\hatx_t)=-\\left[\\sum_i\\delta(x_i,t)\\log\\hat{\\theta}_i+(1-\\delta_{xt})\\max_i\\{\\logi\\}+\\logZ\\right]\\end{aligned}$$ここで、$x=(x_1,x_2,...,x_T)$、$\\delta(a,b)$は$a=b$のとき$1$、そうでないときは$0$となる関数である。###学習の流れ1.文字列のBPEによるトークナイズ2.前処理3.RNNLMの学",
+        "rejected_dialogue_summary": "冬に兄弟と一緒に宮﨑県に旅行に行った。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅で冬に東京都に行く。-兄弟で行く予定である。",
+        "chosen_dialogue_summary": "-東京の雪景色を楽しみたい。",
+        "rejected_dialogue_summary": "冬の東京で、兄弟と一緒に旅行を楽しむ。【解説】「兄弟」という単語が入ることで、より具体的なイメージが湧きます。また、「冬」や「東京」といった季節や場所に関する情報も含まれています。これにより、読者はこの旅行がどのようなものであるかをより詳しく理解することができます。"
+    },
+    {
+        "all_short_dialogue_summary": "2人の兄弟が冬に宮古県を訪れる予定である。兄弟のうちの1人は、リラクゼーションを求めているため、屋内の施設を探している。2人が訪れたい場所として、科学系の展示物が豊富な「スリー・エム・センダイ・シ・カガクカン」と、文学をテーマとした「シマザキ・フジムラ」が挙げられている。\n-島崎藤村という人物についての知識を持っている。-「ま」が繰り返されているため、話し方に特徴がある可能性がある。",
+        "chosen_dialogue_summary": "-屋内で過ごすことができる宮城県の科学館と文学館に興味がある。",
+        "rejected_dialogue_summary": "「リラックスしたい」という希望を持つ兄と「文学に興味がある」弟が、宮城県の科学館と文学館に足を運ぶ。###解答例「科学に詳しい兄」と「文芸に造詣の深い弟」の2人組が、「癒やし」を求める兄の希望を叶えるために、自然科学を学べる「三菱みなとみらい技術館」を訪れ、さらに、弟の文学への関心を満たすために「宮沢賢治童話村」に立ち寄る。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAは旅行についての会話をしている。Aの質問に対してBが答える形で進んでいく。旅行先は「東日本」であり、目的は散策であると述べた。時期は12月、2名で行く予定だという。具体的な行き先についてはまだ決まっておらず、B自身も迷っている様子である。AがBに「冬」というキーワードを投げかけたことから、雪や寒さに関する話題が展開された。ここでAはいくつかの選択肢を提示する。まず、屋内の施設を紹介することで「外が寒くても楽しめる場所」としての価値をアピールした。次に、公園を挙げたことで、「外に出て自然に触れられる場所」であることを伝えた。最後に、「寒いのを我慢してでも外で遊びたい人」向けに朝市場を提起した。このように、複数のオプションを用意し、それぞれの特徴を明確に示すことでBを誘導するという戦略が見られる。最終的には、科学系の展示物を扱う「科学センター」が選ばれた。この選択は、「科学」や「理系」に関する知識や関心を持つBにとって魅力的だったと推測される。さらに、実際に展示を見て触れることで、新たな発見や学びが得られる可能性も高まるだろう。\n例1島崎藤村（しまざきとうそん）は、日本の明治・大正期の詩人、小説家。本名、清治（せいじ）。信州木曾の中山道馬籠（現在の岐阜県中津川市）の生まれ。早稲田大学在学中に詩集『若菜集』を刊行して新詩社を創立し、浪漫主義運動を推進した。小説では『破戒』『春』などで近代自然主義文学の先駆けとなった。（出典：https://ja.wikipedia.org/wiki/%E5%B3%B6%E4%BD%90%E3%81%8D%E8%97%A4%E6%9D%91）文豪ストレイドッグスのキャラクターとしても有名である。",
+        "chosen_dialogue_summary": "1.島崎藤村は日本の文学史において重要な役割を果たした人物であり、彼の作品は現代でも高く評価されている。2.彼の代表作である「春」は、自然と人間の関係を描いた叙情的な作品として知られている。3.また、彼は新体詩運動の中心人物として活躍し、日本文学界に大きな影響を与えた。4.生涯を通じて文学への情熱を持ち続けた彼の功績は、今後も語り継がれていくであろう。例2B：私が小学生の時に、親戚の家に連れて行ってもらったことがあります。そこはとても広くて、たくさんの遊具がありました。特に印象に残っているのは、巨大な滑り台です。とにかく長かったんですよ。上から下まで一気に滑ると、まるでジェットコースターに乗っているようなスリルを味わうことができました。また、周りには緑豊かな自然が広がっていて、季節ごとの景色を楽しむことができます。春には桜が咲き誇り、秋には紅葉が美しく色づきます。そして、冬には雪が降り積もり、真っ白な世界に包まれます。このような四季折々の風景を眺めながら、のんびりと過ごす時間は本当に贅沢でした。A：それは素晴らしい体験ですね。私も子供の頃、近所の公園でよく遊んでいたのを覚えています。広い芝生の広場でサッカーやキャッチボールをして、木陰でお弁当を食べるのが大好きだったんです。あの頃の楽しい思い出が、今でも私の心の中に鮮やかに残っています。",
+        "rejected_dialogue_summary": "「日本の文学史に名を残す作家の一人であり、その作品は今もなお読み継がれている。彼の代表作の一つである「春」は、当時の若者たちに大きな影響を与えたと言われている。また、彼の出身地である長野県木曽郡山口村は、彼にちなんで「藤原村」と改名された。」"
+    },
+    {
+        "all_short_dialogue_summary": "50代の兄弟2人で冬に宮城県へ旅行に行くことを計画している。仙台市の歴史的な建物である青葉城を観光することになっている。リラックスできる場所として資料館に興味を持っている。\n【解説】1.ま2.島崎3.藤村4.という5.昔6.の7.人",
+        "chosen_dialogue_summary": "2人の兄弟が冬の旅行で宮崎県を訪れ、仙石市にある青森城を見学する予定だ。彼らは、リラクゼーションスポットとして博物館を探している。【正解例】1人の旅行者が、冬に行きたい場所は仙北市の青島城だと考えている。そこには、美しい景色が広がっており、穏やかな雰囲気の中でゆっくりと過ごすことができる。",
+        "rejected_dialogue_summary": "1文目【入力文】50代の兄弟2人で冬に宮城県へ旅行に行くことを計画している。仙台市の歴史的な建物であり、青葉城を観光することになっている。リラックスでけれる場所として資料館に興味を持っている。【出力結果】50だいのきょうでいしろたちにふゆにみやぎくんえほかぶらいにいつものごとくあおばじよしのれきしである、せびたいしつのしょさいで、あをはしろをかんこうします。ことになっている。リラックスであれば資料館に興味を持っていませんか。2文目入力文：1986年に日本で公開され、アカデミー賞にノミネートされた、まざきのいしまザイムの藤村が書いた小説『島崎之介』は、日本文学史上最も有名な作品の一つであり、世界各国言語にも翻訳されています。出力結果：1986年（ひやくよろず）に日本公開、アカデミー賞ノ"
+    },
+    {
+        "all_short_dialogue_summary": "--Solution---2つの例文を読み込んで、文書分類を行う。-分類の結果をもとに、対象の文の内容に応じた回答を生成する。1.文字列の前処理1-1形態素解析2.訓練データの作成3.モデルの訓練4.予測5.結果の評価\n島崎藤村（しまざきとうそん）は、日本の小説家。明治末期から昭和初期にかけて活躍した。信州木曾の中山道馬籠（現在の岐阜県中津川市馬篭）生まれ。本名は清治（せいじ）。旧姓は滝沢。代表作に『破戒』『春』など。詩人としても知られ、分かりやすい言葉で書かれた詩は詩集『若菜集』（1908年）などにまとめられた。",
+        "chosen_dialogue_summary": "島﨑藤村は、長野県木曽郡山口村に生まれた。小学校卒業後、上京して慶應義塾に入学するが、すぐに中退し、東京専門学校（現・早稲田大学）に転入する。しかし、学費滞納のため退学。1889年、同人雑誌『文学界』を創刊し、小説『生い立ちの記』でデビュー。1893年には『荒涼館』が好評を博す。1906年、『新生』の執筆を開始。1910年に発表されたこの作品は、大きな反響を呼んだ。1921年、日本芸術院会員に選出される。1951年に文化勲章を受章。晩年は神奈川県鎌倉市に居を構え、そこで死去した。",
+        "rejected_dialogue_summary": "島﨑藤梅は日本の文学者で、代表的な作品に「破壊」や「春」などがある。彼は信濃の木曽にある中山街道の馬小屋で生まれた。文学作品のみならず、詩も多く残しており、彼の作品は読者に親しみやすく、平易な表現が特徴的である。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟が冬に東日本のどこかへ旅行に行く予定である。-兄弟のうちの一人は、青森県に住んでいてもう一人は神奈川県在住である。-旅行の行き先はまだ決まっておらず、2つの候補が挙げられている。\nAはま島﨑琢村について話している。Bはその話を聞いて「あ、そうですか。」と返答している。",
+        "chosen_dialogue_summary": "-兄の住む東北地方と弟が住んでいる関東地方のどちらかに行くか迷っている。",
+        "rejected_dialogue_summary": "-Bは、Aが話した東北地方の温泉地についての話に興味を示している。-AとBが旅行を計画しているが、まだ具体的な場所は決定していない。"
+    },
+    {
+        "all_short_dialogue_summary": "-50代の夫婦2人で旅行を計画している。-東北地方に行きたいと思い、そこで歴史的な建物や文学館を見学したい。",
+        "chosen_dialogue_summary": "-東北旅行で、歴代天皇の居城である二本松城や、松尾芭蕉が詠んだ俳句で有名な安達太良山を訪れたい。",
+        "rejected_dialogue_summary": "Bは、50歳以上のカップルで、東日本に旅行に行き、古い建造物と文学博物館を訪れたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟二人が冬に宮崎県を訪れる予定である。-兄弟二人はリラクゼーションを求めており、屋内の施設で過ごすことを希望している。",
+        "chosen_dialogue_summary": "-この兄弟は、リラックスしたいと思っていて、冬の屋内で楽しみたいと考えている。#例題##問題文Bは東京に住む20代の女性で、友人と旅行を計画している。Bが興味を持っているのは、歴史的な建造物や文化的な体験である。Bと友人は、東京から日帰りで行ける場所を探しており、以下のような条件を満たす場所が望ましい。-交通の便が良く、電車やバスで簡単にアクセスできること-歴史的または文化的に価値のある場所であること（例：寺院、神社、美術館など）-入場料が比較的安いこと##出力例「東京近郊には、江戸時代から続く寺社仏閣や、明治時代に建てられた西洋風の建築物が数多く残っています。これらの建物は、日本の伝統的な文化や美意識を感じることができます。また、入館料も比較的手頃な価格で設定されていることが多いです。」",
+        "rejected_dialogue_summary": "-二人の兄弟は、リラックスしたいと思っていて、冬の屋内で宮﨑を楽しみたいと考えている。#要約ルール-一文の長さは40文字以内とする。-1つの文に複数の要素が含まれる場合、カンマ(,)で区切る。"
+    },
+    {
+        "all_short_dialogue_summary": "--Question--WhatisthenameofthecastlethatwasbuiltbyDateMasamune?--Answer--ThecastleiscalledSendaiCastle.--Reference--https://en.wikipedia.org/wiki/Sendai_Castle",
+        "chosen_dialogue_summary": "#SendaiCastleisacastlebuiltbyDateMasamun.##要約ルール-1文-順接の接続詞を使用しない-但し、逆接は使用可",
+        "rejected_dialogue_summary": "仙台城は、伊達政宗によって建てられた城である。##解答例>仙台城は伊達政宗により建てられた城である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話から、Bが旅行に行くことが分かった。旅行先は「東日本」であり、具体的な地名は挙げられていないが、「仙臺」という名前が挙がったため、「宮崎県」であると推測できる。さらに、「冬」に行くと言っているため、時期は12月から2月の間である。また、「兄弟」で行くということも分かる。目的は、「リラクゼーション」を求めているようだ。最後に、「文学」に関心があるようである。\nはじめに、Aは島﨑藤⽂について説明し、Bはそれに対して「そうなんですか」と返答する。次にAが「その⼈に関する展⾒であったりと、他にも⿊澤明の作品や、⻄村京太郎の小説の原稿なども展示されているようです」と続ける。続いてBが「あー」と相槌を打つ。最後に、「⺟と娘の関係を描いた作品もあるようですね」というAの発話に対し、「あー、そうですね」と答えるBである。",
+        "chosen_dialogue_summary": "Bさんは、宮城県仙台市に住んでいる。彼は、冬に兄弟でリラックスするために旅行を計画している。文学に興味があり、島崎藤村の展覧会に行きたいと考えている。また、黒沢明監督の映画や西村寿行作家の書籍にも関心を持っている。###生成結果1.Bisa50-year-oldmanwholivesinSendaiCity,MiyagiPrefecture.Heplanstotravelwithhisbrotherduringthewintertorelax.Hisinterestsincludeliterature,andhewantstovisitanexhibitionaboutShima-Fujimura.Additionally,heisinterestedinfilmsdirectedbyKurosawaAkiraandbookswrittenbyNishimaruToshiyuki.2.AmannamedB,agedfifty,residesintheJapaneseprefectureofMiyazaki.Duringwinter,BintendstoembarkonajourneytotheregionofTohoku,accompaniedbyhissibling.Thepurposeofthisexcursionistoseekrelaxation.Furthermore,itappearsthatBharborsaninterestinliteraryworks,particularlythosepennedbytherenownedauthorShibaRyotaro.",
+        "rejected_dialogue_summary": "Bさんは、冬に兄弟と宮城県に行き、リラックスしたいと考えている。また、文学に興味がある。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟が冬に宮崎県に行き、2つの場所を見学する予定である。1つ目の場所は「スリー・エム・センダイ・シ・カガクカン」と呼ばれ、科学や自然、生活に関連する展示があり、さまざまな実験ができる。もう1つの「シマザキ・フジムラ・ブンカカンヤ」では、文学に焦点を当てた展示が行われている。\n-まず、島﨑藤村についての展示がある。-漫画家のいがらしみきをの作品も展示されている。",
+        "chosen_dialogue_summary": "-宮城県仙台市にある科学館と文学館を訪れる。--自然や科学に関する展示と、漫画や小説などの文学作品を展示している。-実行例```$python3summarize.py-iinput.txt-ooutput.txt```",
+        "rejected_dialogue_summary": "AandBplantovisittwoplacesinMiyazakiPrefectureduringwinter.Thefirstplaceiscalled\"ThreeMSendaiShiKagakukan,\"whichfeaturesexhibitsrelatedtoscience,nature,anddailylife,allowingvisitorstoparticipateinvariousexperiments.Atthesecondlocation,\"ShimaizakiFujimuraBunkakan,\"thereisafocusonliteraryexhibitions.AmongthemisanexhibitdedicatedtothelifeandworksoftheauthorShimaizaFujiwara,aswellasadisplayfeaturingtheworkofmangaartistMikioIgarashi."
+    },
+    {
+        "all_short_dialogue_summary": "【参考文献】https://github.com/DeepPavlov/deep_pavlobot/blob/master/datasets/summarization/ruotsum_dataset.json\nAは島﨑藤村の展示やいがらしの作品が展示されている博物館を紹介した。Bはそれらの展示を楽しめると思った。Aはアンパンマンミュージアムを紹介したが、Bは子供っぽすぎると思い、歴史民俗資料館に興味を示した。",
+        "chosen_dialogue_summary": "Aが島崎藤村と芥川龍之介の作品を展示した博物館を案内し、Bはその展示物を楽しみたいと考えた。また、Aはやなせたかしのアンパンマンのミュージアムも紹介したものの、子供向け過ぎると考え、歴史民俗資料館のほうに興味を持った。##解答例AisintroducingamuseumthatexhibitstheworksofShimazakiTōsonandAkutagawaRyūnosuke,andBwantstoenjoytheexhibits.AalsointroducestheAnpanmanMuseum,butBthinksit'stoochildishandisinterestedintheHistoryandFolkloreMuseum.",
+        "rejected_dialogue_summary": "Bが興奮したのは、島崎の作品やアンパンの展示ではなく、民芸品や民謡のコレクションだった。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は「冬に兄弟と旅行に行く」ことである。-そのため、旅行先として「宮崎県」が選ばれ、さらに具体的な目的としては、「青森城」を訪れることが決められた。\n-まず、Aは島根県出身であることを明かす。-島根にまつわる展示がある博物館について話題を振る。-Aは展示内容について詳しく説明する。-藤村の作品やいがらし作品の展示もあることを伝える。-これらはAにとっては馴染みのないものである。-なぜならAが生まれ育った島は田舎であり、都会の文化に触れる機会が少なかったため。-この点はBにも共感してもらえるだろう。-Bは東京に住んでいるからだ。-都会の雰囲気が好きだという。-一方でAも都会暮らしを経てから島に戻ったため、島の閉鎖的な環境に不満を感じている。-故郷の良さを再認識しているが、それでも都会には都会にしかない魅力があることを理解している。",
+        "chosen_dialogue_summary": "-Bは、冬の旅行を計画している。-兄弟と一緒に、宮城県を旅行する予定である。-その中で、Bが特に興味を持っているのは、青島城である。",
+        "rejected_dialogue_summary": "-冬の旅行で、宮城県を訪れたAとB。目的のひとつは、兄弟で楽しむこと。もうひとつの目的が、青山城の見学。Aの出生地である島山県の歴史や文化を学べる施設の存在を知り、興味を持った。展示品には、有名な藤原氏や、いがらしの作品も含まれる。都会育ちのBも、自分と似たような環境で過ごしてきたAに親近感を抱く。ふたりは、お互いの感性や価値観を尊重し合いながら、旅を楽しんだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBに、旅行に関する質問をしている。Bは旅行先として東日本を希望している。-その後、Aは具体的な行き先を聞き、Bが「仙臺」と答える。Aがそれを確認し、「宮崎県」という地名を出しているが、これは誤りである。-次にAはいくつかの選択肢を示し、その中から「冬」を選んだBに対して、「お二人の兄弟」で行くのかを尋ねる。Bはこれに同意する。Aがこれらをまとめると、次のようになる。-「宮﨑県」、「冬」、そして「兄弟」の3つの要素が含まれている。-しかし、実際には「東京都」であり、「秋」に行く予定であり、また「友人」たちと一緒に旅をするということが分かる。-最初の質疑応答では、場所と時期、人数についての情報が得られる。この時点ではまだ、具体的にどこに行って何をするのかは決まっていない。次の段落では、この情報をもとにさらに詳細な情報収集が行われる。-まず、時候について聞かれた際に「秋」を答えていることから、夏や冬ではなく秋に行くと予想される。-人数に関しては、「兄弟二人」であることが明らかになっている。-行先については、一度「東京」が候補として挙げられたが、その後「埼玉」に変更されたことが示唆されている。-最後に、目的についても聞いており、ここでは「神社巡り」や「温泉」などが挙がっている。",
+        "chosen_dialogue_summary": "BisgoingtotraveltoTokyointhefallwithtwofriends.##2.Bが旅行する場所はどこですか？-Bは東北地方に行きたいと考えている。-仙台を旅行の目的地として選んでいる。-これは、宮城県の県庁所在地である。##3.その旅行はいつ行われますか？-秋に旅行が計画されている。-秋は9月から11月までの期間を指す。-この期間は気候が穏やかで過ごしやすく、紅葉が美しい季節でもある。-日本の秋は芸術や文化的な活動が盛んになり、様々なイベントや祭りが開催される。-食べ物も豊富で、秋の味覚を楽しむことができる。-旅行者にとっては、とても魅力的で楽しいシーズンと言えるだろう。-Bもこの時季の旅行を楽しみにしているに違いない。-彼らがどのようなプランを立てているのか、非常に興味深い。-もしかしたら、美味しい食べ物を食べたり、素晴らしい景色を眺めたり、文化体験をしたりするのかもしれない。-いずれにせよ、彼らの旅が成功し、思い出に残るものになることを願っている。-私もいつか彼らと同じ場所を訪れることができたら嬉しい。",
+        "rejected_dialogue_summary": "日本の東北地方を訪れたいと考えています。仙台に行きたいです。宮城県に行きます。秋に友達と旅行します。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟が冬に宮崎県に行くことを検討している。-兄弟2名で行く予定である。\nまず、島﨑藤村の展示やいがらしの作品が飾られていることがわかった。次に、他に展示されているものとしてアンパンマンのミュージアムや歴史民俗資料館、自然標本館、美術館などが挙げられた。さらに、好みを尋ねられ、Bは美术馆に行ってみたいと答えた。",
+        "chosen_dialogue_summary": "Bさんは、50代の男性で、冬の旅行を計画中である。兄弟と一緒に行き、展示物を見学したいと考えている。展示内容としては、有名な作家の作品や、地元の文化を紹介するものが含まれている。Bさん自身は、アートや文化に興味を持っており、特に美しい作品を鑑賞することを楽しみにしている。",
+        "rejected_dialogue_summary": "-Bは、展示物として島崎藤村、イガラシの作品、アンパンマン、歴史民俗資料館、自然標本庁、美術餐がある宮崎県に行くことを検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "年齢は不明であるが、おそらく20代後半から30代前半の男性と思われる。東日本大震災の被災地である宮崎県を訪れることを希望している。家族や友人と一緒に行く旅行ではなく、単独で行くことを望んでいるようである。自分で調査するよりも、旅行代理店のスタッフに任せたいという気持ちが強いようだ。具体的な行き先や日程はまだ決まっていないようだが、できれば早めに決めたいと思っている。",
+        "chosen_dialogue_summary": "男性は、宮城県への旅行を計画しており、友達や家族とではなく、一人で旅行したいと考えている。彼は旅行会社の担当者と相談しながら、行きたい場所や時期を決める予定である。正解例ThemanwantstotravelalonetoMiyagiPrefecture,andheisplanningtodecideonthedestinationandtimewiththehelpofatravelagency.",
+        "rejected_dialogue_summary": "【出典】旅行者のニーズに合わせた旅行プランの提案"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟が東日本大震災の被害を受けた宮崎県を訪問する。冬に行く予定である。目的はリラクゼーションを得ることである。\n--Answer--Aの質問に対してBが返答した内容から、Bは「自然」や「動物」に関心があると推測できる。例えば、「自然」という単語が含まれる文は以下の通りである。-「自然の中で遊ぶのが好き」(自然を楽しむことが好きであることを示唆している)-\"自然に囲まれた場所に住みたい\"(自然環境を重視していることを表現している)また、\"犬\"や\"猫\"といった言葉が出てくる文もある。これらはペットに関するものであり、動植物への関心がうかがえる。以上のことから,Bは自然や動き物に関連するものを好む傾向があることが推察される。",
+        "chosen_dialogue_summary": "Bisinterestedinnatureandanimals.Forexample,helikestoplayinthenaturalenvironmentandwantstoliveinaplacesurroundedbynature.Healsohasaninterestinpetssuchasdogsandcats.",
+        "rejected_dialogue_summary": "Bisinterestedinnatureandanimals."
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は「宮崎県」で「冬」に行く予定である。-兄弟2名で行く旅行である。-観光スポットとして「青山城」と「スリー・エム・センダイシ・カガクカン」が挙げられている。\n-まず、島﨑藤⽊村という⼈物の展示が⾏われている。-漫画家のいがらし⿇⺒雄の作品も展示されており、様々な年代の芸術作品を楽しむことができる。",
+        "chosen_dialogue_summary": "「島崎藤村の資料館と、いがらしあやこの漫画作品が展示されている博物館の2か所を訪れることができます。」",
+        "rejected_dialogue_summary": "-島崎藤村の生誕地であり、漫画「ベルサイユのばら」の作者である池田理代子の出身地でもある。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性、Aは旅行代理店の担当者である。BとAの会話を通じて、Bが冬の時期に兄弟の2名で宮崎県を訪れることが明らかになった。目的の1つとして、青森城が挙げられた。さらに、リフレッシュできるスポットについて尋ねたところ、科学や文学に関連する施設が候補として挙がった。\n------------------##論文https://www.jstage.jst.go.jp/article/johokanri/55/6/61/_pdf",
+        "chosen_dialogue_summary": "Bisa50-year-oldman,andAisanemployeeofatravelagency.Throughtheirconversation,itbecameclearthatBandhisbrotherwouldvisitMiyazakiPrefectureinthewinter.OneoftheirobjectiveswastovisitAomoriCastle.Inaddition,whenaskedaboutaspotwheretheycouldrelax,facilitiesrelatedtoscienceandliteratureweresuggestedascandidates.",
+        "rejected_dialogue_summary": "##論文の紹介###1.はじめに本研究では，複数の文章を入力として，それらの文章に含まれる共通するキーワードを抽出する手法を提案する．近年，テキストマイニング技術を用いて，膨大な文章データから有用な知見を得る研究が盛んに行われている．その中でも，文章間の類似度を計算する研究は多く行われており，2つの文章がどの程度似ているかを定量的に評価することができるようになった．しかし，これらの研究で用いられる文章の比較は，単純に文章中の単語の出現頻度に基づいて行われることが多い．一方で，同じ文章であっても，書き手の意図や文脈によって，異なる意味を持つことがある．例えば，「雪が降る」という文章は，一般的には「天気が悪い」ことを表すが，スキー場の宣伝文句であれば「良い天気」であることを示す．このような場合に，従来の方法では正確な比較を行うことができない．そこで，本研究の目的は，上記の課題を解決するために，文書間の一致性を考慮した文章比較のための新たな方法を開発することである．具体的には，各文章に対して，その内容に応じた重みを付与することで，より適切な一致度の計算を実現することを目指している．本稿ではまず，先行研究を概観し，問題点を明確にする．次に，我々が開発した方法について述べる．そして，実験結果を示し，本方法の有効性について検証を行った．最後に，今後の展望について議論する。###2.関連研究2-1文章比較に関する研究文章同士の距離を測定する方法には様々なものがある．代表的なものとしてはベクトル空間モデルやtf-idfモデルなどが知られている．これらのモデルは文章から抽出した特徴量をベースに計算されるため，計算コストが低く，"
+    },
+    {
+        "all_short_dialogue_summary": "-2名の兄弟が冬に宮崎県へ旅行に行く。-兄弟のうちの1名は東日本大震災の被災地を訪れたいという希望を持っている。\n島崎の展示もある。アンパンマンは子供向けすぎるかもしれない。歴史博物館や自然展示、絵画などがある。",
+        "chosen_dialogue_summary": "-宮崎に2人の兄弟旅行、1人は東北の災害地に行きたい。-島崎が展示されており、アンパマンが子ども向きかも知れない。###解答例-兄弟2人が冬の宮﨑県に旅行する。1人の兄は、東⽇本⼤地震の影響を受けた地域を⾒てみたいと思っている。島⻑⿓太郎の作品も展示されているが、キャラクターが子供っぽいかもしれない。",
+        "rejected_dialogue_summary": "東北地方太平洋沖地震で被害を受けた宮城県東松島市の復興を目指し、同市出身の漫画家・やなせたかしさんの代表作「それいけ!アンパンマン」のキャラクターが登場するミュージアムが、2016年4月29日にオープンする。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話を通じて、Bが冬に兄弟(2名)で宮崎県を訪れる予定であることが明らかになる。AはBに、旅行先として仙臺市を勧める。その理由としてAが挙げたのは、(1)太陽の光を浴びることが出来ること、及び、(2)自然に囲まれた環境であることの2点であった。最後の質問では、Bはリラクゼーションを求めていることが分かる。\n-島﨑藤村の展示やいがらしの作品も展示されている。-アンパンマンは子供向けすぎるかもしれないが、-歴史や自然に関する資料もある。",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.ThroughhisconversationwithA,itbecomesclearthatBplanstovisitMiyazakiPrefecturewithhisbrothersinwinter.ArecommendsSendaiCitytoBasatraveldestination.ThereasonsAgivesforthisrecommendationarethat(a)onecanbaskinthesunthere,and(b)itissurroundedbynature.Inthelastquestion,wecanseethatwhatBislookingforisrelaxation.-ThereareexhibitsofShimaizakiFujimuraandIgarashi'sworks.-Anpanmanmaybetoochildish,but-therearealsomaterialsonhistoryandnature.",
+        "rejected_dialogue_summary": "1.仙台市は、自然が豊富で、太平洋に面しているため、冬でも日差しが強く、リラックスできる場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で、彼は妻と共に東日本大震災の被災地を訪れ、復興の状況を確認することを目的としている。彼らは青森、岩手、福島の3県を巡る予定であり、その中でも特に関心があるのは、被害の大きかった岩手を訪れることである。妻は津波の爪痕が残る沿岸部を、夫は内陸部の山間地帯をそれぞれ訪れたいという希望を持っている。また、彼らが訪問する際には、現地の人々との交流を通じて、地元の文化や風習を学ぶことも重要な目的となっている。\n-島﨑藤村の展示がある。-漫画家のいがらしみきをの作品も展示されている。-アンパンマンミュジアムもあるが子供向けすぎるかもしれない。-歴史民俗資料館や自然標本館などがあるがどれがお好みか尋ねる。-宮城県美術館には日本や海外などの絵画や工芸が展示されており、開館時間は朝9時30分から午後5時までである。",
+        "chosen_dialogue_summary": "B夫婦は、東北地方太平洋沖地震で被った地域の復旧状況を見に行くため、妻の希望で岩手に赴く。夫の関心は沿海部に集中し、津浪の影響を受けた地域を見たいと考えている。一方で、奥様は山岳地域に興味があり、自然の美しさを堪能したいと願っている。さらに、地域住民との触れ合いを大切にし、その土地の伝統や習慣に触れることも目的の一つである。",
+        "rejected_dialogue_summary": "B夫婦は、東北地方太平洋沖地震の影響を受けた地域の復旧を支援するため、3日間の旅行を計画している。目的地は岩手に設定し、沿海部と山岳部に分かれて観察を行う。B氏は山に興味があり、奥羽山脈の美しさを堪能したいと考えている。一方、B夫人も地質学に強い関心を抱いており、本州最北端の火山である八甲田山や十和田湖の見学を希望している。また、旅行中には地場産業や伝統文化に触れる機会も設けられ、地域住民とのコミュニケーションも大切にされる。最後に、美しい自然景観や文化遺産を鑑賞するために、適切な服装や装備を準備することが推奨される。入力文Bisa50-year-oldmanwhoplanstotravelwithhiswifetotheareasaffectedbytheGreatEastJapanEarthquaketocheckontherecoveryprogress.TheyplantovisitAomori,Iwate,andFukushimaprefectures,withaparticularinterestinvisitingtheheavilydamagedareasoftheTohokuregion.Hiswifewantstoseethecoastalareaswherethetsunamileftitsmark,whilehewouldliketoexplorethemountainousinterior.Additionally,theyaimtolearnaboutthelocalcultureandcustomsbyinteractingwiththelocalsduringtheirvisit.-ThereisanexhibitionofShimaizakiFujimura'sworks.-TherearealsoworksbymangaartistMikioIgarashiondisplay.However,theAnpanmanMuseummaybetoochild-oriented.Askwhattheypreferamongthehistoryandfolkloremuseum,naturalspecimenhall,orMiyagiPrefecturalMuseumofArt,whichfeaturespaintingsandcraftsfromJapanandabroad,openfrom9:30amto5pm.OutputAcoupleintheirfifties,Bandtheirwife,planathree-daytriptosupportthereconstructioneffortsintheregionsaffected"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟が冬に宮崎県に行く予定である。目的はリフレッシュすることである。そのため、リラクゼーションを目的とした場所として、科学系の展示を行っている「スリー・エム・センダイ・シ・カガクカン」や文学をテーマとした「シマザキ・トオムラ・ブンガク」が候補に挙がっている。\nAはま島﨑琢村の展示やいがらしき老の作品が展示されている博物館を紹介した。Bは美術館が好みであると述べた。Aは宮樂県了術舘の情報を提供した。",
+        "chosen_dialogue_summary": "ThebrothersplantogotoMiyazakiprefectureinwintertorelax.Theyareconsideringplacesforrelaxation,suchastheScienceMuseuminSendaiandtheTohMurabungakuLiteratureMuseum.AsuggestedthattheyvisitthemuseuminShima,wheretheworksofIgarashiareexhibited.Bprefersartmuseums,soAprovidedinformationabouttheMiyagiPrefecturalArtMuseum.",
+        "rejected_dialogue_summary": "50歳の兄弟が冬に宮崎県に行く予定である。目的はリフレッシュすることであり、そのため、リラクゼーシェィョンを目的とした場所として、科学系の展示を行っている「スリー・エム・セんダイ・シ・カガクカむ」や文学をテーマとした「シマザキ・トオヒラ・ブヌガツ」が候補に挙がっている。Aはま島見村の展示やいがらしき若の作品が履示されている博物館を紹介した。Bは美術餐が好みであると述べだ。Aは宮艹眞県金芸舘の情報を提供し"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳前後の男性である．彼は兄弟と旅行に行く予定であり，冬に宮崎県に行き，青森城を観に行ったり，科学系の展示物を見たりすることを希望している．##2.要約の手順###(1)テキストの分割####①文の区切りまず，1つの文を構成する区切りの部分を特定する．ここでは形態素解析ツールであるMeCabを用いた．なお，MeCABのオプションの設定はデフォルトのまま行った．また，ここで使用した辞書はIPADIC3.4を利用した．以下に，例題1の最初の文に対して実行した結果を示す．```pythonimportMeCabt=\"A:さっそくですが、なんか趣味なのか？\"tagger=MeCb.Tagger(\"-Ochasen\")nodes=tagger.parse(t).splitlines()fornodeinnodes:print(node)```A名詞,固有名詞,*,:記号,読点,*,*だ助動詞,,*,*,特殊・ダ,連用形,だ,ダ行く動詞・自立,*,*,-*,五段・カ行・基本形```上記の結果から，以下の様に文節に分けることができると考えられる．|文節|品詞||:---:|:----:||A:|連体詞+名詞性+計量詞|だが|労働+過去形+形容詞+|歩く|自立語+5段+カ行+基本形このように，各単語を品詞ごとに色分けすることで，文法的に正しい文に近い形に変換する事ができる．これを「正規化」と呼ぶことにする．この作業を実施することにより，意味の類似性を判定しやすくなることが期待される．しかし，このままでは，読みやすさが損なわれてしまう．そこで",
+        "chosen_dialogue_summary": "Aは、Bと一緒に旅行にいきたいと考えている。彼らは冬の宮城県を訪れ、城や科学博物館を見学したいと思っている。",
+        "rejected_dialogue_summary": "Aは、50代の男性で、兄弟との旅行を楽しみにしている。彼の希望する旅行先は冬の宮城県であり、城や科学博物館を訪れたいと考えている。【解説】本課題では、Bがどのような旅行プランを立てているのかを、できるだけ短い文章でまとめることが求められています。まず、文中の「A」と「B」を区別する必要があります。次に、「A」が「兄弟」と一緒に「旅行」に行きたいという希望を持っていることを明確にします。最後に、旅行の行き先として「冬」に開催されるイベントが挙げられており、その中でも「城」や「科学」に関連するものが好まれていることが分かります。"
+    },
+    {
+        "all_short_dialogue_summary": "-A:旅行の目的は？-B:兄弟で行く旅行で冬に行く。-Q:目的地は？A1:宮城Q2:県？-A2.1:いいえQ3:市？A3.2:わからないQ4:郡？A4.3:聞いたことがないQ5:区？A5.4:Q6:街？A6.5:Q7:タウン？A7.6:Q8:ストリート？A8.7:Q9:通り？A9.8:Q10:ロード？A10.9:Q11:道？A11.10:Q12:ハイウェイ？A12.11:Q13:エクスプレス？A13.12:Q14:フェリーターミナル？A14.13:Q15:船着き場？A15.14:Q16:ウェイポイント？A16.15:Q17:記録点？A17.16:Q18:ポイント？A18.17:Q19:マイルストーン？A19.18:Q20:節目？A20.19:Q21:ランドマーク？A21.20:Q22:指標？A22.21:Q23:シンボル？A23.22:Q24:モニュメント？A24.23:Q25:建造物？A25.24:Q26:ビルディング？A26.25:Q27:コンストラクション？A27.26:Q28:構築？A28.27:Q29:工事？A29.28:Q30:リフォーム？A30.29:Q31:改修？A31.30:Q32:修繕？A32.31:Q33:メ\n-50歳以上の男性が一人で来館している。-旅行の目的は見学である。-好きなジャンルは絵画である。",
+        "chosen_dialogue_summary": "A:Areyoutravelingforbusinessorpleasure?B:It'satripwithmybrother,andI'mgoinginthewinter.Q:Whatisyourdestination?A1:Isitaprefecture?Q2:A2.No,whatisit?Isitinacityoratown?",
+        "rejected_dialogue_summary": "50代男性は、絵を鑑賞するために1人で美術館を訪れた。"
+    },
+    {
+        "all_short_dialogue_summary": "-2人の兄弟が冬に宮崎県を訪れる予定である。-兄弟の年齢は50歳前後であると推測される。\n-まず、展示の内容として、古典文学の展示や漫画の作品などが展示されている。-アンパンマンは子供向けすぎるため、避けたほうが良いと提案している。-歴史や自然に関する施設もあるが、おすすめではない。-お客さんが好みそうなのは美術館である。-宮城県の美术餇は日本と海外の画像や彫刻、工芸などが展示されていり、朝9時30分から夕方5時まで開いている。-仙台城と一緒にご覧になろうとちょっと良いかなと思わせた。",
+        "chosen_dialogue_summary": "「展示内容は漫画作品や古代文学が中心で、子供用のアトラクションが多いため、年配の兄弟にはあまりお勧めできません。ただし、美容院は海外や日本の芸術作品を展示しており、開館時間は9:30から17:00までです。」",
+        "rejected_dialogue_summary": "-50代前後の兄弟は、冬の旅行で、漫画作品や古い文学作品を展示する美味しい博物館に行くことを計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-2人の兄弟が冬に宮崎県へ旅行に行く。-兄弟の年齢は不明だが、20代後半から30代前半の可能性が高い。\nBは美的センスが高く、芸術作品に触れることを好む。Bが関心を持つのは、日本画や海外絵画、工藝品などである。AはBに対して、複数の選択肢を提示し、それぞれの特徴を説明することで、Bに選択の自由を与えている。",
+        "chosen_dialogue_summary": "BisanartenthusiastwhoappreciatesJapanesepaintings,foreignart,andhandicrafts.AprovidesBwithmultipleoptionsandexplainsthecharacteristicsofeach,givingBthefreedomtochoose.",
+        "rejected_dialogue_summary": "-兄弟は冬の旅行で美術館巡りを楽しんだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟が冬に宮崎県へ旅行に行く。-兄弟が旅行先で見たいものは青森城と資料室。",
+        "chosen_dialogue_summary": "宮城県に旅行へ行く50代の兄と弟。見学したいのは、冬の青函トンネルと青木城の歴史資料館。",
+        "rejected_dialogue_summary": "50代の男性2人組が、冬の宮城県を旅行する。目的地は、青い森鉄道の城館と、資料館である。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が兄弟と旅行に行く予定である。-旅行の行き先は東日本である。具体的な地名はまだ決まっておらず、候補地としては仙臺市が挙げられている。-男性の希望する旅行先として、歴代的な建築物や自然に囲まれた場所などが想定される。\n-島崎藤村の展示がある-漫画家のいがらしみきおの作品も展示されている-幅広い展示が行われている-アンパンマンミュージアムもある-歴史民俗資料館、自然標本館、美術館などもある-宮城県美术馆は日本の画像や海外の画状もあり、彫刻や工芸も展示されている-仙台城、青葉城と一緒にご覧ならばちょうど良いかなと思われた-大学生は150円、高校生以下は無料だったり、月曜日がお休みなので注意が必要",
+        "chosen_dialogue_summary": "-ミヤギケンビジュツカンは、ニホンノガゾウやカイガイノガショウを展示しており、チョウコクやコウゲイも見ることができる。また、シマザキトウソンの展示や、マンガカアイガラシミキオノサクヒンも観覧できる。さらに、アンパンマンムージャムやレキシ・ミンゾク・シリョカンハク、シュザイ・ヒバンカンタカ、センダイジョウ、センダイジヨウなど、さまざまな展示物が楽しめる。",
+        "rejected_dialogue_summary": "-東北地方の博物館には、漫画やアニメのキャラクターが登場する展示や、様々な分野の芸術作品が展示されており、家族やカップルで楽しむことができる。また、入場料が安く、学生や子供向けの割引制度も充実している。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先-宮城(東日本)-人数-2名(兄弟)-行く時期-冬(寒さを考慮して)-観光スポット-歴史的建造物-青柳城-資料館-スリーメイセンタシカガクカン\n-作者:マイクロソフト株式会社,MicrosoftTranslatorチーム-出版社/メーカー:日経BP社-発売国:日本-メディア:単行本",
+        "chosen_dialogue_summary": "-趣旨-Bは、冬の寒い時季に、東北地方の青森県を訪れ、兄弟と一緒に青梅城や資料室などを観て回る予定である。-要点-1.Bが冬に行く旅行先は青島である。2.2人で旅行する。3.観光する場所は城と博物館である。",
+        "rejected_dialogue_summary": "冬季に寒冷地である東北地方を訪れる場合、気温が低いため、屋内で過ごす時間が長くなることが予想されます。そのため、室内でも楽しむことができる施設を事前に調べておくことがおすすめです。例えば、青森県にある三内丸山遺跡は、縄文時代の集落跡が発掘された場所であり、冬場でも暖房が完備されているため安心して見学することができます。また、秋田県の角館武家屋敷通りも、雪が積もる季節には雪見灯籠が設置され、昼間とは異なる幻想的な雰囲気が楽しめます。さらに、岩手県盛岡市にある岩山展望台からは、晴れた日には遠くに八幡平や早池峰山などの山々を眺めることができ、美しい景色を堪能できます。以上のように、寒い冬でも屋外でのアクティビティを楽しみたい場合は、暖かい服装や防寒具を準備しておくと良いでしょう。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先宮崎県冬2名兄弟-目的オススメの場所リラクゼーション科学文学\n-Aは宮崎県出身である。-彼女は高校を卒業した後、東京の大学に進学し、その後も東京で就職した。-しかし、彼女は東京での生活に馴染むことができず、故郷に帰ることを決意した。",
+        "chosen_dialogue_summary": "Aは、Bでリラックスしたり、科学や文学に触れたりすることを楽しみにしている。AislookingforwardtorelaxingorexperiencingscienceandliteratureinB.",
+        "rejected_dialogue_summary": "Bは、旅行の目的地として、リラックスできる場所、科学や文学に関連する場所を探している。具体的には、日南海岸や高千穂峡、青島神社などが候補に挙がっている。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が兄弟と一緒に、12月に宮崎県に行く。目的は東日本大震災の被災地を訪れることである。具体的に訪れたい場所は特になく、宿泊施設や交通手段の手配を旅行会社に依頼する。日程は2泊3日である。\n-50歳以上の男女2人組が旅行に来ている。-旅行の目的は展示を見て楽しむことである。",
+        "chosen_dialogue_summary": "「50代の兄弟2人が、東北の復興支援を目的に、日帰りで宮城県に旅行した。」",
+        "rejected_dialogue_summary": "-50代男性と兄弟が、東北地方の復興状況を視察するために宮城県に旅行する。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が東日本大震災の被災地を訪問する。-男性は被害の大きさを目の当たりにして大変なショックを受けるが、その後、復興に向けた取り組みや地元の人々の頑張りに感銘を受け、希望を感じる。\n--Task3--A:こんにちは。今日の天気はいかがですか？B:天気はいいですよ。A:本当に？それは良かった。ところで、私は今週末にレジャーに行く予定なのですが、あなたはどこかおすすめの場所はありませんか。B:私はあまり外に出るのは好きではないのだけど、もし行くなら自然の中で過ごすのが良いと思う。自然に触れると心が癒されるし、何も考えなくて済むから。ただ、どこに行けばいいのかは分からない。もしよかったら、レストランやショッピングモールなども含めて、良い場所を教えてもらえないだろうか。それから、交通手段も気になる。公共交通機関を使うのか、それともレンタカーを借りるのか。私は車の運転が得意ではないので、あまり遠出はしたくないんだけど、どうだろう？A:分かりました。あなたが自然を楽しむのが好きなら、山や森林公園などが良いかもしれない。天気が良い日には、ハイキングやピクニックをするのも良いだろう。もちろん、それ以外にもレクリエーション施設やアクティビティがある場所もたくさんあるから、あらかじめ調べておくことをお勧めするよ。それと、車での移動が不安な場合は、バスや電車を使って移動することもできる。交通費は多少かかるかもしれないけれど、安全で快適な旅ができるはずだよ。B:ああ、それは良いアイデアだ。ありがとう。さて、もう一つ質問があるのだけれど、宿泊先はどうしようか迷っているんだ。ホテルやモーテル、キャンプ場など、色々な選択肢があると思うけど、私にはどれが一番適しているのだろう？あなたの意見を聞かせてくれないかな？また、食事に関しては何を食べるか決まっているのかな？私は肉や魚が好物なんだけど、それが食べられる場所があるかどうか心配なんだ。できれば、地元の食材を使った料理を味わいたいのだけど、どうかな？",
+        "chosen_dialogue_summary": "-私は自然が好きで、特に森や山を散策するのが大好きです。最近は忙しくてなかなか外出する機会がなかったのですが、久しぶりに休みが取れたので、友人と一緒に近くの自然公園に行ってきました。そこはとても広々としていて、たくさんの木々や草花が生い茂っています。私たちは森の中を歩きながら、鳥のさえずりや小川のせせらぎに耳を傾けました。また、木陰でお弁当を広げて食べたり、ベンチに座っておしゃべりをしたりして、のんびりとした時間を楽しみました。-その後、私たちは少し足を伸ばして海岸沿いまで行き、波打ち際で遊んだり、砂浜で貝殻を拾ったりしました。海風が心地よく、日頃の疲れも吹き飛ぶような気分でした。夕方になると、夕日が海に沈んでいく様子を眺めることができて、とても美しかったです。-帰り道、道端に咲いている花を見つけて、思わず立ち止まってしまいました。その花は小さくて可憐な花びらが特徴的で、その美しさに心を奪われました。このような自然の美しい景色を見ることができるのは、本当に幸せなことだと感じました。【解答例】私は最近、自然豊かな場所でリフレッシュするために、近所の公園に散歩に出かけた。広大な芝生広場や、季節の花々が咲き誇る花壇などがあり、心身ともにリラックスできる場所だった。公園内では、家族連れやカップルが思い思いに楽しんでおり、微笑ましい光景が広がっていた。",
+        "rejected_dialogue_summary": "-Bは自然が好きで、自然と触れ合うことができる場所に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で、彼は兄弟と旅行に行く予定である。彼らは東日本大震災の被災地を訪れることを希望している。Bと彼の兄弟は今回の旅行で被害を受けた地域の復興を支援することを目的としている。具体的な訪問先はまだ決まっていないが、彼らが訪れたい場所の候補として、石巻市と気仙沼市が挙げられている。\n-50歳以上の男女2人組が旅行に来ている。-旅行の目的は「島﨑藤村」や「いがらしみきお」の展示を見たり、「アンパンマンミュージアム」で遊んだりすることである。-「宮城県美術館」では日本や海外、工芸など様々な作品が展示されており、9時30分から17時まで営業している。青葉城と一緒に行くと良い。入場料は大人150円、高校生以下は無料。月曜日は休みである。",
+        "chosen_dialogue_summary": "-東北地方太平洋沖地震の影響で、Bが住んでいる地域は甚大な被害を受けました。そのため、彼とその家族は、旅行を通じて被災地の支援をしたいと考えています。-##構成要素###要約対象-「B」(人物)-「男性」、年齢「50」歳、性格「旅行好きな人」-その人物が行う「行為」、「旅行」する-行く場所「東日本」+震災後の「復旧した地域」-石巻+被害の大きかった地域-気仙沼###場所の特徴##生成ルール1.概要-旅行の概要を述べる2.訪問目的3.行き先4.詳細5.まとめ",
+        "rejected_dialogue_summary": "東北地方太平洋沖地震の影響を調査するため、B（50代男性）とその兄弟が東海地方を旅行する。目的地は、津波で壊滅的な打撃を受け、復旧作業が進められている石川県と福島県の沿岸部である。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-50歳以上の兄弟二人での旅行-目的地：宮崎県-趣味-歴史的建造物を訪れること-場所-宮崎城-作成者-伊達正宗-時代-江戸時代-見どころ-城から海が見える-景色-美しい-人気-高い-屋内-風邪をひかない-おすすめ-資料館-科学館、文学-体験-いろいろ-総合的\n-作者:小川洋子,いしいしんじ,川上弘美,島田雅彦,柴崎友香,高橋源一郎,長嶋有,松浦寿輝,村上龍,山田詠美出版社/メーカー:講談社メディア:文庫",
+        "chosen_dialogue_summary": "-内容-著名な小説家の作品を集めた短編集-特徴-多様なジャンルとスタイル-読者層-幅広い年齢層にアピール-評価-批評家からも高い支持-影響-現代文学に新たな潮流を生み出す-代表作-『博士の愛した数式』-受賞歴-芥川賞、直木賞など多数-翻訳-英語、フランス語など世界各国で出版-映像化-映画、ドラマ、舞台など様々な形で表現-社会的意義-日本文学の国際的な認知度を高める-今後の展望-さらなる活躍が期待される",
+        "rejected_dialogue_summary": "宮城県の宮島城は、伊勢神宮の近くに位置し、海を眺めることができる城として知られています。城内は風通しが良く、体調を崩す心配が少ないことから、人気があります。また、城内の博物館や美術館では、科学や文学に関する展示が行われており、幅広い知識を得ることができます。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。旅行先を決めかねているため、旅行代理店の担当者Aに助言を求めた。Aはまず、Bが旅行に行く目的を尋ねた。Bによると、休暇を利用して家族や友人と旅行に出かけたいとのことであった。次に、AがBに対して具体的な旅行プランを提起した。例として、家族で温泉に入ることを挙げたが、これはBにとって魅力的ではなかったようだ。そこでAはいくつかの選択肢を提示した。そのうちの一つは、「自然の中で癒される」ことであり、具体的に「森林浴」や「山登り」が含まれる。もう一つはいわゆる「マイナスイオン」効果を期待するもので、「滝」を訪れることを勧めた。これに対しBも「いいね！」と応じたため、これら2つの選択が候補に挙がった。最後にAから、「それぞれの場所の特徴や見どころを教えてほしい」というリクエストがあった。これを受けて、次のセッションでは、実際に訪れたい場所についての詳細な情報が提供される予定である。\n-50歳以上の男女2名が旅行に行く予定であること。-旅行先は宮崎県であり、旅行期間は10月4日から6日までの3日間である。-宮崎空港からレンタカーを借りて移動する。宿泊先のホテルはシーガイアリゾートである。",
+        "chosen_dialogue_summary": "AとB、2人の会話から分かるのは、50代男性のBさんが旅行を計画しているということです。彼は旅行の目的や行き先について悩んでおり、担当者のAさんに相談しています。具体的には、彼は家族と一緒に旅行をしたいと考えていますが、どのような場所に行けば良いのか分からない様子です。AさんはBさんの希望を聞いた上で、様々な提案を行っています。その中には、自然を満喫できる場所や、温かみのある場所などがあります。特に、「森や山で自然と触れ合うこと」、「温かい場所でリラックスすること」を重視しているようです。また、彼らは「自然が豊かな場所」に行きたいという共通の希望を持っていることが分かります。この点については、お互いに意見を交換しながら、最適な場所を選ぶことができそうです。",
+        "rejected_dialogue_summary": "50代男性が、10/4-6の日程で家族と一緒に宮﨑県を旅行する計画を立てている。目的は、自然に囲まれた環境でリラックスすることである。そのために、森の中を散歩したり、山に登ったりすることを考えている。また、滞在中はホテルのプールやスパで過ごすことも検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。Bが旅行先として選んだのは、家族で行く東日本の冬の旅行であり、具体的な行き先は未定であった。選択肢としては「仙石線」や「石巻」などが挙げられていたものの、最終的には「秋保温泉」が選ばれた。目的はリフレッシュすることであり、そのためには屋内の施設が適していると考えられた。最終的に、選択されたのは「スプリングバレー泉高原スキー場」であった。\n-50歳以上の男性である。-子供を連れていて、子供の年齢は不明だが、高校以下である可能性が高い。",
+        "chosen_dialogue_summary": "-東北地方のスキーリゾートに行く予定である。",
+        "rejected_dialogue_summary": "東北地方のスキーリゾートに家族旅行する50代男性。"
+    },
+    {
+        "all_short_dialogue_summary": "-2人は兄弟である。-旅行の行き先は東日本、具体的な行く場所はまだ決まっていない。-兄弟の2人が旅行に行くことを考えていて、旅行先を決めようとしている。-東日本のどこかに行こうと考えており、候補として宮崎県が挙がっている。-宮崎のなかでも、旅の目的は「観る」ことである。-観光する場所として、地元の名所である「青森城」が候拠として挙げられている。\n【解答例】Bは50歳以上の男性である。彼は家族と旅行に行く予定であり、博物館を訪れたいという希望を持っている。具体的な場所として、宮崎県立美展館が候補に挙がっている。また、彼は牛肉を食べることを希望しており、その費用は4,000円以内である。",
+        "chosen_dialogue_summary": "Bisamanover50yearsold.Heplanstogoonatripwithhisfamilyandwantstovisitamuseum.ThespecificplaceistheMiyazakiPrefecturalArtMuseum.Inaddition,hehopestoeatbeef,andthecostislessthan4000yen.",
+        "rejected_dialogue_summary": "-2人の兄弟が旅行を計画しており、目的地として東北地方を検討している。-兄弟たちはまだ行先については決定していないが、東京都内のホテルに宿泊することを決めた。-旅行の予算としては、1人あたり1万円程度を想定している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話では、Bが冬に兄弟と宮崎県を訪れる予定であることが明らかになっている。AはBに対して、「どのように過ごしたいか」や「どこに行くか」などを尋ねているが、これらの質問に直接的な答えは返ってこない。代わりに、AがBに「冬の時期に、2人の兄弟が一緒に楽しめる場所はどこか」という問いを投げかけていることが分かる。この問いに答える形で、「自然を眺めながら散策する」、「アクティビティに参加する」の2つの選択肢が提示されている。これらの情報から、以下のことが推測される。1.Bは自然やアートに触れることが好きである。2.兄弟との旅行に何か特別な思い入れがある。3.2人が一緒に行動することに価値を見出している。4.気候や天候に左右されず、屋内の施設で楽しむことを好む。5.過去の旅行やイベントの思い出を大切にしている。\nAさんと私は、旅行について話し合っている。Aさんは、宮崎県に住んでいる。私は島根県在住である。Bさんは、「おすすめの場所は？」と聞いてきたので、私は「高千穂峡」と答えた。すると、Bさんも「行ったことがある」と言った。そこで、私が「次はどこに行くか」と聞いたところ、「西都原古墳群」という答えが返ってきた。",
+        "chosen_dialogue_summary": "B氏は、冬季に家族と共に訪問する計画を立てており、自然の景観を鑑賞しながら散歩したり、活動を楽しんだりすることを希望している。また、気象条件に影響を受けずに屋内で楽しみたいと考えている。",
+        "rejected_dialogue_summary": "B氏は、冬季に家族と共に訪問することを計画しており、特に自然の景観を楽しみたいと考えている。具体的な目的地としては、「青島神社」が挙げられており、家族全員で参拝したいという意向が示されている。また、歴史的な観点からも興味を持っており、「飫肥城下町」にも足を運びたいとのことである。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳前後の男性である。Bとその兄弟は旅行に行く予定であり，冬に宮崎県を訪れることを希望している。目的はリラクゼーションを得ることである。-旅行先:宮崎(県)-人数:兄弟2名\n今回の旅行は兄妹で行く予定である。目的の場所は宮崎県であり、弟は高校2年生、兄は大学1年であるため、入場料はそれぞれ異なる。弟の料金は無料で、大人の入館料の半額となる。高校卒業以降は大人と同額になる。月曜は休館日であることに注意する必要がある。食事については牛丼を食べることを希望している。夕食は4,000円以内で済ませたい。",
+        "chosen_dialogue_summary": "「冬季に弟と一緒にリラックスする目的で、高校生と大学生の兄弟が、月曜日を除く日程で宮﨑県の施設を観覧し、食費を4000円以下に抑える。」",
+        "rejected_dialogue_summary": "目的地は「宮﨑県」で、2人で旅行する。リラックスを目的に、高校生と大学生の兄弟が冬に行き、月曜日は閉館しているので注意が必要だ。旅費を抑えるために、食費は4000円以下に抑え、学生割引を利用して節約する。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2名で構成されるグループが対象。-旅行先は東日本で冬に訪問する予定である。-具体的な目的は明らかではないが、おそらく文化的・教育的な活動が含まれると推測される。",
+        "chosen_dialogue_summary": "-東北地方への旅行を計画している50代のカップルは、冬の時期に文化的なアクティビティを楽しみたいと考えている。",
+        "rejected_dialogue_summary": "-東日本の冬の旅行を計画している50代の2人組は、文化的な体験や学びの機会を求めている可能性が高い。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性2人が、12月に宮崎県へ旅行に行く予定である。目的はリラクゼーションであり、寒さを避けるために屋内の施設を探している。2つの候補が挙げられており、1つ目は「スリー・エム・センダイ・シ・カガクカン」で自然、理科学、生活に関連する展示が行われている。もう一つは、「シマザキ・フジムラ」という人物に焦点を当てた展示を行っている。",
+        "chosen_dialogue_summary": "A:Iaminterestedinscienceandnature,soIwouldliketogotothesciencemuseuminMiyazaki.B:That'sagoodidea!IalsowanttoseetheexhibitionaboutFujimuraShima.",
+        "rejected_dialogue_summary": "50代の2人の男性は、リラックスを目的として、屋内で暖かく過ごせる場所を求め、宮城県仙台市の科学館と、ある人物の作品を展示している美術館のどちらかを選ぼうとしている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東日本地方である。-50歳以上の兄弟二人が旅行に行く。-東日本の冬の時期に、2人の兄弟が旅行に来る。\n-歴史や文化に触れられる場所を探している-アン・ノイェ-案内する-名称-読み方-場所-内容-時間-連絡先-注意事項-料金-営業日-展示物-見どころ-備考-駐車場-おすすめポイント-利用時間-入場料-所在地-電話番号-周辺施設-特徴-収容人数",
+        "chosen_dialogue_summary": "-東日本に住む50代の男性2人が冬に旅行する。-歴史と文化を体験できる場所を見つける。",
+        "rejected_dialogue_summary": "-Bは、東北地方を旅行する50代の男性2人組である。-兄弟2人は、冬季に旅行を計画し、文化的な場所を見学したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性。BとAの会話から以下のことが分かる。1.Bは旅行に行く予定がある。2.その旅行先は東日本である。3.旅行の日程は決まっていない。4.同行者は兄弟の2名。5.目的はリラクゼーションを得ること。\nAはBと旅行について話し合っている。Bは50歳の男性であり、妻と共に宮崎県へ旅行に行く予定である。旅行日程は9月2日から4日までの2泊3日である。またBには子供が2人おり、子供の年齢は高校2年生と高校1年である。Bが旅行で行く場所について尋ねると、Aが「西都原古墳群」、「高千穂峡」などの場所を提案する。最終的には「日南海岸」と「青島神社」に決定した。また、旅行中に食べる食事についても話題に上がる。Aによると、「伊勢海老」や「地鶏」などが有名な食材であるとのことである。",
+        "chosen_dialogue_summary": "B氏は、東北地方への旅行を計画しており、同僚のA氏と話をしている。目的地は宮城県仙台市で、行き方は飛行機で向かう。日時は未定だが、休暇を取って出かけるつもりだ。同伴するのは、家族や友人ではなく、仕事仲間のC氏である。この旅行では、歴史的な建造物や自然の景色を楽しむことができる。例えば、伊達政宗公の霊廟である瑞鳳殿や、松島湾の美しい風景が見られる。",
+        "rejected_dialogue_summary": "50代男性が家族と東北旅行を計画中。リラックスを目的とし、同僚とともに目的地を検討中。※出典：https://www.jstage.jst.go.jp/article/jjsai/36/4/2018JJSAI1002/_article/-char/ja/"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは50歳以上の男性と推定される。-旅行の行き先は東日本の冬の時期である。具体的な地域は明らかではないが、おそらく東海地方や関東地方である可能性が高い。-兄弟と旅行に行く予定であり、2名で行くことが予想される。-2人の目的はリラクゼーションを得ることである。\n--Answer--１、Bは自然を愛するアクティブな人である２、家族と旅行に行くことが多い３、子供がいる４、食べることが好き５、食に対してこだわりがある",
+        "chosen_dialogue_summary": "#要約1Bは自然が好きでアウトドア派な性格で、リラックスできる環境を求めている。家族との旅行が多く、子どももいる。食事にはこだわっており、特に和食を好む。#要約2Aは家族や友人と自然の中で過ごすことを好み、温泉やスキーなどのアクティビティを楽しむことができる場所を探している。また、旅行中は食事を楽しみたいと考えている。##要細3旅行先としては、自然豊かな場所が好まれる。特に、雪景色や紅葉などの四季折々の風景が楽しめる場所や、海や山などの自然に囲まれた環境が理想的である。また、アクティブに体を動かしたいと考えているため、スキーやスノーボードなどのウィンタースポーツができる場所が望ましい。さらに、グルメも大切な要素であり、地元の名産品や郷土料理を堪能できるレストランや飲食店が充実している場所も魅力的である。#結論以上から、Aの要望に合致する旅行地として、北海道や東北地方、長野県や新潟県などの雪国が挙げられる。これらの地域には、美しい自然景観や充実したウィンタースポーツの施設があり、また、名物料理も豊富に存在する。",
+        "rejected_dialogue_summary": "自然が好きでアウトドア派の50代男性が、兄弟2人で東北地方の雪景色を楽しみながら温泉に入り、美味しい食事を堪能する旅行に出かける。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟二人での旅行である。-旅行先は東日本の冬の時期である。-観光スポットとして、オススメされたのは、青森城と科学技術館であった。\nAはBに宮崎県にある「青島神社」という場所を勧めている。この場所は縁結びのパワースポットとして有名な場所である。Bはこの場所に関して「知りませんでした」と返答している。Aによると、この場所には「鬼の洗濯板」と呼ばれる巨大な岩が存在しており、この岩の上に立つと幸せになれると言われているようだ。さらに、Bにはこの岩を実際に見てみたいかどうかを尋ねている。",
+        "chosen_dialogue_summary": "-青森県の科学館と城を訪れる予定の50代の男性2人組がいる。",
+        "rejected_dialogue_summary": "-「B」は「A」から「宮﨑県」の「パワー・スポート」として知られている場所に誘われている。-その場所の特徴は、「鬼」が住んでいると言われる「岩」があることである。"
+    },
+    {
+        "all_short_dialogue_summary": "-AはBに挨拶をし，BはAに感謝の言葉を述べる。-その後，Aは目的を尋ねるが，まだ決まっていないと答えるBに対して，「素晴らしい旅行」になるだろうと返答する。Bもそれに応じる。-次にAが行き先を聞くと，東日本であることを明らかにするB。Aが具体的な地域を問うと，仙臺を希望するという返事が返ってくる。そこでAはいくつかの候補地を挙げ，どれが良いかを確認する。そのうちの1つ，青山城をBが選び，それを旅行プランに組み込むことに同意する。\nAは宮崎県出身の20代男性である。Bは東京都在住の30代女性である。対象はBであると仮定する。------------------------------------Aの主な発言は以下のとおりである。「さて、Bさんは何県の方ですか？」「Bさんの年齢を教えてください。」「現在お住まいの都道府県はどこですか？」------------------------------------Bが答えた情報を以下にまとめる。1.Bの生年月日2.出身地3.現住所4.好きな食べ物5.趣味6.アレルギーの有無7.旅行の目的8.交通手段9.目的地10.日程11.観光の予定12.スケジュール13.宿泊先14.同行者15.家族構成16.職業17.健康状態18.気候19.天気20.季節21.時間帯22.地域23.街24.人口25.言語26.文化27.歴史28.風習29.行事30.祭り31.イベント32.芸術33.音楽34.映画35.演劇36.舞台37.展覧会38.博物館39.動物園40.水族館\n--Summary2--Bさんは、東北地方への旅行をお考えで、その中でも仙台市を訪れる予定である。目的は牛タンの美味しさを堪能することであり、具体的な店舗名や料理の指定はないものの、リーズナブルな価格帯の店を探している。",
+        "chosen_dialogue_summary": "BisplanningatriptotheTohokuregion,specificallytoSendaiCity.Thepurposeofthetripistoenjoythedelicioustasteofbeeftongue,withoutspecifyingaspecificrestaurantordish,butlookingforareasonablypricedrestaurant.",
+        "rejected_dialogue_summary": "AさんはBさんに、自分がどこの県に住んでいるか、どのくらいの歳なのか、現在住んでいるところがどこかを質問しました。BさんはAさんに対し、自分の誕生日、生まれ育った場所、そして現在の居住地について答えました。Aさんはさらに、好みの食べもの、趣向、花粉症の有り無し、旅の理由、交通機関、訪問先、日付、観覧の計画、時間割、ホテル、同伴者、家族の構成人数、仕事、体調、天候、時刻、地域、街、人口、言葉、文化、過去、習慣、イヴェント、芸能、音楽、映画、演技、舞踊、展示会、美術館、動植物園、海洋生物館などについても聞きました。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が兄弟と旅行に行く予定である。旅行先は東日本で冬の時期に訪れることを希望している。目的の場所は決まっておらず、リラクゼーションを求めているようだ。候補として挙げられたのは、科学系の展示物が見られる「スリー・エム・センダイ・シ・カガクカン」と、文学に焦点を当てた「シマザキ・フジムラ」という2つの施設である。\n【参考文献】https://qiita.com/kyohei_watanabe/items/8d3e1f0c7f3b1c5f5a4c\n-牛タンを食べることができるお店を探している。-お店の場所や料理の条件は指定していない。",
+        "chosen_dialogue_summary": "Bは、東北地方の科学館と文学館を訪れたいと考えている。彼はリラックスした時間を過ごしたいと思っており、牛タンの食べられるレストランの情報も必要としている。",
+        "rejected_dialogue_summary": "男性は、東北地方の冬季に兄弟との旅行を計画しているが、目的地は未定でリラックスしたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的\t-東日本大震災の被災地の復興を手助けすること。-行き先-宮城の東松島市-ここは津波で甚大な被害を受けた地域である。しかし、復旧が進んでおり、多くの人々が暮らしている。この地域を訪れ、現地の人々と触れ合うことによって、被災地への理解を深めることができると考える。\t\tまた、この地域は海や山などの自然に恵まれた地域であり、様々なアクティビティを楽しむこともできる。観光を通じて地域の魅力を再発見することも目的の一つである。-訪れる時期-夏休み期間中-海水浴やマリンスポーツなど、夏にしか楽しめない活動ができるからである。また、この期間に訪れることによって、地域に活気が生まれることも期待できる。また、梅雨明け直後であるため、天候が安定している可能性が高い。\n-宮城には島村藤原の展示やいがらし美紀夫の作品もある。-アンパンマン博物館は子供向けすぎるかもしれないが、そのほかには自然や工藝の資料がある。-特に、絵画や海外や国内の芸術品が展示されている。-開館時間は9:30-17:00である。-仙臺城跡と組み合わせると良い。-入場料は大人1,500円、学生以下は無料。-月曜日が休館日であることに注意が必要。-祝日であれば、次の日に休む。-歩き疲れたら、食事をとることも考える。-和食や洋風の料理、地元料理や麵類などが食べられる。-三陸海岸の食材や牛肉を食べることができる。",
+        "chosen_dialogue_summary": "Bは、東北地方を旅行したいと考えている。具体的な目的地として、仙台市を挙げている。この地域には、伊達政宗の居城であった仙石城や、美術館などがある。また、温泉もあり、リラックスできる環境が整っている。さらに、海産物が豊富で、新鮮な魚介類を味わうことも可能である。Bが旅行を計画する際に考慮すべきことは、交通手段や宿泊施設の確保、予算の管理などである。-BisinterestedintravelingtotheTohokuregion.-Specifically,hewantstovisitSendaiCity.Thisareahasmanyattractions,suchastheruinsofthecastleofDateMasamuneandamuseum.Inaddition,therearehotsprings,whereyoucanrelax.Moreover,theseafoodisabundant,andfreshseafoodcanbeenjoyed.Whenplanningatrip,Bshouldconsidertransportation,accommodation,budgetmanagement,etc.",
+        "rejected_dialogue_summary": "Bさんは、東北地方を旅行したいと考えています。目的は、震災の影響を知ることです。訪れたいのは、宮城県の東松島市です。この街は大きな被害を受けましたが、復興が進んでいます。現地の人々とふれあうことで、震災の影響をより深く理解できると考えています。また、この地域は海や山など自然にめぐまれた美しい場所が多く、観光を通じでその魅力を再発見することも目的の一つでしょゆほか、夏休み期間中に訪ねばならないと思っていまとめると、Bは東北地方を旅行したいと考えている。目的は、東日本大震津波の被災地に対しての理解を深めるためだ。行き先は宮城県の東松嶋市で、甚大な被害を受けた地域であるが、復旧が進む中で人々が生活している。現地人とのふれあいを通して、被災数の影響を知ることができるだろう。また、海や山などの自然に恵まれた美しい地域でもあるため、観光を通して地元の美しさを再発見できたらと期待している。"
+    },
+    {
+        "all_short_dialogue_summary": "Aさん:本日のご予約、誠に有り難うございます。Bさん、本日はいかがお過ごしでいらっしゃいますか?Bさんは今回の旅行で何を求めておられるのでしょう?何かご希望があれは是非お聞かせ下さいませ。AさんはBさんの希望を叶えるために精一杯お手伝いさせていただきたく存じますので、何なりと仰って下さいますようお勧め致しませんので、お気軽にお申しつけ下されば幸いで御座います。B君:はい、私は今度の休暇を利用して旅行に行こうと考えており、どこに行くか悩んでいたところで御社のサービスを拝見した次第であります。今回は友人と2名で行く予定であり、できるだけ安く済ませたいと思っているため、移動手段も公共交通機関を使用するつもりです。それから、宿泊施設はなるべくリーズナブルなところを選びたいのです。A氏:了解致しました。そうでしたら、B様は安さを重視しておられるとのことですね?では、交通費を抑えるためには、バスや電車などの公共の乗り物を使うのが良いかと思われます。また、お泊りになられる場所は、お安いところが良いとのことでしたね?それならば、民宿やビジネスホテルなどがおすすめですよ。旅館やリゾートホテルに比べると、料金がかなりお安くなっていますから。以上の点を踏まえて、私の方からいくつか候補を挙げさせて頂きたいのですが、それで宜しいでしょか?B子:お任せします。どうぞ宜しく御願い致しマス。以上、参考になれば幸いである。\n【出典】https://gist.github.com/kazuki-takahashi/e7b98b9a3e9c1d2d7a83",
+        "chosen_dialogue_summary": "Bは、友達と一緒に旅行を計画していて、予算を節約したいと考えている。彼らはバス、列車、飛行機などを使って移動することを検討している。また、ホテルの選択肢として、安価なものを探している。【回答例】私は友人のAと旅行に出かけます。私たちはできる限り費用を削減するために、バスのチケットを購入し、格安のホテルを予約しました。また、私たちはビーチでリラックスしたり、美しい景色を眺めたりすることができる場所を訪れました。",
+        "rejected_dialogue_summary": "1.AさんとBさんが旅行の計画を立てている。2.Bさんは友達と一緒に旅行する予算を節約したい。3.移動はバスか鉄道を使いたいと言っている。4.宿泊先は民泊やホテルを検討している。"
+    },
+    {
+        "all_short_dialogue_summary": "A：おはようございます。本日もご来店誠に有難うございます。ご注文は何になさいますか?B：コーヒーとトーストをください。モーニングセットを頂きたいのですが。--Answer--1.AはBにコヒーを提供する2.BはAに支払いを行う--Question--Q1:AがBに対して行う行為はどれかQ2:Q1の答えから、BがAに行う行動は?--Explanation--Aはお店の店員でBは客である。よって1と2が正解である。",
+        "chosen_dialogue_summary": "「AとBがお互いの役割を果たす」```pythonfromflaskimportFlask,render_template,request,jsonifyapp=Flask(__name__)@app.route('/',methods=['GET','POST'])defindex():ifrequest.method==\"POST\":input_text=request.form[\"input_text\"]print(input_text)returnjsonify({\"result\":\"OK\"})else:#要約したいテキストを入力するフォームを表示context={\"text\":\"\"}returnrender_text()defgenerate_summary(text):#ここに要素抽出のロジックを記述passdefrender_summary(abstract,text,summary):text=text.replace(\"\\n\",\"<br>\")abstract=abstract.replace(\"<br>\",\"\\n\")summary=summary.replace(\"。\",\"。\\n\")returnf\"\"\"<html><head><metacharset=\"UTF-8\">{summary}</head>{text}</html>\"\"\"if__name__==\"__main__\":app.run(debug=True)```",
+        "rejected_dialogue_summary": "AはBにコヒーを提供する。BはAに支払いを行う。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が兄弟と一緒に、2021年12月に東日本大震災の被災地である宮崎県に行く予定である。目的は旅を楽しむことであり、リラクゼーションを求めている。\n【質疑応答】Q1.どのようにして対象の文章を選定したのか回答:私たちはまず、様々なWebサイトやブログ、ニュース記事などのテキストデータを収集しました。次に、それらのデータの中から、言語モデルを訓練するのに適したものを選択しました。これには、文章の長さや内容の多様性など、いくつかの基準を設けました。Q2.言語モデルのトレーニングに使用したデータの種類と量について教えてください。回答：私たちは、さまざまなジャンルの文章からなる大規模なコーパスを使用しました。その中には、小説、新聞記事、学術論文、ウェブページなどが含まれていました。また、その量は数百万から数十億の単語に及ぶものでした。",
+        "chosen_dialogue_summary": "A50-year-oldmanandhisbrotherplantotraveltoMiyazakiPrefecture,whichwasaffectedbytheGreatEastJapanEarthquake,inDecember2020.Thepurposeofthetripistoenjoytravelandseekrelaxation.",
+        "rejected_dialogue_summary": "50代男性の兄弟2人で、東北地方の宮城県を訪れ、旅の楽しさとリラックスを満喫する計画を立てている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で一人旅を検討している。目的の場所は決まっておらず、迷っている状態である。Bが希望する条件は「のんびり過ごせる場所」であり、具体的な希望地として「リラクゼーション施設」が挙げられた。候補地の1つ目は伊豆半島で温泉を楽しめる場所であるが、あまり情報が得られなかったため、2番目の「青森県」に絞り込むことになった。具体的に訪れたい場所として、弘前城と青函トンネル記念館が選ばれた。\n【A】-まずは島津斉彬という幕末の薩摩藩主について紹介する。-島津氏は代々の名君を輩出したことで知られており、江戸時代の終わりに活躍した人物の一人である。彼は西洋の先進技術を積極的に取り入れ、軍事力を強化することで幕府に対抗しようとした。また、彼は芸術や学問にも造詣が深く、多くの文化人を庇護した。さらに、鹿児島城を拡張し、大規模な改修工事を行った。こうした彼の功績は現在でも多く語り継がれている。-次に、明治維新の立役者である大久保利通について解説する。彼は薩長同盟の締結や新政府の樹立に尽力し、日本の近代化に貢献した。しかし、西南戦争の後に暗殺され、悲劇的な最期を遂げた。-最後に、大隈重信について述べる。明治時代初期の政治家であり、早稲田大学の創設者としても知られている。外務大臣や首相を務め、自由民権運動を推進した。-以上のように、島根県は多彩な人物を生み出しており、彼らはそれぞれの時代に大きな影響を与えた。現在でも彼らの業績を称えるために、さまざまな施設やイベントが開催されている。",
+        "chosen_dialogue_summary": "Bさんは、50代の独身女性です。彼女は旅行を計画していますが、行き先はまだ決められていません。希望としては、リラックスできる場所を探しています。特定の目的地はありませんが、「のどかな場所でゆっくりしたい」という希望を持っています。",
+        "rejected_dialogue_summary": "B（50代女性）は、リラックスできる場所を探していて、青い森鉄道に乗りたいと考えている。希望の目的地は、特に決めていないが、のどかな雰囲気を楽しみたいと思っている。そこで、Bさんは、まず弘前の城下町を訪れることにした。その後、津軽三味線の生演奏を聴いたり、りんご園でリンゴ狩りをしたりする予定だ。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-50歳の兄弟が旅行に行く-宮城へ-東日本大震災の記憶を風化させないため-被災地を訪れる-震災遺構を見学する-気仙沼市立階上中学校-中学校の校舎が津波の被害を受けた状態で残っている-実際に被災した場所を見て、当時の状況を知る-遺族の方々の話を聞くことで当時を思い出す-当時のことを忘れず、次の災害に備える-防災について考えるきっかけになる-災害の怖さを実感することで防災への関心を高める\n-島崎藤村の展示や漫画の作品を楽しむことができる。-アンパンマンミュージアムでは子供向けの内容が多いため、大人だけの旅行では物足りないかもしれない。しかし、博物館や自然を学べる施設もあるため、子供も大人も楽しめると思われる。-宮城県美術館は日本や海外の絵画や工芸品などを見ることができる。-仙台城や青葉城を歩き回ることでお腹が空いてくるかもしれない。そこで、お昼ご飯や夕食を決めておくことをお勧めする。-宮城県には三陸地方の魚介や牛タンを食べられるところが多い。特に牛たんは定食やシチュー、芯の部分などいろいろな料理があり、味も美味しい。",
+        "chosen_dialogue_summary": "-宮城旅行は、50代の男性2人が、東北地方太平洋沖地震の影響を忘れないために訪れた。-震災から10年が経過したが、気象庁は今後30年以内にマグニチュード7以上の地殻変動が発生する可能性が高いと予測している。東松島市の旧野蒜小学校では、石碑が建てられ、遺体安置所となった体育館の跡地も見学できる。また、震度6強の揺れを体験できるVR装置も設置されている。震源地に近い陸前高田市では、高田松原の松の木を植え直すプロジェクトが行われている。さらに、JR大船渡線のBRT（バス高速輸送システム）で、復興の様子を眺めながら移動することも可能である。",
+        "rejected_dialogue_summary": "-50代の男性2人が旅行へ行く。目的地は東北地方で、東日本大地震の教訓を後世に伝えるために、被災地の現状を確認することを目的としている。訪問先は、宮城県の気仙沼市立階上中学校で、津波の被害を受けた状態で残っている校舎を見学し、遺族の方々の話を聞くことで当時を思い出す。この旅行を通じ、将来に向かつていく上での教訓を学ぶとともに、自然災疫に対する意識を高める。-宮城県の観光名所では、島崎藤村の展示や漫画の作品を楽しむことができる。また、アンパンマックミュージアムや美術館、仙台城や青葉城などの歴史的な建築物があり、子供も大人も遊べばしい。食事に関しては、三陸地方の魚介や牛タンが美味しく、定食やシチューなどの料理が豊富にそろう。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに、Bが東日本大震災の被災地を訪れたいという意向を伝える。BはAに対して、その地域の復興の様子を知りたがっていることを示唆する。Aがその地域についての情報を提供しようとすると、Bはその情報の信頼性について懸念を表明する。その後、Aは具体的な情報提供を試みるが、それはBの期待に応えるものではなかったようだ。\n-作者:松田雄馬,川村隆浩,中野有紀子,小林健太朗,佐々木雄大,菊池宏之,鈴木潤,山本和英,渡辺一帆,吉田健一,藤田和生,杉本麻樹,木村泰知,松尾豊,矢田祐紀,加藤恒昭,萩原正人,高村大也,三宅陽一郎,大澤博隆,石川聡彦,伊藤孝行,竹内郁雄,斎藤康毅,内海慶,村上大輔,江間有沙,新保仁,金森由博,岡田謙介,清水亮,坂本一憲,浅田稔,西田豊明,鷲崎弘宜,笹原和俊,河合由起子出版社/メーカー:オーム社発売日:2018/03/16メディア:単行本（ソフトカバー）この商品を見た後に買っているのは？",
+        "chosen_dialogue_summary": "Bはいくつかの理由から、東北地方の訪問に興味を示している。まず、被害を受けた地域を直接見ることで、災害の大きさを理解したいと考えている。さらに、地域の人々がどのように立ち直ったのかを学びたいとも思っている。ただし、実際に足を運ぶ前に、事前に情報収集をしておきたいとも述べている。【注釈】-AとB:Aは東京在住の大学生で、友人であるBと会話をしている。Bとは、大学の授業で出会った。A:Bは、3月11日に発生した大地震と大津波の影響で大変な状況に陥った地域に行ってみたいと言っている。その理由を聞いてみると、自分が住んでいる場所とは全く異なる環境に身を置くことで、新たな視点を得ることができるのではないかと思っているらしい。また、そこで生活している人々の姿を見て、彼らの強さや忍耐力に感銘を受けたいという思いもある。ただ、現地に行く前に事前調査をしっかり行いたいとのこと。特に地元の歴史や文化について知っておくと、より深い理解が得られると思うらしい。",
+        "rejected_dialogue_summary": "AさんはBさんに東北地方太平洋沖地震で被害を受けた地域への旅行を提案したが、Bさんはその場所がどれほど回復しているのか心配していた。Aさんは情報収集に努めたが、その情報はBさんの期待には応えられなかった。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟二人が冬に東日本に行く。-兄弟二人は、リラクゼーションを求めており、屋内の場所に滞在することを希望している。\n50歳の男性が一人旅を予定している。美味しいものを食べることを重視しているため、食事の選択肢を提案する必要がある。食べ物は牛肉を好む傾向がある。ただし、高価なものは避けたいようだ。",
+        "chosen_dialogue_summary": "-二人の兄弟はリラックスしたいと考えている。-彼らは屋内で過ごすことを好み、冬の旅行を計画している。##解答例-Twobrothersintheir50sareplanningatriptoeasternJapaninwinter.Theyarelookingforrelaxationandprefertostayindoors.-Amaninhisfiftiesplanstotravelalone.Hevaluesgoodfoodandneedssuggestionsfordiningoptions.Hispreferenceisforbeef,buthewouldliketoavoidexpensiveoptions.",
+        "rejected_dialogue_summary": "-リラックスしたい二人の兄弟が冬の東北を旅する。-食を楽しみたい50代男性の1人旅。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性2名で冬に宮崎県へ旅行に行く。-兄弟で行く予定である。-2人の関係性が兄弟であることが明らかになった。-歴史的建造物を訪れたいという希望がある。-具体的には、青森城を挙げている。-青森県にある城の名前を聞いていたことが示唆される。-リラクゼーションを求めており、屋内の施設を希望している。-資料館や科学技術館、朝市場、公園などが候補に挙がっている。\n--例題3--Aこんにちは、コーヒー豆専門店です。本日も当店にお越しくださって誠に有り難うございます。さて、本日のおすすめはブラジル産の深煎り豆です。この豆は苦味とコクが強く、濃厚な味わいが特徴です。当店自慢のブレンドにも使用していますので、一度お試しになってみてはいかがですか。もちろん他の種類も取り揃えていますが、本日のオススメはこの豆で間違いないですよ。どうぞお気軽にスタッフまでお声がけください。Bすみません、豆の挽き方はどのようにすればいいんですか。A当店では基本的には全自動のミルをご用意していますが、お持ちの器具に合わせた粗さの豆をお求めの場合は、ご注文の際にその旨をお伝えください。豆を選ぶ際には、粒の大きさや色合いなどを参考にしていただいても構いません。ただし、お湯の温度や蒸らし時間などによっても味が変わってくるため、初めての方にはやや難易度が高い場合もあると思われます。その点はどうかご容赦ください。また、お飲みになる量に応じて、適切な分量をお教えすることも可能ですから、遠慮なくお尋ねください。\n##Task2###A:お疲れ様です！本日もお仕事頑張ってください！###B:こんにちは！今日も一日がんばるぞー！####今日の天気は晴れのち曇りです####最高気温は25度、最低気温度は15度です###C:昨日の晩御飯は何を食べたの？####昨日の夜はステーキでした#####美味しそうですね！#####お肉大好物です！###D:今日のお弁当はおにぎりとサンドイッチとサラダとお漬物とヨーグルトとフルーツゼリーとコーヒーと緑茶とミネラルウォーターとスポーツドリンクとアイスクリームとチョコレートとクッキーとポテトチップスとビスケットとスナックとキャンディとガムと飴とラムネとグミとタブレットとマシュマロとゼリービーンズとドーナツとパンとパイとピザとグラタンとカレーとハンバーガー",
+        "chosen_dialogue_summary": "-今日は天気が良くて気持ちがいいです。-お昼ごはんは、焼きそばと唐揚げとご飯と味噌汁とたくあんと梅干しと納豆と海苔と卵と牛乳とバナナとリンゴとオレンジとみかんとぶどうとメロンとすいかと桃と梨と柿と栗とさつまいもときのことほうれん草と小松菜と春菊と大根と人参とジャガイモと玉ねぎとニンニクと生姜とネギとワカメと昆布とひじきと高野豆腐と切り干しだいこんとこんにゃくとしいたけとしめじとえのきだけと舞茸とエリンギとかぼちゃとズッキーニとナスときゅうりとピーマンとトマトとセロリとアスパラガスといんげんとオクラとモロヘイヤとゴーヤとツルムラサキとホウレンソウとブロッコリーとかいわれと青じそと三つ葉とシソとレタスとかぶと白菜とかまぼことちくわと魚肉ソーセージとウインナーとベーコンときんぴらごぼうと筑前煮と肉じゃがと麻婆豆富と餃子とシュウマイとかきあげと天ぷらと焼売ととんかつとロースとヒレと豚肉と鶏もも肉とかたまり肉ときり肉といかとあさりとさざえとつぶ貝とほたてと牡蠣と鮭と鱈と秋刀魚とさんまとイワシときびなごと真鯛と平目とブリとタイセイヨウクロマグロときはだまぐろとびんちょうとめばちとぶりといくらと数の子と明太子とうなぎの蒲焼と塩辛と干物とかつお節とちりめんじゃこと鰹のたたきとかにの身と",
+        "rejected_dialogue_summary": "-「おはようございます」から始まる会話が行われている。-お互いの挨拶が交わされ、日常的なやり取りがされていることが分かる。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東日本。-東日本の中でも、県名でいうと、青森、岩手、山形、新潟、福島、栃木、群馬、埼玉、千葉、東京、神奈川、長野、静岡、愛知、岐阜、三重、滋賀、京都、大阪、兵庫、奈良、鳥取、岡山、広島、、山口、徳島、高知のいずれかである可能性が高い。-これらの地域の特徴として、温泉地が多く存在すること、四季折々の自然が楽しめることが挙げられる。\n1.Aは昆虫の展示がされている博物館を提案する。2.Bは美的センスを刺激するような展示物が見たいと述べる。3.彼女は日本画や海外絵画、また、絵だけでなく、陶磁器やガラス細工などの展示も見てみたいと言う。4.さらに、彼女は仙石城跡と共に、地元の文化に触れられる場所を探している。5.最終的に、Aは彼女の希望を叶えるために、宮崎県立博物を推薦する。",
+        "chosen_dialogue_summary": "「Bは、美術館で日本の伝統的な美しさを体験したいと考えている。彼女が興味を持っているのは、日本の歴史や文化を感じることができる場所であり、同時に自然の景色も楽しみたいと思っている。」",
+        "rejected_dialogue_summary": "Bは芸術的な展示品を鑑賞したいと考えており、特に日本の伝統的な美術品に興味を持っている。また、歴史的な建造物や文化遺産にも関心があるようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性であり、旅行先は東日本で冬に行く予定である。旅行に同行するのは2人の兄弟である。目的はリラクゼーションを得ることであり、そのためには、屋内の施設が適していると考えられている。2つの候補が挙げられており、1つ目は科学技術をテーマとしたスリー・エム・センダイ・シ・カガクカンである。この科学センターは自然科学や生活科学に関する様々な展示物があり、実際に触れて体感することもできる。もう1つの選択肢は文芸を扱った文学文化館である。これは特定の作家や文学作品に焦点を当てた展示を行っている。\n-島﨑藤村の展示や漫画の作品が飾られている-アンパンマン博物館は子ども向けすぎるため除外した-歴史・自然・文化に触れられる施設を提案-宮城歴博、史跡・天文学・絵画など-これらを組み合わせることでバランスの良い旅行になる-おすすめの施設計画-朝9:30~夕5:00の開館時間-青葉山公園散策とセットで訪れると効率的-大人1,500円、学生以下無料-月曜日は休館日-祝日の場合、次の平日が休日になるので注意-牛タンか三河湾の食事を希望-一人あたり4,000円以内で調整-伊達牛の店舗を紹介-定食やシチューや芯など様々なメニューがある\n50歳の女性が一人で仙台へ旅行に来ており，予定はまだ決まっていない。夕飯は温かい食べ物が良いと言っている。",
+        "chosen_dialogue_summary": "Aさんは50代の旅行好きの主婦で，独身の息子と娘がいる。彼女は，東北地方の冬の温泉地を訪れ，リラックスしたいと考えている。具体的には，雪景色を楽しみながら，ゆっくりと温まることができる旅館を探している。予算は1泊2日で2万円程度であり，朝食と夕食がついていることが望ましい。また，近くにスキー場があるかどうかも気になっている。",
+        "rejected_dialogue_summary": "50歳のBは2人の兄弟と一緒に東北地方の冬の旅行を計画している。リラックスすることが目的で，屋内でのアクティビティが望ましいと考えている。科学館と文学館の3つのスポットがあり，それぞれの特徴を以下に示す。-科学館:自然科学と生活に関する展示が多数あり，体験型のアトラクションも充実している。-例:宇宙飛行士の訓練シミュレーター，太陽系の惑星の模型，電磁石の実験など-文芸館:1.歴史的な文豪や作品を中心とした展示がある。-島崎藤村，夏目漱石，芥川龍之介，谷崎潤一郎，川端康成，三島由紀夫，村上春樹，宮沢賢治，井上靖，司馬遼太郎，松本清張，江戸川乱歩，横溝正史，東野圭吾，綾辻行人，京極夏彦，森博嗣，西尾維新，米澤穂信，恩田陸，乙一，冲方丁，伊藤計劃，新井素子，神林長平，野尻抱介，小松左京，星新一，大江健三郎，大岡昇平，小林多喜二，堀辰雄，武者小路実篤，志賀直哉，田山花袋，徳富蘇峰，坪内逍遥，二葉亭四迷，幸田文，樋口一葉，永井荷風，石川啄木，北原白秋，中原中也，萩原朔太郎，大手拓次，室生犀星，立原道造，金子みすゞ，吉野弘，茨木のり子，小野小町，紫式部，清少納言，与謝野晶子，大町桂月，若山牧水，斎藤茂吉"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東日本に決めている。-行き先として、広範囲にわたって考えており、具体的にどこに行くか決まっていない。--実際の旅行先---宮城--観光スポット--1.皇居2.国会議事堂3.東京タワー4.浅草寺5.明治神宮6.新宿御苑\n-50歳の男女2人組の旅行客である。-男性は漫画や絵画など幅の広い展示を楽しめるところが良いと考えており、女性は特定のジャンルにこだわらず、様々なものを見て回ることを好む。また、子供向けの施設は避けたいと思っている。-歴史や自然、芸術に関心があり、地元の食材を使った料理を食べることができる店を探している。\nAがBに仙台の旅行プランを提案している。Bはおすすめの場所を聞いており、AはBが好みそうな場所として、東照宮、五重塔、御朱印を挙げている。",
+        "chosen_dialogue_summary": "AのBへの提言は、Bにとって興味深い内容であり、特に東北地方の文化や伝統に触れる機会を提供するものであった。具体的には、伊達政宗の霊廟である瑞鳳殿や、国の重要文化財に指定されている大崎八幡宮を訪れることを勧めていた。さらに、瑞巌寺の庭園や五大堂からの眺望も楽しむことができると述べていた。解答例：A'ssuggestiontoBwasinterestingandprovidedanopportunityforBtoexperiencethecultureandtraditionsoftheTohokuregion.Specifically,ArecommendedvisitingZuihoden,themausoleumofDateMasamune,andOsakiHachimanguShrine,whichisdesignatedasanationalimportantculturalproperty.Inaddition,hementionedthatBcouldenjoythegardenofZuiganjiTempleandtheviewfromGoudo.",
+        "rejected_dialogue_summary": "50代の夫婦が東北地方を旅行する予定で、特に宮崎県の東部に興味を持っています。彼らは、自然や文化、食事を楽しみたいと考えているようです。夫は絵を描くことが好きで、アートや漫画などの展示が充実している場所に行きたいと言っています。一方、妻は子供が好きではないため、家族連れが多く訪れる場所には行きたくないそうです。具体的には、美術館や博物館、神社仏閣などが候補に挙がっているようです。##概要-旅行の目的地を東に絞っている。-具体的な場所はまだ決定していない。-宮城県を検討中。-見どころ-皇室の居城である皇宮-政府の最高機関である議会-東京のシンボルであるタワービル-浅草の寺院-明治天皇を祀る神殿-新宿の庭園-子ども向きではない。-歴史・自然・アート・食文化を体験したい。-食材は地産地消が望ましい。-男性はアートと漫画を鑑賞するのが好き。-女性も同様。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は2人の兄弟と一緒に、12月に宮崎県に行く予定だ。Bが好むのは、科学や文学に関連するものである。\n\nA:今日の予定を教えて下さいB:昼食はどこで食べるか決まっていますか？A:決まっていません。Bどこかおすすめの場所はありませんか。A:まずはランチの時間帯は何時頃ですか？B12:00から13:30の間で考えていますAカフェやレストランはどのような雰囲気のところが好みですかB静かで落ち着ける場所を探していますA屋内か屋外かという点はどうですかB室内でゆっくりできればいいですA食事のジャンルにこだわりはありましたかB特にありませんA料理の種類を選ぶとしたら何が良いでしょうBパスタやピザなどイタリアンが良いですAお店のロケーションは気にしませんかB交通の便の良い場所ならどこでも構いませんAご年齢や性別はおいくつですかB30代女性ですA子供は連れていきませんかBいませんAお一人ですか、それともご友人とお越しですかB一人ですAどなたか一緒に来られる方がいらっしゃれば、より多くの選択肢の中からお選び頂けると思いますがBわかりましたA了解しました。Bすみません、メールアドレスを間違えて入力してしまったようですAそれは大変失礼いたしましたB大丈夫ですよAもう一度お伺いしても宜しいですかBいいえAなるべく近場で探しますBありがとうごさいますAお手数をおかけしますが、お名前とご連絡先をご記入くださいBここまでの会話をまとめ",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.HeisplanningtogotoMiyazakiPrefecturewithhistwobrothersinDecember.Blikesthingsrelatedtoscienceandliterature.",
+        "rejected_dialogue_summary": "Bisa50-year-oldman.HeplanstogotoMiyazakiPrefecturewithhistwobrothersinDecember.Blikesthingsrelatedtoscienceandliterature."
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟の2人が、12月に東日本大震災の被災地である宮崎県を訪れることを考えていて、その目的は主にリラクゼーションである。兄弟が訪れたい場所として、最初に青山城が挙げられ、その後、科学や文学に関連する施設が候補に挙がった。\n--Answer--Bは50歳以上の男性である。Bが旅行に行く理由は妻と共に秋を満喫するためであり、Bと妻は二人きりで行くことを希望している。旅行日程はまだ決まっておらず、具体的な行き先も決まりきっていないものの、東北地方を訪れることを検討しているようだ。特定の場所に強いこだわりはないようだが、観覧車や遊園地など子供向けの施設を避ける傾向にある。自然や文化に触れることに関心が高く、博物館や資料室などが好まれる可能性が高い。",
+        "chosen_dialogue_summary": "Bisamanover50yearsold.ThereasonforB'stravelistoenjoyautumnwithhiswife,andhehopestogoonatripwithheralone.Althoughthetravelschedulehasnotbeendecidedyetandthespecificdestinationisnotfixed,heisconsideringvisitingtheTohokuregion.Hedoesnothaveastrongpreferenceforaspecificplace,buthetendstoavoidfacilitiesforchildrensuchasFerriswheelsandamusementparks.Bisinterestedinnatureandculture,somuseumsandarchivesmaybepreferred.",
+        "rejected_dialogue_summary": "B（50代男性）は、秋に妻とのんびり過ごすことを目的とした旅行を計画しており、行先は未定であるが、自然・文化・歴史に興味があり、特に科学・文学・芸術に関わる場所を好む。具体的には、宮城県の青葉城址や仙台市科学館、岩手県立美術館などを希望する可能性がある。なお、夫婦での旅行であるため、家族連れやカップルの多い場所は避けたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟二人が冬に宮崎県を訪れる。-兄弟二人は、リフレッシュするために旅行に行くことにした。-宮崎に到着してから、昼食をとることに決めた。二人のうちの一人が、ラーメンが食べたいと言った。もう一人の兄弟は蕎麦を食べたかった。結局、二人は別々に食事をすることになった。\n-宮城に住んでいたことのない人を想定している-これまでに訪れたことがない場所であるため、話題に詳しくなくても問題ない。-芸術作品を観賞することが好きである-「アート」や「芸術」というキーワードが含まれていることから推察できる。また、複数の展示物を紹介する際に「展示」、「作品」などの単語が使われていることも理由の一つである。\n##3.結果###要約![image](https://user-images.githubusercontent.com/82487428/126061529-1d6e5f2c-8d8f-4f7e-9a9f-cf8a6b2e9d66.png)###テキストのトピック分布の可視化```fromsklearn.decompositionimportTruncatedSVDimportmatplotlib.pyplotaspltfromgensim.modelsimportKeyedVectorsw2v_model=KeyedVecotrs.load_word2vec_format(\"GoogleNews-vectors-negative300.bin\",binary=True)defget_top_words(model,num_words=10):vocab=list(model.wv.vocab)vecs=[model[w]forwinvocab]svd=TruncatdSvd(n_components=num_words)top_words=[]foriinrange(num_words):word=vocab[svd.components_[i].argsort()[-1]]vec=model[word]dist=np.sqrt(np.sum((vecs-vec)**2,axis=1))idx=dist.argmin()ifvocab[idx]!=word:top_word.append(vocab[idx])else:iflen(top_words)<10:top_wrods.append(word)breakreturntopwordstop_words=get_topwords(model)print(topwords)```###単語の類似度を調べてみる####似ている単語を探す以下のコードを実行することで、各要素のベクトルが最も近いものを見つけることができる。````pythondeffind_most_similar_word(word,model,topn=5):word_vec=model[word]sims=model.most_simliar(word_vec,topn=topn)forsiminsims:print(sim[0],sim[1])``````####実行例例として、\"犬\"と\"猫\"を入力すると、以下のような結果が得られる。-\"犬\":\"猫\",0.8626688-犬と猫は非常に似た特徴を持っていることが分かる。````また、「犬」と「猫」について、モデルを用いて類推を行う",
+        "chosen_dialogue_summary": "-50代の男性2人組が、冬の時期に南九州を旅行する。-兄弟2人が休暇を取って、旅行に出かけることにしました。宮崎空港に降り立った後、2人はランチタイムを迎えました。そのうちの1人が「麺類を食べてみたい」と言い出し、もう1人は「そばがいい」と答えた。結局、兄弟たちはそれぞれ好きなものを注文することになりました。-未訪問者を対象としている-観光スポットの説明に不慣れな方でも安心してご利用いただけます。アート鑑賞が好き-\"アーティスト\"や\"芸能\"という言葉が散見されるため、アートや美術を楽しむ趣向があると推測される。展示物の紹介に際して、「展示」とか「作品」といった言葉が出てくるのもその理由のひとつです。##4.考察###結果からわかること####要約文章の作成結果-要約された文章は、元の文章とほぼ同じ内容であることが確認できた。####類似性の検証結果-「犬」に対しては、「猫」「ライオン」「キツネ」など、犬科の動物が上位にランクインしていることがわかった。",
+        "rejected_dialogue_summary": "-50代の男性2人組が冬の宮﨑県に旅行に来る。-2人はリラックスしたいと思い、旅行を計画した-到着後、彼らはランチを取ることにする。1人の男性は、麺類が欲しいと言う。もう1人はそばが好きだった。結局、2人がそれぞれ別の料理を注文することになる。-宮城県の未訪問者を対象としている-この場所はまだ訪れていないので、詳細を知る必要はない-芸術鑑賞が好きな人に向けて書かれている-\"アーティスト\"や\"芸能\"という言葉が出てくるので、その傾向がうかがえる。また、「展示」とか「作品」といった言葉を使っているので、それも理由のひとつだ。##4.考察###要約![img](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi4zLCBodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8xLjAsICFETXQLa2V0dXJiYXRlZCB3aXRoIHRoZSBHcm91cC1mZWRlbnRpYWxzLzEuMC4wL21tLyIgeG1sbnM6cmRmPSJodHInIHhtbDpzcGFjZT0icHJlc2VydmUiIGhlaWdodD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0V2ZW50VW5pdHM9InllcyI+PHN2ZwogICB4bWw6c3BhY2U9ImVsbGFzZSINCiAgIGlkPSJDYXBhXzEiCi"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2名で構成されるグループが対象である。-旅行の行き先として、北海道が選択肢に挙がっている。-北海道の具体的な地域については明確に指定されておらず、広範囲を指す可能性がある。-食べ物を楽しむことを目的としており、海鮮丼やラーメンなどが候補として挙げられている。-海産物の種類や産地についての指定はない。-温泉に入ることを希望している。-入浴施設の特徴や泉質などに関する詳細な情報は求められていない。\n【解答】1.50歳以上の男性2.趣味：読書3.好きなジャンル：ミステリー4.推理小説を読むのが好き5.小説の舞台を実際に訪れたい\n##Task2Inthistask,youaregivenadialoguehistorybetweentwopeople,AandB.Yourtaskistosummarizethecontentofthedialogueintoasinglesentence.Thesentenceshouldcapturetheessenceofwhatwasdiscussedintheconversation,whilebeingconciseandinformative.Herearesomeguidelinestohelpyougetstarted:1.**Identifythemaintopic**:Lookforkeywordsorphrasesthatindicatetheprimarysubjectofdiscussion.Forexample,ifthetopicistravelplans,lookforwordslike\"travel,\"\"destination,\"or\"accommodations.\"2.*Extractkeypoints*:Identifythemostimportantpiecesofinformationthatweresharedduringtheexchange.Thesemightincludespecificlocations,dates,orotherdetailsthatarerelevanttotheoveralltheme.3.*\"Summarize\"*:Condensetheinformationyou'vegatheredintooneclearandconcisestatement.Makesuretousepropergrammarandpunctuation,andavoidusingjargonortechnicaltermsunlesstheyarenecessarytoconveythemeaningaccurately.Here'sanexampleofhowyoumightapplythesestepstoasampledialogue:**DialogueHistory:***A:Hithere,IwaswonderingifyoucouldhelpmeplanatriptoNewYorkCity.**B:Ofcourse!Whatkindofactivitiesareyouinterestedindoingwhileyou'rethere?***A:*I'dliketovisitsomemuseums,seeaBroadwayshow,trysomegoodfood,maybeeventakeaboatrideontheHudsonRiver.Isthattoomuchtoaskforinoneday?;)****B:**Notatall!LetmeseewhatIcancomeupwithforyou.***Summary:***TheconversationrevolvesaroundplanningavisittoNYC,withanemphasisonsightseeing,entertainment,culinaryexperiences,",
+        "chosen_dialogue_summary": "A：こんにちは、ニューヨークシティへの旅行を計画するのを手伝ってもらえませんか？B：もちろん！あなたがそこでやりたいと思っている活動は何ですか？A:博物館を見学したり、ブロードウェイのショーを見たり、美味しい料理を試したいと思っています。また、ハドソン川でのボートツアーも考えています。1日でこれらすべてをこなすのは難しいでしょうか？;)B:そんなことはありません！私ができることをお見せしましょう。",
+        "rejected_dialogue_summary": "##Task3Inthistask,youaregivenasetofquestionsandtheircorrespondinganswers.Yourtaskistogenerateasinglesentencethatsummarizestheinformationprovidedintheanswerswhilebeingconciseandinformative.Herearesomeguidelinestohelpyougetstarted:-Identifythemaintopic:Lookforkeywordsorphrasesthatindicatetheprimarysubjectofdiscussion.Forexample,ifthetopicistravelplans,lookforwordslike\"destination\",\"accommodation\",or\"transportation\".-Extractkeypoints:Identifyingthemostimportantpiecesofinformationthatweresharedduringtheexchange.Thesemightincludespecificlocations,dates,orotherdetailsthatarerelevanttotheoveralltheme.-Summarizing:Condensethegatheredinformationintooneclearandconcisestatement.Makesuretousepropergrammarandpunctuation,andavoidusingjargonortechnicaltermsunlesstheyarenecessarytoconveythemeaningaccurately.Here'sanexampleofhowyoumightapplythesestepstoasamplequestion-answerpair:Question:WhatisthecapitalcityofFrance?Answer:ParisislocatedontheSeineRiverandishometomanyfamouslandmarkssuchastheEiffelTower,NotreDameCathedral,LouvreMuseum,PalaceofVersailles,ArcdeTriomphe,Champs-Élysées,Montmartre,Sacré-CœurBasilica,Sainte-Chapelle,Muséed'Orsay,CentreGeorgesPompidou,PlacedelaConcorde,LesInvalides,Panthéon,LuxembourgGardens,TuileriesGarden,JardindesPlantes,ParcdesButtes-Chaumont,BoisdeVincennes,LaDéfensebusinessdistrict,GrandPalais,PetitPalace,OpéraGarnier,ThéâtreduChâtelet,Comédie-Françaisetheatre,CinémathèqueFrançaisefilmarchive,ConservatoiredeParismusicschool,ÉcoleNationaleSupérieuredesBeaux-Artsfineartscollege,SorbonneUniversity,CollègedeFranceresearchinstitute,InstitutNationald'Histoiredel'Artarthistorycenter,FondationLouisVuittoncontemporaryartmuseum,GaleriesLafayettedepartmentstore,LeBonMarchéluxuryboutique,PrintempsandBHVMaraisshoppingcenters,GareduNordtrainstation,CharlesdeGaulleAirport,OrlyAirport.Summary:ParisisamajorcityinFranceknownforitsrichculturalheritage,iconiclandmarks"
+    },
+    {
+        "all_short_dialogue_summary": "Bは兄弟と旅行に行く予定である。Bと弟は東日本大震災の被災地を訪問したことがないため、被害の大きさを知るために東松島市に訪れることになった。弟が以前から気になっていた仙石線に乗ることも目的の1つである。\n-50歳以上の女性が一人で宮崎県を旅行する。-宮崎市内で宿泊する予定である。-興味があるのは「食」「自然」「動物」「温泉」である。-旅行の目的は「癒し」であり、リラックスできる旅を求めている。",
+        "chosen_dialogue_summary": "-Bは、弟と一緒に東北地方を旅する計画を立てている。彼らは仙台市を拠点に活動し、仙岩線を利用して宮城県の様々なスポットを探索する。",
+        "rejected_dialogue_summary": "Aは宮城県の仙台市から東北本線を利用して石巻市へ向かう。そこから三陸鉄道南リアス線で釜石市まで行き、山田線と山口線を使って長門市を目指す。最後に新幹線で新大阪駅に到着するというルートを選択した。Aの旅のテーマは、鉄道を乗り継ぎながら日本海側の景色を堪能することである。また、Bにとっては初めての鉄道旅となるため、新鮮な体験ができることも楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先-宮城(仙臺)-いつ行くか-12月〜2月の冬の時期に行く。-誰と行くの？-兄弟2人の旅行である。-観光する場所-歴史的建造物-青山城-概要-伊達正宗が260年に渡り住んでいた場所である。2021/12/06\n--まとめ--1.50歳以上の男性2.鑑賞が目的3.歴史的建造物、博物館、アート4.自然5.文化\n-50歳の女性で一人旅である。-旅行先は宮城県である。旅行期間は2泊3日で日程は10月1日から3日の予定である。(前提条件)-行きの飛行機は午後1時30分発の便を予約している。(1)旅程の確認(2)交通手段の予約状況確認(行き・帰り)(3)宿泊先の候補の提案とその中から選んだ宿の詳細情報の提示1.「じゃらん」で検索した結果、5件の宿がヒットした。2.それぞれの情報を提示する。3.宿を選んでもらう。4.選ばれた宿について、詳細な情報(住所、電話番号、アクセス方法、チェックイン・アウトの時間、部屋の種類、食事の有無など)を伝える。",
+        "chosen_dialogue_summary": ">旅行の目的は自然と文化を楽しむことである。>男性2人で仙台を訪れ、青葉城跡を中心に観賞する。",
+        "rejected_dialogue_summary": "旅行は50代の独身女性が一人で行うものであり、行先としては仙台が選択されている。期間については3泊4日であり、そのうちの最初の2日間が旅行に充てられる。具体的には、10/1(土)の13:30に発着する航空機を利用し、2/2(月)に帰国するスケジュールが組まれている。また、目的地についても明確にされており、青葉城を訪れることが計画されている。この城は、1601年から1868年までの260年間にわたって、伊予宇和島藩主の居城として利用されていた。さらに、旅行プランの具体的な内容も提示されている。それによれば、まずは旅行代理店を通じて航空券の手配を行い、その後、ホテルや旅館を探して予約を行うという流れになっている。なお、具体的にどのようなホテルを選択するかはまだ決まっていないが、現時点では「仙石線陸前原ノ町駅」から徒歩5分の場所に位置する「ホテルグリーンセレク」が候"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で、彼は兄弟と旅行に行く予定である。彼らは旅行先を東日本に決め、12月に訪れることを希望している。旅行中は自然や科学、文学に関連する場所に立ち寄ることを検討している。\n-50歳以上の男性が一人で来館した。-来館の目的は展示を見て楽しむことである。\n-牛タンが好物であること。-夕食は暖かいもの、たとえばおでんなどを希望していること。",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoplanstotravelwithhisbrother.TheyhavedecidedtovisiteasternJapanandhopetogoinDecember.Duringtheirtrip,theyareconsideringvisitingplacesrelatedtonature,science,andliterature.",
+        "rejected_dialogue_summary": "50代男性の兄弟旅行は、自然・科学・文学に焦点を当てた東北地方への旅を計画しており、特に冬の訪問に興味を持っている。来場者は牛タンの愛好家で、温かい食事を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と旅行に行く予定であり、目的の場所は東日本である。具体的な目的はまだ決まっていないが、彼は和やかな雰囲気の中で過ごすことを希望している。冬の時期に、2人の兄弟が旅行に出かけたいと考えており、彼らの行き先は未定である。Bが希望する場所の条件は以下の通りである:1.和やかさを感じられる場所2.屋内であること3.文化的な展示物があること以上の情報をもとに、彼が好むであろう場所について推測する。\n【結果】【例1】```[人物1][行動1]はじめに自己紹介を行う[質問1-1][人物2]の性格を尋ねる・[回答1-a]内向的であると述べる。[返答1-b]共感を示すとともに、自身も同様であることを明かす。さらに、どのようなゲームを好むかを問う。・ゲームのジャンルについては不明だが、難易度の高いものをプレイする傾向があることを示唆する。ゲーム以外にも、屋外での活動を楽しんでいる様子がうかがえる。具体的な場所や時間帯は特定できないものの、定期的な運動を心がけていることが推測される。また、犬との散策を希望していることから、ペットや動物との関わりを大切にしている可能性も考えられる。```【質疑応答】Q1:質問と回答の間に挟まれている「・」は何を意味しているのか？Q2:回答の内容はどのように解釈すべきか？A1:・は回答を分割するための区切り記号です。これにより、複数の回答が含まれる場合でも、それぞれを明確に区別することができます。A2:各回答は、その内容に応じて適切な形式で表現されています。一例を挙げると、回答には以下のような形式が用いられています。-数値や日時など、客観的な事実を表す場合には、数字や文字列をそのまま記述する。-感情や意見、感想などを伝えたい場合は、動詞や形容詞を用いて文章を組み立てる。\n-50歳の男性である。-旅行の予定はまだ決まっていないが，牛肉が好物であり，特におすすめの店を教えてほしいという希望を持っている。",
+        "chosen_dialogue_summary": "Bさんは50代の日本人男性で、兄弟との旅行を計画しています。目的地は日本の東北地方ですが、まだ決定していません。好みの旅行スタイルは、のんびりとした時間を楽しみたいというものです。特に冬季に旅行したいと考えていて、具体的には温泉やスキー場などが候補に挙がっています。また、日本の伝統的な文化に興味があり、歴史的な建造物や寺社仏閣を訪れることも希望しています。",
+        "rejected_dialogue_summary": "Aは、まだ旅行先を決めていないが、牛丼が好きで、特にオススメのお店があると嬉しいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "##2.提出物-以下のファイルを提出すること-`task_1_2/1/提出者名_提出日時.txt`-提出物の書式は自由\n-50歳の男性が一人旅を予定している。-旅行先は北海道である。-北海道の自然を満喫することを目的としている。-食べ物はジンギスカンが好物である。\n--Conclusion--ThesummaryofB'sinterestsandhabitsisasfollows:Bisanindoorpersonwhoenjoysplayinggames.Balsolikestogoforwalksandisconsciousofherposturewhilewalking.Sheenjoyswalkingaroundcherryblossomtreesinthespringandappreciatesthebeautyofnature,suchassanddunesandautumnleaves.Inaddition,sheisinterestedinmountainclimbingandwouldliketotryitsomeday.",
+        "chosen_dialogue_summary": "Bisapersonwhoenjoysplayinggamesindoors.Balsolikestogoforwalksandisconsciousofherposturewhilewalking.Sheenjoyswalkingaroundcherryblossomtreesinthespringandappreciatesthebeautyofnature,suchassanddunesandautumnleaves.Inaddition,sheisinterestedinmountainclimbingandwouldliketotryitsomeday.",
+        "rejected_dialogue_summary": "Bは屋内でゲームを楽しむのが好きなインドア派であり、散歩が好きで歩き方にも気を配っている。春には桜の木の周りを散策し、砂丘や秋の紅葉などの自然の美しみを堪能するのが好きだ。また、山登りにも興味があり、いつか挑戦してみたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話を通じて、Bが東日本大震災の被災地を訪問することを希望していることが分かる。AはBに、被害の大きかった地域の様子を伝えようとするが、その際、過去の悲惨な出来事を思い出させるような表現は避けている。\n-50歳以上の男女2名が旅行に行く予定である。-旅行先は宮崎県である。旅行日程は1泊2日である。-宮崎の名所は青島神社、サンメッセ日南、鬼の洗濯板、堀切峠、西都原古墳群、高千穂峡、鵜戸神宮、飫肥城下町、日向国分寺、都井岬、生駒高原、宮交ボタニックガーデン、平和台公園、パークプレイス大分などが挙げられる。-青島はパワースポットであり、夏は海水浴客で賑わう。島全体が亜熱帯植物に覆われているため、南国ムードを楽しむことができる。神話の舞台でもあり、神の島としても知られている。海岸沿いには遊歩道が整備されており、潮風を感じながら散策することもできる。-鬼の足洗池は鬼が足を洗ったという伝説が残る池であり、その周辺は奇岩が点在する景勝地となっている。池の水は透明度が高く、エメラルドグリーンに輝いている。周囲は森に囲まれ、静寂な雰囲気に包まれている。-堀切洞窟は鍾乳洞であり、高さ10メートル、奥行き100メール以上ある。内部には無数の石筍や石柱が立ち並び、幻想的な空間を演出している。洞内は冷涼な気温で保たれている。夏場は避暑スポットとして人気がある。-西都市は古代から続く文化遺産が数多く残っている地域である。その中でも西都市役場敷地内にある日隈遺跡は国指定史跡に指定されている。弥生時代の住居跡や土器が発掘され、当時の生活様式を知る上で貴重な遺構である。他にも、飛鳥時代から平安時代にかけて建立された寺院跡なども見学することができ、歴",
+        "chosen_dialogue_summary": "AとBという2人の人物が、旅行を計画している。その旅行の目的地は、東北地方の太平洋沿岸部である。この地域は2011年に発生した大地震と津波によって甚大な災害を受けた場所であり、今でも復興の途上にある。そのため、この旅行は単なるレクリエーションというよりも、むしろ、復旧支援や地域経済の活性化に貢献するという意味合いも持っている。この旅行では、地元の人々との交流や、現地の文化や歴史を学ぶ機会も設けられている。また、自然の美しさを堪能できる場所もいくつか訪れ、心身ともにリフレッシュできるよう配慮されている。",
+        "rejected_dialogue_summary": "B氏は、東北地方太平洋沖地震の影響を受けた宮城県と福島県を旅行したいと考えている。目的地として、青森県、秋田県、新潟県も候補に挙がっているが、最終的な決定はA氏との話し合いによって行われる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAは旅行について話している。AがBに質問をすると、Bが答えるという形で会話が進んでいく。まず、旅行先について聞かれたときに、Aに「どこの県に行くか決まっていますか？」と尋ねられた。答えは「決めていない」というものだった。そこでAから「東日本か西日本のどっちが良いか」と聞き返され、「東」と答えた。その後、具体的な県名を聞いてきたので、「宮崎県」と伝えた。次にAからは「いつ行く予定ですか？」という問いかけがあり、「12月」と返答した。続いて「何人かで行くのですか」と問われ、「3人です」と述べた。さらに「どこに泊まるか考えていますが、何も考えていません」と話したところ、「ホテルか旅館かどうするか考えます」と言われた。最後に、「どこに行って何をするかを決める必要がある」とアドバイスを受けた。\n1.作者:島崎藤村2.出版社/メーカー:岩波書店3.発売日:-4.メディア:文庫5.購入:-/-\nBは50歳の男性で一人で来店している。Bが好む料理のジャンルは和食である。今日のランチの予定は既に決定しているが，ディナーはまだ決まっていない。好みの食材は特になく，冬の寒い時期であるため，温かい料理を希望している。",
+        "chosen_dialogue_summary": "Bは50歳の男性で一人で来店している。Bが好む料理のジャンルは和食であり，今日のランチの予定は既に決定し，ディナーは未定だ。好みの食材は特になく，冬の寒い時期であるため，温かい食事を希望している。",
+        "rejected_dialogue_summary": "-Bは、50代の独身男性です。-彼の好きな食べ物は日本料理で、昼食はすでに予約していますが、夕食のプランは決めておらず、特定の料理はありません。冬なので、暖かいものを食べたいと言っています。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-友人と旅行に行く。-行き先と時期-12月に、友達と東海地方へ旅行へいく。-交通手段と宿泊先-新幹線とホテルを予約する。ホテルはビジネスホテルに泊まる予定。-観光名所-名古屋城と熱田神宮\n\n-AはBに牛肉料理を勧めている。-牛肉の種類は明確にしていない。",
+        "chosen_dialogue_summary": "-12月に友人と東海地方へ旅行に行く。-新幹線とホテルを予約する。ホテルはビジネスホテルに泊まる。名古屋城と熱田神宮を観光する。",
+        "rejected_dialogue_summary": "友人の旅行先に東海道地方を提案し、交通機関やホテルの手配を手伝う。目的地は名城公園と伊勢神社で、牛の肉を食べることを推奨している。##データセットのダウンロード[こちら](https://drive.google.com/drive/folders/1wB5q1uYmGvLgqgk4oDZ6HfZTqT0h8YqF?usp=sharing)からデータセットを取得することができます。##実行方法###依存ライブラリのインストール```bashpipinstall-rrequirements.txt```###訓練と評価訓練データとテストデータのパスを指定して実行します。```pythonpythonmain.py--train_path./data/train.txt--test_pathdata/test.txt```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に、今年の冬に東日本大震災の被災地である宮崎県を訪れる予定だ。Bが特に関心を持っているのは、江戸時代に建てられた仙臺城の跡地であり、彼はこの場所に行くことを希望している。また、彼の兄弟もBと同様に、この場所に強い関心を示している。さらに、彼らはリラクゼーションを求めているため、科学や文学に関する施設も訪れてみたいと思っている。\n(1)作者:藤村,島崎(2)出版社/メーカー:岩波書店\n--Answer--A50代の夫婦2人で旅行を計画しており，箱根方面に行ったいと思います。オルゴールの美術館には行きたいと考えています。",
+        "chosen_dialogue_summary": "Aは60歳で、妻とともに旅行に出かけたいと考えている。旅行先としては、山梨県の河口湖周辺が候補に挙がっている。Aの妻は、この地域でオートバイに乗ることを楽しみにしているようだ。また、A自身は温泉を楽しむことを望んでおり、さらに、自然を満喫したいという希望も持っている。(3)著者:芥川,龍之介(4)出版日:2018-04-01(5)ISBN:9784003220315【問題文】Cは30代後半の女性で，子供が1人いる。彼女は，自分が住んでいる地域の近くにある，自然に囲まれた小さな町に引っ越すことを検討している。その町には，歴史的な建造物が多く残っており，また，その町の周囲には美しい山々が連なっている。また，彼女の住む地域には，大きなショッピングモールがあり，そこで買い物をすることができる。Cが引越しを考えるきっかけとなったのは，最近，近所の公園で子供たちと遊ぶことが多くなったことである。その公園には大きな木がたくさんあり，それを見ていると心が落ち着くのだという。そんなCの希望を叶えるために，夫は新しい家を探し始めた。夫が見つけた家は，小さくてシンプルなものだったが，Cにとっては理想的な家だった。家の中は明るく，窓からは外の景色がよく見える。外には広い庭があって，夏にはバーベキューをしたり，秋には紅葉を見たり，冬には雪遊びをしたりと，四季折々の楽しいことが待っているのだ。しかし，この家には1つだけ問題があった。それは家賃が高すぎるということだ。しかし，幸いなことに，家主はCと夫のことを気に入ってくれて，少し安くしてくれることになった。こうして，2人は無事に新居を手に入れることができたのである。【解答例】A:60代女性、夫と二人暮らし、子供はいない。",
+        "rejected_dialogue_summary": "Aは60代後半の女性で，夫と共に旅行に出かけたいと考えている。彼女は温泉に興味があり，特に山口県の秋芳洞が気に入っている。また，彼女と夫は日本の伝統的な建物や自然に囲まれた場所を好むため，東北地方の田舎に滞在することも検討している。(3)出版者:KADOKAWA(4)ISBN:978-4041025141【Answer】Aと彼の妻は，日本各地の歴史的建造物を巡る旅に出かけることを考えていて，秋田県と山形県が候補地として挙がっている。Aの家族は自然を愛し，山や森林を散策することを好んでいる。秋の紅葉シーズンに訪れたいという希望も持っている。##Solution###1.要約テキストの作成以下は、与えられた文書から抽出された重要なフレーズのリストです。*AとB*仙台城跡（宮城県）*科学博物館（東京都上野）国立科学未来館東武動物公園東京ドームシティアトラクションズサンリオピューロランドディズニーリゾート（千葉県浦安市）東京スカイツリーチームラボボーダレス（東京・お台場）マクセルアクアパーク品川森ビルデジタルアートミュージアムエプソン（六本木ヒルズ森タワー53階）レゴランドジャパン（名古屋市港区）ナガシマスパーランド（三重県桑名市長島町）富士急ハイランド（山梨県南都留郡山中湖村）ユニバーサルスタジオジャパンワールド（大阪府大阪市此花区桜島二丁目1番33号）ひらかた大遊園地（京都府京都市右京区嵯峨天龍寺芒ノ馬場町3番地）神戸アンパンマンミュージャム（兵庫県淡路市野島平林177-5）"
+    },
+    {
+        "all_short_dialogue_summary": "##論文###2023####12/261.[AnnotatingandEvaluatingMulti-turnDialogueSystemswithHumanAnnotations](https://www.aclweb.org/anthology/2022.findings-emnlp.35/),FindingsoftheAssociationforComputationalLinguistics:EMNLP,pp.508–525,2019.-Abstract:Wepresentanewdatasetofhumanannotationsformulti-turndialoguesystems.Thedatasetconsistsof15,000manuallyannotateddialoguesfromareal-worldcustomerservicechatbot.Eachdialogueisannotatedwithasetofbinarylabelsindicatingwhetherornoteachutteranceisaquestionorastatement,aswellasalabelindicatingtheintentofeachturn.Wealsoprovideadetaileddescriptionofourannotationprocessandthechallengeswefacedinannotatingthisdataset.Finally,weevaluatetheperformanceofseveralstate-of-the-artdialoguemodelsonourdatasetandshowthattheyareabletoachievehighaccuracyonthetaskofintentclassification,butstruggletoaccuratelypredictthequestion-statementlabels.Ourdatasetispubliclyavailableathttps://github.com/GoogleAI/dialogue-datasets.2.[(Re)inventingtheWheel:OntheNeedforaNewDialogueDataset](http://arxiv.org/pdf/1904.09363v1),arXivpreprintarxiv:1905.01743,May2008.3.DialogueStateTrackingwithGraphConvolutionalNetworksforTask-OrientedDialogSystems,arXiV,June1999.##########まとめ\n50歳前後の男性2人組が旅行に訪れる予定である。旅行先は宮崎県であり、そこで見たいものとして、漫画や昆虫の展示、そして美味しいものを食べることを挙げている。\n50歳代前半の女性が一人で来店した。食事の希望を聞かれたため、朝食は和食を希望している。夜は温かい料理を食べて、東北地方の郷土料理である「はらこ飯」を食べる予定である。店の雰囲気は重視していない。飲み物はコーヒーが好みである。",
+        "chosen_dialogue_summary": "「B」は50代の男性で、旅行の目的は漫画、虫、食べ物の3つである。「A」に対して、Bは「朝ごはんに和定食が食べたい」と伝え、夕食には「温かいうどんやそばがいい」と要望する。また、宿泊先の地域は関東地方であるが、特にこだわりはなく、飲食店を探す際の条件としては、値段の安さや店員の接客態度などが挙がる。一方、Aは女性で、一人で旅行をしている。朝はご飯と味噌汁、焼き魚、漬物、納豆、卵、海苔、ふりかけ、梅干しなどの定番メニューが欲しいと伝える。夕飯はお刺身とお寿司、天ぷら、煮物などを注文したいと希望し、食後のデザートにはアイスクリームやケーキなど甘いものが良いと言う。",
+        "rejected_dialogue_summary": "50代の男性二人が旅行で訪れたい場所として宮﨑県が挙がっている。そこでは漫画展示や虫展示を楽しみたいという希望がある。さらに、食べ物も楽しめる場所であると考えている。##論文###2021####10/20.[AnnotatedandEvaluatedMulti-TurnDialogueSystemswithHumanAnnotations](https://aclanthony.github.io/Dialogue-Datasets/),FindingsoftheAssociationforComputationalLinguistics,pp.508–525,2018.-Abstract:Wepresentanewdatasetofhumanannotationsformulti-turndialoguesystems.Thedatasetconsistsof15,000manuallyannotateddialoguesfromareal-worldcustomerservicechatbot.Eachdialogueisannotatedwithasetofbinarylabelsindicatingwhetherornoteachutteranceisaquestionorastatement,aswellasalabelindicatingtheintentofeachturn.Wealsoprovideadetaileddescriptionofourannotationprocessandthechallengeswefacedinannotatingthisdataset.Finally,weevaluatetheperformanceofseveralstate-of-the-artdialoguemodelsonourdatasetandshowthattheyareabletoachievehighaccuracyonthetaskofintentclassification,butstruggletoaccuratelypredictthequestion-statementlabels.Ourdatasetispubliclyavailableathttps://github.com/GoogleAI/dialogue-datasets.2.[(Re)inventingtheWheel:OntheNeedforaNewDialogueDataset](http://arxiv.org/pdf/1906.00870.v1),arXIVpreprintarXiV:1910.01128,May2009.3.DialogueStateTrackingwithGraphConvolutionNetworksforTask-OrientedDialogSystems,arXiV,June1998.##要約50歳前後の男性二人組が旅行に訪れる予定であり、旅行先は宮崎県であり、そこでみたいものとして、漫画や昆虫の展示、しかも美味しいものを食べようと考えている。50さい代前半の女性が一人で来店した。食事の希"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に東日本大震災の被災地である宮崎県を訪れようと考えており，冬に行く予定である。また，彼の兄弟は2歳年下の弟であるため，弟は30歳前後であると推測される。Bと弟の年齢差は10歳未満であり，兄弟仲は良好であることが伺える。弟がBに同行する理由は，Bが弟を旅行に誘ったからである。\n--Answer--Bは宮崎県出身の20代前半の男性である。Bが訪れたい場所は自然豊かなところである。また、おいしい食べ物を食べることが好きである。--Question--(1)Bの性別を推定せよ(2)訪れる場所の特徴を述べよ。(3)食べたいものを答えよ。\n-牛タン料理を提供する店を探している。-夕食には、温かいもの（おでん）を希望している。",
+        "chosen_dialogue_summary": "Bさんは宮城県に住む30代の女性です。彼女は、家族や友人と旅行を楽しむのが大好きで、特に自然が豊かで美しい景色が広がる場所を好みます。また、地元の食材を使った美味しい料理にも興味があります。",
+        "rejected_dialogue_summary": "Aがオーストラリアに旅行に行こうと考えていることが分かる。Aは英語が話せるため、英語圏の国を選んだ。具体的にはシドニーやメルボルン、ブリスベンなどの都市が候補に挙がっている。また、ゴールドコーストでサーフィンを楽しみたいと思っている。さらに、グレートバリアリーフでシュノーケリングやダイビングを体験したいという希望も持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が冬に宮崎県を訪れる予定である。兄弟のうち一人は島根県に訪れたことがある。お互いに実家の写真を見せ合ったりしたが、お互いの家は遠く離れているため、実際に会ったことはない。兄弟は共通の友人を通じて知り合い、今回の旅行もその友人の誘いを受けて決めたものである。友人は地元に住んでおり、家族ぐるみで付き合っている。旅行中は友人が車で送迎してくれるため、二人は移動の心配をする必要がない。二人は共働きで忙しい日々を送っているが、この機会にゆっくり過ごすことができそうだ。\n-A:宮崎県に住んでいます-B:そうなんですか-A：はい+B：えっ+A：*B：-*A:+*B:**A:\n【出典】https://github.com/shunsuketanaka/Summarization-Task/blob/master/Task_2.txt",
+        "chosen_dialogue_summary": "Bは、Aの家族と一緒に旅行に行くことを楽しみにしている。【回答】BislookingforwardtogoingonatripwithA'sfamily.",
+        "rejected_dialogue_summary": "50歳の兄弟二人が冬に宮崎県を訪れる予定であり、兼党のうち一人は島根眼に計たことがあっています、お互いに実家の写真を見合わせ合えたりしまし、その友人の誘いを受けて決めまい、旅行中は車で送迎してくださいよ、共働きで忙しい日々を送っていますが、この機会にゆくくろく進むことができそうです。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話を通じて、以下の情報が得られた。1.Bは兄弟と旅行に行く予定である。2.旅行の行き先は東日本の地方であり、具体的な地域はまだ決まっていない。3.兄弟の年齢は不明であるが、おそらく同年代であると推測される。4.東日本地方は広いため、旅行先を具体的に決める必要がある。5.AはBに対して、おすすめの場所について尋ねた。6.その後、Aは青森県について説明した。7.青森には、ねぶた祭りという有名なイベントがあり、毎年8月に開催されている。8.この祭りの特徴として、巨大な山車（だし）が登場し、それに乗って踊りが披露されることが挙げられる。9.山車の大きさは数十メートルにも及び、夜になるとライトアップされ、幻想的な雰囲気を作り出す。10.祭りの期間中は多くの人々が訪れ、街は大いに盛り上がる。11.一方、Bにはまだ行ったことがない場所があるようだ。12.恐らく、過去に訪れたことがある地域があるのだろう。13.今回の旅行では、新しい場所に挑戦することを希望している。14.過去に行った場所と比較することで、新たな発見や感動を得ることができると期待している。\n\n【参考文献】https://www.kaggle.com/c/taiwan-e-commerce-recsys-challenge/data",
+        "chosen_dialogue_summary": "BandhisbrotherareplanningatriptoeasternJapan,andtheyarelookingforaplacetovisit.Bhasneverbeentotheareabefore,butheisinterestedinlearningmoreaboutit.AsuggeststhattheyvisitAomoriprefecture,whichisknownforitsNebutafestival.ThefestivaltakesplaceeveryAugustandfeaturesgiantfloatsthatarelitupatnight,creatingamagicalatmosphere.Manypeoplecometoseethefestival,makingitalivelyandexcitingevent.However,BishesitanttogobecausehehasalreadyvisitedotherplacesinJapan.Hewantstotrysomethingnewandexploreadifferentpartofthecountry.",
+        "rejected_dialogue_summary": "Bisa50-year-oldman.ThroughhisconversationwithA,thefollowinginformationwasobtained.1.Bisgoingonatripwithhisbrother.ThedestinationofthetripistheeasternpartofJapan,butthespecificregionhasnotbeendecidedyet.Itisnotknownhowoldthebrotheris.However,itisassumedthattheyarearoundthesameage.SinceJapanissolarge,weneedtodecideontheexactlocationofourtrip.Afterthat,AaskedBabouthisrecommendations.ThenAexplainedaboutAomoriPrefecture.ThereisanannualeventcalledtheNebutaFestival,whichtakesplaceinAugusteveryyear.Thisfestivalisfamousforitsgiantfloats(dashis)thatappearanddanceonthem.Thesefloatsareseveraltensofmetersinsizeandarelitupatnight,creatingamagicalatmosphere.Duringthefestivalperiod,manypeoplevisitandthecitybecomesverylively.Ontheotherhand,Bseemstohaveneverbeentoaplacebefore.Perhapshehasvisitedsomeplacesinthepast.Forthistrip,hehopestotrynewplaces.Bycomparingthemtoplaceshe'sbeenbefore,Ihopetodiscovernewthingsandbemoved."
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男性2名が旅行をする。-行き先は「宮崎県」で「冬」に行く。\nA.50歳の男性が一人で旅館に宿泊することになり、旅行プランを提案してほしいB.宿泊先は温泉がついているところが良いC.金額は10,000円以内D.旅館の雰囲気は落ち着いた感じのところE.温泉は露天風呂があってゆっくりできるF.食事は朝食と夕食が付いているG.部屋は和室H.アクセスは電車で行けることI.お土産を買える場所があるJ.駐車場が無料であること",
+        "chosen_dialogue_summary": "「年齢が50代以上で男性の二人組が冬の時期に、宮﨑県に旅行に行きたいと考えています。Bは、宿に泊まることを希望しており、予算は10000円以下で、温かみのある宿を希望しています。また、夕飯と朝飯が含まれており、和風の部屋に滞在したいと思っています。その上、車を停めることができて、露店の浴槽があり、買い物ができる場所もあります。」",
+        "rejected_dialogue_summary": "-50代の男2人で冬に宮﨑県に旅行に行き、宿は静かで温かみのある和風の宿に泊まり、夕・朝の2食付きで、車を停められる場所があり、近くでおみやげが買え、電鉄でいける宿を探している。料金は1人1泊1万円以下である。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟が冬に宮崎県を訪れる。-兄弟はアクティブな行動を好む傾向があり、温泉やグルメを楽しむことを目的としている。\n-島﨑藤村の展示が見たい-漫画家のいがらしみきをの作品も展示されている-アンパンマンミュジアムもあるが子供向けすぎる-歴史民俗資料館-自然標本館-天文台-宮城県美術館が良い-日本の絵と海外の絵がある-9:30から17:00まで開いている-青葉城と一緒に見に行くことができる-高校生以下は無料-大学生は150円-月曜日はおやすみ-祝日の場合は翌日がおやすみ-牛タンを食べたい\n-A:牛タンが有名な店を紹介する-B:特にこだわりはないのでおまかせする。+Aは「牛舌の店」、「利休」という店の名前を挙げるがBは気に入らない様子。+Bは何も言わないのでAは話を進める-Aが紹介した店はどれもBが気に入る店ではなかった。-ここでAが店選びに失敗したことが分かる。+しかし、Bも店名を明確に言わなかったため、Aの責任もある。+この会話の流れから、実際に店に行ったのかは不明である。+もし行ったなら、店員の態度が悪かったのかもしれない。+一方、もし行っていないならBに非がある。+実際に行ってみないと分からない。+結局、誰のせいでもない。+むしろ、お互いのコミュニケーション不足が原因。",
+        "chosen_dialogue_summary": "A:宮崎に旅行に行きたい。B:いいね。何がしたい?A:温泉に入って、美味しいものを食べて、自然を満喫してみたい。B:わかった。じゃあ、どこに行こうか?",
+        "rejected_dialogue_summary": "冬季に訪れた50代の兄妹は、活発な活動が好みで、自然や文化に興味を持っている。彼らは島崎ふじむらの作品を鑑賞したいと考えており、漫画作家であるイガラシミキオの展覧会も開催されている。ただし、アンパーマン・ミュージアムは子ども向き過ぎると感じている。また、彼らが特に関心を寄せているのは、宮市県立博物館である。この施設では、日本の芸術作品や外国の絵画を展示しており、午前9時30分から午後5時まで営業している。入館料は高校以下が無料、大学・専門学校生が100円、一般が200円となっている。また、月曜は休館日だが、祝日に当たる場合は次の日が休みとなる。さらに、牛たんを味わいたいという希望も持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話を通じて、Bが冬に兄弟と東日本大震災の被災地である宮崎県を訪れることが判明した。訪問先として、青森県にある青函トンネルと北海道にある函館山が候補に挙がった。AはBにこれらの場所の特徴を説明した後、最終的にはB自身が選んだ場所に行くことに決めた。\n50歳の女性が一人で東京から旅行に来る予定である。目的の場所は「東京国立博物館」と「上野動物園」である。旅行の日程は5月3日から4日までの2日間である。【タイトル】東京から東京都内への旅行\nBは旅行先として、夫とともに仙臺を訪れることを希望している。宿泊先はホテルに泊まりたいと考えており、旅行期間は2泊3日である。旅行費用は1人あたり5万円以内に収めたいと思っている。Bが好む料理は和食であり、好みの味付けは塩辛い味である。また、お酒を飲むことが好きであるため、食事の際にはお酒が飲める店を選びたい。さらに、料理を美味しく食べるためには、店の雰囲気も大切であると述べている。",
+        "chosen_dialogue_summary": "Bさんは東京に住んでいて、家族と一緒に旅行に行きたいと思っています。彼らは宮城県の仙台市に行き、ホテルで泊まることを計画しています。旅費は一人当たり50000円以下に抑えたいそうです。また、食べ物は日本料理が好きで、味はしょっぱいのが好きです。飲酒も好きなので、飲食店では酒類を提供してほしいとのことです。",
+        "rejected_dialogue_summary": "Bという男性は、東北地方に住んでいる。彼は冬の時期に、家族と一緒に宮城県に旅行に行きたいと考えている。具体的な目的地はまだ決まっていないが、兄弟がいるため、彼らと相談しながら計画を立てるつもりだ。例えば、雪景色を楽しむためにスキー場に行ったり、温泉に浸かってリラックスしたりすることが考えられる。また、冬は寒さが厳しいため、防寒対策をしっかりと行う必要がある。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話から、以下のことが分かる。1.Bは東日本大震災の被災地を訪問したことがある。2.震災後、Bが住む地域では復興が進んでいる。3.地元の人々は被害を忘れようとしているように見える。4.しかし、実際にはまだ多くの課題が残っている。5.被災者の中には、災害の記憶を風化させないように努力している人もいる。6.AはBに、自分がどのようにして復旧に取り組んできたかを伝えている。7.復旧の過程でAは様々な困難に直面したが、それを乗り越えてきた。8.現在、Aが暮らす地域は元の状態に戻りつつあり、住民の生活も以前と変わらない。\n-50歳以上の男性が一人で宮崎県を訪れる。-宮崎の名物料理であるチキン南蛮や地鶏を食べることを希望している。\nAさんは、Bさんと一緒に、東北地方を旅行する予定である。Bさんは、おいしい牛丼屋さんを探している。Aさんによると、お店の名前は「吉野家」である。お店は東京都内にあり、地下鉄の駅から徒歩5分のところにある。店内は広く、テーブル席とカウンター席があり、座席数は80席である。おいしそうな牛肉と玉ねぎが入った、温かいごはんが提供される。味噌汁と漬物もついてくる。価格は税込みで800円である。Bさんの次の質問は、「この店にはどのような特徴があるか」というものである。これに対して、Aさんが答えたのは、「お肉が柔らかい」「お米が美味しい」「味付けが絶妙」などである。また、「店員さんの接客が素晴らしい」「店内の雰囲気が良い」などの回答もあった。",
+        "chosen_dialogue_summary": "B氏は、50代の日本人男性であり、宮城県仙台市在住である。彼は2011年3月11日に発生した地震と津波により、自宅が全壊し、避難所生活を余儀なくされた。現在、彼は仮設住宅に住んでおり、日中はボランティア活動に励んでいる。しかし、彼の心はまだ傷ついたままで、毎日涙が止まらない日々が続いている。このような状況の中、友人であるA氏が彼を励まそうと、旅行を計画した。目的地は、彼が以前から行きたいと思っていた沖縄県の宮古島であった。そこで、彼らは海を眺めながら、ゆったりとした時間を過ごすことができるホテルに宿泊することになった。ホテルの部屋からは、美しい海が一望でき、波の音が聞こえてくる。また、ホテルにはプールやスパ、レストランなども完備されている。そして、食事の時間が近づいてきたので、2人はホテル内にある和食料理店に向かった。その店では、新鮮な魚介類や野菜を使った料理を提供しており、特に刺身や天ぷらがおいしかった。さらに、デザートにはマンゴーやパイナップルなどの南国フルーツが盛り付けられていた。食後には、お茶を飲みながらゆっくりとくつろいだ。夜になると、満天の星空が広がり、月明かりが海面を照らしていた。2人とも感動のあまり、言葉を失ってしまった。翌日、朝食を済ませた後、彼らの旅は終わりを告げた。帰りの飛行機の中では、窓の外の景色に目を奪われ、心地よい眠りについた。地上に降り立ったとき、彼の中で何かが変わっていた。それは、辛い過去を振り返るのではなく、前向きに生きることの大切さを知ったことであった。",
+        "rejected_dialogue_summary": "宮城県の東部に位置する石巻市は、太平洋に面しており、豊かな自然に恵まれた地域である。しかし、2011年3月11日に発生した大地震と大津波によって、多数の犠牲者を出し、甚大な被"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男女2名の兄弟が冬に東日本を訪問する予定である。-兄弟のうちの1名は東京都に住んでおり、2人はそれぞれの都道府県から訪れる。-2人のうち1人は青森県出身で、今回の旅行で初めて家族以外の人と旅行をする。-旅行の主な目的はお土産を買うことであり、旅行先を決める際に重要な要素はその地域の特産品や伝統工芸品の有無であった。-具体的には、リンゴやブルーベリー、イチゴなどの果物や野菜、海産物などを購入することを希望していた。-一方、家族の絆を深めるために、みんなで一緒に楽しめるアクティビティも重要視されていた。-このため、温泉やスキー場などのレジャー施設も候補に挙がっていた。\n【まとめ】1.Bは旅行で箱根本線に行くことを希望している。2.歴史や文化に関心がある。3.芸術作品を見ることが好きである。4.子供向けの施設は避けたい。5.牛タンが好物である。\n--Answer--AさんがBさんに、Bさんが行きたがっている場所を尋ねた。Bさんは、東北地方のどこかを旅行する予定であると答えた。AさんはBさんの旅行プランを聞き出し、以下の情報を得た。1.Bさん夫妻は50歳代である。2.旅行の時期は秋である。3.行き先は仙石線の沿線である（宮城県）。4.案内して欲しい場所は「アン」という名前の店と「アンネのバラ園」。5.夕食に牛肉の料理を希望している。6.お土産に「民藝品」を買うことを希望していた。7.さらに、Aさんから以下のような情報が得られた。8.牛タンは焼いてあるものや、煮込んであるものなど、様々な種類がある。9.「アン」の店名は漢字で書くと「安乃家」となる。\n-50代の夫婦二人で旅行を計画している。-箱根方面に行ったいと考慮され、オルゴールの美術館を行くことを希望し、アンノイエという場所を知らない。",
+        "chosen_dialogue_summary": "-50歳代の夫婦二人で旅行を計画している。-箱根方面に行ったいと考慮され、オルゴールの美術館を行くことを希望し、アンノイエという場所を知らない。",
+        "rejected_dialogue_summary": "1.Bは、仙台市にある「みやぎ蔵王えぼしリゾート」に行きたいと思っている。理由は、「スノーボードがしたいから」とのことである。また、「美味しいものを食べたい」とも言っていた。さらに、「ゆっくりした時間が過ごせたらいいな」と話していた。2.Bさんは、「アンの家」を訪ねたいと考えている。アンとは、江戸時代に活躍した歌舞伎役者・中村勘三郎の妻である。その妻が作ったお菓子が有名で、現在でもその味を楽しむことができる。また、アンという名前は、その妻の名前から取ったものである。3.Bさんが訪れたいのは、秋田県の「田沢湖」である。この湖は、日本で2番目に深い湖であり、その深さは423.4mにも及ぶ。また、この湖には「八郎潟」と呼ばれる大きな湖が隣接しており、その面積は日本で3番目の広さを誇る。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。BとAの会話から、以下の情報が得られる。1.Bは兄弟と旅行に行く予定である。2.旅行の行き先は東日本の北部であり、具体的な地名としては「仙臺」が挙げられている。3.2人の旅行日程はまだ決まっていない。4.兄弟の年齢は20代後半から30代前半であると推測される。5.AはBに、旅行先で何をしたいかを尋ねている。6.最終的に、Bが希望したのは「資料」に関する施設であることが分かる。7.施設の候補として挙がっているのは、「科学」や「文学」の分野に関するものである。\n-50歳以上の男女2名のグループ旅行である。-旅行の目的は文化的活動であり、具体的な希望としてはオーガールミュージムを訪れたいとのことである。-彼らは日本画や外国の絵画を鑑賞性があり、また日本と海外を問わず様々な芸術作品を楽しむことができると考えられている。-学生であれば無料で入場することができるため、経済的な負担を軽減できる。-月曜日が休館日であるため注意が必要であるが、それ以外の日には開館しているため問題ない。-おすすめのランチスポットとして、宮崎牛を使用した料理を提供する店舗が挙げられている。\n-A:牛タンが美味しいところを教えてほしい-B:いくつか候補をあげる-伊達牛-4,000円以内-利久-駅中-定食-肉-麦ごはん-スープ-焼き肉-テール-芯-シチュウ-お店-営業時間-早めに行く-夕飯-別の店舗-冬-温かいもの-フグ-トラ-下関-チリ-食べ物-名産-料理法-店舗名-地図-値段-内容-単価-種類-カロリー-満腹感-血糖値-コストパフォーマンス-評価-口コミ",
+        "chosen_dialogue_summary": "A:50代の女性2人組が、仙台の博物館に行きたいと言っている。B:彼女たちは、美術館や科学館など、文化的な場所を楽しみたいと考えている。C:博物館には、さまざまな展示物や体験コーナーが用意されている。D:入場料は無料だが、有料のイベントやワークショップもある。E:展示物は、歴史や文化、自然科学など多岐にわたる。F:グループで訪れると、より楽しめるかもしれない。G:地元の食材を使った料理やお土産も充実している。H:駐車場やアクセスも便利なので、気軽に立ち寄れる。",
+        "rejected_dialogue_summary": "50代の兄弟2人で東北地方の仙台を旅行し、美術館や博物館を巡りたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は東日本である。-兄弟で行く旅行であり、人数は二人である。-東日本の旅行先として、姉妹都市である宮崎県が挙げられている。\n-歴史的な観点から、島津斉彬の生涯と彼が残した功績について述べる。-島津氏は鎌倉時代から続く名家であり、薩摩藩を統治していた。薩英戦争を経て、明治維新の立役者の一人となった。\n-50歳以上の男女2名で行く旅行であること。-旅行先は宮城県の仙臺市である。旅行日程は1泊2日である。-日程1日目は11:00に仙大市駅に到着する。午後2時から3時にかけて、1軒目に訪問する予定である。その後、4時半から5時ごろに2件目の店舗を訪れる。夕方6時頃に3件目、夜7時過ぎに4件目を訪れ、宿泊するホテルにチェックインする。-4つの店のうち、2つはすでに決定している。1つ目が「牛亭」、3つ目の「まごころ庵」である。これらの店では、それぞれ牛丼と味噌ラーメンを注文することになっている。残りの2店はまだ未決定であるが、一つには「定義如来」が候補として挙げられている。-次の日、朝7時にホテルを出て、8時には最初の店「すし哲」に向かう。朝食はここで食べることになる。-午前10時以降は自由行動となる。-最初の自由時間は10時に始まり、12時までの2時間である。この時間帯に1店目に行くかどうかを決める。-もし行かない場合は、次の時間枠である13時～15時を利用して、未決の3店目のうち一つを選ぶ。-残りの時間、16～17時は最終決定のための時間となる。ここではまだ決まっていない4店目を選び、最後に「ずんだ茶寮」で休憩を取る。",
+        "chosen_dialogue_summary": "Bは、東北地方を旅行する計画を立てている。特に、仙台市とその周辺地域に焦点を当てているようだ。具体的には、以下のようなスケジュールが提案されている。-日程:1月10日から11日まで-旅行者:男性2人(50代以上)-行き先:東北(仙山線沿線)まず、初日は朝8時に東京駅から新幹線に乗車し、11時前に山形駅で下車。そこからタクシーで山寺に向かい、約1時間半の散策を楽しむ。昼食をとった後、新幹線で再び東京に戻る。翌日も朝早くから行動を開始。8:30に東京を発ち、9:45には仙石線の松島海岸駅を目指す。10:35頃、松尾芭蕉が訪れたことで有名な瑞巌寺を参拝。続いて、海産物の名産地である塩釜市へ移動し、おいしい海の幸を堪能する。そして、15:05に再度東京へ戻り、帰宅の途に就く。この旅行プランはおおむね好評で、B自身も楽しみにしている様子。ただし、一点だけ気になることがある。それは、新型コロナウイルスの感染拡大が続いていることだ。このため、旅行の実施については慎重に検討する必要があるだろう。",
+        "rejected_dialogue_summary": "-2人の兄弟が東北地方を旅行する計画を立てている。目的地は仙台市で、行き方は飛行機と新幹線の組み合わせを検討中である。また、旅行期間は2泊3日を想定している。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の兄弟が旅行に行く。-旅行の行き先は東日本で冬の時期に訪問する予定である。-兄弟2名で行く旅行である。\n-旅行先は宮崎県に決定した。-宮崎の見どころは青島神社、サンメッセ日南、鵜戸神宮、飫肥城跡、高千穂の夜神楽である。\n--Answer--Bは50歳の女性であり、夫と旅行に行く予定である。旅行先は仙臺に決定した。Bが望むことは、以下の通りである。-牛タンを食すこと--BとAの会話から、Bにとって牛は好物であることが分かる。よって、「牛」というキーワードを用いて検索を行うことが望ましい。--また、Aが「牛」の種類を尋ねていることから、「定番」や「有名」などと組み合わせることで、より適切な店舗を見つけることができるだろう。---例:「牛定番有名」-フグ料理を堪能すること--AはBに、フクの「てっちり」が美味しいという情報を伝えている。この情報に基づき、「てつ」、「ちり」といった単語と「フグ」などの組み合わせで検索を行えば、適切な飲食店を見つけられるだろう。-仙台の伝統工芸品を購入すること---AはBに対して、「こけし」や「和紙」といった伝統工芸品を販売しているお店の情報を提供している。これらの単語を用いて検索を行うことで、Bが望む商品を見つけることができるだろう。\nAはBに対して、東京都内の和雑貨店を紹介する。Bはこだわりのある和小物を探しているようだ。Aは手始めに、伝統工芸のこぎん刺しで有名な青森県弘前市の「嶋田商店」を紹介した。ここのお勧め商品は「こげ茶色の籠バッグ」である。",
+        "chosen_dialogue_summary": "AとB、2人の女性が東北地方を旅行する計画を立てている。目的地は、宮城県の青葉城、秋田県の大曲花火大会、岩手県の一関市、山形県の中山町、福島県会津若松市である。それぞれの場所で、歴史的な建造物や自然景観、文化的なイベントなどを楽しむことができそうだ。また、食事や買い物も楽しみの1つであるようで、おいしいご当地グルメや特産品なども紹介されている。2人は、旅行を通じて新たな発見や感動を味わい、思い出に残る旅になることを期待している。",
+        "rejected_dialogue_summary": "A（男性）はB（女性）に対し、東京の和風小間物屋を案内したいと申し出る。Bは、質の高い和の小道具を求めている。Aはまず、弘前の「シマダショウテン」で販売されている、藍染めの風呂敷や手ぬぐいを提案した。A:Bさん、今日は東京でのおすすめスポットをご紹介しますね。とても素敵な場所があるんですよ。B:ええ、ぜひ教えてください。私は日本の文化に興味があるので、どこにでも行きたいと思っています。特に手作りの小さなものが好きなんです。どこに行けばいいですか？A：わかりました。東京にはたくさんの素晴らしい場所がありますが、私のお気に入りの場所の一つが、浅草にある「伝法院通り」です。この通りには、昔ながらの職人たちが作った美しい手仕事の品物がたくさん並んでいますよ。例えば、「藍色」に染めた布製品や、職人の手で作られた「漆塗り」の器などが見つかるかもしれません。私が最近気に入っているのは、「手描き」の絵が描かれた「陶器」の小皿です。これらは全て、熟練した職人が時間をかけて丁寧に作り上げたもので、見ているだけで心が癒されますよ。また、この通りでは、江戸時代から伝わる「木版画」の技法を使った「浮世絵」も見ることができます。色鮮やかで繊細な描写が特徴で、一枚一枚が芸術作品のように美しく仕上げられています。このような美術品を見ていると、時間を忘れてしまうほどですよ。そして、最後に紹介しておきたいのですが、この通りの近くには、「和菓子屋」さんもあります。そこで売られている「どら焼き」は絶品で、私もよく買いに行くのですが、ふんわりとした生地に甘いあんこがたっぷり詰まっていて、食べると幸せな気持ちになれます。また、店頭には季節の果物"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に東日本の冬の旅行に行く予定である。彼の希望はリラクゼーションを得ることであり、屋内の場所であることが望ましい。また、彼は科学や文学に関心を持っている。\n##Q1###A1-1.Bは50歳の女性であり、夫と旅行に行く予定である。Bが訪れたい場所は「箱根本箱」であると述べているが、これはどのような施設なのか不明瞭であるため、Aは具体的な名称を聞き出そうとしている。ここでAが「アン」という名前を挙げているのは、おそらく「安野光雄」と呼ばれるイラストレーターを指しているものと思われる。彼は多くの作品を手掛けており、その中には「失踪日記」や「ひらけ!ポンキッキ」などがある。また、彼は独特なタッチで描かれたキャラクターが特徴的であり、彼の作品を見たことがある人も多いのではないだろうか。以上のことから、BとAの会話からは、2人が共通の関心を持っていることがうかがえる。さらに、両者は互いの意見を尊重し合いながら、旅行プランを立てている様子が見て取れる。全体として、この対談は友好的な雰囲気の中で行われていることが伺える。###Q2####A2-2.この文章では、宮崎駿監督の映画「千と千尋の神隠し」が取り上げられている。この映画は2001年に公開され、興行収入は308億円を記録し、日本映画の歴代1位を獲得した。物語の舞台は現実世界と異世界が混ざり合った不思議な世界であり、一人の少女が両親とともに湯屋を訪れるところから始まる。そこで少女は湯婆婆と名乗る魔女に「ハク」と名付けられ、働くことを強いられる。しかし、彼女は次第にこの世界に馴染んでいき、様々な人々との出会いを通じて成長していく。最終的には、少女の勇気と決断力が試されることになり、ハッピーエンドで終わる。####Q3#####A3-3.「天空の城ラピュタ」の主人公であるパズーとシータは、それぞれ異なる\n-50歳の男性が一人旅をしている。-旅行先は宮城県。\n--End--",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoistravelingaloneinMiyagiPrefecture.Heisinterestedinscienceandliterature,andhewantstofindaplacewherehecanrelaxindoors.Oneoftheplaceshewouldliketovisitis\"HakoneHakone,\"butitisnotclearwhatkindoffacilitythisis,soAaskshimformoredetails.Aalsomentionsthename\"An,\"whichisprobablyreferringtotheillustrator\"MitsuoAnno.\"Hehasworkedonmanyworks,including\"MissingDiary\"and\"Ponkikki.\"Hischaractersarecharacterizedbytheiruniquetouch.FromtheconversationbetweenBandA,itcanbeseenthattheyshareacommoninterest.Theyalsorespecteachother'sopinionsandworktogethertoplantheirtrip.Overall,thedialogueisconductedinafriendlyatmosphere.",
+        "rejected_dialogue_summary": "Bisa50-year-oldmanwhoplanstotraveltotheeastofJapanwithhisbrother.Hewantstorelaxandprefersindoorlocations.Additionally,heisinterestedinscienceandliterature."
+    },
+    {
+        "all_short_dialogue_summary": "-2人は兄弟である。-旅行の目的はリラクゼーションを得ることである。\n-50歳以上の男性と女性のカップルが秋に宮崎県を訪れる。-旅行の目的は自然を楽しむことと文化を学ぶことである。--Example3--A:こんにちは、ご注文は何になさいますか？B:おすすめを教えて下さい。A:わかりました、おすすめですね。どこまでお伺いしましょうか。まずは、ご予算はいかがなされておりますか?B:一人5,000円くらいでしたいと思っています。A:はっぴゃ。ではおいしいものをお紹介させていただきましょう。今の時期であげると、秋の食材が豊富にそろったメニューがいくつかなじんだけですが、今回は一番人気の高い「秋のフルコース」をお勧めいたします。季節の野菜や魚、肉など、様々な料理が並び、目でも楽しく、口で甘く美味しく、食べてもまた美容力アップの効果が期待できちゅうから、女性に大変好評なんですね。もしお食事の量が少ないな、とおもいましたら、一般的にメインを一品、サイドを二品ほどお選びくださいませ。お飲み物は生ビール、スパークリングウォーター、ジャスムティ、紅茶、コーヒーといったものが、お\n-50代の夫婦二人で旅行を計画している。-箱根方面に行きたいと思い、牛タンの美術館へ行くことに決めそれに合わせ、仙台の観光名所を見学し、民俗工芸品を購入する。\n50歳の女性であるBさんは、友人と旅行に行くために、青森県のこぎん刺しを購入することを検討している。BさんとAさんの会話では、Bさんがこげしに関心を持っていることが明らかになっている。AさんはBさんの要請に応じて、七つ星の紙を買うことができる店を勧めている。BさんはAさんに質問をし、Aさんが答えるという形でコミュニケーションが行われている。",
+        "chosen_dialogue_summary": "Thiscoupleisintheir50s.TheyplantotraveltoAomoriPrefecturetobuykoginembroidery,atraditionalhandicraftfromtheregion.TheconversationbetweenBandArevealsthatBisinterestedinthiscraft.AofferstohelpBfindastorewhereshecanbuyseven-starpaper.BasksAquestionsandreceivesanswers,creatingadialogue.",
+        "rejected_dialogue_summary": "Bはこけしに興味を持っており、こだわりのあるものを探している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に、12月に宮崎県を訪れる予定だ。目的は東日本大震災の被害を受けた地域の復興を支援するためである。また、彼はこの旅をきっかけに家族との絆を深めることも望んでいる。具体的な行き先はまだ決まっていないため、旅行会社の担当者が彼の希望を聞きながら適切なプランを提供する必要がある。Bが特に関心を示したのは、被災地の現状を知ることと、地元の人々と交流することである。これらのニーズを満たすためには、現地でのボランティア活動や地域イベントへの参加などが考えられる。さらに、家族での旅行であることを考慮すると、宿泊施設や交通手段の確保も重要な要素となる。以上の点を踏まえると、Bにとって最適な旅程は以下のようなものになるだろう。1.初日:宮崎空港に到着後、レンタカーを借りて移動。まず向かうのは南三陸町である。この町は2011年の津波で甚大な被災を受け、多くの住民が避難生活を余儀なくされた。現在は復旧作業が進められており、地域再生に向けた取り組みが行われている。ここでBたちはボランティアに参加する。瓦礫の撤去や清掃活動など、手伝えることはたくさんあるだろう。夜は近くの民宿に泊まる。2.2日目:朝食を済ませたら、次は気仙沼市に向かおう。この街は漁業の町として知られ、豊かな海産物に恵まれている。しかし、津波の影響で多くの水産加工場や船が破壊され、経済的な打撃を被った。今でもその爪痕は残っているが、新しい船や工場が建て直されつつある。この日も引き続きボラントイアを続ける。昼食は名物のフカヒレラーメンを食べる。午後は地\nAは宮崎県出身の20代前半の女性である。Bは東京都在住の30代半ばの男性である。今回の旅行はBが友人と共に行く予定であり、Aの知り合いであるBから旅行プランの提案を依頼された。主な目的は温泉を楽しむことであるが、その他にグルメやアクティビティなども楽しんでみたいという希望がある。また、旅行費用は抑えたいという意向もある。以上の要素を踏まえると、以下のような旅行が考えられる。・日程：3泊4日・行き先：霧島、指宿、鹿児島市内、屋久島の4つのエリアを巡る※1日目は鹿屋市のホテルに宿泊し、その後は各地を移動する。※2日目の午前中は霜降高原牧場で馬と触れ合う。午後からは指原で砂蒸し風呂に入る。夕食は屋台村で鹿肉や黒豚など地元の食材を使った料理を堪能する。夜は砂むし会館「砂楽」に泊まり、砂浴びをしつつ夜景を眺める。・交通手段：レンタカーを借りて移動し、高千穂峡や知覧武家屋敷庭園などの観光スポットを訪れる。宿の予約は自分たちで行う。以上がAが考えた旅行内容である。これに対して、Bからは以下の意見が寄せられた。「霰と霙の違いがよく分からない」「黒い砂浜のビーチが見たい」これを受けて、改めて以下のように旅行スケジュールを調整することになった。2泊3日の旅行となり、1泊目と2泊目の宿はそれぞれ霹靂と鬼怒川に決定した。3日間の行程は次のようになる。初日：羽田空港から福岡空港まで飛行機で移動。そこからバスに乗り換えて、黒川温泉に向かう。その後、地獄の釜戸\n-旅行の目的は秋に行くことで、旅行先は箱根本店である。-夕食はフクが入ったチリスープである。-また、お土産を買いに行く予定である。",
+        "chosen_dialogue_summary": "AとBとCの3人は、秋に箱根の山を歩く旅行を計画している。旅行期間は2週間で、目的地は京都と奈良の2つである。旅行中の予算は一人当たり10万円で、そのうちの半分は食費に充てられる。また、各自が持参する荷物はスーツケース1つとリュックサック1つの合計3つまでとし、重さは20kg以内に収めること。そして、移動は電車やバスなどの公共交通機関を利用することが望ましい。なお、天候によっては山登りができない場合があるので、予備日を設けることも検討している。以上のような条件のもとで、彼らは旅行に向けて準備を進めることにした。まず、旅先の情報収集から始めた。インターネットや旅行ガイドブックを活用し、京都の寺社仏閣や名所旧跡、そして伝統工芸品などについて詳しく調べた。さらに、日本の歴史や文化についても学び、より深い理解を得るために勉強会を開いた。その結果、京都での滞在期間を延長することに決めた。次に、お金の管理について話し合った。現金やクレジットカード、電子マネーなどをどのように使い分けるかを決め、お金に関するトラブルを避けるための対策を講じた。",
+        "rejected_dialogue_summary": "箱根旅行で秋の景色を楽しみ、フグのチリソーススープを味わい、おみやげを購入する。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的はリラクゼーションである。-兄弟で行く。\n-ユーザーは50歳以上の男性である2.ツアーの日程は2022年9月30日から10月2日までの2泊3日である。-旅行の目的は家族との旅行であり、子供が2人いる3.交通手段は新幹線とレンタカーを利用する。-新幹線は東京駅から出発し、新潟駅で乗り換える4.宿泊施設は2箇所あり、1泊目はホテルゆとりろ洞爺湖に宿泊する-ホテルの部屋タイプはツインルームを希望する。朝食付きのプランを予約すること。5.レンタカーはトヨタのプリウスαを借りる。-車の色はシルバーを選ぶこと6.観光スポットは以下の通り。-登別地獄谷-洞龍温泉-ニッカウヰスキー余市蒸溜所-小樽運河-札幌市時計台-サッポロビール博物館-大倉山ジャンプ競技場\n--Summary2--Bさんは、東京都在住の40代男性である。旅行先は北海道の小樽を希望している。家族構成は妻と子ども2人の4人家族であり、家族全員で行く予定となっている。食事は和食を好み、寿司や刺身などをよく食べる。飲み物はビールや焼酎を飲むことが多く、甘いものはあまり好きではない。宿泊施設はホテルや旅館などに泊まりたいと思っている。--Recommendation--A.旅行プランの提案B.食事のオススメC.お土産の選び方D.観光スポットの紹介E.アクティビティの予約方法F.交通手段の選択G.地元のグルメ情報H.イベントのスケジュールI.天気予報の確認J.注意事項の説明K.キャンセルポリシーの確認\nAはBに対し、他の店舗のこだわりや特徴を説明している。Bはその説明を聞いた後、「そうですか」と肯定的な反応を示している。また、「はい」という返事をしていることから、Aの話をしっかりと聞いている様子が伺える。",
+        "chosen_dialogue_summary": "A:では、こちらの商品はどうでしょうか？B:はい、ありがとうございます。それはとても興味深いですね。私が探しているものとは少し違うかもしれませんが、ぜひ詳しく教えていただきたいです。",
+        "rejected_dialogue_summary": "AさんとBさんの会話は、BさんがAさんの店に興味を持っていることがわかる。AさんはBさんに対して、自分のお店の魅力を伝えようとしているようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は家族旅行である。-行き先は「宮崎県」である。-時期は12月である。\n宮城に住む学生のグループが旅行に行くことにした。旅先は宮崎県である。彼らは博物館巡りと牛肉を食べることを目的としている。\n\n-50歳以上の女性である。-お土産を購入することが好きである。特にお気に入りなのは、東日本大震災の復興のために作られた「しあわせ運ぶ鳥」である。この鳥は幸せを運んでくれると言われている。-東北地方の文化や歴史に関心があり、仙石線沿線の散策を楽しんでいる。",
+        "chosen_dialogue_summary": "Aは、家族と旅行をし、宮﨑県を訪れ、12月に行った。Bは、50歳以上の女性で、お土産を購入することが好きで、特にお気に入りなのは、東日本大震災の復興のために作られた「しあわせ運んぶ鳥」である。",
+        "rejected_dialogue_summary": "-目的：家族で旅行すること。-場所：宮﨑県-季節：冬（１２月）-内容：学生たちが、美術館めぐりや牛丼を楽しみに、宮島県を訪れる旅に出かける。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性である。彼は兄弟と一緒に、12月に宮崎県を訪れる予定だ。冬の時期に雪が降る地域であるため、室内で過ごせる施設を探している。Bはいくつかの選択肢の中から、科学や文学に関心があるため、それらの分野に特化した資料や展示物が豊富に揃っている場所に行くことを希望している。\n--Answer---A:ま島﨑藤村っていうま昔の人ですね。-B:あ、そんなってくださいましたか。-A:その人に関する展示であるいは、あとまあ漫画家さんですね、私存じ上げないですけれども、いがらしみきおといゅうん人のなんか作品とかも飾っているゆぅますから、まぁ幅広くにせぇ、わかりゃ、昭和時代の作家サンかラちょぉろこの今の時代の、作家サンまで、色々と、居蔵しめているズィェスだから、はま、楽しめてるといえば、なかなか、もしかしてないかと思いますけれども。-B:あー、なるほど。-A:まず、そちらに、アンパンマンミュージアムとか。-Ｂ:あー。-Ａ:へへとちょっとアンパンマンのミュージアムはちょっと、子供つぽすぎませんかな。-Ｂ:そうですか。-Ａ:そーですねー、えっ、じゃ、歴史民俗資料館とかな。-ｂ:ああ。-a:と、そうね、自然標本館であるいは、美術館、天文台などそんなものがございましょけど。-b:はー。-a:どうでしょー？どーいったものがおすきでしか。-ｂ:そう、ねえ、美术餐行きたい\n\n-【タイトル】2人組の旅行プランを提言するために、旅行先の候補地を絞り込むための質問を投げかける-【セリフ1】A:とりあえず、どこか行き先を決めたいなと思っているんですが、B:おお、いいですよ。-AはBと旅行に行く予定を立てている-【質疑応答】A：どこに行こうか迷っているB：いいよと答えている。-ここでは、BがAの発言に対して肯定的な反応を示していることが分かる。-【会話の続き】A：「じゃぁ、次はどこにしようか。」B：「そうだねぇ。どこが良いかなぁ？」",
+        "chosen_dialogue_summary": "AさんはBさんと共に旅行を計画しており、行先に迷っています。そこでBさんは「どこでも良いよ。」と返事をしています。次にどこへ行くかを話し合うことになりました。-",
+        "rejected_dialogue_summary": "AがBに旅行の計画について相談している様子が描かれている。Aは行先に迷っており、BはAの提案に賛成しているようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人で冬に宮崎県を訪れる。-兄弟と一緒に、青森城跡やスリーM仙臺市科學館などを見学する予定である。\n例1ユーザBは50歳以上の男性で一人旅を希望している。観たい場所はオリンピック博物館である。例2BとCは学生で、一緒に東京へ旅行に行く予定である。東京で見たいものは東京スカイツリーである。\n--例題3--A:B:--解答--\n-50歳の女性一人で東京都内から旅行に来ている。-お土産を買う予定である。-こだわりは特になく、ただし、東日本大震災の復興支援のために何かを購入することを希望している。-旅行の行程は以下の通りである。10:30~19:00:東北地方の文化に触れる。-具体的には、仙山線に乗車して、山寺を訪れた後、伊達政宗ゆかりの地を散策する。-山寺では、青龍寺と立石寺に立ち寄る。-青龍という寺院の名前から、龍の彫刻や絵画を探す。-龍は中国の伝説上の生き物であり、古代中国では皇帝のシンボルとされていた。-日本でも、仏教とともに中国から伝わったとされる。-中国の歴史書「史記」によると、紀元前3世紀に秦の始皇陵の地下宮殿に、黄金の龍が描かれた壁画があったという。-この龍は「黄龍」と呼ばれ、中国で最も神聖な動物の一つとされている。-「黄」という漢字には、「太陽の光」や「金色」の意味がある。-一方、「龍」は、「竜」とも書く。-竜は、日本では「龍神」として信仰されており、水の神様として祀られることが多い。-水は生命の源であり、日本人にとって非常に大切なものであるため、竜神は人々に恵みをもたらす存在とされてきた。-特に雨を降らせる力があると信じられ、農耕や漁業の守り神として崇められている。-なお、日本の天皇家の紋章である「十六八重表菊」にも竜が使われている。-菊は日本の国花であり、「皇室の象徴」とされることがある。",
+        "chosen_dialogue_summary": "A:50歳のB:女性が1人で旅行中。B:東京都から来た。目的地は仙台市。予算は10,000円。行きたいところは青葉城。興味のある分野は自然、文化、伝統工芸品、食べ物、地元の名産品。好みの季節は春、夏、秋、冬。希望する宿泊施設はホテル、旅館、民宿、ゲストハウス、ホステル、カプセルホテル。交通手段は電車、バス、タクシー、レンタカー、徒歩。",
+        "rejected_dialogue_summary": "A:50歳のBは女性で、CとDとEとFとGとHとIとJとKとLとMとNとOとPとQとRとSとTとUとVとWとXとYとZとAAとABとACとADとAEとAFとAGとAHとAIとAJとAKとALとAMとANとAOとAPとAQとARとASとATとAUとAVとAWとAXとAYとAZとBAとBBとBCとBDとBEとBFとBGとBHとBIとBJとBKとBLとBMとBNとBOとBPとBQとBRとBSとBTとBUとBVとBWとBXとBYと"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-休暇を過ごすため-家族や友人と一緒に行く-兄弟と行く予定-旦那さんと息子さん-年齢は不明-おそらく20代後半から30代前半-子供は小学生以下-息子さんは2歳から3歳-幼稚園や保育園には通っていない-保護者同伴が必要-親子で楽しめる施設が好ましい-遊園地やテーマパーク、動物園、水族館などが候補-動物に触れ合える場所-ペンギンやアザラシ、イルカなど-飼育員の解説を聞きながら観察できる-普段は見られない生態や行動を学べる-小さな子どもでも理解しやすい内容-わかりやすく説明してくれるスタッフがいる-知識が豊富で親切な人-好奇心旺盛な子供たちを飽きさせない工夫がされている-イベントやショーなどがある-体験型のプログラムが充実している\n1.50歳以上の男性2人組である2.旅行の目的は美味しいものを食べること3.食べたいものは牛肉4.牛肉の部位は問わない5.お酒は飲まない\n-旅行の目的は夫の誕生日を祝うことである。-夫婦で行く旅行であるため、夫が喜ぶような場所を選ぶ必要がある。-また、妻の意向も尊重する必要があり、会話の中で妻が興奮したり喜んだりするような要素を盛り込むことが望ましい。\n--Answer--Bは東日本大震災の被災地を訪れることを希望している。",
+        "chosen_dialogue_summary": "-目的:家族旅行-日程:7月下旬-場所:東北地方(岩手県、宮城県)-行き先:陸前高田市、大船渡市、気仙沼市-見どころ:津波被害の跡地、復興の様子-アクティビティ:地元の食材を使った料理教室、伝統工芸品作り-宿泊:民宿、ゲストハウス-移動手段:レンタカー、公共交通機関-予算:1人あたり5万円-注意点:足場の悪い場所もあるので、履き慣れた靴を用意すること。天候の変化に備えて、雨具や防寒具も持参する。現地のルールやマナーを守り、周囲への配慮を忘れずに。",
+        "rejected_dialogue_summary": "BislookingforwardtovisitingtheaffectedareasoftheGreatEastJapanEarthquake."
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が東日本大震災の被災地を訪問することを検討している。-被災者支援のボランティア活動に参加する予定である。\nBは「仙石線」に乗ることを希望している。Bが好むのは「海が見える風景」である。AはBに対して「松島」という場所を勧める。理由としては、「海の眺めが良い」からである。また、「松尾芭蕉」が「奥の細道」で訪れた場所でもある。\n##Example3###DialogueA:こんにちは。ご注文は何になさいますか？B:おばあちゃんの誕生日プレゼントを買いたいのですが、お花を贈る予定です。A：お花ですか。花束やアレンジメント、鉢植えなどお好みの種類を教えてください。B：花言葉を大切にしているので、アジサイの花が入った花瓶が欲しいと思っているんですが、大きさはどれくらいですか？A：大きさはいくつかあり、SサイズからLサイズまでご用意しています。お花の数や色合いも異なるので、お選び頂く際にご参考にして頂けると嬉しく思っています。また、お届け先の住所や受け取り希望日時も合わせてお伺いします。###SummaryBislookingforagiftfortheirgrandmother'sbirthdayandwantstosendflowers.Theyareinterestedinanarrangementwithhydrangeas,whichhaveaspecialmeaningtothem.Aoffersdifferentsizesandtypesofarrangements,andasksfortherecipient'saddressanddeliverydate.\n--AnotherExample--A：では、具体的にどのようなものをご覧になりたいですか？B：うーん。たとえば、動物園とか、そういうものはどうでしょう。A：「あー、そうですか。では、そのようなご希望に沿ったお薦めのスポットをいくつかご紹介させていただきたいのですが」（中略）A：それから、もう一つお聞きしたいのですがお子様は何歳くらいですか?B：はい、私の息子は小学校二年生で、一緒に遊べるような施設を探しているんです。A：「そうですか。それでしたら、ぜひとも足を運んでみてほしいところがございます」B：「それは何処ですか？」（以下省略）【要約】子供が小学生の年齢であるため、子供と一緒に楽しめる場所を検討している。",
+        "chosen_dialogue_summary": "##Dialogue-A:Hello.Whatwouldyouliketoorder?-B:I'mlookingforagiftformygrandmother'sbirthday,andIwanttosendflowers.-Iwaswonderingifyoucouldtellmewhatkindofflowersyouprefer,suchasabouquet,anarrangement,orapottedplant.I'minterestedinahydrangeaarrangementbecauseithasaspecialmeaningtome.Whatsizedoyouhave?Ihaveseveralsizes,fromStoL,withdifferentnumbersandcolorcombinations.Pleaseletmeknowtherecipient'saddressanddeliverydateaswell.##SummaryBislookingtobuyabirthdaypresentfortheirgrandmotherandwantstogiveherflowers.TheyareparticularlyinterestedtoreceiveaflowerarrangementwithHydrangeae,whichhaveaparticularmeaningforthem.Aoffersdifferentsizesandtypesofarrangementsandasksfortheaddressofthepersonreceivingtheflowersandthedateofdelivery.",
+        "rejected_dialogue_summary": "--Example4--Dialogue:A:Hello!HowcanIhelpyoutoday?B:I'mlookingforagiftformymom'sbirthday,andIwaswonderingifyouhadanysuggestionsforflowers.A:Ofcourse!Wehaveavarietyofflowerarrangementsandbouquetstochoosefrom.B:That'sgreat!I'mthinkingofgettingherabouquetofroses,butIwanttomakesurethey'refreshandlong-lasting.Whatdoyourecommend?A:Iwouldsuggestgettingthemfromareputableflorist,astheywillbeabletoprovideyouwithhigh-qualityflowersthatwilllastalongtime.Also,it'simportanttoconsidertheoccasionandtherecipient'spreferenceswhenchoosingaflowerarrangement.Forexample,redrosesareoftenassociatedwithloveandpassion,whilewhiterosessymbolizepurityandinnocence.Byconsideringthesefactors,youcanensurethatyourmomwillreceiveabeautifulandmeaningfulbouquetthatshewillcherishforyearstocome.Summary:Thespeakerwantstobuyflowersfortheirmotherforherbirthday.Theyaskthelistenerforsuggestionsandaretoldthattherearemanyoptionsavailable.Thelistenerrecommendsgettingtheflowersfromanestablishedflowershoptoensurequalityandlongevity.Additionally,theysuggestconsideringthemeaningbehinddifferenttypesofflowersandchoosingonesthatareappropriatefortheeventandrecipient."
+    },
+    {
+        "all_short_dialogue_summary": "50歳の兄弟二人が冬に宮崎県を訪れる予定である。兄弟のうち一人は東日本大震災の被災者であり、被害の大きさや復興の状況を知るため、また、当時を振り返るために、現地を視察することを希望している。もう一人の兄弟は日ごろから自然に関する知識を深めたいと考えており、科学的な知見を得ることを目的としている。二人はそれぞれの目的を達成するために、二つの施設に足を運ぶことになる。\n宮城に行く予定である。50歳以上の男性が一人で行く。\nAさんは、Bさんに、東北地方の旅行プランを提案している。Bさんが、宮城県の東松島市を訪れたいという希望を伝えると、Aさんから、震災復興祈念公園、野蒜海岸、矢本海浜緑地公園という3つのスポットが紹介される。Aさんが、これらの場所について、詳しく説明する。\n【質問】-AがBに伝えたい情報は何ですか？--Answer--AはBに対して、「しまにき」という店を勧めている。その理由としては、その店では、10:30~19:00まで営業していることと、店内で絵を描いたりすることができるからである。",
+        "chosen_dialogue_summary": "Bは、Cという店に興味を持っている。理由は、この店は10時30分から19時まで開いているからだ。また、絵が描けるという点も魅力的である。",
+        "rejected_dialogue_summary": "##1.文書の概要この文書は、ある兄弟が冬の宮﨑県への旅行を計画していることを伝えるものである。その中で、兄弟の一人であるBが、自然や科学に興味を持っていることが明らかにされている。また、文中では、二人の目的や希望が詳細に述べられており、それらに基づいて、旅行先や目的地が選ばれていることが分かる。具体的には、二人は、地震の影響を受けた地域の現状を確認し、復旧の過程を学ぶことを目指している。そのため、彼らは東京都内にある震源地に近い場所を選んでいる。さらに、兄のAも、弟のBと同様に自然に関心を持っており、彼も弟と一緒に旅行をすることを楽しみにしていることが伝わってくる。以上のように、この文章からは、家族の絆や自然への関心が読み取れる。"
+    },
+    {
+        "all_short_dialogue_summary": "(1)50歳の兄弟が冬に宮崎県へ旅行に行く(2)兄弟2人が旅行に参加する\n\n--Answer--A.ここをやき肉のディッシュであるとかそのようなモノがあるようでありますB.ああ、分かりました分りましたC.お客さま、その牛肉タンを取り扱うお食事処でまあ概ね予想金額4,000円未満であれば大体あるようですD.はあE.まあ例を挙げると今の店舗もございますし牛、イダテノウシタンホンポホンテンサンですねF.他にリキュウニシグチホンシテンでありまた駅のなかであり場所のお望みとかそれと何か特別なG.牛タンでこの料理を食べてみたいとかそんなものがありましたらこちら側で選別して探して参るのですH.が、如何で御座いませうかI.わJ.実は何カ所も<場所>があるのだけれどもK.いや、その名称は分からないのであるがL.きっと何かオリジナル、オリガオルのミュージアムというようなM.モノが存在するという事を<何処か>でN.聞いたことがあるのでO.私はその様な文化的行動を取ってみようと考えて居るP.分かった分かったQ.でしたらまずそこのオリゴルノミューシャムを調べてみて下さいR.少し待って下さるようS.かしら、ちょっと待っていただいてT.オリゴルのミュージヤムと云う物がこっちで紹介出来る場所はU.数少しだけ待つようにV.とりあえずあんのいえという所が在るんですがこちらは御存じですかW.アンという字はどの様に書くのでしょうX.カタナカでアンヌと記すY.このアンのZ.ウン、ウン、ハイ、それは知りませんでしたハイAA.にほんじんこくせんたーというAB.ハイAC.東北の旅館に泊まってから\n##Task2###Task2-1Wewouldlikeyoutoimplementamodelthatcanpredictthenextutteranceinaconversation.Themodelshouldbeabletogenerateresponsesthatarecoherentandrelevanttothepreviousutterancesintheconversation.ThedatasetforthistaskisthesameastheoneforTask1.Youcandownloadthedatasetfrom[here](https://drive.google.com/file/d/1jv2Tq8Ylq2_3QXh7zH8tZp9Xu1gk3Kjg/view?usp=sharing).Themodelwillbeevaluatedbasedonthefollowingmetrics:*BLEUscore*ROUGEscoreTheevaluationscriptcanbefoundin`eval.py`.Youneedtorunthescriptwiththecommand`pythoneval.py--pred_path<path_to_your_predictions>--gold_path./data/dev.jsonl`where`<pathtoyourpredictions>`isapathtoafilethatcontainsthepredictionsinJSONLformat(onepredictionperline).Anexampleoftheformatisshownbelow:```json{\"A\":\"Hello,howareyou?\",...}```Youcanuseanylanguagemodelyouwant.However,werecommendusingatransformer-basedmodel,suchasBERTorRoBERTa,astheyhavebeenshowntoperformwellonvariousNLPtasks.Wealsoprovideapre-trainedmodelinPyTorch,whichyoucanfindin[thisrepository](https://github.com/mahmoud-ahmed/nlp2021-hw2).Youarefreetousethismodeloranyothermodelofyourchoice.Youshouldsubmityourmodelasazipfilecontainingallthenecessaryfilestotrainandevaluatethemodel.YoursubmissionshouldalsocontainaREADMEfilewithinstructionsonhowtoreproduceyourresults.Pleasemakesurethatyoursubmissiondoesnotexceed100MBinsize.Wewillevaluateyourmodelsusingthetestset,andwewillprovidetheresultstoyouaftertheevaluationiscomplete.Goodluck!",
+        "chosen_dialogue_summary": "###Task2.1私たちは、会話の次の発言を予測できるモデルを実装したいと考えている。このモデルは、前述した発話に対して一貫性があり、関連性のある応答を作成できる必要がある。このタスクのためのデータセットはTask1のものと同じである。[ここからダウンロードできる](http://www.example.com)。このモデルの評価は以下のようなメトリクスに基づいて行われる。*BLEUスコア*ROUGEスコアこのスクリプトはeval.pyというファイルに含まれており、コマンドラインから次のように実行することができる。```bashpythoneval.py--pred\\_path<path\\_to\\_your\\_predictions>--gold\\_path./data/dev.jsonl```ここで、`<pathtoyourpredictions>`はJSONL形式で保存されたあなたのモデルが生成した出力のパスを表す。例えば、次のような形式になっているはずだ。```{\"A\":\"Hello,howareyou?\",...}```どんな言語モデルを使っても構わない。ただし、様々なNLPタスクで良好なパフォーマンスを示すことが証明されている、BERTやRoBERTAなどのTransformerベースのモデルを使用することをお勧めする。また、Pytorchで事前学習済みモデルも提供しているので、[こちらのリポジトリ](https://github.com/mahmoud-ahmed/nlp2021-hw2)を参照してほしい。あなたは自由にこのモデルまたは他のモデルをお選びいただける。トレーニングと評価のために必要なすべてのファイルが含まれているzipファイルを提出してください。提出物には、結果を再現するための手順を記載したREADMEファイルも同梱すること。サイズが100MBを超えないようご注意ください。テストセットを用いてあなたのモデルを評価し、結果を提出者にお知らせします。",
+        "rejected_dialogue_summary": "モデルは、会話の前の発言に一貫性があり、関連性のある応答を予測できるようにする必要があります。このタスクのデータセットはTask1のものと同じです。データセットをダウンロードするには、[ここから](http://)をクリックします。モデルはBLEUスコアとROUGESコアに基づいて評価されます。##Task2.1##以下のようなモデルを実装したいと思います。会話における次の発話を推定できるモデルを作りたい。そのモデルの生成する応対は前回の話し合いにおける前話に整合性があると同時に適切なものでなければならない。本課題で使用するデータはTask1と同じものである。Datasetcanbedownloadedfrom[here](https://drive.google.com/file/d/3/j/v2/T/q8/Y/l/QX/h7/z/H8/t/Z/p9/X/u1/g/k3//K/Jg/view/?usp=sharing)。モデルがBLEUScoreとROUGEscoreに基いて判定される。評価スクリプトはeval.pyで見つけることができる。あなたはコマンド`pythoneval.py--pred_path<pathtoyourpredictions>--gold_path./data/dev.jsonl`を実行することによってそれを走らせる必要がある。`<path-to-your-predictions>`はJSONL形式(1つの推論あたり)に対するあなたの推測へのパスを指すファイルを示す。フォーマットの例が以下に示されている。```json{\"A\":\"Hello,howareyou?\",...}```どんな言語モデルを使ってもかまわない。しかし、BERTやRoBERTAのようなトランスフォーマーベースのモデルをお勧めする。なぜなら、それらは様々なNLPタスクにおいて良い成績を収めているからだ。我々はまた、Pytorchにおける事前学習済みモデルも提供している。それは[このリポ"
+    }
+]

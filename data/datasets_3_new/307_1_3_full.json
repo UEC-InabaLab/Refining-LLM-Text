@@ -1,0 +1,672 @@
+[
+    {
+        "all_short_dialogue_summary": "--Answer--Bは温泉に行くことを考えていて、冬の時期に一人旅をしようとしている。具体的に行く場所は決めていない。",
+        "chosen_dialogue_summary": "(1)Bは冬に1人で旅行に行きたいと考えている。(2)行き先はまだ決まっていない。(3)温泉に浸かりたいと思っている。",
+        "rejected_dialogue_summary": "##1.要約の例-Bは一人で冬に旅行に行きたいと考えている。行き先はまだ決まっていないが、旅行先の候補として、北海道、沖縄、箱根が挙げられている。-冬の旅行を計画しているBだが、まだ具体的な行先を決めておらず、迷っている様子がうかがえる。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人旅を検討している。-旅行期間は冬で温泉を楽しむことを希望している。-長崎を訪れたいが行き先は未定である。",
+        "chosen_dialogue_summary": "以下はBが提案した旅行プランである．Aの意見を踏まえて，Bは以下のように回答を修正する必要がある．##Bの回答###旅行期間冬に旅行を計画しているが，旅行先の気候を考慮し，1月から3月の間で日程を調整することが望ましい。###温泉地以下に，国内の有名な温泉地をいくつか挙げる。1.草津温泉(群馬県)2.箱根温露天風呂3.別府地獄めぐり4.有馬日本三古泉の一つ5.道後愛媛県6.下田伊豆半島7.登別北海道8.定山渓札幌市9.白浜和歌山県これらの温地はそれぞれ異なる特徴を持っており，訪れる価値がある。例えば，草津は日本一の湧出量を誇り，毎分32,300リットルの源泉が沸き出している。また，箱根は美しい自然に囲まれた温浴施設が多数あり，露天温に浸かりながら四季折々の景色を眺めることができる。別府は地獄谷と呼ばれる景勝地があり，地熱を利用した様々なアクティビティが楽しめる。有馬は古くから湯治場として栄え，泉質の良さで知られている。道後は松山城の城下町に位置しており，歴史的な街並みと温の両方を味わえる。下田は黒船来航の舞台となった場所であり，海水浴やダイビングなどのマリンスポーツが盛んである。登別は火山の恩恵を受け，硫黄泉や塩化物泉など多種多様な泉質の温を堪能できる。定山渓は札幌の奥座敷として知られ，豊かな自然の中でリラックスした時間を過ごす",
+        "rejected_dialogue_summary": "「50代女性の冬の一人旅、長﨑の温泉を楽しみに行きたい。」"
+    },
+    {
+        "all_short_dialogue_summary": "##まとめ-まだまだ精度が低い",
+        "chosen_dialogue_summary": "``````##評価用データセット-1文のテキスト-文章の出典元###A####1>私は温泉が好きです。なぜなら、ゆっくりとした時間を過ごすことができるからです。また、自然に囲まれた環境でリラックスすることもできます。さらに、美しい景色を眺めることができ、心身ともにリフレッシュすることができます。####2>私はアウトドアが大好きで、特にキャンプが好きなのですが、最近はコロナの影響でなかなか外出ができないので、自宅でできるアクティビティを探していました。そこで見つけたのが、DIYでキャンピングカーを作るというアイデアでした。最初は難しそうだと思いましたが、調べてみると意外と簡単に作れることがわかり、早速挑戦してみることにしました。材料はホームセンターで購入し、自分で組み立てていきます。作業は思ったよりも楽しく、完成したときには達成感を感じました。また、このキャンパーは小さくて軽いため、車に積んでどこにでも持っていくことが可能です。これからも、色々な場所で楽しんでいきたいと思います。###B####3私にとって最も印象に残っている旅行先は、カナダのバンクーバーです。この街は自然と都会が融合した素晴らしい場所であり、多様な文化が混ざり合っています。まず、街の中心部にはスタンレーパークという広大な公園があり、散歩やサイクリング、ピクニックなどを楽しむ人々で賑わっていました。この公園から見える海はとても美しく、私は毎日のように訪れていました。また、ダウンタウンにはショッピングモールやレストランがたくさんあり、買い物や食事を楽しみました。その中でも、チャイナタウンは特にお気に入りで、中華料理を食べたり、お土産を買ったりするのが楽しかったです。さらに、この街には先住民の文化も根付いており、",
+        "rejected_dialogue_summary": "##1.要約の前提条件-対象の文章は1文のみとする．複数文の場合はそれぞれ別々の対象とみなす．-出力される文章の長さは20文字以内とする（スペースを除く）．ただし，必要に応じて改行を入れても構わない．また，先頭に「【】」を付与すること．"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は温泉入浴である。-同行人数は1人である。",
+        "chosen_dialogue_summary": "-目的地は、Bである。-宿泊施設の種類は、「旅館・民宿」である-交通手段は「電車・新幹線」であり、日程は3泊4日である###解答例-「目的：B温泉、同伴者：1、交通機関：鉄道、期間：3日」",
+        "rejected_dialogue_summary": "-温泉に入るのが目的の旅行で、一人で行く。"
+    },
+    {
+        "all_short_dialogue_summary": "Q1.どのくらいの期間滞在しますかQ2.ツアーに参加するかどうか決めましたかQ3.長崎のどこに行くかお考えですかA.グラバーガーデンは知りません",
+        "chosen_dialogue_summary": "グラバー邸は行く予定です。##生成モデル###データセットの取得```python#前処理importpandasaspddf=pd.read_csv(\"data.csv\")df.columns=[\"question\",\"answer\"]df.question=df.question.str.lower().str.strip()df[\"question\"]=[x.replace(\"q\",\"\").replace(\"\",\"\")forxinlist(df.question)]df.dropna(inplace=True)df.reset_index(drop=True,inplace=True)#要約データセット作成fromgensim.modelsimportKeyedVectorsword2vec_model=Word2Vec.load(\"GoogleNews-vectors-negative300.bin.gz\")word_vectors=word2vector_model.wvwords=list(word_vectors.vocab.keys())word_index={w:ifori,winenumerate(words)}df['question']=[[wordforwordinx.split()ifword_index.get(word)isnotNone]forindex,rowindf.iterrows()]df.to_csv('train.csv',index=False)```###モデルの学習####GPT-2```bashpythonmain.py--modelgpt2--data_pathtrain.csv--output_pathoutput```",
+        "rejected_dialogue_summary": "グラバー邸を知らない。"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A：こんにちは。今日はいかがお過ごしですかB：おはようございます。良い天気ですねA：はい、そうですね。今度の連休にはどこか旅行に行こうかと思っているんですよB：そうなんですか。どこに行くか決めましたか？A:実はまだどこにしようか悩んでいるんです。もしよかったら、どこがオススメか教えてもらえませんか。B:もちろん！私は温泉が大好きだから、京都の嵐山に行ってみてはどうですか？京都はとても綺麗な街ですよ。A:京都ですか、行ったことがないので一度行って見たかったんです。B:そうでしたか！京都に行ったらぜひ、嵯峨野トロッコ列車に乗って下さい。風情があってすごく素晴らしいです！A：へぇ～、そんな乗り物があったんですね！B：はい！他にも、竹林の道や天龍寺など見どころがたくさんあるので是非一度足を運んでみることをお勧めしますよ！A:それは行くしかないですね！でも、交通手段がわからなくて困っています、、、B:そんな時はタクシーが便利ですし、料金もそれほど高くないと思いますよ。私はいつもそうしてますよ！A：それなら安心ですね！B：あと、御朱印帳を持って行くと良い思い出になると思います！私はずっと集めているんですが、とても楽しくて良いです！あなたも集めてみたらどうでしょう？A：それは良いアイデアですね！！",
+        "chosen_dialogue_summary": "「京都に旅行する際は、温かいお風呂に入り、美しい景色を眺めながら、歴史的な建造物を訪れることができる。交通費は安く、印象深い体験ができる。」#1.要約のためのデータ前処理##2.モデルの構築###3.訓練と評価",
+        "rejected_dialogue_summary": "京都旅行は京都を訪れるのに最適な方法です。京都には美しい街並みや歴史的な建造物が数多くあります。例えば、世界遺産に登録されている清水寺や金閣寺、伏見稲荷大社などがあります。また、伝統的な和菓子や抹茶なども楽しむことができます。さらに、四季折々の風景も魅力的で、春には桜、夏には新緑、秋には紅葉、冬には雪景色など、季節によって異なる美しさを堪能できます。以上のことから、私はこの旅行を非常におすすめいたします。"
+    },
+    {
+        "all_short_dialogue_summary": "#日本語解析##準備```pipinstallmecab-python3python-mspacydownloadja_core_news_smpip3install--upgradegit+https://github.com/neologd/mecab-ipadic-neologidict.git#egg=MeCab-0.996&subdirectory=python```##使い方###コマンドラインで実行する場合1.以下をコピーする2.[準備]の手順でインストールしたモジュールを読み込む3.実行4.結果が表示される```sh#!/usr/bin/envpython#-*-coding:utf-8-*-importsysimportMeCabfrompathlibimportPathsys.path.append(str(Path(__file__).resolve().parents[1]))fromjaconvimportz2h,h2z,to_katakanaif__name__=='__main__':t=''.join(sys.stdin.readlines())print(t)tagger=MeCabe.Tagger()nodes=[tagger.parseToNode(t)]whilenodes:node=nodes.pop(0)whilenode:ifnode.feature.split(',')[0]=='名詞':print(node.surface)nodes.append(node.next)```###スクリプトから呼び出す場合####パッケージ化して使用する方法*[jaconv](http://pythonhosted.org/jaconv/)を使う*文字列をひらがなにするには`h2k`関数を使う###プログラムに組み込みで使用##参考[自然言語処理のための日本語テキスト処理解析ライブラリ「mecabr-python」](https://qiita.com/yu4u/items/7f2f0e6d4d8d5f27e39f)",
+        "chosen_dialogue_summary": "Aは、Bが好きなものを知りたいと思い、インターネットで調べることにした。BはAの質問に答えるために、自分が興味を持っていることや、過去に体験したことについて話す。例えば、旅行が好きで、国内外のさまざまな場所を訪れたことがあると言う。また、美術館や博物館に行くことも好きだと言う。さらに、音楽や映画、スポーツなど、幅広い分野に関心を持っていると言う。これらの情報から、AがBについて理解を深めることができる。",
+        "rejected_dialogue_summary": "##概要##特徴"
+    },
+    {
+        "all_short_dialogue_summary": "Aさんは、Bさんに対して「こんにちは」と挨拶をし、本日の利用に感謝の意を示した。Bさんは「本日も利用してくれてありがとう」と応じた。続いてAさんが「今日の旅行はどうするか」と尋ねたところ、Bさんは「お客さん、温泉に行くことを検討している」と答えた。Aさんも「了解しました」と返答し、続けて「同伴者はいるのか」と質問したところ、「自分だけだ」との返事があった。Aさんは再び「少しだけ待ってほしい」と述べた後、「長野県への旅行」というリクエストを受け入れた。次に、Aさんから「いつごろ行くのか？」と聞かれたので、「冬の時期に」とBさんが答えると、「了解した」とAさんが応答した。その後、AさんはBさんに「少し待つように」と告げたが、その後すぐに、「現在、調査中である」と伝えた。",
+        "chosen_dialogue_summary": "AはBに対し、「今日は旅行を楽しんで」と声をかけた。するとBは「はい、ありがとうございます」と笑顔で答える。さらにAが「どこに行きたいですか」と聞くと、Bは「お風呂に入りたいです」と言った。Aはそれを聞いて「わかりました」と言い、その後「誰と行きますか」と聞いた。するとBは「一人で行こうと思っています」という。次にAはBに「少々お待ち下さい」と言って、長野の旅のリサーチを始めた。続いてAが「いつ頃行きたいのですか？」と問いかけると、「冬がいいです」の答が返ってきた。最後にAから「しばらくお時間を頂戴します」と言われ、調査を続けることになった。**解答例**AisaskingBiftheywouldliketogoonatriptoday,andBrespondsthattheyareconsideringgoingtoahotspring.AthenasksifBwillbetravelingalone,towhichBrepliesyes.Afterabriefpause,AsaystheywilllookintotravelingtoNaganoprefecture.WhenAaskswhenBwantstotravel,Bsaysduringthewinterseason.Finally,afterashortdelayfromA,itisrevealedthatAiscurrentlyresearchingthetrip.",
+        "rejected_dialogue_summary": "Bは、冬季に一人で旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の一人旅で冬に温泉に行くことを考えていて、行く場所は決めていない。グラバー邸に行ってみることにした。",
+        "chosen_dialogue_summary": "Iwanttogotoahotspringinwinterasasolotravelerattheageof13,andIhaven'tdecidedwhereIwillgo.IdecidedtovisitGloverMansion.",
+        "rejected_dialogue_summary": "本文は、Bが一人旅を計画していることを示唆している。具体的には、冬季に日本の温浴施設を訪れることを検討しており、訪問先は未定である。Bは長崎市にある旧外国人居留地の歴史的建造物であるグラバーハウスに興味を示している。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生の少年が冬に一人旅をし、行き先は決めていない。グラバー邸を訪れてみたいと希望している。",
+        "chosen_dialogue_summary": "「冬のひとり旅で行きたい場所は、長崎県の外国人居留地に建てられた洋風建築物である。中でも特に興味があるのは、スコットランド出身の貿易商であるトーマス・ブレーク・グラバ―が住んでいた屋敷で、現在は国の重要文化財に指定されている。」",
+        "rejected_dialogue_summary": "「冬の一人旅で、目的地は未定だが、長崎県のグラバーハウスに行きたい。」"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生が冬に一人旅をし、グラバー邸に行くことを決めた。",
+        "chosen_dialogue_summary": "#要約1中学生の冬の1人旅、目的地は長崎県の旧外国人居留地に残る異国情緒溢れる洋館「グラバーハウス」である。##解説###原文-13:中学1年生の時、冬休みに1週間ほどの海外旅行に行きました。-中学生:ここでいう「海外」は、韓国や台湾などのアジア圏ではなく、ヨーロッパやアメリカといった遠方の国々を指します。具体的には、イギリス、フランス、ドイツ、オーストリア、スイス、スペイン、ポルトガル、アメリカ、カナダ、メキシコ、ブラジル、アルゼンチン、チリ、ペルー、ボリビア、エクアドル、コスタリカ、グアテマラ、キューバ、ジャマイカ、トリニダード・トバゴ、バハマ、ハイチ、セントルシア、ガイアナ、ベリーズ、ホンジュラス、エルサルバドルなどです。なお、当時はインターネットが普及していなかったため、旅行の計画や情報収集はすべて紙のガイドブックや雑誌、新聞、テレビ、ラジオなどを通じて行いました。また、現地での移動手段は主にバスや電車、タクシー、徒歩、自転車などで、宿泊施設はホテルやゲストハウス、ユースホステルなどが中心でした。食事は基本的にレストランやカフェ、ファストフード店、屋台、市場、コンビニエンスストアなどでの外食が多かったですが、時には自炊やホームステイ、民泊などの体験もありました。さらに、語学力はほとんどゼロに等しかったので、英語やフラマン語、ロシア語などを使ってコミュニケーションをとることができず、ジェスチャーやボディーランゲージ、絵文字、写真、地図、辞書、翻訳アプリ、通訳サービスなどに頼りながら、なんとか意思疎通を",
+        "rejected_dialogue_summary": "冬のグラバーハウスを訪れる中学生の旅"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を希望している。冬の時期に、温泉に浸かりたいと思っている。グラバー邸を訪れてみたいと言っている。",
+        "chosen_dialogue_summary": "Bは冬に一人で旅行に行きたいと考えている。目的地は温暖な気候の地域で、かつ、歴史的な建造物を見学したいという希望がある。具体的には、長崎県のグラバーハウスやハウステンボスなどが候補として挙げられている。解答例Bislookingforawarmplacetotravelaloneinwinter.Hewantstoseehistoricalbuildings,suchastheGloverHouseinNagasakiPrefecture.",
+        "rejected_dialogue_summary": "中学生が一人で冬にグラバーハウスに行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "お一人さまで冬に行く。決めていない。グラバーガーデンに行ってみる。13歳。",
+        "chosen_dialogue_summary": "-誰：一人-いつ：冬（季節）-行く場所：グラバー園（名所・旧跡）",
+        "rejected_dialogue_summary": "冬に一人で行く予定はまだ決まっていないが、グラバー園を訪れてみたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "--Conclusion--Tosummarize,theuserwantstotraveltoNagasakiPrefectureinthewinterandisinterestedinvisitingtheGloverGarden,whichisanationallydesignatedimportantculturalproperty.TheuserisalsoconsideringvisitingHuisTenBosch,althoughtheyhaveonlyheardofitbefore.",
+        "chosen_dialogue_summary": "---###解答例>NagasakiPrefectureinwinterandGloverGarden,anationallydesignatedimportantculturalproperty,aretheuser'straveldestinations.TheuserisalsoconsideringvisitingHuisTenBosch,althoughtheyhaveonlyheardofitbefore.---",
+        "rejected_dialogue_summary": "--要約--Bは冬の長崎県を旅行したいと考えており、国指定重要文化財である旧グラバー住宅を訪問することに興味を持っている。また、ユーザーはヒュイス・テン・ボスについても聞いたことがあるが、訪れるかどうかはまだ検討中である。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬に長﨑県の温泉を訪れたいが決まった場所はなく、オススメの場所を教えてもらっている。中学生の入場料は180円である。",
+        "chosen_dialogue_summary": "この文書は、長崎県にある中学校の生徒が一人で旅行に行くことを計画していることを述べている。旅行の目的地はまだ決まっていないが、中学生でも入れる場所があれば知りたいと思っている。また、旅行先は冬の時期に訪れる予定である。さらに、旅費を安く抑えたいので、できるだけ安い宿泊施設や交通手段を探している。",
+        "rejected_dialogue_summary": "長崎県は冬の時期に訪れるのに適している。理由としては、中学生が一人で旅をすることができるからである。"
+    },
+    {
+        "all_short_dialogue_summary": "##Implementation###0.DependenciesThisprojectrequirespython3.7andthefollowingpythonlibrariesinstalled:-spacy==2.1.8-https://spacy.io/usage#models-en_core_web_sm:smallEnglishmodel(Englishonly)-nltk==3.*-tqdm==4.36.0",
+        "chosen_dialogue_summary": "Thisprojectrequirespython3,7andthefollowingpythonlibrariesinstalled:spacy,nltk,andtqdm.【正解文】TheprojectneedsPythonversion2orhigher,alongwiththelibrariesSpacyandNTLK.",
+        "rejected_dialogue_summary": "このプロジェクトは、Python3.7と次のPythonライブラリがインストールされていることを前提としています。-spacy==2.1.8-https://spay.io/usage#models-en_core_web_sm:小さな英語モデル（英語のみ）-nltk==3*-tqdm==4.36.0"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬に長野県の温泉に行くことを検討している。グラバーガーデンやハウス・テン・ボスに行ってみることを希望している。",
+        "chosen_dialogue_summary": "Iama13-year-oldmiddleschoolstudentwhoisconsideringtravelingalone,andIamthinkingofgoingtoahotspringinNaganoPrefectureinwinter.IhopetovisitGraverGardenandHouseTenBos.",
+        "rejected_dialogue_summary": "中学生が一人で冬の信州の湯巡りを計画し、グラバー邸やテンボスを訪れる予定である。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生が一人旅をし、冬に温泉に浸かりたいと思っている。グラバーガーデンと、オランダの街並みを再現したテーマパークのハウス・テン・ボスに行ってみることにした。",
+        "chosen_dialogue_summary": "「グラバー邸とハウステンボスに一人で行く中学生の冬の旅」",
+        "rejected_dialogue_summary": "#生成例1中学生の冬の一人旅で、グラバー園とハウステンボスを訪れた。#解説「中学校の生徒が冬休みに一人で旅行に行き、長崎県の異国情緒あふれるグラヴァー園や、佐世保市のテーマ性のあるハーストンホスに足を運んだ」という趣旨の文章が生成されています。ただし、「一人」と「冬」が入れ替わってしまっています。また、「グラーヴァー」ではなく「グラーバー」となっている点も不正確です。このような誤りをなくすためには、辞書の拡張が必要になります。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅で冬に長﨑県を訪れ、温泉に浸かりたいと希望している。グラバーガーデンとハウス・テン・ボスが挙げられ、前者は入場料180円がかかる。",
+        "chosen_dialogue_summary": "Bは長崎県のグラバー邸に行きたいと考えている。###解答例BisplanningtogototheGloverHouseinNagasakiPrefecture.###提出フォーマット```pythondefsummarize(src):return\"\"```",
+        "rejected_dialogue_summary": "冬の長崎を一人で訪れる50代男性は、入浴を楽しみ、グラバー園やハウステンボスに足を運びたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-長崎に行くことを考えていて、冬に一人旅をすることを希望している。-グラバーガーデンに行ってみることにした。",
+        "chosen_dialogue_summary": "-長崎のグラバー邸を訪れる予定の13歳の生徒は、1人で冬の旅行を計画している。",
+        "rejected_dialogue_summary": "-「グラバー園」は、1863年にイギリス人貿易商のトーマス・ブレーク・グラヴァーが日本で最初の洋風住宅を建てた場所で、現在は国の重要文化財に指定されている。園内には、明治時代の建物が多く残されており、歴史的な価値が高い。また、園内の庭園は四季折々の花が咲き誇り、美しい景色が楽しめる。冬にはイルミネーションが点灯され、ロマンチックな雰囲気を味わうことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "17歳の女性が一人旅を考えていて、冬の時期に温泉に行くことを希望している。行き先はまだ決めていない。グラバーガーデンは知らず、入場料は180円である。",
+        "chosen_dialogue_summary": "Aは、Bに対して、Cについて質問した。BはDと答えた。EはFであった。GはHである。",
+        "rejected_dialogue_summary": "この文章は、グラバー園について述べたものである。場所は長崎市であり、観覧料金は大人1人あたり1800円となっている。アクセス方法はバスを利用するか、徒歩で行くことができる。所要時間は約10分である。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬に長﨑県の温泉に泊まりたいと思っている。グラバーガーデンやハウスレンブスを訪れてみたいと言っている。",
+        "chosen_dialogue_summary": "長崎県で冬のひとり旅をしたいと考えている中学生は、グラバー邸やレンガ造りの建物を見学したいようです。",
+        "rejected_dialogue_summary": "グラバー園は、長崎市南山手町にある日本最古の木造洋風建築である旧三菱第2ドックハウスを中心に、明治初期の洋館を移築・復元した日本庭園である。園内には、旧ウォーカー住宅や旧オルト住宅など、国の重要文化財に指定されている建造物が多数存在する。また、園内の石畳や花壇、噴水なども美しく整備されており、訪れた人々を魅了している。ハウスレンボスは、日本最大級の桜の名所として知られている。毎年春になると、約1,000本のソメイヨシノやヤマザクラが咲き誇り、美しい景色を楽しむことができる。夜にはライトアップも行われ、幻想的な雰囲気を醸し出している。"
+    },
+    {
+        "all_short_dialogue_summary": "-中学生であることから、入場料は180円である。-13歳であることを鑑みて、子供向けの施設である可能性が高い。",
+        "chosen_dialogue_summary": "-子供が楽しむことができる博物館である-##構成###データセット-データセットの説明-###モデル####概要モデルの概要を記述する．例えば，以下のようなものが考えられる．-学習データの特徴を活かすために，どのようなアーキテクチャを採用したか-単語埋め込みの仕組み（GloVe,Word2Vec,ELMo,BERTなど）-訓練データが少ない場合にどのように工夫をしたか（データ拡張，転移学習，半教師ありなど）####設計方針設計の際に考慮したことを記載する。####実装実装にあたっての注意点などがあれば記入する。###評価方法評価方法の概略を説明する###結果結果を述べる．必要に応じて，結果の解釈についての考察を加える．",
+        "rejected_dialogue_summary": "###まとめ-中学生のBは、安価な料金で楽しむことができる子供や若者に人気のある場所に興味を持っているようだ。###解説この文章では、Bが「中学校に通っている」という情報と「入館料が安い」ことを示唆する情報が含まれています。これらの情報から、中学校の年齢層に適した場所であると推測することができます。また、「子供」や「若い世代」といったキーワードが使用されており、これらの言葉からも、対象となる場所が若年層をターゲットにしていることがわかります。さらに、「B」は「子供の頃に訪れたことがある」と述べていますが、これは彼がその場所に対して良い印象を持っており、再訪したいと考えている可能性を示しています。以上の要素を考慮すると、「中高生が楽しめる場所」「子供から大人まで幅広い層が訪れる場所」などが考えられます。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳のユーザーが一人旅で冬に長﨑県を訪れることを検討している。グラバーガーデンとハウス・テン・ボスというテーマ性の異なる2つのスポットが紹介されている。",
+        "chosen_dialogue_summary": "長崎県のグラバー園とテーマパークのハウステンボスは、冬の家族旅行におすすめです。###正解例冬、家族で長さき県に行くことを考えています。冬でも楽しめる場所を紹介します。テ－マパ－クのテンハウスボ－スと歴史的建造物が多く残るグラ－バ－ガ－デンがあります。どちらも冬にはイルミネ－ションが行われています。",
+        "rejected_dialogue_summary": "冬の長崎県で、テーマパークのグラバー園と、オランダ風の建物が特徴的なハウステンボスを巡る旅を考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "【回答】１．温泉２．冬３．行き先未定４．中学生",
+        "chosen_dialogue_summary": "##1.要約手法の概要###2.実験結果####3.まとめ#####4.参考文献",
+        "rejected_dialogue_summary": "```Bは、冬に、未だ行ったことのない中学校の修学旅行先の温泉地に行きたいと考えている。```上記の文章を出力するプログラムを作成せよ．"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬に行くことを検討している。グラバーガーデンとハウスボスがオススメの場所として挙げられており、年間を通して楽しむことができる。",
+        "chosen_dialogue_summary": "Bは冬に一人で旅行に行きたい中学生です。北欧のノルウェーにある街、トロムソはお勧めの目的地です。この街は一年中楽しめる場所で、特に冬は美しい景色が楽しめます。例えば、グラバー庭園は雪に覆われた木々や建物がとても美しく、また、ハウステンボスはヨーロッパの街並みを再現したテーマパークであり、クリスマスシーズンにはイルミネーションが輝く素敵な場所です。",
+        "rejected_dialogue_summary": "冬の時期に一人で旅行に行きたい中学生が、グラバー園やハウステンボスで年中楽しめることを知り、旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-お1人様での旅行である。-旅行の時期は冬ごろである。-長崎のどこに行くかまだ決めていない。-グラバーガーデンに行ってみたくなった。",
+        "chosen_dialogue_summary": "-お一人様の冬の旅行で、まだ行き先は決まっていないが、グラバー園に行きたいと思っている。",
+        "rejected_dialogue_summary": "冬に一人で行く旅行先は長﨑で、グラバー邸に行きたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の学生が一人旅を検討している。-旅行の目的は長期休暇を利用して温浴することである。",
+        "chosen_dialogue_summary": "-温泉に浸かることを目的とした旅行##提出ファイル-要約した文章を記述した`summary.txt`を提出する．",
+        "rejected_dialogue_summary": "Bは温泉を楽しみたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬の時期に長﨑県へ旅行に行くことを検討している。グラバーガーデン、ハウス・テン・ボス、そしてゆり野の湯という3つの場所を訪れることを希望している。",
+        "chosen_dialogue_summary": "長崎県を冬に訪れ、グラバー邸やハウステンボスなどを見学し、温泉に浸かりたいと考えている。",
+        "rejected_dialogue_summary": "長崎県の冬にグラバー園とハウステンボスとゆりの湯に行きたい中学生の旅行計画"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行の目的は「長期休暇を利用して旅行に行く」ということである。2.行き先は日本国内であることが推測される。3.13歳の中学生であるため、入場料金がかかる施設を訪れる可能性がある。4.グラバーガーデン、ハウス・テンポス、湯の里の3箇所が訪問先として検討されている。",
+        "chosen_dialogue_summary": "Bは、日本国内の長期間の旅行を計画しており、中学生の年齢であることを考慮し、グラバー邸やハウステンボスなど、歴史的建造物やテーマパークを楽しむことができる場所を候補として挙げている。また、温泉地も訪れたいと考えている。",
+        "rejected_dialogue_summary": "Bは、国内旅行を計画しており、特にグラバー園やハウステンボスなどを候補に挙げている。"
+    },
+    {
+        "all_short_dialogue_summary": "--解答例--13歳の中学生であるBさんは、冬の時期に一人旅を考えていて、どこに行くか決めていない。AさんはBさんに、オススメの場所を紹介する。まず、Aさんが紹介したのは「グラバーガーデン」である。ここは国が指定した重要な文化遺産であり、四季を通じて楽しむことができる。入場料は180円である。他にも、Bさんが聞いたことがある「ハウステンポス」も紹介された。これはテーマ性をもった遊園地であり、一日中楽しめるとのことである。この二つの場所はBさんの希望に沿っているため、両方とも候",
+        "chosen_dialogue_summary": "AがBに冬に訪れるべき場所として、重要文化財であるグラバー邸とテーマパークである長崎オランダ村を勧めた。Bはこれらの場所に興味を示した。",
+        "rejected_dialogue_summary": "テーマパークと庭園、どちらも一日楽しめる#要約結果##実行コード```pythonfromgensim.modelsimportKeyedVectorsimportnumpyasnpmodel=Nonedefload_model():globalmodelifmodelisnotNone:returnmodelmodel_path=\"wiki-news-300d-1M.vec\"print(\"Loadingmodelfrom{}\".format(model_path))wv_from_bin=KeyedByVectors.load_word2vec_format(filename=model_path,binary=True,)#model=Word2Vec(size=300,window=5,min_count=1,workers=4,sg=0,iter=10,sample=6e-5)word_vectors={}forword,vectorinzip(list(wv.from_bin.model.wv.index2word),np.array(list(w.vectors)),):iflen(word)==0:continueword_vector=np.zeros(300)foriinrange(len(word_vector)):ifword[i]=='':word=word[:i]breakword_vec=vector[i]weight=1.0/(i+1)#print(word,i,weight,np.linalg.norm(word_vec))forj,winenumerate(word):ifj==i:weight*=2breakweight/=(j+2)fork,vinw.items():ifkinword:word[k]+=v*weight#word.append(v*weight)#elifv>5e3:#importpdb;pdb.set_trace()returnw2vdefget_vector_from_text(text):text=text.replace('\\n','').replace('\\r','').replace('','')words=[wordforlineintext.splitlines()forsentinline.split('。')forwordsinsent.strip().split('')ifwords!='']vectors=model.most_similar(positive=words,topn=100)```"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生で一人旅を検討している。-長崎旅行で見るべき場所を探している。-グラバーガーデン、ハウステンポス、ユリノユノウエンが候考として挙がっている。",
+        "chosen_dialogue_summary": "中学生が一人で旅行する際の候補地として、グラバー邸やハートストーンパーク、そしてユニバースの温泉が挙げられている。###生成モデル-BERTbase-2層のRNN-1層目は1次元畳み込み層（フィルタサイズ：3、チャンネル数：256、ストライド：1、パディング：0）、ReLU活性化関数、ドロップアウト率0.2-次元削減のため、平均プーリング層を使用-出力サイズは128に設定-線形変換の重みはランダムに初期化-バッチ正規化を適用",
+        "rejected_dialogue_summary": "-長崎の見どころはグラバー邸、世界最大級のテーマパーク、夜景の名所である。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の少年が一人旅を考えていて、冬に行くことを検討している。グラバーガーデンとハウス・テン・ボスというテーマ性を持った場所を訪れることを希望している。",
+        "chosen_dialogue_summary": "A13-year-oldboywantstotravelaloneandisconsideringgoinginthewinter.Hehopestovisitplaceswithatheme,suchasGraverGardenandHouseTenBos.",
+        "rejected_dialogue_summary": "Bは、テーマパークの訪問を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-要約113歳の中学生で一人旅を考えていて、冬の時期に長﨑県を訪れることを検討している。具体的にどこに行くかを決めていないため、オススメの場所を教えてもらうことにした。まずはグラバーガーデンに行き、次にハウス・テン・ボスに行ってみることになった。長い崎には温浴施設が多くあるが、その中でもゆり野湯を選んだ。特にお土産を買うことは考えていない。-まとめこの対談では、旅行先として長期崎が選ばれた。中学生の一人旅であることから、安全面を考慮して親が決めたのではないかと思われる。行き先はまだ決定しておらず、親に勧められるままに決まった可能性が高い。冬に訪れたいという希望があるが、あまり寒さを気にしていない様子が伺える。旅の目的としては主に、歴史的建造物の見学や自然を楽しむことが挙げられた。食事や買い物に関しては全く関心を示さなかったため、あくまで目的は見聞を広めることであると推測される。",
+        "chosen_dialogue_summary": "Bは、長崎県に興味を持ち、一人で旅行に行きたいと考えている。グラバー邸やハウステンボスなど、有名な場所を見て回りたいようだ。また、温泉に入ることも楽しみにしているようで、ゆりの湯という場所に行こうとしている。",
+        "rejected_dialogue_summary": "長崎県に旅行に行きたいと考えており、グラバー園やハウステンボスなどを巡る予定である。温泉も楽しみたいようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "【質問】1.13歳の中学生が一人旅をするときに、どこに行くか決めるときに考慮すべきことは何ですか？（例：安全性、移動手段、宿泊先など）2.長崎のグラバーガーデンはどのように楽しむことができますか？また、年間を通じて訪れるのに適した時期はいつですか?3.ハウテンハウスのテーマ性について教えてください。4.ゆりの湯の特徴や魅力について説明して下さい。5.子どもと一緒に楽しめそうなアクティビティやイベントはありませんでしたか?6.観光名所や美味しい食べ物、買い物ができるショッピングエリアはどこですか?",
+        "chosen_dialogue_summary": "1)中学生の海外旅行では、安全や移動方法、滞在先の選択が重要です。2)グラバー邸は、ガイドツアーや庭園散策、茶室体験などが楽しめる。春と秋が訪問に適しています。3)ハウステンボスはオランダの街並みを再現したテーマパークで、季節の花々やイルミネーションが見どころ。アトラクションやショーも充実しています。",
+        "rejected_dialogue_summary": "Bは、子供連れの家族やカップルなど、さまざまな年齢層の旅行者に適している。特に家族向けの施設が充実しており、家族でゆっくりと過ごすのに最適な場所となっている。また、歴史的な建造物や自然豊かな景色を楽しめるスポットも多く、文化的な体験もできる。さらに、地元の食材を使った料理を提供するレストランもあり、グルメな人にもおすすめだ。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生が一人旅をし、冬の時期に長﨑県を訪れる。グラバーガーデン、ハウス・テン・ボスを観て回る。ゆり野の湯に入浴する。",
+        "chosen_dialogue_summary": "長崎県の冬に一人で旅をする中学生は、グラバー園やハウステンボス、ゆりの湯を巡る。問題文の意味が分かりにくい場合、以下を参考にしてください。以下は問題の元の文章を日本語に翻訳したものです。>13-year-oldmiddleschoolstudentstravelaloneandvisitNagasakiPrefectureinthewinter.TheyvisitGloverGarden,HouseTenBos,andYurino-no-yu.",
+        "rejected_dialogue_summary": "冬に一人で長崎県のグラバー園やハウステンボスに行き、ゆりの湯で入浴した。"
+    },
+    {
+        "all_short_dialogue_summary": "1.13歳の女性が一人旅を考えていて、冬の時期の旅行先として長野県を検討している。2.長崎のオススメの場所としてグラバーガーデンが挙げられ、入場料は180円である。3.テーマーパークのハウスンペンポスもオプションとして挙がっている。",
+        "chosen_dialogue_summary": "「冬に一人で行く旅行として、長さ野のグラバー園やハウステンボスがおすすめです。」###生成モデル####Transformer![image](https://user-images.githubusercontent.com/81389908/124134565-5e9e1e80-da7c-11eb-8c4b-6d2a1c7f3e6e.png)###データセット-要約データセット-DUC2004-5段落の記事から1文の要旨を抽出するタスク-訓練データ:500記事-各記事に対して、5つの異なる要点が与えられている-このうちの1つが正解-残りの4つはランダムに選ばれたもの-総数は2000-正解率は20%-選択肢が少ないので、難易度は低い-ランダムなものが多く、実際の文脈を考慮していない-実用性はあまり高くない###損失関数-クロスエントロピー損失$$L(\\hat{y},y)=-\\sum_{i=1}^{N}y_i\\log\\hat{y_i}$$",
+        "rejected_dialogue_summary": "女性の長期休暇を利用した旅行の行き先は、北海道や沖縄などが一般的であるが、近年では国内旅行が人気を集めている。特に、自然豊かな地域や歴史的建造物が多く残る地域が注目を集めており、その中でも冬に訪れることができる場所が人気が高い。例えば、雪景色が美しい白川郷や、温泉地として有名な別府や草津などがある。また、最近ではインバウンド需要も高まっており、訪日外国人も増加している。そのため、旅行業界では、多言語対応やアクセスの利便性向上など、様々な取り組みが行われている。"
+    },
+    {
+        "all_short_dialogue_summary": "長野県を旅行先に考えていて、目的は温浴施設に入ることである。同伴者はなく、13歳の男の子一人旅である。一日を通して楽しむことができるグラバーガーデンやハウスデンハウテンポスを訪れることを希望している。",
+        "chosen_dialogue_summary": "TheaimistoenterahotspringfacilityinNaganoPrefecture.Itisaone-daytripfora13-year-oldboy.HewantstovisitGrabberGardenandHouseDenHausPos,whichcanbeenjoyedthroughouttheday.",
+        "rejected_dialogue_summary": "グラバー邸、ハウステンボス、ポルトヨーロッパで一日中楽しめる。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-長崎に行くことを考えていて、冬に一人旅をする。-グラバーガーデンに行ってみたくなった。-入場料は180円である。中学生は入場できる。-ハウスタンホスには行ったことがある。-一日中楽しむことができる。日本のテイストを取り入れている。-観光以外に何か食べたいものは特になかった。",
+        "chosen_dialogue_summary": "Bは、長期休暇中に一人で海外旅行を計画している。行き先は日本で、特にグラバー邸を訪れたいと考えている。入館料が安く、中学生でも入ることができると知り、興味が湧いたようだ。実際に訪れてみると、日本の伝統的な建築様式が取り入れられ、歴史的な雰囲気を味わえることが分かった。食事に関しては特別なリクエストはなかったが、現地の美味しい料理を堪能したいと思っている。",
+        "rejected_dialogue_summary": "-長崎のグラバー邸を訪れ、中学生の私が楽しんだ。"
+    },
+    {
+        "all_short_dialogue_summary": "--Exmaple3--A:B:A:--Task4--",
+        "chosen_dialogue_summary": "--Example3--##解説##要約のテンプレート###テキストの構成要素####1.主題-文書の主題を表す単語・フレーズを抽出する。-例)「美術館」,「彫刻」など-英語の場合-名詞-主語-人-形容詞・動詞が付く-たとえば「素晴らしい」や「訪れる」```<主語><名詞>```###2.概要-構文解析を行い、構文木を構築する。-頻出語や頻出表現を特定し、文書全体の概要を得る。```<副詞>または<形態素>```##参考文献",
+        "rejected_dialogue_summary": "###解答例Bは、歴史的建造物や自然景観に興味を持ち、地域の文化や伝統を尊重する姿勢が見られる。また、地元の人々との交流を大切にし、コミュニケーションを通じて新たな発見や理解を深めているようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生であること。-旅行の目的は長期休暇を利用した家族旅行であり、行き先は夏休みの旅行先として人気の高い沖縄を希望している。-具体的な旅行日程については未定だが、最低でも3泊4日以上の滞在を考えていて、予算は1人あたり1万円以内に抑えたい。",
+        "chosen_dialogue_summary": "-中学生のBは、家族と共に夏季休業中の海外旅行を計画しており、候補地は人気旅行地の1つである沖繩県である。旅行期間は3日間以上を予定し、1日あたりの費用は10,000円以下に設定したい。出力例```json{\"input\":\"Bisa13-year-oldmiddleschoolstudent.Thepurposeofthetripistotakeafamilytripduringthelongvacation,andthedestinationisOkinawa,whichispopularasasummervacationdestination.Althoughthespecifictravelscheduleisundecided,itisplannedtostayforatleast3nightsand4days.Iwanttokeepthebudgetperpersonto10thousandyenorless.\",“output”:\"Amiddle-schoolstudentnamedBplanstotravelabroadwiththeirfamilyduringtheirsummerbreak.TheyareconsideringvisitingthepopulartouristdestinationofOkunawaastheirdestination,withaminimumstayofthreedaysandfournights.Theirbudgetforeachdayissettobenomorethan10000yen.\"}```",
+        "rejected_dialogue_summary": "-中学生が家族と行く夏旅行で、日数は3日間以上、1日あたりの費用は10000円以下である。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅を希望している。旅行は冬に行くことを考えていて、目的は温泉に入ることである。Bが希望する旅行先は長崎県であるが、何を観たいのか具体的に決めてはいない。そこでAはBに観て欲しい場所を提案する。提案した場所はグラバーガーデン、ハウステンポス、そしてゆり乃湯の3つである。Bはこれらの場所のうち2つを選んだ。",
+        "chosen_dialogue_summary": ">Bは、冬に一人で旅行に行きたいと考えており、旅行の目標はお風呂に浸かることであり、行き先の候補地は日本の九州地方の南西部に位置する県の1つであり、日本の47都道府県の中で最も面積が小さく、人口密度が高い県でもある。##解答例>１３歳のBさんは、中学３年生です。冬休みに１人旅をしたいと思っています。目的地としては、日本列島の最西端にあり、日本で一番面積の小さい県で、世界遺産の軍艦島もある、長い歴史を持つ県を考えました。",
+        "rejected_dialogue_summary": "中学生が冬に一人で行きたい場所として、グラバー邸とハウスミュージアム、ゆりの湯が候補に挙がった。"
+    },
+    {
+        "all_short_dialogue_summary": "-長野県の旅行で行き先を決めていない。-中学生で一人旅を考えていて、冬に訪れたいという希望がある。-グラバーガーデンとハウスボスを訪れることを希望している。",
+        "chosen_dialogue_summary": "-長野旅行の目的地を探している。-中学生が一人で冬に行きたいと考えている-グラバー邸と冬のハウステンボスを見学したい##解答例-中学2年生が冬休みに1人旅をしたいと思っていて、グラバー園や冬季限定のイベントがある長崎県を候補に挙げている。",
+        "rejected_dialogue_summary": "-冬の北アルプスでスキーやスノーボードを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬の時期に長期間滞在するのではなく、日帰り旅行ができる範囲内で行き先を決めたいと述べている。また、「グラバーガーデン」や「ハウスステンポス」、「ゆり温浴」などを訪れることを希望している。",
+        "chosen_dialogue_summary": "「グラバー邸」は長崎市にある歴史的建造物で、幕末から明治初期にかけて活躍した英国人貿易商、トーマス・ブレーク・グラーバーが住んでいた。彼は、1863年に日本で最初の蒸気機関車を製造するなど、日本の近代化に大きく貢献した人物として知られている。「グラヴァー・ガーデンズ」と呼ばれる庭園もあり、季節によって異なる花々が咲き誇る美しい景色を楽しむことができる。また、敷地内にはカフェも併設されており、ゆったりとした時間を過ごすこともできる。",
+        "rejected_dialogue_summary": "中学生が冬休みに一人で旅行に行く計画を立てており、グラバー邸やハウステンボス、温泉施設を巡る予定だ。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに対して旅行に関する質問をし、Bは長期休暇を利用した旅行に参加する意思があることを伝える。Aは具体的にどこに行くのかを聞き、Bは「長野県」に行くと答える。AがBに、旅行中に何をしたいかを尋ねる。Bが「温浴施設に入ること」を希望していることを確認する。AがBに同伴者がいるかを確認し、その後一人での旅行であることを知る。その後、AはBに「いつの旅行か」を聞く。Bは「冬の時期に」行くことを希望していると述べ、Aはその日程で調査を行うことを約束する。Bが「特定の場所を訪れたい」という希望がないことをAに伝えると、そこでAがBの希望する旅行先についての情報を提供し始める。まず、長崎市にある「グラバーガーデン」について説明し、それが重要な歴史的建造物であり、四季を通じて訪れる価値がある場所であると説明する。また、この場所の入場料は180円であること、そして13歳の中学生であるBにはその料金が適切であることも説明される。次にAから、「ハウス・テン・ボス」と呼ばれる場所について紹介される。この場所はテーマ性を持った公園であることが説明され、そこでは一年中楽しく過ごせることが強調される。さらに、ここはオレンジ色の街並みが特徴的な場所であり、その美しさから多くの人々を魅了していることが語られる。最後に、訪問先の選択肢として「立ち入り湯」が挙げられる。ここでは、日本の伝統的な温水浴場が提供され、その中にはジャグジーや蒸気浴室も含まれている。加えて、貸切の浴槽も用意されていることが明らかにされる。また、その近くの足浴も紹介され、それら全てが冬季に適した場所として推奨されている。",
+        "chosen_dialogue_summary": "Bさんは、温泉に入ってリラックスしたいと考えている。特に長い休みを取って旅行に行きたいと思っており、友達を誘うつもりはないようだ。旅行の予定はまだ決まっていないが、冬にどこかへ行こうと思っているらしい。AさんはBさんにいくつかの旅行プランを提案した。最初に紹介されたのは、グラバー邸という場所で、重要文化財に指定されており、一年中楽しめる場所だという。また、ハウステンボスというテーマパークもあり、オランダの雰囲気を味わうことができると説明された。そして、立ち寄り湯という日本式のスパもあると教えられた。Bさんはこれらの情報に興味を持ち、最終的には立ち入りの湯を選んだ。彼女は日本の文化に触れることができるこの場所に惹かれたのだ。以上がAさんとBさんのやりとりである。",
+        "rejected_dialogue_summary": "AisaskingBabouttheirtravelplans,andBexpressesinterestinparticipatinginalongvacationtrip.AthenasksBwheretheyplantogo,towhichBrespondsthattheywillbegoingtoNaganoPrefecture.AfterconfirmingthatBwouldliketovisitahotspringfacilityduringthetrip,AasksifBistravelingaloneorwithsomeoneelse.Brevealsthatitisasolotripforthem.Later,whenAinquiresaboutthetimingofthetravel,Bstatesthatthepreferredtimeisduringwinter.ThispromptsAtomakearrangementsfortheinvestigation.UponlearningfromBthatthereisnospecificplacetheywishtosee,shebeginstoprovideinformationaboutpotentialtraveldestinations.First,NagasakiCity's\"GraberGarden\"isintroducedasahistoricallysignificantbuildingworthvisitingthroughouttheyear.Additionally,theadmissionfeeis180yen,whichissuitablefora13-year-oldmiddleschoolstudentlikeB.Next,\"HouseTenBoss,\"athemedpark,ismentioned.Itisemphasizedthatthislocationoffersenjoyableexperiencesallyearround.Furthermore,itboastsanorange-coloredlandscapethatattractsmanyvisitorsduetoitsbeauty.Lastly,avisitto\"Tachiri-yu,\"featuringtraditionalJapanesehotwaterbathswithfeaturessuchasjacuzzisandsteamrooms,aswellasprivatebathsavailableforrent.Moreover,nearbyfootbathsarealsohighlighted,allofwhicharerecommendedassuitableoptionsforwintertravel."
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅を考えていて、冬に長期休みを利用して旅行に行くことを検討している。Bが旅行先で見たり食べたりするものにはこだわりがなく、主に観ることを目的としている。旅行で訪れる場所として、B自身はグラバーガーデンやハウトステンポスなどを希望しているが、それ以外の場所も提案してもらうことにしている。",
+        "chosen_dialogue_summary": "Bは13歳の中学生で一人旅を考えている。Bは冬に長期休みを利用したいと思っています。この訪問先はグラバーガーデンやハウトステんポスなどがありますが、その他の場所も提案されてもらう予定であり、食べ物や見物には関心がない。",
+        "rejected_dialogue_summary": "冬の北海道を一人で旅行したい中学生のBさんは、見どころやグルメよりも景色を楽しむことに重きを置いている。訪れたい場所は、グラバー邸や函館山などが候補に挙がっている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行先として長﨑県を希望し、冬の時期に一人旅を考えていた。Bが希望することは、ホテルの温泉に入ることであった。Aが調査した結果、オススメの場所として、九十九島パールシーリゾートとグラバーガーデンが挙げられた。最終的には、1日目にハウステンポスで遊び、2日目の午前中にグラーバーガーデンに行くというプランに決まった。",
+        "chosen_dialogue_summary": "AはBに長崎県の旅行を提案した。目的地は九州の北西部に位置する県である。最初に訪れるのは、世界最大級のテーマパークである「ハウス・テン・ボス」だ。ここでは、様々なアトラクションやショーを楽しむことができる。次に、グラバー邸を訪れ、歴史的な建造物を鑑賞する。最後は、温暖な気候と美しい海岸線が特徴的な「長浜海水浴場」でリラックスして過ごす予定だ。",
+        "rejected_dialogue_summary": ">Bは長崎県の冬に行きたいと考え、宿泊施設の露天風呂を楽しみにしていた。調べたところ、Aは九州の99の島々を眺めながら食事やショッピングを楽しめる「九九（つくも）島」や、英国風の街並みを再現した「グラバー園」をお勧めした。結局、Bさんは、初日はテーマパーク「ハウス・テンプス」で楽しんで、翌朝は英国式庭園を散策することに決めた。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生が一人旅をし、冬に行くことを検討している。グラバーガーデンやハウス・テン・ボスなどが候所として挙げられており、宿泊地や食事の希望は特になかったため、それらを組み合わせた旅行が提案された。",
+        "chosen_dialogue_summary": "中学生一人で冬にオランダへ行く旅行を計画中、オススメの場所はグラバー園とハウステンボス。特に希望はないが、旅行会社に任せてみるのも悪くない。##実行方法1.`python3main.py`を実行する2.画面の指示に従って入力を行う",
+        "rejected_dialogue_summary": "```Bは冬に一人で旅行に行きたいと考えている。目的地はオランダで、滞在日数は3日間である。行き先はアムステルダム、デンハーグ、デルフト、ユトレヒト、ライデンの5都市で、それぞれ1日ずつ過ごす予定である。```"
+    },
+    {
+        "all_short_dialogue_summary": "【実行結果】-13歳の男の子が一人旅で冬に長野県に行く。-グラバーガーデンと、石造りのアーチ橋の二つを訪れる。",
+        "chosen_dialogue_summary": "```-13歳の男の子が一人旅で冬に長野県に行く。-グラバーガーデンと、石造りのアーチ橋の二つを訪れる。```##概要本リポジトリは，株式会社富士通研究所と株式会社FRONTEOが共同で開発した，日本語テキストの要点を抽出する技術を実装したものです．自然言語処理の分野では，文章の特徴を捉えるために，ベクトル表現を用いた様々な手法が提案されてきました．本技術はこれらを統合し，単語の意味と文脈を考慮した上で，文書全体から重要な部分を抜き出すことを可能にします．これにより，膨大な量の情報から必要な箇所を効率的に見つけることができます．##使用方法###要約の実施方法1.下記のコマンドをターミナル等で入力し，本プログラムをダウンロードする```bashgitclonehttps://github.com/FujitsuResearchInstituteOfJapan/Summarizer.git````2.Summarize.pyを使用する場合，下記のように入力を記述する```pythonpythonSumarizer.py-i<input_file>-o<output_file>```",
+        "rejected_dialogue_summary": "【注釈】この出力は評価の対象外です．-長野に行きます。-一人旅です。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生の女の子が一人旅をする。-旅行の目的は長期休みを利用して行くので何も決めていない。行き先も長野県のどこに行くかを決める必要がある。ただし、行ったことがない場所を選びたいと希望している。--Question---女の子はどのようにして旅先を決定するか？また、決定した場所はどこなのか？-答えは一行で答えること--Answer--1.以下の条件に合致する場所から選ぶと予想される。-その場所に行った事がない2.場所の決定方法は下記の通りであると推測される2-1これまで訪れたことのない都道府県の中から選択する-北海道、東北、関東、甲信越、北陸、静岡、愛知、岐阜、三重、滋賀、京都、大阪、兵庫、奈良、和歌山、中国、四国、福岡、大分、宮崎、鹿児島、沖縄",
+        "chosen_dialogue_summary": "Aの行動は、旅行先の選択に影響を与える可能性があります。Aは若い中学生なので、彼女の興味や好みに基づいて選択が行われる可能性が高いです。例えば、自然や歴史的な場所に惹かれる傾向があるかもしれません。また、家族や友人からの影響を受ける可能性もあります。一方で、Bはより具体的な条件を提示しています。具体的には、Aがまだ訪れていない場所であること、そしてその地域の天候が穏やかであることが望ましいとされています。これらの条件が満たされる場所として、長崎県が候補として挙げられています。【解説】この問題では、与えられた文章から要点を抽出し、それを簡潔にまとめることが求められます。そのため、まずは文章を読み解き、どのような情報が含まれているのかを把握することが重要です。次に、その情報からAとBそれぞれの特徴や行動、要望などを明確にし、それらを組み合わせて一つの文章としてまとめます。この際、文章の流れや論理性にも注意を払い、読者が理解しやすいように工夫することも大切です。また、この問題は自然言語処理の分野でもよく扱われるテーマであり、機械学習を用いて文章生成を行う場合にも応用が可能です。このような技術を活用することで、より効率的かつ正確な文章作成ができるようになるでしょう。さらに、実際のビジネスシーンにおいても、情報の整理や要件の抽出は重要なスキルとなります。これらはコミュニケーション能力や問題解決能力とも密接に関連しており、社会人としての成長にも繋がるでしょう。",
+        "rejected_dialogue_summary": "女はまだ見ぬ場所に旅立つ##解答例-女は未踏の地を目指す-未知なる地への旅立ち"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生が一人旅をする。-旅行の目的は長期休暇を利用して旅行をすることであり、行き先は特定の場所を決めていない。冬に行くことを検討している。-見たいものや食べたい物など特になし。",
+        "chosen_dialogue_summary": "-13歳の中学3年生が1人で旅行に行きます。目的地は決まっていませんが、冬に旅行する予定です。食べ物や見どころはありません。",
+        "rejected_dialogue_summary": "中学生の一人旅は、特に目的地を定めず、冬に旅行を計画する。"
+    },
+    {
+        "all_short_dialogue_summary": "長崎へ旅行に行くことを考えていて、目的は温泉に入ることである。13歳の中学生であるため、入園料は180円となる。グラバーガーデンやハウステンポス、足の湯など、さまざまな施設がある。パスポートを購入して丸1日遊ぶことを勧められる。例えば、石造りのアーチ橋などもある。",
+        "chosen_dialogue_summary": "グラバー邸や足湯のある長﨑に旅行を考えている。中学生なので入場料が安く、ハウス・テン・ボスやグラーバー庭園など様々なスポットがある。##解答例###要約1>グラバーの家と足を温める場所があり、長い石の橋もあります。###解説この回答は、与えられたテキストから重要な要素を抽出し、簡潔にまとめています。ただし、文法や句読点の使い方には改善の余地があります。具体的には、「あり」が2回繰り返されている点や、主語と述語の関係が明確でない点などが挙げられます。また、文章の流れがやや断片的で、読み手にとって理解しにくい部分も見受けられました。全体として、情報の抽出は適切に行われていますが、表現や構成の面でさらなる工夫が必要です。",
+        "rejected_dialogue_summary": "長﨑旅行の目的地は、グラバー邸や足湯、パークなどがある温かみのある場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--Bは13歳の男の子で一人旅を考えていて、冬に長﨑県を訪れたいという希望がある。具体的にどこに行くのかはまだ決めていないが、お勧めを聞いてみたいと言っている。AはBにグラバーガーデンやハウス・テン・ボスなどを提案し、Bもそれらに関心を示している。Bが特にお気に入りの場所を決めたわけではないが、これらの場所に訪れることに決まったようだ。",
+        "chosen_dialogue_summary": "Bisa13-year-oldboywhowantstotravelaloneandisconsideringvisitingNagasakiPrefectureinwinter.Hehasnotyetdecidedonaspecificplacetovisit,buthewouldliketohearsomerecommendations.AsuggeststoBthathevisitGloverGardenandHouseTenBos,andBshowsinterestintheseplaces.AlthoughBdoesnothaveaparticularfavoriteplaceyet,heseemstohavemadeuphismindtogothere.",
+        "rejected_dialogue_summary": "-長崎県の冬の魅力を紹介-グラバー邸、ハウステンボスを中心に"
+    },
+    {
+        "all_short_dialogue_summary": "--Answer--13歳の男の子が一人旅で冬に長﨑県を訪れる。目的は温浴施設に入浴することと、オススメされた2箇所の名所（グラバーガーデン、石造りのアーチ橋）を見て回ることである。行程としては1日目にグラーバー園と石橋を見学し、2日目の午前中はハウス・テン・ボスで遊び、午後から夕方にかけてはゆり乃湯で入浴をする。",
+        "chosen_dialogue_summary": "長崎県の温泉でゆっくりしたい。グラバー園やハウステンボスも行きたい。--Explanation--この文章は、13歳の少年が冬休みを利用して一人で旅行に行くという内容です。彼の目的地は長崎県であり、そこで彼は2つの場所に興味を持っています。1つ目は「ゆりの湯」と呼ばれる温泉で、ここで温かいお風呂に浸かりながらリラックスすることを楽しみにしています。また、彼は「グラヴァー庭園」という場所も訪れたいと考えています。これはかつて外国人貿易商が住んだ邸宅を改装して作られた公園で、日本の歴史や文化を感じることができます。さらに、彼は「石の橋」も見てみたいと言っています。この橋は明治時代に建てられたもので、その美しい外観から多くのお客さんを魅了しています。以上のことから、彼の旅行プランはとても充実していることがわかります。",
+        "rejected_dialogue_summary": "-長崎県に旅行に行き、グラバー園や石の橋、ハウステンボスや温泉を楽しんだ。"
+    },
+    {
+        "all_short_dialogue_summary": "長崎を訪れることを検討している。具体的にどこに行くかを決めていないため、さまざまな観点から情報を提供する。まずはグラバーガーデンを紹介し、入場料や中学生であることを確認する。その後、国内有数の遊園地として知られるハウス・テン・ボスを提案し、その魅力について説明する。そして、旅の目的の一つである温浴施設についても紹介する。その中でも特にお勧めなのが「ユリノ湯」である。ここは日本の伝統的な風情を感じることができ、多くの人々に親しまれている。さらに、敷地内には足浴場もある。最後に、石造りのアーチ型橋について触れ、その美しさをアピールする。",
+        "chosen_dialogue_summary": "ハウステンボスは国内屈指のテーマパークであり、ユニークな体験ができる。また、温泉や足湯もあり、リラックスできる。",
+        "rejected_dialogue_summary": "グラバー邸やハウステンボス、温泉や足湯など、様々な楽しみ方ができる場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生で一人旅を検討している。-長崎に行くことを考えていて、旅の目的は温泉に入ることと観光することである。",
+        "chosen_dialogue_summary": "-中学生が一人で旅に出ることを計画している。-その旅先は、長い歴史を持つ都市である。-この旅では、2つの目的がある。1つ目は、日本の伝統的な文化に触れること。2つめは、新しい体験をすること。",
+        "rejected_dialogue_summary": "-中学生が一人で旅行を計画し、目的地は長﨑で、入浴と見物を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-A:こんにちは。Bは今日の旅行について話し合っている。AはBに対して「どのように旅行したいか」と尋ねる。Bは「長野県に行くことを考えていた」と答える。Aは「そうですか」と言い、Bが一人旅であることを確認した後、少し待つように伝える。-そこでAがBに「いつごろ旅行しますか？」と聞くと、冬に行くと答えられる。-次にAの質問「具体的にどこに行ったり、何をしたりしたいのですか？」に対し、Bの返答は「あまり決めていない」というものであった。そこからAは「では、オススメの場所を紹介します」と言って少し時間がかかることを伝えた。-最初に紹介されたのは「グラバーガーデン」である。ここは国が指定した文化遺産であり、四季を通じて楽しめるとのこと。もし行くなら「中学生のB」は入場料180円を支払う必要がある。次の紹介場所は、「ハウス・テン・ボス」と呼ばれるテーマ性を持った公園である。これも一年中楽しく過ごせる場所であると説明される。この二つの紹介を受けて、Aから「何か食事や買い物など、ほかに希望することはないか」と聞かれたBは特になしと答えた。そのため、旅程はグラーバーゲンとテンハウスボスの訪問、そして温浴施設「ユリノス」での入浴のみとなった。-旅程が決まった後もBから追加のリクエストはなく、話は終わった。",
+        "chosen_dialogue_summary": "BisplanningatriptoNaganoPrefecture.AasksBhowtheywouldliketotravel.Brepliesthattheywerethinkingofgoingthere.AfterconfirmingthatBistravelingalone,AtellsBtowaitforamoment.Then,whenAaskedBwhentheyplantogoontheirtrip,Banswersthatitwillbeinwinter.Next,inresponsetoA'squestion,\"Whatdoyouwanttodoorseespecifically?\",Bsaysthathehasn'tdecidedyet.Fromthere,afterAsays\"Then,I'llintroducesomerecommendedplaces,\"AinformsBthatthiswilltakesometime.ThefirstplaceintroducedistheGloverGarden,whichisaculturalheritagedesignatedbythecountryandcanbeenjoyedthroughoutthefourseasons.IfB,whoisinjuniorhighschool,wantstovisit,hewillneedtopayanentrancefeeof180yen.",
+        "rejected_dialogue_summary": "-Bは一人で冬に旅行する予定で、具体的な行き先や計画は決まっていないが、国指定文化財のグラバー園やテーマパークのハウステンボスを訪れ、温泉に入ることになっている。"
+    },
+    {
+        "all_short_dialogue_summary": "**Task2**-今回のTask2では、Task1と同様に対話の要点をまとめ、出力を一つの文にする必要がある。-ただし、追加で以下の条件が加わる。-タイトルを付けること-題名は日本語でも英語でもよいが、一貫性を持たせること。-英語のタイトルの場合、英語の文法に沿って表記すること。",
+        "chosen_dialogue_summary": "Oneday,IwenttoaplacecalledB,whichisfamousforitsbeautifulsceneryanduniqueculture.Therearemanythingstoseeanddothere,suchasvisitinghistoricalsites,tryinglocalfood,andexperiencingtraditionalcrafts.Ihadagreattimeandlearnedalotabouttheplaceanditspeople.ItwasawonderfulexperiencethatIwillneverforget.###解答例1.Bは美しい景色とユニークな文化で有名な場所で、歴史的な場所を訪れたり、地元の料理を試したり、日本の伝統的な工芸品を体験したりと、たくさんの見どころやアクティビティがある。2.私はそこで素晴らしい時間を過ごし、その場所とその人々について多くを学びました。それは私が決して忘れることのない素敵な経験でした。",
+        "rejected_dialogue_summary": "**一言で表すと…****題名**【元の文章】"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅を考えていて、冬の時期の旅行に向けて、オススメの場所を探している。まずはグラバーガーデンを訪れることを決め、その後はハウス・テン・ボスというテーマ性を持った場所に行くことを検討している。",
+        "chosen_dialogue_summary": "Bさんは冬休みにオランダのアムステルダムを一人で旅行することを考えている。Bさんが行きたい場所は、歴史的建造物が多く残る街並みを散策できるグラバー園と、世界的に有名なテーマパークであるハウステンボスである。特に、Bさんのお気に入りは冬に開催されるイルミネーションイベントで、美しい光の演出が楽しめる。",
+        "rejected_dialogue_summary": "冬にグラバー邸やハウステンボスなどを巡る1人旅をする中学生のBが、同世代のユーザーに旅行のアドバイスを求めている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.13歳の男性が一人旅をする。2.旅行期間は冬である。3.観光場所として、九十九島パールシーリゾート、平戸ザビエル記念教会、角力灘展望所、猿岩、池島炭鉱跡、軍艦島がある。4.長崎名物のちゃんぽんを食べる。5.グラバースカイロード、出島ワーフ、眼鏡橋、旧グラバーハウスなどを見学する。",
+        "chosen_dialogue_summary": "冬に九州を旅行する男性は、長期休暇を利用して、温暖な気候と海の景色を楽しむために、福岡県から佐賀県、熊本県を経由して鹿児島県まで訪れる予定です。彼の旅行プランには、北九州市の門司港レトロ地区、佐世保市のハウステンボス、天草諸島のイルカウォッチング、阿蘇山の登山、霧島温泉郷の宿泊、桜島や屋久島などの自然景勝地の散策などが含まれています。さらに、彼は長い歴史を持つ神社仏閣や城郭を訪れ、地元の食文化や伝統工芸品にも興味を持っています。",
+        "rejected_dialogue_summary": "旅行は、冬の九州を一人で回るもので、観るべき場所が多く、見どころもたくさんある。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で一人旅を検討している。旅行先は長﨑県であり、冬の時期に訪れることを希望している。目的としては「温泉に入ること」と「観光すること」が挙げられており、前者に関してはゆりの温(泉)が候補として挙がっている。後者についてはグラバー園、ハウステンボス、石の橋、東山手甲十三番館の4つが提案されている。",
+        "chosen_dialogue_summary": "長崎県の冬に一人で行き、ゆり湯に入り、グラバーガーデン、オランダのテーマパーク、古い石橋と建物を見て回ります。",
+        "rejected_dialogue_summary": "「長崎県の冬に一人でゆかりのある場所を巡り、ゆっくり過ごしたい。」"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は長期の休みを利用して家族と旅行をすることである。-行き先は温暖な気候の地域が望ましく、宿泊施設は家族で利用できる部屋があるホテルが好ましい。",
+        "chosen_dialogue_summary": "-長い休暇で家族旅行を計画し、暖かい地域を訪れ、家族向けのホテルに滞在する。-【正解】家族での旅行で、温かい場所に行き、ファミリールームのあるホテルで過ごす。#1.1要約の定義要約とは、元の文章から重要な情報のみを抜き出し、簡潔な文章にまとめることです。要旨とも言います。例えば、次のような文章があります。-私は昨日、友人と一緒に映画を観に行った。映画はとても面白く、感動的なシーンも多くあった。私はその映画が大好きになった。この文章を要旨にすると、「私は友達と映画を見に行って、とても楽しかった」というような文章になります。このように、文章の要点をまとめて、短い文章にすることが、要概の基本的な考え方です。要概にはいくつかの種類があり、最も一般的なものは「抜粋」と呼ばれるものです。これは、原文から必要な部分だけを取り出して、新しい文章を作る方法です。他にも、「圧縮」や「短縮」といった方法もありますが、これらは基本的には同じような意味で使われています。抜粋する際には、まず文章全体を読んで、どの部分が重要かを判断することが大切です。その後、重要だと思われる部分を選び出し、それらを組み合わせて新しい文を作ります。ただし、このときに注意しなければならないのは、選んだ部分の順番や接続詞などを適切に使って、意味が通じるようにするという点です。また、必要に応じて、主語や述語を入れ替えたり、文法的な修正を行ったりすることも必要になるでしょう。圧縮や短縮では、同じ内容の文であっても、できるだけ短く書くことが求められます。そのため、冗長な表現や繰り返しを避け、単語の省略や言い換えなどを行うことが重要です。しかし、これらの方法は誤解を招",
+        "rejected_dialogue_summary": "-家族旅行で温かい地域のホテルに泊まりたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生である。冬に長野県へ旅行に行くことを考えていて、オススメの場所を尋ねた。Aはグラバーガーデンを勧めた。宿泊施設の情報を教えてほしいというリクエストに応じてAが調査した結果、Bが希望する条件に合致する場所は見つからなかった。別の質問を投げかけてもBからの返答はなかったため、再度Bに条件の確認を行ったところ、条件は変わっていないことが判明した。その後、Aの提案に従ってBも同意し、日程が確定した。最終的には、1日目にハウステンポスを訪れ、2日目の午前中にグラーバー園、午後から東洋手甲13号館を見学することになった。",
+        "chosen_dialogue_summary": "中学生のBさんは、冬休みに家族と一緒に旅行をする計画を立てたが、宿の手配がうまくいかずに困っていた。そこで、友達のAさんに相談したところ、「グラバー園」という長崎県にある有名な庭園を紹介してもらった。Bさんも興味を持ったので、早速予約を取ることにした。しかし、希望の宿はすでに満室で予約が取れず、他の宿を探すことになってしまった。結局、初日は長い列に並んで入場する人気のテーマパークに行き、次の日にやっと宿を見つけることができた。その翌日、ようやく念願の「東山動植物園」に足を運び、たくさんの動物たちと触れ合いながら、楽しい時間を過ごした。",
+        "rejected_dialogue_summary": "「冬休みに、グラバー園と、長崎オランダ村に行きたいと思っています。」"
+    },
+    {
+        "all_short_dialogue_summary": "1.長崎へ旅行に行く2.50歳の男性一人旅3.グラバーガーデン4.ハウスタンホス5.ゆりの湯",
+        "chosen_dialogue_summary": "男性の1人旅で、グラバー邸の庭園と、ホテル、温泉に行きました。",
+        "rejected_dialogue_summary": "グラバー邸は、幕末に活躍したスコットランド出身の貿易商、トーマス・ブレーク・グラーバーが1863年（文久3）に建てた洋風住宅で、現存する日本最古の木造西洋館として国の重要文化財に指定されています。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の男の子が一人旅をすることについて-長崎の旅行について話す-どこに行くかを決める-グラバーガーデン-入場料は180円である-中学生は入場できる-一人旅であるため一人分の料金を支払う-足湯もある-日本の文化を感じる-自然を堪能する-海を眺められる-歴史を学ぶ-外国人との交流を図れる-写真を撮ることができる",
+        "chosen_dialogue_summary": "-グラバー園を訪れ、日本の自然や文化に触れ、海の景色を楽しみながら、外国の友達と交流し、写真も撮りました。",
+        "rejected_dialogue_summary": "グラバー園は日本と外国の文化が融合した場所であり、海の景色を楽しむことができ、写真撮影にも最適な場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A:こんにちわーB:おはようございます。今日も暑いですねぇー、、、本日もご来店頂いて有難う御座います、またお会いできて光栄ですー！では早速ですが、お話を伺わせて頂きたいのですが、、、、おそらく旅行ですか？？どのくらいの期間でどこの国に行かれたいのでしょう？？A:はぁー今日、急に思い立って旅行に行こうと思ったんですよぉ、、、B:旅行ですかぁ、、では、、何日くらい滞在したいでしょうねぇ、、A：うーん、、一週間くらいかなぁB：おおお、、それならば、、今の時期だとヨーロッパの国々がオススメですよー！！！A：へぇーーどこが良いんですか！？B：まずはイタリアのミラノから始まり、、ローマ、フィレンツェ、ヴェネツィア、ナポリ、シチリア、カプリ島、サルデーニャ島などなど、、魅力的な都市がたくさんあるんですよねぇ！！そして、、次はフランスのパリやニース、南仏、モンサンミッシェル、、スペインのバルセロナやマドリード、ポルトガルのリスボンやアゾレス諸島、、そしてドイツのベルリンやミュンヘン、フライブルク、ハイデルベルク、、アムステルダムやコペンハーゲン、、ベルギーのブリュッセルやブルージュ、、スイスのチューリッヒやジュネーブ、、オーストリアやハンガリーのウィーンやブダペスト、、クロアチアのドブロブニクやザグレブ、、チェコのプラハ、、ポーランドのワルシャワやクラクフ、、ウクライナのキエフやオデッサ、、ルーマニアのブカレストやトランシルバニア地方、、ギリシャやキプロスのアテネやミコノス、、トルコやエジプトのイスタンブールやカ",
+        "chosen_dialogue_summary": "##1.要約結果###2.記述####3.感想",
+        "rejected_dialogue_summary": "Bは旅行を楽しみにしているようだ。Bが行きたい国は、イギリスやフランス、ドイ"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅をする。目的は長期休暇を利用した旅行である。行き先は「長﨑県」であり、日程は冬の時期に行くことを希望している。具体的にどこに行って何をしたいかはまだ決めていないものの、「グラバ―園」、「ハウス・テン・ボス」という二つの場所を観ることと、「ゆり―の湯」に入ることが決定している。また、「出島」や「大浦天主堂」などの場所も行くことが決まった。食事に関しては中華の「チャンポン」を食べることを決めた。",
+        "chosen_dialogue_summary": "中学生が長崎県を訪れ、グラバー園やハウステンボスなどを見学し、ゆりの湯に入浴する予定である。",
+        "rejected_dialogue_summary": "長崎県の旅行で、グラバー園、ハウステンボス、ゆりの湯を訪れ、中華料理のちゃんぽんを食べた。"
+    },
+    {
+        "all_short_dialogue_summary": "#例1##Bについて###趣向*インドア*ゲーム*難易度が高いもの*アクションゲーム*3D*ファイナルファンタジーシリーズ*FF7*クラウド・ストライフが主人公の作品*チョコボレース*騎乗*動物*競走馬*サラブレッド*ウマ娘*トウカイテイオー*史実*天皇賞(春)*芝3200メートル*中山競馬場*東京優駿(日本ダービー)*牡馬クラシック三冠*菊花賞*古馬中長距離路線*ジャパンカップ*国際招待競走*外国馬の参戦*インターナショナルジョッキーズチャレンジ*日本人騎手の活躍*福永祐一*武豊*ディープインパクト*馬主*金子真人ホールディングス*栗東トレーニングセンター*ノーザンファーム天栄*調教師*池江泰寿*生産者*社台グループ*愛馬会法人*キャロットクラブ*一口馬主制度*資産運用*不動産投資*銀行融資*融資審査#例2#Aについて",
+        "chosen_dialogue_summary": "AとBは、CとDの間で、EとFが、GとHのために、IとJを、KとLに、MとNをOとPにQとRをSとTにUとVをWとXにYとZをZとAにした。【出典元URL】https://www.kaggle.com/abhishekkumarjha/summarization",
+        "rejected_dialogue_summary": "【出題者コメント】AとBはそれぞれ以下のようなものです．【A】*アニメ*作品名：エヴァンゲリオン新劇場版：序、破、Q、シン・ゴジラ、宇宙戦艦ヤマト2199、蒼穹のファフナー、交響詩篇エウレカセブン、天空のエスカフローネ、機動戦士ガンダム0083STARDUSTMEMORY、コードギアス反逆のルルージュ、ガールズ&パンツァー、魔法少女まどか☆マギカ、涼宮ハルヒの憂鬱、PSYCHO-PASSサイコパス、ソードアート・オンライン、アクセル・ワールド、STEINS;GATE、キノの旅-theBeautifulWorld-、電脳コイル、輪るピングドラム、翠星のガルガンティア、シュタインズ・ゲートゼロ、Re:ゼロから始める異世界生活、メイドインアビス、マクロスF、フルメタル・パニック!、革命機ヴァルヴレイヴ、無限のリヴァイアス、プラネット・ウィズ、少女革命ウテナ、サマーウォーズ、映画ドラえもんのび太の恐竜2006、ドラゴンクエストダイの大冒険、ロードス島戦記、勇者王ガオガイガーFINAL、魔神英雄伝ワタル、銀河漂流バイファム13、獣兵衛忍風帖、カウボーイビバップ、ルパン三世カリオストロの城、デジモンアドベンチャーLASTEVOLUTION絆、GHOSTINTHESHELL/攻殻機動隊、パプリカ、ハウルの動く城、アリーテ姫、ベルセルク、時をかける少女、クレヨンしんちゃん嵐を呼ぶモーレツ!オトナ帝国の逆襲、風の谷のナウシカ、マイマイ新子と千年の魔法、雲のむこう、約束の場所、茄子アンダルシアの"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生の女の子である。-一人旅であり、冬に行くことを検討している。-観光の場所としてはグラバーガーデンやハウスボスを訪れることを希望している。-グラバ―ガーデンの入場料は180円である。中学生であるため入ることができる。-ハウストボスのチケットは1日で使い切ることをお勧めする。-2日目にはグラーバ―園とその周辺を回ることになる。-異国の雰囲気があり、東洋的な建物が多くある。-東洋手甲13号館は無料で中に入れることができ、写真を撮ったりお茶をしたりするのに最適である。-食べ物に関しては特になし。",
+        "chosen_dialogue_summary": "-日本の歴史と文化に興味のある少女が冬に一人で旅行する計画を立てている。目的地は北海道で、グラバー園やボストンハウスなどを見学する予定だ。入園料金は安く、年齢制限もないため、誰でも気軽に訪問できる。また、2日にわたって見学し、異国情緒あふれる景色を楽しむ。さらに、無料の施設もあり、お茶や写真撮影も楽しめる。",
+        "rejected_dialogue_summary": "グラバー邸と異国情緒あふれる町並みを楽しむ冬の一人旅"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに、BはAに質問を投げかけることで、会話が進行していく。まず、Aが「こんにちは」と挨拶をする。Bも「こんにちわ」と返答し、本日の利用に感謝を述べる。次にAから、旅行先の希望を尋ねられる。ここでBから「長﨑県」という答えが返ってくる。続いてAからは、同伴者の有無や旅行時期、希望することなどを聞かれている。これに対してBからは「一人旅」であること、「冬ごろ」に行くことを伝えている。また、「観ること」や「食べることを」希望しているとのことである。Aからの「何かお勧めは？」という問いかけに対し、「グラバーガーデン」と「ハウス・テン・ボス」を挙げている。これらの施設についてはそれぞれ説明がなされ、両方とも行くことに決まる。旅行日程としては、「1日目：ハーステンバス」、「2日目の午前中：グラーバー園」となっている。最後に食事についての話題となり、チャンポンが紹介されている。",
+        "chosen_dialogue_summary": "長崎県に一人で冬に旅行に行き、食べ物や景色を楽しむ予定である。#要約精度-0.0#正解例##1BisplanningtotravelalonetoNagasakiPrefectureinthewinterandenjoythefoodandscenery.",
+        "rejected_dialogue_summary": "長崎県に一人で冬に旅行に行き、ハウステンボスとグラバー園を訪れる予定である。"
+    },
+    {
+        "all_short_dialogue_summary": "--Question---WhatisB'shobby?-WheredoesBwanttogoonatrip?",
+        "chosen_dialogue_summary": "--Answer---Blikesfishingandwantsatropicalisland.####生成した文章Bは釣りが好きで、熱帯の島に行きたいと思っている。",
+        "rejected_dialogue_summary": "解答例Bは旅行が好きで、特にヨーロッパの歴史的建造物を訪れることに興味を持っている。解説本問では、複数の選択肢の中から最も適切なものを選ぶ必要があります。まず、\"WhatisB'shobby?\"という質問に対しては、Bが旅行好きであることがわかります。また、\"WheredoesBwanttogoonatrip?\"という問いに対しても、旅行を計画していることが示唆されています。これらの情報から、Bはヨーロッパの歴史的建造物を訪れることに興味を持っていると推測できます。そのため、本問の解答は、Bは旅行が好きで、特にヨーロピャの「ヒストリカルビルディング」というキーワードに着目し、「BisinterestedinvisitinghistoricalbuildingsinEurope.」と要約します。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生の女性が一人旅をしに行く。目的は長期休暇中に行ける旅行先を探すことであり、行き先として長野県を選んだ。長距離の移動が難しいため、電車で行ける範囲を検討している。宿泊先は未定である。旅行期間は冬休みの期間であるため、12月下旬から1月初旔にかけての旅行となる。行程は1泊2日である。行く場所としては以下の場所を考慮している。-グラバーガーデン：日本の文化を堪能する場所。入場料は180円である。-入場時間は9:00から17:30までである-中学生でも入ることができる。-長崎駅から徒歩で20分の距離にある。-ハウテンホス：テーマ性が強い場所である。一日中いても飽きない場所でもある。日本語が通じる場所であり、日本人でも安心して利用できる。中学生の一人旅でも問題なく利用できると考えられる。-ゆりの湯：温浴施設である。他の旅客と一緒に入浴することになるため、一人の入浴に抵抗がある場合には利用を避けるべきである。また、一部の浴場は大人専用となっているため、小学生以下の子供は利用することができない。-営業時間：10時から23時まで-利用料金：大人1000円、子供500円-駐車場：有り",
+        "chosen_dialogue_summary": "中高生の女子が冬の休日に一人で日本文化に触れる目的で、1日かけて、グラバー園とハウトン・ホスを訪れ、ゆり乃湯で温泉に入る。",
+        "rejected_dialogue_summary": "「日本文化の体験と温泉を楽しみたい中高生におすすめの冬の長旅」"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生であり、冬の時期に一人旅をすることを検討している。Bが旅行先として選んだのは長﨑県である。目的としては温泉に入ることと観光地巡りを挙げている。",
+        "chosen_dialogue_summary": "B（性別、年齢）は、長崎県を旅行することを計画しています。彼の目的は2つあります。1つ目は、旅館に泊まることです。旅先での宿泊を楽しみたいと考えています。もう1つの目的が、地元の名所を訪れることで、歴史的な建造物や自然の美しさを楽しむことができます。",
+        "rejected_dialogue_summary": "長崎県への一人旅行の目的は、温浴施設での入浴と名所の見学である。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の女の子が一人旅をしようとしている。グラバーガーデンやハウスステンポスに行くことを考えていて、旅行日程は冬である。立ち入り湯であるゆりんおんせんに泊まりたいと言っている。食事は特になし。",
+        "chosen_dialogue_summary": "The13-year-oldgirlwantstotravelalone.SheisthinkingofgoingtoGraverGardenandHouseStenpos.Thetravelscheduleisinwinter.IwanttostayatYurinOnsen,whichisanopen-airbath.Thereisnospecialmeal.##要約結果-1.2.3456789101112-女の子,一人旅,グラバー,ハウス,ステン,ポス,行く,考え,旅行,日程,冬,立ち入り,湯,ゆり,おん,泊まり,たい,食事,特,な,し",
+        "rejected_dialogue_summary": "冬のグラバー園とハウステンボスを訪れ、立ち湯のある宿に宿泊する予定の女子中学生の旅行計画。"
+    },
+    {
+        "all_short_dialogue_summary": "##Submission提出ファイルのフォルダ構成は以下の通りです．```.├──README.md└──submission├──task_1├──dataset├──Example1.txt└──Example2.txt#以下同様にExample3.txtまで存在する├──answer.txt#要約結果を記述するテキスト```",
+        "chosen_dialogue_summary": "##1.問題設定本問題では、ある旅行代理店のホームページに掲載されている情報から、旅行プランを提案することを目的とする。具体的には、ユーザーが入力した条件に基づいて、最適な旅行先を選定し、予算に応じた宿泊施設やアクティビティを組み合わせる。以下に、問題設定の詳細を示す。###2.データセットデータセットは、以下のような形式で提供される。```<都市名><概要><旅行の魅力>-<アトラクション1>-<詳細情報1>...-...<アクセス情報>...<おすすめの時期>...<宿情報>......````この形式のデータが、複数の都市に対して提供されている。####3.条件旅行計画の条件として、次の情報が与えられる。-都市名-旅行の目的（例：アウトドア、歴史探訪、グルメなど）-日程（出発日と帰国日）####宿情報宿に関する情報には以下が含まれる。#####4.目的地目的地は旅行者の興味や趣向に合わせて選ばれる。例えば、自然愛好家であれば、国立公園や海岸沿いのリゾート地が候補となる。また、文化や芸術に関心が高い場合は、美術館や博物館のある都市が選出される。さらに、ビジネス目的の場合は、大都市や国際的なイベントが開催される場所が適切な選択肢となる。宿の選び方は様々だが、一般的に次のような基準が考慮されることが多い。まず、宿が旅行者にとって快適であるかどうかが重要である。部屋の広さや清潔さ、設備の充実度、スタッフの対応などが評価される。また、アクセスの良さも重要な要素であり、公共交通機関や空港からの距離、周辺のレストランやショッピングエリアへの近さが重視される場合もある。最後に、アメニティ",
+        "rejected_dialogue_summary": "##フォーマット1行目に以下を入力して下さい．```<タスク番号><行数>(例:13)````##提出方法提出方法は2つあります．いずれかの方法で提出をお願いいたします．1つ目は，`submission/`ディレクトリ配下に`task_<task番号>/`を新規作成し，その中に`answer_<行番号>.txt`を作成する方法です（例：submission/task_2/answer_5.txt）．2つの方法として，1つの`anser.txt`にまとめて記入することもできます．その際，以下のように行頭に番号を付与することで，どの行に対応する回答かを明示する必要があります（行末に改行は不要です）````1.<タイトル>2.要約内容3.以下略4.5.6.7.```"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は長期休暇を利用しての旅行である。-行き先は日本の西側に位置する地域である-長崎を旅行先として選択している-観光名所としてグラバーガーデンを訪れたい-その際に、オススメの場所を紹介してもらった-東山手を甲13番の館を観覧する-近くにある石造りの橋を見学することもできる-入館料は無料-お茶も飲める-写真撮影にも最適-カフェとしての利用も可能-一日を通して利用できる施設-同様に近隣のハウスステンポスも利用した-丸一日の利用が可能なパスを購入することで、効率的に利用することができた-ツアーを組む際には、このようなパスの利用を検討する必要がある-利用する時間帯を考慮してツアーの組み立てを行う-早朝から夜遅くまで利用可能であるため、時間を有効に活用できると考えられる-宿泊先の選択肢も広がる-立ち寄る際の交通手段も重要な要素となる",
+        "chosen_dialogue_summary": "長期間の休みを使って日本西部の地域を旅する予定です。特に行きたい場所は、グラバー邸の庭園とその周辺の石の橋、そしてハウステンボスです。これらの場所では、入場料が無料で、お茶を飲んだり写真を撮ったり、1日中楽しむことができます。また、丸1日のパッケージプランもあります。これは時間の使い方に役立ちます。",
+        "rejected_dialogue_summary": "グラバー邸とその周辺の散策を楽しみながら、午前中から夕方までを過ごすことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "【課題】-自然言語処理を用いて対象者の要件を満たす宿泊施設を検索するシステムを構築する。-検索結果はホテル名、住所、料金、評価、レビュー数の5つを表示する。-課題の解決策として、以下の手順を実施する1.予め用意したデータベースから、条件に合致するホテルの情報を取得2.取得した情報に基づき、各項目の値を計算3.計算結果をもとに、5つの項目をHTML形式で表示-実装にあたっての注意点-データの取得には、Pythonのライブラリ「requests」を使用すること-リクエストの送信やレスポンスの受信が可能なため、WebAPIとの連携に適している。",
+        "chosen_dialogue_summary": "本システムは、ホテル予約サイトのデータを収集し、ユーザーの要望に応じてホテルを絞り込む機能を備えています。具体的には、「価格」「場所」「設備」「サービス」など、さまざまな条件を指定することができます。また、予約時にはクレジットカード情報などを入力する必要がありますが、本システムではセキュリティ面にも配慮しています。さらに、システムの動作状況やエラーの発生状況を把握するために、ログを記録する機能も備わっています。",
+        "rejected_dialogue_summary": "##実行方法```python3main.py```##依存関係-python3-requests"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-旅行の目的は長期休みを利用した旅行であり、家族や友人と行くわけではなく一人旅である。-行き先はまだ決めていない。-長崎に行くことを検討している。-観光名所としてグラバーガーデンやハウス・テン・ボス、東洋手甲13号館を訪れることを希望している。-グラバ―ガーデンの入場料は180円である。また、中学1年生であるため、保護者の同伴が必要となる。-ハウステンボスでは、1日中遊ぶことができる。-東洋手を訪れた際には、写真を撮ることができ、無料で飲み物を購入することもできる。-食べ物として、チャンポンを食べることを望んでいる。",
+        "chosen_dialogue_summary": "-私は、旅行を楽しみにしている中学生です。私はまだ旅行先を決めておらず、長い休暇を一人で過ごしたいと思っています。私の行きたい場所は、グラバー邸やオランダ風の街並みが広がる「ハウトン」をはじめ、歴史的な建造物が立ち並ぶ「東山手十三番館」などがあります。また、食事としては「ちゃんぽん」が食べたいです。",
+        "rejected_dialogue_summary": "中学生の旅行で、グラバー邸や東山手十三番館などを巡り、長﨑名物のちゃんぽんを味わう。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人旅を考えていて、冬の時期に、旅行先は長﨑県である。-観光名所はグラバーガーデン、異人館などがある。食事はリンゴハットのようなちゃんめんを食べることができる。",
+        "chosen_dialogue_summary": "-長崎県で冬に一人旅行を計画している50代女性は、グラバー邸や洋館を訪れ、リンガーハットのちゃんぽんなどの料理を楽しみたいと考えている。",
+        "rejected_dialogue_summary": "長崎県の冬に行く50代女性の一人旅で、グラバー邸や異国情緒あふれる街並みを楽しみ、ちゃんぽんや皿うどんなどの名物料理を堪能する旅のようです。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-長崎に行くことを考えていて、旅行は自分1人だけで行く。-観光場所として、以下の3つが挙げられている。-グラバーガーデン-入園費は180円。>ここは日本の国が指定した重要な文化遺産であり、四季を通じて楽しめるところである。<br>また、12歳以下の子供は無料で入場することができる。><ahref=\"https://ja.wikipedia.org/wiki/%E3%83%8F%E5%A4%A7%E6%9D%91%E8%A1%97%E9%81%93\">グラバーストリート</a><imgsrc=\"http://www.nagasaki-tabinet.com/img/spot/11/00001101.jpg\"width=\"300\"height=\"200\"/>-ハウシュテンポス-一日中遊べる。>テーマは「ヨーロッパの街並み」で、日本で一番広い敷地面積を誇る遊園地である。<br><b>オススメのポイント</b><br><ul><li>パレードや噴水ショーなどのイベントが豊富である。</li></ul></li>-ゆりの湯-1000円で利用できる。-日本の国の指定する文化的財産である「大村藩主屋敷跡」に位置している。-石造りの橋これは江戸時代に作られた石橋である。-中華街で食べることのできる料理<ul><listyle=\"list-style-type:none\">ちゃんポン</li></ul>##Tips###Tips1>Q1.まず、AがBに質問を投げかけていますが、このときのAの意図を述べてください。>A1.AはBがどのように旅行したいかを知りたがっています>Q2.次に、BはAに対して旅行先を伝えようとしています。このとき、Bはどの地域を旅行しようとしているのでしょう。>A2.Bは九",
+        "chosen_dialogue_summary": "Bisa13-year-oldjuniorhighschoolstudentwhowantstotraveltoNagasakialone.Therearethreeplacestovisit:GloverGarden,HuisTenBosch,andYurinoyu.TheentrancefeeforGlover'sGardenis180yen.ItisanimportantculturalassetdesignatedbytheJapanesegovernmentandcanbeenjoyedthroughouttheyear.Childrenundertheageof12canenterforfree.",
+        "rejected_dialogue_summary": "Aは、グラバー邸、ハウステンボス、ゆり温泉、ちゃんぽんを勧めている。【実行コマンド】```$python3summarize.py-iinput.txt-ooutput.txt```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅をする。Bが旅行先に選んだ場所は長﨑県である。旅行期間は冬の時期であると予想される。予算の関係で宿泊施設は選ばず、全て日帰りで回ることにした。長さき県の名物である「長寿の湯」と「グラバーガーデン」に加え、「ハウトステンポス」にも行くことを決めた。更に、BとAは「石造りの橋」や「甲13番の館」なども見に行くことに決め、更には「皐月橋」の近くの「中国料理店」で食事をとることも決まった。",
+        "chosen_dialogue_summary": "長崎県を一人で旅行する中学生のB。冬に行き、宿はとらず、長生きの温泉、グラバー園、ハウステンボス、石の橋、十三番館、中国レストランを訪れる予定。",
+        "rejected_dialogue_summary": "長崎県に一人で旅行に行き、名所を巡る予定である。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生が一人旅をしている。-行き先は長野県。-グラバーガーデン-入場料は180円-足湯もある<spanstyle=\"color:red\">-ハウテンハウス</span><br>-観光は以下の2つを回る-石で作られた橋-見学は時間関係なく自由に行うことが出来る。<s>-東山手にて洋式の建築物</s><del>-入館は無料</del>-写真撮影も可能-お茶も飲める-休息にも適している-歴史的な建物-有名である-人気がある-明治時代に建築された-中心地から離れている-時間がかかる-徒歩で30分-駐車場はない-タクシーを利用する-公共交通機関も利用できる-地下鉄-バス-電車-長崎電気軌道-JR-佐世保線-鹿児島本線-筑肥線-大村線-松浦鉄道-島原鉄道-西肥バス-県営バス-南島原市コミュニティバス-壱岐交通-五島自動車-雲仙市ふれあいバス-諫早市自主運行バス-新上五島町営船-熊本市交通局-天草エアライン-九十九島パールシーリゾート-福岡市営地下鉄-北九州市営渡船-平成筑豊鉄道-ゆふいんの森-A列車で行こう-はやとの風-海幸山幸-いさぶろう・しんぺい-SL人吉",
+        "chosen_dialogue_summary": "-中学生の1人旅-目的地は、-風情のある街並みが魅力の-「グラバー邸」-日本の近代化に貢献した-スコットランド出身の貿易商-トーマス・ブレーク・グラーバー-彼の自宅兼商館-登録有形文化財-外国人居留地の面影を残す-洋風建築の代表的存在-当時のままの姿を保つ-レトロな雰囲気が漂う-木造2階建ての建屋-内部は一般公開されていない-ガイドツアーが開催される-庭園は自由に散策可-四季折々の花が咲き誇り-心地よい風が吹き抜ける-訪れる人々に癒しを与える-また、敷地内には-無料で利用可能な-温泉施設も併設-湯船に浸かりながら-美しい景色を眺められる-くつろぎの時間を過ごせる-旅の疲れをいやすのに最適な場所-ぜひ訪れてみてほしい-",
+        "rejected_dialogue_summary": "-ハウステンボスは、入園料が安く、無料で入れる施設もあり、写真を撮ることができ、お茶を飲むこともでき、休憩することもできる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行の目的は長期休暇を利用した旅行である。2.長崎への旅行は初めてであり、予備知識はほとんどない。3.運動不足解消のために、旅行中はなるべく歩いたり階段を使ったりする。4.観光はゆっくりしたペースで行いたいため、無理のないスケジュールを組んでほしい。5.趣味の写真を撮ることができるような場所を訪れたい6.できれば、現地の人との交流を深めたい7.食事は地元の人がよく食べるようなものを試食したり、その土地の名物料理を食べたりすることが好き。8.基本的に好奇心旺盛な性格であり、新しいものや未知のものに対して積極的にチャレンジする傾向がある。",
+        "chosen_dialogue_summary": "Bは旅行中に写真撮影を楽しみながら、運動を兼ねて歩き回り、スローペースの旅をしながら、地場の料理や名産品を味わいたいと考えている。新しい体験や発見を求めている。",
+        "rejected_dialogue_summary": "Bは旅行を通じて新しい体験や発見を求めている。具体的には、運動を兼ねて歩き回ること、写真撮影ができる場所の訪問、地域の文化や食に触れることなどが挙げられる。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに対して旅行について質問をしている。Bは旅行先として長﨑県を希望している。その後、Aがグラバ―園やハウス・テン・ボスなどの観光地やゆりの温泉などを勧め、Bがそれらを承諾する。最後にAがBに食事の提案をしている。",
+        "chosen_dialogue_summary": "長崎県の旅行で、グラバー園、オランダ坂、ハウステンボス、ゆのつ風の湯を訪れ、海鮮丼を食べる。##実行方法```bash$python3main.py```",
+        "rejected_dialogue_summary": "ハウステンボスとグラバー園は長崎県にある。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は長期休暇を利用して温かい場所に行き、のんびりと過ごすことである。-そのため、旅先は温暖な気候の場所を選びたいと思っている。",
+        "chosen_dialogue_summary": "-温かくてリラックスできる場所へ行きたい。BはAと同様に、自身の旅行についての考えを述べている。ただし、Aは「目的地」という具体的な観点に焦点を当てている一方で、Bの方はより抽象的な「気分」や「雰囲気」に重点を置いていることがわかる。Aの文章では、具体的にどの国や地域を訪れたいのかが明確に示されており、旅行計画を立てる際に役立つ情報が含まれている。一方、",
+        "rejected_dialogue_summary": "-温かくてゆっくりできる場所へ行きたい-"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生の男性が一人旅をするために旅行代理店に来店した。彼は長期休暇を利用して旅行に行くことを考えていて、旅行先を決めていない。旅行期間は冬で、大人一人分の料金が必要である。長期間の旅行ではなく、日帰りや一泊二日程度の短い旅行が希望である。また、彼は特定の場所や建物を見たいという希望はなく、地元の名物料理を食べることに関心がある。",
+        "chosen_dialogue_summary": "Ayoungboyof13yearsoldcomestoatravelagencytoplanatripbyhimself.Hewantstogoonalongvacationduringthewinterbreak,buthehasn'tdecidedonthedestinationyet.Thetripshouldbeshort,lastingonlyonedayortwo,andheisnotinterestedinvisitingspecificplacesorbuildings.Instead,hewouldliketotrythelocalcuisine.",
+        "rejected_dialogue_summary": "男性中学生が冬休みに一人で旅行したいと旅行会社に相談に来た。大人1人分で、1泊2日以内の旅行を希望している。特に目的地は決まっておらず、食べ物を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬の時期に長野県に行くことを検討している。行き先はまだ決めていないが，グラバーガーデンやハウスボス，ゆりんの湯などを回ることを希望している。また，温かいものを食べたり，買い物を楽しんだりすることにも関心がある。",
+        "chosen_dialogue_summary": "Bは冬に中学生の1人旅として、温泉や食べ物、ショッピングを楽しみつつ、グラバー園、ハウステンボス、湯～園地を訪れることを計画している。解答例",
+        "rejected_dialogue_summary": "1.中学生が一人で冬季の旅行を計画している。2.長野を訪れる予定で、具体的な目的地は未定。3.グラバー園、ハウステンボス、ゆりの湯を巡りたいと考えている。4.温かい食べ物やショッピングを楽しみたいという希望がある。5.旅行を通じて新たな体験や発見を期待している。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行先として長野県を希望している。宿泊施設はなくても問題ない。旅行日程は冬の間で具体的にいつとは決めていない。行き先は未定だが、九十九島水族館海きらら、軍艦島上陸クルーズ、出島、稲佐山展望台を訪れたいという希望がある。洋食が好みである。欲しいものは特になし。",
+        "chosen_dialogue_summary": "Bさんは、冬に旅行を計画しており、宿は必要ないと考えている。具体的な日付はまだ決まっていないが、行きたい場所として、長崎県の九州水産館「海キララ」、廃墟の島として有名な「軍事島」への訪問、江戸時代に外国人との貿易の拠点として栄えた「デジマ」の見学、そして「イナサヤマテンポウダイ」からの眺めを楽しみたいと思っている。食事に関しては、西洋料理が好きだという。特に買いたいものはない。解答例BisplanningatriptoNaganoPrefectureduringthewinterseason.Accommodationsarenotnecessary.Theexactdateisnotyetdetermined,butthedestinationsareundecided,andtheywouldliketovisitKujukushimaAquariumUmikirara,theMilitaryIslandlandingcruise,DejimaandInasayamaObservatory.Westernfoodispreferred.Thereisnothinginparticularthattheywanttobuy.",
+        "rejected_dialogue_summary": "Bは長野県の旅行を希望している。宿泊施設はなくても問題ない。旅行日程は冬の間で具体的にいつとは決めていない。行き先は未定だが、九十九島水族館海きらら、軍艦嶋上陸クルーズ、出嶌、稻佐山展望台を訪れたいという願いがある。洋食が好みである。欲しいものは特になし。"
+    },
+    {
+        "all_short_dialogue_summary": "##A:こんにちは。##B:こんにちわ。今日の旅行は利用してくれてありがとう。何処に行くか決めているの？##50歳以上のカップルが秋に長野へ旅行に行こうとしている。グラバーガーデンやハウスボスなどが行き先として考えられている。",
+        "chosen_dialogue_summary": "-長野県の秋の行楽地として、グラバー園とハウステンボスが候補に挙がっている。-50代の夫婦が旅行を計画している。",
+        "rejected_dialogue_summary": "##生成したい文章####一行でまとめると以下のような文章が生成されると嬉しいです####本プログラムの使用にあたっての注意事項####1.本ソフトウェアの著作権は東京大学大学院情報理工学系研究科知能機械情報学研究室に帰属します。####2.ソースコードを無断で複製・改変・再配布することを禁止します。##3.上記の条件を満たす限りにおいて、本ソフトウェアの再頒布を行うことを許可します。##4.使用者は、ソフトウェアを使用することにより生じた損害に対して、著作者は一切の責任を負わないことを承諾するものとします##"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生の女の子である。-旅行の目的は長期休暇を利用した旅行であり，行き先を決めていない。-長崎に行くことを考えていて，夫と2人旅である。行く時期は冬であるが，具体的に何をするかを考えていないので，Aに聞く。-Aはまず，オススメの場所を教えてくれる。まずは，グラバーガーデンという場所である。この場所は重要な文化遺産に指定されている場所であり、四季を通して楽しめるとのことである。また，この場所の入場料は180円であるため，支払うことができるか聞いてくる。-次に，ハウスボスと呼ばれる場所がある。ここは海外の雰囲気があり、1日中過ごすことができるところであるという。Aはここに行ってよいかを尋ねてくるが，大丈夫であると答える。-観光以外の要素として，温浴施設を訪れたいということと，食事や買い物を楽しんでみたいということが挙げられる。食に関しては特になく，買うものに関しても特にはないという回答を得る。Aから，長期間滞在するならば，パッケージツアーを申し込むことを勧められ，それを承諾する。-最後に，お茶が飲めるカフェや，写真撮影に適した場所などを紹介してくれる。",
+        "chosen_dialogue_summary": "-中学生が冬に夫婦で長い休みをとって旅行する予定で、行先が決まっていない。長野のグラバー邸やハウステンボスに行きたいと考えているが、予算や日程が未定なため、Aの意見を聞いている。##解答例-中学3年生の女子生徒が夫を連れて、冬の旅行を計画している。目的地はまだ決めておらず、長く休める期間を活用するつもりだ。候補地としては、重要文化財であるグラーバー庭園や、異国情緒あふれる街並みが楽しめるオランダ村を検討している。しかし、費用やスケジュールについては未確定のままなので、相談相手としてAを選んだ。",
+        "rejected_dialogue_summary": "グラバー園やハウステンボスといった有名な場所に加え、温泉やお土産、写真スポットなど、様々な楽しみ方ができる場所がたくさんある。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行先として長﨑県を希望している。目的としては温泉に入ることである。Bが希望する旅行日程は冬で、一人で行く。趣味は特になく好みの食事も特にはないが、中学生であることから中華料理を好むと推測できる。宿泊施設は必要ない。観光地としてグラバー園や石造りの橋、洋風の建物などが挙げられる。",
+        "chosen_dialogue_summary": "長崎県の冬に一人で訪れ、特定の目的地はなく、宿も必要としない。中学生のため、中華が好きな可能性が高い。",
+        "rejected_dialogue_summary": "```長崎県で冬に一人で中学生が旅行に行く。```##構文解析###正規表現```bash$echo\"B\"|grep-Eo'^[A-Z]'B```###文字列分割````bash$cattest.txt|cut-d\"\"-f1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-旅行の目的は長期休暇を利用した旅行であり，長野県を訪問することである。-観光の内容としては，グラバーガーデン，ハウステンポス，ゆり乃湯，石造りの橋，東洋手甲13番屋敷，中国風料理店である。",
+        "chosen_dialogue_summary": "-中学生の旅行で，目的地は信州で自然や歴史に触れること。-解答例-長い休みを活用して，自然の景色を楽しむ旅に出かける。解説-この問題の要旨は中学校の生徒が夏季休業中に家族と一緒に旅行に行くということです。-これを解釈するためには，「家族旅行」というキーワードが必要です。",
+        "rejected_dialogue_summary": "-中学生の旅行で，目的地は石の橋や中国料理を楽しめる場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "##Task2[Task2](https://competitions.codalab.org/Competitions/23693#participate-evaluate)**TaskDescription**Givenaconversationhistorybetweenauserandachatbot,thegoalistopredictthenextutteranceoftheuser.Themodelshouldbeabletounderstandthecontextofpreviousutterancesandgenerateanappropriateresponse.**Data**Thedatasetconsistsof10,000conversationsbetweenusersandchatbots.Eachconversationisrepresentedasasequenceofuser-andbot-utterances,separatedbyaspecialtoken.Forexample,asampleconversationmightlooklikethis:```User:Hello,howareyoutoday?Bot:Hithere!I'mdoingwell,thankyou.Howaboutyou?...```**EvaluationMetrics**Toevaluatetheperformanceofyourmodel,wewillusetwometrics:perplexityandBLEUscore.Perplexitymeasureshowwellthemodelpredictstheprobabilityofeachwordinthetestset.Alowervalueindicatesabettermodel.Ontheotherhand,Bleuscoremeasuresthesimilaritybetweenthegeneratedresponsesandthegroundtruthresponses.Itrangesfrom0to100,withhighervaluesindicatingbetterperformance.**SubmissionFormat**Yoursubmissionshouldconsistofasinglefilecontainingthepredictedresponsesforeachtestexample.Youcanuseanyformatyoulike,aslongasitisclearandeasytoparse.Wewillprovideascripttoevaluateyoursubmissionsandcalculatethefinalscore.",
+        "chosen_dialogue_summary": "Givenaconversationhistorybetweenauserandachatbot,thegoalistopredictthenextutteranceoftheuser.Themodelshouldbeabletounderstandthecontextofpreviousutterancesandgenerateanappropriateresponse.",
+        "rejected_dialogue_summary": "##Task2###TaskDescriptionGivenaconversationhistorybetweenauserandachatbot,thegoalistopredictthenextutteranceoftheuser.Themodelshouldbeabletounderstandthecontextofpreviousutterancesandgenerateanappropriateresponse.###DataThedatasetconsistsof10000conversationsbetweenusersandchatbots.Eachconversationisrepresentedasasequenceofuser-and-bot-utters,separatedbyaspecialtoken.Forexample,asampleconversationmightlooklikethis:```User:Hello,howareyoutoday?Bot:Hithere!I'mdoingwell,thankyou.Howaboutyou?...```###EvaluationMetricsToevaluatetheperformanceofyourmodel,wewillusetwometrics:perplexityandBLEUscore.Perplexicitymeasureshowwellthemodelpredictstheprobabilityofeachwordinthetestset.Alowervalueindicatesabettermodel.Ontheotherhand,Bleuscoremeasuresthesimilaritybetweenthegeneratedresponsesandthegroundtruthresponses.Itrangesfrom0to1"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-観光はグラバーガーデン、立寄湯はユリノ湯、食べるものはリンゴハット、購入するものはない。",
+        "chosen_dialogue_summary": "「中学生がグラバー邸を訪れ、温泉に立ち寄り、りんごパイを食べた。買い物はしなかった。」",
+        "rejected_dialogue_summary": "-中学生のBは、グラバー邸を訪れ、温泉に入り、りんごのケーキを食べた。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅を考えていて、旅行先は長﨑県である。旅行日程は冬の間で未定であり、宿泊先や食事の希望は特になかった。Bが希望したのは、寒い時期でも楽しめそうな場所であり、それはグラバーガーデン、異人館などであった。さらに、食べるものに関してはチャンポンが好みであった。",
+        "chosen_dialogue_summary": "Bisa13-year-oldjuniorhighschoolstudentwhoisthinkingabouttravelingaloneandwantstogotoNagasakiPrefecture.Thetravelscheduleisundecidedduringthewinter,andthereisnospecialrequestforaccommodationormeals.B'srequestwasforaplacethatcanbeenjoyedeveninthecoldseason,suchasGloverGardenandForeigner'sHouse.Inaddition,asforwhattoeat,chanponwasafavorite.",
+        "rejected_dialogue_summary": "長崎県の冬は寒さが厳しくなるため、暖かく過ごせる場所を選ぶことが大切です。グラバー園は、明治時代の洋風建築が立ち並ぶ美しい庭園で、冬でも屋内で楽しむことができます。また、長い歴史を持つ洋館も多くあります。異国情緒あふれる街並みを散策しながら、ゆったりとした時間を楽しんでみてはいかがでしょうか。一方、食に関しても冬にぴったりなものがあります。それが、海鮮丼やちゃんぽんなどの温かい料理です。これらの料理は体を温めてくれるだけでなく、栄養価も高いため、旅の疲れを癒すのに最適です。また、お土産としても喜ばれること間違いなしです。以上のことから、Bさんには、温かさを感じられる場所と美味しい料理を堪能する旅をおすすめします。冬ならではの楽しみ方を満喫して、素敵な思い出を作ってください。"
+    },
+    {
+        "all_short_dialogue_summary": "A：本日の旅行先はどこかB：長﨑県である。行き先としては既にある程度決めているがはっきりとはしていない。夫と2人である。Q：具体的にどこに行くのかR1：グラバーガーデンQ2：その他の場所は？R2：Q3：行くとしたら何月頃か(例：秋頃)R3：A1:グラーバーエンは国の重要な文化遺産に指定されている。四季を通じて楽しめると思われるがどうだろうか？(Q1)A2:ハウス・テンポスを知っているか(Q2)Q4：他には何か旅行でしたいか？Q5：何か食事や買い物などで欲しいものはないかA4:旅行ではグラーベン・エンとテンプス・ボスの2箇所のみである(Q4)A5:特になし(Q5)Q6：1日目はどのように過ごすのか(Q6)Q6-1：R6.1:Q7：2日目のプログラムは(Q7)Q7-2:R7.2:Q8：旅行中に何か食べたり飲んだりすることは(Q8)Q8-3:R8.3:",
+        "chosen_dialogue_summary": "長崎県のグラバー邸とハウステンボスに夫婦で旅行に行きたい。",
+        "rejected_dialogue_summary": "グラバー邸とハウステンボスが長崎県にあり、夫婦で行きたいと考えている。訪れる時期は秋ごろである。【出力例】「グラヴァー・ガーデンの国指定重要文化財で、秋に訪れたいと思っている。」"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は長﨑県である。-50歳の男性が一人旅をしている。旅行期間は冬である。-観光場所はグラバーガーデン、東洋手甲一三番邸、メガネ橋、慶花園である。",
+        "chosen_dialogue_summary": "-長崎県の冬に一人で旅行をし、グラバー園、旧東山手十三番館、眼鏡橋と慶雲館を訪れた。```#coding:utf-8importreimportnumpyasnpfromgensim.modelsimportWord2Vecdefsentence_to_vector(sentence,model):words=sentence.split()vector=np.zeros(300)n_words=0forwordinwords:try:vector+=model.wv[word]n_word+=1exceptKeyError:continuereturnvector/(n_words+0.001)defcos_sim(v1,v2):returnnp.dot(v,w)/np.sqrt(np.sum(v**2)*np.sum(w**2))defmain():model_path='word2vec.model'withopen(model_path,mode='rb')asf:model=pickle.load(f)sentence=\"旅行は大阪府の夏に2人で行った。\"sentences=re.split(r'[\\s、。]',sentence)vectors=[sentence_to_vectors(model,sentence)forsentenceinsentences]print(vectors)if__name__=='__main__':main()```",
+        "rejected_dialogue_summary": "-長崎県の冬に一人で旅行に行き、グラバー園、旧東山手十二番館、眼鏡橋などを見て回った。"
+    },
+    {
+        "all_short_dialogue_summary": "AはBに長野県への旅行について尋ねる。Bは長期休暇を利用して旅行に行くことを考えていて、夫と二人での旅行であると答える。旅行先はまだ決めていないと言うBに対してAが質問を重ねていくと、Bが行き先として考えていたのは長寿県であることが分かった。Aの説明を聞いてBも行くことに決めたようである。次にAがお勧めする場所について説明していく。まず最初に紹介されたのはグラバーガーデンである。この場所は国が指定する重要な文化遺産であり、四季を通じて楽しめるとのことであった。続いて紹介されるのはハウステンポスという場所である。これはテーマ性の強い場所であり、日本ではあまり見ることのできないものであるとの説明を受けた。最後にBから食事や買い物についての希望がなかったため、Aからお茶が飲める東洋式の建物を紹介する。そこは写真を撮るのに適した場所でもあるようだ。さらにBには食べられないものがないか聞かれたが特になかったため、お店の紹介に移る。お店として紹介したのは中国料理の店である。その店は古くから営業している店であり、本場の中華を味合うことができるという。しかしそれだけではなく、別のメニューもあるとのことで、好みのものを選べるようになっている。ここでもBからの希望はなく、選択肢を広げるために様々なお店があることを説明する。その中でBからはカスタードケーキの購入を希望する声が上がったため、それに応じる形で店舗を探すことにした。探した結果、バリエーション豊富な店を見つけることができたとの報告を受ける。以上を踏まえて、最終的な旅行プログラムが決定した。",
+        "chosen_dialogue_summary": "B夫婦が夫の休みを活用して、信州旅行を計画している。彼らは、特に目的地は決まっていないが、寿命が長いことで有名な地域に行きたいと考えている。Aの提案により、グラバー邸、長崎のテーマパーク、中国レストランなど、興味深いスポットを訪れることになった。また、地元の名物料理やお菓子を楽しむこともできる。",
+        "rejected_dialogue_summary": "夫婦二人で行ける場所で、重要文化財の庭園や日本では珍しいテーマパーク、写真映えする建造物、おいしい中華料理、多種多様なスイーツを堪能できる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは旅行先として長﨑県を希望している。2.観光場所として、Bはグラバーガーデンを選んだ。3.グラバ―ガーデンの入場料は180円である。4.他にBが希望する場所はハウス・テン・ボスとゆり野の湯である。",
+        "chosen_dialogue_summary": "長崎県に旅行に行き、グラバー邸を見学し、入館料を支払い、ハウステンボスで遊び、温泉に浸かる。",
+        "rejected_dialogue_summary": "グラバー園は長崎市にある有名な庭園で、外国人居留地として栄えた歴史を持つ。園内には、異国情緒あふれる洋風建築物が立ち並び、見どころがたくさんある。入園料もリーズナブルなので、ぜひ一度訪れてみてはいかがだろうか。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先：長﨑県-行き先の条件：温泉と観光地-見るもの：グラバー園、ハウスティンボス、東山手甲十三番館、眼鏡橋、中華料理店、カステラのおみやげ、石でつくられたアーチ",
+        "chosen_dialogue_summary": "長崎県の名所を巡る旅では、歴史的建造物や美しい自然景観を堪能することができます。まずは、外国人貿易商の邸宅が立ち並ぶグラバーガーデンを訪れ、異国情緒あふれる雰囲気を味わいましょう。次に、広大な敷地に広がるハウステンポスで、季節の花々やアトラクションを楽しみます。さらに、洋風建築が残る東山市街地を散策し、個性的なカフェやショップでショッピングを楽しむのもおすすめです。夜には、夜景の美しさで有名な稲佐山展望台からの眺めを満喫しましょう。また、オランダ坂や中華街を歩きながら、おいしいグルメやお土産を探すのも楽しいですよ。",
+        "rejected_dialogue_summary": "-長崎県の旅行は、グラバーガーデンやハウステンポスなどを訪れ、オランダや中国の文化に触れることができる。また、歴史的な建造物や石造りの橋なども見どころがある。さらに、地元の名物料理やお土産も楽しめる。【出典元】https://www.google.com/search?q=%E9%95%B7%E5%B3%B6%E7%9C%8C%E3%81%AE%E6%94%BB%E8%A8%98%E9%A0%85&tbm=isch&ved=2ahUKEwiOvY3P5Z3yAhWQYdYKHVd4CjYQ2-cCegQIABAA&oq=nan%20nagasaki&gs_lcp=CgNpbWcQAzIECCMQJzIFCAAQsQMyBQgAEIAEMgUIABCABDIFCCEQoAEM6BAgjECc6BggAEAgQHjoECAAQEzIICAAQFhAeMgYIABAHEB4yCAgAEBYQBDoHCC4QxwEQrwGQzoGCAAQCBAeMC4zLXAgAGJAY5gBAKABAaoBB2d3cy13aXotaW1n&sclient=img&ei=V3vXYqSfHcWj1gH3o4f4Dw&bih=614&biw=1366"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の男の子が一人旅をしに長﨑県に行くことを考えていて、宿泊場所は温浴施設を利用することになっており、滞在期間は2日間である。旅行中は観覧する場所や食べるもの、購入するものなどについては特定のものを指定しておらず、自由に決めたいと思っている。",
+        "chosen_dialogue_summary": "長崎県に一人で旅行に行き、温泉宿に2泊する予定です。行き先や食事、買い物などは自分で決めるつもりです。",
+        "rejected_dialogue_summary": "13歳の男の子が一人旅をしに長崎県に行くことを考えており、宿泊場所は温浴施設を利用することになっていれば、滞在期間は2日間である。旅行中は観覧するところや食べるもの、購入するところなどについては特定のものを指定していられず、自由に決めたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の女性一人旅であること。-旅行期間は冬であるが時期は未定である。-観光はグラバーガーデン、東洋手甲13番屋敷、旧グラスゴー1号館、出島、日本二十六聖人殉教記念碑、原爆落下中心地、平和祈念像、浦上天主堂、孔子廟、崇福寺、福済寺などが挙げられる。-長崎名物の食事としては皐月、チャンポンなどがある。",
+        "chosen_dialogue_summary": "-長崎を訪れる予定の、冬に一人で旅行する女性。-観光スポットには、グラバー園や東山手十三番館などがあり、また歴史的な建造物も見どころとなっている。-食事は、皿うどんやちゃんぽんなどの名産品を味わうことができる。",
+        "rejected_dialogue_summary": "-長崎の冬に一人で旅行する女性が、グラバー邸や東山手十三番館などを訪れ、皿うどんやちゃんぽんなどを食べる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅を考えていて、旅行先は長﨑県である。旅行は秋頃に行くことを検討している。旅の目的は温泉に入ることであり、旅程は1泊2日を考慮している。観光地としてはグラバーガーデンやハウステンポスなどを訪れることを希望している。また食事に関しては特にこだわりはなく、食べられるものであれば何でも良いと答えている。",
+        "chosen_dialogue_summary": "中学生のBが一人で長崎県を秋に旅行する。目的地は、グラバー邸とハウス・テンボス。宿泊は一泊二日で、特定の食べ物の好みはない。",
+        "rejected_dialogue_summary": "長崎県を一人で訪れ、グラバー園などを見学し、秋に2泊する予定です。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-旅行に行く場所は長﨑県である。理由としては温泉に入ることが目的であり、同伴者は自分1人だけである。また、何時頃行くかについては冬の時期に行くことを検討している。-グラバーガーデンという所に行き、その後、1日を丸々使える場所であるハウステンポスで遊び、2日目にグラバ―ガーデンの近隣にある場所を回ることを考えている。-長崎には立ち入り湯である「ゆりの湯」という場所があり、ここで入浴することになっている。また、この場所では日本庭園やジェツトバス、サウンナー、貸切湯、足湯といった様々な設備が用意されている。この場所に関しては興味があると答えている。また、その他の食事や買い物についての希望は特になしであるため、観光のみの旅行となる。",
+        "chosen_dialogue_summary": "中学生のBは、冬に一人旅で、グラバー園とハウス・テンボスを訪れ、立ち寄り湯の「ユリノ湯」に入浴したいと考えています。",
+        "rejected_dialogue_summary": "-中学生が長野県で冬に一人旅をする。グラバー邸を訪問し、翌日はハウス・テンボスを楽しむ予定。宿泊先は立ち寄り湯のある「ユリノ湯」で、温浴施設が充実している。また、食料品や土産品の購入は希望していない。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は長期休暇を利用した旅行である。-行き先は秋に訪れたい長野県である。-観光名所として、北アルプス、白川郷、飛騨高山、上高地、乗鞍高原、安曇野、黒部ダム、富山県の五箇山などが挙げられる。",
+        "chosen_dialogue_summary": "-秋の紅葉が美しい、自然と歴史を感じることができる地域である。##解答例-自然豊かな地域で、秋には美しく色づいた木々が楽しめる。",
+        "rejected_dialogue_summary": "旅行は、長い休みをとって行くものである。行きたいのは、秋に行くのにふさわしい、信州である。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性で一人旅をしている。旅行先は長﨑県である。旅程は冬に行くことを検討しているがまだ具体的に決めていない。好みのジャンルは特になく，食べることと買うことが好きである。",
+        "chosen_dialogue_summary": "Bは、長崎県を一人で旅行し、食べ物や買い物を楽しみたいと考えている。###正解例Bisa50-year-oldwomanwholikestotravelaloneandwantstoenjoyeatingandshoppinginNagasakiprefecture.",
+        "rejected_dialogue_summary": "##構成要素-女性(50)-旅行先：長崎県(冬)-長崎(食べ物，買い物)-グルメ：ちゃんぽん，皿うどん-食べ歩き-一人旅-お土産：カステラ，ちゃんちゃん焼き，角煮まんじゅう"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、旅行先は長﨑県である。旅行日程は冬の時期を考慮している。具体的にどこに行くか決めていないが，温泉に入ることを希望している。また，観光地としてグラバーガーデンやハウステンポスを訪れたいという希望もある。中学生であるため，入園料は180円がかかる。カステラを購入することも希望している。",
+        "chosen_dialogue_summary": "長崎県を旅行したい中学校3年生の女子である．冬に一人で行く予定で，旅費は1万8千円程度である。目的地は，グラバー園，ハウス・テン・ボス，そしてお土産にカスティーラを買うことである。##解答例###要約1中3女子，冬の一人旅，目的はグラーベルガーデンの見学とカスタードケーキの買い物，予算は18,000円。###解説・「中３女子」は１文目に来ることが望ましい。・冬に行きたいと書いてあるので，季節は「冬」でよいだろう．しかし，「寒い」という記述がないので「秋」や「春」でもよいかもしれない．また，12月や1月など，具体的な月を入れるとより良い．この文章では「１月」が妥当であると考えられる．なぜならば，１２月はクリスマスや年末年始のイベントが多く，宿泊施設の予約が取りにくい可能性が高いからだ．もちろん，これは事前調査があればの話であるが，本文中にはそういった記載は見当たらない．よって，事前に調べる必要があるかどうかは不明であり，今回の解答では，その部分は曖昧にしておくことにする．なお，もし，調べておいたとしても，この情報は文章の冒頭に持ってきてはならないことに注意してほしい．その理由については後述する．・旅の目的として，３つの項目が挙げられている．どれも重要な情報なので，全て含めておこう．ただし，どの順番で書くべきかという問題が残る．本文に書かれているとおり，まずは入場料が発生する「グラーバー園」について書き，次に「カーステラ」を買いたい旨を述べよう．最後に，もう一つ，興味がある場所として「ハワステンボス」があると伝える．これが最も自然な流",
+        "rejected_dialogue_summary": "グラバー邸や長崎の街並みを楽しむことができる。以上の文章を入力し，ボタンを押すと，以下のように出力されます．"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳前後で一人旅を検討している。-旅行の目的は長期休暇を利用したリフレッシュであると予想される。-仕事のストレスが溜まっている可能性が高い。-長崎への旅行が望まれている。理由は不明だが、寒い時期に暖かい場所を求めていると推測される。+寒い地域に住んでいる可能性がある。-北海道、東北、北陸、信越、関東、甲信、静岡、愛知、岐阜、三重、滋賀、京都、大阪、兵庫、奈良、和歌山、鳥取、島根、広島、山口、四国、福岡、大分、熊本、宮崎、鹿児島のいずれかの地域が考えられる。*これらの地域は冬季に気温が低くなる傾向があるため、旅行先として暖かく過ごしやすい環境を望む人が多い。-一人旅であることから、自由な行動が可能であり、自分のペースで行動できることがメリットとして挙げられる。一方で、一緒に行動する相手がいないため、新たな出会いや交流の機会が少なくなる可能性もある。-目的地としてグラバーガーデンが選ばれた。観賞植物が多く植えられていて、園内を散策することができる。外国人居留地跡にあり、異国の雰囲気が漂う場所としても知られている。+日本の文化と外国の文化が融合した場所であるため、日本人にとっては新鮮な印象を与える。*外国人の視点から見た日本の魅力を再発見できる。-グラバ―ガーデンの存在は、日本の多様性を象徴するものである。*日本は単一民族国家ではなく、様々な文化や伝統を持つ人々が共存していることを示す。-多文化共生社会の実現に向けた取り組みが進んでいる。*グローバル化の進展に伴い、日本社会も多文化を受け入れようとする動き",
+        "chosen_dialogue_summary": "Bは、50代前半の独身男性で、仕事上のプレッシャーを感じており、リラックスしたいと考えている。北日本や東日本、西日本に居住している可能性があり、冬の寒さから逃れるために、温暖な地域を訪れたいと思っている。特に、グラバー邸の庭園を気に入っており、その美しさや異国情緒を楽しむために旅行を計画しているようだ。",
+        "rejected_dialogue_summary": "-グラバー邸のあるグラバー園は、多彩な植物と異国情緒あふれる景観を楽しめる場所であり、日本と西洋の歴史が交差する場所でもある。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の男の子で一人旅である。-旅行の時期は冬である。(12月から2月の間)-行き先は長﨑県であり、目的としては「温泉に入ること」と「観光をすること」が挙げられる。-観光は、「グラバー園」、「ハウステンボス」、「眼鏡橋」、「東山手甲十三番館」の4箇所となる。-食べ物に関しては特段こだわりはなく、嫌いな食材もない。",
+        "chosen_dialogue_summary": "-長崎県を一人で旅行し、冬に温かく過ごすことを目的とした旅であった。##解答例-長崎を訪れ、温かい湯に浸かりながら冬の寒さを忘れようとする少年の物語である。",
+        "rejected_dialogue_summary": "-長崎県に一人で旅行に行った。目的は、冬に行くことと、グラバーガーデン、ハウスツボス、メガネバシ、ヒガシヤマテコウジュウサンバンカンを訪れることだった。"
+    },
+    {
+        "all_short_dialogue_summary": "-A:長崎での旅行についての質問-B:旅行の目的は長期休暇を利用した家族旅行であること，行き先は特定していないこと-A:-予算や日程の確認-質問に対して回答-出発日と宿泊日数の決定-日程に合わせた旅行先の検討-長野県の温浴施設の紹介-入浴料金や設備の説明-足湯も利用可能であることを伝える-レストランやカフェの有無について尋ねる-食事の予約を勧める-料理のメニューを紹介する-希望する料理の選択を促す-選択に応じて料理を注文-注文した料理が提供されるまで待つ-提供された料理に満足した場合，感想や評価を述べる",
+        "chosen_dialogue_summary": "Bは家族と一緒に旅行に行く予定で、長期間の休みを取るつもりでいる。目的地はまだ決まっていないが、温泉に入ってリラックスしたいと考えている。【出力例】Bisplanningtogoonatripwithhisfamilyandtakealongvacation.Hehasn'tdecidedonthedestinationyet,buthewantstorelaxinahotspring.",
+        "rejected_dialogue_summary": "家族で温泉に行きたいと考えているが、具体的な場所は決まっていない。ここで紹介したいのは、温水プールやサウナ、露天風呂などを備えた長寿の湯である。入場料は大人1,000円、小学生500円、幼児300円で、営業時間は午前10時から午後9時までとなっている。また、食堂も併設されており、うどんやそば、ラーメン、カレーライスなどが楽しめる。さらに、休憩室やマッサージチェアもあるので、ゆっくりとくつろぐことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生一人旅で冬に行く。-観光はグラバーガーデン、東洋手甲13号館を回る。-グラバ―ガ―デンは入場料180円で入ることができる。-ここは日本の国有財産で重要な文化遺産に指定されている。-季節に関係なく楽しめるところである。-案内人はオススメしている。-日本庭院のオープンエアの温水プールもある。-ジェットバスの他、サウンナ―がある。-貸し切りのプ―ルも利用可能。-足湯もできる。-ハウスタ―ボスではパスポ―トを購入して丸1日過ごすことを勧めている。",
+        "chosen_dialogue_summary": "「グラバー邸の庭園は重要文化財であり、冬でも楽しむことができ、温泉やサウナ、貸切風呂などもあり、パスポートを買って一日中楽しめる。」",
+        "rejected_dialogue_summary": "-札幌市時計台の近くにあるグラバー邸の庭園を散策し、温泉を楽しむ。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の女性一人旅であること。-旅行期間は冬であるが日程は未定である。-観光場所はグラバーガーデン、Hauステンポス、有料の立ち入り湯である「ゆり乃湯」である。",
+        "chosen_dialogue_summary": "冬のグラバー邸を訪れ、湯治場で心身ともに癒やされる。##解答例```冬に一人で旅行に行く。目的地は長崎県のハウステンボスと湯の原温泉である。```",
+        "rejected_dialogue_summary": "グラバー邸、ハウステンボスに立ち寄り、温泉に浸かりながら冬の旅を満喫する。#実行方法```$python3main.py```"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行先に長﨑を選び、主な目的は温泉に入ることである。グラバー園やハウステンボスといった観光地も訪れたいと考えている。食事は特にこだわりがないが、一人でも入りやすい中華料理店の「中国菜館慶華園」を候補として挙げている。また、お土産としてカステラの購入を検討している。",
+        "chosen_dialogue_summary": "BisgoingtoNagasakiforsightseeing,andthemainpurposeistotakeahotspringbath.HealsowantstovisittouristspotssuchasGloverGardenandHuisTenBosch.Thereisnoparticularpreferenceforfood,butheisconsideringtheChineserestaurant\"ChinaRestaurantKeikaen\"asacandidateforarestaurantthatiseasytoenteralone.Also,IamconsideringpurchasingCastellaassouvenirs.",
+        "rejected_dialogue_summary": "```\"長崎県のグラバーガーデンやオランダの街並みを再現したテーマパークの訪問を希望し、中国料理の店やお菓子を買いたい。\"```"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の女の子で一人旅をしている。-旅行の目的は長期休暇を利用してリフレッシュすることである。-長崎に行くことを考えていて、宿泊はしていない。-観光の内容は以下の通りである。-グラバーガーデン<https://www.glover-garden.jp/>>日本初の国際貿易港として栄えた港町、出島の隣に位置するグラバ―邸を中心に広がる、英国風ガーデニングのテイストを取り入れた庭を散策することができます。庭には、四季折々の草花が咲き誇り、その美しさは訪れる人々を魅了し続けています。また、日本で初めて公開された英国式の洋庭としても知られ、多くの外国人も訪れています。<br><br>![](./glover_garden.jpg)&emsp;&emsp;(出典:<ahref=\"http://kankomie.or.jp/spot/detail_1753.html\">みえ旅ナビ</a>)-ハウテンポス<https://www.huis-ten-bosch.co.jp/>>ハウステンボスとは、1983年にオープンした、国内最大級の屋外型テーマ性リゾート施設。園内には、アトラクションやショップ、レストラン、ホテルなどがあり、さまざまなテナントが集まっている。特徴的な建物や広大な敷地内に咲く花々など、風景も楽しめ、家族連れやカップル、友人同士など幅広い層に人気がある。年間の入場者数は約300万人以上にのぼる。>また、園内の広さは東京ドーム約30個分に相当する約152万平方メートルで、日本最大規模の遊園地として知られている。アトラクトションは、小さな子どもから大人まですべての世代が楽しく遊べるように設計されている。中でも、絶叫マシンやスリル満点のライドが人気を集",
+        "chosen_dialogue_summary": "-Bは一人で旅行をし、リラックスすることを目的としている。彼女は13才であり、長期間の休みを過ごす予定である。-彼女は、グラバー園を訪れ、歴史的な建築物を鑑賞したり、庭園の美しい景色を楽しんだりした。さらに、ガイドツアーに参加することで、詳しい説明を聞くことができた。-次に、Bは出雲大社に足を運び、日本の伝統的な神社の雰囲気を味わった。ここでは、御朱印をいただいたり、お守りを買ったりして、神聖な気持ちになった。",
+        "rejected_dialogue_summary": "-長崎のグラバー園を訪れ、花を楽しんだり、歴史に触れたりした。"
+    },
+    {
+        "all_short_dialogue_summary": "-長崎へ旅行に行くことを検討している。-旅行の目的は温泉に入ることと観光地巡りである。-観光する場所はグラバー園とハウステンボスが候補として挙げられている。-グラバー園では日本庭園を楽しむことができる。-ハウステンポスではオランダをテーマにした施設で、一日中楽しむことができるパスポートを購入することが推奨されている。-また、旅行の際はハウステンポスで一日を過ごすことが推奨されている。-長崎県内では立ち寄り湯を利用することが提案されており、その中でもゆりの温春が好まれている。-他には石で造られた橋や西洋の建築物を見ることも推薦されていて、東山手甲十三番館は入場料金が無料で写真スポットとして人気がある。",
+        "chosen_dialogue_summary": "-長崎旅行では、グラバーガーデンで日本の伝統的な庭を楽しみ、ハウス・テン・ボスでの1日の旅行をお勧めします。-温泉は、ゆりんの温かさでリラックスできます。",
+        "rejected_dialogue_summary": "-長崎旅行では、グラバーガーデンで日本の伝統的な庭を楽しみ、ハウス・テン・ボスに行き、1日かけて楽しめるチケットを買うことをお勧めします。また、立ち湯や石造りの橋、ヨーロッパ風の建物を見たり、写真を撮ったりすることもできます。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が一人旅で長﨑県を訪れる。目的は温浴施設の利用であり、旅程は冬の時期である。旅行先としてはグラバーガーデンやハウス・テン・ボスが挙げられ、宿泊先はゆり乃湯である。また食事は中国料理店の「慶花園」でとることになっている。カスタードクリームが入ったカラメルソースをかけて食べるスイーツが好みである。",
+        "chosen_dialogue_summary": "長崎県の温泉宿に滞在し、グラバー邸やオランダ坂など歴史的建造物を見学する予定です。夕食は本格的な中華料理を楽しみます。冬に訪れますが、寒さに負けず、地元の美味しいグルメを堪能したいと思います。",
+        "rejected_dialogue_summary": "グラバー園とハウステンボスは、長崎県にあり、冬に温泉を楽しみながら、中国の料理を楽しむことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の女性が一人旅で秋に長野県を訪れることを考えていて、目的としては長期滞在型の旅行である。具体的に行く場所は決めていないが、「グラバーガーデン」という場所に行くことを希望している。宿泊施設として「ユリノ湯」に泊まりたいと思っている。食事は「チャンポン」や「皐月丼」などを食べるつもりである。また、「カスティラ」も買うつもりのようである。",
+        "chosen_dialogue_summary": "「グラバー邸」を見学したい50代女性の一人旅。温泉宿「ゆりの湯」を拠点に、信州そばの「カステラ」を購入し、「チャーハン」を食べたい。",
+        "rejected_dialogue_summary": "50代女性の秋の長旅。目的地は未定だが、グラバー邸を希望し、宿は湯の宿ゆりん、食はちゃんぽんやさつきどんぶり。カステラも購入予定。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生一人旅であること。-旅行期間は冬である。宿泊はなしで立ち入り湯のみを利用する。-ゆりの湯という立ち入湯を選択した。-観光目的は以下の通りである。-グラバ―園-入園時間は不明だが、料金は180円である\t-ハウスタ―ボス-一日を丸々使えるテ―マパ―クであり、パスポ―トを使用する\t-日本庭―ンを眺めながら入浴できるゆり―の湯\t-石造りのア―チ橋-東山―手甲一三番―館-明治時代に作られた建物であり入場料は無料である-食べ物に関しては特になしであるが、長崎名物の中華そばであるちゃん―ポンと中華めんを油であぶったあんとからめ食べる皐―う―ど―んの2つがある。-おみやげとしてカス―テラ―を買う。",
+        "chosen_dialogue_summary": "中学生の一人旅で、冬の期間に立ち寄り湯の「グラバー園」や「テーマパーク」、「石のアーチ橋」などを訪れた。",
+        "rejected_dialogue_summary": "-中学生の一人旅で、冬に立ち寄り湯の「グラバー園」を訪れ、ハウス・テーマパーク「ハートボスの丘」で遊び、日本式の庭園を見ながら温泉に入り、石のアーチ橋「眼鏡橋」を見て、無料で入れる歴史的建造物を見学し、お土産にカステラを購入した。"
+    },
+    {
+        "all_short_dialogue_summary": "AがBに長野県の旅行について尋ねたところ、Bは冬に一人旅をすることを希望している。Bが希望する場所として、九十九島パールシーリゾート、佐世保バーガーなどが挙げられた。AはBに対し、これらの場所を訪れる際の注意点を説明した。",
+        "chosen_dialogue_summary": "A:WhatdoyouwanttoseeinNaganoPrefecture?B:Iwouldliketotravelaloneinthewinter.B'sfavoriteplacesarethe99IslandsPearlSeaResortandtheSaseboBurger.AexplainedtoBthepointstobeawareofwhenvisitingtheseplaces.",
+        "rejected_dialogue_summary": "Bは、冬の長崎県を一人で旅行したいと考えている。目的地は、海に浮かぶ島々が美しい景観を醸し出す九州屈指の景勝地である「九十九島パールシーリゾート」や、肉厚でジューシーなパテが特徴のご当地グルメ「佐世保バーガー」などである。ただし、寒さが厳しい時期であるため、防寒対策をしっかりと行う必要がある。"
+    },
+    {
+        "all_short_dialogue_summary": "-長崎へ旅行に行くことを検討している。-旅行の期間は冬で1週間程度を考慮している。宿泊先はまだ決めていない。-12歳の中学生であるため、保護者の同意が必要かもしれない。-観光する場所は以下の3つである。-グラバーガーデン-入場料は180円である。中学生は入場可能であるか確認する必要がある。```入館料：大人200円、小人100円（4歳以上小学生以下）冬季（12月1日～2月末日）：大人200円、小・中・高校生100円、幼児（3歳以上）50円（要保護者同伴）※障害者手帳提示で本人と介護者1名が半額2019年4月1日から消費税増税に伴い料金が改定されます（2018年11月現在）。※団体割引有り（20名以上で10%割引、要事前申し込み）出典：https://www.nagasaki-tabinet.com/guide/35/```![グラバ―ガーデンの写真](./images/1.jpg)-2つ目に観る場所として、オーストラリアの街並みを再現したテーマ性の強いテーマーパークである「ハウステンポス」が挙げられている。これは1つ目の場所と異なり、一日の時間を費やすのに適しているようだ。```大人（中高生を除く）1,000円中・高・大学生800円小学生500円幼児(3才以上)400円シニア(65才～)900円※シニアは要身分証明書(健康保険証・運転免許証等)4才未満は無料※各種障がい者割引きあり※土・日・祝・特定日（ハロウィン・クリスマス・バレンタインデーなど）は割増※年間パス",
+        "chosen_dialogue_summary": "グラバー園は、長い歴史を持つ外国人居住区で、建物や庭園が美しく保存されている。冬でも楽しめ、中学生も入れる。入るには大人2人で1000円かかるが、シーズンによって値段が変わる。幼稚園児以下は大人と一緒なら無料。障がいのある人も割り引かれる場合がある。【注意事項】-要約の長さは40文字以内とする-文章は平仮名、カタカナ、漢字、英数字のみを使用すること（句読点、記号、括弧などは使用しないこと）-1つの文に複数の主語や述語が含まれないようにする（例：私は彼を助けました、彼は助かりました→彼は私に助けてもらいました）",
+        "rejected_dialogue_summary": "「グラバー邸を訪れ、ハウスツーポスで一日を過ごす。」"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は長期の旅行である。-長崎が旅行先であることが明らかになっている。-50歳以上の男女2人組であると推測される。-行き先としては「グラバーガーデン」、「ハウスボス」が挙げられている。-食事の希望は特になかったが、「長寿の湯」という温浴施設を利用することになった。-おみやげとして「カスケラ」を買うことが決まった。",
+        "chosen_dialogue_summary": "「2人の50代の夫婦が、グラバー邸やハウステンボスを訪れ、温泉で疲れを癒やし、カステラを土産に買って帰る旅に出る。」",
+        "rejected_dialogue_summary": "-長崎を旅行する50代夫婦が、グラバー邸やハウステンボスを訪れ、温泉で疲れを癒し、カステラを買って帰るという旅行プランを立てた。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行先は長﨑県である。-50歳の女性が一人旅をする。旅行期間は冬で2泊3日である。-長崎では、1日目の午前中はグラバーガーデンを訪れ、午後から夕方にかけては有料の温浴施設「ゆり乃湯」で入浴する。夕食は近隣の中華レストラン「慶喜園」に行く。宿泊はホテルで行う。翌朝は朝食を食べた後にホテルをチェックアウトする。",
+        "chosen_dialogue_summary": "-この女性は、冬の間に2日間の旅行を計画し、グラバー邸や中華料理を楽しみ、温泉でリラックスする予定である。##解答例-Thiswomanplansa2-daytripinwinter,enjoyingGloverHouse,Chinesecuisine,andrelaxinginahotspring.##模範解答This50-year-oldwomanwilltravelalonetoNagasakiPrefecturefortwonightsandthreedaysduringthewinter.ShewillvisitGloverGardeninthemorningandthengotoapaidbathfacilitycalledYurino-yufortherestoftheafternoonandevening.Intheevening,shewillhavedinneratanearbyChineserestaurantcalledKeikien.Thenextmorning,afterhavingbreakfastatthehotelwheresheisstaying,hertripwillend.",
+        "rejected_dialogue_summary": "「グラバー園と中華料理を堪能し、温泉で疲れを癒す1泊2日の旅」"
+    },
+    {
+        "all_short_dialogue_summary": "Bは13歳の中学生で一人旅をしている。行き先は長﨑県である。目的は温泉に入ることであり、旅程としては1日目の午前中をハウステンボスで過ごし、その後グラバーガーデンを訪れ、夕食は中華料理を食べる。2日目の午後は眼鏡橋や甲13番館を散策し、お土産としてカステラを買う。宿泊はせず、1日目と2日目の夜は立ち寄りで入れるゆりの温湯に入る。",
+        "chosen_dialogue_summary": "Bさんは、長崎県を一人で旅行し、中学生です。1日の午前にハウス・テン・ボスに行き、午後にグラバー・ガーデンの散歩をし、夜にゆり温浴に入ります。次の日は、昼間はメガネ橋と甲1号館を見て回り、晩にカスティーラを購入します。",
+        "rejected_dialogue_summary": "長崎県を一人で旅行する中学生のB。温かくて美味しいカラフルな街並みを堪能し、歴史的建造物を巡り、地元の名産品を購入し、一人でゆったりとした時間を満喫する。"
+    },
+    {
+        "all_short_dialogue_summary": "1.13歳の中学生の女の子である。2.旅行の行き先は長﨑県。3.一人旅。4.観光目的の旅行。5.秋頃に行く。6.長崎での見どころはグラバーガーデン。7.グラバ―ガーデンの入場料は180円。8.ハウスタンポスも見る。9.日帰り入浴ができる「ゆりのはな湯」に入る。",
+        "chosen_dialogue_summary": ">長崎県の秋に一人で行く旅行で、グラバー園を訪れる予定です。ハウス・タンボスにも立ち寄ります。入湯料金は1,800円です。---##解答###予測結果```text長123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210211212213214215216217218",
+        "rejected_dialogue_summary": "出典：https://www.yurino-hanayu.com/"
+    },
+    {
+        "all_short_dialogue_summary": "-長崎に行くことを検討している。-旅行の期間は冬である。-一人旅である。",
+        "chosen_dialogue_summary": "-私は、冬に一人で旅行することを計画している。",
+        "rejected_dialogue_summary": "-長崎の冬の景色を一人で楽しむ旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生で一人旅をしている。-行き先は長野県である。-長野で見るべきものは「グラバーガーデン」と「石造りの橋」である-グラバ―ガ―デンは入場料180円であり、年間通して楽しめるとのことである。日本の文化を感じることができるとも述べている。-また、「ハ―ステンポス」というテ―マパ―クにも行くことができる。-ハ―ス―テン―ボスには一年を通じて遊べるアトラクションが多くあり、写真撮影にも良い場所であると説明されている。-観光以外にも長―崎名物の「ちゃん―ポン」や「カスタ―ラ」も紹介されている-チャ―パンはリンゴ―ハットのような中―華レストランで食べられる-カスタラ―は昔ながらの店舗と新しいタイプの両方がある",
+        "chosen_dialogue_summary": "「日本文化の体験ができ、さまざまなアクティビティが楽しめるハ－ステンボスは、長崎県の魅力的なスポットである。」【回答例】「ハーセン・ボスのテーマパークは、日本の伝統的な文化と現代的な娯楽が融合した、多様な楽しみ方ができる場所です。」",
+        "rejected_dialogue_summary": "-長野の見どころは、グラバー園と石の橋、ハウステンボス、長崎のちゃんぽんやカステラである。"
+    },
+    {
+        "all_short_dialogue_summary": "【構成要素】-A:観光先を聞く-B:長崎-A:-いつ行くか-時期-秋-目的地-箱根-見たい場所-グラバーガーデン-入場料-大人180円-行く日程-土日-選択肢-渋谷",
+        "chosen_dialogue_summary": "Bは、秋にグラバー園に行く予定で、土日に行きたいと考えている。##解答例BisplanningtogotoGloverGardeninthefall,andwouldliketovisitonaweekend.",
+        "rejected_dialogue_summary": "-箱根に行きたいと考えており、秋に行く予定である。目的は、グラバー邸を訪れることであり、入館料は大人1人あたり180円である。また、土日に訪問するつもりである。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-観光-グラバーガーデン-日本の文化を感じられる-国指定重要建物-桜-春の時期に観賞できる-景色-自然-山-登山-憧れ-一人-危険-怖い-神秘-楽しい-趣味-ゲーム-インドア-家-映画-料理-食べること-好き-アクションゲーム-難易度-ストレス発散-散歩-近所-歩き方-姿勢-健康-改善-目的地-季節-愉快-GPS-機能-便利-秋-紅葉-美しさ-運動--交通手段-飛行機-長崎空港-新幹線-駅-バス-ホテル-チェックイン-お部屋-夕食-寝る-翌日-朝ごはん-出発",
+        "chosen_dialogue_summary": "「春はグラバー園で日本文化に触れ、秋は自然を楽しみながら山登りをし、ゲームや料理を通じてリフレッシュする。交通の便が良く、ホテルや食事も充実している。」",
+        "rejected_dialogue_summary": "秋の旅行で、自然を楽しみ、ゲームや料理をしながら、健康的な生活を送ることができた。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生で一人旅を希望している。-長崎に行くことを考えていて、旅程としては1日目の午前中はグラバーガーデン、午後から夕方にかけてハウスボスに行き、その後、夕食として長﨑名物の中華そばを食べる。翌日には、朝早く起きてゆりんの湯で入浴をし、そのあとにグラーバー園と石造りの橋を見て回るというプログラムを組んでいる。",
+        "chosen_dialogue_summary": "グラバー園、ハウステンボス、中華料理、温泉、石畳の橋を満喫する旅##解答例-グラバーの家、オランダ風の街並み、異国情緒あふれる中華街、和洋折衷の温浴施設、江戸時代の面影を残す街路を巡る旅",
+        "rejected_dialogue_summary": "グラバー園、ハウステンボス、中華料理、温泉、石橋##解説###要約のポイント-主語を意識する-重要なキーワードを拾う-グラバー庭園-長崎市にある日本最古の木造洋館、旧オルト邸を中心に、居留地時代の面影を残す歴史的建造物が点在する公園。国指定重要文化財の旧ウォーカー住宅や旧スチイル記念学校などが立ち並び、異国情緒あふれる雰囲気を醸し出している。>https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%AB%E5%A4%AA%E9%83%A8%E8%A1%97%E4%B8%AD%E6%96%87%E7%9F%B3"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生で一人旅を考えていて、冬に長﨑県に行くことを検討している。行き先はまだ決めていない。長く滞在するつもりはなく、1泊2日の日程を考慮している。お勧めされた場所は以下の通りである。1.グラバーガーデン2.石造りの橋3.洋館4.中華レストラン5.ハウスターボス6.ゆりの湯7.カステーラ",
+        "chosen_dialogue_summary": "A13-year-oldmiddleschoolstudentisconsideringtravelingaloneandisthinkingofgoingtoNagasakiPrefectureinwinter.Thedestinationhasnotbeendecidedyet.Idonotintendtostayforalongtime,andIamconsideringa1-night2-dayschedule.Recommendedplacesareasfollows.1.GrabberGarden2.StoneBridge3.OrientalHouse4.ChineseRestaurant5.HouseTarbos6.Yurinoyu7.Castella",
+        "rejected_dialogue_summary": "長崎県で冬の旅行を計画している中学生が、洋風の建物やおいしい食べ物を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "13歳の中学生であるBさんは、冬の時期に一人旅で長﨑県に行くことを考えていて、旅の目的は温泉に入ることである。Bさんに何か食べたり買ったりするものはないか尋ねたところ、何も欲しいものはないと答えた。そこでAさんはBさんの旅程を組み立てることにした。まず、1日目の午前中はグラバー園を見て回り、その後、午後から夕方にかけては西日本最大級の遊園地であるハウスレンポスで遊ぶこととした。次に2日目を考えたところ、Bさんが行き先を決めていないということだったのでAさんは、別料金で入ることができるグラーバー園に加えて、周辺のオススメの場所を探した。その結果、東山手甲第十三号館を見つけた。ここは無料で中を見学することができ、お茶をすることもできるので写真撮影にも最適であると説明した。また、この場所は日本人にはあまり馴染みのない場所であるため、写真に残しておくと良いと勧めた。続いて食事の話題に移った。最初にAさんが提出したのは、長崎チャンポンが食べられる中国料理店「慶花園」である。この店は長い間営業を続けている店であり、店の前には石造りの橋が架かっているため、昔ながらの雰囲気が楽しめると紹介した。しかしBさんはまだ食べたことがないというので、それならば、最近流行している新しいタイプの店である「松翠園」を紹介し、その中でも特にお薦めなのはチーズケーキだと説明をした。最後に、おみやげについて話し合った。おみやげといえば、真っ先に思い浮かぶのはカステラであるが、この店には様々な味が用意されているため、お好みで選ぶことが出来ると説明を加えた。以上を踏まえたうえで、一日のスケジュールを確認したところ、大きな問題は無いという結論に至った。",
+        "chosen_dialogue_summary": "Bは中学生で、旅行の目標は、温水浴を楽しむことです。彼女はお金を使いたくないと言いました。Aは彼女の予定を立てました。一日目は午前にグラバーガーデンを訪れ、そのあと午後にハウステンボスに遊びに行きます。二日めはBがどこに行きたいか決めてないので、Aが探しました。グラヴァー・ガーデンの他に、近くに東洋風の建物があります。お茶を飲んだり写真を撮るのに良い場所です。また、外国人にとっては珍しい場所なので記念に撮っておきましょう。食べ物は有名な中国レストランでチャーハンや麺類を食べるか、新しくできたカフェでチョコレートやチップスを買うか、どちらかを選んでください。お土産は定番の洋菓子店がいいと思います。",
+        "rejected_dialogue_summary": "Bは冬に中学生として1人旅を計画しており、目的地は屋久島で、入浴が目的である。Bが何か買いたいものがあるかと聞かれると、特にないと返答した。AはBに旅日程を作成することを提案し、最初の日は朝から昼過ぎまでグラバーガーデンを散策することになった。その後は午後にハウステンボスを訪れ、夜まで楽しむ予定だ。次の日に向けて、AがBと一緒にどのスポットを巡るかを検討したが、まだ決まっていないことが分かった。そこであまり知られていない場所として、グラヴァー・ガーデンの近くにある東洋手十三番館を紹介された。ここでは入場料を支払う必要がなく、またお茶を飲んだり写真を撮ることもできると教えられた。さらに、ここには日本人の知名度が低いため、記念として写真におさめておくのが良いとも助言された。"
+    },
+    {
+        "all_short_dialogue_summary": "-13歳の中学生である。-旅行の目的は長期休暇を利用して行う旅行であり、旅行期間は冬である。-一人旅であるため、交通手段は自家用車ではなく公共交通機関を用いる。",
+        "chosen_dialogue_summary": "-長期の冬休みに中学生が一人で旅行し、公共の乗り物を使う。##解答例-中学2年生が長い冬の休日を使って、1人で旅に出て、バスや電車などの公共機器を使用する。",
+        "rejected_dialogue_summary": "-中学生が冬に一人で旅行する。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の行き先は長﨑県である。-50歳の男性と13歳の中学生の父子で行く旅行である。-行きは飛行機、帰りは新幹線を利用する。",
+        "chosen_dialogue_summary": "長崎県に旅行に行きます。50代のお父さんと中学生のお子さんが行くのです。出発は空路で帰路は陸路です。###解答例-長崎に行く、父と息子、出国は航空機で入国時は鉄道を使用する。",
+        "rejected_dialogue_summary": "-長崎県に旅行に行く。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは旅行先を長﨑県と決めているが具体的にどこに行くか決めることができず、Aに助けを求めた。AはまずBに旅の目的を尋ねたところ、Bが温泉に入ることを望んでいることが分かった。そこでAがBにお勧めする場所を探し始める。まずはじめにグラバーガーデンを紹介した。次にAはBに対してハウステンポスというテーマパークを教えた。最後に立ち寄り湯のゆりの湯を紹介した。Bはこれらの提案をすべて受け入れた。AはBの要求に応じて、旅行の行程を提供した。",
+        "chosen_dialogue_summary": "Bさんは長崎県に旅行に行きたいと考えていましたが、具体的な場所が決まっていませんでした。そのためAさんに相談し、目的地を決めてもらうことにしました。AさんはBさんの希望を聞いて、まずグラバー邸を訪ねることから始めました。その後、ハウス・オブ・テンプルズという美術館を案内しました。さらに、ゆり乃湯という日帰り入浴施設にも立ち止まりました。BさんもAさんのアドバイスに従い、旅程を作成しました。",
+        "rejected_dialogue_summary": "長崎の旅先は、グラバー園、ハウス・テン・ボス、ゆり乃湯がオススメです。"
+    }
+]

@@ -1,0 +1,732 @@
+[
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅をする予定である。Bが見たい場所は水槽館である。",
+        "chosen_dialogue_summary": "Bisplanningtotravelaloneinthesummer.Bwantstoseetheaquarium.",
+        "rejected_dialogue_summary": "「水族館に行きたい」##使ったライブラリ-[gensim](https://github.com/RaRe-Technologies/gensim)"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳以上の男性が一人旅を希望している。2.旅行期間は夏である。3.目的地は沖繩県。4.見たい場所は水槽館としゅりじょう。5.食べたいものはない。",
+        "chosen_dialogue_summary": "沖縄県の水族館やシュノーケリングを楽しみたい50代男性の夏の旅行プラン。",
+        "rejected_dialogue_summary": "沖縄の水族館やシュノーケリングを楽しみたい50代男性の夏の旅行プラン"
+    },
+    {
+        "all_short_dialogue_summary": "--Example3--A：こんにちは。今日の天気はいかがですか？B：おはようございます。A：本日も当店をご愛顧頂き、誠に有難う御座います。今回はどの様なご用件で御来店頂いたのでしょう？お聞かせ下さい。B:はい。今度の週末に、友人達と山登りに行く予定なのですが、その時に持って行った方が良い物を教えて頂きたいのですが…A:山でのアクティビティーですか、良いですね！それでしたら、飲み物や食料品はもちろんのこと、日焼け止めや虫除けスプレー、そして万が一の為に絆創膏や包帯なども持参することをお勧めします。B：そうなんですか！？私は虫に刺されやすい体質でして…。そう言えば、去年も山に行った時、足の裏を蚊に何度も刺されてしまい、大変な目に遭ったんですよ。そんな時はどうすれば良いですかね？A:そうでしたか。では、虫よけ対策として、長袖のシャツやズボンを着用し、肌の露出を最小限に抑えることが大切です。そして、もし刺された場合は、患部を清潔に保ち、冷やしてから抗ヒスタミン剤を塗布することが効果的です。それでも痒みが収まらない場合や、腫れや発熱などの症状が現れた場合には、早めに医療機関を受診するようにしましょう。もし何か他にご不明な点がありましたら、遠慮なくお尋ねください。また、お買い物の際にはお気軽にお声がけください。お手伝いさせていただければと思いますので、どうぞお立ち寄りください！",
+        "chosen_dialogue_summary": "私たちが山に登るときは、水や食べ物を持っていく必要があります。また、太陽の光から肌を守るために、帽子やサングラスも必要です。さらに、山の中には虫がたくさんいて、刺されることがあります。そのため、防虫スプレーや虫さされ用の薬を用意しておくことも大事です。もし山でケガをしたり、具合が悪くなったりした場合は、どうすればいいでしょうか？まず、安全な場所に避難して、救助を呼ぶことが重要です。その後、応急処置を行い、必要に応じて病院に行きましょう。山は楽しい場所ですが、危険も伴います。十分な準備をして安全に楽しみたいですね。",
+        "rejected_dialogue_summary": "山に登るときは、水や食べ物を持っていくべきだ。虫や日光から身を守るために、服装にも気をつける必要がある。また、万一に備えて、傷の手当てをするための道具も用意しておくと良い。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を検討している。2.男性は夏の旅行が希望である。3.沖繩県を訪れる予定であり、名所や名物を探している。",
+        "chosen_dialogue_summary": "沖縄県の夏に一人で旅行する50代男性のためのガイドブック。",
+        "rejected_dialogue_summary": "沖縄県の夏を満喫したい50代男性のための旅行プランです。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を希望している。2.旅行期間は夏である。",
+        "chosen_dialogue_summary": "「夏に一人で旅をしたいと考えています。」",
+        "rejected_dialogue_summary": "夏に一人で旅行に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を検討している。2.旅行先は夏に行く予定である。3.観光スポットとして、名所である水槽館や首都城を訪れることを希望している。",
+        "chosen_dialogue_summary": "Aさんは、夏に一人で旅行を計画しています。水族館と城を見学したいと考えています。",
+        "rejected_dialogue_summary": "夏に水族館と城を見に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が夏に1泊2日で一人旅をする。2.行き先は沖繩県。3.見たいものは水槽館とシル城。4.食べ物にはこだわりがない。",
+        "chosen_dialogue_summary": "50代の男性は、夏休みに沖縄県を訪れ、水族館やシーサイドパークを楽しむ予定だ。食事は気にしないようだ。",
+        "rejected_dialogue_summary": "単語の出現頻度を元に文章の特徴を抽出する###1-1構文解析####概要文章を構文木に変換し、文の構造を可視化する。####実装```python#-*-coding:utf-8-*-importrefromnltkimportword_tokenize,pos_tag,ne_chunk,sent_tokenizeimportnumpyasnpdeftokenize(text):\"\"\"分かち書き\"\"\"text=re.sub(r'([。！？])',r'\\1',text)return[sforsinre.split(r'\\s{2,}',text)iflen(s)>0]defpos(text,tagset='universal'):\"\"\"形態素タグ付け:paramtext:文字列型のテキストデータ（1文または複数の文が含まれる）\"\"\"tokens=tokenize(str(text))pos_tags=[pos_tag([token])[0][1]fortokenintokens]#posset='universal'or'ppcp'(PennTreebankPOSTaggingScheme)のどちらかを指定する。treebank_pos=[]fori,pinenumerate(pos_tags):ifp=='PUNCT':continueelifp[0]in['V','N','$']:p=p+'0'else:try:ifre.search(r'[A-Z]',p)isnotNone:p+='1'elifre.match(r'^[a-z]+$',p):ifi<len(tokens)-1:iftokens[i+1][0].isupper():p+='2'else:p+='3'exceptExceptionase:print(e)#print(i,':',p,'->',pos2treebank[p])try:pos_treebank=pos_set[tagset][p]exceptKeyError:raiseKeyError(f'pos_set[{tagset}][{p}]notfound')tree=(pos_tags[i],pos_posset[pos_set['universal'][p]])print(f'{i}:{p}->{tree}')returntreedefmain():withopen('sample.txt',mode='r',encoding='utf8')as"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳くらいの男性が一人旅をしようとしている。2.行き先は夏に行く予定である。3.見たいものは水槽館とシーサイド城。4.食べ物にはあまりこだわりがない。",
+        "chosen_dialogue_summary": "「夏に水族館や海沿いの城を訪れる50代男性の一人旅」##実装###データセットの取得```pythonimportrequestsfrombs4importBeautifulSoupurl='https://www.example.com'response=requests.get(url)soup=BeautifulSoup(response.text,'html.parser')text=soup.find('div',{'class':'content'}).text```###要約の実行ここでは、transformersライブラリを使用して、HuggingFaceの事前トレーニング済みモデルであるT5を利用します。####モデルの読み込みとパラメータの設定まず、モデルとトークナイザーのインスタンスを初期化します。次に、最適なパフォーマンスと精度を得るために、いくつかの重要な設定を調整します。これには、バッチサイズ、学習率、エポック数などが含まれます。最後に、これらの設定に基づいてモデルをコンパイルし、準備が整った状態にします。",
+        "rejected_dialogue_summary": "夏に一人で水族館や城を見て回る旅に出る。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅を考えていて、行き先は沖繩県、夏に行く予定である。水槽館と城を見たいと思っている。",
+        "chosen_dialogue_summary": "I'ma50-year-oldmanwhowantstotravelalone.IwanttogotoOkinawaPrefectureinthesummerandseeaquariumsandcastles.",
+        "rejected_dialogue_summary": "沖縄県の水族館や城巡りを楽しみたいと考えている。##構造化###質問の構造|要素|内容||:--|:---||主語|男性||-|50||--|歳|||一人旅行|--|行きたい|---|場所|----|県名|-----|夏|------|旅行|###要約対象文の分割-男性が-一人旅-50-歳-行き-先は-沖繪-県-夏-に行く-選択-水-店-館-と-城-を-見たい-思っている-。"
+    },
+    {
+        "all_short_dialogue_summary": "1.お一人での旅行2.夏頃に行く予定3.有名な場所を見て回る4.食べ物に関しては分からない",
+        "chosen_dialogue_summary": "・Bは一人旅を夏に計画し、有数の名所を巡り、食事については不明である。",
+        "rejected_dialogue_summary": "お1人で夏の間に名所を巡り、グルメを堪能する旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を検討している。2.行き先は沖繩県である。3.旅行期間は夏。4.見たいところは水槽館と城。5.食べたいものは特になし。6.水槌館は見つからなかった。",
+        "chosen_dialogue_summary": "「沖縄県の夏の旅行で、水族館や城を見て回りたいと考えているが、食べ物のリクエストはない。」",
+        "rejected_dialogue_summary": "沖縄の水族館に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を検討している。2.旅行先は夏に行く予定である。",
+        "chosen_dialogue_summary": "Bは、夏に一人で旅行することを計画している。",
+        "rejected_dialogue_summary": "夏に一人で旅行に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅である。-行き先は夏に行く予定の沖繩県である。-予算は分からないが食事はメニューを決めていない。",
+        "chosen_dialogue_summary": "-夏に沖縄県を一人で旅行する。-##生成モデル###データセットデータセットは下記のサイトからダウンロードしました。https://www.kaggle.com/abhisheknaiidu/corona-virus-report###学習データ学習に用いるデータは、コロナウイルス感染者数を表すデータです。このデータを用いて、どの国にどれだけの人がいるかを推定するモデルを構築しました。###モデルモデルには、ディープニューラルネットワーク(DNN)を使用しました。DNNは多層パーセプトロン(MLP)と呼ばれることもあります。入力層、隠れ層、中間層などがあります。入出力の層の間に活性化関数があり、非線形性を持たせることができます。また、重みやバイアスなどのパラメータがあり、これらを最適化することで、予測精度を向上させることができると考えられます。##評価方法評価方法として、MRR(MeanReciprocalRank)という指標を採用しました。これは検索エンジンでよく使われているもので、ユーザーが求めている情報が上位に表示されるかどうかを見るためのものです。つまり、求める情報にたどり着くまでの時間を短くすることが重要です。また、この手法では、単純に正解率を計算するのではなく、ランキングの順位を考慮しています。例えば、1位と10位の違いは大きいですが、2番目と3番目の差は小さいと考えられるため、より正確なランク付けができるようになっています。さらに、平均値を取ることにより、全体的な傾向を把握しやすくなっています。",
+        "rejected_dialogue_summary": "-沖縄県を一人で旅行するが、行く時期や食費は決まっていない。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳前後のお一人様が夏に沖繩県を訪問する。2.観光スポットとして、世界遺産に登録されている首脳城を見学する予定である。",
+        "chosen_dialogue_summary": "```A:Aは、沖縄県に旅行に行く。B:Bは、一人旅で、夏休みに、首里城に行きたいと考えている。C:Cは、おじいさん、おばあさんと一緒に夏の旅行を計画している。D:Dは、大阪府に住んでいる。E:Eは、新婚旅行でハワイに行ったことがある。F:Fは、小学生の子供がいる。G:Gは、中学生の息子がいて、家族で北海道旅行をした。H:Hは、高齢の母親と旅行したいと思っている。I:Iは、アメリカに留学していた。J:Jは、今度の休暇で海外に行こうと考えており、友人と相談中である。K:Kは、これまでにイタリア、フランス、スペイン、ドイツ、イギリス、オランダ、ベルギー、ルクセンブルク、デンマーク、スウェーデン、フィンランド、ロシア、ウクライナ、ポーランド、チェコ、ハンガリー、クロアチア、ボスニア・ヘルツェゴビナ、マケドニア、ギリシャ、トルコ、アゼルバイジャン、アラブ首長国連邦、カタール、サウジアラビアなど、ヨーロッパや中東の国々を旅行してきた。L:Lは、日本国内の旅館に宿泊したことがない。```",
+        "rejected_dialogue_summary": "沖縄県の首里城は、50代の単身旅行者にとって、夏の旅行先として魅力的な場所である。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人での旅行である2.行き先は夏に行く予定である。3.見たい場所は水槽館と城である。食べたいものは分からない。4.水棲館は見つからなかった。5.城は首都圏にある。6.首都市内にある城について知りたがっている。7.朝から夕方まで開いている。8.入場料は大人一人あたり４００円である。",
+        "chosen_dialogue_summary": "Aさんは、夏に一人で旅行に行き、水族館や城を見て回りたいと考えているようです。ただし、食べ物についてはまだ決めていないようです。また、城に関しては、都心部にあるものに興味があるようで、開館時間は午前から午後までで、大人1人あたりの入館料金は400円だそうです。",
+        "rejected_dialogue_summary": "Bは、夏に一人で旅行し、水族館や城を見て回りたいと考えているが、具体的な場所や食べ物についてはまだ決めていない。"
+    },
+    {
+        "all_short_dialogue_summary": "1.20代女性が一人旅を予定している。2.行き先は夏に行くことを検討している。3.見たい場所は水槽や首都城がある。4.食べたいものは特になし。5.動物好きである。",
+        "chosen_dialogue_summary": "A:20歳代の女性は、夏に水族館と首里城を訪れることを計画しており、旅行は一人で行い、特定の食べ物を求めていないが、動植物に興味を持っている。B:夏に20～30代前半の日本人女性1名が沖縄を旅行し、海洋生物と歴史的建造物に関心を持ち、食事には特にこだわらない。",
+        "rejected_dialogue_summary": "夏に水族館と首里城を訪れる女性の一人旅。"
+    },
+    {
+        "all_short_dialogue_summary": "-夏頃に一人旅を予定している。-有名な場所を訪れたいという希望を持っている。",
+        "chosen_dialogue_summary": "Aisgoingtotravelaloneinthesummer,andwantstovisitfamousplaces.",
+        "rejected_dialogue_summary": "-夏頃の一人旅で、名所を巡りたいと考えています。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を考えていて、8月頃に行く予定である。2.目的地として、メインは水遊びや海など自然に触れ合える場所を探している。3.食べ物に関しては詳しく決まっていない。4.有名な場所であれば、レンタカーを借りて行くつもりである。",
+        "chosen_dialogue_summary": "50代男性は、夏に自然を満喫する旅行を計画中。目的は海や川などの水辺でのアクティビティ。食事は未定だが、名所巡りを楽しみつつ、車での移動も検討している。",
+        "rejected_dialogue_summary": "海や自然を満喫したい50代男性の夏休み旅行"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に行く3.見たいもの：水槽4.食べ物：分からない5.メジャースポットを回る",
+        "chosen_dialogue_summary": "Bは夏に一人で水族館を訪れる予定である。##解答例Bisplanningtogotoanaquariumaloneinthesummer.",
+        "rejected_dialogue_summary": "夏に一人で水族館に行きたい##実行方法```pythonmain.py```"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行者は50歳前後の独身女性である。-彼女は夏に1週間程度の旅行に出かけたいと思っている。行き先はまだ決まっていない。費用は2万円以内で抑えたい。--彼女の関心事は以下のとおりである--食に関しては特に関心がないが、--動植物が大好きである。彼女が行きたがっている場所は首都圏の動・植物園である。##2.2統計的因果推論###A/Bテストある施策の効果を測定するための手法の一種であるA/Bテストでは、ユーザーを2つのグループに分け、それぞれに異なるバージョンのウェブページを表示する。その後、両方のページのパフォーマンスを比較することによって、最適なページデザインを見つけることができる。###回帰分析従属変数と呼ばれる1つ以上の変量の値を予測するために使用される統計的手法。回帰モデルは、これらの変動の関係をモデル化し、予想される値の範囲を提供する。",
+        "chosen_dialogue_summary": "Bは、50代前半の未婚女性で、夏休みの1〜2週間に、2〜3万円の予算で旅行に行きたいと考えている。食事にはあまり興味がなく、動物や植物を見るのが好きだという。Bが訪れたいのは、東京近郊の水族館か植物館である。####解答例Bisa50-somethingunmarriedwomanwhowantstogoonatripfor1-2weeksduringhersummervacation,withabudgetof2-3thousandyen.Sheisnotinterestedinfood,butlikestoseeanimalsandplants.BwouldliketovisitanaquariumorbotanicalgardenintheTokyoarea.",
+        "rejected_dialogue_summary": "50代前半の女性が夏休みに数日間旅行に行きたいと考えている。予算は20,000円以下。興味のある分野は食事ではなく、動物や植物。訪問したい場所としては、東京近郊の博物館が挙げられる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行先は沖繩県である。2.夏に一人旅に行く。3.見たい場所は水槽館や首都城。4.食べたいものは特になし。",
+        "chosen_dialogue_summary": "沖縄の夏の一人旅で、水族館と首里城を見学し、特に食べ物にはこだわらない。Bが行ったことのある場所に対して、Aは「行ってみたい」と思うかどうかを二値で予測します．##構成###データセットの準備*`data`ディレクトリに、データセットをダウンロードして解凍したものを置く．*`train.csv`:訓練データ*1行目はヘッダ行で飛ばす．2列目以降が訓練サンプル．各列の意味は下記のとおり*右端の`Label`列が目的変数．`1`ならAはBの行きたい場所に興味を持つ，`0`なら持たない．その他の列は入力特徴量*観光名所の名前*Bが実際に訪れた場所*入力データの2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,",
+        "rejected_dialogue_summary": "沖縄の水族館と首里城を見て回る夏のひとり旅。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に行く3.見たいものは水槽館4.食べ物の希望は特になし5.首里公園6.動物を見たい",
+        "chosen_dialogue_summary": ">一人旅で夏に行き、水族館を見て、特に食べたい物は無いが、動植物園に行きたい。【出力例】>One-mantraveltoOkinawainthesummertoseetheaquariumandwanttogotothezoo.",
+        "rejected_dialogue_summary": "夏に沖縄の水族館を見に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の独身女性であり、夏に1週間ほどの期間をとって一人旅に出たいと思っている。行き先としてはメインの場所として沖繩県を選び、そこで見たいものとして水槽館と動植物園を挙げている。",
+        "chosen_dialogue_summary": "Bさんは沖縄で水族館や動物園に行きたいと思っています。",
+        "rejected_dialogue_summary": "沖縄県の水族館や動物園を見たい。##解答例```python#-*-coding:utf-8-*-importtensorflowastfimportnumpyasnpfromtensorflow.contribimportrnn#定数定義VOCAB_SIZE=1000#単語の種類数EMBEDDING_SIZE=300#ワードエンベディングの次元HIDDEN_SIZE=50#RNNの隠れ層のサイズBATCH_SIZE=5#ミニバッチの大きさSEQ_LEN=8#入力の最大長LEARNING_RATE=.01#学習率EPOCHS=2#エポック数classAttrDict(dict):def__init__(self,*args,**kwargs):super(AttrDict,self).__init__(*args,**kwargs)self.__dict__=selfdefload_data():#データの読み込みwithopen('data.txt','r')asf:data=f.read()returndata.split('\\n')defcreate_vocab(data,min_count=1):vocab={}forlineindata:forwordinline.split(''):ifwordnotinvocab:vocab[word]=len(vocab)print('Vocabsize:%d'%len(vocab))word2id=AttrDict()id2word={v:kfork,vinvocab.items()}np.save('vocab.npy',vocab)defget_data(data):ids=[]y=np.zeros((len(data),1),dtype=np.int32)max_len=max([len(x.split())forxintrain_data])pad=[0]*(max_len-SEQ_LEN)+[1]train_x,train_y=[],[]test_x=[[]for_inrange(len(test_data))]cnt=-1valid_cnt=int(len(train_data)*0.1)num_batches=(len(train_x)-1)//BATCH_SIZE+1x=tf.placeholder(tf.float32,[None,None],name='input_x')w1=tf.Variable(tf.random_normal([HIDDENSIZE"
+    },
+    {
+        "all_short_dialogue_summary": "-観光場所の要素-見る-首里殿-朝8:30~夜7:00-大人400-琉王国-復元-王国象-沖那-市内-8-午前半-夜7-象-四半時-国-時間-人-歴史-場所-島-景色-建物-風景-文化-遺跡-都市-世界-地球-宇宙-星-太陽-月-火星-金星",
+        "chosen_dialogue_summary": "以下のような文章を書いてください。沖縄の首都である那覇市には、首相官邸や国会議事堂などがあり、多様な文化を感じることができる。沖之島は、南太平洋に位置する小さな島で、美しい自然と豊かな文化が特徴である。ここでは、特に沖ノ島の自然や文化に焦点を当てて紹介する。まず、沖の島には豊富な動植物が生息しており、その中には絶滅危惧種も含まれている。また、島内には古代から伝わる伝統的な祭りや行事が数多く行われており、訪れる人々に感動を与えている。さらに、ここには独自の言語や習慣が存在し、それらを体験することで新たな発見や学びが得られる。最後に、自然豊かで文化的にも魅力あふれるこの島を訪れてみてはいかがだろうか。きっと素晴らしい思い出が作れること間違いない。",
+        "rejected_dialogue_summary": "-首里城は、沖縄県那覇市にあったグスク（御城）の城趾である。2000年（平成12年）12月、戦災に遭わなかった建造物（正殿、北殿など）が国宝に指定された。城跡は国の史跡で、また城址を中心として一帯は「首里城公園」として整備され、城内では伝統芸能の組踊などが披露されている。-琉球国王が居住し政治を行った場所であり、政治、外交、文化の中心地であった。首都として栄え、中国、朝鮮、南方諸国などとの国際貿易の窓口でもあった。江戸時代には、薩摩藩の支配下に置かれていた。第二次世界大戦末期の1945年（昭和20年）、連合国軍の攻撃により焼失した。戦後、正門・歓会門を残して石垣しか遺っていなかったが、1972年(昭和47年)に復元工事が始まり、1980年代までに城内のほぼ全域が再建された。-2006年2月17日、返還10周年を迎えた米軍普天間飛行場の名護市辺野古沖への移設問題に関連して、首相の安倍晋三が訪問し、記者団の前で「沖縄の方々の気持ちに寄り添いながら、基地負担の軽減に全力を尽くす」と述べた。翌18日には内閣官房長官の塩崎恭久も訪れ、同様の発言をした。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行先は沖繩県2.予定日程は夏3.見たいものは水産館4.食べ物にはこだわらない5.動物も見たい",
+        "chosen_dialogue_summary": "沖縄県の夏に水族館に行きたい。解答例```importnumpyasnpimporttorchfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLMmodel_name=\"t5-base\"tokenizer=AutoTokenzier.from_pretrained(model_name)device=torch.device(\"cuda\"iftorch.cuda.is_available()else\"cpu\")model=AutoMoodelForSeque2Seqlm.from_pretained(model)model.to(device)defsummarize(text):inputs=tokenizer(text,return_tensors=\"pt\").to(device)outputs=model.generate(**inputs,num_beams=4,max_length=100,early_stopping=True)returntokenizer.decode(outputs[0],skip_special_tokens=True)text=\"\"\"1.\\旅行\\先\\是\\岡山縣2.\\預定\\日\\程\\為\\夏3.\\想\\看\\的\\東\\京\\大\\博物館4.\\不\\在乎\\食物5.\\也\\想\\u3000見\\動\\物\"\"\"print(summarize(text))```",
+        "rejected_dialogue_summary": "沖縄県で夏に水族館に行きたい##実行方法###依存パッケージのインストール```bashpipinstall-rrequirements.txt```###データセットのダウンロードhttps://drive.google.com/drive/folders/1JpH8Jk5fJZbZj0R1q7a3q8Ql3D5Zm5K7?usp=sharing上記のリンクから、データセットをDLして、`data`ディレクトリに格納する。###要約実行`main.py`の`if__name__=='__main__':`以降の部分を変更することで、様々な実験を行うことができる。####学習済みモデルの読み込み```pythonmodel_path='models/bert-base-uncased'tokenizer=BertTokenizer.from_pretrained(model_path,do_lower_case=True)model=TFBertForSequenceClassification(from_tf=False,config=TFBertConfig(num_labels=2,vocab_size=tokenizer.vocab_size),name=model_path.split('/')[-1])````model`に学習したモデルを読込ませる。####予測実施以下のように、入力テキストを与えると、出力が返ってくる。```py#入力input_ids=tokenizer.encode(text,add_special_tokens=True,return_tensors=\"tf\")input_mask=tf.ones_like(input_ids)token_type_id=[0]*input_ids.shape[-1]#出力取得output=model(\tinput_ids=input_ids,\tinput_mask=input_mask,\ttoken_type_ids=tf.convert_to_tensor([0]*len(text)))preds=np.argmax(output['logits'].numpy(),axis=1)[0]print(preds)```"
+    },
+    {
+        "all_short_dialogue_summary": "-行き先は沖繩県である。-旅行期間は夏である。-見たいものは水生生物と動植物である。",
+        "chosen_dialogue_summary": "「夏の沖縄旅行で、海の生き物や植物を楽しみたい」",
+        "rejected_dialogue_summary": "沖縄県の夏の旅行で、海洋生物や植物を見たい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性であり、夏に一人旅を予定している。見たいものとしては水槽と動植物園が挙げられており、後者に関しては「水」が含まれているため、ここでは「動」のみを対象とする。さらに、B氏は大規模な施設を好む傾向がある。以上の点を踏まえると、推奨されるのは以下の二つである。1.沖繩県にある「沖美水海」である。ここは世界最大級の水量を誇り、その大きさは本物の海に匹敵するほどである。2.東京都の「恩賜上野公園」は、日本最大の面積を持つ公園であり、その広大な敷地内には様々な種類の植物が生息している。3.神奈川県の大磯ロングビーチは、大きなプールやアトラクションが充実しており、一日中楽しむことができる。",
+        "chosen_dialogue_summary": "Bさんは夏休みに1人で旅行に行くことを計画しています。水族館や動物園に行きたいと考えていますが、特に水のある場所が好きです。そこで、沖縄県の「おきなみみずうみ」や、東京のうえのこうえん、そして、かながわけんのおおいそろんぐびーちがおすすめです。",
+        "rejected_dialogue_summary": "沖縄県の沖水美海と東京の恩寵公園、神戸の六甲山公園がオススメです。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が一人旅を考えていて、夏に沖繩県を訪れる予定である。2.見たいものとしては水槽館や動植物園が挙げられている。3.沖繃県には首裡城と美拉海という2つの観点がある。4.首裡市は朝から晩まで開いており、大人の入場料は4000円である。5.美拉市にはジンペイサメと呼ばれる巨大な魚がいる。",
+        "chosen_dialogue_summary": "この男性は沖縄県の水族館と動物園を見たいと考えている。彼は首里城や美ら海も訪れたいようだ。",
+        "rejected_dialogue_summary": "沖縄県の水族館と動物園を見たいと考えており、首里城や美ら海も訪れたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.沖繩県へ旅行する予定である2.その旅行は1人の旅行であり、夏に行く予3.見たいものは水槽館と城4.食べ物については分からない",
+        "chosen_dialogue_summary": "沖縄県に一人で夏に旅行に行き、水族館や城を見たいと思っているが、食事の好みはわからない。",
+        "rejected_dialogue_summary": "沖縄県の水族館や城を見て回る夏の1人旅"
+    },
+    {
+        "all_short_dialogue_summary": "一人旅を考えていて、行き先は沖繩県である。見たいものは水槽館や動植物園である。\n--Conclusion--Inthistask,wewereaskedtosummarizeadialoguebetweenAandB,focusingonB'sinterests,habits,andprofilerelatedtotourism.WewererequiredtoextracttheconditionsthatBseeksinatouristdestination,presenttheoutputasasinglesentencewithoutlinebreaksorstructure,avoidincludinginformationnotmentionedintheconversation,excludeURLs,etc.Inthefirstexample,Benjoysindooractivitiessuchasplayinggamesandwalkingaroundtheneighborhood.Theyareinterestedinvisitingplaceswithbeautifulscenery,particularlysanddunesandautumnleaves.Balsoexpressesadesiretogoonasolomountainhike.Thesecondexampleinvolvesacoupleintheir50splanningatriptotheHakoneareainJapan.Theirinterestsincludevisitinganorganmuseumandbuyingsouvenirstobringbackhome.Overall,summarizingdialoguescanprovidevaluableinsightsintoindividuals'preferencesandhabits.",
+        "chosen_dialogue_summary": "沖縄県を一人で旅行することを考えている。水族館と動物園を訪れたい。##モデル###要約モデルhttps://github.com/huggingface/datasets/blob/master/dataset_url.txt#L10-L10-**DatasetSize**:5000-#`train`:2500instances(5,000intotal)-Multilingual:yes-Structure:`{'id':int,'dialogue':'string'}`-OfficialWebSite(ifavailable):https://www.aclweb.org/anthology/2021.findings-emnlp.291/-Language:Japanese##LicenseThelicenseofthedatasetcanbefoundinthe[datasetlicensepageofHuggingFace](https://huggingface.co/datasets/license).##UsedInWetracktheusageofthisdatasetinour[leaderboard](../leaderboards.md).",
+        "rejected_dialogue_summary": "沖縄県を訪れる際には、水族館と動物園の両方を楽しむことをお勧めします。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳以上の女性で一人旅を予定している。2.旅行先は夏の沖繩である。3.観光スポットとして、メインは首り城と水圏が挙げられる。4.首里は朝から晩まで開いており、入場料は大人が400元である。5.沖繃美羅海は大きく、開いている時間も長く、大人が188元で入れる。\n-動物は好きではないが植物は見るのが好きである。-帰るときに有料のおみやげを買う予定である。",
+        "chosen_dialogue_summary": "Bは沖縄を一人で旅行する50代女性です。彼女は植物が好きで、首都城を訪れます。また、彼女が帰る時には、無料のお土産を購入します。####解答```Bisa50-year-oldwomanwhotravelsaloneinOkinawa.ShelikesplantsandvisitsShuriCastle.Whenshereturns,shewillbuyfreesouvenirs.```",
+        "rejected_dialogue_summary": "沖縄旅行は、琉球王朝の歴史を感じることができ、植物や海の景色を楽しむことができる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行の行き先は沖繩県である。2.行き方は飛行機を利用する。3.予算は1万円以内。4.滞在期間は2泊3日。5.観光する場所は那霸市の首爾城。6.温泉に入る。7.食事は海鮮料理を食べる。",
+        "chosen_dialogue_summary": "「沖縄県の那覇市にある首里城を訪れ、2日間の旅を楽しみながら、海の幸を堪能し、温かいお風呂に浸かり、リラックスした時間を過ごす。」",
+        "rejected_dialogue_summary": "沖縄県の那覇市にある首里城を訪れ、海の幸を堪能し、入浴を楽しむ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳前後の独身男性が一人旅を希望している。-旅行期間は夏で1〜2日程度を予定している。-行き先は特定していないが、日本国内の温泉地を検討中である。\n50歳の女性が一人で沖繩県を旅行する予定である。帰る時にお土產を買うことを考えており、「海人の郷土工芸館」というおみやげ屋を案內する。",
+        "chosen_dialogue_summary": "-50歳前後の一人旅の男性は、夏に1～2日間の旅行を計畫しており、日本の溫泉を訪れようとしている。-夏に沖縄県に旅行に行く50代女性は、お土産を購入するために「海人村工藝館」に立ち寄りたいと考えている。",
+        "rejected_dialogue_summary": "沖縄県の「海人（うみんちゅ）」というお土産屋さんを紹介します。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは夏に一人旅をする予定である。2.その目的は水槽館と動植物園を訪れることである。3.見るべきものとして、Bは日本の歴史的な建造物である首都城と大規模な水棲生物を展示する沖繩美麗海を挙げた。",
+        "chosen_dialogue_summary": "Bplanstotravelaloneinsummer.Thepurposeistovisitanaquariumandazoo.BlistsJapanesehistoricalbuildings,suchasthecapitalcastle,andOkinawaBeautifulSea,whichexhibitsalargenumberofaquaticanimals,asthingstosee.",
+        "rejected_dialogue_summary": "沖縄美ら海水族館で首里城を観覧するために一人で夏の旅行を計画している。##解答例-例1：Bは夏休みに1人で旅行に行く。目的地は、沖縄美ら海水族館と首里城だ。Bが見てみたいと思うものは、日本の歴史的な建築物と大規模な水棲生物を展示する沖瀬の美しい海とその近くにある首都城の2つであり、夏の旅行を楽しむことを期待している。-Bは夏休みに一人で行く予定で、目的地は水環と動植物園の二箇所です。彼はその中で日本で一番有名な観光名所の首府城と、大型の魚や海洋生命を覗く事が出来る美麗海に注目しています。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅を予定している。Bが訪れたい場所として、メディアで取り上げられることが多い水槽や動植物園が挙げられている。具体的な場所は明示されておらず、Aが調査して提案している。",
+        "chosen_dialogue_summary": "「動物園や水族館に興味がありますか？」",
+        "rejected_dialogue_summary": "水族館と動物園に興味があり、夏休みに1人で旅行を計画しているB。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳以上の男性が一人旅を検討している。2.旅行先は夏の沖繩県。3.観光スポットは水槽館と動植物園。4.動物好きである。",
+        "chosen_dialogue_summary": "##解答例50代男性の夏沖縄旅行、水族館・動植園を観覧し、生物好きを満喫する。",
+        "rejected_dialogue_summary": "沖縄の水族館で夏を満喫した50代男性の一人旅。"
+    },
+    {
+        "all_short_dialogue_summary": "##解答例###Example1####要約1.Bはゲームを好んでおり、主に難易度の高いゲームに取り組んでいる。2.散歩をすることが好きであり、日々の健康維持を目的として行っている。3.桜が咲く季節になると、好みの場所を散策している。4.紅葉も美しく感じる。5.登山がしたくて、誰かに連れていってほしい。6.自分自身が一人での山登りをした際に、迷って怖い思いをしたことがある。7.一人でも登れるようになりたいと願っている。####抽出*難しいゲーム(1)*いつも家の中で過ごしている(2)*ゲームをするのが好き(3)*好きなゲームのジャンル(4)*アクション系(5)*おいしいものを作る(6)*家の中での活動が多い(7)*健康のために歩いている(8)*近所の公園を回っている(9)*季節の変化を楽しんでいる(10)*秋は特にお気に入り(11)*山登りの経歴がある(12)*一緒に行く人がいない(13)\n-検索結果-動物は見つけられなかった-植物について聞かれた-花はあまり好きではないと答えた-他に何か欲しいものはないか尋ねられた-帰り際にお土様を買う予定であると回答した-お店を紹介された",
+        "chosen_dialogue_summary": "Bは、ゲームが好きで、特にチャレンジングなものを選ぶ傾向がある。また、歩くことが日課となっており、その目的は健康増進である。春には好ましい場所で花見を楽しみ、秋には美しい景色を堪能する。さらに、山に登ることを希望しているが、一人で行くことに不安を感じている。【正解】Bisfondofplayinggames,especiallychallengingones.Healsoenjoyswalkingaspartofhisdailyroutineforhealthreasons.Inspring,helikestogoflowerviewingathisfavoritespots,andinautumn,admiringthebeautifulscenery.Additionally,Bwantstoclimbmountains,buthefeelsanxiousaboutgoingalone.",
+        "rejected_dialogue_summary": "Bは、ゲームが好きで、特にハードなものに挑戦することが多い。日常生活では、健康を保つために、家の近くを歩くことが習慣となっている。また、春には好ましい場所で花見を楽しみ、秋には美しい景色を眺めることができる。山に登ることも好きだが、一人で行くのは怖いため、同行者を求めている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏に行く3.水槽館を見たい4.首り城を見てみるのもいい5.動植物園も見る6.ジンべイサメをみたい\n##まとめ今回の課題では、2つの例文が与えられ、それぞれの文脈からユーザーの趣向を推測することが求められた。例1では、「散策」や「自然」を好む傾向が読み取れ、例2では「文化的」な行動を求めており、また「植物」にはあまり関心がないことが示唆された。",
+        "chosen_dialogue_summary": "Bは、夏に一人で旅行し、動物園や水族館、ジンベイザメを見ることを好み、自然や文化に興味を持っている。",
+        "rejected_dialogue_summary": "例１：自然を楽しみたい例２：歴史的な建造物を訪れたいが、動物には興味がない"
+    },
+    {
+        "all_short_dialogue_summary": "(1)夏に一人旅をする(2)水槽が大きくてたくさんの種類の魚を見ることができる",
+        "chosen_dialogue_summary": "水族館にいく",
+        "rejected_dialogue_summary": "水族館に行く#生成モデルimportnumpyasnpfromkeras.modelsimportSequential,load_model,Model#fromkeras.layersimportDense,Dropout,Activation,Flatten,Convolution2D,MaxPooling1D#1次元の畳み込みやプーリングは使わないのでコメントアウトしておきます．#fromkeras.utilsimportnp_utils#importkeras.backendasKimporttensorflowastfsess=tf.Session(config=tf.ConfigProto(log_device_placement=True))K.set_session(sess)importsyssys.path.append('..')fromutilsimport*#モデルを読み込むmodel=Sequential()model.add(Dense(64,input_dim=2,activation='relu'))model.load_weights('model.h5')model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])#入力データを用意するx=np.array([[1,0],[0,1]])y=model.predict(x)#出力foriinrange(len(y)):print(y[i])"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を予定している。2.旅行先は夏に行くことを検討している。3.観光スポットとして、メディアで取り上げられることの多い首都圏の沖合に位置する水産物の水揚げ量が多い漁港がある。",
+        "chosen_dialogue_summary": "#1文目50代男性の一人旅で、夏にメジャーな観点から見た水族館に行きたいと考えている。##2文目の解釈夏の旅では、水上のアクティビティを楽しみたいと考えています。",
+        "rejected_dialogue_summary": "50代男性の夏の1人旅、沖縄県の那覇市の泊港が旅行の候補地。```pythonimportpandasaspddf=pd.read_csv('test.csv')df```<div><tableborder=\"1\"class=\"dataframe\"><thead><trstyle=\"text-align:right;\"><th></th><!--th>Unnamed:0</th--><!--<th>Sentence1_Sentence2_Age_Gender_Affinity_Sentiment_Subjectivity_Polarity_Score_VerbCount_AdjCount_NounCount_PronCount_ArticleCount_NumCount_PrepositionCount_ConjunctionCount_DeterminerCount_InterjectionCount_UnknownCount_Verbs_Adjectives_Nouns_PersonalPronouns_IndefiniteArticles_Numbers_Prepositions_ConjunctiveParticules_DemonstrativeDeterminers_Interjections_UnclassifiedWords_</td--></tr></thead><!--tbody--></table></div>"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅を予定している。旅行の行き先は夏に行くことを考えていて、目的は水槽館と動植物園である。",
+        "chosen_dialogue_summary": "50代男性、夏の水族館・動物園巡り解説この問題は、文中のキーワードを抜き出して組み合わせることで解くことができます。以下に解答例を示します。50:50代:代男性:男性夏:夏の:の水:水族:族館:館と:と動:動物:物園:園巡:巡り:り",
+        "rejected_dialogue_summary": "夏に一人で水族館や動物園を訪れる50代男性"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を希望している。2.旅行先は夏に行く予定である。3.観光スポットとして、メインは水槽、次に動植物園が挙げられる。\n--Answer---Bは50歳の男性であり、妻と旅行に行く予定がある。旅行先は沖繩県である。BとAの会話を通じて、Bが買い物を目的としていることが分かる。具体的な商品は明らかになっていないが、おそらくおみやげ物であると推測できる。",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoisgoingonatripwithhiswife.ThedestinationofthetripisOkinawaPrefecture.ThroughtheconversationbetweenBandA,itisclearthatBistravelingforshopping.Althoughthespecificproductsarenotmadeclear,theyarelikelytobesouvenirs.",
+        "rejected_dialogue_summary": "A:沖縄に行きたいと考えているのですが、どこがおすすめでしょうか？B:那覇空港から車で30分ほどのところにある「パイナップルパーク」というところがオススメです。ここは、園内を散策しながら、パインの試食ができる施設です。また、ここでは、様々な種類の果物や野菜が栽培されており、収穫体験もできますよ。C:なるほど、興味深いですね。私も一度行ってみたいと思います。D:私も行ったことがありますが、とても楽しかったですよ。ただし、夏場はとても暑いので、水分補給をしっかりと行うことをお勧めします。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を考えていて、行き先は沖繩県である。2.旅行の期間は夏を予定している。3.見たい場所は水生生物の水槽や動植物園である。\n--実行結果--インストール$pipinstall-rrequirements.txt学習済みモデルのダウンロード!wgethttps://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip!unzipuncased_L-12_H-768_A-12.zipデータセットの準備importjsonimportosimportpandasaspdimportnumpyasnpfromsklearn.model_selectionimporttrain_test_splitfromtransformersimportBertTokenizer,BertForSequenceClassificationfromtorch.utils.dataimportTensorDataset,DataLoader,RandomSampler,SequentialSamplerfromkeras.preprocessing.sequenceimportpad_sequencesimporttorchimporttensorflowastfimportmatplotlib.pyplotaspltimportseabornassns%matplotlibinlinefromIPython.displayimportclear_outputfromtqdm.notebookimporttqdm,tqdm_notebook#データの読み込みdf=pd.read_csv('data.tsv',sep='\\t',header=None)df.columns=['question1','question2']df['label']=df.apply(lambdax:'0'if(x['question']==x['answer'])else'1',axis=1)#学習データとテストデータに分割X_train,X_test,y_train,y_test=np.split(df,[int(len(df)*0.8),None])#テキストの前処理foriinrange(len(X_train)):#文字列をトークンに変換tokenizer=tokenizer.train_from_iterator((X_train.question1.values[i],),max_len=128,truncation=True,padding='max_length',return_token_type_ids=False,return_attention_mask=True)#トークンのインデックスを取得tokenized_train=[tokenizer.encode(x,add_special_tokens=True)forxintqdm(list(X_test.question.values),desc='Tokenizing')]#パディングtrain_padded=pad_sequence(tokenized,batch_first=True,padding_value=tokenizer.pad_token_id)train_mask=torch.tensor(tokenizer.convert_tokens_to_ids([tokenizer.cls_token,tokenizer.sep_token]),dtype=torch.long)print(train_mask.shape)(1,3)tokenizer.save_pretrained('tokenizer')#モデルを定義model=tf.keras.models.load_model('model.h5',custom_objects={'BertTokenizer':tokenizer,'tf':tf})model.summary()Model:\"model\"__________________________________________________",
+        "chosen_dialogue_summary": "男性は、夏に沖縄県を一人で旅行することを考えている。彼は動物園や水族館を見たいと思っている。",
+        "rejected_dialogue_summary": "男性は一人で沖縄に行きたいと考えている。夏に旅行に行くつもりで、水族館や植物公園を見たいと思っている。##要約プログラムの概要###ベースモデルBERT(BidirectionalEncoderRepresentationsfromTransformers)は、Googleが開発したTransformerを用いた言語モデルです。Transformerとは、自己注意機構と呼ばれる自己相関を考慮したモデルであり、従来のRNNやLSTMなどの順伝播のみを使用するモデルと比べて、より高精度なモデルを作成することができます。BERTでは、Transformerのモデルに加えて、双方向エンコーディングを行うことで、文脈をより正確に捉えることができるようになっています。###BERTを使った要素抽出本プロジェクトでは、このBERTを利用して、文章中の特定のキーワードやフレーズを抽出し、それらを元に文章の要旨を自動生成することを目指しています。具体的には、以下のような手順で実装を行いました。####1\\.トークナイゼーションまず、入力された文章をBERTが扱えるように、単語や句読点などを小さな単位に区切る「分かち書き」を行います。これにより、BERTは文章全体の意味を把握しやすくなります。```pythontokenizer=BertTokenizer(vocab_file=\"vocab.txt\",do_lower_case=True,cache_dir=\"cache_dir\",)```ここで`vocab_file`はBERTの学術論文に記載されている、事前に学ばれた語彙のリストを指します。また、`do_lower_cas`eは大文字と小文字を区別しないようにするためのオプションです。`cache`_dirはキャッシュファイルを保存するディレクトリを指定します。キャッシングを有効にすると、同じ文章が複数回登場した場合に、前回の計算結果を再利用することで計算時間を短縮できます。また、トレーニングデータを与えることで、新たな語句を追加することも可能です。これは`add_tokens`というパラメータを使って行います。例"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-50歳の女性が一人旅をしようとしている。-行き先-夏に沖繩県に行く予定である。-見たいもの-水槽館と動植物園を見たいと思っている。-予算-大人一人当たり400～18800円の費用がかかる。\n--Summary--Thecustomerisa50-year-oldcouplewhowantstotraveltoOkinawa.Theywanttobuysouvenirs,suchasT-shirtsandsweets,attheUminchustoreinNahaCity.Inaddition,theyareinterestedinflowersandwouldliketovisitabotanicalgarden.",
+        "chosen_dialogue_summary": "```Thecustomerisa50yearoldcouplewhowantstotraveltoOkinawa.Theywanttobuysouveniers,suchasT-shirtsandsweets,attheUminchustoreinNahaCity.Inaddition,theyareinterestedinflowersandwouldliketovisitabotanicalgarden.```",
+        "rejected_dialogue_summary": "-沖縄県に旅行に行きたい50代のカップルが、那覇市のウミンチュストアでTシャツやお菓子などの土産物を購入したいと考えている。また、彼らは花に興味があり、動物園を訪れたいと思っています。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅を考えていて、夏に沖繩県に行く予定である。観たい場所として、メディアで紹介されている場所を挙げており、具体的な場所については特定できていない。例えば、オーソドックスな場所であれば、観に行っても良いと述べている。",
+        "chosen_dialogue_summary": "沖縄県に夏に行きたい。メデイアで取り上げられている場所ならどこでも良い。※上記文章はあくまで例です。実際の文章とは異なります。",
+        "rejected_dialogue_summary": "夏の沖縄旅行を計画中の50代男性は、テレビ番組で取り上げられた場所に興味を持ち、特に明確な目的地は決めていないが、定番のスポットも訪れたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅である2.行き先は夏に行く予定である。3.見たいものは水槽とお城4.動物も見たい\n50歳の女性が夫と旅行に来ており、帰るときに沖繩県のおみやげを購入したがっている。買うものは自分ではなく、誰かにあげるものである。",
+        "chosen_dialogue_summary": "Aは沖縄県に旅行に行き、水族館と城を見学し、動植物を観察した。夫婦で旅行し、お土産を買って帰った。",
+        "rejected_dialogue_summary": "沖縄県の水族館と城に興味があり、ペットショップにも行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅をすることを考えていて、夏に沖繩県を訪れる予定である。見たいものとしては水槽館と動植物園を挙げており、後者に関しては既に見つかっている。前者については調査中である。",
+        "chosen_dialogue_summary": "「沖縄の水族館を見たいが、動物園は見つかった。」",
+        "rejected_dialogue_summary": "沖縄県の水族館を探している。動物園は見つけた。##サンプルデータ###入力データ```json{\"text\":\"50岁的男士想一个人旅行，计划在夏天访问冲绳县。想看的东西包括水缸馆和动物园，后者已经找到了。关于前者的调查仍在进行中。\"}```###出力```\"50歳的男性想一人旅行，计划在夏天访问沖绳县。惯看的东西包含水缸馆和动物園，后者已经找到了。关于前者的调查仍在进行中。\"```"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を考えていて、行き先は沖繩県である。2.行く時季は夏である。3.見たいところは水槽館と王城がある。4.食べたいものは分からない。5.沖繃県には水棲館がある。",
+        "chosen_dialogue_summary": "沖縄の水族館を見に行きたい。",
+        "rejected_dialogue_summary": "沖縄県の水族館を訪れ、海の生物を観察し、夏の暑さをしのぎたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.夏頃に一人旅を予定している2.水槽や動植物の展示を見たい3.巨大なジンべイサメの水槽数が多い4.8:30~20:00まで開いている",
+        "chosen_dialogue_summary": "Iwouldliketogotoanaquariuminthesummerandseealotofjellyfishandotherseacreatures.Theaquariumisopenfrom8.30to20.00.",
+        "rejected_dialogue_summary": "夏の1人旅で水族館に行きたい。ジンベイザメが多く展示されていて、8時半から20時まで営業している。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅を予定している。-夏頃に行くことを検討している。-有名な場所を訪れてみたいと思っている。具体的な場所としては「水槽館」と「城」が挙げられている。食べたいものは特になく、分からないと答えている。\n-帰る際に沖繩県のおみやげを購入する予定である。-海人の人という名前のお店があることを知っており、そこで購買することを検討している。",
+        "chosen_dialogue_summary": "-一人旅の計画を立てている。夏ごろの旅行を考えている。「水族館」「城」を訪れたい。特定の食べ物は決まっていない。沖縄のお土産を買いたい。「海人」で買おうと考え中。",
+        "rejected_dialogue_summary": "-沖縄県の水族館と城を見て回りたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を検討している2.旅行期間は夏である3.見たい場所は水槽館、オーシャン、城である。4.食べたいものは特になし\nBは動植物にあまり関心がないが，おみやげを購入することに関心がある。海人の人という名前のTシャツや沖繩の伝統的なおやつ，スーパーマーケットで販売されている食品などが購買対象である。",
+        "chosen_dialogue_summary": "50代男性の夏の沖縄旅行で，水族館，海洋博記念公園，城を見学し，特に食べ物にこだわらず，買い物を楽しみたい。",
+        "rejected_dialogue_summary": "沖縄でお土産を買いたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳の男性であり、夏に1週間ほどの日程で一人旅をする予定である。2.旅行の目的はメディアでよく取り上げられるような場所を訪れることである。具体的な場所としては首相城や水槽館を挙げている。3.食事に関しては特定のものを食べたいという希望はない。4.首相の城は大人一人当たりの入場料金が400円であること、開園時間が午前8時30分から午後7時までであることが分かった。5.水槽数館は大人が一人あたり1,880円の入館料を支払う必要があること、大人が利用できる時間帯が朝8:30から夕方20:00までの11.5時間であることを知った。\n--Example3--A:こんにちは。今日も暑いですねB:暑くて死にそうだわ。エアコンが壊れていて、窓を開けているのだけど、風が全然入ってこないのよ。扇風機も持っていないから、もうどうしようもなくて。部屋の中はサウナ状態よ.A:私の家はエレベーターのないマンションだから、重い荷物を持って階段を上り下りするのは大変なの。以前、冷蔵庫を新しく買い換えたとき、配送業者にエントランスまでしか運んでもらえなかったの。玄関から部屋まで運ぶのを手伝ってくれたのは、引っ越してきたばかりの隣人だったわ。.B:隣人が助けてくれるなんて、なんて優しい人なんだろう。私の家の周りには、誰も住んでいないんだから。助けを求めても無駄だよ。さすがに、部屋に閉じ込められて死ぬなんてことはないと思うけどね..でも、水分補給だけはしっかりしておかないと。熱中症にならないように気をつけなきゃ。飲み物は持ってきているのかしら?.お腹が空いたら、アイスクリームでも食べようかしら。冷凍庫にストックしてあるから、それを食べれば少しは涼しくなるかもしれないわね。それにしても、私の部屋には冷房がついていないのよね。それでなくても、夏の間は電気代が高くつくのに、さらに負担がかかってしまうわ。あぁ、早く秋が来てほしいわ....もし、クーラーがなかったら、私はどうやって夏を乗り越えればいいのだろうか。こんなに蒸し風呂のような部屋で過ごすなんて、とても耐えられそうにないわ。これから先のことを考えると、気が重くなってしまう。何か対策を考えないといけないけど、何をすればいいのかさっぱり分からないわ...。..--Let'sBegin!--.【Aの質問】.Q1:あなたは現在、どのような",
+        "chosen_dialogue_summary": "1.Bは夏休みに一人で旅行を計画している。旅行先は有名な場所で、具体的には総理大臣官邸と水族館が候補に挙がっている。Bはこれらの場所に興味があり、訪れたいと考えている。2.Bの旅行予算は、1泊2日で1万円以内である。3.Bが旅行に行くのは8月上旬の平日であるため、交通費や宿泊費は比較的安く抑えられる見込みである。また、平日のため混雑も少ないと予想される。4.Bにとって、旅行はリフレッシュするための貴重な機会である。しかし、仕事の都合上、長期の休暇を取ることは難しい。そこで、一人でも楽しめる旅行プランを立てることにした。5.Bの一人旅は初めてではないが、今回はより充実した旅行にするために、事前に情報収集を行っている。6.例えば、首都圏の総務省庁舎の見学ツアーに参加することで、普段は入ることができない場所を見学することができる。7.また、東京近郊の水産物直売所で新鮮な魚介類を購入し、自炊することも検討している。8.このように、自分で調べたり、現地で体験したりしながら、新しい発見や楽しみを見つけることが、Bの一番の目的なのである。",
+        "rejected_dialogue_summary": "AはBに対して、旅の計画を立てる際に考慮すべき要素について尋ねた。Bは、自身の趣向や予算、訪問したい場所の特徴など、さまざまな観点から回答した。以下はその一部である。・Bが訪れたいと考えている場所は、「首都城」と「水族館」の2つである。これらの施設には、それぞれ独自の魅力があり、Bにとって興味深い体験ができることが期待される。例えば、首長城では歴史的な建造物を間近で見ることができ、また、内部に展示されている美術品や工芸品を鑑賞することができる。一方、海洋館では、多種多様な水生生物と触れ合う機会が提供されており、子どもから大人まで幅広い年齢層の人々が楽しむことが可能である。また、季節によっては特別なイベントが開催されることもあるため、事前に調べておくことが望ましい。ただし、混雑が予想される場合は、時間をずらすなどの工夫が必要となる場合もある。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行先は沖繩県である。2.一人旅である。3.行く季節は夏である4.見たい場所は水そうかんと首りじょうである5.食べたいものは分からない6.動植物園があるかどうかを聞いた7.水槽館があることが分かった8.ジンべいざめを見ることができる。9.大人180円で入れる\n1.動物を見たい2.植物はあまり好きではない3.有名なものを食べたい",
+        "chosen_dialogue_summary": "沖縄県の水族館と首里城に行きたい。ジンベイザメが見られる。",
+        "rejected_dialogue_summary": "行きたい場所：水族館と首里城食べ物：特になし行き先：沖縄県一人旅行夏に行くジンベイザメが見られる大人1人1800円"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に行く予定3.沖繩県に行き、有明な所としては水産館、しゅりじょう、などを訪れたい4.動物好き5.大きいものを好む\n-動物は好きではないが植物は見たことがないので植物の花を見たいと思っている。-帰るときに沖繩県のおみやげを見て購入する予定である。-海の人のTシャツー沖縄の定番のお菓子-スーパーで地元の食品を購入する予定であり、24時間営業で無休だった。-有名な場所で食事をしたいと思い、沖縁県ならではのゴーヤーチャンプルーなどを食べたい。",
+        "chosen_dialogue_summary": "私は、夏の終わり頃に一人で旅行に行きたいです。私は海が大好きで、特に美しい海を眺めるのが好きです。また、私は植物も好きですが、まだ植物園には行ったことがありません。そこで、今回の旅行では、海に囲まれた場所を選びました。海水浴やシュノーケリングを楽しみながら、美味しい料理やお土産を探したいと考えています。",
+        "rejected_dialogue_summary": "私は夏の終わりに一人で旅行に行きたいと考えている。私は植物が好きで、特に花が好きなので、植物園や花畑に行ってみたいと思っています。また、私は海が大好きです。海で泳いだり、シュノーケリングをしたりして、海の中の生き物を観察したいです。また、ビーチで日光浴をしながら、美しい景色を眺めるのも楽しみの一つです。私の旅行の目的は、リラックスしてリフレッシュすることです。そのため、静かな場所や自然に囲まれた場所を選びたいと考えています。私にとって、旅行はストレスを解消し、自分自身を見つめ直すための貴重な時間です。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行先：沖繩県2.時期：夏3.観光スポット：水槽館4.食べ物：特になし5.他の要素：動植物園\n-最終更新:2020-12-0213:00:09",
+        "chosen_dialogue_summary": "沖縄県の夏に水族館に行った。動物園も併設されていた。",
+        "rejected_dialogue_summary": "沖縄県の水族館は夏に訪れたが、動物園も併設されていて、植物もたくさん見ることができた。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に行く予定3.沖繩のメインスポットを見て回る4.食べ物にはあまりこだわりがない5.見たいものは水槽館と動植物園\n50歳の女性が夫と旅行に行くことを考えていて、旅行先は沖繩県である。旅行中はオキナワの文化に触れてみたいと考えており、また、夫のためにオススメのお土はを探している。さらに、帰るときに有名なオクスアムを購入して帰りたいため、オムニンショウというショップを紹介した。食事に関してはゴヤチャンプルのような郷土料理を食べたいと希望している。",
+        "chosen_dialogue_summary": "沖縄の名所を巡る旅行を計画中の夫婦。水族館や動物園が見どころで、食に関心は薄いが、ゴーヤーチャンプルーなど地元料理も楽しみたい。",
+        "rejected_dialogue_summary": "沖縄旅行の計画を立てている50代女性。文化体験や夫へのお土産探しが目的。オーシャンビューのホテルに宿泊し、美ら海水族館や首里城、琉球ガラス工房などを訪れる。ゴーヤーチャンプルーや沖永良部島の塩など、地元の食材を使った料理も楽しみの一つ。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳代の一人旅を予定している2.夏に行く3.水産物の見学4.動植物園の訪問5.首都圏を訪れる\n【質問】-要約の各要素はどのように定義されていますか？（例：50歳の男性が「美味しいものを食べたい」と言っている、など）-「自然」や「山」などの一般的な単語をどのような方法で特定のものにマッピングしていますか？--Answer--自然や山など、抽象的な概念を具体的な場所に紐づけるためには、対象となる地域の地理情報を用いる必要があると考えた。具体的に、GoogleマップのAPIを利用し、緯度経度情報から地名を取得することで、場所と概念のマッチングを行った。また、より正確な場所を指定するために、周辺の施設情報や口コミ情報なども併せて検索し、それらを考慮した上で最適な候補を選定するようにした。さらに、ユーザーが求めている概念が複数ある場合や、曖昧な表現である場合には、それぞれの概念に対応する可能性がある場所のリストを作成し、その中から最も適切な選択肢を提案するような仕組みを導入した。",
+        "chosen_dialogue_summary": "1)50代の女性が夏に一人で旅行を計画している。2)水産業や動物園などの見どころが豊富で、都市部にもアクセスしやすい場所が望ましい。3)自然豊かな環境でリラックスしたいという要望もある。4)観光スポットとしては、水族館や海鮮料理店、自然公園などが挙げられる。5)近隣には温泉地もあり、ゆったりとした時間を過ごすことができる。",
+        "rejected_dialogue_summary": "50代の女性が夏に一人で水族館と動物園を巡りたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で一人旅を希望している。旅行期間は夏で目的はメディアに取り上げられたことの多い場所を訪れることである。\nBは50歳の女性であり、夫とともに沖繩県へ旅行に行く予定である。Bには、購入するものや食べたい料理などの具体的な希望はないが、あらかじめ買い物や食事の場所を知っておきたいため、旅行先でのおすすめスポットを尋ねる。Aはこれに応じて、Bが求めている情報を提供する。",
+        "chosen_dialogue_summary": "AとBとの会話からわかるのは、Aが沖縄県への旅行を計画していること、そしてその旅行には夫が同行することだ。さらに、この旅行は夫婦で行く旅行であることが明らかにされている。",
+        "rejected_dialogue_summary": "沖縄県を夫婦で旅行する50代女性が、事前に行きたい場所や買いたいものを決めたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅で夏に行く2.見たいものは水槽館と動植物園3.首里公園と水産館を勧められた\n50歳の女性が旅行先を探している。旅行は1人である。食べることが好きであり、ゴヤチャンプルのような郷土料理を食べたいと思っている。海をテーマにしているTシャツなどのお土産が欲しいと思っている。",
+        "chosen_dialogue_summary": "50代女性の夏の沖縄旅行。食事はゴーヤーチャンプルーなど地元の料理が好き。水族館、動物園、首里城、市場に興味があり、Tシャツなどの海にちなんだお土産を買いたい。",
+        "rejected_dialogue_summary": "50代女性の夏の沖縄旅行。水族館、動物園、首都公園、海産物市場を訪れる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を考えていて、行き先は沖繩県である。2.旅行の日程は夏の間。3.見たいものは水槽館と王城。4.食べ物にはあまりこだわりがない。5.行きたくない場所はない。\n【解説】本例では、ユーザーが旅行先として沖繩県を希望していることが分かる。さらに、その中でも、食事や買い物を楽しむことを目的としていることが読み取れる。最後に、具体的な店舗名が挙げられていることから、より詳細な情報を得ることができる。",
+        "chosen_dialogue_summary": "「沖縄県への旅行を計画しており、水族館や城を訪れたいと考えている。」",
+        "rejected_dialogue_summary": "沖縄県への旅行を計画している50代女性は、夏に水族館や城を訪れることを楽しみにしており、食べることにも興味があるが、特定の場所に行きたいとは思っていない。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅を考えていて、夏に行く予定である。-沖縄件で見たいものとして、主に水槽館や首り城がある。\n##総評###メモ####Example1性格や趣向を深掘りして聞くことで、より詳しい情報を得ることができた。####Exapmle2最初の質問が抽象的だったため、具体的な情報が得られなかった。",
+        "chosen_dialogue_summary": "-夏に一人で旅行に行きたいと考えている。-行き先は沖繩で、水族館と首里城を見たい。",
+        "rejected_dialogue_summary": "##例1```json{\"answer\":\"夏に一人で行き、水族館と首里城を見たい。\"}```##Example2```{\"answer\":\"夏の一人旅で、沖繩の水生動物や歴史を知りたい\"}```"
+    },
+    {
+        "all_short_dialogue_summary": "-夏頃に一人旅を予定している。-有名な場所を訪れたいという希望があり、具体的な場所としては水槽館や首都城などが挙げられている。\n50歳の女性が一人旅をしている。食べることと買い物を楽しむことを目的としている。スーパーマーケットで地場産の食材を購入し、郊外料理を食べたいと思っている。",
+        "chosen_dialogue_summary": "-女性は一人で旅行を計画しており、水族館と城を見学したいと考えている。-また、彼女は地元のスーパーで食料品を買って郷土料理を作ることを楽しみにしている。",
+        "rejected_dialogue_summary": "50代女性の旅の目的は食とショッピングで、夏に水族館と城を巡りたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "お一人での旅行、夏の時季に沖繩県を訪れる予定である。見たい場所として、主なものは水揚げや首裡城である。\n-50歳の女性が夫と旅行に行く予定である。-箱根に行きたいと考えており、具体的な場所はまだ決まっていないが、「アンネの家」という場所を知りたがっている。-動物は好きではないが、お花や植物は見たことがないため、関心があるかもしれない。-帰る際にはおみやげを購入するつもりでいる。-沖繩に行った際は、「海人の人」と書かれたTシャツや、一般のスーパーマーケットで売られているような食品などを探している。",
+        "chosen_dialogue_summary": "Bはおひとりで沖縄を旅行し、魚市場と首里城を見たいと考えている。",
+        "rejected_dialogue_summary": "沖縄県に一人で旅行する50代女性。夏に旅行を計画しており、水産業や琉球王国の首里城を見たいと考えている。夫との旅行では、まだ行き先を決めていないが、\"Anne'sHouse\"という場所に興味を示している。動植物に関心はなく、お土産を買いたいようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは1人の旅行者である。2.その旅行は夏に行われる。3.旅行の行き先は沖繩県である。4.水槽館を訪問する予定がある。\n-お客さん:50歳前後の女性。夫と二人旅。-旅行の目的:夫との思い出づくり。自然を満喫すること。美味しいものを食べること。",
+        "chosen_dialogue_summary": "夏に沖縄県を夫婦で旅行し、水族館を見学する。目的は自然の美しさを楽しむことと、美食体験である。",
+        "rejected_dialogue_summary": "Bは、夏に沖縄県を旅行し、水族館に立ち寄ることを計画している。50代前半の女性で、夫婦での旅行を楽しみ、自然の美しさを堪能し、おいしい食事を味わうことを目的としている。##データセット###テキストデータ####生成データ```2023-06-0815:22:40.127599:Wtensorflow/core/platform/cpu_feature_guard.cc:144]YourCPUsupportsinstructionsthatthisTensorFlowbinarywasnotcompiledtouse:AVX2FMA[INFO]Starttogeneratesummaries...I062814:23:09.379522140524840429440summary_writer.py:41]Writingeventto/tmp/seq2seq/summaries/0/summary.0[I]Summariesarewrittento0files.```####評価データ(正解データ)###コード####python-[main.py](../src/main.py)##結果###要約結果|No.|入力|出力||:---:|:--:|:--||1|Aは40歳の男性である。その男性は旅行に行く。目的地は北海道である。<br>-Aの職業:サラリーマン<br>-行く時期:夏休み<br>|Bは、一人旅を楽しむ40代男性。夏の旅行先として、北海度を選んだ。|###評価結果|メトリクス|値||:--|:-:|##使い方```bashpython3main.py--input_path<inputfilepath>--output_file<outputfilename>```"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅で夏に行く予定である。-有名な場所を訪れることを希望している。具体的な場所としては水槽館と動植物園が挙げられている。\n50歳の女性が旅行先として、夏休みの時期に、家族4人（夫、妻、子ども2人）で沖繩県に行くことを検討している。旅行日程は3泊4日で予算は30万円である。希望する宿泊先の条件は以下のとおりである。・目の前に海が広がっていること・温泉が付いていること食事については朝食と夕食がついているホテルを希望している。また、レンタカーを借りる予定であり、運転手は夫が担当する。レンタル料金は1日5,000円以内であること。",
+        "chosen_dialogue_summary": "-沖縄県の水族館や動物園を家族で見て回りたい。",
+        "rejected_dialogue_summary": "-沖縄県への旅行を計画しており、旅行期間は夏の3日間で、費用は20万円を超えないようにしたい。ホテルは、海の景色が良く、温水プールが完備されていて、朝と夜の2食付きであることが望ましい。家族旅行のため、夫婦と子供2人の計4名で出かけることになる。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を検討している。2.行き先は沖繩県。3.旅行期間は夏。4.見たい場所は水槽館や首都城。5.食べたいものは特になし。6.動物好きである。\n【結論】食いしん坊な性格をしている",
+        "chosen_dialogue_summary": "Iama50-year-oldwomanconsideringtravelingalone.MydestinationisOkinawaPrefecture,andmytravelperiodissummer.IwouldliketoseeaquariumsandShurijoCastle,butIdon'thaveanyparticularfoodpreferences.However,Iamananimallover.",
+        "rejected_dialogue_summary": "```pythonimportpandasaspdfromgensim.modelsimportWord2Vecdf=pd.read_csv(\"data.txt\",sep=\"\\t\",header=None)df.columns=[\"a\",\"b\"]df[\"b\"]=df.b.apply(lambdax:x.replace(\"\",\"\"))sentences=[]foriinrange(len(df)):sentences.append(df.loc[i,\"a\"]+\"\"+df.loc[i,'b'])print(sentences)``````text['1.','50.',\"女性\",'が','一人',\"旅\",‘を',‘検',“討”,‘し',ている。','','2.',‘行',”き”,'先',’は’,'沖縄県','.','3.',’旅行’,‘期’,\"間\",“は”,\"夏\",\".\",'4.',”見”,“たい”,’場’,”所\",”は\",'水',''“''”'‘'“'’''‘''“‘’“'','館',や,‘首',都',城','.','5.',“食”,”べ”,たい,”もの\",『は',特,な',し',.',6.,動',物',好',き',で',あ',る。']```"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏に行く3.水槽を見たい4.首都圏を回る\n50歳の女性が一人で沖繩県を旅行する予定である。旅行中に食べるものとして、ゴーやチャンプルのような郷土料理を希望している。",
+        "chosen_dialogue_summary": "```沖縄県に旅行に行きたい。ゴーヤーチャンプルーを食べたい。```",
+        "rejected_dialogue_summary": "沖縄県に一人旅行に行きたい50代女性は、夏に、水族館を見て回りたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で一人旅を予定している。旅行期間は夏で行き先は特定していない。見たい場所は水槽館と動植物園である。\nBは50歳の女性で家族構成は夫と子どもが1人いる。Bが旅行先として希望しているのは、夫との旅行で秋に行く予定であることから、北海道である。具体的な行き先は決まっておらず、例として挙げたのは美瑛町の青い池と富良野市のラベンダー畑である。その他には、滝や自然などを楽しめる場所を探している。食事に関しては、お寿司やジンギスカン、ラーメンを食べたいと思っている。宿泊施設についてはまだ決めていない。交通手段は飛行機を利用するつもりである。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhoplanstotravelalone.Thetravelperiodissummerandthedestinationisnotspecified.Shewantstoseetheaquariumandzoo.",
+        "rejected_dialogue_summary": "50代女性が夏に水族館や動物園を見たいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅を考えていて、メディアでよく取り上げられるような沖繩の水槽館や首府城を見たいと希望している。動植物園も見たいと思っている。\n動物は好きではないが植物は見るのは好きである。自分用ではなく、帰るときにお土を購入する予定である。",
+        "chosen_dialogue_summary": "Bは沖縄で水族館と首里城を観に行きたい。植物が好きでお土産を買いたい。",
+        "rejected_dialogue_summary": "沖縄の海洋生物館、首里城、植物公園を見学し、お土産を買いたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に3.有名な水槽館(オキナワ美ら海)や首里城を訪れたい4.食べ物については分からない5.動物好きである6.沖縄美ら海水座館がある\n--End--",
+        "chosen_dialogue_summary": "Bは、夏に有数の水族館と名所を旅したいと考えており、食べるものには詳しくないが、生き物が好きだ。",
+        "rejected_dialogue_summary": "Bは、夏の間に、動植物を観察するために、オーシャンビューのホテルに泊まりたいと考えている。--End--"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を検討している。-旅行先は夏の沖繩県を希望している。-観光スポットは水槽館と動植物園を求めている。\n-検討している旅行先は沖繩県である。-旅行の目的は食事を楽しむことであり、ゴーやーちゃんぷるーを食べたいと思っている。",
+        "chosen_dialogue_summary": "-沖縄県の水族館や動物園に行きたいと思っています。",
+        "rejected_dialogue_summary": "沖縄県の水族館や動物園でゴーヤーチャンプルーなどの料理を楽しみたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅をする予定である。見たいものとしては水槽館と動植物園を挙げている。\nAはBに対して、「旅行」についての問いかけをしている。Bは「50歳代」で「夫」がいる。「秋」に「箱」に行くことを考えていて、「オ」を見たいと思っている。また、「動」も見たいと言っている。さらに、「沖」には行ったことがあるが、「花」は見たことがない。「沖」の「土」や「食」に関心がある。特定の「店」ではなく、一般的な「スー」を探している。「マ」では、「土」を購入する予定である。「24」であれば、いつでも「営」しており、「無」であるため、「行」きやすい。「土」の選択肢として、「ゴー」がある。",
+        "chosen_dialogue_summary": "「沖縄の土産を買いに行きたい」【実行結果】A:I'mgoingtogoonatripinthefall.Whatdoyouwanttosee?B:Myhusbandisinhis50s.IwillgotoaboxandseeO.Inaddition,Iwouldliketolookatthemovement.Furthermore,althoughIhavebeentoOkinawa,thereisaflowerthatIhaven'tseen.Thereisaninterestin\"Okinawa'ssoil\"and\"food\".Iamlookingforageneral\"super\"ratherthanaspecific\"shop\".At\"Maa\",Iplantobuy\"soil\".Ifitis\"24\",itwillbeopenatanytime,andsinceitdoesnothave\"nothing\",youcangoeasily.Asforthechoiceofsoil,\"Goo\"isavailable.【出力結果】I'minterestedinbuyingsouvenirsfromOkinoawa.",
+        "rejected_dialogue_summary": "沖縄に行きたい。動物園と水族館を見て、土産物を買いたい。###要約結果```\"沖\"に行ってみたい。\"動\"物\"園\"と\"水\"族\"館\"を\"見\"て,\"土\"産\"品\"も\"買\"い\"たい\"。```###評価-Accuracy:1.0-F1Score(micro):0.8"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅で夏に行く予定である。見たいものは水槽館と動植物園であり、両方とも国内最大級の規模である。\n--Solution--まず、Bが話している内容から、以下の情報が得られる。1.Bは50歳の女性である2.旅行の目的は夫と一緒に楽しむこと3.趣味としては植物を観賞することがある4.好みの食事は地産地消のもの5.土産物として、琉球ガラスやシーサーを購入することを希望している6.食事の際には、アルコールを飲むことを好むこれらの情報をもとに、次のような旅行プランを考えることができる。・旅行先は沖永良部島を選ぶ理由：Bは自然に囲まれた環境を好み、また、夫とのんびりとした時間を過ごすことを求めているため、田舎の雰囲気が漂う島が適していると考えられる。さらに、島内には豊かな自然が残されており、花畑や海岸などを散策することもできる。加えて、旅行費用も比較的安価であるため、お財布に優しい旅行が実現できる可能性が高い。具体的な旅行スケジュールは次の通りである。Day1:早朝に羽田空港を出発し、鹿児島県の奄美大島に到着。そこからフェリーに乗り継ぎ、約2時間で島の北部にある知名町に上陸する。島内の宿泊施設にチェックインした後、夕食をとるために近くのレストランへ向かう。メニューには島で採れた新鮮な魚介類や野菜が豊富に取り揃えられており、その中から選んだ料理を堪能する。また、お酒の種類も充実しているため、日本酒や焼酎などの地酒を試すことも可能である。食後はホテルに戻り、一日の疲れを癒すためにゆっくりと休息を取る。翌朝は早起きして朝日を眺めながら海沿いをウォーキングするなど、リフレッシュするためのアクティビティを楽しんでみるのも良いかもしれない。",
+        "chosen_dialogue_summary": "Bは50歳の女性で、旅行の目的は夫と一緒に楽しむことであり、趣味としては植物を観賞することがある。好みの食事は地産地消のものであり、土産物としては琉球ガラスやシーサーを購入することを希望している。食事の際には、アルコールを飲むことも好む。",
+        "rejected_dialogue_summary": "Bさんは50代の夫婦で、夏の旅行を計画しています。彼らは、沖縄の離島である「与那国島」に興味を持っています。Bさんが好きなのは、自然や文化に触れることです。特に海や山の風景、伝統的な祭りや芸能が好きです。また、地元の料理やお酒も楽しみたいと考えています。このような要望を踏まえて、彼らには以下のような旅程が提案されます。1日目：那覇から飛行機で石垣島へ移動し、その後フェリーや高速船で与論島まで行きます。与羅道（よらみち）という古い街道を歩きながら、昔ながらの街並みや人々の暮らしを感じることができます。夕方には宿に着き、海辺の露天風呂で日焼けを冷やしながら、美しい夕日を見ながらくつろぎます。その後、おすすめの居酒屋で泡盛や刺身を味わいながら島の人々と交流するのも楽しいでしょう。2日目の午前中は、日本最西端の地である西崎（いりざき）展望台を訪れ、雄大な太平洋の景色を満喫します。昼食には「てんぷら」や「海ぶどう」などの郷土料理が楽しめる食堂へ行くこともできます。また、この日は「八月踊り」が開催されるので、ぜひ参加してみてください。夜は星空観測ツアーに参加すると、天の川や流れ星が見えるかもしれません。3日目を迎えると、晴天率が高く、波も穏やかなのでシュノーケリングやダイビングなどのマリンスポーツを体験するのに最適な日となります。この島には多種多様なサンゴ礁や熱帯魚が生息しており、水中世界の美しさに圧倒されることでしょう。海から上がった後には、マングローブ林をカヌーで探検したり、滝つぼで泳いだりする"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳の男性で一人旅を希望している。2.旅行期間は夏と決まっている。3.観光スポットは水槽が大きくて長く開いているところが良い。4.首里公園と沖水美海が旅行先として良いと考える。\n【質問】・Bはどのような情報を求めているか・AはBに何を勧めようとしているか【回答】Bが知りたがっている情報は以下の通りである。1.動物に関する情報2.植物に関連する情報(花など)3.有名な観覧車の情報AがBに対して提案している内容は次のとおりである。4.海に関する工芸品を販売している店5.スーパー6.泡盛を提供している飲食店",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhowantstotravelalone.Thetravelperiodisinthesummer.Hewantsaplacewheretheaquariumislargeandopenforalongtime.IthinkthatShuriParkandOkinawaMisakiaregoodtraveldestinations.",
+        "rejected_dialogue_summary": "B氏は沖縄旅行を計画しており、水族館や花、植物、動植物に関する知識を得たいと考えている。A氏が提言しているのは、海をテーマにした商品を扱うお店や、スーパーマーケットでの買い物体験、また、飲み物としての「泡」が特徴的なお酒を楽しむことができる店舗の紹介である。"
+    },
+    {
+        "all_short_dialogue_summary": "1.「1人の旅行」2.行き先は「夏に沖繩県」3.見たいところは、「水槽館」、「首府城」4.食べたいものは特になし5.動物好きである6.沖繃美拉海鯨館の情報を得た",
+        "chosen_dialogue_summary": "沖縄県の水族館と首里城を訪れたい。",
+        "rejected_dialogue_summary": "沖縄の水族館と首里城を見に行きたい"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは夏に一人旅をしようとしている。2.見たいところは水槽と城。3.水槽数は少ない。4.城は首都圏にある。5.動物も見たい。6.大きなものは好き。\n-動物は好きではないが植物は見たことがないので調査してほしい。-沖繩県の食べものや買い物を探している。-有名なものを購入する予定である。-土産物屋の「海人の店」やスーパーマーケット「マックスヴァリュー」が候補に挙がっている。-「マクスヴァリー」は24時まで開いているのでよく利用する。-地元の人も買いにくる。-おすすめ。-食事もできる。-泡盛が飲める。-古くからある店。-赤い屋根が特徴。",
+        "chosen_dialogue_summary": "Bは沖縄の水族館や城を見たいと考えている。また、動植物や食べ物にも興味がある。旅行中は、地場産品の店や飲食店を利用したいと思っている。",
+        "rejected_dialogue_summary": "沖縄の水族館や城を見に行きたいが、動植物の知識はあまりない。#生成した文章-水族園やお城が好きだが、植物や生き物については詳しくない。#要約結果の評価##評価指標###ROUGE-N####指標の定義ROUGE(N)は、n-gramの共通連鎖を抽出することで、生成された文章と参照文章の類似度を測定する。####計算式$$\\begin{align}&\\text{Rouge-N}=\\frac{\\sum_{i=1}^{|S|}\\max_{1\\leqj\\ltn}|S_i\\capR_{j:j+n-1}|}{\\max\\{1,|S|\\}}\\\\&S_i:i番目の生成文の文字列&R_j:j番目からj+n−1までの参照元の連続するngram\\\\S=S_1,S_2,…,S_{|s|}\\\\R=R_0,R_3,…R_{m}\\end{aligned}$$###BERTScoreBERTScoreはBERTを用いた文書間のスコアリング手法で、単語埋め込みと事前学習済みのBERTモデルを利用して、2つのテキスト間で共有されるトークンをカウントします。####評価方法1.文書ペアを入力としてBERTの出力ベクトルを計算する2.BERTのベースラインモデルの最後の隠れ層の状態から、各文に含まれるトピックを推定し、文中の各トキンに対応するベクターを得る。3.BertScoreの計算式は次のとおりです。$$\\text{BertScore}=\\frac{2\\cdot\\operatorname{cos}(u,v)}{u^{2}+v^{"
+    },
+    {
+        "all_short_dialogue_summary": "##Code```pythonimporttorchfromtransformersimportAutoTokenizer,AutoModelForSeq2SeqLM,pipeline#Loadthemodelandtokenizermodel_name=\"rinna/japanese-gpt2-small\"tokenizer=AutoTokenzier.from_pretrained(model_name)model=AutoModeForSeque2SeLM.from_pretained(model)#Createapipelineforsummarizationsummarizer=pipeline('fill-mask',model=model,tokenizer=tokenizer,device=torch.device(\"cpu\"))#Definetheinputtextinput_text=\"\"\"A:B:\"\"\"#Generatethesummarysummary=summarizer(input_text)[0]['sequence']print(summary)```\n--Answer--食事についてはお酒や郷⺠料理を希望している。また、お⼟産に関しては⾃分⽤のものではなく、帰るときに⻄⿃の⽔平線あたりで買い物を予定している。",
+        "chosen_dialogue_summary": "A:B:\"A:\"\"B:\"【キーワード】-お酒-郷土料理",
+        "rejected_dialogue_summary": "-Bの興味関心-食事-お酒-飲む-ビール、ワイン、焼酎、ウィスキー、カクテル、ハイボール、日本酒、泡盛、ソフトドリンク、ノンアルコール飲料、ジュース、コーヒー、紅茶、ハーブティー、お茶、お湯、水、ミネラルウォーター、炭酸水、アクエリアス、ポカリスエット、オロナミンC、リポビタンD、ユンケル、エナジードリンク、マウンテンデュー、スプライト、ドクターペッパー、アップルタイザー、ジン、ウォッカ、テキーラ、ラム、ブランデー、マティーニ、ギムレット、マルガリータ、マンハッタン、サイドカー、ブラッディメアリー、モヒート、ダイキリ、マイタイ、ピニャコラーダ、ブルーハワイ、バカルディ、キューバリブレ、シャンディーガフ、レッドアイ、サングリア、カルーアミルク、ホワイトルシアン、黒霧島、白岳しろ、百年の孤独、森伊蔵、魔王、村尾、伊佐美、兼八、佐藤、久保田、越乃寒梅、八海山、〆張鶴、獺祭、十四代、飛露喜、而今、磯自慢、鍋島、新政、くどき上手、風の森、花陽浴、作、写楽、南部美人、亀の海、天狗舞、手取川、遊穂、満寿泉、北の勝、鳳凰美田、一白水成、開運、麒麟山、大七、義侠、富久錦、仙禽、出羽桜、常きげん、浦霞、日高見、栄光冨士、嘉美心、酔鯨、土佐しらぎく、長陽福娘、英勲、山の壽、三井の寿、醸し人九平次、神の河、"
+    },
+    {
+        "all_short_dialogue_summary": "-行き先-沖繩県-夏に行く予定-行く理由-一人旅-見たいもの-水槽館-首里公園-動物\nBは50歳の女性で夫と旅行に行く予定がある。Bが旅行先で見たい場所はオーシャンビューが特徴のホテルである。旅行に必要なものは水着、サングラス、日焼け止め、ビーチサンダル、カメラ、スマホ、財布、パスポート、化粧品、歯ブラシ、シャンプー・リンス、コンタクトレンズ、メガネ、ヘアゴム、ハンカチ、ティッシュ、生理用品、ストール、モバイルバッテリー、充電器、イヤホン、トラベルポーチ、折りたたみ傘、常備薬などである。\n-11:00から23:59まで営業している。-店内はカジュアルな雰囲気である。",
+        "chosen_dialogue_summary": "沖縄県の夏に一人で旅行する。水族館と首都公園を訪れたい。夫も同行する。夏の旅行には、水泳用具、帽子、紫外線防止クリーム、砂浜用の靴、デジカメ、携帯電話、お金、身分証明書、コスメティック、ブラッシングセット、洗髪剤、接触レンジ、眼鏡、髪の毛をまとめるためのもの、手ぬぐい、鼻紙、ナプキンなどが必要です。開店時間は午前11時から午後23時59分までです。",
+        "rejected_dialogue_summary": "沖縄県の夏の1人旅で、水族館と動植物園を楽しみたい。見どころは、海の景色が楽しめるホテルと、オープンエアのレストラン。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で一人旅を予定している。行き先は夏の沖繩県である。見たいものとしては水槽館と動植物園を希望している。\n-旅行先は沖繩県である。-動物はあまり好きではないが植物は好きである。植物を観賞することに関心を持っている。",
+        "chosen_dialogue_summary": "沖縄県で水族館や植物の鑑賞を楽しみたい。",
+        "rejected_dialogue_summary": "沖縄の水族館で植物を見て楽しむ。##実行方法```bash$pythonmain.py```"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳の男性であり、夏に1週間程度の旅行に出かけたいと思っている。2.旅行の目的は自然や文化を楽しむことである。3.沖繩県に行く予定であり、その中で水槽館や動植物園を見て回ることを希望している。\n--Answer--買い物をする際はマックスヴァリュー牧師店を利用することが多い。食事をするならば、ゴーやチャンプルのような沖繩料理を食べることができる店舗が良い。",
+        "chosen_dialogue_summary": "Bは沖縄県に旅行に行きたいと思っており、水族館と動物園を訪れたいと考えている。彼は、旅行中に自然と文化の両方を楽しみたいと考えており、そのためには、自然の美しさを感じられる場所と、文化的な体験ができる場所を組み合わせて訪れることが重要であると述べている。また、彼は旅行中の食生活にもこだわりがあり、地元の料理であるゴーヤーチャンプルーなどを食べてみたいと語っている。",
+        "rejected_dialogue_summary": "1.Bは夏休みに沖縄に旅行に行きたいと考えている。Bは水族館と動物園が好きで、特にサンゴ礁や熱帯魚が好きなようだ。また、Bには小さな子供がいるため、子供と一緒に楽しめる場所を探している。2.Bの好みは、海の生き物がたくさん見られる場所や、美しい景色を眺めながらゆっくりと過ごせる場所など、自然を満喫できる場所である。また、歴史的建造物や伝統的な文化に触れることも楽しみの一つである。3.Bには、家族や友人との時間を大切にするという価値観がある。旅行先では、みんなで楽しい思い出を作りたいという気持ちが強い。4.以上を踏まえると、以下のような旅行プランが考えられる。まず、那覇空港に到着したら、レンタカーを借りて北部方面に向かう。途中、古宇利大橋や美ら海ビーチを訪れ、絶景を堪能する。次に、名護市にある「ネオパークオキナワ」に立ち寄り、サルやフクロウなどの珍しい生きものたちと触れ合う。そして、恩納村の「体験王国むら咲むらの里」でシーカヤックやシュノーケリングなどのアクティビティに挑戦する。その後、首里城公園や識名園などの世界遺産を見学し、琉球王朝時代の雰囲気に浸る。最終日は糸満市の平和祈念公園で戦争の悲惨さを学び、心を落ち着かせる。最後に国際通りでお土産を買って帰路につく。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を検討している。2.夏に沖繩県を訪れる予定である。3.水槽館と動植物園の見学を希望している。\n50歳の女性が夫と旅行する予定であり、食事や買い物などを楽しむことを希望している。具体的な場所は指定しておらず、一般的なおすすめスポットを知りたがっている。",
+        "chosen_dialogue_summary": "Iama50-year-oldmanwhoisplanningtotravelalone.IplantovisitOkinawaPrefectureinthesummerandwouldliketoseetheaquariumandthezoo.MywifeandIareplanningatripandwehopetoenjoymealsandshopping.Wedon'thaveaspecificplaceinmind,sowewouldappreciateitifyoucouldtellussomegeneralrecommendations.",
+        "rejected_dialogue_summary": "沖縄県の水族館や動物園を夫婦で訪れたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を考えていて、行き先は沖繩県である。2.旅行の期間は夏である。期間が決まっていない。3.見たいところは水槽館と動植物園である。\n-50歳以上の男女2人組が旅行先を探している-旅行先は「<>」と名付けられた場所-ここは<>という名前の場所である-この場所の名前は<>-この旅行者は植物を観賞することが好きであるが、お花にはあまり関心が無い-植物は好きだが、花ではない-花は嫌いではないが、それほど好きでもない-好きな植物は花以外の植物である",
+        "chosen_dialogue_summary": "この女性は、沖縄の水族館や動物園を訪れる夏の旅行を計画している。",
+        "rejected_dialogue_summary": "沖縄県で夏に水族館や動物園を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳前後の一人旅を予定しているユーザーが対象である。旅行期間は夏であり、行き先は沖繩県である。観光スポットとしては水槽館と動植物園を希望している。\n-50歳の女性が旅行先として沖繩県を検討している。-検討の理由として、夫と一緒に過ごす時間を充実させたいということが挙げられる。\n【解答例】自然に囲まれた場所に住んでおり、自転車で買い物に行くことが多い。休日には自宅でゆっくり過ごすことが多く、読書をしたり映画を観たりすることが好きである。食べ物の好き嫌いはないが、お酒はあまり飲まない。天気の良い日に外出することを好み、晴れの日が続くことを願っている。",
+        "chosen_dialogue_summary": "Aは、沖縄県の水族館や動物園に行きたいと考えている。彼女は50代前半の独身女性で、旅行は一人で行くつもりだ。夏休みに旅行を計画しており、天気が良くて暑い日を楽しみにしている。また、食べることが好きなので、おいしいものをたくさん食べたいと思っている。",
+        "rejected_dialogue_summary": "沖縄県に旅行に行きたいと考えている。家族と旅行するのが好きで、特に夏休みに家族で旅行をするのが楽しみである。また、美味しいものを食べることが大好きなので、地元の名物料理を味わいたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-夏頃に一人旅を予定している。-有名な場所を訪れたいという希望を持っている。-メジャースポットとして、エメラルドグリーンの海が美しく、世界最大級の水槽を有する「美浜アメリカンビレッジ」や、歴史的な建造物である「首里城」などが挙げられる。-食事に関しては、あまりこだわりがない。\n-50歳の女性の旅行プランをサポートする-旅行先は沖繩県-箱根で行きたかったところを聞く-動物公園はなかった-代わりに植物公園を提案するが却下される-他に何かしたいか聞くと、名物の食べものを食べたいと言われる-有名なスーパーマーケットを教える-実際に行ったことがあると言う-また何か食べるものはないか聞いてみる-沖繝県の名産の料理を紹介-老舗のレストランがあると教えてくれる-行くことに決める-お酒も飲みたいと言っている",
+        "chosen_dialogue_summary": "夏に沖縄に行きたいと考えているBは、メディアで取り上げられるような場所に興味があるようだ。食に関しても、特定の嗜好は持っていないようである。Bが、50代の独身女性であることを踏まえると、彼女の経済状況や健康状態を考慮した旅行の計画を立てることが重要だろう。例えば、Bにとって負担の少ない移動手段を選んだり、健康的な食生活を維持するためのアドバイスを提供したりすることが必要かもしれない。",
+        "rejected_dialogue_summary": "夏に沖縄に行きたいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは1人の旅行者で夏に行く予定である。見たいものは水槽や動植物園である。\n50歳の女性一人旅。食べることと買い物を楽しむことを目的としている。",
+        "chosen_dialogue_summary": "Bは1人の旅行者で夏に行く予定である。見たいものは水槽や動植物園である。50歳の女性一人旅。食べることと買い物を楽しむことを目的としている。",
+        "rejected_dialogue_summary": "夏に水族館と動物園に行きたい50代女性の旅行プラン"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅であること2.行き先は沖繩県3.夏頃に行く予定4.見たいものは水槽館5.食べ物にはあまりこだわりはない6.首里公園も見たい\n【1】Bは50歳以上の男女である。【2】BとAは旅行について話し合っている。【3】Aの提案により、Bが行きたがっている場所を調査している。【4】沖繩県の名物であるおみやげを探している。",
+        "chosen_dialogue_summary": "IwouldliketogotoOkinawaaloneinthesummer.IwanttoseetheaquariumandShuriPark.",
+        "rejected_dialogue_summary": "沖縄の水族館に行きたいが、どんな料理があるかは気にしない。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳以上の女性が一人旅をするために、夏に沖繩県を旅行することを計畫している。見たい場所として、<首府城>と<美拉海>の二つを挙げている。\n-旅行先の候補として、琉球王国時代の歴史を感じることができる首里城を挙げている。-また、食事や買い物を楽しむために、国際通りを訪れることを希望している。",
+        "chosen_dialogue_summary": "50代女性は夏の沖縄旅行を計画しており、見どころとして「首都城」と「美麗海」が挙がっている。彼女は、50年以上にわたる歴代の王の足跡をたどるために首相城を見学したいと考えている。また、彼女の旅行のもう一つの楽しみは、おいしい食べ物やお土産を探すことである。国際通りのショッピングストリートでは、地元の特産品や名物料理を堪能することができると期待している。",
+        "rejected_dialogue_summary": "沖縄旅行の計画を立てている50代女性は、首都城と美麗海の2か所を見たいと言っている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が一人旅で夏に沖繩県を訪れたい2.観光スポットとしては水槽館や動植物園が挙げられる3.特に大規模な施設が望ましい4.首里公園や沖合美水館など具体的な場所の名前も挙がっている\n旅行先として沖繩を考えていて、帰り際にお土を購入する予定である。スーパーマーケットのマックスヴァリュー牧司店や海人の人という名前のTｼｬﾂなどが販売されている。食事としてはゴヤチャンプルのような郷土地の料理を食べたいと言っている。\nAは午前と夜に営業している店を紹介し、Bは夜にお店に行くことを決めた。店は定番のメニューを取り揃えており、値段も手頃である。Bが見たいものとして、水槽館、城、綺麗なビーチを挙げ、Aが調べてみたところ、「NagannuIsland」という場所を見つけた。そこは那霸から船で行くことができ、小さい島である。",
+        "chosen_dialogue_summary": "Bisa50-year-oldsinglemanwhowantstotravelalonetoOkinawaPrefectureinthesummer.Hewouldliketovisitaquariumsandzoosassightseeingspots.Inparticular,hewantsalargefacility.SpecificplacessuchasShuriParkandOkiamimizu-kanarealsomentioned.Bplanstobuysouvenirsonhiswayhome.MaxValueMakishiStore,asupermarket,andT-shirtscalled\"SeaPeople\"areonsale.Asforfood,BwouldlovetoeatalocaldishcalledGoyaChampuru.Aintroducesashopthatisopeninboththemorningandatnight,soBdecidestogototheshopatnighttime.Theshophasavarietyofstandardmenusandthepricesarereasonable.AmongthethingsthatBisinterestedin,aquarium,castle,beautifulbeach,AfoundaplacecalledNagannuiIsland.ItcanbereachedbyboatfromNahaandit'sasmallisland.",
+        "rejected_dialogue_summary": "沖縄を旅行したい50代の男性は、夕食にゴーヤーチャンプルーなどの地元の食べ物を楽しみたいと思っています。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅を予定している。メインの目的としては水槽を見たり、観察したりすることである。食事に関しては特別な希望はない。Bが考えた旅行先は沖繩県である。\nAはBに対し、旅行先の候補として沖永良部島を提案した。Bはそれを受け入れた。旅行日程は3泊4日であり、移動方法は飛行機である。宿泊先は民宿である。\n1.お店の営業時間は11:00から23:59までである。2.夜に行くことを検討している。3.たくさんの飲食店がある。4.ソバ屋があり、オーソドックスなメニューが安価で提供されている。5.昼夜問わず利用できる。6.他の見どころとして、水槽、城、綺麗なビーチを挙げている。7.ナンガヌ島を訪れることを希望している。",
+        "chosen_dialogue_summary": "沖縄県の水族館で魚を観賞したいと考えており、具体的には、那覇空港から飛び立つ便に乗り、4泊3日のスケジュールを組んで、島内で民泊をしながら、夜は飲み屋街で食べ歩きを楽しみたいと思っている。",
+        "rejected_dialogue_summary": "沖縄県の水族館を中心とした旅行プランを立てた。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を予定している。2.旅行先は夏に行くことを検討している。3.行き先として、オーソドックスな水槽と自然を感じられる場所を希望している。\n-50歳以上のカップルが旅行先を探している。-旅行先の候補は沖繩県である。-沖縃県では、琉球王朝時代の伝統的な民家を再現した店舗で食事を楽しむことができる。\n-お店の営業時間は11:00から23:30までである。-他のお店も多くあるが、おすすめはお蕎麦屋である。ソバやゴヤチャンプルのようなメニューもある。価格も安く、ランチタイムや夜にも利用できる。食事の後には、水槽、城、綺麗なビーチなどを楽しむこともできる。",
+        "chosen_dialogue_summary": "A.50代の夫婦が夏に旅行を計画している。B.沖縄県に行きたいと考えている。C.水族館や城など、自然や歴史的な建造物を楽しみたいと思っている。D.旅行の日程はまだ決まっていない。",
+        "rejected_dialogue_summary": "夏に50代の旅行者が水族館や自然に触れ合える場所へ行きたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏頃に3.観光スポット：水槽館4.食べ物については分からない5.沖繩県に行く6.メジャースポット（水塊館、しゅりじょう）7.動物好き\nBは50歳くらいの男性である。BとAの会話から、Bが夫と旅行に行く予定であることがわかった。旅行先の候補として、AはBに沖繩県を提案した。AがBから聞き取った情報をまとめると、以下のようになる。1.Bは妻と一緒に、旅行に出かける。2.旅行の行き先はまだ決まっていない。3.友達と会うためではない。4.予算は5万円くらい。5.食事は美味しいものを食べたい。6.観光する場所は特になくてもいい。7.土産物は欲しい。8.夫婦の記念写真を撮る。",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.FromtheconversationbetweenBandA,itwasfoundthatBisplanningtogoonatripwithhiswife.AsuggestedtoBthatOkinawaPrefecturewouldbeagooddestinationforthetrip.SummarizingtheinformationthatAheardfromB,thefollowingpointscanbemade.1)Bwilltravelwithherhusband2)Thedestinationofthetravelhasnotbeendecidedyet3)Itisnotformeetingfriends4)Budgetisaround5,000yen6)Thereisnoparticularplacetosightsee7)Souvenirsaredesired8)Totakeacommemorativephotoofhusbandandwife",
+        "rejected_dialogue_summary": "沖縄県の水族館と首里城に行き、美食を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の男性が一人旅をする-行き先は夏に行く予定-有名な場所を訪れたい-水槽館-見つからなかった-首里公園-大人一人が入場できる-時間は8:30-19:00-入場料は400-予算に含まれる-他の場所も見たい-動物好き-ゾウやキリンのいる場所はない-沖美海-魚の種類が豊富-ジンペイサメもいる\nQ1.Bの趣向について述べよBは50歳以上の男女であり、旅行に行くことを希望している。旅行先は箱根本道である。Bが好むものとして、以下のものを挙げることができる。-動物がいる施設(例:動画園)-植物や花を観賞することQ2.趣向に基づいて旅行プランを提案せよA1.-沖繩の伝統的な料理を提供する店を探す-Bは「ゴヤチャンプール」や「イナムルチ」などの沖繭料理に馴染みがあると推測されるため、これらのメニューが提供されている店舗を検索する。A2.-「泡水龍」は創作77年という歴史があり、店内の雰囲気も沖旭らしい赤瓦屋根となっているため、Bにとって魅力的な選択肢となる可能性が高い。\n午前中から深夜まで営業している店があり、夕方に訪問する予定である。店内にはお蕎麦のメニューが豊富にあり、値段も安いのでおすすめである。また、お店の雰囲気も良いため、ランチタイムやディナータイムにも訪れることができるとのことである。",
+        "chosen_dialogue_summary": "Bは50歳以上の男性であり、旅行に行くことを希望している。旅行先は箱根本道である。Bが好むものとして、以下のものを挙げることができる。-動物がいる施設(例:動物園)-植物や花を観賞すること",
+        "rejected_dialogue_summary": "沖縄の水族館は、夏休みの旅行にぴったりの場所です。大人1人あたり400円の入園料で、8時30分から19時まで楽しむことができます。さらに、魚やジンベイザメなど、多種多様な海の生き物を間近で観察することもできます。また、沖永良部島の美しい景色を眺めながら、ゆったりとした時間を過ごすこともできるでしょう。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を考えていて、夏に沖繩へ旅行する予定である。-見たい場所として、オススメのスポットを尋ねられたときに、最初は水槽館を希望していたが、その後、別の場所を提案された。最終的には、観覧車を勧められ、了承した。\n-50歳の女性が一人旅をしている。-旅行の目的は「美味しいものを食べること」。\n-11:00-12:30の営業時間である。-夜でも訪れることができ、比較的手軽な店である。夜に訪れようと考えており、店の雰囲気はボーリューミーでリーズなブルな値段設定となっている。昔ながらの店であり、そろばんを使っての会計が行われる。店内はカウンター席とテーブル席が用意されており、おすすめのメニューとしては焼き鳥や鶏皮が挙げられる。定番の焼酎やハイボール、チューハイなどのアルコール類も取り揃えられている。食事の際にはお通しが提供され、手作りの漬物が提供される。テイクアウトも可能であり、お弁当の種類は豊富である。-お客は50歳前後の男性で一人で来店している。男性はあまりお酒を飲まないようで水割りを注文している。お通しに付いてくる手づくりのつまみを気に入っている様子である。また、お店に来るのは初めてではないようだ。",
+        "chosen_dialogue_summary": "-夏の沖縄旅行を計画中の50代男性。水族館に興味を示すが、他に良い場所があると言われ、最終的に夜景の綺麗な展望台に行くことに決めた。-美食を求めて一人旅行をする女性は、11時から12時30分までの間、ボリューム満点で手頃な価格の居酒屋に立ち寄ることを考えている。",
+        "rejected_dialogue_summary": "A.沖縄の水族館が好きなBは、友人から「那覇市にある、昼夜問わず手軽に立ち寄れるお店を紹介してほしい」と頼まれた。そこで、Bが紹介したのは、11時から12時30分までの間、夜も利用可能な、ボリューム満点で手頃な価格のお店だった。Bによると、この店は手打ちそばを提供しており、定食や一品料理も充実しているそうだ。また、カウンターやテーブルの席もあり、好みに合わせて選ぶことができる。さらに、焼きたての鳥肉や皮など、さまざまな料理を楽しむことが可能だという。特に、お酒好きにはたまらない店だそうで、日本酒やビールなども提供されている。しかも、お通しのついた手料理がとてもおいしいと評判だ。そして、持ち帰りもできるので、自宅でゆっくり食べたい人にもぴったりだ。そんなBのおすすめたこの店、ぜひ一度訪れてみてはいかがだろうか。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が一人旅を希望している。2.夏に沖繩県を訪問する予定である。3.有名な場所を巡ることを望んでいる。4.食べ物に関しては詳しくない。\n【参考文献】https://www.jstage.jst.go.jp/article/johokanri/49/2/50_KJ00010003595/_pdf/-char/ja\nBは夜に店を訪れる予定である。店にはお蕎麦やゴーやチャンプルのメニューがある。Bが見たいものとしてはお城や海がある。",
+        "chosen_dialogue_summary": "Bisplanningtovisitarestaurantatnight.Therestaurantofferssoba,goyachampuru,andotherdishes.Bwantstoseeacastleandthesea.【正解】Bplanstogotoanightrestaurant,wheretheycanenjoydishessuchasSobaandGoyaChampuru.Theyarealsointerestedinseeingcastlesandseasduringtheirvisit.",
+        "rejected_dialogue_summary": "おそらく沖縄県に旅行に行き、夜は店で食事をし、お城と海を見たいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.行き先は沖繩県3.8月頃に行く4.有名な場所を周りたがっている5.見たいものは水槽館6.食べ物にはこだわりがない7.水生館は見つけられなかった8.首里公園に行ける9.大人400円10.動物を好んでいる11.沖繪美良海の水産館を見つけた12.ジンボエイがいる13.営業時間は8:30~20:0014.料金は大人1,880円\n--最後に--\nBは午後から訪れる予定でいる。店は夜まで営業しているため、訪れても問題ないと述べている。また、お店にはお蕎麦屋もあると聞いており、ランチやディナーに利用することを検討している。さらに、Bが沖繩県を訪れた際には、水族園や城、綺麗なビーチなどを見て回ることを希望している。",
+        "chosen_dialogue_summary": "BisplanningtovisitOkinawaPrefectureinAugust.Hewantstoseefamousplaces,suchasaquariums,castles,andbeautifulbeaches.However,hedoesn'thaveanyparticularpreferencesforfood.Bhasalreadyfoundaplacecalled\"OkinawaAquarium\"andislookingforwardtoseeingthegiantmantaraysthere.Theaquariumisopenuntil8pm,sohecanvisititintheafternoon.Thereisalsoasobanoodlerestaurantnearby,whichheisconsideringforlunchordinner.",
+        "rejected_dialogue_summary": "沖縄県の一人旅を計画中のBさんは、8～9月に旅行を予想しており、有料の施設を見学したいと考えています。Bさんが興味を持っているのは、観賞魚や海洋生物が展示されている水棲館と、美しい景色が広がる沖絵海水館です。また、動植物が好きなBさんにとって、城や公園なども見どころの一つです。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を検討している。-行き先は夏に行く予定の沖繩県である。見たいものは水槽館と動植物園である。\n-旅行先は沖繩県である。-お客さんは50歳以上の男女2人である。-観光スポットとして、”海人の工芸館”と”マックス・ヴァリュー”が挙げられる。",
+        "chosen_dialogue_summary": "「沖縄の水族館や動物園を見たいと考えている50代の旅行者が、夏の旅先として同県を選び、海人（うみんちゅ）の手作り品を扱うお店や、買い物ができる施設を訪れたいと思っている。」",
+        "rejected_dialogue_summary": "沖縄の水族館を楽しみたい50代男性の旅行プラン"
+    },
+    {
+        "all_short_dialogue_summary": "-夏頃に一人旅を予定している。-観光スポットとして、メディアで取り上げられることが多い場所を好む傾向がある。\n【参考文献】-[1]https://github.com/NLPwithPython/nlp-with-python-ja/blob/master/chapter_03/03-01-2-1.ipynb",
+        "chosen_dialogue_summary": "-夏頃、一人で旅行を計画している。-観光名所として、マスコミで紹介される場所が好きだ。",
+        "rejected_dialogue_summary": "夏にひとり旅の計画を立てており、趣向としてはメデイアでよく紹介されるような場所が好みだ。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を検討している。-旅行先は夏に行く予定の沖繩県である。-見たい場所は水槽館と動植物園である。\n1.50歳以上の男女2人組2.旅行先は沖繩県3.動物はあまり好きではない4.植物、花に関心がない5.帰る際に有料のおみやげを購入する予定6.有名な食べものを食べたい7.沖繃料理を食す\n11:00から12:30まで営業している。夜に訪れる予定である。他の店舗も多数あるが、そのうちの1つにソバ屋がある。ゴーやチャンプルのような料理もある。価格が安く、量も多い。昔ながらの定番店である。ランチタイムやディナータイムにも利用できる。気楽に来店できる店だ。昼食はそこの店で食べることに決めた。何か見たいものはないか聞かれたので、「水槽や城、綺麗なビーチを見たい」と答えた。海辺の島を調べてみたところ、「ナギヌ島」という島が見つかった。そこは那須から船で行くことができ、約２０分で着く。シュンケリングやマリンスポーツも楽しめる。1日で帰ってくることが可能だ。アトラクションに参加したいかどうか尋ねられたので「参加する」と返事した。長い時間乗るわけではないので酩酊することはないだろうと答えると、ツアーの料金は３２００～５８００円であると言われた。参加してもよいかと確認され、「参加して構わない」と伝えた。",
+        "chosen_dialogue_summary": "沖縄に旅行に行き、水族館や植物を見て、名物料理やお土産を買いたい。旅行の日程は2泊3日であり、初日に那覇空港に到着する。2日目はレンタカーを借りて北部を回り、最終日は名護市で過ごしたいと考えている。",
+        "rejected_dialogue_summary": "沖縄県には水族館や植物館があり、見学することができる。また、那覇空港に近い場所には、食事ができる場所がたくさんある。その中でも、特にお勧めなのは、ソーキそばやゴーヤーチャンプルーなどが食べられる店であり、昆布や魚の煮物などもおいしい。さらに、近くには海水浴場もあり、シュノーケリングなどのマリンアクティビティを楽しむこともできる。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の独身男性が一人旅を検討している。-旅行期間は夏の予定である。\nBは50歳の女性で、一緒に行く夫がいる。Bと夫は動植物にあまり関心がなく、旅行先で見たり食べたり買ったりするものを探している。旅行は秋に行う予定であり、Bが買い物をするときには夫用ではなく自分で使う物を選びたいと考えており、帰るときにはおみやげを購入するつもりである。食事に関しては一般的な沖繩料理を食べたいと思っている。\nBは夜に店を訪れることを希望している。店にはたくさんの飲食店があり、そのうちの1つにソバ屋がある。Bがソウルフードを食べたいと考えたため、店員はBにこの店をお勧めした。Bは店の近くの海を見に行くことも希望しており、その中でもナンガヌ島が気になっている。",
+        "chosen_dialogue_summary": "-沖縄の50代の夫婦が秋に旅行を計画している。-彼らは、夫のために買うのではなく、自分用のものを見つけることを楽しみにしており、お土産も買いたいと考えている。",
+        "rejected_dialogue_summary": "-沖縄旅行を計画中の50代夫婦が、秋に一人で旅行したいと考えている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳代の一人旅で夏に行く2.メジャースポットの首都圏と水槽館を訪れたい\n-50歳以上の男女2人組が旅行先を探している。-旅行先の条件は以下の通りである。-箱根周辺であること-人口が少なく自然が豊かな場所である-紅葉や山登りを楽しむことができる-自然が好みで健康に気を使っている-散歩や運動を日課にしている-趣味がゲームや家での作業-登山や一人で行動することが好ましい-過去に犬と一緒に行動したことがある-桜や砂丘など自然を好む傾向がある\n-旅行の期間は11:00から23:59までである。-夜に行く予定である。-他の店も気になるが、とりあえずお蕎麦屋に行こうと考えており、そちらの情報を求めている。",
+        "chosen_dialogue_summary": "-50代の男性が、夏に一人旅を計画している。-旅行先は、自然に囲まれた場所で、山に登ったり、散策したりするのが好きな人に向いている。",
+        "rejected_dialogue_summary": "-50代の男性が一人旅をし、夏に訪れ、水族館とメインスポットである東京に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳前後の独身女性が一人旅を考えていて、夏の時季に沖繩県を訪問する予定である。見たい場所としては水槽館と動植物園を挙げている。\n-自分用ではないが帰るときに沖繩の名産品を購入する予定である。-有名なスーパーマーケットをよく利用するため、食料品の買い物をする際はその店舗を利用してほしい。\nBは夜に店を訪れる予定であり、昔ながらの定番メニューを食べたいと考えており、店の雰囲気や価格帯も気に入っている。ナイトツアーのようなアクテビィティも楽しく、船に弱いが短時間の乗船であれば問題ないと述べている。",
+        "chosen_dialogue_summary": "Bさんは沖縄の水族館や動物園を見てみたいと考えている。彼女は帰り際に地元の特産物を買いたいと思っている。また、スーパーで食材を調達したいようだ。夜の食事は伝統的な料理を楽しみたいようで、リーズナブルな価格で提供される店が好みのようである。",
+        "rejected_dialogue_summary": "沖縄の水族館、動物園、夜の食事、ショッピングを楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏3.沖繩県4.水產館5.首爾城6.動植物園\n-旅行の目的は観ることではなく食べたり買ったりすることである。-そのため、旅行先の沖繩県ではスーパーマーケットを利用することを提案している。",
+        "chosen_dialogue_summary": "A.一人旅、夏、沖縄県、水産館、ソウル城、動物園",
+        "rejected_dialogue_summary": "沖縄県で買い物をする##論文###[ICDAR2017]SceneTextRecognitionintheWild-[arXiv](https://arxiv.org/abs/1609.03605)|[pdf](http://openaccess.thecvf.com/content_ICCV_2015/papers/Cheng_Scene_Text_Recognition_ICCW_15.pdf)-Jaderberg,Max,etal.\"Spatialtransformernetworks.\"Advancesinneuralinformationprocessingsystems.(2016):2022-2030.-Chen,Liang-Chieh,GeorgePapandreou,IraKautz,andVittorioC.Gurevich.[\"YouOnlyLookOnce:Unified,Real-TimeObjectDetection.\"(CVPR,16.)](/papers/15_5.html)IEEEComputerSocietyConferenceonComputerVisionandPatternRecognition.IEEE,n.d.779-786."
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅で夏に行く2.メジャースポットを巡る3.水槽をみるのが好き4.動物も好む5.大きなサイズのものに魅力を感じる\n50歳の男性が旅行先として、琉球諸島を検討している。琵琶湖で食べたい料理はゴヤチャンプルのような沖繩料理である。旅先で食事をする場所を探している。\n##まとめ今回の課題では、2つの例文が与えられ、それぞれの会話の要点をまとめることが求められた。2つ目の例題は、私の実際の旅行先の希望を聞いてもらうというシチュエーションであったため、自分の希望に沿った回答を得るために、より具体的な質問を繰り返し行った。その結果、自分が希望する旅行プランを明確に伝えることができた。",
+        "chosen_dialogue_summary": "A:旅行の計画を立てているので、沖縄のオススメを教えて欲しい。B:夏に一人で行くのであれば、那覇空港からバスで30分ほどの場所にある、水族館がおすすめです。そこには、巨大なサメがいますよ。",
+        "rejected_dialogue_summary": "##実行方法```pythonmain.py```##依存ライブラリ*pytorch*transformers"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅-時期:夏-見たいもの-有名なもの(メイン)-水槽館-首里公園-8:30~19:00-大人:¥400-子供:¥200-団体割引あり-高校生以上¥300-小中学生¥150-幼児¥100-繁忙期-土日祝日-夏休み-年末年始-GW-お盆-その他-イベント開催時-動物好き-ペンギン-オットセイ-アザラシ-シャチ-クジラ-マンボウ-ウミガメ-カメレオン-ワニ-トカゲ-サル-キリン-ゾウ\n-50歳以上の男女2人組である。-旅行の目的は食べることと買い物である。特定のものを食べたいわけではないが、おすすめの料理を知りたがっている。食べたことのないものや珍しいものなど、冒険的な食事を求めている。\n1.11:00~12:30の営業時間である。2.夜に行くことを検討している。3.他にもたくさんの店がある。4.定食店で、お蕎麦屋がある。リーズなブルな価格帯である。気楽に利用できる。5.昼食をとるために行く予定。6.沖繩で見たいものは水族園、城、綺麗なビーチなど。7.海が見える場所を希望。8.ナンユー島を紹介。9.船で行ける。10.シュノケリングやマリンアクテビテイーが出来る。11.一日で帰って来れる。12.値段は3,200円~5,800円。13.最終的にツアーの選択肢として考慮する。14.南の端にある喜多岐と呼ばれる場所。15.平和記念塔があり、大きな海を見渡せる。",
+        "chosen_dialogue_summary": "Aさんは沖縄旅行を計画しており、Bさんに意見を聞きたいと考えている。Bさんは一人で旅行することが多く、夏の旅行に興味を持っているようだ。見てみたいものとしては、水中展望台や海中道路などが挙げられている。また、戦跡や美しい景色なども気になっている様子。具体的な日程や予算についてはまだ決まっていないようだが、早めに決めるつもりでいる。",
+        "rejected_dialogue_summary": "Bは夏に沖縄を一人で旅行することを考えている。彼の興味のあるものとしては、水中の生物や歴史的な建造物、美しい海岸などが挙げられる。また、彼は50代の男性で、食べ物やショッピングを楽しみたいという目的を持っている。以下は、彼の旅行に関する情報である。・旅行期間：夏・目的地：沖合の島々（喜屋武岬、南大東島、波照間島など）・移動手段：飛行機、船、レンタカー、バス、タクシー、自転車、徒歩、フェリー、クルーズ、ヘリコプター、モノレール、トラム、ケーブルカー、マウンテンバイク、スノーモービル、パラグライダー、スカイダイビング、ロッククライミング、マリンスポーツ、サーフィン、ウィンドサッキング、カヤック、ヨット、ボート、ジェットスキー、ウェイクボード、バンジージャンプ、ジップライン、ゴルフ、テニス、乗馬、釣り、サイクリングツアー、ウォーキングコース、ハイキングトレイル、キャンプ場、山小屋、ホテル、旅館、民宿、ゲストハウス、ホステル、アパートメント、コンドミニアムなど"
+    },
+    {
+        "all_short_dialogue_summary": "-40代前半の独身女性で一人旅を希望している。-旅行先は夏に行く予定である。\n50歳の女性が旅行先の沖繩県について質問している。旅行日程はまだ決まっておらず、具体的な要件はない。植物や花にはあまり関心がなく、食事や買い物を楽しむ予定である。\n-店の営業時間は11:00から23:59までである。-お客さんは夜に店に行く予定である。-たくさんの飲食店があり、その中にはお蕎麦屋さんが含まれている。料金は安く、量が多い。夜やランチタイムに利用しやすい店である。また、お店の雰囲気はカジュアルなものとなっている。-沖繩県には水族園や城がある。自然豊かな海も見たいと考えており、希望する場所はナカンナ島である。この島は那霸から船で行くことが出来る。シュンケリングやマリンレジャーなども楽しめる。",
+        "chosen_dialogue_summary": "沖縄県に旅行に行きたいと考えている。夏の時期に一人で旅行を計画しており、植物には興味がないが、食べ物やショッピングを楽しみたいと思っている。また、夜遅くまで開いているお店がたくさんあり、そば屋さんもある。値段が手頃でボリュームがあり、昼食や夕食にぴったりだ。店内はリラックスできるカフェスタイルになっている。一方、自然を満喫したい人には、那覇市からフェリーでアクセスできるナガンヌ島がおすすめ。海やシュノーケリングなどのマリンスポーツが楽しめ、美しい景色を堪能できる。",
+        "rejected_dialogue_summary": "この人は夏に沖縄に行きたいと思っていて、料理やショッピングを楽しみたいようです。店は夜遅くまで開いているので、夜でも行けます。たくさんのお店があって、そば屋さんもあります。お値打ちでボリュームたっぷりで、昼食や夕食にぴったりです。また、店内はリラックスできる雇用形態です。さらに、この人は海の豊かさを体験したいと考えていて、那覇から行けるナガン島を訪れたいそうです。##生成モデル-BERT-GPT-2##実行方法```bashpythonmain.py```##出力結果```ThispersonwantstogotoOkinawainthesummerandenjoyfoodandshopping.Thestoreisopenlate,soyoucangoatnight.Therearemanyshopsandthereisasobarestaurant.It'saffordableandhasplentyofvolume,perfectforlunchordinner.Also,thestorehasarelaxedatmosphere.Inaddition,thispersonwouldliketoexperiencetherichnessoftheseaandwouldlovetovisitNaganIsland,whichcanbereachedfromNaha.```"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の独身男性が一人旅を考えていて、夏に沖繩県を訪れる予定である。-観光スポットとして、以下の2つを希望している。-首里公園-朝8:30~夜19:00まで開園しており、大人は400元かかる。-大人とは18歳~64歳のことを指す。-子供は3~17歳、シニアは65~79歳、高齢者は80歳以降を指し、それぞれ異なる料金が設定されている。-3歳未満は無料。-団体割引や、障害者手帳を持っている人は半額で入場できる。-開園時間は季節によって変動する。-駐車場も完備されているため、車でのアクセスも可能。-公共交通機関を利用する場合は、モノレールと路線バスを乗り継ぐ必要がある。-周辺にはお土産屋や飲食店が多数ある。-混雑時には入園制限が行われることがあるので注意が必要。-入園料は変更される可能性があるため事前に公式サイトで確認することが推奨される。-現在は新型コロナウイルス感染症の影響で一部の施設が閉鎖されているが、今後再開される見込み。-実際に訪れた人の感想によると、歴史や文化を感じることができて非常に満足できたとのこと。-自然豊かな環境も魅力的でリフレッシュできる時間を過ごせたという声も多い。-施設内にはカフェやレストランもあるため食事も楽しめる。-トイレやベビーカーの貸し出しも行われているため小さな子ども連れでも安心。-車椅子での利用も問題なく、スタッフの対応も親切との評判。-イベントや展示会も定期的に開催されており、常に新しい発見があるという口コミも多く見られる。-�\n\nBは11:00から23:59まで営業している店舗を訪れた。Bが夜に訪れると伝えると、AはBを歓迎した。店にはたくさんの飲食店があり、その中にはお蕎麦屋も含まれている。Aによれば、そのお食事処はボルームが多く、値も手頃であるため、ランチタイムやディナータイムに利用するのに適している。さらに、Bには他におすすめの場所はないか尋ねた。そこでBは、水族園や城、そして美しく澄んだ海を見たいと答えた。Aはそれを聞くと、調査を始めた。海辺の綺麗なビーチを探すようBに頼まれたAは、その条件に合致する場所を調べてみた。その結果、NaganuIslandという島が見つかった。この島は那覇市から専門の船で約20分かけて行くことができ、サンゴ礁が広がる海域に浮かぶ小島である。ここでは、スキューバダイビングやその他のマリンレジャーも楽しめる。ただし、一日で帰ってこなければならない。もしよければ、船上でのアトラクションに参加することもできるが、どうだろうかとBに聞いた。Bはその提案を受け入れた。そして、もし船に弱くても、航行時間が短いので心配ないとAに伝えた。その後、ツアーの名前と料金がAから告げられ、Bが承諾すると、Aもそれに同意し、オプションを検討することにした。",
+        "chosen_dialogue_summary": "Bさんは、沖縄県に一人で旅行に行くことを計画しています。夏のシーズンに、50代以上の一人旅が可能な場所をお探しです。首都圏から行きやすい場所で、自然が豊かで美しい景色を楽しみたいという希望があります。また、海水浴やマリンスポーツも体験したいと考えています。最終的には、家族や友人と一緒に楽しむことができる場所が理想的です。",
+        "rejected_dialogue_summary": "-沖縄県の首り公園は、大人400円、子供200円で、8時30分から19時00分までの開館時間となっています。子供の定義は0歳から3年生までで、それ以上は大人と同様に扱われます。また、高校生と大学生は240円、小学生と中学生は160円です。65歳からはシルバーパスが発行され、年間パスポートが800円となります。通常の入館料と比べると大変お得なので、ぜひ活用してみてください。なお、閉館日は12月29日から1月3日までですのでご注意ください。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が一人旅をする予定である。2.旅行先は夏の沖繩県。3.見たい場所は水…族…館と…首…里…城。4.食べたいものは特になし。5.動物…園も見たい。\nAはBに、旅行先として沖繩県を提案した。Bはこれを承諾し、Aに旅程の調整を依頼する。Aが調査した結果、Bが特に関心を持っていると思われるオススメスポットを紹介する。その中には、花畑や海、工芸品などが含まれている。\n-夜に行くことを検討している。-沖繩県へ旅行する予定である。-その中でオススメのスポットを教えてほしい。",
+        "chosen_dialogue_summary": "-「沖縄県の旅行プランを立てるにあたり、水族館や首里城などを訪れることを考えている。」",
+        "rejected_dialogue_summary": "沖縄旅行を計画しているBに対して、趣向に合うスポ…ット…を…提…案…し…た…。…その…中…で…、…B…が…特…に…関…心…を持…っ…て…い…る…の…だ…け…ど…も…な…く…花…畠…や…工…芸…品…など…観…光…地…へ…誘…導…する…。"
+    },
+    {
+        "all_short_dialogue_summary": "-50代の男性が一人旅を考えていて、行き先は沖繩県である。-旅行の期間は夏を予定している。見たい場所は水槽館と城である。食べたいものは特になく、代わりに動物園を希望している。\n-動物を見たい-植物も見たいが、お花にはあまり関心がない-他に、食事や買い物の希望はない-帰る際にはおみやげを購入する予定-スーパーで買えるものや一般的な食べものを好む-お酒を飲みたい\nBさんは、11:00から23:59まで営業している店舗を訪れ、店員のAさんと会話をしている。Bさんが夜に訪れることを伝えると、AさんはBさんを歓迎し、他の店の情報も提供する。その中でBさんの好みを聞き出し、オススメの店を提案する。さらに、旅行先の沖繩県についても話題が広がり、マリンレジャーや自然観察など、様々なアトラクションを紹介する。",
+        "chosen_dialogue_summary": "Bは、沖縄県の旅行を計画しており、水族館や城を見学したいと考えている。また、食べ物には特にこだわりがなく、動植物を見て回りたいと思っている。帰りには、お土産を買いたいが、スーパーマーケットで手に入るようなものが好ましい。お酒も飲むことができる。",
+        "rejected_dialogue_summary": "-沖縄県への旅行を計画しているBは、水族館や城を見学したいと考えている。特に食べ物にはこだわりはないが、動植物の鑑賞が好きで、スーパーマーケットで販売されている食品やお土産を楽しみにしている。また、お酒も好きなので、夜の時間帯に店に立ち寄りたいと考えており、帰国後もその思い出を大切にしていきたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を考えていて、行き先は沖繩県である。2.旅行の期間は夏の間である。3.観光スポットは首り城と美羅海海賊館の2つである。\nBは50歳前後の女性であり、夫と旅行に行く予定がある。旅行先は沖繩県を希望している。Bが旅行で食べたい物はゴーやチャンプルのような郷食料理である。沖鹽料理の老舖である龍瀋という店を勸められた。\n【参考】https://github.com/akiyoshi0911/DialogueSummarization",
+        "chosen_dialogue_summary": "沖縄県に旅行し、首里城や美ら海水族館を訪れ、ゴーヤーチャンプルーなどの地元料理を味わいたい。",
+        "rejected_dialogue_summary": "沖縄県の首里城や美ら海水族館に興味がある。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の男性が一人旅を考えていて、行き先は沖繩県である。2.見たいものは水道館と動植物園である。3.沖繃県には首都城がある。首府城は朝８時３０分から午後７時００分まで開いており、入場料は大人４００円である。4.動物水槽館もある。ジンペイサメも見ることができる。\nBは50歳の男性で、今回の旅行は妻と一緒に行く予定である。旅行先は箱庭で、その中でも「アンネの小さな家」という施設を訪れたいという希望がある。植物や花にはあまり関心がなく、代わりに文化や芸術に関心があるようだ。買い物をする際には、自分のためのものではなく、帰り際に有料のおみやげを購入することを希望している。また、「海人の人」と書かれたT-シヤツや、琉球の伝統的なおやつなどが欲しいと思っている。さらに、食事に関しては、「ゴヤチャンプール」や「パッパ」と呼ばれる郷愁料理を食べたいと考えており、そのための店を探している。\n-海の綺麗な場所を探している-特にナンガヌ島がオススメ-シュノケリングやマリンスポーツも楽しめる-船に弱くないか心配-長時間ではないので問題ない-値段は32000円〜-問題なし-予約しておく-もう一つは海が見える場所-沖繩本土の南の端にある喜谷武崎-平和を祈る塔がある-海が一望できる-周りには国が指定する遺跡もある",
+        "chosen_dialogue_summary": "50代の夫婦が沖縄旅行を計画中。見どころは首里城、水族館、ジンベエザメなど。旅費は3万2000円から。ナガンヌ島の海もおすすめ。船酔いが不安だが、短時間なので大丈夫。予約は必要。喜屋武岬も行きたい。",
+        "rejected_dialogue_summary": "沖縄県の見どころは、首里城や水族館、沖宮などがあります。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅で夏に行く予定である。-有名な場所を訪れたいが食事に関しては分からない。\n-50歳以上の女性一人旅で本島を訪れる。-旅行の目的は食事やショッピングを楽しむことであり、現地の文化や歴史に触れることは重視していない。\n【質問】-どのような条件でナビゲーションを行うか",
+        "chosen_dialogue_summary": "「夏に一人で訪れ、食にこだわらない。50代女性はショップ巡りを楽しみ、本島で食を堪能する。」",
+        "rejected_dialogue_summary": "-夏に一人で沖縄を旅行する50代女性の旅行プランを提案する。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳以上の女性が一人旅で夏に行く。-行き先は沖繩県である。見たいものは水槽館と動植物園である。\n-20代前半の女性が一人旅を検討している。旅行先は海外の国。-旅行期間は1週間以内で航空券の値段は10万円以下が望ましい。\n##Result###Example1####要約結果>インドアのゲームプレイヤーであるBさんは、自宅で過ごす時間が多く、犬の散歩や自然観察を好む。Bさんにとっては自然が好みであり、四季折々の花々や紅葉などが美しく感じられる。さらに、山登りにも興味を持っている。####結果![image](https://user-images.githubusercontent.com/63500677/118065849-7b3f2e80-b3a8-11eb-9f8f-8c7d8d3b0f3d.png)####解説Bさんの趣向は「自然」であることが明らかである。自然を題材としたゲームを勧めるのが良さそうである。####提案本来の目的である「旅行」に関しては、「自然」をテーマとした旅行プランを提案することがよいだろう。-「自然」の要素を取り入れた旅行先の提案-旅行先までの交通手段の検討-航空券の手配、宿泊施設の確保、旅行日程の調整####実装```importpandasaspdimportnumpyasnpfromkonlpy.tagimportKkma,Komoran,Okt,Mecab,Komoranfromgensim.models.doc2vecimportDoc2Vec,TaggedDocumentimportjiebadefpre_processing(text):text=text.replace('\\n','')returntextdefmake_tagged_doc(texts,tagger):tagged_texts=[]fortextintexts:tagged_text=[tagger.morphs(text,norm=True,stem=True)]#tagged_document={'text':text,'tag':tag}iflen(tagged_text[0])==0:continueelse:tagged_documents=TagDocument(text=text,tags=tagged_texts)returntagged_documensif__name__==\"__main__\":data=pd.read_csv('./dialogue.csv',header=None,names=['A','B'])A=data['A'].tolist()B=list(data['B'].values)",
+        "chosen_dialogue_summary": "Bは50代以上で、夏に沖縄に行き、水族館や動物園を見たいと考えています。20歳代の若い女性は、海外旅行を考えていて、航空運賃を10万以下に抑えたいと思っています。####手順1.データの読み込み```pythonimportpandasaspdimportnumpyasnp```2.テキストデータの前処理-改行を削除する-形態素解析を行い、品詞を抽出する3.品詞の数をカウントし、出現頻度の高いものから順に並べる4.出現回数の多い上位10個の単語を選び、それらをキーワードとする5.それぞれのセリフに対して、選ばれたキーフレーズを付与する。6.Doc2Vecモデルを用いて文書をベクトル表現に変換する。7.モデルを学習させた後、テスト用の文章を入力して、その文章がどのカテゴリに属するかを予測する。",
+        "rejected_dialogue_summary": "Bは、50代の男性で、夏に沖縄県を訪れ、水族館や動物園を楽しみたいと考えている。また、海外旅行を計画しており、20歳前後の女性をターゲットとしている。###Example2####要約結果>Bさんは30代後半で独身。仕事が忙しく休日は家でゆっくりしたいタイプ。>趣味は音楽鑑賞と読書。特にクラシック音楽やミステリー小説が好き。####結果![img](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0YWRhdGEodXJsKQAAIABJREFUeF7tnQd4VXV1/9PvOz5yY1JHr5u5i7v7u7e7m7n7p7r7s7t7w7x7y7z7A7B7C7D7E7F7G7H7I7J7K7L7M7N7O7P7Q7R7S7T7U7V7W7X7Y7Z7a7b7c7d7e7f7g7h7i7j7k7l7m7n7o7p7q7r7s7t7u7v7w7x7y7z7A7B7C7D7E7F7G7H7I7J7K7L7M7N7O7P7Q7R7S7T7U7V7W7X7Y7Z7aa7bb7cc7dd7ee7ff7gg7hh7ii7jj7kk7ll7mm7nn7oo7pp7qq7rr7ss7tt7uu"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を考えていて、行き先は沖繩県である。2.見たいものは水槽館、メインは首府城である。食事については分からない。3.沖繃美拉海海獸館を案內し、時間は8:30~20:00、入場料は大人で1,880円である。\n\n-11:00~12:30まで営業している。-夜に行く予定である。-店の雰囲気が良さそうであることから選ばれた可能性が高い。-お店のメニューを紹介してくれた。-ソバが食べたいと言っている。-沖繩の見どころを聞かれたので答えた。-水槽、城、綺麗なビーチを見たい。-ナカンナ島の紹介を受けた。ナイトツアーやマリンレジャーが出来る。-船に弱いことを伝えると、時間が短いので問題ないと言われた。",
+        "chosen_dialogue_summary": "沖縄県の水族館と首里城を訪れ、夜は地元の料理を楽しみたい。",
+        "rejected_dialogue_summary": "沖縄の水族館と首里城を見に行きたい女性。夜のソーキそばを楽しみにしている。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を希望している-旅行先は夏に行く予定-有名な場所を訪れたい-水槽館と城がある-城は首都のシンボルである-大人一人あたりの入場料金は400円-動物も見たい-そのため、次に動植物園を探す-魚がたくさんいる水槽数が多い場所-ジンべエサメはとても大きく、多くの人が訪れる\n50歳の女性が旅行先の沖繩で買い物や食事を楽しむことを目的としている。動植物に関心がなく、オーソドックスな観光スポットを訪れることを希望している。具体的に、琉球村、首里城、国際通り、ひめゆりの塔、斎場御嶽、エメラルドビーチ、古宇利大橋、残波岬、万座毛、備瀬のフクギ並木、ヤンバルクイナ生態展示学習施設、宮良殿内、石垣島鍾乳洞、フサキリゾートヴィレッジ、平久保崎灯台、ガンガラーの谷、ブルーシールアイスパーク、オリオンビール名護工場見学、カヌチャリフト、ジンベエザメと泳げる美ら海水族館、ビオスの丘、熱帯ドリームセンター、ナゴパルタウン市場、道の駅かでな、うるま市石川多目的ドーム、東南植物楽園、森のガラス館などがある。\nBは50歳の男性で、彼は彼の妻と旅行に行く予定である。彼らは11月から12月の間に旅行することを考えていて、予算は1人当たり30,000円である。また、彼らが見たいものとしては自然、歴史、グルメ、ショッピングが挙げられる。具体的な行き先はまだ決まっていないが、彼らの希望に合う場所を提案してほしい。",
+        "chosen_dialogue_summary": "Bは50歳の男性で、彼は彼の妻と旅行に行く予定である。彼らが見たいものとしては自然、歴史、グルメ、ショッピングが挙げら",
+        "rejected_dialogue_summary": "50歳の男性が一人旅行を希望している。旅行先は夏に行く予定であり、有名な場所を訪れたい。水槽館と城がある。城は首都のシンボルである。大人一人あたりの入場料金は400円。動物も見たい。そのため、次に動植物園を探す。魚が多く、水数がよくなさそうなところが好ましい。"
+    },
+    {
+        "all_short_dialogue_summary": "「Bは1人の旅行者であり、夏の時季に1週間程度の旅行期間を予定している。旅行先としてはメリハリをつけたいと思っている。具体的な行き先はまだ決まっておらず、最終的に決めるのはB本人である。」「首都圏に住む20代後半の独身女性であるBが夏休みを利用して2泊3日の旅行をする。主な目的は自然を満喫することである。今回の旅のテーマは「癒し」であるため、都会の喧騒から離れてゆったりとした時間を過ごすことができるような場所を選びたい。B自身は普段からアクティブに活動するタイプではなく、のんびりすることを好む。リラックスした雰囲気の中で自然と触れ合うことができれば、心身ともにリフレッシュできると思っている。」\nBは50歳の女性で,夫と旅行に行く予定である.趣向としては動植物や自然に触れることが好みであるが,植物に関してはあまり関心がない.また,買い物をすることが好きであり,旅行先でのおみやげを探している.具体的な場所は決まっていないものの,おすすめの場所を教えてほしいというリクエストがある.AはBに対して,動画園の有無を確認する.しかし,見つけられなかったため,次に植物を提案する.Bは植物にそれほど興奮していない様子であったが,Aはそのことを気にしつつも,引き続き植物の話題を続ける.その後,Bは買物を希望することを伝える.Aはそれに応じて,まずはおみあげを購入できる店舗を紹介する.Bが気に入ったのは,海にちなんだ商品を取り扱う店であった.この店ではTシャツや沖繩の伝統的なおやつなど,様々な商品が販売されている.続いて,Aはスーパーマーケットを勧める.ここでは一般的な食料品や日用品などが取り揃えられている.最後に,Bは飲食店を求めていることを明らかにする.Aはその希望を叶えるべく,郊外料理を提供する店にBを誘う.\n##質疑応答**Q:****A:**",
+        "chosen_dialogue_summary": "【質問文】##質問##回答",
+        "rejected_dialogue_summary": "##要約原文Bは1人の旅行者であり,夏の時季に2泊3日の遊歩期間を予定している.Bの趣味は自然観察で,特に植物や動物が好きだ。Bは普段からアクティブに活躍するタイプではなく,のんびろいすことを好む。そのため,リラックスした雰囲気の中で自然と触れ合うことができよったら,心身ともにリフレシュできると思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的は1日に1人の旅行である。-行き先は夏に行く予定の沖繩県である。-見たい場所は水槽館や首都城などがある。食べたいものは特になし。\n-旅行の目的は特になく、旅行先として沖繩を選んだ。-50歳以上の男女二人組で行き先は那須塩原である。\nBは午後に行く予定で、お店の雰囲気やメニューについて質問し、最終的に夜に訪れることを決める。Bが他におすすめのお店を尋ねると、Aはお蕎麦屋やゴーやチャンプルのような定番料理が食べられる店があると説明する。AがBに他の希望を聞くと、Bはいくつかの場所を挙げる。その中でAがお勧めするのは、天然記念物の海亀が見られる水族園や、首里城などの歴史的建造物、そして自然豊かな海や島々である。最後にBがお礼を述べる。",
+        "chosen_dialogue_summary": "-Bは沖縄旅行を楽しみにしているが、具体的な計画はまだ立てていない。",
+        "rejected_dialogue_summary": "沖縄県に行きたいが特に目的はない。旅行は50代のカップルで、午前中はゆっくり過ごし、お昼ごはんを食べるために行く。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳の独身女性である。2.彼女は夏に一人旅をする予定であり、行き先は沖繩県である。3.見たい場所は水槽館と動植物園である。##Example3###DialogA:こんにちわ、こんばんわ。いらっしゃいませ。B:いやぁ、久しぶりだねぇ。久し振りに会った気がするよ。元気にしてた？A:元気でしたよ。あなたはどうですか？B:私はまぁまあだよ。A:あなたに会いたかったなぁ。何年ぶりかなぁ？10年くらい？それとも20年？あれ？30年以上？？どれくらい経ったんだろうね？もう忘れちゃったよ～。あなたのこと好きだったんだけどな。どうして連絡してくれなかったの？私、寂しかったわぁ。。。ごめんなさい。つい感情的になってしまって。。でもね、あなたと会えて本当に嬉しいの。もう会えないかと思っていたから。私のこと覚えていてくれてありがとう。本当に感謝しているわ。これからも宜しくね！B：えぇ、覚えてるよ？実は俺も君のことが好きだっただけに、君が俺のことを忘れてしまったのかなって心配してたんだ。君は本当に綺麗な人だから、他の男に取られてしまうんじゃないかって思ってた。俺が君を忘れるなんて絶対に無いから、いつまでも待っててくれたらいいんだよ。。A：そんなこと言われても、私はもう結婚してしまったの。今更どうにもならないわ。。B：あぁ、そうなんだ。残念だな。。今更遅いってことか。。それじゃ、また会う機会があったら、その時は。。。A:違うの！私が結婚した相手は君じゃなくて、別の男なの！それは確かだけど、でも、もし君と出会えていたら、きっと私の人生は変わっていたと思うの。それだけは確かなこと。だからこそ、今こうして会えたことが奇跡だ\n-旅行の目的は夫と一緒に楽しむことである。-50歳代であるため、年齢に合った旅行先を選びたいと思っている。\n-気軽に行ける店を探している-11:00から12:30まで営業している店に行く予定である-夜でも行くことが出来る店であることが望ましい-沖繩に行った際にはソバを食べたい-ソバはボルームが多くて安い店で食べるつもりである-水槽館、城、綺麗なビーチを見て回るのが良いと考える",
+        "chosen_dialogue_summary": "Bは、沖縄県を訪れ、水族館や動物園を見学したいと考えている。",
+        "rejected_dialogue_summary": "沖縄県の水族館や動物園を訪れ、美しい景色を楽しみたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.Bは50歳の女性である2.彼女は夏に一人旅をする予定である。3.行き先は沖繩県である。4.見たいものは水槽館とシーサー城である.5.食べ物に関しては特になにもない。6.水生館はオキナワビラウミスイゾクカンと呼ばれる。7.その場所はアマミノクロウサギが生息している。\n-動物は好きではないが植物は見たことがないので植物を見たい。-また、帰るときに沖繩の名産品を購入する予定である。-その中でも海人の人という名前のTシャツとおやつが欲しい。-スーパーマーケットで買い物をすることも検討している。\n1.夜でもよい2.お店の紹介3.ゴーやチャンプール4.定食5.ボリュー6.リーズ7.気軽8.立ち寄り9.昼10.他に何か11.見たいもの12.水槽13.城14.海15.きれ16.ナ17.島18.慶良19.シュノ20.マリ21.スポ22.日帰23.船24.酔う25.長時間26.さ27.ツア28.季節29.値段30.大31.岬32.平和33.屋34.国35.指定",
+        "chosen_dialogue_summary": "沖縄の水族館に行きたいが、植物も見てみたい。帰りには、スーパーでお土産を買いたい。",
+        "rejected_dialogue_summary": "Bは、夏の沖縄県を一人で旅行し、水族館や城を見て、海の生き物や植物を楽しみたいと考えている。【解説】本課題では、与えられたテキストから、Bが旅行先として選んだ沖永良部島についての情報のみを抽出するように指示されています。Bには特定の好みや興味が示されていないため、旅行の目的や計画に関する情報が重要となります。また、文章の長さや複雑さも考慮する必要があります。本解答では、「B」という人物を明確に示し、「夏」「一人」「旅行」といったキーワードを用いて、具体的な旅行プランを表現しています。さらに、「沖合」「海」「植物」「城」「お土産」などの重要な情報も含まれています。これらの要素を組み合わせることで、簡潔かつ明瞭な文章が作成されました。一方で、解釈の余地が残されている部分もあります。例えば、「見る」と「楽しむ」の違いが曖昧であることや、「お菓子」が具体的にどのようなものを指すのかが不明であることが挙げられます。しかし、全体としては要点を押さえ、読み手に理解しやすい文章となっています。"
+    },
+    {
+        "all_short_dialogue_summary": "1.20代前半の独身女性2.一人旅3.夏頃に訪問予定4.有名な場所を訪れたい5.首里公園と沖美水を希望\n\n-夫婦二人の旅行で夜に訪れたい-夜でも訪れやすい店舗を探している-例としてそろばん屋を挙げている-店舗名は不明だが、店の雰囲気や価格帯、メニューは把握している様子-ゴーやーちゃんぷるーもある-定食店である-味や量、価格は満足できるレベル-昼や夜にも利用できる-利便性が高い-立ち寄りやすさを重視していることが伺える-自分の都合に合わせて訪れることが可能-旅行先の選択肢を広げたい-多様な場所を訪れてみたい-新たな発見を求めていることが分かる-好奇心旺盛な性格であることが推測される-学習意欲が高く、新しい情報を積極的に取り入れる傾向がある-常に新しいことに挑戦し、成長を続けたいという意志を持っている-将来の展望を明確に持ち、自己実現に向けて努力を惜しまない-目標達成のために必要な知識やスキルを身につけようと努力する",
+        "chosen_dialogue_summary": "「沖縄旅行を計画中の女性が、夜の外出を楽しみたいと考えており、特にそば屋での食事に興味を示している。」",
+        "rejected_dialogue_summary": "20歳代の女性が一人で夏に沖縄県を旅行する計画を立てている。彼女は首都圏に住んでおり、先日友人と一緒に那覇空港からレンタカーを借りて旅行を楽しんだ。その際に、友人の勧めで「そば屋」に行き、ゴーヤーチャンプルーを注文した。値段は1,000円以下で、味も量も価格も十分だった。店は夜遅くまで営業しているため、夜の食事にも適している。また、近くには沖映通りと国際通りがあり、ショッピングやグルメを楽しみながら散策することもできる。さらに、美ら海水族館や国際通りに近い場所に位置しており、アクセスも良好である。次回の旅行では、彼女自身の好みに合った店を選びたいと思っている。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは夏に一人旅を考えていて、行き先は沖繩県である。見たいものとしては水槽館や首都城がある。食べるものについては分からないが水産物を食べたいと思っている。\nBは旅行先を沖繩県にすることを希望している。植物や花にはあまり関心がなく、一般的なスーパーマーケットで買い物を楽しむことが好きである。食べることに関心があり、ゴーやチャンプルのような郷士料理を食べたいと思っている。泡温泉と呼ばれるお酒を飲むことも好む。\n-お店の営業時間は11:00から23:59までである。-夜に行く予定である。-他にもたくさんの店がある。ソバ屋やゴーやチャンプルの店もある。定番の店であり、量が多くて安いのでおすすめである。お店は気楽に利用できる。-見たいものはお城、水族園、綺麗なビーチなど。自然が豊かな場所を探している。-ツアーを予約する。専門船にのってナギャヌ島に着く。マリンレジャーができて、1日で帰ってくる。料金は3000から58000円。海を見たいなら、キヤム岐と呼ばれる場所がある。",
+        "chosen_dialogue_summary": "沖縄県に行きたい。首里城や美しい海を楽しみたい。ゴーヤーチャンプルや泡盛を味わいたい。",
+        "rejected_dialogue_summary": "沖縄県の旅行プランを立てており、首里城や美しい海などを楽しみたいと考えている。ゴーヤーチャンプルや泡盛といった料理や飲み物にも興味がある。"
+    },
+    {
+        "all_short_dialogue_summary": "1.旅行先は沖繩県2.一人旅3.夏に行く予定4.見たいものは水槽館としゅりじょう5.食事は分からない\nBは旅行先として沖繩県を選び、夫と一緒に行く予定である。旅行期間は秋であり、帰り際にはおみやげを購入するつもりでいる。Bが食べたい料理はゴヤチャンプールである。また、お酒を飲みたいと考えており、Bと夫はお酒が飲める。\n1.夫婦二人の旅行2.箱根に行く3.観光スポットは「アンの館」4.食べ物はソバ5.他に沖繩で見たいもの6.海が綺麗なところ7.ナーガン島8.マリンレジャー9.ツアー10.値段は3000~500011.営業時間は11~1212.運賃は320~580\n-50代の夫婦二人で旅行を計画している。-オルゴールの美術館に行きたいと考えている。",
+        "chosen_dialogue_summary": "Bさんは、沖縄県に旅行に行きます。水族館や首里城を見たいと思っています。また、ゴーヤーチャンプルーなどの料理を食べたり、ビールなどの飲み物を楽しんだりしたいです。",
+        "rejected_dialogue_summary": "沖縄県の水族館で珊瑚礁や熱帯魚の生態を観察し、南国の雰囲気を満喫することができる。また、シュノーケリングやダイビングなどのマリンスポーツも楽しむことができ、美しい海を堪能できる。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅で夏に行く予定である。-有名な場所を訪れたいが食べたいものは特になし。\n-旅行先は沖繩県である。-50歳以上のカップルが旅行に行く予定であり、滞在期間は2日間である。-航空券はANAを利用し、宿泊先としてはホテルオーシャンが選ばれた。-飲食店は「泡泡龍」が選択された。\nBさんは、午後から海を見ながら散々することを希望している。Bさんの希望に合わせて、Bさんが訪れたい場所をいくつか提案した。具体的な場所は以下のとおりである。1つ目は「ナーガン島」という島である。この島は専門の船で行くことができ、そこではマリンレジャーができる。ただし、船に弱い人は注意する必要がある。2つめは、「喜矢武崎」である。これは沖繩島の最も南にある場所であり、ここでは大きな海が見える。ここには、歴史的な遺跡もある。",
+        "chosen_dialogue_summary": "-沖縄県の海を眺めながら、ナガンヌ島や喜屋武岬を散策する。",
+        "rejected_dialogue_summary": "沖縄県のナガンヌ島と喜屋武岬は、専用船での移動が必要で船酔いしやすい人には注意すべき場所だが、海の景色が美しく、マリンアクティビティも楽しめる。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の女性で一人旅を検討している。行き先は夏に行く予定の沖繩県である。見たいものとしては水泳場と動植物園を挙げており、行きたくないものは特になかった。水遊び場は見つけられなかったが動植園は沖美良海遊泳館を見つけることができた。ここはジンべイサメなどの大型の魚がいる大規模な遊園地である。\nお客さんは50歳前後の女性で家族旅行が目的である。また、購入するものとして、家族や友人へのおみやげを求めており、家族や知り合いへのプレゼントに適したものを探している。\nユーサーは午前から午後まで営業している店を探している。店はお蕎麦やゴーやチャンプルのような定番メニューを取り扱う店であり、昔ながらの雰囲気がある。客は店に行くことを提案する。さらに、客の希望を聞き、店の周辺の情報を提供する。\n--Conclusion--Insummary,theuserwantstotraveltoOkinawawiththeirspouse,andtheyareinterestedinvisitingKyanMisakiandSesokoIsland.Theyarelookingforaplacewheretheycanrelaxandenjoythescenery,aswellaslearnaboutthehistoryandcultureofthearea.",
+        "chosen_dialogue_summary": "Insummary,theuserwantstotraveltoOkinawawiththeirspouse,andtheyareinterestedinvisitingKyanMisakiandSesokoIsland.Theyarelookingforaplacewheretheycanrelaxandenjoythescenery,aswellaslearnaboutthehistoryandcultureofthearea.",
+        "rejected_dialogue_summary": "以下は、沖縄旅行を計画している50代の夫婦を対象にした文章である。この文章では、旅行の目的地や行程、見どころなどが詳しく説明されている。特に、キアン・ミサキとセソコ・アイランドという2つの島を訪れることが強調されており、これらの島が美しい景色や歴史、文化を楽しむのに最適な場所であることが示唆されている。また、この文章は日本語で書かれているが、英語に翻訳することも可能である。--Summary--Insummary,theuserwantstotraveltoOkinawawiththeirspouse,andtheyareinterestedinvisitingKyanMisakiandSesokoIsland.Theyarelookingforaplacewheretheycanrelaxandenjoythescenery,aswellaslearnaboutthehistoryandcultureofthearea.--Explanation--Theuserisa50-year-oldmarriedcouplewhoareplanningatriptoJapan.Thehusbandis52yearsoldandthewifeisnotspecifiedinthetext,butitcanbeassumedthatsheisaroundthesameageasherhusband.Bothofthemareretiredandhaveplentyoffreetimetospendonleisureactivities.ThecouplehasdecidedtogoonavacationtogetherandhaschosentovisitthebeautifulislandofOkanawainJapan,whichisknownforitsstunningnaturalsceneryandrichculturalheritage.Specifically,theywanttoexplorethetwoislandsofKyunandSeshoko,bothofwhicharelocatedoffthecoastofmainlandJapanandoffervisitorsachancetoexperiencetheuniquecultureandhistoryoftheseremoteareas.Tomakethemostoftheirtrip,however,itisimportantforthecoupletoplantheiritinerarycarefullyandchoosetherightaccommodationandtransportationoptions.Forexample,iftheyplantostayinahotelorguesthouseontheisland,thentheywillneedtobooktheirroomswellinadvancetoensurethattheyhaveacomfortableplacetorestafteralongdayofsightseeing.Additionally,sincetheislandsarerelativelysmallandnotveryaccessiblebypublictransport,rentingacarorhiringataximaybenecessaryinordertogetaroundandseeallthesights.Overall,thisarticleprovidesagoodoverviewofwhattoexpectwhentravelingtotheJapanesearchipelagoandofferssomehelpfultipsandadviceforplanningyourtrip.Whetheryouareanexperiencedtravelerorjuststartingout,thereissomethingherefor"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で一人旅を予定している。行き先は夏に行くことを考えていて、メインの目的は水槽館を見学することである。Bが希望するのは、大規模で長時間開館している施設であり、予算は大人一人当たり18800円程度である。\n50歳の女性が旅行先として、鹿児島県の種子島を検討している。目的はダイビングやマリンスポーツを楽しむことであり、旅行期間は2泊3日である。\n-11:00から12:30まで営業している店を探している。-夜でも行ける店ならなおよい。-店のメニューとしてソバやゴヤチャンプルのある店がある。-定食でリーズナルブルな店である。-海の見える場所を訪れることを希望している。例*海水浴場-ナカヤマビーチ-美しい海と白い砂浜が特徴。*天然記念物のサンゴ礁が広がる。*スキューバダイビングのスポットとしても有名。-島のツアーの参加を検討している。-岬の訪問を希望する。",
+        "chosen_dialogue_summary": "Bさんは、水族館を楽しみながら、リーズナブルで美味しい食事を求めています。",
+        "rejected_dialogue_summary": "50代男性は、夏に一人で旅行に行き、水族館を楽しみたいと考えている。大人1人あたり約1万8000円の費用がかかるが、2日間の滞在が可能で、午前11時から午後12時30分まで開いている。さらに、夜間も利用でき、そばやごはんのセットを提供する店が望ましい。また、海を眺めながら食事ができるレストランや、島内のツアーに参加したいという希望もある。"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅2.夏に行く",
+        "chosen_dialogue_summary": "A.2人で行くB.一人旅C.夏D.海外",
+        "rejected_dialogue_summary": "##要約結果```一人夏旅```"
+    },
+    {
+        "all_short_dialogue_summary": "1.一人旅を希望している。2.夏に行く予定である。3.水槽や首都圏などの名所を見たい。4.食べたいものは特になし。\n【まとめ】Bは50歳の男性で夫と旅行に行く予定である。旅行先は沖繩で食べるものや買い物などを楽しむことを目的としている。\nAはBに、店の営業時間やメニューについて説明している。Bは店に行く時間を決め、他の店についても尋ねている。",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoplanstogoonatripwithhishusband.ThedestinationisOkinawaandthepurposeistoenjoyeatingandshopping.AisexplainingtoBaboutthebusinesshoursandmenuofthestore.Bdecidesonthetimetovisittheshopandasksaboutotherstoresaswell.",
+        "rejected_dialogue_summary": "```#coding:utf-8#In[1]:importpandasaspdimportnumpyasnpfromgensimimportcorpora,models,similaritiesdf=pd.read_csv('data.csv',encoding=\"cp932\")df.head()#In[2]:#テキストデータの前処理corpus=[]foriinrange(len(df)):corpus.append(df['text'][i].split(''))print(corpus[0])#文字列をトークンに変換tokenized_corpus=[doc.split('')fordocincorpus]print(tokenizedCorpus)#stopwordsを除去stop_words=set('foraoftheandtoin'.split())print(stop_words)cleaned_tokens=[[wordforwordindocifwordnotinstop_words]fordocintokenized_Corpus]print(cleaned_Tokens)fromnltk.stemimportWordNetLemmatizerwordnet_lematizer=WordnetLematizer()lemmatized_Token=[]fortokenincleaned_tokens:lemmatized_token.append(wordnet_Lematize(''.join(token),pos='n'))print(lemmated_token)```#要約の実行```pythonmodel=LdaMulticore(2,corpus=corpu,id2word=dictionary,workers=4,passes=2)summary=model.print_topics(1)print(summary)```"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の女性が一人旅を希望している。2.旅行先は夏に行く予定である。3.目的は水槽を見ることであり、他の目的はない。\n旅行先として沖繩県を検討している。スーパーマーケットで買い物をし、ゴヤチャンプルのような郷土料理を食べたいと考えており、食事をする場所を探している。\n-11:00-12:30の営業時間であること。-夜でも訪れることができ、立寄りやすい店舗であると認識している。-沖繩県内で観たい場所は水族園、城、綺麗なビーチなどである。-ナカンナ島は専門の船にのって約２０分で行ける島であり、マリンレジャーができる。-船に弱くないかを確認し、ツアーの申し込みを検討する。-喫茶店は定番のメニューが豊富で量も多く、価格も安価であるため、ランチタイムやディナータイムの訪問を勧めている。",
+        "chosen_dialogue_summary": "沖縄県で夏に一人で旅をする女性は、スーパーで食料品を購入したいと考えている。彼女はゴーヤーチャンプルーなどの地元の料理が好きで、夜遅くまで開いているレストランを見つけたいと思っている。また、彼女が訪れたい場所には、水の動物園や城、および美しい海岸が含まれています。さらに、ナガンヌ島にはマリンアクティビティを楽しむことができます。船酔いが心配なのでツアーを予約するかどうか確認する必要があります。",
+        "rejected_dialogue_summary": "沖縄県で夏に水中生物を見学することが目的の50代女性の一人旅。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳の独身男性が一人旅を希望している。2.旅行先は夏に行くことを考えていて、行く場所は沖繩県である。3.見たいところは水槽館と動植物園である。\n【解答例】旅行先は沖繩県が希望であり、食事はゴーやチャンプールが食べたいと述べている。またスーパーマーケットを訪れ、現地の食材を購入することも検討している。\n-11:00-12:30の営業時間である。-夜でも行くことができ、多くのお店がある。夜に訪れる予定である。-沖繩の名物であるソバを食べたい。ゴーやチャンプールも食べられる。リーズなブルな価格で提供されている。-観光スポットとしては水族園とお城、綺麗なビーチを見たいと希望している。-例として挙げられたのはナーガン島。-慶良間に位置する小さい島であり、船で行ける。マリンレジャーも楽しめる。\n-島の情報を伝えている-位置-空港から近い-南-沖縄の象徴的な地名を用いて説明-「喜屋」は「喜び」や「嬉しさ」を表す言葉で、「武」には「勇ましい」という意味があり、「喜」と「武」の組み合わせで「人々を喜ばせ、勇気づける場所」との意味が込められている。```A:南にある島ですB:分かりました``````A:B:```-その島の歴史や文化を説明している```A:B:```",
+        "chosen_dialogue_summary": "Bは、夏休みに旅行に行きたいと考えており、目的地はオキナワ県、見るべきものはアクアリウムや動物園、食べ物はタロイモや豚肉の煮物、そしてスーパーで買い物を楽しみたいとのことです。",
+        "rejected_dialogue_summary": "【出典】https://www.okinawa-soukoku.jp/"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の独身男性が一人旅を希望している。-旅行先は夏に行く予定の沖繩県である。-観光スポットとして、メインは水槽館、次いで首都城である。\n-A:はじめに、相手の性別と年齢を尋ねる-B:相手は女性で20代であることを伝える-性別:女性-年代:10代後半〜20歳前半\n-11:00から22:30まで営業している。-夜に訪れる予定である。-他にも多くの店舗があり、蕎麦屋もある。-価格は安く、量も多い。-昼や夜など、様々な時間帯に利用できる。-夕食時などにも利用しやすい店だ。-近くのお店をいくつか紹介する。-オススメの店は「琉球ダイニング居酒屋てぃーだ」。-店の雰囲気や料理の種類、価格帯などを説明する。\n--ExtraExample--A:こんにちは。旅行を検討しているんですが、何処かおすすめの場所はありませんか？B:海外ですか？国内ですかね？どっちでもいいですよ。A:私は国内が良いです！もう寒くなってきたので温かいところが良くて、、、C:温泉はどうでしょう？湯布院はオススメですね！いい感じの温泉がたくさんあるので是非行ってみてください！D:あと富士山もいいんじゃないですか。富士急ハイランドとかもあるし、遊園地も楽しめると思いますよ！E:静岡県の伊豆もお勧めですねー。海鮮が美味しいので食事も満喫できますよーF:わたしは京都がおすすすめです！！お寺や神社が多いので歴史を感じることができて、町並みも綺麗でとてもいいところですG:沖縄とかどうですか！？海がとにかくきらっきらしてて最高に気持ちいいんですよ！！H:東京も面白いところあるよ〜。ディズニーランドとか東京タワーとかスカイツリーとか。I:名古屋も良いとおもいます！名物の味噌カツや手羽先が食べられますよJ:長野県も良いかも。信州そばとかお蕎麦が有名ですし、日本アルプスも近いので山登りもできますK:北海道もとっても良いところですね〜！ラベンダー畑とか見に行ったら最高です〜L:神奈川県は鎌倉とか江ノ島とかオシャレなスポットがいっぱいあるから良いよ～M:奈良県とか奈良公園の鹿が可愛いし、お寺も多いし良いと思うN:岐阜県にも良い所が結構あるんです。日本三名泉のひとつである下呂市や、世界遺産に登録された白川郷などO:新潟県でスキーやスノーボードを楽しむのも良い",
+        "chosen_dialogue_summary": "Bは、夏に一人で旅行に行きたいが、場所を選ぶのに迷っている。水族館と首里城を訪れたいと考えている。",
+        "rejected_dialogue_summary": "50代の男性は、夏に一人で旅行に行きたいと考えています。彼の旅行の目的地は沖永良部島で、主に水族館と首里城を訪れたいと思っています。また、彼はお酒を飲むのが好きなので、飲み屋にも興味があります。"
+    },
+    {
+        "all_short_dialogue_summary": "【まとめ】Bは50歳の男性で一人旅を希望している。行き先は夏に行く予定である。見たい場所は水槽館と動植物園である。\n--例題3--A：おはようございます。今日の天気は晴れで気温は32度、湿度は70％です。今朝のニュースをお伝えします。一つ目は、「新型コロナウイルスの感染拡大を受けて、政府は東京など4都府県に対して緊急事態宣言を発令する方針を固めました。」という報道です。これにより、多くの企業が在宅勤務を推奨するなど、社会全体に大きな影響を与えています。また、二つ目のニューストピックとして、「米国のバイデン次期大統領が就任式を迎える中、首都ワシントンでは大規模なデモが発生し、警官隊との衝突が続いています。」と報じられています。このように、世界各地でさまざまな出来事が起こっていますが、私たち一人ひとりが冷静に対応していくことが大切です。B：こんにちは、Aさん。私は今朝、朝食を食べる前に、ニューヨーク・タイムズ紙の記事を読んでいたんですよ。そこには、コロンビア大学の研究者たちが、新型インフルエンザの流行が始まってから1年が経過したことを受けて、今後のパンデミックの可能性について分析した記事が掲載されていました。その記事によると、現在の状況はまだまだ予断を許さないものであり、我々は今後も警戒を続けていかなければならないとのことでした。Aさんはどう思いますか？私としては、このような状況下では、できるだけ外出を控えて、人との接触を最小限に抑えることが重要だと感じています。皆さんもぜひ、同じように考えてみてはいかがですか？では、私はこれから仕事に向かいますので、この辺で失礼します。また明日お会いしましょ。\nBは50歳の男性である。BとAの会話を通じて、Bが家族と旅行に行くことが分かる。旅行先は沖繩県であり、目的は美味しいものを食べることと自然を堪能することである。\n1.海が綺麗な場所を探している。2.夜景を楽しまれたいとのこと。3.人工島であることが気になっている。",
+        "chosen_dialogue_summary": "Bは50歳の男性である。BとAの会話を通じて、Bが家族と旅行に行くことが分かる。旅行先は沖繩県であり、目的は美味しいものを食べることと自然を堪能すればならない。",
+        "rejected_dialogue_summary": "沖縄県は日本の南西部に位置する県で、美しい海と豊かな自然が魅力的な場所である。また、歴史的な建造物や文化遺産も多く残されており、訪れる人々に深い印象を残す場所でもある。特に、那覇市の国際通りは、活気に満ちた商店街として知られており、一日中楽しむことができるスポットとなっている。さらに、北部のやんばるエリアには手つかずの森林が広がり、希少な野生動物が生息しているため、自然愛好家にとってはまさにパラダイスと言えるだろう。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳代の一人旅2.行き先：沖繩県3.時期：夏4.見たい場所：水槽館5.食べたいもの：特になし6.他の見たいところ：動植物園\n【参考文献】https://www.jstage.jst.go.jp/article/jjsai1994/23/2/1/_pdf/-char/en\n-11:00から12:30まで営業している。-夜でも行くことが出来る。",
+        "chosen_dialogue_summary": "Bは沖縄県の水族館と動物園に行きたいと考えている。",
+        "rejected_dialogue_summary": "沖縄県の水族館に行きたい。"
+    },
+    {
+        "all_short_dialogue_summary": "1.50代の女性が一人旅をする予定である。2.旅行先は夏に行くことを検討している。3.見たい場所は水族館と首里城である。\n【感想】-実際の会話を想定したような例題が多く、実際にロボットに話しかけているような感覚で取り組むことができた。-要約する上で重要な情報を抜き出すことが難しかった。\n50歳の男性が一人旅をし、11月から12月にかけて旅行に行く予定である。旅の目的は自然を満喫することであり、オススメのスポットとしては「ナーガン島」や「喜矢武崎」が挙げられる。\n気軽に行ける場所を探している。沖縄の離島に行ってみるのはどうかという提案を受け、喜屋武岬と瀬長島を紹介された。喜屋武岸は那覇空港の南に位置しており、周囲約1テン5キロの人工の嶋である。海中道路で結ばれた崎だ。瀬長島の夜景が大変美しいと提案された。",
+        "chosen_dialogue_summary": "1-2-3-4-5-6-7-8-9-10-11-12",
+        "rejected_dialogue_summary": "【回答】要点をまとめると「50台の独身男性は、冬の時期に、自然に囲まれた場所に行きたいと考えている。具体的には、ナガンヌ島やキヤヌ崎が候補に挙がっている。」ということになります。以下に、この回答を説明します。まず、「50の男」という情報から、対象者が成人男性であることが分かります。また、「一人で旅行する」とあるので、単独行動が可能な人であると推測できます。次に、「冬に旅行したい」とありますが、具体的な月日は明記されていません。しかし、一般的に冬は寒さが厳しい季節であるため、暖かい地域を選ぶことが考えられます。そして、「自然の中で過ごすことを希望している」との記述があります。これは、その人が自然に対して興味や関心を持っていることを示唆しています。さらに、「ナ・ガン・ヌ島」と「キ・ヤ・ン崎」の2つの場所が紹介されています。これらは、いずれも自然豊かな場所として知られています。以上の要素を踏まえると、回答は以下のようにまとめることができます。「50人の男性の旅行者は、一人旅で冬に行き、温暖な気候と自然の美しさを楽しむことを望んでいます。」この回答では、主語、動詞、目的語を明確に示すことで、簡潔かつ正確な表現を心がけました。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは50歳の男性で一人旅を予定している。旅行期間は夏を考えていて、メインの行き先は沖繩県である。Bが希望するのは、①水槽館、②首裡城、③動植物園の3つであり、それぞれの場所の詳細を尋ねる。Aはまず①について回答し、次に②について調べて回答した。最後に③について質問に答えた後、Bに3つの場所を提案した。以上のことから、以下のことが分かる。・Bは自然や歴史に関心がある・旅行の目的は見ることである\n-飲食店-オリオンビール、ソーキそば、タコライス、ラフテーなどが食べられる店を探している。-土産物屋\t-海人のTシャツ、琉球ガラス、紅芋タルト、ちんすこう、黒糖、島とうがらし、サーターアンダギーなどの購入を検討している。\nAはBに午前中から夕方まで営業している店を紹介し、Bは夜に訪れることを決める。Aは店の特徴を説明し、その中でもお蕎麦屋さんが気になるというBに対して、お店で提供しているメニューを伝える。Bはおすすめのお店に行くことに決め、Aに他の希望を尋ねる。Bが見たいものとして水槽や城、綺麗なビーチを挙げると、Aがそれぞれの場所を提案する。最後にAがBの希望に合うツアーや観賞スポットをいくつか紹介する。\n--End--",
+        "chosen_dialogue_summary": "Bisa50-year-oldmanwhoplanstotravelalone.Thetravelperiodissummer,andthemaindestinationisOkinawaPrefecture.Bhopestosee①aquariums,②ShuriCastleand③zoosandbotanicalgardens.Arespondstoeachplaceindetail.Afterthat,AasksBifhewouldliketovisitanyotherplacesandAsuggests3places.Fromthis,wecanseethatBisinterestedinnatureandhistoryandthatthepurposeofhistripissightseeing.",
+        "rejected_dialogue_summary": "Bisa50-year-oldmanwhoplanstotravelalone.Thetravelperiodisconsideredtobesummer,andthemaindestinationisOkinawaPrefecture.Bhopestovisitthreeplaces:①Aquarium,②ShurijoCastleand③BotanicalGarden.Afirstanswersabout1stplace,then2ndplaceandfinally3rdplace.Afteransweringthequestions,AproposesthreelocationstoB.Fromtheabove,thefollowingcanbeconcluded.・Bisinterestedinnatureandhistory・Thepurposeofthetripistoseethings.-Restaurants-TherearerestaurantswhereyoucaneatOrionBeer,SokiSoba,TacoRice,Rafute,etc.YouarelookingforaplacetobuyaRyukyuglass,aredpotatotart,chinsuko,blacksugar,anislandpepperandasataandagi.AintroducesashopthatisopenfrommorningtoeveningandBdecidestogothereintheevening.ThenAexplainsthecharacteristicsofeachshopandtellsBthatthesobashopisrecommended.BasedonA'srecommendation,Bwillgototherecommendedrestaurant.HeasksAabouthisotherpreferences.WhenBmentionsthathewantstolookataquariums,castlesandbeautifulbeaches,heproposeseachlocationtohim.Finally,afterAintroducesseveraltoursandsightseeingspotsthatmatchB'spreferences,theyfinishtheconversation."
+    },
+    {
+        "all_short_dialogue_summary": "1.50歳代の一人旅2.旅行期間は夏3.見たいものは水槽館と動植物園\nBは50歳の女性であり、夫と旅行に行く予定である。Bが行きたがっている場所は箱根本箱であり、その理由は夫が自然を好むからである。またB自身は動植物をあまり好まない。旅行先で買い物をすることを希望しており、その中でもおみやげが欲しいと思っている。具体的な商品名は挙げられていないが、「海」がテーマになっているものを購入することを望んでいる。マックス・ヴァリューというスーパーマーケットでは、現地の人々が食べるような食品が販売されており、Bもよく利用するという。\n-旅行の日程は11:00から12:30までである。-気軽に行ける場所を探している。-夜でも行けるような場所であることが望ましい。-ご当地料理を食べたいと考えており、オススメのお店を教えてもらった。-お店の雰囲気や料金なども考慮して選んでいる。-沖繩県には、以下の場所に行くことを検討している。１．ナーガン島-船で行くことができ、泳いだりすることもできる。-酔いやすい人は注意する必要がある。２．喜々武崎-平和を祈る塔があり、大きな海が見える。-歴史的な場所もある。\nAはBに沖縄旅行について提案し、Bは喜んで聞いている。Aは「海の中道」という場所を勧めているが、その場所は埋立地であり、夜になると離着陸する航空機を間近で見ることができ、さらに夜の海岸線はとても綺麗であると説明している。Bもその説明を聞きながらうなずいている。",
+        "chosen_dialogue_summary": "AがBにおすすめした沖合の島で、海水浴やマリンスポーツを楽しむことができる。",
+        "rejected_dialogue_summary": "AがBに対して、50代の夫婦で旅行を計画していることを伝えている。目的地として、箱根を希望しているが、動物や植物には興味がないため、水族館や自然公園などに行きたいと考えている。また、旅行中にはお土産を買いたいという希望があり、海に関連したものが良いという。さらに、マックスバリュという店で、地元の人が食べているような食料品をよく買っているとのこと。日時は、午前11時から午後12時30分までの間である。また、気楽に訪れることのできる場所や夜も楽しめる場所が好みであることや、地域の食事を楽しみたいという意向も示している。そして、Aから、那覇県にあるナガンヌ島と喜友名崎という2つの場所についての情報が提供されている。ナナグヌ島は船でのアクセスが可能で海水浴やダイビングなどが楽しめ、酩酊しやすい人には注意が必要である。一方、キユウナザキは平穏を願う塔や広大な海を眺めることができるほか、史跡も存在する。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅を考えていて、行き先は沖繩県である。見たいものとしては水槽館と動植物園を挙げており、夏に行く予定である。\n--FinalAnswer--**回答**1.観光スポットの種類2.屋内外3.自然4.温泉5.景色6.歴史7.伝統8.文化\nBは午後11時に到着し、翌日の午前10時にチェックアウトする予定である。Bが滞在する部屋はスタンダードツインルームであり、朝食と夕食が含まれている。部屋にはテレビ、冷蔵庫、ポット、ドライヤーが備え付けられている。ホテルの周辺には、コンビニエンスストア、飲食店、レンタカー会社、バス停、タクシー会社などがある。",
+        "chosen_dialogue_summary": "沖縄県で、水族館や動物園を見て回りたいと考えているBという男性は、暑い時期に旅行を計画しています。彼はホテルに宿泊するつもりでいて、部屋の設備や周囲の施設についても知っています。",
+        "rejected_dialogue_summary": "沖縄県の水族館や動物園を見学する夏の旅行を計画している。"
+    },
+    {
+        "all_short_dialogue_summary": "-ユーザーは50歳以上の男性である。-旅行の目的は「一人の時間を過ごすこと」であり、行き先として「自然が豊かな場所」を希望している。-行きたくない場所として、人混みが多い場所を挙げている。\n**Example1**-A:お客さんと会話する-B:趣味や好みを聞く-A,B:共通点を見つける-ゲーム-難易度の高いもの-アクションゲーム-過去にやったことがある-お互いに知っているゲームがある-「アサシンクリード」-ストーリーが良い-共感できる-思い出に残っている-感動した-泣いた-涙腺崩壊-いい話だった-人間ドラマ-登場人物が魅力的-主人公がかっこいい-キャラクターが生き生きしている-物語の世界に引き込まれる-興味深い-惹きつけられる-映像が綺麗-音楽が素晴らしい-演出が巧み-様々な要素が組み合わさって-絶妙なバランス-非常に完成度が高い-最高傑作-名作と呼ばれるにふさわしい-永遠に語り継がれるであろう-時代を超えて愛される作品-多くの人々に感動を与える-心を揺さぶる-深い感銘を残す-未来永劫に伝えられるべき-世界中の人々が楽しめる-国境を越えて共感を呼ぶ-文化の壁を乗り越える力を持つ-言語や国籍に関係なく-誰もが理解できる普遍的なテーマ-ユニバーサルなメッセージを伝える**Example3**A:B:\nBは午後から営業している店を探している。Bが希望するのは夜に訪れることのできる店であり、料金が安いことである。店の雰囲気は気にならない。食べたいものはソバであり、その他にはゴヤチャンプルのようなものもある。夜だけでなく、ランチタイムにも利用可能である。また、旅行先としては沖繩県を考えており、水族園、城、綺麗なビーチなどを訪れたいという希望がある。具体的な場所として挙げられているのはナンガヌ島である。この島は専門の船で行くことができ、そこではマリンレジャーができる。日中のみの訪問が可能で、その際の費用は3000～5000程度である。他にも、南部にある喜納武崎と呼ばれる場所がある。この場所は海が見渡せる場所である。また、この場所から近いところには国が指定している史蹟がある。",
+        "chosen_dialogue_summary": "B:沖縄県に旅行に行きたいが、予算が限られているため、夜に行ける安価な飲食店や、日帰り可能なマリンスポーツを楽しみたいと考えている。",
+        "rejected_dialogue_summary": "沖縄県の名所を巡る旅行を計画中の50代男性は、夜間に利用できる安価な飲食店と、昼間のマリンスポーツを楽しみたいと考えている。特に、那覇空港から専用船でのみアクセス可能な離島での体験に強い関心を持っている。"
+    },
+    {
+        "all_short_dialogue_summary": "1.年齢は不明だが、男性である。2.一人旅を予定している。3.旅行先は夏に行くことを検討している。4.見たいものとして、メディアで取り上げられることが多い水槽館や首都城がある。5.食べ物に関しては、あまりこだわりがない。6.動物好きである。\n-50歳の女性が夫と旅行に行く予定である。-箱根に宿泊し、翌日には沖繩に移動する。旅行期間は3日間である。-旅行の目的は夫とのんびり過ごすことであり、夫の意向に沿うことを優先する。\n-夫婦二人の旅行であること。-11:00から23:30まで営業している店に行く予定があること。-昼食にソバを食べること、夕食にはゴーやチャンプルのようなものを食べており、店の雰囲気はボーリューミーで手ごろな価格であることが分かる。-水槽、城、綺麗なビーチを見て回ることを検討している。\n1.50代の夫婦二人で旅行を計画しており，箱根方面に行ったいと思います。2.オルゴールの美術館にいこうと思います。3.海の中道路で結ばれている，周囲約１テン５キロの島です。4.あのー，人工，人工の島なんですね。5.埋め立てて造られている。6.那覇空港の，ま，南にあっている。7.離発着する飛行機の高架下に島が位置している。8.夜景が大変美しい。9.もしよろしいけれ、夜、行かれるとよい。10.他に，ご要望がございませんか？11.何か他に夜照がきれいなところがあったら教えてください。12.はい。ただ今お調べいたします。少しお待ちください。",
+        "chosen_dialogue_summary": "夏に一人で沖縄に行き、水族館と首里城を訪れます。食事は特に気にしませんが、動植物が好きです。夏休みに家族で東京へ行きました。東京タワーとスカイツリーを見学し、お台場ではショッピングを楽しみました。また、築地市場で新鮮な魚介類を味わいました。",
+        "rejected_dialogue_summary": "1.Bは沖縄の首里城に行きたいと考えている。2.AはBに対して、旅館の場所を教える。3.AとBは、Bが旅行で訪れたい場所について話し合っている。4.Bが訪問したいのは、観覧車と水族館。5.AがBに勧めた場所は、大阪の海遊館とあべのハルカス。"
+    },
+    {
+        "all_short_dialogue_summary": "1.自分は1人の旅行者である2.旅行の目的は「夏に行く」こと3.行き先は沖繩県4.見たいものは水槽館5.食べ物にはこだわらない6.沖繃県には水壇館がある7.水壺館の名前は「おきなわびらうみ」\nBは50歳の男性である。BとAの会話から、Bが旅行に行くということが分かる。旅行先は沖繩県であり、目的は買い物と食事であることがわかった。\n-旅行は11:00から12:30の間に行われる。-夜でも行くことができ、様々なお店がある。夜に訪問する予定である。-お店の中には、安くておいしいソバ屋がある。-ソバの種類としては「そーきそバ」や「ごーやーちゃんぷるー」などが提供されている。-沖繩で見たい場所として「水族園」、「お城」、綺麗な「海」が挙げられている。-その中でも「ながんぬ島」という島が紹介された。-この島ではマリンレジャーが出来る。-船で行き来する必要があり、時間は約２０分である。-「きやんみさき」と呼ばれる場所もある。-沿岸に近い場所にあり、「ぐしがわじょうあと」も近隣にある。\n【補足】-上記の例では、Bが「夜の海」を求めていると推測できるが、これは直接的な質問をしていないため明確ではない。-また、Aが提案した「瀬良島」についてもBは特に関心を示さなかったため、その後の会話が続かなかった。",
+        "chosen_dialogue_summary": "Bisa50-year-oldman.FromtheconversationbetweenBandA,itisclearthatBisgoingonatrip.ThedestinationisOkinawaPrefectureandthepurposeisshoppingandeating.",
+        "rejected_dialogue_summary": "AとBとの間で旅行についての話し合いが行われている。AはBに対して、沖縄県に行きたいと伝えているが、具体的な目的地についてはまだ決まっていないようだ。"
+    },
+    {
+        "all_short_dialogue_summary": "50歳の男性が一人旅で夏に行くことを検討している。見たい場所として、オーソドックスな場所を挙げており、具体的な要件は特になかった。首都圏に住んでいることが予想される。見たいものとしては水槽の大きさを重視している。\n-自分用ではないおみやげを探している-海人の人というTシャツや、砂糖がまぶしてあるクッキー、黒糖、紅芋タルトなどが候補にあがる-最終的に海人の人が選ばれる-その理由は「海人がかっこいいから」-スーパーマーケットで買い物をすることを検討している。-24時間無人のスーパーの存在を知っている\n午前と夜に営業している店があり、そちらを訪れる予定である。夜はお蕎麦を食べたい。沖繩県への旅行で見たいものは水族園とお城、綺麗な自然がある海があると嬉しい。\n--Question1---Q1:Bはどのような場所に行くことを希望しているかQ2:Aが提案した場所のうち、Bが最も行きたがっている場所はどこか【Answer1】Bは沖縄県を旅行する予定である。AはBに対して、「海が見える場所」や「夜に綺麗な場所」を紹介している。具体的に紹介された場所としては、「瀬底島」と「瀬良垣島」が挙げられる。Bの方が「喜屋湾」への行き方を尋ねており、Aがそれに応じて「海の中の道路」を通って行くことが可能であることを伝えている。",
+        "chosen_dialogue_summary": "BisgoingtotraveltoOkinawaPrefecture.Aintroduces\"SeasideIsland\"and\"SeragakiIsland\",whichareplaceswhereyoucanseetheseaandbeautifulplacesatnight.Basksaboutthewayto\"Kiyawan\",andArespondsthatitispossibletogoby\"RoadintheSea\".",
+        "rejected_dialogue_summary": "A:「はじめまして。私はAと申します。よろしくお願いいたします。」B:「はーい。こちらこそ、宜しくねー。」A：「Bさんは、どちらからいらっしゃいましたか？」B：「私は、東京から来ましたよー。今日は、那覇空港からレンタカーを借りて、旅行を楽しもうと思っています。もちろん、ホテルも予約してありますよ。でも、せっかくなので、地元の人にしか知られていないような、穴場スポットを教えてもらえませんか？もしあれば、ぜひとも行ってみたいです。特に、自然が豊かで、美しい景色を眺められる場所があれば最高ですね。ちなみに、私は写真を撮るのが好きなので、おすすめの撮影ポイントも教えていただけると助かります。もし、時間が許せば、ご一緒に撮っていただくことも可能ですか？それから、食べ物も美味しいところがたくさんあると聞いていますので、そのあたりもお聞きしたいです。あと、お土産も買いたいのですが、何が人気なのかも知りたいですね。それでは、お話を伺えるのを楽しみにしています！」A：「わかりました。では、まずは基本的な情報からお話ししましょう。私が紹介するのは、瀬戸内海に浮かぶ小さな島々です。その中でも、私が特にお勧めするのが、『瀬田島』です。この島は、その名の通り、海の上に架かる橋で繋がっており、その景観はまさに絶景と言えるでしょう。また、島の周りには、透明度の高い海水が広がり、ダイビングやスキューバーなどのマリンアクティビティも楽しめます。そして、夜になると、星空がとても美しく、天の川も見ることができます。さらに、この島には、『海の駅』という施設もあり、そこでは、新鮮な魚介類や地場産の野菜などを購入することもできます。これらの情報は、私自身が実際に訪れた際の体験から得たもの"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の男性が一人旅を予定している。-旅行先は夏に沖繩県を訪れたいという希望を持っている。-観光スポットとしては水槽館や動植物園などを検討している\n\n-お客さんは午前と午後の両方の時間帯に訪れる予定である。-気軽に行ける店を探している。-その中でも特におすすめなのはソバ屋であり、安くておいしい料理を提供している店である。-海が見える場所に行くことを希望している。具体的な場所としては「ナーガン島」が挙げられており、そこではシューノケリングなどのマリンレジャーも楽しめる。料金は時期によって異なるが、おおよそ3000～6000円程度である。また、「喜多武崎」という場所も紹介されている。ここは沖繩本土で最も南にあり、展望台から海が一望できる。\n--Question3--1.Bはどのようなことを望んでいるのか？2.Aの提案に対してBがどのように反応しているのか？--Answer--1.Bは自然を楽しめる場所を求めている。2.AはBに自然に関する情報を提供している。",
+        "chosen_dialogue_summary": "Bは、沖縄本島でマリンスポーツを楽しみたいと考えている。また、自然に囲まれた場所でゆっくりと過ごしたいとも思っている。",
+        "rejected_dialogue_summary": "沖縄県に旅行に行きたいと考えています。特に水族館と動物園が好きなので、そのような施設があれば嬉しいです。また、海も見たいと思っていますので、シュノーケリングなどができる場所があると良いかもしれません。金銭面では、予算が限られているため、できるだけリーズナブルな価格で楽しめるところが理想です。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅を予定している。-行き先は夏に行くことを検討している。-沖繩県に行ったことがないため、観るものや食べる物に詳しくない。-見たいものは水槽館や動植物園がある。\n--Result--Aの質問に対し、Bは基本的に「はい」で答えていることが分かる。また、「あっ」や「えっと」などの間投詞を多用していることから、緊張している様子がうかがえる。さらに、旅行先の行き先や食べたい料理など、具体的な内容についてはあまり明確に答えておらず、抽象的な表現が多く見られる。全体的に、会話の流れに沿って回答している印象を受ける。\n-夫婦で夜に訪問することを検討している。-お店の名前は覚えていないが、お蕎麦を食べたいと考えており、昔ながらのお店を希望している。-昼食時や夜にも訪れることができ、手頃な価格で提供されている。-観光の目的としては自然が豊かな場所を訪れたいとのことであり、具体的な場所は知られていない。",
+        "chosen_dialogue_summary": "Bさんは沖縄県に一人で旅行に行きたいと考えていて、水族館と動物園を見たいと思っている。食べ物は特に決まっていないが、海の幸が好きなようだ。",
+        "rejected_dialogue_summary": "-旅行の計画を立てるにあたり、沖縄県を候補に挙げているが、詳細な情報は不明である。また、見どころや食事の情報も乏しい。ただし、一人旅であることや、水族館・動物園が見学したい場所であることは明らかである。-夜の時間帯に家族で訪れ、伝統的なそば屋に行きたいと考えている。店名は忘れてしまったようだが、リーズナブルで美味しい料理を提供しているとのこと。具体的には、自然に囲まれた場所が希望である。"
+    },
+    {
+        "all_short_dialogue_summary": "【結論】Bは夏に一人旅を予定している。旅行先は沖繩県である。見たいものとしては水槽館と動植物園を挙げている。\n1.動物は好きではない2.植物や花にはあまり関心がない3.地元の人も利用するスーパーマーケットで買い物を楽しむ4.沖繩県の伝統的な料理を食べたい",
+        "chosen_dialogue_summary": "Bisgoingtotravelaloneinthesummer.ThedestinationisOkinawaPrefecture.Hewantstoseetheaquariumandthezoo.",
+        "rejected_dialogue_summary": "沖縄県に夏に行きたい。水族館や植物公園を楽しみたい。スーパーでお土産を買いたい。"
+    },
+    {
+        "all_short_dialogue_summary": "-一人旅で夏に行く予定-有名な場所を訪れたい-水槽館-見つからなかった-首里公園を提案-8:30-19:00400yen-選択肢として押さえたい-他の場所も見たかった-動物好きだから動植物園-尋ねる-希望の施設を見つける-沖美水槽数-大きいからいい-時間が長くて料金が高い\n-動物を観察することに関心があり、砂浜で貝殻を拾うことを楽しむ。\n1.オリオンビール園2.青の洞窟3.ひめゆりの塔\nBは沖縄旅行に来ており、旅行代理店のAに話を聞いている。AはBに対して喜屋湾や瀬奈島を勧めているがBが特に関心を示していない。そこでAが他にも夜のきらびやかな場所はないか尋ねると、Bもそれに応じて夜に綺麗な場所を探している。",
+        "chosen_dialogue_summary": "Iaminterestedinobservinganimalsandenjoycollectingseashellsonthebeach.",
+        "rejected_dialogue_summary": "Bさんは観賞魚が好きで、一人で旅行に行き、水族館に行きたいと考えている。目的地は夏で、夜景がきれいなところがよい。夜間営業をしている場所としては、オリオンミュージアムがいいかもしれないが、ひっそりとした雰囲気の場所が好きなBさんには合わないかも。ひょっとしたら、夕方から夜にかけての時間帯に、サンセットビーチで夕日を眺めるのがいいのかもしれない。"
+    },
+    {
+        "all_short_dialogue_summary": "-旅行の目的-50歳の女性一人旅-時期:夏-理由:暑いから-メリット:涼しい-課題:日差しが強い-解決策:熱中症対策-手段:塩分補給-食べ物:ポカリスエット-買い方:コンビニで-場所:自宅近くの-備考:近くて便利-利点:時間の節約-結果:早く出発できた-感想:準備が大切-反省:忘れ物-改善:メモ-効果:安心-実感:ストレスフリー-満足:快適-後悔:もっと早く気づくべきだった-教訓:思い立ったが吉日-目標:次回は完璧に準備する-戦略:リスト作成-工夫:項目ごとに分類\nBさんは、旅行先を沖繩県とし、そこで美味しいものを食べたいと考えています。その中でも、ゴヤチャンプルのような郷土料理を食べたいと思っているようです。また、お土産には海人のTシャツなどを購入する予定です。\nBは午後から店に行く予定である。BとAは店のメニューについて話し合い、その中でBが夜に来店することに決めた。店にはお蕎麦やゴーやチャンプルのような料理が提供されており、昔ながらの雰囲気がある。夜は混み合うことがあるが、それでも気兼ねなく利用できる店である。また、Bには他におすすめの場所があるかどうか尋ねられた。そこでAがBに、旅行先で見たいものについて聞いてみることにした。するとBからは、以下のような回答が得られた。・水族園・お城・マリンリゾートBによると、マリンレジャーの中には、綺麗なビーチや、水上スポーツなどが含まれるようだ。具体的なスポットとしては、「ナーガン島」という島が挙げられた。この島は那珂市から船で行くことができ、そこではシューノケリングなどのマリンアクテイビテーも楽しめる。料金は3,200円〜5,800円だが、シーズンによっては変わる可能性もある。他には、「喜多岐武崎」と呼ばれる場所も紹介された。ここは沖永良部島の南部にあり、戦争の記念碑が立っている。海が見える場所としても有名だ。以上のような情報を得た後、最後にAから「今回の旅行はどのようなものを求めていますか？」という質問が投げかけられた。これに対してBから返ってきた回答は以下の通り。「普段の生活から離れて、のんびりとした時間を過ごすことが目的です」",
+        "chosen_dialogue_summary": "Bさんが沖縄県を旅行する目的は、美食を楽しむことと、海人（うみんちゅ）という職業に興味を持つことの2つです。彼女はゴーヤーチャンプルーなどの郊外料理や海の幸を味わうことを楽しみにしています。旅行中は海を眺めたり、シュノーケリングやダイビングなどの水中活動を体験したりしたいと考えているようです。",
+        "rejected_dialogue_summary": "沖縄県への旅行を計画中のBさん。彼女は、旅先での食事を楽しみにしています。特に、「ゴーヤーチャンプルー」や「海人(うみんちゅ)」という言葉に惹かれているようです。さらに、夜には店を訪れ、そばを味わいたいと考えている様子。ただ、混雑が予想されるため、落ち着いて利用できるところを選びたいとのことです。また、「他にオススメのところはありますか?」と聞かれると、海水浴やマリンスポーツを楽しむことができる「ナガンヌ島」を紹介しました。島までは那覇市内からフェリーでアクセス可能で、シュノーケリングなども体験できます。費用は季節によって異なりますが、3200〜5800円程度が目安です。そのほかにも、南西諸島の一つである「喜界島」にも興味を示していました。こちらは太平洋に浮かぶ小さな島ですが、自然が豊かで海の景色も美しいと評判です。"
+    },
+    {
+        "all_short_dialogue_summary": "-50歳の女性が一人旅をし、夏の沖繩県を訪れる予定である。-観光スポットとして、オーソドックスな場所を選びたいと希望している。\n-旅行の目的は夫の誕生日プレゼントを購入するためである。-予算は5000円以内である。\nQ:Whatisthepurposeofthetrip?A1:IwouldliketogotoOkinawaforsightseeing.A2:MyhusbandandIareplanningatrip.Weareinour50s.Idon'thaveaspecificdestinationinmind,butIthinkIwanttotraveltoHakone.Myhobbiesincludeculturalactivities,suchasvisitinganorganmuseum.Q2.Whatkindofactivitiesdoyoulike?A3:Organmusicisahobbyofmine.Q3.Doyouhaveanyotherhobbies?A4:Yes,Ialsolikewalkingaroundtheneighborhood.It'sagoodwaytogetsomefreshairandimprovemyhealth.Q4.Areyouinterestedintryinganynewactivitiesduringyourtrip?A5:No,notreally.ButIamopentotryingnewthings.Q5.Wouldyouprefertostayinahoteloraryokan(traditionalJapaneseinn)?A6:Ahotelwouldbefine.\n【参考文献】https://www.jstage.jst.go.jp/article/johokanri/43/1/2010-43-1-11/_pdf",
+        "chosen_dialogue_summary": "```\"ThepurposeofthetripistosightseeinOkinawa.MyhusbandandIareplanningatrip.Weareinourfifties.Idon'thaveaspecificdestinationinmind,butIthinkIwanttotraveltoHakone.Oneofmyhobbiesisvisitinganorganmuseum.\"```",
+        "rejected_dialogue_summary": "沖縄県の名所を巡りたい。夫婦で旅行を計画している。50代で、特に目的地は決まっていないが、箱根に行きたいと思っている。文化的な活動、例えばオルガン博物館の訪問などが好きだ。新しい活動に挑戦することに興味はない。ホテルに宿泊したい。"
+    },
+    {
+        "all_short_dialogue_summary": "Bは1人の旅行で夏に行くことを希望している。見たい場所は水槽館と動植物園である。Bが1番行きたがっているのは、夏に開催される花火大会である。\n50歳の女性が旅行先の沖繩県を探している。買い物が目的であり、帰るときに有名なおみやげを購入する予定である。スーパーマーケットで買物をすることが多く、マックス・ヴァリュー牧司店に行くことが多い。\nBは50歳の男性であり、妻と旅行に行く予定である。旅行期間は午前中から夕方までであり、お店は夜まで営業しているため、夕食を食べるために訪れることを検討している。店内ではソーメンやゴーやチャンプルのような料理が提供されており、価格も安いため、ランチタイムやディナータイムに利用することが可能である。他にもBが訪れたい場所としては水槽や城などが挙げられ、また自然が豊かな場所も訪れてみたいと思っている。そこでAはBに対してナカンナ島を紹介し、そこではマリンレジャーができることを説明した。さらに、Bには船に弱いという特徴があるため、その点を考慮した上でツアーの予約を勧めた。最後にAが紹介した場所は喜や武崎という場所であり、この場所からは海が一望できるとともに、歴史的な建造物も存在するためBにとっては魅力的な場所である。\n50歳の女性が一人で沖縄を旅行する。旅行期間は3日間である。男性との出会いを求めており、プライベートビーチで泳ぐことを希望している。美ら海水族館や首里城を訪れる予定であり、食事はステーキを食べるつもりである。",
+        "chosen_dialogue_summary": "Bisa50-year-oldwomanwhotravelsalonetoOkinawa.Shewantstomeetamanandswiminaprivatebeach.Hertripwilllast3daysandsheplanstovisitChuraumiAquariumandShuriCastle,andeatsteakfordinner.",
+        "rejected_dialogue_summary": "Bは1人の旅行で夏に行くことを希望している。見たい場所は水槽館と動植物園であり、Bが一番行きたがっているのは、夏に開催される花火大会である。"
+    }
+]
